@@ -1,0 +1,216 @@
+浴室
+yù shì
+bathroom
+浴室在二楼。
+Yù shì zài èr lóu.
+The bathroom is on the second floor.
+
+厕所
+cè suǒ
+toilet
+厕所在那边。
+Cè suǒ zài nà biān.
+The toilet is over there.
+
+洗手台
+xǐ shǒu tái
+sink
+洗手台很干净。
+Xǐ shǒu tái hěn gān jìng.
+The sink is very clean.
+
+橱柜
+chú guì
+cupboard
+碗放在橱柜里。
+Wǎn fàng zài chú guì lǐ.
+The bowls are in the cupboard.
+
+淋浴
+lín yù
+shower
+我每天淋浴。
+Wǒ měi tiān lín yù.
+I take a shower every day.
+
+排水口
+pái shuǐ kǒu
+drain
+排水口堵住了。
+Pái shuǐ kǒu dǔ zhù le.
+The drain is clogged.
+
+肥皂
+féi zào
+soap
+请用肥皂洗手。
+Qǐng yòng féi zào xǐ shǒu.
+Please wash your hands with soap.
+
+卫生纸
+wèi shēng zhǐ
+toilet paper
+卫生纸用完了。
+Wèi shēng zhǐ yòng wán le.
+The toilet paper is used up.
+
+浴室防滑垫
+yù shì fáng huá diàn
+bathmat
+浴室防滑垫是蓝色的。
+Yù shì fáng huá diàn shì lán sè de.
+The bathmat is blue.
+
+浴缸
+yù gāng
+bathtub
+浴缸很大。
+Yù gāng hěn dà.
+The bathtub is very big.
+
+垃圾桶
+lā jī tǒng
+garbage can
+垃圾桶满了。
+Lā jī tǒng mǎn le.
+The garbage can is full.
+
+毛巾
+máo jīn
+towel
+我用毛巾擦头发。
+Wǒ yòng máo jīn cā tóu fa.
+I dry my hair with a towel.
+
+洗脸巾
+xǐ liǎn jīn
+washcloth
+洗脸巾湿了。
+Xǐ liǎn jīn shī le.
+The washcloth is wet.
+
+牙刷
+yá shuā
+toothbrush
+我买了一把新牙刷。
+Wǒ mǎi le yī bǎ xīn yá shuā.
+I bought a new toothbrush.
+
+牙膏
+yá gāo
+toothpaste
+牙膏用完了。
+Yá gāo yòng wán le.
+The toothpaste is used up.
+
+剃须刀
+tì xū dāo
+razor
+他用剃须刀刮胡子。
+Tā yòng tì xū dāo guā hú zi.
+He shaves with a razor.
+
+镜子
+jìng zi
+mirror
+镜子很干净。
+Jìng zi hěn gān jìng.
+The mirror is very clean.
+
+水龙头
+shuǐ lóng tóu
+faucet
+水龙头漏水了。
+Shuǐ lóng tóu lòu shuǐ le.
+The faucet is leaking.
+
+热水
+rè shuǐ
+hot water
+我喜欢喝热水。
+Wǒ xǐ huān hē rè shuǐ.
+I like to drink hot water.
+
+冷水
+lěng shuǐ
+cold water
+夏天我喜欢喝冷水。
+Xià tiān wǒ xǐ huān hē lěng shuǐ.
+In summer, I like to drink cold water.
+
+玻璃杯
+bō li bēi
+glass
+玻璃杯破了。
+Bō li bēi pò le.
+The glass is broken.
+
+万能清洁剂
+wàn néng qīng jié jì
+all purpose cleaner
+我用万能清洁剂擦桌子。
+Wǒ yòng wàn néng qīng jié jì cā zhuō zi.
+I use all purpose cleaner to wipe the table.
+
+抹布
+mā bù
+rag
+抹布脏了。
+Mā bù zāng le.
+The rag is dirty.
+
+水管
+shuǐ guǎn
+pipes
+水管漏水了。
+Shuǐ guǎn lòu shuǐ le.
+The pipes are leaking.
+
+洗
+xǐ
+wash
+我洗了衣服。
+Wǒ xǐ le yī fu.
+I washed the clothes.
+
+刷牙
+shuā yá
+brush teeth
+我每天刷牙两次。
+Wǒ měi tiān shuā yá liǎng cì.
+I brush my teeth twice a day.
+
+大便
+dà biàn
+poop
+狗在草地上大便。
+Gǒu zài cǎo dì shàng dà biàn.
+The dog pooped on the grass.
+
+上厕所
+shàng cè suǒ
+go to the bathroom
+我想上厕所。
+Wǒ xiǎng shàng cè suǒ.
+I want to go to the bathroom.
+
+洗澡
+xǐ zǎo
+bathe
+我每天晚上洗澡。
+Wǒ měi tiān wǎn shàng xǐ zǎo.
+I take a bath every night.
+
+刮胡子
+guā hú zi
+shave
+他每天早上刮胡子。
+Tā měi tiān zǎo shàng guā hú zi.
+He shaves every morning.
+
+冲澡
+chōng zǎo
+take a shower
+我运动后冲澡。
+Wǒ yùn dòng hòu chōng zǎo.
+I take a shower after exercising.

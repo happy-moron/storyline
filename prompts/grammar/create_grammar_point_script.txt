@@ -1,0 +1,65 @@
+# Task
+
+Create a python script that will check whether or not a chinese language sentence matches a given grammar point.
+
+# Requirements
+
+- The script should have two functions, one to parse its input JSON and another with logic to check if the sentence matches the grammar point.
+- The script does not have to be perfect in its assessment. It is appropriate for it to miss rare corner cases.
+- The logic function should have a name that matches the grammar point key with dashes turned to underscores 
+  - (e.g. "key": "hsk3-17" produces is_hsk3_17)
+- The logic function should return a boolean
+
+# Sentence Input format:
+Compact JSON format with:
+   - `t`: Token array containing:
+     - `[Text, Pinyin, POS(s), Components?]`
+   - `c`: Constituency graph in bracket notation
+
+# Sample input
+{
+"t": [
+    ["“", "“", "w"],
+    ["Jeeves", "Jeeves", "nr"],
+    ["，", "，", "w"],
+    ["我", "wǒ", "r"],
+    ["说", "shuō", "v"],
+    ["，", "，", "w"],
+    ["“", "“", "w"],
+    ["我", "wǒ", "r"],
+    ["可以", "kě yǐ", "v"],
+    ["坦白", "tǎn bái", "v"],
+    ["说", "shuō", "v"],
+    ["吗", "ma", "y"],
+    ["？", "？", "w"],
+    ["”", "”", "w"]
+    ],
+"c":"[S [NP [NR Jeeves]] [PU ，] [VP [NP [PN 我]] [VP [V 说]]] [PU ，] [CP [IP [NP [PN 我]] [VP [ADVP [ADV 可以]] [VP [ADVP [ADV 坦白]] [VP [V 说]]]]] [PU ？]]]"
+}
+
+# Grammar Point to check 
+
+{
+    "key": "hsk2-27",
+    "hsk_level": 2,
+    "grammar_point_name": "Expressing \"already\" with just \"le\"",
+    "grammar_pattern": "Subj. + Verb Phrase + 了",
+    "description": "The particle \"了\" (le) is used at the end of a sentence to indicate that an action has already been completed. It is often translated as \"already\" in English, emphasizing that something has happened.",
+    "examples": [
+    {
+        "sentence": "我吃饭了。",
+        "pinyin": "Wǒ chīfàn le.",
+        "english": "I have already eaten."
+    },
+    {
+        "sentence": "他回家了。",
+        "pinyin": "Tā huí jiā le.",
+        "english": "He has already gone home."
+    },
+    {
+        "sentence": "我们看电影了。",
+        "pinyin": "Wǒmen kàn diànyǐng le.",
+        "english": "We have already watched the movie."
+    }
+    ]
+}

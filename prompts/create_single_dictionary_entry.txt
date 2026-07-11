@@ -1,0 +1,95 @@
+#Task 
+Create a Chinese dictionary entry in JSON format for a given input word.
+
+# Output requirements
+- Only output the JSON for the dictionary entry. 
+- Don't provide any explanation. 
+- Don't use any Unicode escape sequences, use the simplified chinese characters and pinyin accent characters directly.
+
+The dictionary entry should have:
+- the word or word phrase in simplified chinese
+- the pinyin for the word
+- a definition with a list of the main meanings/senses of the word
+- For each meaning/sense, a simple example sentence (not from the input sentence) that includes the word and shows its usage with:
+    - simplified chinese sentence
+    - pinyin for the example
+    - an english translation for the example
+
+# Examples
+
+## Example One Input
+
+要
+
+## Example One Output
+
+{ 
+  "要": {
+    "pinyin": "yào",
+    "definition": [
+        {
+        "meaning": "to want; to wish",
+        "example": {
+            "chinese": "我要一杯咖啡。",
+            "pinyin": "Wǒ yào yī bēi kā fēi.",
+            "english": "I want a cup of coffee."
+        }
+        },
+        {
+        "meaning": "will; going to (future tense)",
+        "example": {
+            "chinese": "明天要下雨。",
+            "pinyin": "Míng tiān yào xià yǔ.",
+            "english": "It will rain tomorrow."
+            }
+        }
+    ]
+  }
+}
+
+## Example Two Input
+
+可能
+
+## Example Two Output
+
+{
+  "可能": {
+    "pinyin": "kě néng",
+    "definition": [
+        {
+        "meaning": "maybe; possibly",
+        "example": {
+            "chinese": "明天可能会下雨。",
+            "pinyin": "Míng tiān kě néng huì xià yǔ.",
+            "english": "It might rain tomorrow."
+        }
+        }
+    ]
+  }
+}
+
+## Example Three Input
+
+讲故事
+
+## Example Three Output
+
+{
+  "讲故事": {
+    "pinyin": "jiǎng gù shi",
+    "definition": [
+        {
+        "meaning": "to tell a story",
+        "example": {
+            "chinese": "爷爷喜欢讲故事。",
+            "pinyin": "Yé ye xǐ huān jiǎng gù shi.",
+            "english": "Grandpa likes to tell stories."
+        }
+        }
+    ]
+  }
+}
+
+# Input Word
+

@@ -1,0 +1,132 @@
+[
+    {"c":"Adjectives", "g":[
+      ["hsk3-1","Adjectives with \"-ji le\"","Adj. + 极了"],
+      ["hsk3-2","Reduplication of adjectives","Adj. + Adj."],
+      ["hsk3-3","Turning adjectives into adverbs","Adj. + 地 + Verb"]
+    ]},
+    {"c":"Adverbs", "g":[
+      ["hsk3-4","Expressing \"again\" in the past with \"you\"","又 + Verb + 了"],
+      ["hsk3-5","Expressing \"all along\" with \"yizhi\"","Subj. + 一直 + Predicate"],
+      ["hsk3-6","Expressing \"always\" with \"zongshi\"","总是 + Verb"],
+      ["hsk3-7","Expressing duration of inaction","Duration + 没 + Verb + 了"],
+      ["hsk3-8","Expressing \"finally\" with \"zhongyu\"","Subj. + 终于 + Predicate + 了"],
+      ["hsk3-9","Expressing lateness with \"cai\"","Subj. + Time + 才 + Verb"],
+      ["hsk3-10","Expressing \"nearly\" with \"jihu\"","Subj. + 几乎 + Verb"],
+      ["hsk3-11","Expressing \"only\" with \"zhi\"","只 + Verb"],
+      ["hsk3-12","Sequencing with \"xian\" and \"zai\"","先⋯⋯ ，再⋯⋯"],
+      ["hsk3-13","Simultaneous tasks with \"yibian\"","一边 + Verb 1 (，) 一边 + Verb 2"],
+      ["hsk3-14","Using \"always\" as a complaint with \"laoshi\"","Subj. + 老 (是 ) + Verb"],
+      ["hsk3-15","Using \"cai\" for small numbers","才 + Number + Measure Word + Noun"]
+    ]},
+    {"c":"Adverbs with Adjectives", "g":[
+      ["hsk3-16","Adjectives with \"name\" and \"zheme\"","那么 / 这么 + Adj."],
+      ["hsk3-17","Basic comparisons with \"yiyang\"","Noun 1 + 跟 / 和 + Noun 2 + 一样 + Adj."],
+      ["hsk3-18","Expressing \"both A and B\" with \"you\"","又⋯⋯ 又⋯⋯"],
+      ["hsk3-19","Expressing \"rather\" with \"bijiao\"","Subj. + 比较 + Adj."],
+      ["hsk3-20","Intensifying with \"duo\"","Subj. + 多 + Adj."],
+      ["hsk3-21","Modifying nouns with adjective + \"de\"","Adj. + 的 + Noun"]
+    ]},
+    {"c":"Conjunctions", "g":[
+      ["hsk3-22","Expressing \"or\" in statements","⋯⋯或者⋯⋯"],
+      ["hsk3-23","Expressing \"then…\" with \"name\"","那么⋯⋯"],
+      ["hsk3-24","Expressing \"with\" with \"gen\"","跟⋯⋯ + Verb"],
+      ["hsk3-25","Offering choices with \"haishi\"","A + 还是 + B ?"]
+    ]},
+    {"c":"Nouns", "g":[
+      ["hsk3-26","Before a specific time with \"yiqian\"","Time / Verb + 以前"],
+      ["hsk3-27","Expressing \"before\" in general with \"yiqian\"","以前，⋯⋯"],
+      ["hsk3-28","Expressing \"just now\" with \"gangcai\"","刚才 + Verb"],
+      ["hsk3-29","Expressing \"when\" with \"shi\"","Time + 时"],
+      ["hsk3-30","In the future in general with \"yihou\"","以后，⋯⋯"],
+      ["hsk3-31","Sequencing past events with \"houlai\"","⋯⋯ ，后来 ⋯⋯"]
+    ]},
+    {"c":"Numbers", "g":[
+      ["hsk3-32","Approximating with sequential numbers","Number 1 + Number 2"],
+      ["hsk3-33","Big numbers in Chinese","Number + 万 / 亿"],
+      ["hsk3-34","Structure of times (advanced)","Number 1 + 点(钟) + Number 2 + 分"],
+      ["hsk3-35","Structure of times (basic)","Number + 点(钟)"]
+    ]},
+    {"c":"Particles", "g":[
+      ["hsk3-36","Aspect particle \"zhe\"","Verb + 着"],
+      ["hsk3-37","Change of state with \"le\"","⋯⋯了"],
+      ["hsk3-38","Questions with \"ne\"","⋯⋯呢 ?"],
+      ["hsk3-39","Structural particle \"de\"","的 / 得 / 地"]
+    ]},
+    {"c":"Prepositions", "g":[
+      ["hsk3-40","Expressing \"about\" with \"guanyu\"","关于 + Obj. ，⋯⋯"],
+      ["hsk3-41","Expressing \"all the way until\" with \"zhidao\"","直到 + Time / Event ，Subj. + 才 ⋯⋯"],
+      ["hsk3-42","Expressing \"towards\" with \"xiang\"","向 + Direction / Person + Verb"]
+    ]},
+    {"c":"Verbs", "g":[
+      ["hsk3-43","Appearance with \"kanqilai\"","看起来⋯⋯"],
+      ["hsk3-44","Basic comparisons with \"meiyou\"","Noun 1 + 没(有) + Noun 2 + Adj."],
+      ["hsk3-45","Causative verbs","Subj. + 让 / 叫 / 请 / 使 + Person + Predicate"],
+      ["hsk3-46","Expressing \"through\" with \"jingguo\"","经过 + Event / Time ，⋯⋯"]
+    ]},
+    {"c":"Auxiliary verbs", "g":[
+      ["hsk3-47","Expressing \"should\" with \"yinggai\"","应该 / 该 + Verb"]
+    ]},
+    {"c":"Verb phrases", "g":[
+      ["hsk3-48","Expressing \"difficult\" with \"nan\"","难 + Verb"],
+      ["hsk3-49","Expressing duration with \"le\"","Verb + 了 + Duration"],
+      ["hsk3-50","Expressing ongoing duration with double \"le\"","Verb + 了 + Duration + 了"],
+      ["hsk3-51","Inability with \"mei banfa\"","没办法 + Verb"],
+      ["hsk3-52","Reduplication of verbs","Verb + Verb"],
+      ["hsk3-53","Special verbs with \"hen\"","很 + Verb"]
+    ]},
+    {"c":"Complements", "g":[
+      ["hsk3-54","Direction complement","Verb (+ Direction) + 来 / 去"],
+      ["hsk3-55","Potential complement","Verb + 得 / 不 + Complement"],
+      ["hsk3-56","Result complements","Verb + 好 / 完 / 错"],
+      ["hsk3-57","Result complement \"-xiaqu\"","Verb + 下去"]
+    ]},
+    {"c":"Conditional Statements", "g":[
+      ["hsk3-58","Expressing \"as long as\" with \"zhiyao\"","只要⋯⋯，就⋯⋯"],
+      ["hsk3-59","Expressing \"only after\" with \"cai\"","⋯⋯，才⋯⋯"],
+      ["hsk3-60","Expressing \"only if\" with \"zhiyou\"","只有⋯⋯，才⋯⋯"]
+    ]},
+    {"c":"Noun Phrases", "g":[
+      ["hsk3-61","Using \"youde\" to mean \"some\"","有的 + Noun"]
+    ]},
+    {"c":"Numbers and Measure Words", "g":[
+      ["hsk3-62","Expressing \"half\" with \"ban\"","Number + Measure Word + 半 + Noun"]
+    ]},
+    {"c":"Sentence Patterns", "g":[
+      ["hsk3-63","Expressing \"not even one\"","一 + Measure Word + (Noun) + 也 / 都 + 不 / 没 + Verb"],
+      ["hsk3-64","Expressing \"the more... the more...\" with \"yue… yue…\"","Subj.＋越＋Verb＋越 + Adj. / Verb"],
+      ["hsk3-65","Using \"ba\" sentences","Subj. + 把 + Obj.+ Verb Phrase"],
+      ["hsk3-66","Using \"bei\" sentences","Subj. + 被 + Doer + Verb Phrase"]
+    ]},
+    {"c":"Basic/Simple Sentence Patterns", "g":[
+      ["hsk3-67","Alternative existential sentences","Place + Verb + 着 + Noun Phrase"],
+      ["hsk3-68","Expressing \"as one likes\" with \"jiu\"","想 + Question Word + 就 + Question Word"],
+      ["hsk3-69","Expressing \"every\" with question words","Question Word + 都 + Predicate"],
+      ["hsk3-70","Expressing \"more and more\" with \"yuelaiyue\"","Subj. + 越来越 + Adj. + 了"],
+      ["hsk3-71","Expressing purpose with \"weile\"","为了 + Purpose + Verb"],
+      ["hsk3-72","Expressing \"some\" with question words","在哪儿 / 谁 / 什么 / 什么时候"]
+    ]},
+    {"c":"Comparison Patterns", "g":[
+      ["hsk3-73","Expressing comparable degree with \"you\"","Noun 1 有 Noun 2 + Adj. + 吗？"],
+      ["hsk3-74","Expressing \"compared with\" using \"gen\"","跟 + Noun 1 + 比 (起来) ，Noun 2⋯⋯"],
+      ["hsk3-75","Expressing \"even more\" with \"geng\" or \"hai\"","Noun 1 + 比 + Noun 2 + 更 / 还 + Adj."],
+      ["hsk3-76","Expressing \"much more\" in comparisons","Noun 1 + 比 + Noun 2 + Adj. + 多了"]
+    ]},
+    {"c":"Complex Sentence Patterns", "g":[
+      ["hsk3-77","Expressing \"except\" and \"in addition\" with \"chule… yiwai\"","除了 ⋯⋯ (+ 以外) ，Subj. + 都 / 也 / 还 ⋯⋯"],
+      ["hsk3-78","Expressing \"if... then...\" with \"ruguo... jiu...\"","如果 ⋯⋯ ，就 ⋯⋯"],
+      ["hsk3-79","Expressing \"if\" with \"ruguo... dehua\"","如果⋯⋯ (的话) ，(就) ⋯⋯"],
+      ["hsk3-80","Expressing \"not only... but also\" with \"budan... erqie...\"","不但⋯⋯，而且⋯⋯"]
+    ]},
+    {"c":"Adverbs", "g":[
+      ["hsk3-81","Comparing \"cai\" and \"jiu\"","才 vs 就"],
+      ["hsk3-82","Comparing \"gang\" and \"gangcai\"","刚 vs. 刚才"],
+      ["hsk3-83","Comparing \"youdian\" and \"yidian\"","有点 vs. 一点"],
+      ["hsk3-84","Comparing \"zai\" and \"you\"","再 vs 又"]
+    ]},
+    {"c":"Conjunctions", "g":[
+      ["hsk3-85","Comparing \"haishi\" and \"huozhe\"","还是 vs. 或者"]
+    ]},
+    {"c":"Time Words", "g":[
+      ["hsk3-86","Comparing \"yihou\" \"ranhou\" \"houlai\"","以后 vs. 然后 vs. 后来"]
+    ]}
+  ]

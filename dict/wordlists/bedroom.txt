@@ -1,0 +1,41 @@
+bed
+pillow
+blanket
+sheet
+mattress
+wardrobe
+dresser
+mirror
+nightstand
+lamp
+alarm clock
+hanger
+closet
+drawer
+laundry
+hamper
+rug
+curtain
+window
+photo frame
+diary
+book
+toy
+stuffed animal
+jewelry
+slippers
+pajamas
+light switch
+fan
+pillowcase
+
+sleep
+rest
+change
+organize
+fold
+hang
+wake up
+make (the bed)
+read
+dream

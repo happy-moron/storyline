@@ -1,0 +1,123 @@
+# Task
+Generate a python script that will check a list of tokenized chinese sentences (simplified characters, not traditional) against a dictionary file and update the tokens with their dictionary keys if there is a match.
+
+# Requirements
+
+1. No support for tradiational characters is required anywhere. Just simplified.
+2. If there is no dictionary match, update the token array with an empty string ""
+3. Assume a dictionary key in the format of <simplified>_<pinyin_with_spaces_removed>
+4. The dictionary is broken up into sub-arrays based on length (number of characters)
+5. The dictionary sub-arrays are sorted based on frequency (descending)
+6. Dictionary entries are arrays of [simplified, pinyin, frequency, pos, meanings, classifiers, hsk_level]
+   - multi-valued attributes (e.g. pos, meanings, classifiers) are comma-delimited strings
+4. Match valid POS only
+5. If there is ambiguity, prefer dictionary entries with higher frequency
+6. The input should be all json files in a specified (arg to script) directory matching a naming convention of <prefix>_<sequenceNumber>_tokenized.json where the prefix can also be set as an arg.
+   - The default source directory is "books/wodehouse/json/tokenized"
+7. The output should be in the format of <prefix>_<sequenceNumber>_annotated.json
+   - The default output directory is "books/wodehouse/json/annotated"
+8. The default dictionary file location is available in "dict/hsk.json"
+## Input
+
+1. Compact JSON format with:
+   - `i`: Original text index
+   - `t`: Token array containing:
+     - `[Text, Pinyin, POS(s), Components?]`
+
+### Sample Input Sentences 
+[
+    {
+      "i": "0",
+      "t": [
+        ["“", "“", "w"],
+        ["Jeeves", "Jeeves", "x"],
+        ["，", "，", "w"],
+        ["我", "wǒ", "r"],
+        ["说", "shuō", "v"],
+        ["，", "，", "w"],
+        ["我", "wǒ", "r"],
+        ["可以", "kě yǐ", "v"],
+        ["坦白", "tǎn bái", "a"],
+        ["地", "de", "u"],
+        ["说", "shuō", "v"],
+        ["吗", "ma", "y"],
+        ["？", "？", "w"],
+        ["”", "”", "w"]
+      ]
+    },
+    {
+      "i": "1",
+      "t": [
+        ["“", "“", "w"],
+        ["当然", "dāng rán", "d"],
+        ["，", "，", "w"],
+        ["先生", "xiān shēng", "n"],
+        ["。", "。", "w"],
+        ["”", "”", "w"]
+      ]
+    }]
+
+## Output
+
+1. Compact JSON format with:
+   - `i`: Original text index
+   - `t`: Token array containing:
+     - `[Text, Pinyin, POS(s), Components?, Dictionary Key]`
+
+### Sample Output Sentences 
+[
+    {
+      "i": "0",
+      "t": [
+        ["“", "“", "w",""],
+        ["Jeeves", "Jeeves", "x",""],
+        ["，", "，", "w",""],
+        ["我", "wǒ", "r", "我_wǒ"],
+        ["说", "shuō", "v","说_shuō"],
+        ["，", "，", "w",""],
+        ["我", "wǒ", "r","我_wǒ",""],
+        ["可以", "kě yǐ", "v","可以_kěyǐ"],
+        ["坦白", "tǎn bái", "a","坦白_tǎnbái"],
+        ["地", "de", "u","地_de"],
+        ["说", "shuō", "v","说_shuō"],
+        ["吗", "ma", "y","吗_ma"],
+        ["？", "？", "w",""],
+        ["”", "”", "w",""]
+      ]
+    },
+    {
+      "i": "1",
+      "t": [
+        ["“", "“", "w"],
+        ["当然", "dāng rán", "d",""],
+        ["，", "，", "w"],
+        ["先生", "xiān shēng", "n","先生_xiānshēng"],
+        ["。", "。", "w"],
+        ["”", "”", "w"]
+      ]
+    }]
+
+# Sample Dictionary Format
+{
+  "1": [
+    [
+      "涝",
+      "lào",
+      53537,
+      "v",
+      "flooded",
+      "",
+      7
+    ], ... ] 
+  "2": [
+    [
+      "短信",
+      "duǎn xìn",
+      1000000,
+      "",
+      "text message,SMS",
+      "",
+      2
+    ], ... ]
+  "3": ...
+}

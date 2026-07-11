@@ -1,0 +1,86 @@
+[
+    {"c":"Adverbs", "g":[
+      ["hsk1-1","Expressing actions in progress with \"zai\"","(正) 在 + Verb"],
+      ["hsk1-2","Negation of \"you\" with \"mei\"","没 + 有"],
+      ["hsk1-3","Standard negation with \"bu\"","不 + Verb / Adj."],
+      ["hsk1-4","The \"all\" adverb \"dou\"","都 + Verb / Adj."],
+      ["hsk1-5","The \"also\" adverb \"ye\"","也 + Verb / Adj."]
+    ]},
+    {"c":"Adverbs with Adjectives", "g":[
+      ["hsk1-6","Asking about degree with \"duo\"","Subj. + 多 + Adj. ?"],
+      ["hsk1-7","Expressing \"not very\" with \"bu tai\"","不太 + Adj."]
+    ]},
+    {"c":"Conjunctions", "g":[
+      ["hsk1-8","Expressing \"and\" with \"he\"","Noun 1 + 和 + Noun 2"]
+    ]},
+    {"c":"Nouns", "g":[
+      ["hsk1-9","After a specific time with \"yihou\"","Time / Verb + 以后"],
+      ["hsk1-10","Before a specific time with \"yiqian\"","Time / Verb + 以前"],
+      ["hsk1-11","Time words and word order","Subj. + Time⋯⋯ / Time + Subj.⋯⋯"]
+    ]},
+    {"c":"Numbers", "g":[
+      ["hsk1-12","Age with \"sui\"","Subj. + Number + 岁"],
+      ["hsk1-13","Measure word \"ge\"","Number + 个 + Noun"],
+      ["hsk1-14","Structure of dates","Number + 年 + Number + 月 + Number + 日"],
+      ["hsk1-15","Structure of days of the week","星期 + Number"],
+      ["hsk1-16","Structure of numbers","Number + Unit"],
+      ["hsk1-17","Structure of times (advanced)","Number 1 + 点(钟) + Number 2 + 分"],
+      ["hsk1-18","Structure of times (basic)","Number + 点(钟)"]
+    ]},
+    {"c":"Particles", "g":[
+      ["hsk1-19","Expressing close possession without \"de\"","Pronoun + Noun"],
+      ["hsk1-20","Expressing completion with \"le\"","Subj. + Verb + 了 + Obj."],
+      ["hsk1-21","Expressing \"not anymore\" with \"le\"","不 / 没(有) + Verb Phrase + 了"],
+      ["hsk1-22","Expressing \"now\" with \"le\"","New Situation + 了"],
+      ["hsk1-23","Expressing possession with \"de\"","Noun 1 + 的 + Noun 2"],
+      ["hsk1-24","Questions with \"ne\"","⋯⋯呢 ?"],
+      ["hsk1-25","Sentence-final interjection \"a\"","⋯⋯啊"],
+      ["hsk1-26","Softening speech with \"ba\"","⋯⋯吧"],
+      ["hsk1-27","Suggestions with \"ba\"","Command + 吧"]
+    ]},
+    {"c":"Verbs", "g":[
+      ["hsk1-28","Directional verbs \"lai\" and \"qu\"","来 / 去 + Place"],
+      ["hsk1-29","Expressing existence in a place with \"zai\"","在 + Place"],
+      ["hsk1-30","Expressing existence with \"you\"","Place + 有 + Obj."],
+      ["hsk1-31","Expressing possession with \"you\"","Subj. + 有 + Obj."],
+      ["hsk1-32","Polite requests with \"qing\"","请 + Verb"],
+      ["hsk1-33","Using the verb \"jiao\"","叫 + Name"],
+      ["hsk1-34","Using the verb \"qu\"","去 + Place"]
+    ]},
+    {"c":"Auxiliary verbs", "g":[
+      ["hsk1-35","Expressing ability or possibility with \"neng\"","能 + Verb"],
+      ["hsk1-36","Expressing a learned skill with \"hui\"","会 + Verb"],
+      ["hsk1-37","Expressing \"will\" with \"hui\"","会 + Verb"],
+      ["hsk1-38","Expressing \"would like to\" with \"xiang\"","想 + Verb"]
+    ]},
+    {"c":"Verb phrases", "g":[
+      ["hsk1-39","How to do something with \"zenme\"","怎么 + Verb ?"],
+      ["hsk1-40","Indicating location with \"zai\" before verbs","Subj. + 在 + Place + Verb"],
+      ["hsk1-41","Negation of past actions with \"meiyou\"","没有 + Verb"]
+    ]},
+    {"c":"Basics", "g":[
+      ["hsk1-42","Basic sentence order","Subj. + Verb (+ Obj.)"],
+      ["hsk1-43","Connecting nouns with \"shi\"","A + 是 + B"],
+      ["hsk1-44","Expressing \"excessively\" with \"tai\"","太 + Adj. + 了"],
+      ["hsk1-45","Simple \"noun + adjective\" sentences","Noun + 很 + Adj."]
+    ]},
+    {"c":"Noun Phrases", "g":[
+      ["hsk1-46","Expressing \"some\" with \"yixie\"","一些 + Noun"]
+    ]},
+    {"c":"Numbers and Measure Words", "g":[
+      ["hsk1-47","Counting money","Number + 块 / 元 (+ Number + 毛 / 角) (+ 钱)"],
+      ["hsk1-48","Measure words in quantity questions","几 + Measure Word (+ Noun) ?"]
+    ]},
+    {"c":"Question Forms", "g":[
+      ["hsk1-49","Asking how something is with \"zenmeyang\"","⋯⋯怎么样？"],
+      ["hsk1-50","Placement of question words","什么 / 什么时候 / 谁 / 哪儿 / 为什么 / 怎么"],
+      ["hsk1-51","Questions with \"le ma\"","Verb + 了 + 吗？"],
+      ["hsk1-52","Yes-no questions with \"ma\"","⋯⋯吗？"]
+    ]},
+    {"c":"Sentence Patterns", "g":[
+      ["hsk1-53","The \"shi... de\" construction for emphasizing details","是⋯⋯ 的"]
+    ]},
+    {"c":"Comparisons of Similar Grammar Points", "g":[
+      ["hsk1-54","Comparing \"bu\" and \"mei\"","不 vs 没"]
+    ]}
+  ]

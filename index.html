@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinese Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Tiered selection menu -->
+    <div class="tiered-menu" id="tieredMenu">
+        <select id="authorSelect" disabled>
+            <option value="">Select Author</option>
+        </select>
+
+        <select id="bookSelect" disabled>
+            <option value="">Select Book</option>
+        </select>
+        
+        <input type="number" id="chapterInput" placeholder="Enter Chapter Number" min="1" />
+    </div>
+    <button id="toggleMenuBtn" style="display: none;">☰</button>
+
+    <div class="content" id="content"></div>
+    <div class="audio-controls">
+        <button id="prevChapterBtn">⏮️ Chapter</button>
+        <button id="prevBtn">⏮️</button>
+        <button id="playPauseBtn">▶️</button>
+        <button id="stopBtn">⏹️</button>
+        <button id="nextBtn">⏭️</button>
+        <button id="nextChapterBtn">Chapter ⏭️</button>
+        <button id="englishBtn">🇬🇧</button>
+        <button id="speedBtn">1x</button>
+    </div>
+
+    <script>
+        // Function to toggle the tiered menu visibility
+        function toggleTieredMenu() {
+            const tieredMenu = document.getElementById('tieredMenu');
+            const toggleMenuBtn = document.getElementById('toggleMenuBtn');
+            tieredMenu.classList.toggle('hidden');
+            toggleMenuBtn.style.display = tieredMenu.classList.contains('hidden') ? 'block' : 'none';
+        }
+
+        // Add event listener to the content area to hide the tiered menu
+        document.getElementById('content').addEventListener('click', () => {
+            const tieredMenu = document.getElementById('tieredMenu');
+            const toggleMenuBtn = document.getElementById('toggleMenuBtn');
+            if (!tieredMenu.classList.contains('hidden')) {
+                tieredMenu.classList.add('hidden');
+                toggleMenuBtn.style.display = 'block';
+            }
+        });
+
+        // Add event listener to the toggle button
+        document.getElementById('toggleMenuBtn').addEventListener('click', (event) => {
+            toggleTieredMenu();
+            event.stopPropagation(); // Prevent the content click event from firing
+        });
+
+        // State management
+        let currentState = {
+            authors: [],
+            books: [],
+            chapters: [],
+            selectedAuthor: null,
+            selectedBook: null,
+            selectedChapter: null
+        };
+
+        // Initialize app
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                // Fetch initial list of authors
+                const authors = ["genai","lang","kipling","wodehouse","stevenson", "macdonald","peacock","tolstoy","ruskin"]
+                currentState.authors = authors;
+                populateAuthors(authors);
+            } catch (error) {
+                console.error('Failed to load authors:', error);
+            }
+        });
+        loadDictionary();
+
+        // Populate author dropdown
+        function populateAuthors(authors) {
+            const select = document.getElementById('authorSelect');
+            select.innerHTML = '<option value="">Select Author</option>';
+            authors.forEach(author => {
+                const option = document.createElement('option');
+                option.value = author;
+                option.textContent = author;
+                select.appendChild(option);
+            });
+            select.disabled = false;
+        }
+
+        // Author selection handler
+        document.getElementById('authorSelect').addEventListener('change', async (e) => {
+            const author = e.target.value;
+            if (!author) return;
+
+            try {
+                const authorBooks = {
+                    "genai": ["thomas-buys-a-car"],
+                    "lang": ["the-blue-fairy-book"],
+                    "stevenson": ["the-black-arrow"],
+                    "kipling": ["stalky"],
+                    "wodehouse": ["right-ho-jeeves"],
+                    "tolstoy": ["where-love-is-there-is-God-also","how-much-land-does-a-man-need"],
+                    "macdonald": ["the-princess-and-the-goblin", "the-princess-and-curdie"],
+                    "peacock": ["boring-thomas-and-the-milk", "boring-thomas-fixes-a-toilet"],
+                    "ruskin": ["the-king-of-the-golden-river"]
+                };
+                const books = authorBooks[author] || [];
+                currentState.books = books;
+                populateBooks(books, author);
+                document.getElementById('bookSelect').disabled = false;
+                currentState.selectedAuthor = author;
+            } catch (error) {
+                console.error('Failed to load books:', error);
+            }
+        });
+
+        // Populate book dropdown
+        function populateBooks(books, author) {
+            const select = document.getElementById('bookSelect');
+            select.innerHTML = '<option value="">Select Book</option>';
+            books.forEach(book => {
+                const option = document.createElement('option');
+                option.value = book;
+                option.textContent = book;
+                select.appendChild(option);
+            });
+            select.disabled = false;
+        }
+
+        // Book selection handler
+        document.getElementById('bookSelect').addEventListener('change', async (e) => {
+            const book = e.target.value;
+            if (!book) return;
+
+            try {
+                currentState.chapters = [];
+                currentState.selectedBook = book;
+                // Automatically load first chapter when book is selected
+                document.getElementById('chapterInput').value = 1;
+                loadChapter(1);
+            } catch (error) {
+                console.error('Failed to load chapters:', error);
+            }
+        });
+
+        // Chapter selection handler
+        document.getElementById('chapterInput').addEventListener('change', async (e) => {
+            const chapterNumber = parseInt(e.target.value);
+            if (!chapterNumber || chapterNumber < 1) return;
+            loadChapter(chapterNumber);
+        });
+
+        let loadingChapter = false;
+        async function loadChapter(chapterNumber) {
+            if (loadingChapter) return;
+            loadingChapter = true;
+            const prefix = bookPrefixes[currentState.selectedBook] || currentState.selectedBook;
+
+            try {
+                const tokenizedFilePath = `books/${currentState.selectedAuthor}/${currentState.selectedBook}/pipe/tokenized/${prefix}_${chapterNumber}.txt`;
+                const sourceFilePath = `books/${currentState.selectedAuthor}/${currentState.selectedBook}/pipe/source/${prefix}_${chapterNumber}.txt`;
+
+                const tokenizedText = await fetch(`/${tokenizedFilePath}`).then(r => r.text());
+                const sourceText = await fetch(`/${sourceFilePath}`).then(r => r.text());
+
+                const tokenizedContent = parseTokenizedPipe(tokenizedText);
+                const sourceContent = parseSourcePipe(sourceText);
+
+                currentState.selectedChapter = chapterNumber;
+                loadContent(tokenizedContent, sourceContent);
+                applyInitialEnglishVisibility(); // Apply visibility after loading content
+            } catch (error) {
+                console.error('Failed to load chapter:', error);
+            } finally {
+                loadingChapter = false;
+            }
+        }
+
+        const bookPrefixes = {
+            "stalky": "stalky-and-co",
+            "the-blue-fairy-book": "the-blue-fairy-book",
+            "right-ho-jeeves": "right-ho-jeeves",
+            "the-black-arrow": "the-black-arrow",
+            "the-princess-and-the-goblin": "the-princess-and-the-goblin",
+            "the-princess-and-curdie": "the-princess-and-curdie",
+            "where-love-is-there-is-God-also": "where-love-is-there-is-God-also",
+            "the-king-of-the-golden-river": "the-king-of-the-golden-river",
+            "thomas-buys-a-car": "thomas-buys-a-car",
+            "boring-thomas-and-the-milk": "boring-thomas-and-the-milk",
+            "boring-thomas-fixes-a-toilet": "boring-thomas-fixes-a-toilet",
+            "how-much-land-does-a-man-need": "how-much-land-does-a-man-need"
+        };
+
+        // Pipe format parsers (compact tokenized & source)
+        function parseSourcePipe(text) {
+            return text.trim().split('\n')
+                .filter(line => line.includes('|||'))
+                .map(line => {
+                    const parts = line.split('|||', 2);
+                    return {chinese: parts[0].trim(), english: parts[1].trim()};
+                });
+        }
+
+        function parseTokenizedPipe(text) {
+            // Auto-detect: compact format uses || as token separator
+            if (text.includes('||')) return parseTokenizedCompact(text);
+            return parseTokenizedLegacy(text);
+        }
+
+        function parseTokenizedCompact(text) {
+            return text.trim().split('\n')
+                .filter(line => line.trim())
+                .map(line => {
+                    const tokens = line.split('||').map(tokenStr => {
+                        const parts = tokenStr.split('|');
+                        if (parts.length === 2) {
+                            return [parts[0], parts[0], parts[1]];
+                        }
+                        const token = [parts[0], parts[1], parts[2]];
+                        if (parts.length > 3) {
+                            const comps = parts.slice(3)
+                                .filter(c => c.includes('~'))
+                                .map(c => {
+                                    const [ct, cp] = c.split('~', 2);
+                                    return [ct, cp];
+                                });
+                            if (comps.length) token.push(comps);
+                        }
+                        return token;
+                    });
+                    return {t: tokens};
+                });
+        }
+
+        function parseTokenizedLegacy(text) {
+            // One token per line, blank lines between sentences (for old data)
+            const sentences = [];
+            let current = [];
+            for (const line of text.trim().split('\n')) {
+                if (!line.trim()) {
+                    if (current.length) { sentences.push({t: current}); current = []; }
+                    continue;
+                }
+                if (!line.includes('|')) continue;
+                const parts = line.split('|');
+                if (parts.length === 2) {
+                    current.push([parts[0], parts[0], parts[1]]);
+                } else if (parts.length >= 3) {
+                    const token = [parts[0], parts[1], parts[2]];
+                    if (parts.length > 3) {
+                        const comps = parts.slice(3)
+                            .filter(c => c.includes('~'))
+                            .map(c => {
+                                const [ct, cp] = c.split('~', 2);
+                                return [ct, cp];
+                            });
+                        if (comps.length) token.push(comps);
+                    }
+                    current.push(token);
+                }
+            }
+            if (current.length) sentences.push({t: current});
+            return sentences;
+        }
+
+        // Load dictionary
+        let dictionary = {};
+        async function loadDictionary() {
+            try {
+                const response = await fetch('/dict/custom_dict.json');
+                dictionary = await response.json();
+            } catch (error) {
+                console.error('Failed to load dictionary:', error);
+            }
+        }
+
+        // Create dictionary pane
+        const dictionaryPane = document.createElement('div');
+        dictionaryPane.id = 'dictionary-pane';
+        document.body.appendChild(dictionaryPane);
+
+        // Add double click handler for playing sentence audio
+        function handleTokenDoubleClick(event) {
+            // Find the sentence container
+            const sentenceDiv = event.target.closest('.sentence');
+            if (sentenceDiv) {
+                // Find the audio element in this sentence
+                const audio = sentenceDiv.querySelector('audio');
+                if (audio) {
+                    // Stop any currently playing audio
+                    if (currentAudio) {
+                        currentAudio.pause();
+                        currentAudio.currentTime = 0;
+                    }
+                    // Play this sentence's audio from the beginning
+                    audio.currentTime = 0;
+                    audio.play();
+                    currentAudio = audio;
+                    playPauseBtn.textContent = '⏸️';
+                }
+            }
+        }
+
+        // Add click handler for hiding dictionary pane when clicking on active token
+        function handleTokenClickWithDictionary(event) {
+            let token = event.target.textContent.trim();
+            let chineseToken = token;
+
+            if (event.target.className === 'token pinyin') {
+                const pinyinDiv = event.target.closest('.pinyin');
+                const chineseDiv = pinyinDiv.nextElementSibling;
+                chineseToken = chineseDiv.querySelector('.token').textContent.trim();
+            }
+
+            const entry = dictionary[chineseToken];
+            
+            // If dictionary pane is visible and we're clicking the same token again, hide it
+            if (dictionaryPane.style.display === 'block' && dictionaryPane.dataset.currentToken === chineseToken) {
+                clearDictionaryEntry();
+                event.stopPropagation(); // Prevent document click handler from immediately showing it again
+            } else {
+                // Otherwise show the dictionary entry as normal
+                if (entry) {
+                    displayDictionaryEntry(chineseToken, entry);
+                } else {
+                    clearDictionaryEntry();
+                }
+            }
+        }
+
+        // Add click handler for hiding dictionary pane when clicking elsewhere
+        document.addEventListener('click', (event) => {
+            // Check if click is outside any token and dictionary pane is visible
+            if (!event.target.classList.contains('token') && 
+                !event.target.closest('#dictionary-pane') &&
+                dictionaryPane.style.display === 'block') {
+                clearDictionaryEntry();
+            }
+        });
+
+        function displayDictionaryEntry(chineseToken, entry) {
+            console.log('displayDictionaryEntry called');
+            dictionaryPane.dataset.currentToken = chineseToken; // Store the current token
+            let tableHTML = '<table class="dictionary-table">';
+            tableHTML += `<tr><td>${chineseToken}</td></tr>`;
+
+            if (entry.pinyin) {
+                tableHTML += `<tr><td>${entry.pinyin}</td></tr>`;
+            }
+
+            if (entry.definition && Array.isArray(entry.definition)) {
+                entry.definition.forEach(def => {
+                    tableHTML += `<tr><td>${def.meaning}</td></tr>`;
+                    if (def.example) {
+                        tableHTML += `<tr><td>Chinese: ${def.example.chinese}<br>Pinyin: ${def.example.pinyin}<br>English: ${def.example.english}</td></tr>`;
+                    }
+                });
+            }
+            tableHTML += '</table>';
+            dictionaryPane.innerHTML = tableHTML;
+            dictionaryPane.style.display = 'block';
+        }
+
+        function clearDictionaryEntry() {
+            dictionaryPane.innerHTML = '';
+            dictionaryPane.style.display = 'none';
+            delete dictionaryPane.dataset.currentToken;
+        }
+        
+        function addTokenClickHandlers() {
+            console.log('addTokenClickHandlers called');
+            const tokens = document.querySelectorAll('.token');
+            tokens.forEach(token => {
+                token.addEventListener('click', handleTokenClickWithDictionary);
+                token.addEventListener('dblclick', handleTokenDoubleClick);
+            });
+        }
+
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        let currentAudio = null;
+
+        playPauseBtn.addEventListener('click', () => {
+            if (!currentAudio) {
+                currentAudio = document.querySelector('#content audio');
+            }
+            if (currentAudio) {
+                if (currentAudio.paused) {
+                    currentAudio.play();
+                    playPauseBtn.textContent = '⏸️';
+                } else {
+                    currentAudio.pause();
+                    playPauseBtn.textContent = '▶️';
+                }
+            }
+        });
+
+        const speedBtn = document.getElementById('speedBtn');
+        let playbackSpeeds = [0.5, 0.7, 0.85, 1.0];
+        let currentSpeedIndex = 3;
+
+        speedBtn.addEventListener('click', () => {
+            currentSpeedIndex = (currentSpeedIndex + 1) % playbackSpeeds.length;
+            let currentSpeed = playbackSpeeds[currentSpeedIndex];
+            speedBtn.textContent = currentSpeed + 'x';
+            if (currentAudio) {
+                const audios = document.querySelectorAll('#content audio');
+                audios.forEach(audio => {
+                    audio.playbackRate = currentSpeed;
+                });
+            }
+        });
+
+        stopBtn.addEventListener('click', () => {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                playPauseBtn.textContent = '▶️';
+            }
+        });
+
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevChapterBtn = document.getElementById('prevChapterBtn');
+        const nextChapterBtn = document.getElementById('nextChapterBtn');
+
+        prevBtn.addEventListener('click', () => {
+            if (!currentAudio) {
+                currentAudio = document.querySelector('#content audio');
+            }
+            if (currentAudio && currentAudio.id) {
+                const currentSentenceIndex = parseInt(currentAudio.id.split('-').pop());
+                const previousSentenceIndex = currentSentenceIndex - 1;
+
+                if (previousSentenceIndex >= 0) {
+                    const previousAudio = document.getElementById(`sentence-audio-${previousSentenceIndex}`);
+                    if (previousAudio) {
+                        // Pause current audio and reset to beginning
+                        currentAudio.pause();
+                        currentAudio.currentTime = 0;
+
+                        // Play the previous audio
+                        previousAudio.play();
+                        currentAudio = previousAudio;
+
+                        // Reset other audios
+                        const audios = document.querySelectorAll('#content audio');
+                        audios.forEach(audio => {
+                            if (audio !== previousAudio) {
+                                audio.pause();
+                                audio.currentTime = 0;
+                            }
+                        });
+                    }
+                }
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (!currentAudio) {
+                currentAudio = document.querySelector('#content audio');
+            }
+            if (currentAudio && currentAudio.id) {
+                const currentSentenceIndex = parseInt(currentAudio.id.split('-').pop());
+                const nextSentenceIndex = currentSentenceIndex + 1;
+                const tokenizedSentences = document.querySelectorAll('.sentence');
+
+                if (nextSentenceIndex < tokenizedSentences.length) {
+                    const nextAudio = document.getElementById(`sentence-audio-${nextSentenceIndex}`);
+                    if (nextAudio) {
+                        // Pause current audio and reset to beginning
+                        currentAudio.pause();
+                        currentAudio.currentTime = 0;
+
+                        // Play the next audio
+                        nextAudio.play();
+                        currentAudio = nextAudio;
+
+                        // Reset other audios
+                        const audios = document.querySelectorAll('#content audio');
+                        audios.forEach(audio => {
+                            if (audio !== nextAudio) {
+                                audio.pause();
+                                audio.currentTime = 0;
+                            }
+                        });
+                    }
+                }
+            }
+        });
+
+        prevChapterBtn.addEventListener('click', () => {
+            const currentChapter = parseInt(document.getElementById('chapterInput').value);
+            if (currentChapter > 1) {
+                document.getElementById('chapterInput').value = currentChapter - 1;
+                loadChapter(currentChapter - 1);
+            }
+        });
+
+        nextChapterBtn.addEventListener('click', () => {
+            const currentChapter = parseInt(document.getElementById('chapterInput').value);
+            document.getElementById('chapterInput').value = currentChapter + 1;
+            loadChapter(currentChapter + 1);
+        });
+
+        function loadContent(tokenizedSentences, sourceSentences) {
+            const contentDiv = document.getElementById('content');
+            currentAudio = null;
+            contentDiv.innerHTML = '';
+
+            for (let i = 0; i < tokenizedSentences.length; i++) {
+                const sentenceData = tokenizedSentences[i];
+                const sentence = sentenceData.t;
+                const sentenceDiv = document.createElement('div');
+                sentenceDiv.className = 'sentence';
+
+                let chineseSentence = '';
+                let pinyinSentence = '';
+
+                sentence.forEach(token => {
+                    chineseSentence += `<span class="token">${token[0]}</span>`;
+                    pinyinSentence += `<span class="token">${token[1]}</span>`;
+                });
+
+                const englishTranslation = sourceSentences[i].english;
+
+                sentenceDiv.innerHTML = `
+                    <div class="pinyin">${pinyinSentence}</div>
+                    <div class="chinese">${chineseSentence}</div>
+                    <div class="translation">${englishTranslation}</div>
+                `;
+
+                const audio = document.createElement('audio');
+                audio.id = `sentence-audio-${i}`;
+                const author = currentState.selectedAuthor;
+                const book = currentState.selectedBook;
+                const chapterNumber = currentState.selectedChapter;
+                const bookPrefix = bookPrefixes[book];
+                const sentenceNumber = i + 1;
+                audio.src = `books/${author}/${book}/audio/${bookPrefix}_${chapterNumber}_${sentenceNumber}.mp3`;
+                audio.loop = false;
+                audio.playbackRate = playbackSpeeds[currentSpeedIndex];
+
+                sentenceDiv.appendChild(audio);
+
+                audio.addEventListener('play', () => {
+                    if (currentAudio && currentAudio !== audio) {
+                        currentAudio.pause();
+                    }
+                    currentAudio = audio;
+                    playPauseBtn.textContent = '⏸️';
+                });
+
+                audio.addEventListener('pause', () => {
+                    playPauseBtn.textContent = '▶️';
+                });
+
+                audio.addEventListener('ended', () => {
+                    nextBtn.click();
+                });
+
+                contentDiv.appendChild(sentenceDiv);
+            }
+            addTokenClickHandlers();
+        }
+
+        const englishBtn = document.getElementById('englishBtn');
+        const englishVisibilityKey = 'englishTranslationsVisible';
+
+        // Load the English translations visibility state from localStorage
+        let englishTranslationsVisible = localStorage.getItem(englishVisibilityKey) === 'true';
+
+        // Function to toggle the visibility of English translations
+        function toggleEnglishTranslations() {
+            const translations = document.querySelectorAll('.translation');
+            translations.forEach(translation => {
+                translation.classList.toggle('hidden');
+            });
+
+            // Update the English translations visibility state
+            englishTranslationsVisible = !englishTranslationsVisible;
+
+            // Save the English translations visibility state to localStorage
+            localStorage.setItem(englishVisibilityKey, englishTranslationsVisible);
+        }
+
+        // Apply initial visibility state
+        function applyInitialEnglishVisibility() {
+            const translations = document.querySelectorAll('.translation');
+            translations.forEach(translation => {
+                if (englishTranslationsVisible) {
+                    translation.classList.remove('hidden');
+                } else {
+                    translation.classList.add('hidden');
+                }
+            });
+        }
+
+        englishBtn.addEventListener('click', toggleEnglishTranslations);
+    </script>
+</body>
+</html>

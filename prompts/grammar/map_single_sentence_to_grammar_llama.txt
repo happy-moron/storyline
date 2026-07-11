@@ -1,0 +1,46 @@
+# Task
+Analyze a chinese language sentence (that may have some english words or phrases) to identify which HSK grammar points it exemplifies.
+Generate a JSON array of grammar points, identified by their provided key.
+
+# Output Sample Syntax - match
+{
+    "match": "True",
+    "explanation" : "The sentence uses 在 as a verb to indicate an action in progress"
+}
+
+# Output Sample Syntax - No Match
+{
+    "match": "False",
+    "explanation" : "There is no reduplication present in the sentence"
+
+}
+
+# Grammar point
+
+{
+    "key": "hsk1-1",
+    "hsk_level": 1,
+    "grammar_point_name": "Expressing actions in progress with \"zai\"",
+    "grammar_pattern": "(正) 在 + Verb",
+    "description": "This pattern uses \"在\" (zài) to indicate that an action is currently in progress. It is often used to describe what someone is doing at the moment.",
+    "examples": [
+    {
+        "sentence": "我在吃饭。",
+        "pinyin": "Wǒ zài chīfàn.",
+        "english": "I am eating."
+    },
+    {
+        "sentence": "他在看书。",
+        "pinyin": "Tā zài kànshū.",
+        "english": "He is reading a book."
+    },
+    {
+        "sentence": "我们在学习。",
+        "pinyin": "Wǒmen zài xuéxí.",
+        "english": "We are studying."
+    }
+    ]
+},
+
+# Sentence to analyze
+

@@ -1,0 +1,67 @@
+paper
+barrel
+policeman
+box
+eggplant
+soda pop
+bottle
+plastic bag
+car tire
+glass
+metal
+engine
+ceiling
+ear
+corner
+wall
+floor
+house
+roof
+miner
+artist
+neck
+chin
+arm
+village
+key
+city
+baker
+wings
+nighttime
+traffic
+traffic light
+shovel
+leaf
+roots
+saw
+teapot
+swimming pool
+taxi
+bush
+glue
+cabbage
+onion
+jar
+comb
+radio
+parking lot
+cashier
+shopping cart
+motorcycle
+truck
+supermarket
+forest
+tree
+moon
+stairs
+gloves
+piano
+stroller
+matches
+candle
+kettle
+toilet paper
+soap
+toothpaste
+toothbrush
+

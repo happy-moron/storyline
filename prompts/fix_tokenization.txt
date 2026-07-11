@@ -1,0 +1,15 @@
+# Fix Tokenization Errors
+
+Your previous annotation contained errors in some sentences. Below are the specific sentences with errors. The "Source" text is the original Chinese input. The "Erroneous output" is your previous annotation.
+
+Fix ONLY the listed sentences. Return them in the same compact pipe-delimited format, one corrected sentence per line. Do NOT include any sentences that were already correct.
+
+## Format Rules
+- Tokens separated by ``||``, fields within a token separated by ``|``
+- Regular token: ``text|pinyin|POS`` (3 fields)
+- Compound token: ``text|pinyin|POS|comp1~pos1|comp2~pos2``
+- No punctuation tokens (punctuation already removed from input)
+- No blank lines — one corrected sentence per line
+- Provide ONLY the pipe-delimited output. Do NOT include explanations, reasoning, or other text.
+
+## Sentences to Fix

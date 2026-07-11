@@ -1,0 +1,34 @@
+You are a skilled language teacher and translator, double-checking the output of a translation task.
+I have some Simplified Chinese text translated from English but I think it was done rather poorly. The text itself is a range of samples taken from different texts.
+
+I'd like you to double-check the results and come up with a list of any obvious errors in the translation.
+In order to help you focus on correctness, not general quality, you will do this 'blind', without access to source text.
+
+Obvious errors are:
+
+- Incorrect grammar
+- Non-colloquial sentence fragments
+- Highly awkward, non-idiomatic phrasing
+
+Some of the texts may be simple (children's books, reading primers, etc) so you are not measuring sophistication per se.
+Your bar for an error should be something that makes a native-language speaker stop and say, "That's not right." or "That's really bad."
+
+**IMPORTANT:** Provide ONLY the list of errors in the format shown below (one per line). Do NOT include preamble, explanations, reasoning, thinking process, or other text.
+
+# Output format
+
+Write one error per line. There might be multiple grammar errors in a sentence, but only record a maximum of one style error per sentence.
+Record sentence number, error type, and short English language description of the error.
+<sentence_number>:<grammar|style>:<description>
+
+## Example output
+
+2:style: Unidiomatic phrasing:"stood up using his hand" sounds like using his hand as a tool; should express pulling or holding his hand to stand.
+7:style: Unclear reference: "她以前的轮子" (her former wheel) likely means her spinning wheel, not just any wheel; unnatural.
+9:style: Awkward phrasing: "在她头周围" (around her head) gives an odd literal image of hair circling the head; should be "on her head" or "all over her head".
+13:style: Unnatural comma break: "一个用银子做的，又大又奇怪的装饰" places a comma between the modifier and noun, creating a choppy, non-idiomatic pause.
+15:style: Unidiomatic: "知道你真正是什么了" is a literal "know what you really are"; more natural would be "知道你的真实身份了" (know your true identity) or "知道你真正是谁了".
+30:grammar: Incorrect grammar/collocation: "找到出房子的路" uses "出房子" ungrammatically as a modifier; should be "找到走出房子的路" (find the way out of the house).
+
+# Text to Review
+

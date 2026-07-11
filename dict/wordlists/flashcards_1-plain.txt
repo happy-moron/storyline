@@ -1,0 +1,461 @@
+纸
+zhǐ
+paper
+请给我一张纸。
+Qǐng gěi wǒ yī zhāng zhǐ.
+Please give me a piece of paper.
+
+桶
+tǒng
+barrel
+这个桶里装满了水。
+Zhè ge tǒng lǐ zhuāng mǎn le shuǐ.
+This barrel is full of water.
+
+警察
+jǐng chá
+policeman
+警察在指挥交通。
+Jǐng chá zài zhǐ huī jiāo tōng.
+The policeman is directing traffic.
+
+盒子
+hé zi
+box
+我把礼物放在盒子里。
+Wǒ bǎ lǐ wù fàng zài hé zi lǐ.
+I put the gift in the box.
+
+茄子
+qié zi
+eggplant
+妈妈做了鱼香茄子。
+Mā ma zuò le yú xiāng qié zi.
+Mom made fish-flavored eggplant.
+
+汽水
+qì shuǐ
+soda pop
+夏天我喜欢喝冰汽水。
+Xià tiān wǒ xǐ huān hē bīng qì shuǐ.
+I like to drink cold soda in the summer.
+
+瓶子
+píng zi
+bottle
+这个瓶子是空的。
+Zhè ge píng zi shì kōng de.
+This bottle is empty.
+
+塑料袋
+sù liào dài
+plastic bag
+我用塑料袋装水果。
+Wǒ yòng sù liào dài zhuāng shuǐ guǒ.
+I use a plastic bag to carry fruit.
+
+汽车轮胎
+qì chē lún tāi
+car tire
+我的汽车轮胎需要更换了。
+Wǒ de qì chē lún tāi xū yào gēng huàn le.
+My car tire needs to be replaced.
+
+玻璃
+bō li
+glass
+窗户是玻璃做的。
+Chuāng hu shì bō li zuò de.
+The window is made of glass.
+
+金属
+jīn shǔ
+metal
+这把刀是金属制成的。
+Zhè bǎ dāo shì jīn shǔ zhì chéng de.
+This knife is made of metal.
+
+引擎
+yǐn qíng
+engine
+汽车引擎需要维修。
+Qì chē yǐn qíng xū yào wéi xiū.
+The car engine needs repair.
+
+天花板
+tiān huā bǎn
+ceiling
+天花板上有盏灯。
+Tiān huā bǎn shàng yǒu zhǎn dēng.
+There is a light on the ceiling.
+
+耳朵
+ěr duo
+ear
+我的耳朵很痒。
+Wǒ de ěr duo hěn yǎng.
+My ear is very itchy.
+
+角落
+jiǎo luò
+corner
+猫躲在房间的角落。
+Māo duǒ zài fáng jiān de jiǎo luò.
+The cat is hiding in the corner of the room.
+
+墙
+qiáng
+wall
+墙上挂着一幅画。
+Qiáng shàng guà zhe yī fú huà.
+There is a painting hanging on the wall.
+
+地板
+dì bǎn
+floor
+地板很干净。
+Dì bǎn hěn gān jìng.
+The floor is very clean.
+
+房子
+fáng zi
+house
+这栋房子很漂亮。
+Zhè dòng fáng zi hěn piào liang.
+This house is very beautiful.
+
+屋顶
+wū dǐng
+roof
+屋顶是红色的。
+Wū dǐng shì hóng sè de.
+The roof is red.
+
+矿工
+kuàng gōng
+miner
+矿工在地下工作。
+Kuàng gōng zài dì xià gōng zuò.
+Miners work underground.
+
+艺术家
+yì shù jiā
+artist
+她是一位著名的艺术家。
+Tā shì yī wèi zhù míng de yì shù jiā.
+She is a famous artist.
+
+脖子
+bó zi
+neck
+我的脖子有点疼。
+Wǒ de bó zi yǒu diǎn téng.
+My neck is a little sore.
+
+下巴
+xià ba
+chin
+他用手托着下巴。
+Tā yòng shǒu tuō zhe xià ba.
+He rested his chin on his hand.
+
+手臂
+shǒu bì
+arm
+我的手臂受伤了。
+Wǒ de shǒu bì shòu shāng le.
+My arm is injured.
+
+村庄
+cūn zhuāng
+village
+这个村庄很小。
+Zhè ge cūn zhuāng hěn xiǎo.
+This village is very small.
+
+钥匙
+yào shi
+key
+我找不到钥匙了。
+Wǒ zhǎo bù dào yào shi le.
+I can't find my keys.
+
+城市
+chéng shì
+city
+台北是一个大城市。
+Tái běi shì yī gè dà chéng shì.
+Taipei is a big city.
+
+面包师
+miàn bāo shī
+baker
+面包师每天早上烤面包。
+Miàn bāo shī měi tiān zǎo shang kǎo miàn bāo.
+The baker bakes bread every morning.
+
+翅膀
+chì bǎng
+wings
+鸟儿用翅膀飞翔。
+Niǎo er yòng chì bǎng fēi xiáng.
+Birds fly with their wings.
+
+夜晚
+yè wǎn
+nighttime
+夜晚很安静。
+Yè wǎn hěn ān jìng.
+The nighttime is very quiet.
+
+交通
+jiāo tōng
+traffic
+高峰时间交通很堵。
+Gāo fēng shí jiān jiāo tōng hěn dǔ.
+Traffic is heavy during rush hour.
+
+红绿灯
+hóng lǜ dēng
+traffic light
+红灯停，绿灯行。
+Hóng dēng tíng, lǜ dēng xíng.
+Stop at red light, go at green light.
+
+铲子
+chǎn zi
+shovel
+他用铲子挖土。
+Tā yòng chǎn zi wā tǔ.
+He uses a shovel to dig soil.
+
+叶子
+yè zi
+leaf
+秋天叶子变黄了。
+Qiū tiān yè zi biàn huáng le.
+Leaves turn yellow in autumn.
+
+根
+gēn
+roots
+树的根很深。
+Shù de gēn hěn shēn.
+The tree's roots are deep.
+
+锯子
+jù zi
+saw
+木匠用锯子锯木头。
+Mù jiang yòng jù zi jù mù tou.
+The carpenter uses a saw to cut wood.
+
+茶壶
+chá hú
+teapot
+茶壶里泡着绿茶。
+Chá hú lǐ pào zhe lǜ chá.
+There is green tea brewing in the teapot.
+
+游泳池
+yóu yǒng chí
+swimming pool
+夏天我们去游泳池游泳。
+Xià tiān wǒ men qù yóu yǒng chí yóu yǒng.
+We go to the swimming pool in summer.
+
+出租车
+chū zū chē
+taxi
+我坐出租车去机场。
+Wǒ zuò chū zū chē qù jī chǎng.
+I take a taxi to the airport.
+
+灌木
+guàn mù
+bush
+院子里有灌木丛。
+Yuàn zi lǐ yǒu guàn mù cóng.
+There are bushes in the yard.
+
+胶水
+jiāo shuǐ
+glue
+我用胶水粘纸。
+Wǒ yòng jiāo shuǐ zhān zhǐ.
+I use glue to stick paper.
+
+卷心菜
+juǎn xīn cài
+cabbage
+卷心菜可以做沙拉。
+Juǎn xīn cài kě yǐ zuò shā lā.
+Cabbage can be used to make salad.
+
+洋葱
+yáng cōng
+onion
+洋葱让我的眼睛流泪。
+Yáng cōng ràng wǒ de yǎn jing liú lèi.
+Onions make my eyes water.
+
+罐子
+guàn zi
+jar
+罐子里有饼干。
+Guàn zi lǐ yǒu bǐng gān.
+There are cookies in the jar.
+
+梳子
+shū zi
+comb
+她用梳子梳头发。
+Tā yòng shū zi shū tóu fa.
+She uses a comb to brush her hair.
+
+收音机
+shōu yīn jī
+radio
+爷爷在听收音机。
+Yé ye zài tīng shōu yīn jī.
+Grandpa is listening to the radio.
+
+停车场
+tíng chē chǎng
+parking lot
+停车场里有很多车。
+Tíng chē chǎng lǐ yǒu hěn duō chē.
+There are many cars in the parking lot.
+
+收银员
+shōu yín yuán
+cashier
+收银员帮我结账。
+Shōu yín yuán bāng wǒ jié zhàng.
+The cashier helps me check out.
+
+购物车
+gòu wù chē
+shopping cart
+我把商品放进购物车。
+Wǒ bǎ shāng pǐn fàng jìn gòu wù chē.
+I put the products in the shopping cart.
+
+摩托车
+mó tuō chē
+motorcycle
+他骑摩托车上班。
+Tā qí mó tuō chē shàng bān.
+He rides a motorcycle to work.
+
+卡车
+kǎ chē
+truck
+卡车运来了货物。
+Kǎ chē yùn lái le huò wù.
+The truck delivered the goods.
+
+超市
+chāo shì
+supermarket
+我去超市买东西。
+Wǒ qù chāo shì mǎi dōng xi.
+I go to the supermarket to buy things.
+
+森林
+sēn lín
+forest
+森林里有很多树。
+Sēn lín lǐ yǒu hěn duō shù.
+There are many trees in the forest.
+
+树
+shù
+tree
+这棵树很高。
+Zhè kē shù hěn gāo.
+This tree is very tall.
+
+月亮
+yuè liang
+moon
+今晚的月亮很圆。
+Jīn wǎn de yuè liang hěn yuán.
+The moon is very round tonight.
+
+楼梯
+lóu tī
+stairs
+我走楼梯上楼。
+Wǒ zǒu lóu tī shàng lóu.
+I take the stairs to go upstairs.
+
+手套
+shǒu tào
+gloves
+冬天我戴手套。
+Dōng tiān wǒ dài shǒu tào.
+I wear gloves in winter.
+
+钢琴
+gāng qín
+piano
+她会弹钢琴。
+Tā huì tán gāng qín.
+She can play the piano.
+
+婴儿车
+yīng ér chē
+stroller
+妈妈推着婴儿车散步。
+Mā ma tuī zhe yīng ér chē sàn bù.
+Mom pushes the stroller for a walk.
+
+火柴
+huǒ chái
+matches
+他用火柴点蜡烛。
+Tā yòng huǒ chái diǎn là zhú.
+He uses matches to light the candle.
+
+蜡烛
+là zhú
+candle
+停电时我们点蜡烛。
+Tíng diàn shí wǒ men diǎn là zhú.
+We light candles during a power outage.
+
+水壶
+shuǐ hú
+kettle
+水壶里的水开了。
+Shuǐ hú lǐ de shuǐ kāi le.
+The water in the kettle is boiling.
+
+卫生纸
+wèi shēng zhǐ
+toilet paper
+卫生间需要卫生纸。
+Wèi shēng jiān xū yào wèi shēng zhǐ.
+The bathroom needs toilet paper.
+
+肥皂
+féi zào
+soap
+我用肥皂洗手。
+Wǒ yòng féi zào xǐ shǒu.
+I use soap to wash my hands.
+
+牙膏
+yá gāo
+toothpaste
+我的牙膏用完了。
+Wǒ de yá gāo yòng wán le.
+My toothpaste is used up.
+
+牙刷
+yá shuā
+toothbrush
+我每天用牙刷刷牙。
+Wǒ měi tiān yòng yá shuā shuā yá.
+I use a toothbrush to brush my teeth every day.

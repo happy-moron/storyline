@@ -1,0 +1,145 @@
+# Chinese Sentence Analysis Prompt
+
+## Task
+Analyze Simplified Chinese sentences (that may contain some English words/phrases) and produce pipe-delimited annotations with part-of-speech tags and tokenization.
+
+**IMPORTANT:** Provide ONLY the pipe-delimited output. Do NOT include explanations, reasoning, thinking process, or other text.
+
+## Requirements
+1. **Input**: List of Chinese sentences (simplified characters only with some english words) - one per line. **Punctuation has already been stripped — do NOT include it in your output.**
+2. **Output**: Compact pipe-delimited token format — one sentence per line:
+   - Tokens separated by ``||``, fields within a token separated by ``|``
+   - Each token: ``text|pinyin|POS`` (3 fields)
+   - **IMPORTANT:** No blank lines between sentences. No punctuation tokens.
+
+**Format Rules:**
+- First field: simplified Chinese text (or English word as-is)
+- Second field: pinyin — **always use spaces between syllables** (e.g., `dān xīn` NOT `dānxīn`; `bō lí` NOT `bōlí`)
+- Third field: POS tag(s) from the list below (comma-separated if multiple)
+
+## POS Tags (Use Exact Codes)
+- `a` (adjective)
+- `ad` (adjective as adverbial)
+- `ag` (adjective morpheme)
+- `b` (non-predicate adjective)
+- `c` (conjunction)
+- `d` (adverb)
+- `e` (interjection)
+- `f` (directional locality)
+- `g` (morpheme)
+- `h` (prefix)
+- `i` (idiom)
+- `j` (abbreviation)
+- `k` (suffix)
+- `l` (fixed expressions)
+- `m` (numeral)
+- `n` (common noun)
+- `nr` (personal name)
+- `ns` (place name)
+- `nt` (organization name)
+- `p` (preposition)
+- `q` (classifier)
+- `r` (pronoun)
+- `s` (space word)
+- `t` (time word)
+- `u` (auxiliary)
+- `v` (verb)
+- `x` (unclassified)
+- `y` (modal particle)
+
+## Processing Rules
+- Combine multiple POS tags with commas (e.g., "n,v")
+- Strictly use simplified characters
+- **Do NOT include punctuation or symbols in your output** — punctuation is handled separately
+- Maintain original text order — reconstructed tokens must equal the input text
+- One sentence per line — **no blank lines between sentences**
+
+## Token Segmentation Conventions
+Follow these rules to ensure consistent tokenization:
+
+1. **Resultative verb compounds** (verb + result complement): joined tokens.
+   - Example: `喝完|hē wán|v` (NOT `喝|hē|v||完|wán|a`)
+   - Example: `打碎|dǎ suì|v` (NOT `打|dǎ|v||碎|suì|a`)
+
+2. **Noun + location/direction suffix**: joined tokens.
+   - Example: `街上|jiē shàng|s` (NOT `街|jiē|n||上|shàng|f`)
+   - Example: `地上|dì shàng|s`  (NOT `地|dì|n||上|shàng|f`)
+   - Example: `心里|xīn lǐ|n` (NOT `心|xīn|n||里|lǐ|f` )
+
+3. **Lexicalized two-character words**: single token.
+   - These are words that function as a unit: `知道|zhī dào|v`, `听见|tīng jiàn|v`,
+     `睡着|shuì zháo|v`, `识字|shí zì|v`, `粗人|cū rén|n`.
+   - Do NOT split these into individual characters.
+
+4. **Directional verb compounds** (verb + directional complement like 来/去/进/出):
+   - Joined tokens. 
+   - Example: `拿起|ná qǐ|v` (NOT `拿|ná|v||起|qǐ|v`)
+   - Example: `倒进|dào jìn|v` (NOT `倒|dào|v||进|jìn|v`)
+
+5. **Numeral + classifier pairs**: separate tokens.
+   - Example: `一|yī|m||个|gè|q`, `两|liǎng|m||次|cì|q`
+   - ADJ + noun pairs are NOT automatically split — use common sense.
+
+## Sample Input
+Jeeves我说我可以坦白说吗
+当然先生
+李伟很快地跑
+啊三本书在桌子上
+这个男学生很高兴
+当然北京大学很好
+你好吗他问
+马马虎虎的成绩
+中美公司合作
+老师有五个大苹果
+我们等什么
+这个x问题
+今天星期三
+
+## Sample Output
+Jeeves|Jeeves|nr||我|wǒ|r||说|shuō|v||我|wǒ|r||可以|kě yǐ|v||坦白|tǎn bái|ad||说|shuō|v||吗|ma|y
+当然|dāng rán|d||先生|xiān shēng|n
+李伟|Lǐ Wěi|nr||很|hěn|d||快|kuài|ad||地|de|u||跑|pǎo|v
+啊|ā|e||三|sān|m||本|běn|q||书|shū|n||在|zài|p||桌子|zhuō zi|n||上|shàng|f
+这|zhè|r||个|gè|q||男|nán|b||学生|xué shēng|n||很|hěn|d||高兴|gāo xìng|a
+当然|dāng rán|d||北京大学|Běi jīng Dà xué|nt||很|hěn|d||好|hǎo|a
+你好|nǐ hǎo|l||吗|ma|y||他|tā|r||问|wèn|v
+马马虎虎|mǎ mǎ hū hū|i||的|de|u||成绩|chéng jī|n
+中|Zhōng|j||美|Měi|j||公司|gōng sī|nt||合作|hé zuò|v
+老师|lǎo shī|n||有|yǒu|v||五|wǔ|m||个|gè|q||大|dà|a||苹果|píng guǒ|n
+我们|wǒ men|r||等|děng|v||什么|shén me|r
+这|zhè|r||个|gè|q||x|x|x||问题|wèn tí|n
+今天|jīn tiān|t||星期三|xīng qī sān|t
+
+Pay special attention to the following expanded examples, which clarify distinctions between adjectives, nouns, adverbs, and morphemes:
+
+## Sample Input (Expanded for common edge cases)
+这就是我的书
+天很蓝
+蓝色很好看
+这个菜很好吃
+好吃的点心
+这只鹅很小
+他在吃饭
+他吃光了饭
+他打碎了杯子
+我喜欢游泳
+他坦白说不知道
+快跑
+等一等
+
+## Sample Output
+这|zhè|r||就|jiù|d||是|shì|v||我|wǒ|r||的|de|u||书|shū|n
+天|tiān|n||很|hěn|d||蓝|lán|a
+蓝|lán|a||色|sè|n||很|hěn|d||好|hǎo|a||看|kàn|v
+这|zhè|r||个|gè|q||菜|cài|n||很|hěn|d||好吃|hǎo chī|a
+好吃|hǎo chī|a||的|de|u||点心|diǎn xīn|n
+这|zhè|r||只|zhī|q||鹅|é|n||很|hěn|d||小|xiǎo|a
+他|tā|r||在|zài|d||吃|chī|v||饭|fàn|n
+他|tā|r||吃|chī|v||光|guāng|a||了|le|u||饭|fàn|n
+他|tā|r||打|dǎ|v||碎|suì|a||了|le|u||杯|bēi|n||子|zi|k
+我|wǒ|r||喜欢|xǐ huān|v||游|yóu|v||泳|yǒng|g
+他|tā|r||坦白|tǎn bái|ad||说|shuō|v||不|bù|d||知道|zhī dào|v
+快|kuài|ad||跑|pǎo|v
+等|děng|v||一|yī|m||等|děng|v
+
+## Your Input

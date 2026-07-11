@@ -1,0 +1,145 @@
+# Task
+
+Create a python script that will check whether or not a chinese language sentence matches a given grammar point.
+
+# Requirements
+
+- The script does not have to be perfect in its assessment. It is appropriate for it to miss rare corner cases.
+- The logic function should have a name that matches the grammar point key with dashes turned to underscores 
+  - (e.g. "key": "hsk3-17" produces is_hsk3_17)
+- The logic function should return a boolean
+- Only provide the commented function in the output
+
+# Sentence Input format:
+Compact JSON format with:
+   - `t`: Token array containing:
+     - `[Text, Pinyin, POS(s), Components?]`
+   - `c`: Constituency graph in bracket notation
+
+# Sample input
+{
+"t": [
+    ["“", "“", "w"],
+    ["Jeeves", "Jeeves", "nr"],
+    ["，", "，", "w"],
+    ["我", "wǒ", "r"],
+    ["说", "shuō", "v"],
+    ["，", "，", "w"],
+    ["“", "“", "w"],
+    ["我", "wǒ", "r"],
+    ["可以", "kě yǐ", "v"],
+    ["坦白", "tǎn bái", "v"],
+    ["说", "shuō", "v"],
+    ["吗", "ma", "y"],
+    ["？", "？", "w"],
+    ["”", "”", "w"]
+    ],
+"c":"[S [NP [NR Jeeves]] [PU ，] [VP [NP [PN 我]] [VP [V 说]]] [PU ，] [CP [IP [NP [PN 我]] [VP [ADVP [ADV 可以]] [VP [ADVP [ADV 坦白]] [VP [V 说]]]]] [PU ？]]]"
+}
+
+Assume that the constituency graph can be parsed with the following parser:
+
+def parse_constituency_bracket(s):
+    """
+    Parses a constituency graph in bracket notation into a tree structure.
+
+    Args:
+        s (str): Input string in bracket notation.
+
+    Returns:
+        dict: A tree where each node is a dictionary with:
+            - 'label': The node's label (str).
+            - 'children': List of child nodes (dict) or leaf strings (str).
+
+    Example:
+        Input: "[S [NP [NR Jeeves]]"
+        Output: {'label': 'S', 'children': [{'label': 'NP', 'children': [{'label': 'NR', 'children': ['Jeeves']}]}]}
+    """
+    def parse_node(s, index):
+        index[0] += 1  # Skip the opening '['
+        # Extract the label
+        label = []
+        while index[0] < len(s) and s[index[0]] not in (' ', ']'):
+            label.append(s[index[0]])
+            index[0] += 1
+        label = ''.join(label)
+        # Create the current node
+        node = {'label': label, 'children': []}
+        # Skip any spaces after the label
+        while index[0] < len(s) and s[index[0]] == ' ':
+            index[0] += 1
+        # Process children until closing ']' is found
+        while index[0] < len(s) and s[index[0]] != ']':
+            if s[index[0]] == '[':
+                # Recursively parse a child node
+                child = parse_node(s, index)
+                node['children'].append(child)
+            else:
+                # Parse a leaf string
+                word = []
+                while index[0] < len(s) and s[index[0]] not in (' ', ']'):
+                    word.append(s[index[0]])
+                    index[0] += 1
+                node['children'].append(''.join(word))
+            # Skip spaces after the child
+            while index[0] < len(s) and s[index[0]] == ' ':
+                index[0] += 1
+        # Skip the closing ']'
+        if index[0] < len(s) and s[index[0]] == ']':
+            index[0] += 1
+        return node
+
+    index = [0]
+    return parse_node(s, index)
+
+
+def serialize_constituency(node):
+    """
+    Serializes a constituency tree back into bracket notation.
+
+    Args:
+        node (dict or str): The root node of the tree (dict) or a leaf (str).
+
+    Returns:
+        str: The bracket notation string.
+
+    Example:
+        Input: {'label': 'S', 'children': [{'label': 'NP', 'children': [{'label': 'NR', 'children': ['Jeeves']}]}]}
+        Output: "[S [NP [NR Jeeves]]]"
+    """
+    if isinstance(node, dict):
+        child_strings = []
+        for child in node['children']:
+            child_str = serialize_constituency(child)
+            child_strings.append(child_str)
+        children_part = ' '.join(child_strings)
+        return f"[{node['label']} {children_part}]"
+    else:
+        return node
+
+# Grammar Point to check 
+
+{
+    "key": "hsk1-3",
+    "hsk_level": 1,
+    "grammar_point_name": "Standard negation with \"bu\"",
+    "grammar_pattern": "不 + Verb / Adj.",
+    "description": "This pattern uses \"不\" (bù) to negate verbs or adjectives, indicating that something is not happening or is not the case.",
+    "examples": [
+    {
+        "sentence": "我不去。",
+        "pinyin": "Wǒ bù qù.",
+        "english": "I am not going."
+    },
+    {
+        "sentence": "他不高。",
+        "pinyin": "Tā bù gāo.",
+        "english": "He is not tall."
+    },
+    {
+        "sentence": "我们不喜欢。",
+        "pinyin": "Wǒmen bù xǐhuān.",
+        "english": "We do not like it."
+    }
+    ]
+}

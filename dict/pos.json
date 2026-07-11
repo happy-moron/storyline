@@ -1,0 +1,172 @@
+{
+    "partsOfSpeech": [
+      {
+        "code": "a",
+        "meaning": "adjective"
+      },
+      {
+        "code": "ad",
+        "meaning": "adjective as adverbial"
+      },
+      {
+        "code": "ag",
+        "meaning": "adjective morpheme"
+      },
+      {
+        "code": "an",
+        "meaning": "adjective with nominal function"
+      },
+      {
+        "code": "b",
+        "meaning": "non-predicate adjective"
+      },
+      {
+        "code": "c",
+        "meaning": "conjunction"
+      },
+      {
+        "code": "d",
+        "meaning": "adverb"
+      },
+      {
+        "code": "dg",
+        "meaning": "adverb morpheme"
+      },
+      {
+        "code": "e",
+        "meaning": "interjection"
+      },
+      {
+        "code": "f",
+        "meaning": "directional locality"
+      },
+      {
+        "code": "g",
+        "meaning": "morpheme"
+      },
+      {
+        "code": "h",
+        "meaning": "prefix"
+      },
+      {
+        "code": "i",
+        "meaning": "idiom"
+      },
+      {
+        "code": "j",
+        "meaning": "abbreviation"
+      },
+      {
+        "code": "k",
+        "meaning": "suffix"
+      },
+      {
+        "code": "l",
+        "meaning": "fixed expressions"
+      },
+      {
+        "code": "m",
+        "meaning": "numeral"
+      },
+      {
+        "code": "mg",
+        "meaning": "numeric morpheme"
+      },
+      {
+        "code": "n",
+        "meaning": "common noun"
+      },
+      {
+        "code": "ng",
+        "meaning": "noun morpheme"
+      },
+      {
+        "code": "nr",
+        "meaning": "personal name"
+      },
+      {
+        "code": "ns",
+        "meaning": "place name"
+      },
+      {
+        "code": "nt",
+        "meaning": "organization name"
+      },
+      {
+        "code": "nx",
+        "meaning": "nominal character string"
+      },
+      {
+        "code": "nz",
+        "meaning": "other proper noun"
+      },
+      {
+        "code": "o",
+        "meaning": "onomatopoeia"
+      },
+      {
+        "code": "p",
+        "meaning": "preposition"
+      },
+      {
+        "code": "q",
+        "meaning": "classifier"
+      },
+      {
+        "code": "r",
+        "meaning": "pronoun"
+      },
+      {
+        "code": "rg",
+        "meaning": "pronoun morpheme"
+      },
+      {
+        "code": "s",
+        "meaning": "space word"
+      },
+      {
+        "code": "t",
+        "meaning": "time word"
+      },
+      {
+        "code": "tg",
+        "meaning": "time word morpheme"
+      },
+      {
+        "code": "u",
+        "meaning": "auxiliary"
+      },
+      {
+        "code": "v",
+        "meaning": "verb"
+      },
+      {
+        "code": "vd",
+        "meaning": "verb as adverbial"
+      },
+      {
+        "code": "vg",
+        "meaning": "verb morpheme"
+      },
+      {
+        "code": "vn",
+        "meaning": "verb with nominal function"
+      },
+      {
+        "code": "w",
+        "meaning": "symbol and non-sentential punctuation"
+      },
+      {
+        "code": "x",
+        "meaning": "unclassified items"
+      },
+      {
+        "code": "y",
+        "meaning": "modal particle"
+      },
+      {
+        "code": "z",
+        "meaning": "descriptive"
+      }
+    ]
+  }

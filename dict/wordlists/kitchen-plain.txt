@@ -1,0 +1,265 @@
+刀
+dāo
+knife
+我用刀切水果。
+Wǒ yòng dāo qiē shuǐguǒ.
+I use a knife to cut fruit.
+
+叉子
+chāzi
+fork
+请用叉子吃面条。
+Qǐng yòng chāzi chī miàntiáo.
+Please use a fork to eat noodles.
+
+勺子
+sháozi
+spoon
+她用勺子喝汤。
+Tā yòng sháozi hē tāng.
+She uses a spoon to drink soup.
+
+盘子
+pánzi
+plate
+他把菜放在盘子里。
+Tā bǎ cài fàng zài pánzi lǐ.
+He put the dishes on the plate.
+
+碗
+wǎn
+bowl
+这个碗很漂亮。
+Zhège wǎn hěn piàoliang.
+This bowl is very beautiful.
+
+杯子
+bēizi
+cup
+我的杯子里有水。
+Wǒ de bēizi lǐ yǒu shuǐ.
+There is water in my cup.
+
+玻璃杯
+bōlibēi
+glass (for drinking)
+他用玻璃杯喝果汁。
+Tā yòng bōlibēi hē guǒzhī.
+He drinks juice with a glass.
+
+锅
+guō
+pot
+妈妈用锅煮汤。
+Māma yòng guō zhǔ tāng.
+Mom uses a pot to cook soup.
+
+平底锅
+píngdǐguō
+pan
+我用平底锅煎蛋。
+Wǒ yòng píngdǐguō jiān dàn.
+I fry eggs with a pan.
+
+盖子
+gàizi
+lid
+请把盖子盖上。
+Qǐng bǎ gàizi gài shàng.
+Please put the lid on.
+
+炉子
+lúzi
+stove
+炉子上在烧水。
+Lúzi shàng zài shāo shuǐ.
+Water is boiling on the stove.
+
+烤箱
+kǎoxiāng
+oven
+她把蛋糕放进烤箱。
+Tā bǎ dàngāo fàng jìn kǎoxiāng.
+She put the cake into the oven.
+
+水槽
+shuǐcáo
+sink
+水槽里有脏盘子。
+Shuǐcáo lǐ yǒu zāng pánzi.
+There are dirty dishes in the sink.
+
+水龙头
+shuǐlóngtóu
+faucet
+请关掉水龙头。
+Qǐng guān diào shuǐlóngtóu.
+Please turn off the faucet.
+
+柜台
+guìtái
+counter
+他把钥匙放在柜台上。
+Tā bǎ yàoshi fàng zài guìtái shàng.
+He put the keys on the counter.
+
+桌子
+zhuōzi
+table
+我们在桌子上吃饭。
+Wǒmen zài zhuōzi shàng chīfàn.
+We eat at the table.
+
+椅子
+yǐzi
+chair
+请坐在椅子上。
+Qǐng zuò zài yǐzi shàng.
+Please sit on the chair.
+
+冰箱
+bīngxiāng
+refrigerator
+牛奶在冰箱里。
+Niúnǎi zài bīngxiāng lǐ.
+The milk is in the refrigerator.
+
+冷冻柜
+lěngdòngguì
+freezer
+我把冰淇淋放在冷冻柜里。
+Wǒ bǎ bīngqílín fàng zài lěngdòngguì lǐ.
+I put the ice cream in the freezer.
+
+盘子
+pánzi
+dish
+这个盘子很干净。
+Zhège pánzi hěn gānjìng.
+This dish is very clean.
+
+毛巾
+máojīn
+towel
+我用毛巾擦手。
+Wǒ yòng máojīn cā shǒu.
+I use a towel to dry my hands.
+
+海绵
+hǎimián
+sponge
+她用海绵洗碗。
+Tā yòng hǎimián xǐ wǎn.
+She washes dishes with a sponge.
+
+垃圾桶
+lājītǒng
+trash can
+请把垃圾扔进垃圾桶。
+Qǐng bǎ lājī rēng jìn lājītǒng.
+Please throw the trash into the trash can.
+
+容器
+róngqì
+container
+这个容器可以装水。
+Zhège róngqì kěyǐ zhuāng shuǐ.
+This container can hold water.
+
+切菜板
+qiēcàibǎn
+cutting board
+请在切菜板上切菜。
+Qǐng zài qiēcàibǎn shàng qiē cài.
+Please cut vegetables on the cutting board.
+
+量杯
+liángbēi
+measuring cup
+用量杯量面粉。
+Yòng liángbēi liáng miànfěn.
+Measure flour with a measuring cup.
+
+搅拌器
+jiǎobànqì
+mixer
+她用搅拌器打蛋。
+Tā yòng jiǎobànqì dǎ dàn.
+She beats eggs with a mixer.
+
+搅拌机
+jiǎobànjī
+blender
+我用搅拌机做果汁。
+Wǒ yòng jiǎobànjī zuò guǒzhī.
+I make juice with a blender.
+
+切
+qiē
+to cut
+请把苹果切成两半。
+Qǐng bǎ píngguǒ qiē chéng liǎng bàn.
+Please cut the apple in half.
+
+搅拌
+jiǎobàn
+to stir
+请搅拌一下汤。
+Qǐng jiǎobàn yīxià tāng.
+Please stir the soup.
+
+混合
+hùnhé
+to mix
+把面粉和水混合在一起。
+Bǎ miànfěn hé shuǐ hùnhé zài yīqǐ.
+Mix the flour and water together.
+
+倒
+dào
+to pour
+请把茶倒进杯子里。
+Qǐng bǎ chá dào jìn bēizi lǐ.
+Please pour the tea into the cup.
+
+洗
+xǐ
+to wash
+我要洗衣服。
+Wǒ yào xǐ yīfu.
+I want to wash clothes.
+
+擦干
+cāgān
+to dry
+请把盘子擦干。
+Qǐng bǎ pánzi cāgān.
+Please dry the dishes.
+
+煮
+zhǔ
+to cook
+妈妈在煮饭。
+Māma zài zhǔ fàn.
+Mom is cooking.
+
+烤
+kǎo
+to bake
+我喜欢烤面包。
+Wǒ xǐhuān kǎo miànbāo.
+I like to bake bread.
+
+煎
+jiān
+to fry
+他在煎鱼。
+Tā zài jiān yú.
+He is frying fish.
+
+煮
+zhǔ
+to boil
+水煮开了。
+Shuǐ zhǔ kāi le.
+The water has boiled.

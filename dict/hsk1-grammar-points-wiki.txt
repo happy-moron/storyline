@@ -1,0 +1,386 @@
+
+== Parts of Speech ==
+These following grammar points fit pretty neatly into one part of speech category.
+
+=== Adverbs ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing actions in progress with "zai"
+|(正) 在 + Verb
+|我们 正在 吃饭。
+We are eating rice now.
+|-
+|Negation of "you" with "mei"
+|没 + 有
+|我 没有 钱 。
+I don't have money.
+|-
+|Standard negation with "bu"
+|不 + Verb / Adj.
+|他们 不 是 坏 孩子。
+They are not bad children.
+|-
+|The "all" adverb "dou"
+|都 + Verb / Adj.
+|我们 都 住 在 上海。
+We all live in Shanghai.
+|-
+|The "also" adverb "ye"
+|也 + Verb / Adj.
+|昨天 很 冷，今天 也 '''很''' 冷。
+Yesterday was cold, and today is also cold.
+|}
+
+=== Adverbs with Adjectives ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Asking about degree with "duo"
+|Subj. + 多 + Adj. ?
+|他 多 高？
+How tall is he?
+|-
+|Expressing "not very" with "bu tai"
+|不太 + Adj.
+|他 不太 高兴 。我 不太 喜欢。
+He isn't very happy. I don't quite like it.
+|}
+
+=== Conjunctions ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "and" with "he"
+|Noun 1 + 和 + Noun 2
+|我 和 他 都 不 去。
+I and him didn't go.
+|}
+
+=== Nouns ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|After a specific time with "yihou"
+|Time / Verb + 以后
+|10点 以后 ，我 不 在 家。
+I won't be at home after 10 o' clock.
+|-
+|Before a specific time with "yiqian"
+|Time / Verb + 以前
+|十 点 以前，我 在 家。
+I will be at home before 10 o' clock.
+|-
+|Time words and word order
+|Subj. + Time⋯⋯ / Time + Subj.⋯⋯
+|我 明天 有 空。/ 明天 我 有 空。
+I will be free tomorrow.
+|}
+
+=== Numbers ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Age with "sui"
+|Subj. + Number + 岁
+|我 20 岁 。
+I'm 20 years old.
+|-
+|Measure word "ge"
+|Number + 个 + Noun
+|一 个 人 。
+A person.
+|-
+|Structure of dates
+|Number + 年 + Number + 月 + Number + 日
+|今天 是 2011年 11月 11日/号 。
+Today is 11th November 2011.
+|-
+|Structure of days of the week
+|星期 + Number
+|今天 星期三 。
+Today is Wednesday.
+|-
+|Structure of numbers
+|Number + Unit
+|三 百 五 十 九。
+359.
+|-
+|Structure of times (advanced)
+|Number 1 + 点(钟) + Number 2 + 分
+|现在 十一点十八分 。
+It's 11:18 now.
+|-
+|Structure of times (basic)
+|Number + 点(钟)
+|现在 十一点 。
+It's 11 o' clock now.
+|}
+
+=== Particles ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing close possession without "de"
+|Pronoun + Noun
+|我 女朋友
+my girlfriend
+|-
+|Expressing completion with "le"
+|Subj. + Verb + 了 + Obj.
+|我 吃 了 两 个 苹果。
+I ate 2 apples.
+|-
+|Expressing "not anymore" with "le"
+|不 / 没(有) + Verb Phrase + 了
+|我 不 想 吃 了 。
+I don't want to eat anymore.
+|-
+|Expressing "now" with "le"
+|New Situation + 了
+|吃饭 了！
+Time to eat!
+|-
+|Expressing possession with "de"
+|Noun 1 + 的 + Noun 2
+|我 的 老师
+my teacher
+|-
+|Questions with "ne"
+|⋯⋯呢 ?
+|我 很 好。你 呢 ?
+I'm fine. And you?
+|-
+|Sentence-final interjection "a"
+|⋯⋯啊
+|是 啊！谁 啊？
+Yep! Who?
+|-
+|Softening speech with "ba"
+|⋯⋯吧
+|这样 不 太 好 吧。
+This ain't that good.
+|-
+|Suggestions with "ba"
+|Command + 吧
+|我们 走 吧 。
+Let's go.
+|}
+
+=== Verbs ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Directional verbs "lai" and "qu"
+|来 / 去 + Place
+|我 来 上海 一 年 了。
+It's been 1 year I came to Shanghai.
+|-
+|Expressing existence in a place with "zai"
+|在 + Place
+|老师 在 上海 。
+The teacher is at Shanghai.
+|-
+|Expressing existence with "you"
+|Place + 有 + Obj.
+|我们 学校 有 很 多 学生。
+Our school has lots of students.
+|-
+|Expressing possession with "you"
+|Subj. + 有 + Obj.
+|我 有 钱。
+I have money.
+|-
+|Polite requests with "qing"
+|请 + Verb
+|请 坐 。
+Please sit.
+|-
+|Using the verb "jiao"
+|叫 + Name
+|你 叫 什么 名字 ？
+What's your name?
+|-
+|Using the verb "qu"
+|去 + Place
+|我 去 学校。
+I go to school.
+|}
+
+==== Auxiliary verbs ====
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing ability or possibility with "neng"
+|能 + Verb
+|中文 这么 难，你 能 学 好 吗？
+Chinese is tough, can you master it?
+|-
+|Expressing a learned skill with "hui"
+|会 + Verb
+|他 会 说 中文 。
+He can speak Chinese.
+|-
+|Expressing "will" with "hui"
+|会 + Verb
+|明天 你 会 来 吗？
+Are you going to come tomorrow?
+|-
+|Expressing "would like to" with "xiang"
+|想 + Verb
+|我 想 去。
+I want to go.
+|}
+
+==== Verb phrases ====
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|How to do something with "zenme"
+|怎么 + Verb ?
+|怎么 走?
+How do I reach there?
+|-
+|Indicating location with "zai" before verbs
+|Subj. + 在 + Place + Verb
+|我 在 上海 工作。
+I work at Shanghai.
+|-
+|Negation of past actions with "meiyou"
+|没有 + Verb
+|我 没有 去 酒吧。
+I didn't go to the pub.
+|}
+
+== Grammatical Structures ==
+These are grammatical structures that do not correspond to one particular part of speech.
+
+=== Basics ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Basic sentence order
+|Subj. + Verb (+ Obj.)
+|我 爱 你 。
+I love you.
+|-
+|Connecting nouns with "shi"
+|A + 是 + B
+|我 是 学生 。
+I'm a student.
+|-
+|Expressing "excessively" with "tai"
+|太 + Adj. + 了
+|太 好 了 !
+That's great!
+|-
+|Simple "noun + adjective" sentences
+|Noun + 很 + Adj.
+|我 很 好。
+I'm fine.
+|}
+
+=== Noun Phrases ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "some" with "yixie"
+|一些 + Noun
+|这里 有 一些 咖啡。
+There are some coffee here.
+|}
+
+=== Numbers and Measure Words ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Counting money
+|Number + 块 / 元 (+ Number + 毛 / 角) (+ 钱)
+|给 你 五 块 三 毛。
+Here's 5 dollars and 3 pennies.
+|-
+|Measure words in quantity questions
+|几 + Measure Word (+ Noun) ?
+|几 个 人？
+How many people?
+|}
+
+=== Question Forms ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Asking how something is with "zenmeyang"
+|⋯⋯怎么样？
+|你 最近 怎么样 ？
+How are you recently?
+|-
+|Placement of question words
+|什么 / 什么时候 / 谁 / 哪儿 / 为什么 / 怎么
+|你 是 谁 ？你 在 哪儿 ？
+Who are you? Where are you?
+|-
+|Questions with "le ma"
+|Verb + 了 + 吗？
+|你 吃饭 了 吗 ？
+Have you ate yet?
+|-
+|Yes-no questions with "ma"
+|⋯⋯吗？
+|他 是 老板 吗 ?
+Is he a boss?
+|}
+
+=== Sentence Patterns ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|The "shi... de" construction for emphasizing details
+|是⋯⋯ 的
+|你 是 怎么 来 的？
+How did you came here?
+|}
+
+== Comparisons of Similar Grammar Points ==
+What's the difference between this grammar point and that grammar point? Check here.
+
+=== Adverbs ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Comparing "bu" and "mei"
+|不 vs 没
+|我 今天 晚上 不 吃饭。昨天 晚上 我 没 吃饭。
+I won't eat dinner today. I didn't eat dinner yesterday.
+|}
+
+{{BookCat}}

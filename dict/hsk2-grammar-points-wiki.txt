@@ -1,0 +1,61 @@
+=== Adverbs ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Continuation with "hai"
+|Subj. + 还 + Verb Phrase / Adj.
+|你 还在 看 书 ？
+You are still reading?
+|-
+|Emphasis with "jiushi"
+|就是 + Verb
+|我 父母 就是 不 让 我 一个人 去 。
+My parents wouldn't let me go alone.
+|-
+|Emphasizing quantity with "dou"
+|大家 / 很多人 + 都⋯⋯
+|很 多 地方 都 有 wifi。
+There are internet in lots of places.
+|-
+|Expressing "about to" with "jiuyao"
+|还有 + Time Period + 就要 + Verb Phrase + 了
+|还有 五 天 就要 放假 了 。
+Holidays are going to start in 5 more days.
+|-
+|Expressing "again" in the future with "zai"
+|再 + Verb
+|我 下 次 再 来。
+I'll come next time.
+|-
+|Expressing "already" with "dou"
+|都 + Time + 了
+|都 九点 '''了''' ，快点 起床 ！
+It's already 9 o'clock, quickly wake up!
+|-
+|Expressing "already" with "yijing"
+|已经⋯⋯了
+|他 已经 走 了 。
+He left.
+|-
+|Expressing "and also" with "hai"
+|还 + Verb
+|她 有 一个 弟弟，还 有 一个 妹妹。
+She has a younger brother and a younger sister.
+|-
+|Expressing earliness with "jiu"
+|Subj. + Time + 就 + Verb + 了
+|我 昨晚 八 点 半 就 睡觉 '''了''' 。
+I slept at half past 8 yesterday.
+|-
+|Expressing "then" with "jiu"
+|就 + Verb Phrase
+|我们 现在 有 时间，就 去吧。
+We have the time now, so let's go.
+|-
+|Negative commands with "bie"
+|别 + Verb
+|别走。
+Don't leave.
+|}

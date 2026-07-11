@@ -1,0 +1,992 @@
+[
+    {
+      "纸": {
+        "pinyin": "zhǐ",
+        "definition": [
+          {
+            "meaning": "paper",
+            "example": {
+              "chinese": "请给我一张纸。",
+              "pinyin": "Qǐng gěi wǒ yī zhāng zhǐ.",
+              "english": "Please give me a piece of paper."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "桶": {
+        "pinyin": "tǒng",
+        "definition": [
+          {
+            "meaning": "barrel",
+            "example": {
+              "chinese": "这个桶里装满了水。",
+              "pinyin": "Zhè ge tǒng lǐ zhuāng mǎn le shuǐ.",
+              "english": "This barrel is full of water."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "警察": {
+        "pinyin": "jǐng chá",
+        "definition": [
+          {
+            "meaning": "policeman",
+            "example": {
+              "chinese": "警察在指挥交通。",
+              "pinyin": "Jǐng chá zài zhǐ huī jiāo tōng.",
+              "english": "The policeman is directing traffic."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "盒子": {
+        "pinyin": "hé zi",
+        "definition": [
+          {
+            "meaning": "box",
+            "example": {
+              "chinese": "我把礼物放在盒子里。",
+              "pinyin": "Wǒ bǎ lǐ wù fàng zài hé zi lǐ.",
+              "english": "I put the gift in the box."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "茄子": {
+        "pinyin": "qié zi",
+        "definition": [
+          {
+            "meaning": "eggplant",
+            "example": {
+              "chinese": "妈妈做了鱼香茄子。",
+              "pinyin": "Mā ma zuò le yú xiāng qié zi.",
+              "english": "Mom made fish-flavored eggplant."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "汽水": {
+        "pinyin": "qì shuǐ",
+        "definition": [
+          {
+            "meaning": "soda pop",
+            "example": {
+              "chinese": "夏天我喜欢喝冰汽水。",
+              "pinyin": "Xià tiān wǒ xǐ huān hē bīng qì shuǐ.",
+              "english": "I like to drink cold soda in the summer."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "瓶子": {
+        "pinyin": "píng zi",
+        "definition": [
+          {
+            "meaning": "bottle",
+            "example": {
+              "chinese": "这个瓶子是空的。",
+              "pinyin": "Zhè ge píng zi shì kōng de.",
+              "english": "This bottle is empty."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "塑料袋": {
+        "pinyin": "sù liào dài",
+        "definition": [
+          {
+            "meaning": "plastic bag",
+            "example": {
+              "chinese": "我用塑料袋装水果。",
+              "pinyin": "Wǒ yòng sù liào dài zhuāng shuǐ guǒ.",
+              "english": "I use a plastic bag to carry fruit."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "汽车轮胎": {
+        "pinyin": "qì chē lún tāi",
+        "definition": [
+          {
+            "meaning": "car tire",
+            "example": {
+              "chinese": "我的汽车轮胎需要更换了。",
+              "pinyin": "Wǒ de qì chē lún tāi xū yào gēng huàn le.",
+              "english": "My car tire needs to be replaced."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "玻璃": {
+        "pinyin": "bō li",
+        "definition": [
+          {
+            "meaning": "glass",
+            "example": {
+              "chinese": "窗户是玻璃做的。",
+              "pinyin": "Chuāng hu shì bō li zuò de.",
+              "english": "The window is made of glass."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "金属": {
+        "pinyin": "jīn shǔ",
+        "definition": [
+          {
+            "meaning": "metal",
+            "example": {
+              "chinese": "这把刀是金属制成的。",
+              "pinyin": "Zhè bǎ dāo shì jīn shǔ zhì chéng de.",
+              "english": "This knife is made of metal."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "引擎": {
+        "pinyin": "yǐn qíng",
+        "definition": [
+          {
+            "meaning": "engine",
+            "example": {
+              "chinese": "汽车引擎需要维修。",
+              "pinyin": "Qì chē yǐn qíng xū yào wéi xiū.",
+              "english": "The car engine needs repair."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "天花板": {
+        "pinyin": "tiān huā bǎn",
+        "definition": [
+          {
+            "meaning": "ceiling",
+            "example": {
+              "chinese": "天花板上有盏灯。",
+              "pinyin": "Tiān huā bǎn shàng yǒu zhǎn dēng.",
+              "english": "There is a light on the ceiling."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "耳朵": {
+        "pinyin": "ěr duo",
+        "definition": [
+          {
+            "meaning": "ear",
+            "example": {
+              "chinese": "我的耳朵很痒。",
+              "pinyin": "Wǒ de ěr duo hěn yǎng.",
+              "english": "My ear is very itchy."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "角落": {
+        "pinyin": "jiǎo luò",
+        "definition": [
+          {
+            "meaning": "corner",
+            "example": {
+              "chinese": "猫躲在房间的角落。",
+              "pinyin": "Māo duǒ zài fáng jiān de jiǎo luò.",
+              "english": "The cat is hiding in the corner of the room."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "墙": {
+        "pinyin": "qiáng",
+        "definition": [
+          {
+            "meaning": "wall",
+            "example": {
+              "chinese": "墙上挂着一幅画。",
+              "pinyin": "Qiáng shàng guà zhe yī fú huà.",
+              "english": "There is a painting hanging on the wall."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "地板": {
+        "pinyin": "dì bǎn",
+        "definition": [
+          {
+            "meaning": "floor",
+            "example": {
+              "chinese": "地板很干净。",
+              "pinyin": "Dì bǎn hěn gān jìng.",
+              "english": "The floor is very clean."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "房子": {
+        "pinyin": "fáng zi",
+        "definition": [
+          {
+            "meaning": "house",
+            "example": {
+              "chinese": "这栋房子很漂亮。",
+              "pinyin": "Zhè dòng fáng zi hěn piào liang.",
+              "english": "This house is very beautiful."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "屋顶": {
+        "pinyin": "wū dǐng",
+        "definition": [
+          {
+            "meaning": "roof",
+            "example": {
+              "chinese": "屋顶是红色的。",
+              "pinyin": "Wū dǐng shì hóng sè de.",
+              "english": "The roof is red."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "矿工": {
+        "pinyin": "kuàng gōng",
+        "definition": [
+          {
+            "meaning": "miner",
+            "example": {
+              "chinese": "矿工在地下工作。",
+              "pinyin": "Kuàng gōng zài dì xià gōng zuò.",
+              "english": "Miners work underground."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "艺术家": {
+        "pinyin": "yì shù jiā",
+        "definition": [
+          {
+            "meaning": "artist",
+            "example": {
+              "chinese": "她是一位著名的艺术家。",
+              "pinyin": "Tā shì yī wèi zhù míng de yì shù jiā.",
+              "english": "She is a famous artist."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "脖子": {
+        "pinyin": "bó zi",
+        "definition": [
+          {
+            "meaning": "neck",
+            "example": {
+              "chinese": "我的脖子有点疼。",
+              "pinyin": "Wǒ de bó zi yǒu diǎn téng.",
+              "english": "My neck is a little sore."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "下巴": {
+        "pinyin": "xià ba",
+        "definition": [
+          {
+            "meaning": "chin",
+            "example": {
+              "chinese": "他用手托着下巴。",
+              "pinyin": "Tā yòng shǒu tuō zhe xià ba.",
+              "english": "He rested his chin on his hand."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "手臂": {
+        "pinyin": "shǒu bì",
+        "definition": [
+          {
+            "meaning": "arm",
+            "example": {
+              "chinese": "我的手臂受伤了。",
+              "pinyin": "Wǒ de shǒu bì shòu shāng le.",
+              "english": "My arm is injured."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "村庄": {
+        "pinyin": "cūn zhuāng",
+        "definition": [
+          {
+            "meaning": "village",
+            "example": {
+              "chinese": "这个村庄很小。",
+              "pinyin": "Zhè ge cūn zhuāng hěn xiǎo.",
+              "english": "This village is very small."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "钥匙": {
+        "pinyin": "yào shi",
+        "definition": [
+          {
+            "meaning": "key",
+            "example": {
+              "chinese": "我找不到钥匙了。",
+              "pinyin": "Wǒ zhǎo bù dào yào shi le.",
+              "english": "I can't find my keys."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "城市": {
+        "pinyin": "chéng shì",
+        "definition": [
+          {
+            "meaning": "city",
+            "example": {
+              "chinese": "台北是一个大城市。",
+              "pinyin": "Tái běi shì yī gè dà chéng shì.",
+              "english": "Taipei is a big city."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "面包师": {
+        "pinyin": "miàn bāo shī",
+        "definition": [
+          {
+            "meaning": "baker",
+            "example": {
+              "chinese": "面包师每天早上烤面包。",
+              "pinyin": "Miàn bāo shī měi tiān zǎo shang kǎo miàn bāo.",
+              "english": "The baker bakes bread every morning."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "翅膀": {
+        "pinyin": "chì bǎng",
+        "definition": [
+          {
+            "meaning": "wings",
+            "example": {
+              "chinese": "鸟儿用翅膀飞翔。",
+              "pinyin": "Niǎo er yòng chì bǎng fēi xiáng.",
+              "english": "Birds fly with their wings."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "夜晚": {
+        "pinyin": "yè wǎn",
+        "definition": [
+          {
+            "meaning": "nighttime",
+            "example": {
+              "chinese": "夜晚很安静。",
+              "pinyin": "Yè wǎn hěn ān jìng.",
+              "english": "The nighttime is very quiet."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "交通": {
+        "pinyin": "jiāo tōng",
+        "definition": [
+          {
+            "meaning": "traffic",
+            "example": {
+              "chinese": "高峰时间交通很堵。",
+              "pinyin": "Gāo fēng shí jiān jiāo tōng hěn dǔ.",
+              "english": "Traffic is heavy during rush hour."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "红绿灯": {
+        "pinyin": "hóng lǜ dēng",
+        "definition": [
+          {
+            "meaning": "traffic light",
+            "example": {
+              "chinese": "红灯停，绿灯行。",
+              "pinyin": "Hóng dēng tíng, lǜ dēng xíng.",
+              "english": "Stop at red light, go at green light."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "铲子": {
+        "pinyin": "chǎn zi",
+        "definition": [
+          {
+            "meaning": "shovel",
+            "example": {
+              "chinese": "他用铲子挖土。",
+              "pinyin": "Tā yòng chǎn zi wā tǔ.",
+              "english": "He uses a shovel to dig soil."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "叶子": {
+        "pinyin": "yè zi",
+        "definition": [
+          {
+            "meaning": "leaf",
+            "example": {
+              "chinese": "秋天叶子变黄了。",
+              "pinyin": "Qiū tiān yè zi biàn huáng le.",
+              "english": "Leaves turn yellow in autumn."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "根": {
+        "pinyin": "gēn",
+        "definition": [
+          {
+            "meaning": "roots",
+            "example": {
+              "chinese": "树的根很深。",
+              "pinyin": "Shù de gēn hěn shēn.",
+              "english": "The tree's roots are deep."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "锯子": {
+        "pinyin": "jù zi",
+        "definition": [
+          {
+            "meaning": "saw",
+            "example": {
+              "chinese": "木匠用锯子锯木头。",
+              "pinyin": "Mù jiang yòng jù zi jù mù tou.",
+              "english": "The carpenter uses a saw to cut wood."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "茶壶": {
+        "pinyin": "chá hú",
+        "definition": [
+          {
+            "meaning": "teapot",
+            "example": {
+              "chinese": "茶壶里泡着绿茶。",
+              "pinyin": "Chá hú lǐ pào zhe lǜ chá.",
+              "english": "There is green tea brewing in the teapot."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "游泳池": {
+        "pinyin": "yóu yǒng chí",
+        "definition": [
+          {
+            "meaning": "swimming pool",
+            "example": {
+              "chinese": "夏天我们去游泳池游泳。",
+              "pinyin": "Xià tiān wǒ men qù yóu yǒng chí yóu yǒng.",
+              "english": "We go to the swimming pool in summer."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "出租车": {
+        "pinyin": "chū zū chē",
+        "definition": [
+          {
+            "meaning": "taxi",
+            "example": {
+              "chinese": "我坐出租车去机场。",
+              "pinyin": "Wǒ zuò chū zū chē qù jī chǎng.",
+              "english": "I take a taxi to the airport."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "灌木": {
+        "pinyin": "guàn mù",
+        "definition": [
+          {
+            "meaning": "bush",
+            "example": {
+              "chinese": "院子里有灌木丛。",
+              "pinyin": "Yuàn zi lǐ yǒu guàn mù cóng.",
+              "english": "There are bushes in the yard."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "胶水": {
+        "pinyin": "jiāo shuǐ",
+        "definition": [
+          {
+            "meaning": "glue",
+            "example": {
+              "chinese": "我用胶水粘纸。",
+              "pinyin": "Wǒ yòng jiāo shuǐ zhān zhǐ.",
+              "english": "I use glue to stick paper."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "卷心菜": {
+        "pinyin": "juǎn xīn cài",
+        "definition": [
+          {
+            "meaning": "cabbage",
+            "example": {
+              "chinese": "卷心菜可以做沙拉。",
+              "pinyin": "Juǎn xīn cài kě yǐ zuò shā lā.",
+              "english": "Cabbage can be used to make salad."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "洋葱": {
+        "pinyin": "yáng cōng",
+        "definition": [
+          {
+            "meaning": "onion",
+            "example": {
+              "chinese": "洋葱让我的眼睛流泪。",
+              "pinyin": "Yáng cōng ràng wǒ de yǎn jing liú lèi.",
+              "english": "Onions make my eyes water."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "罐子": {
+        "pinyin": "guàn zi",
+        "definition": [
+          {
+            "meaning": "jar",
+            "example": {
+              "chinese": "罐子里有饼干。",
+              "pinyin": "Guàn zi lǐ yǒu bǐng gān.",
+              "english": "There are cookies in the jar."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "梳子": {
+        "pinyin": "shū zi",
+        "definition": [
+          {
+            "meaning": "comb",
+            "example": {
+              "chinese": "她用梳子梳头发。",
+              "pinyin": "Tā yòng shū zi shū tóu fa.",
+              "english": "She uses a comb to brush her hair."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "收音机": {
+        "pinyin": "shōu yīn jī",
+        "definition": [
+          {
+            "meaning": "radio",
+            "example": {
+              "chinese": "爷爷在听收音机。",
+              "pinyin": "Yé ye zài tīng shōu yīn jī.",
+              "english": "Grandpa is listening to the radio."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "停车场": {
+        "pinyin": "tíng chē chǎng",
+        "definition": [
+          {
+            "meaning": "parking lot",
+            "example": {
+              "chinese": "停车场里有很多车。",
+              "pinyin": "Tíng chē chǎng lǐ yǒu hěn duō chē.",
+              "english": "There are many cars in the parking lot."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "收银员": {
+        "pinyin": "shōu yín yuán",
+        "definition": [
+          {
+            "meaning": "cashier",
+            "example": {
+              "chinese": "收银员帮我结账。",
+              "pinyin": "Shōu yín yuán bāng wǒ jié zhàng.",
+              "english": "The cashier helps me check out."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "购物车": {
+        "pinyin": "gòu wù chē",
+        "definition": [
+          {
+            "meaning": "shopping cart",
+            "example": {
+              "chinese": "我把商品放进购物车。",
+              "pinyin": "Wǒ bǎ shāng pǐn fàng jìn gòu wù chē.",
+              "english": "I put the products in the shopping cart."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "摩托车": {
+        "pinyin": "mó tuō chē",
+        "definition": [
+          {
+            "meaning": "motorcycle",
+            "example": {
+              "chinese": "他骑摩托车上班。",
+              "pinyin": "Tā qí mó tuō chē shàng bān.",
+              "english": "He rides a motorcycle to work."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "卡车": {
+        "pinyin": "kǎ chē",
+        "definition": [
+          {
+            "meaning": "truck",
+            "example": {
+              "chinese": "卡车运来了货物。",
+              "pinyin": "Kǎ chē yùn lái le huò wù.",
+              "english": "The truck delivered the goods."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "超市": {
+        "pinyin": "chāo shì",
+        "definition": [
+          {
+            "meaning": "supermarket",
+            "example": {
+              "chinese": "我去超市买东西。",
+              "pinyin": "Wǒ qù chāo shì mǎi dōng xi.",
+              "english": "I go to the supermarket to buy things."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "森林": {
+        "pinyin": "sēn lín",
+        "definition": [
+          {
+            "meaning": "forest",
+            "example": {
+              "chinese": "森林里有很多树。",
+              "pinyin": "Sēn lín lǐ yǒu hěn duō shù.",
+              "english": "There are many trees in the forest."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "树": {
+        "pinyin": "shù",
+        "definition": [
+          {
+            "meaning": "tree",
+            "example": {
+              "chinese": "这棵树很高。",
+              "pinyin": "Zhè kē shù hěn gāo.",
+              "english": "This tree is very tall."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "月亮": {
+        "pinyin": "yuè liang",
+        "definition": [
+          {
+            "meaning": "moon",
+            "example": {
+              "chinese": "今晚的月亮很圆。",
+              "pinyin": "Jīn wǎn de yuè liang hěn yuán.",
+              "english": "The moon is very round tonight."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "楼梯": {
+        "pinyin": "lóu tī",
+        "definition": [
+          {
+            "meaning": "stairs",
+            "example": {
+              "chinese": "我走楼梯上楼。",
+              "pinyin": "Wǒ zǒu lóu tī shàng lóu.",
+              "english": "I take the stairs to go upstairs."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "手套": {
+        "pinyin": "shǒu tào",
+        "definition": [
+          {
+            "meaning": "gloves",
+            "example": {
+              "chinese": "冬天我戴手套。",
+              "pinyin": "Dōng tiān wǒ dài shǒu tào.",
+              "english": "I wear gloves in winter."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "钢琴": {
+        "pinyin": "gāng qín",
+        "definition": [
+          {
+            "meaning": "piano",
+            "example": {
+              "chinese": "她会弹钢琴。",
+              "pinyin": "Tā huì tán gāng qín.",
+              "english": "She can play the piano."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "婴儿车": {
+        "pinyin": "yīng ér chē",
+        "definition": [
+          {
+            "meaning": "stroller",
+            "example": {
+              "chinese": "妈妈推着婴儿车散步。",
+              "pinyin": "Mā ma tuī zhe yīng ér chē sàn bù.",
+              "english": "Mom pushes the stroller for a walk."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "火柴": {
+        "pinyin": "huǒ chái",
+        "definition": [
+          {
+            "meaning": "matches",
+            "example": {
+              "chinese": "他用火柴点蜡烛。",
+              "pinyin": "Tā yòng huǒ chái diǎn là zhú.",
+              "english": "He uses matches to light the candle."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "蜡烛": {
+        "pinyin": "là zhú",
+        "definition": [
+          {
+            "meaning": "candle",
+            "example": {
+              "chinese": "停电时我们点蜡烛。",
+              "pinyin": "Tíng diàn shí wǒ men diǎn là zhú.",
+              "english": "We light candles during a power outage."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "水壶": {
+        "pinyin": "shuǐ hú",
+        "definition": [
+          {
+            "meaning": "kettle",
+            "example": {
+              "chinese": "水壶里的水开了。",
+              "pinyin": "Shuǐ hú lǐ de shuǐ kāi le.",
+              "english": "The water in the kettle is boiling."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "卫生纸": {
+        "pinyin": "wèi shēng zhǐ",
+        "definition": [
+          {
+            "meaning": "toilet paper",
+            "example": {
+              "chinese": "卫生间需要卫生纸。",
+              "pinyin": "Wèi shēng jiān xū yào wèi shēng zhǐ.",
+              "english": "The bathroom needs toilet paper."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "肥皂": {
+        "pinyin": "féi zào",
+        "definition": [
+          {
+            "meaning": "soap",
+            "example": {
+              "chinese": "我用肥皂洗手。",
+              "pinyin": "Wǒ yòng féi zào xǐ shǒu.",
+              "english": "I use soap to wash my hands."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "牙膏": {
+        "pinyin": "yá gāo",
+        "definition": [
+          {
+            "meaning": "toothpaste",
+            "example": {
+              "chinese": "我的牙膏用完了。",
+              "pinyin": "Wǒ de yá gāo yòng wán le.",
+              "english": "My toothpaste is used up."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "牙刷": {
+        "pinyin": "yá shuā",
+        "definition": [
+          {
+            "meaning": "toothbrush",
+            "example": {
+              "chinese": "我每天用牙刷刷牙。",
+              "pinyin": "Wǒ měi tiān yòng yá shuā shuā yá.",
+              "english": "I use a toothbrush to brush my teeth every day."
+            }
+          }
+        ]
+      }
+    }
+    ]

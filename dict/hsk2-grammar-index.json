@@ -1,0 +1,120 @@
+[
+    {"c":"Adverbs", "g":[
+      ["hsk2-1","Continuation with \"hai\"","Subj. + 还 + Verb Phrase / Adj."],
+      ["hsk2-2","Emphasis with \"jiushi\"","就是 + Verb"],
+      ["hsk2-3","Emphasizing quantity with \"dou\"","大家 / 很多人 + 都⋯⋯"],
+      ["hsk2-4","Expressing \"about to\" with \"jiuyao\"","还有 + Time Period + 就要 + Verb Phrase + 了"],
+      ["hsk2-5","Expressing \"again\" in the future with \"zai\"","再 + Verb"],
+      ["hsk2-6","Expressing \"already\" with \"dou\"","都 + Time + 了"],
+      ["hsk2-7","Expressing \"already\" with \"yijing\"","已经⋯⋯了"],
+      ["hsk2-8","Expressing \"and also\" with \"hai\"","还 + Verb"],
+      ["hsk2-9","Expressing earliness with \"jiu\"","Subj. + Time + 就 + Verb + 了"],
+      ["hsk2-10","Expressing \"then\" with \"jiu\"","就 + Verb Phrase"],
+      ["hsk2-11","Negative commands with \"bie\"","别 + Verb"]
+    ]},
+    {"c":"Adverbs with Adjectives", "g":[
+      ["hsk2-12","Asking about degree with \"duo\"","Subj. + 多 + Adj. ?"],
+      ["hsk2-13","Expressing \"a little too\" with \"you dian\"","有点(儿) + Adj."],
+      ["hsk2-14","Expressing distance with \"li\"","Place 1 + 离 + Place 2 + Adv. + 近 / 远"],
+      ["hsk2-15","Expressing \"even more\" with \"geng\"","更 + Adj."],
+      ["hsk2-16","Expressing \"really\" with \"zhen\"","真 + Adj."],
+      ["hsk2-17","Moderating positive adjectives with \"hai\"","还 + Adj."],
+      ["hsk2-18","Modifying nouns with phrase + \"de\"","Phrase + 的 + Noun"],
+      ["hsk2-19","Superlative \"zui\"","最 + Adj. (+ 了)"]
+    ]},
+    {"c":"Conjunctions", "g":[
+      ["hsk2-20","The filler word \"neige\"","⋯⋯那个⋯⋯"]
+    ]},
+    {"c":"Measure Words", "g":[
+      ["hsk2-21","Reduplication of measure words","MW + MW"]
+    ]},
+    {"c":"Nouns", "g":[
+      ["hsk2-22","Expressing \"when\" with \"de shihou\"","⋯⋯的时候"]
+    ]},
+    {"c":"Numbers", "g":[
+      ["hsk2-23","Indicating a number in excess","Number + 多"]
+    ]},
+    {"c":"Numbers and Measure Words", "g":[
+      ["hsk2-24","Using \"ji\" to mean \"several\"","几 + Measure Word + Noun"]
+    ]},
+    {"c":"Particles", "g":[
+      ["hsk2-25","Aspect particle \"zhe\"","Verb + 着"],
+      ["hsk2-26","Conceding with \"ba\"","⋯⋯吧"],
+      ["hsk2-27","Expressing \"already\" with just \"le\"","Subj. + Verb Phrase + 了"],
+      ["hsk2-28","Expressing experiences with \"guo\"","Verb + 过"],
+      ["hsk2-29","Modal particle \"ne\"","⋯⋯呢 ?"],
+      ["hsk2-30","Using \"guo\" with \"le\"","Verb + 过 + 了"]
+    ]},
+    {"c":"Prepositions", "g":[
+      ["hsk2-31","Basic comparisons with \"bi\"","Noun 1 + 比 + Noun 2 + Adj."],
+      ["hsk2-32","Expressing \"for\" with \"gei\"","Subj. + 给 + Recipient + Verb Phrase"],
+      ["hsk2-33","Expressing \"from… to…\" with \"cong… dao…\"","从⋯⋯到⋯⋯"],
+      ["hsk2-34","Expressing \"toward\" with \"wang\"","往 + Direction Word"],
+      ["hsk2-35","Using \"dui\" with verbs","Subj. + 对 + Person + Verb"]
+    ]},
+    {"c":"Verbs", "g":[
+      ["hsk2-36","Using the verb \"xing\"","姓 + Surname"]
+    ]},
+    {"c":"Auxiliary verbs", "g":[
+      ["hsk2-37","Auxiliary verb \"yao\" and its multiple meanings","要 + Noun / 要 + Verb"],
+      ["hsk2-38","Expressing \"be going to\" with \"yao\"","Subj. + 要 + Verb (+ 了)"],
+      ["hsk2-39","Expressing permission with \"keyi\"","可以 + Verb"],
+      ["hsk2-40","Wanting to do something with \"yao\"","要 + Verb"]
+    ]},
+    {"c":"Verb phrases", "g":[
+      ["hsk2-41","Actions in a row","(Verb Phrase 1) + (Verb Phrase 2)"],
+      ["hsk2-42","Expressing \"together\" with \"yiqi\"","一起 + Verb"],
+      ["hsk2-43","Measure words for verbs","Verb + Number + Measure Word"],
+      ["hsk2-44","Negative commands with \"buyao\"","不要 + Verb"],
+      ["hsk2-45","Reduplication of verbs","Verb + Verb"],
+      ["hsk2-46","Special cases of \"zai\" following verbs","Verb + 在 + Place"],
+      ["hsk2-47","Using \"dao\" to mean \"to go to\"","到 + Place"],
+      ["hsk2-48","Using \"hao\" to mean \"easy\"","好 + Verb"],
+      ["hsk2-49","Verbing briefly with \"yixia\"","Verb + 一下"],
+      ["hsk2-50","Verbs followed by \"gei\"","Subj. + Verb + 给 + Recipient + Obj."],
+      ["hsk2-51","Verbs preceded by \"gei\"","Subj. + 给 + Target + Verb + Obj."],
+      ["hsk2-52","Verbs that take double objects","Subj. + Verb + Indirect Obj. + Direct Obj."]
+    ]},
+    {"c":"Complements", "g":[
+      ["hsk2-53","Degree complement","Verb + 得⋯⋯"],
+      ["hsk2-54","Potential complement \"-bu dong\" for not understanding","Verb + 不懂"],
+      ["hsk2-55","Result complements","Verb + 好 / 完 / 错"],
+      ["hsk2-56","Result complements \"-dao\" and \"-jian\"","Verb + 到 / 见"],
+      ["hsk2-57","Result complement \"-wan\" for finishing","Verb + 完 (+ 了)"]
+    ]},
+    {"c":"Numbers and Measure Words", "g":[
+      ["hsk2-58","Expressing \"every\" with \"mei\"","每 + Measure Word (+ Noun)"],
+      ["hsk2-59","Measure words for counting","Number + Measure Word + Noun"],
+      ["hsk2-60","Measure words with \"this\" and \"that\"","这 / 那 + Measure Word (+ Noun)"],
+      ["hsk2-61","Ordinal numbers with \"di\"","第 + Number (+ Measure Word)"]
+    ]},
+    {"c":"Question Forms", "g":[
+      ["hsk2-62","Affirmative-negative question","Verb + 不 + Verb / Adj. + 不 + Adj."],
+      ["hsk2-63","Asking why with \"zenme\"","怎么⋯⋯？"],
+      ["hsk2-64","Simple rhetorical questions","不 是…… 吗 ？"],
+      ["hsk2-65","Tag questions with \"bu\"","⋯⋯是不是 / 对不对 / 好不好 ?"],
+      ["hsk2-66","Tag questions with \"ma\"","⋯⋯是吗 / 对吗 / 好吗 ?"]
+    ]},
+    {"c":"Sentence Patterns", "g":[
+      ["hsk2-67","Cause and effect with \"yinwei\" and \"suoyi\"","因为⋯⋯ 所以⋯⋯"],
+      ["hsk2-68","Expressing \"about to happen\" with \"le\"","快 + Verb / Adj. + 了"],
+      ["hsk2-69","Expressing \"everything\" with \"shenme dou\"","什么 + 都 / 也⋯⋯"],
+      ["hsk2-70","Expressing \"stop doing\" with \"bie… le\"","别 + Verb + 了"],
+      ["hsk2-71","The \"shi... de\" construction for indicating purpose","是⋯⋯ 的"],
+      ["hsk2-72","The \"shi... de\" patterns: an overview","是⋯⋯ 的"]
+    ]},
+    {"c":"Basic/Simple Sentence Patterns", "g":[
+      ["hsk2-73","Expressing \"every time\" with \"mei\" and \"dou\"","每次 + Event 1 + 都 + Event 2"]
+    ]},
+    {"c":"Comparison Patterns", "g":[
+      ["hsk2-74","Expressing \"much more\" in comparisons","Noun 1 + 比 + Noun 2 + Adj. + 多了"]
+    ]},
+    {"c":"Complex Sentence Patterns", "g":[
+      ["hsk2-75","Expressing \"although\" with \"suiran\" and \"danshi\"","虽然⋯⋯ ，但是 / 可是⋯⋯"]
+    ]},
+    {"c":"Comparisons of Similar Grammar Points", "g":[
+      ["hsk2-76","Comparing \"yao\" and \"xiang\"","要 vs 想"],
+      ["hsk2-77","Comparing \"hui,\" \"neng,\" \"keyi\"","会 vs. 能 vs. 可以"],
+      ["hsk2-78","Comparing \"er\" and \"liang\"","二 vs 两"]
+    ]}
+  ]

@@ -1,0 +1,467 @@
+[
+    {
+      "浴室": {
+        "pinyin": "yù shì",
+        "definition": [
+          {
+            "meaning": "bathroom",
+            "example": {
+              "chinese": "浴室在二楼。",
+              "pinyin": "Yù shì zài èr lóu.",
+              "english": "The bathroom is on the second floor."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "厕所": {
+        "pinyin": "cè suǒ",
+        "definition": [
+          {
+            "meaning": "toilet",
+            "example": {
+              "chinese": "厕所在那边。",
+              "pinyin": "Cè suǒ zài nà biān.",
+              "english": "The toilet is over there."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "洗手台": {
+        "pinyin": "xǐ shǒu tái",
+        "definition": [
+          {
+            "meaning": "sink",
+            "example": {
+              "chinese": "洗手台很干净。",
+              "pinyin": "Xǐ shǒu tái hěn gān jìng.",
+              "english": "The sink is very clean."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "橱柜": {
+        "pinyin": "chú guì",
+        "definition": [
+          {
+            "meaning": "cupboard",
+            "example": {
+              "chinese": "碗放在橱柜里。",
+              "pinyin": "Wǎn fàng zài chú guì lǐ.",
+              "english": "The bowls are in the cupboard."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "淋浴": {
+        "pinyin": "lín yù",
+        "definition": [
+          {
+            "meaning": "shower",
+            "example": {
+              "chinese": "我每天淋浴。",
+              "pinyin": "Wǒ měi tiān lín yù.",
+              "english": "I take a shower every day."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "排水口": {
+        "pinyin": "pái shuǐ kǒu",
+        "definition": [
+          {
+            "meaning": "drain",
+            "example": {
+              "chinese": "排水口堵住了。",
+              "pinyin": "Pái shuǐ kǒu dǔ zhù le.",
+              "english": "The drain is clogged."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "肥皂": {
+        "pinyin": "féi zào",
+        "definition": [
+          {
+            "meaning": "soap",
+            "example": {
+              "chinese": "请用肥皂洗手。",
+              "pinyin": "Qǐng yòng féi zào xǐ shǒu.",
+              "english": "Please wash your hands with soap."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "卫生纸": {
+        "pinyin": "wèi shēng zhǐ",
+        "definition": [
+          {
+            "meaning": "toilet paper",
+            "example": {
+              "chinese": "卫生纸用完了。",
+              "pinyin": "Wèi shēng zhǐ yòng wán le.",
+              "english": "The toilet paper is used up."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "浴室防滑垫": {
+        "pinyin": "yù shì fáng huá diàn",
+        "definition": [
+          {
+            "meaning": "bathmat",
+            "example": {
+              "chinese": "浴室防滑垫是蓝色的。",
+              "pinyin": "Yù shì fáng huá diàn shì lán sè de.",
+              "english": "The bathmat is blue."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "浴缸": {
+        "pinyin": "yù gāng",
+        "definition": [
+          {
+            "meaning": "bathtub",
+            "example": {
+              "chinese": "浴缸很大。",
+              "pinyin": "Yù gāng hěn dà.",
+              "english": "The bathtub is very big."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "垃圾桶": {
+        "pinyin": "lā jī tǒng",
+        "definition": [
+          {
+            "meaning": "garbage can",
+            "example": {
+              "chinese": "垃圾桶满了。",
+              "pinyin": "Lā jī tǒng mǎn le.",
+              "english": "The garbage can is full."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "毛巾": {
+        "pinyin": "máo jīn",
+        "definition": [
+          {
+            "meaning": "towel",
+            "example": {
+              "chinese": "我用毛巾擦头发。",
+              "pinyin": "Wǒ yòng máo jīn cā tóu fa.",
+              "english": "I dry my hair with a towel."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "洗脸巾": {
+        "pinyin": "xǐ liǎn jīn",
+        "definition": [
+          {
+            "meaning": "washcloth",
+            "example": {
+              "chinese": "洗脸巾湿了。",
+              "pinyin": "Xǐ liǎn jīn shī le.",
+              "english": "The washcloth is wet."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "牙刷": {
+        "pinyin": "yá shuā",
+        "definition": [
+          {
+            "meaning": "toothbrush",
+            "example": {
+              "chinese": "我买了一把新牙刷。",
+              "pinyin": "Wǒ mǎi le yī bǎ xīn yá shuā.",
+              "english": "I bought a new toothbrush."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "牙膏": {
+        "pinyin": "yá gāo",
+        "definition": [
+          {
+            "meaning": "toothpaste",
+            "example": {
+              "chinese": "牙膏用完了。",
+              "pinyin": "Yá gāo yòng wán le.",
+              "english": "The toothpaste is used up."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "剃须刀": {
+        "pinyin": "tì xū dāo",
+        "definition": [
+          {
+            "meaning": "razor",
+            "example": {
+              "chinese": "他用剃须刀刮胡子。",
+              "pinyin": "Tā yòng tì xū dāo guā hú zi.",
+              "english": "He shaves with a razor."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "镜子": {
+        "pinyin": "jìng zi",
+        "definition": [
+          {
+            "meaning": "mirror",
+            "example": {
+              "chinese": "镜子很干净。",
+              "pinyin": "Jìng zi hěn gān jìng.",
+              "english": "The mirror is very clean."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "水龙头": {
+        "pinyin": "shuǐ lóng tóu",
+        "definition": [
+          {
+            "meaning": "faucet",
+            "example": {
+              "chinese": "水龙头漏水了。",
+              "pinyin": "Shuǐ lóng tóu lòu shuǐ le.",
+              "english": "The faucet is leaking."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "热水": {
+        "pinyin": "rè shuǐ",
+        "definition": [
+          {
+            "meaning": "hot water",
+            "example": {
+              "chinese": "我喜欢喝热水。",
+              "pinyin": "Wǒ xǐ huān hē rè shuǐ.",
+              "english": "I like to drink hot water."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "冷水": {
+        "pinyin": "lěng shuǐ",
+        "definition": [
+          {
+            "meaning": "cold water",
+            "example": {
+              "chinese": "夏天我喜欢喝冷水。",
+              "pinyin": "Xià tiān wǒ xǐ huān hē lěng shuǐ.",
+              "english": "In summer, I like to drink cold water."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "玻璃杯": {
+        "pinyin": "bō li bēi",
+        "definition": [
+          {
+            "meaning": "glass",
+            "example": {
+              "chinese": "玻璃杯破了。",
+              "pinyin": "Bō li bēi pò le.",
+              "english": "The glass is broken."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "万能清洁剂": {
+        "pinyin": "wàn néng qīng jié jì",
+        "definition": [
+          {
+            "meaning": "all purpose cleaner",
+            "example": {
+              "chinese": "我用万能清洁剂擦桌子。",
+              "pinyin": "Wǒ yòng wàn néng qīng jié jì cā zhuō zi.",
+              "english": "I use all purpose cleaner to wipe the table."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "抹布": {
+        "pinyin": "mā bù",
+        "definition": [
+          {
+            "meaning": "rag",
+            "example": {
+              "chinese": "抹布脏了。",
+              "pinyin": "Mā bù zāng le.",
+              "english": "The rag is dirty."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "水管": {
+        "pinyin": "shuǐ guǎn",
+        "definition": [
+          {
+            "meaning": "pipes",
+            "example": {
+              "chinese": "水管漏水了。",
+              "pinyin": "Shuǐ guǎn lòu shuǐ le.",
+              "english": "The pipes are leaking."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "洗": {
+        "pinyin": "xǐ",
+        "definition": [
+          {
+            "meaning": "wash",
+            "example": {
+              "chinese": "我洗了衣服。",
+              "pinyin": "Wǒ xǐ le yī fu.",
+              "english": "I washed the clothes."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "刷牙": {
+        "pinyin": "shuā yá",
+        "definition": [
+          {
+            "meaning": "brush teeth",
+            "example": {
+              "chinese": "我每天刷牙两次。",
+              "pinyin": "Wǒ měi tiān shuā yá liǎng cì.",
+              "english": "I brush my teeth twice a day."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "大便": {
+        "pinyin": "dà biàn",
+        "definition": [
+          {
+            "meaning": "poop",
+            "example": {
+              "chinese": "狗在草地上大便。",
+              "pinyin": "Gǒu zài cǎo dì shàng dà biàn.",
+              "english": "The dog pooped on the grass."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "上厕所": {
+        "pinyin": "shàng cè suǒ",
+        "definition": [
+          {
+            "meaning": "go to the bathroom",
+            "example": {
+              "chinese": "我想上厕所。",
+              "pinyin": "Wǒ xiǎng shàng cè suǒ.",
+              "english": "I want to go to the bathroom."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "洗澡": {
+        "pinyin": "xǐ zǎo",
+        "definition": [
+          {
+            "meaning": "bathe",
+            "example": {
+              "chinese": "我每天晚上洗澡。",
+              "pinyin": "Wǒ měi tiān wǎn shàng xǐ zǎo.",
+              "english": "I take a bath every night."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "刮胡子": {
+        "pinyin": "guā hú zi",
+        "definition": [
+          {
+            "meaning": "shave",
+            "example": {
+              "chinese": "他每天早上刮胡子。",
+              "pinyin": "Tā měi tiān zǎo shàng guā hú zi.",
+              "english": "He shaves every morning."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "冲澡": {
+        "pinyin": "chōng zǎo",
+        "definition": [
+          {
+            "meaning": "take a shower",
+            "example": {
+              "chinese": "我运动后冲澡。",
+              "pinyin": "Wǒ yùn dòng hòu chōng zǎo.",
+              "english": "I take a shower after exercising."
+            }
+          }
+        ]
+      }
+    }
+    ]

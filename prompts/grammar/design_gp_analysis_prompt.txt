@@ -1,0 +1,64 @@
+I want to design a prompt for an LLM to assess whether sentences match grammar points. I have a large number of sentences and grammar points so I need to do some kind of batch processing and I want to be at least somewhat efficient in my LLM usage.
+
+In pre-processing, I have created a potential mapping of sentences based on keywords, sentence parts of speech (and their order) and the grammar point patterns.
+
+My LLM prompt needs to take some of these potential mappings and determine which are correct. I have expanded descriptions of the grammar points that can be provided as context. These descriptions are also LLM generated so they could be re-designed if necessary to produce better or more relevant context for the prompt.
+
+I have fully tokenized sentences available like this:
+[
+  {
+      "i": "0",
+      "t": [
+          ["“", "“", "w"],
+          ["Jeeves", "Jeeves", "nr"],
+          ["，", "，", "w"],
+          ["我", "wǒ", "r"],
+          ["说", "shuō", "v"],
+          ["，", "，", "w"],
+          ["“", "“", "w"],
+          ["我", "wǒ", "r"],
+          ["可以", "kě yǐ", "v"],
+          ["坦白", "tǎn bái", "v"],
+          ["说", "shuō", "v"],
+          ["吗", "ma", "y"],
+          ["？", "？", "w"],
+          ["”", "”", "w"]
+      ]
+  },
+
+And grammar point definitions look like this:
+[     {
+        "key": "hsk2-67",
+        "hsk_level": 2,
+        "grammar_point_name": "Cause and effect with \"yinwei\" and \"suoyi\"",
+        "grammar_pattern": "因为⋯⋯ 所以⋯⋯",
+        "description": "This structure is used to express cause and effect, where \"因为\" (yīnwèi) introduces the reason and \"所以\" (suǒyǐ) introduces the result.",
+        "examples": [
+        {
+            "sentence": "因为下雨了，所以我们没去公园。",
+            "pinyin": "Yīnwèi xià yǔ le, suǒyǐ wǒmen méi qù gōngyuán.",
+            "english": "Because it rained, we didn't go to the park."
+        },
+        {
+            "sentence": "因为他病了，所以他没来上课。",
+            "pinyin": "Yīnwèi tā bìng le, suǒyǐ tā méi lái shàngkè.",
+            "english": "Because he was sick, he didn't come to class."
+        },
+        {
+            "sentence": "因为我饿了，所以我去吃饭了。",
+            "pinyin": "Yīnwèi wǒ è le, suǒyǐ wǒ qù chīfàn le.",
+            "english": "Because I was hungry, I went to eat."
+        }
+        ]
+    }, ...
+
+With a potential mapping like:
+[ { "i":0, "gps": [ "hsk2-14", "hsk1-7"]}, ... ]
+
+Please design the LLM prompt, considering things like:
+
+* What kind of context is most helpful?
+* Is the LLM likely to perform better by examining multiple sentences against one grammar point, or sentence by sentence against multiple grammar points?
+* Should the grammar description be redesigned for efficiency or to include better context? (e.g. a more detailed description, fewer examples, etc)
+
+

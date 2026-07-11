@@ -1,0 +1,29 @@
+# Provider mode: "local" manages the llamacpp systemd service;
+# "remote" uses a cloud API and skips local service management.
+# Model switching for local is handled by restarting the llamacpp service
+# with the desired profile — the llm library always talks to the same
+# host:port, so model_name / model_id are fixed.
+[llm]
+provider = "local"
+model_name = "local-llamacpp"
+model_id = "local-llamacpp"
+
+# Default llamacpp profile for tasks
+[default]
+profile = "qwen36-35b-a3b"
+
+[translate]
+profile = "qwen36-35b-a3b"
+
+[tokenize]
+profile = "qwen36-35b-a3b"
+
+[dictionary]
+profile = "qwen36-35b-a3b"
+
+[check_translation]
+models = ["openrouter/deepseek/deepseek-v4-flash"]
+provider = "remote"
+
+[benchmark]
+repeat = 1

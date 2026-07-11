@@ -1,0 +1,39 @@
+# Task 
+Generate a python script which will combine a number of dictionary/lexicon files into a single file.
+
+Provide a simple description (with sample) of the output format of the script.
+
+# Requirements
+
+1. The input files are in a directory and are named 1.json, 2.json, 3.json, etc. all the way up to (including) 7.json
+   - The default input directory is "../complete-hsk-vocabulary/wordlists/exclusive/new/"
+   - The number of the json file indicates the HSK level of the words in that file
+   - Other json files in the directory should be ignored (names should match exactly)
+2. The default output path for the combined dictionary files is 'dict/hsk.json'
+3. The input entries should be flattened and the only fields included in the output should be: simplified, pinyin, frequency, pos, meanings, and classifiers
+4. An additional field "hsk" should be generated with the value of the HSK level taken from the source filename for that entry
+5. The entries should be structured suitably for instantiating a python dictionary.
+   - A dictionary key should be generated for each entry in the form of <simplified>_<pinyin_with_underscores_for_spaces> (no angle braces)
+   - Each entry should be condensed into an array for efficiency. Multi-valued attributes should be condensed into strings using commas to delimit values
+6. The dictionary should be broken up into sub-arrays based on length (number of simplified characters) of each entry. 
+7. Internally the sub-arrays should be sorted by frequency (descending)
+
+
+## Sample Input File Entry
+
+[ { "simplified" : "爱",
+    "radical"    : "爫",
+    "frequency"  : 130,
+    "pos"        : [ "v", "vn", "b" ],
+    "forms"      : [ { "traditional"    : "愛",
+                       "transcriptions" : { "pinyin"    : "ài",
+                                            "numeric"   : "ai4",
+                                            "wadegiles" : "ai⁴",
+                                            "bopomofo"  : "ㄞˋ",
+                                            "romatzyh"  : "ay" },
+                       "meanings"       : [ "to love; to be fond of; to like",
+                                            "affection",
+                                            "to be inclined (to do sth); to tend to (happen)" ],
+                       "classifiers"    : [] } ] }, ...]
+
+

@@ -1,0 +1,23 @@
+{
+    "在" : {
+      "pinyin": "zài",
+      "definition": [
+        {
+          "meaning": "to be at; to be in; to be on",
+          "example": {
+            "chinese": "我在家。",
+            "pinyin": "Wǒ zài jiā.",
+            "english": "I am at home."
+          }
+        },
+        {
+          "meaning": "indicating an action in progress",
+          "example": {
+            "chinese": "他们在吃饭。",
+            "pinyin": "Tā men zài chī fàn.",
+            "english": "They are eating."
+          }
+        }
+      ]
+    }
+  }

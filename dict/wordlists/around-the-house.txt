@@ -1,0 +1,107 @@
+bathroom
+toilet
+sink
+cupboard
+shower
+drain
+soap
+toilet paper
+bathmat
+bathtub
+garbage can
+towel
+washcloth
+toothbrush
+toothpaste
+razor
+mirror
+faucet
+hot water
+cold water
+glass
+all purpose cleaner
+rag
+pipes
+
+wash
+brush teeth
+poop
+go to the bathroom
+shower
+bathe
+shave
+take a shower
+
+
+bedroom
+bed
+closet
+carpet
+lamp
+dresser
+coat-hanger
+shirt
+dress
+pants
+underwear
+socks
+shorts
+suit
+jeans
+t-shirt
+mattress
+sheets
+blanket
+pillow
+book
+nightstand
+alarm clock
+glasses
+blinds
+curtain
+curtain rod
+balcony
+step
+
+get up
+make love
+sleep
+read
+lie in bed
+take a nap
+rest
+make the bed
+vacuum
+put away the laundry
+nighttime
+late
+bedtime
+
+Living room
+
+bookshelf
+desk
+table
+chairs
+office chair
+mat
+computer
+printer
+router
+clock
+couch
+cushion
+television
+guitar
+piano
+board game
+coffee table
+streaming service
+
+read
+hang out
+watch television
+chat
+sit down
+stand up
+

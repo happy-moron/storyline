@@ -1,0 +1,44 @@
+`# Task
+Please take the following list of grammar points and generate an expanded description of them. 
+
+Each expanded description should have:
+
+- The unique key of the grammar point (provided in input)
+- The HSK level of the grammar point (the first part of the key, e.g. HSK2 --> 2, )
+- The name of the grammar point (provided)
+- The pattern of the grammar point (provided)
+- A one or two sentence description (generated)
+- Three examples using vocabulary from the HSK level (generated)
+  - each of these should have pinyin and english translation (generated)
+
+# Output Format
+The output should be represented as an array of JSON objects. Match the field names exactly.
+[
+{
+  "key": "hsk2-32"
+  "hsk_level": 2,
+  "grammar_point_name": "Expressing \"for\" with \"给\"",
+  "grammar_pattern": "Subj. + 给 + Recipient + Verb Phrase",
+  "description": "This pattern uses \"给\" (gěi) to indicate that an action is performed for the benefit of someone. It conveys the meaning of \"for\" or \"to\" when giving or doing something for another person.",
+  "examples": [
+    {
+      "sentence": "我给妈妈买了一个苹果。",
+      "pinyin": "Wǒ gěi māma mǎi le yī ge píngguǒ.",
+      "english": "I bought an apple for my mom."
+    }, ...
+  ]
+}, ... ]
+
+# Grammar Points:
+["hsk2-67","Cause and effect with \"yinwei\" and \"suoyi\"","因为⋯⋯ 所以⋯⋯"],
+["hsk2-68","Expressing \"about to happen\" with \"le\"","快 + Verb / Adj. + 了"],
+["hsk2-69","Expressing \"everything\" with \"shenme dou\"","什么 + 都 / 也⋯⋯"],
+["hsk2-70","Expressing \"stop doing\" with \"bie… le\"","别 + Verb + 了"],
+["hsk2-71","The \"shi... de\" construction for indicating purpose","是⋯⋯ 的"],
+["hsk2-72","The \"shi... de\" patterns: an overview","是⋯⋯ 的"]
+["hsk2-73","Expressing \"every time\" with \"mei\" and \"dou\"","每次 + Event 1 + 都 + Event 2"]
+["hsk2-74","Expressing \"much more\" in comparisons","Noun 1 + 比 + Noun 2 + Adj. + 多了"]
+["hsk2-75","Expressing \"although\" with \"suiran\" and \"danshi\"","虽然⋯⋯ ，但是 / 可是⋯⋯"]
+["hsk2-76","Comparing \"yao\" and \"xiang\"","要 vs 想"],
+["hsk2-77","Comparing \"hui,\" \"neng,\" \"keyi\"","会 vs. 能 vs. 可以"],
+["hsk2-78","Comparing \"er\" and \"liang\"","二 vs 两"]

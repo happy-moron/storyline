@@ -1,0 +1,1299 @@
+[
+    {
+      "key": "hsk1-1",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing actions in progress with \"zai\"",
+      "grammar_pattern": "(正) 在 + Verb",
+      "description": "This pattern uses \"在\" (zài) to indicate that an action is currently in progress. It is often used to describe what someone is doing at the moment.",
+      "examples": [
+        {
+          "sentence": "我在吃饭。",
+          "pinyin": "Wǒ zài chīfàn.",
+          "english": "I am eating."
+        },
+        {
+          "sentence": "他在看书。",
+          "pinyin": "Tā zài kànshū.",
+          "english": "He is reading a book."
+        },
+        {
+          "sentence": "我们在学习。",
+          "pinyin": "Wǒmen zài xuéxí.",
+          "english": "We are studying."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-2",
+      "hsk_level": 1,
+      "grammar_point_name": "Negation of \"you\" with \"mei\"",
+      "grammar_pattern": "没 + 有",
+      "description": "This pattern uses \"没\" (méi) to negate the verb \"有\" (yǒu), meaning \"to have\". It is used to indicate the absence of something.",
+      "examples": [
+        {
+          "sentence": "我没有书。",
+          "pinyin": "Wǒ méiyǒu shū.",
+          "english": "I don't have a book."
+        },
+        {
+          "sentence": "他没有钱。",
+          "pinyin": "Tā méiyǒu qián.",
+          "english": "He doesn't have money."
+        },
+        {
+          "sentence": "我们没有时间。",
+          "pinyin": "Wǒmen méiyǒu shíjiān.",
+          "english": "We don't have time."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-3",
+      "hsk_level": 1,
+      "grammar_point_name": "Standard negation with \"bu\"",
+      "grammar_pattern": "不 + Verb / Adj.",
+      "description": "This pattern uses \"不\" (bù) to negate verbs or adjectives, indicating that something is not happening or is not the case.",
+      "examples": [
+        {
+          "sentence": "我不去。",
+          "pinyin": "Wǒ bù qù.",
+          "english": "I am not going."
+        },
+        {
+          "sentence": "他不高。",
+          "pinyin": "Tā bù gāo.",
+          "english": "He is not tall."
+        },
+        {
+          "sentence": "我们不喜欢。",
+          "pinyin": "Wǒmen bù xǐhuān.",
+          "english": "We do not like it."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-4",
+      "hsk_level": 1,
+      "grammar_point_name": "The \"all\" adverb \"dou\"",
+      "grammar_pattern": "都 + Verb / Adj.",
+      "description": "This pattern uses \"都\" (dōu) to indicate that all members of a group are involved in the action or state described by the verb or adjective.",
+      "examples": [
+        {
+          "sentence": "我们都去。",
+          "pinyin": "Wǒmen dōu qù.",
+          "english": "We are all going."
+        },
+        {
+          "sentence": "他们都很好。",
+          "pinyin": "Tāmen dōu hěn hǎo.",
+          "english": "They are all very good."
+        },
+        {
+          "sentence": "我们都喜欢。",
+          "pinyin": "Wǒmen dōu xǐhuān.",
+          "english": "We all like it."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-5",
+      "hsk_level": 1,
+      "grammar_point_name": "The \"also\" adverb \"ye\"",
+      "grammar_pattern": "也 + Verb / Adj.",
+      "description": "This pattern uses \"也\" (yě) to indicate that the subject is also involved in the action or state described by the verb or adjective, similar to \"also\" or \"too\" in English.",
+      "examples": [
+        {
+          "sentence": "我也去。",
+          "pinyin": "Wǒ yě qù.",
+          "english": "I am also going."
+        },
+        {
+          "sentence": "他也高。",
+          "pinyin": "Tā yě gāo.",
+          "english": "He is also tall."
+        },
+        {
+          "sentence": "我们也喜欢。",
+          "pinyin": "Wǒmen yě xǐhuān.",
+          "english": "We also like it."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-6",
+      "hsk_level": 1,
+      "grammar_point_name": "Asking about degree with \"duo\"",
+      "grammar_pattern": "Subj. + 多 + Adj. ?",
+      "description": "This pattern uses \"多\" (duō) to ask about the degree or extent of an adjective, often used to inquire about measurements like height, length, or age.",
+      "examples": [
+        {
+          "sentence": "你多高？",
+          "pinyin": "Nǐ duō gāo?",
+          "english": "How tall are you?"
+        },
+        {
+          "sentence": "他多大？",
+          "pinyin": "Tā duō dà?",
+          "english": "How old is he?"
+        },
+        {
+          "sentence": "这多长？",
+          "pinyin": "Zhè duō cháng?",
+          "english": "How long is this?"
+        }
+      ]
+    },
+    {
+      "key": "hsk1-7",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing \"not very\" with \"bu tai\"",
+      "grammar_pattern": "不太 + Adj.",
+      "description": "This pattern uses \"不太\" (bù tài) to indicate that something is not very much or not very strongly the case, often used to soften a statement.",
+      "examples": [
+        {
+          "sentence": "我不太喜欢。",
+          "pinyin": "Wǒ bù tài xǐhuān.",
+          "english": "I don't like it very much."
+        },
+        {
+          "sentence": "他不太高。",
+          "pinyin": "Tā bù tài gāo.",
+          "english": "He is not very tall."
+        },
+        {
+          "sentence": "我们不太饿。",
+          "pinyin": "Wǒmen bù tài è.",
+          "english": "We are not very hungry."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-8",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing \"and\" with \"he\"",
+      "grammar_pattern": "Noun 1 + 和 + Noun 2",
+      "description": "This pattern uses \"和\" (hé) to connect two nouns, indicating that both are involved or related, similar to \"and\" in English.",
+      "examples": [
+        {
+          "sentence": "我和他。",
+          "pinyin": "Wǒ hé tā.",
+          "english": "Me and him."
+        },
+        {
+          "sentence": "书和笔。",
+          "pinyin": "Shū hé bǐ.",
+          "english": "Book and pen."
+        },
+        {
+          "sentence": "猫和狗。",
+          "pinyin": "Māo hé gǒu.",
+          "english": "Cat and dog."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-9",
+      "hsk_level": 1,
+      "grammar_point_name": "After a specific time with \"yihou\"",
+      "grammar_pattern": "Time / Verb + 以后",
+      "description": "This pattern uses \"以后\" (yǐhòu) to indicate that something happens after a specific time or event, similar to \"after\" in English.",
+      "examples": [
+        {
+          "sentence": "五点以后。",
+          "pinyin": "Wǔ diǎn yǐhòu.",
+          "english": "After five o'clock."
+        },
+        {
+          "sentence": "吃饭以后。",
+          "pinyin": "Chīfàn yǐhòu.",
+          "english": "After eating."
+        },
+        {
+          "sentence": "我们以后去。",
+          "pinyin": "Wǒmen yǐhòu qù.",
+          "english": "We will go after."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-10",
+      "hsk_level": 1,
+      "grammar_point_name": "Before a specific time with \"yiqian\"",
+      "grammar_pattern": "Time / Verb + 以前",
+      "description": "This pattern uses \"以前\" (yǐqián) to indicate that something happens before a specific time or event, similar to \"before\" in English.",
+      "examples": [
+        {
+          "sentence": "五点以前。",
+          "pinyin": "Wǔ diǎn yǐqián.",
+          "english": "Before five o'clock."
+        },
+        {
+          "sentence": "吃饭以前。",
+          "pinyin": "Chīfàn yǐqián.",
+          "english": "Before eating."
+        },
+        {
+          "sentence": "我们以前去。",
+          "pinyin": "Wǒmen yǐqián qù.",
+          "english": "We went before."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-11",
+      "hsk_level": 1,
+      "grammar_point_name": "Time words and word order",
+      "grammar_pattern": "Subj. + Time⋯⋯ / Time + Subj.⋯⋯",
+      "description": "This pattern shows the flexibility of placing time words either before or after the subject in a sentence, allowing for different emphasis or clarity.",
+      "examples": [
+        {
+          "sentence": "我明天去。",
+          "pinyin": "Wǒ míngtiān qù.",
+          "english": "I will go tomorrow."
+        },
+        {
+          "sentence": "明天我去。",
+          "pinyin": "Míngtiān wǒ qù.",
+          "english": "Tomorrow I will go."
+        },
+        {
+          "sentence": "我们下午学习。",
+          "pinyin": "Wǒmen xiàwǔ xuéxí.",
+          "english": "We study in the afternoon."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-12",
+      "hsk_level": 1,
+      "grammar_point_name": "Age with \"sui\"",
+      "grammar_pattern": "Subj. + Number + 岁",
+      "description": "This pattern uses \"岁\" (suì) to indicate someone's age, with the number preceding \"岁\" to specify how old the subject is.",
+      "examples": [
+        {
+          "sentence": "我二十岁。",
+          "pinyin": "Wǒ èrshí suì.",
+          "english": "I am twenty years old."
+        },
+        {
+          "sentence": "他五岁。",
+          "pinyin": "Tā wǔ suì.",
+          "english": "He is five years old."
+        },
+        {
+          "sentence": "我们三十岁。",
+          "pinyin": "Wǒmen sānshí suì.",
+          "english": "We are thirty years old."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-13",
+      "hsk_level": 1,
+      "grammar_point_name": "Measure word \"ge\"",
+      "grammar_pattern": "Number + 个 + Noun",
+      "description": "This pattern uses the measure word \"个\" (gè) to count nouns, which is one of the most common measure words in Chinese and can be used with a wide variety of nouns.",
+      "examples": [
+        {
+          "sentence": "一个苹果。",
+          "pinyin": "Yī gè píngguǒ.",
+          "english": "One apple."
+        },
+        {
+          "sentence": "两个学生。",
+          "pinyin": "Liǎng gè xuéshēng.",
+          "english": "Two students."
+        },
+        {
+          "sentence": "三个老师。",
+          "pinyin": "Sān gè lǎoshī.",
+          "english": "Three teachers."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-14",
+      "hsk_level": 1,
+      "grammar_point_name": "Structure of dates",
+      "grammar_pattern": "Number + 年 + Number + 月 + Number + 日",
+      "description": "This pattern is used to express dates in Chinese, with the year, month, and day each represented by numbers followed by their respective measure words.",
+      "examples": [
+        {
+          "sentence": "2023年10月5日。",
+          "pinyin": "Èr líng èr sān nián shí yuè wǔ rì.",
+          "english": "October 5, 2023."
+        },
+        {
+          "sentence": "1999年12月31日。",
+          "pinyin": "Yī jiǔ jiǔ jiǔ nián shí'èr yuè sānshíyī rì.",
+          "english": "December 31, 1999."
+        },
+        {
+          "sentence": "2000年1月1日。",
+          "pinyin": "Èr líng líng líng nián yī yuè yī rì.",
+          "english": "January 1, 2000."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-15",
+      "hsk_level": 1,
+      "grammar_point_name": "Structure of days of the week",
+      "grammar_pattern": "星期 + Number",
+      "description": "This pattern uses \"星期\" (xīngqī) followed by a number to indicate the day of the week, with Monday being \"星期一\" and so on.",
+      "examples": [
+        {
+          "sentence": "星期一。",
+          "pinyin": "Xīngqīyī.",
+          "english": "Monday."
+        },
+        {
+          "sentence": "星期三。",
+          "pinyin": "Xīngqīsān.",
+          "english": "Wednesday."
+        },
+        {
+          "sentence": "星期五。",
+          "pinyin": "Xīngqīwǔ.",
+          "english": "Friday."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-16",
+      "hsk_level": 1,
+      "grammar_point_name": "Structure of numbers",
+      "grammar_pattern": "Number + Unit",
+      "description": "This pattern is used to express quantities or measurements, with the number followed by the appropriate unit of measurement.",
+      "examples": [
+        {
+          "sentence": "三本书。",
+          "pinyin": "Sān běn shū.",
+          "english": "Three books."
+        },
+        {
+          "sentence": "五个人。",
+          "pinyin": "Wǔ gè rén.",
+          "english": "Five people."
+        },
+        {
+          "sentence": "十块钱。",
+          "pinyin": "Shí kuài qián.",
+          "english": "Ten yuan."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-17",
+      "hsk_level": 1,
+      "grammar_point_name": "Structure of times (advanced)",
+      "grammar_pattern": "Number 1 + 点(钟) + Number 2 + 分",
+      "description": "This pattern is used to express more precise times, with the hour followed by \"点\" (diǎn) or \"点钟\" (diǎnzhōng), and the minutes followed by \"分\" (fēn).",
+      "examples": [
+        {
+          "sentence": "三点十五分。",
+          "pinyin": "Sān diǎn shíwǔ fēn.",
+          "english": "3:15."
+        },
+        {
+          "sentence": "五点四十分。",
+          "pinyin": "Wǔ diǎn sìshí fēn.",
+          "english": "5:40."
+        },
+        {
+          "sentence": "十点二十分。",
+          "pinyin": "Shí diǎn èrshí fēn.",
+          "english": "10:20."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-18",
+      "hsk_level": 1,
+      "grammar_point_name": "Structure of times (basic)",
+      "grammar_pattern": "Number + 点(钟)",
+      "description": "This pattern is used to express the hour, with the number followed by \"点\" (diǎn) or \"点钟\" (diǎnzhōng) to indicate the time.",
+      "examples": [
+        {
+          "sentence": "三点。",
+          "pinyin": "Sān diǎn.",
+          "english": "3 o'clock."
+        },
+        {
+          "sentence": "五点。",
+          "pinyin": "Wǔ diǎn.",
+          "english": "5 o'clock."
+        },
+        {
+          "sentence": "十点。",
+          "pinyin": "Shí diǎn.",
+          "english": "10 o'clock."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-19",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing close possession without \"de\"",
+      "grammar_pattern": "Pronoun + Noun",
+      "description": "This pattern is used to indicate possession when the relationship between the pronoun and the noun is close or inherent, such as family members or body parts.",
+      "examples": [
+        {
+          "sentence": "我妈妈。",
+          "pinyin": "Wǒ māma.",
+          "english": "My mom."
+        },
+        {
+          "sentence": "他爸爸。",
+          "pinyin": "Tā bàba.",
+          "english": "His dad."
+        },
+        {
+          "sentence": "我们老师。",
+          "pinyin": "Wǒmen lǎoshī.",
+          "english": "Our teacher."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-20",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing completion with \"le\"",
+      "grammar_pattern": "Subj. + Verb + 了 + Obj.",
+      "description": "This pattern uses \"了\" (le) to indicate that an action has been completed, often used to describe past events or changes of state.",
+      "examples": [
+        {
+          "sentence": "我吃饭了。",
+          "pinyin": "Wǒ chīfàn le.",
+          "english": "I ate."
+        },
+        {
+          "sentence": "他看书了。",
+          "pinyin": "Tā kànshū le.",
+          "english": "He read a book."
+        },
+        {
+          "sentence": "我们学习了。",
+          "pinyin": "Wǒmen xuéxí le.",
+          "english": "We studied."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-21",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing \"not anymore\" with \"le\"",
+      "grammar_pattern": "不 / 没(有) + Verb Phrase + 了",
+      "description": "This pattern uses \"了\" (le) to indicate that something is no longer the case, often used to express that a previous state or action has ceased.",
+      "examples": [
+        {
+          "sentence": "我不去了。",
+          "pinyin": "Wǒ bù qù le.",
+          "english": "I am not going anymore."
+        },
+        {
+          "sentence": "他没有钱了。",
+          "pinyin": "Tā méiyǒu qián le.",
+          "english": "He doesn't have money anymore."
+        },
+        {
+          "sentence": "我们不喜欢了。",
+          "pinyin": "Wǒmen bù xǐhuān le.",
+          "english": "We don't like it anymore."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-22",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing \"now\" with \"le\"",
+      "grammar_pattern": "New Situation + 了",
+      "description": "This pattern uses \"了\" (le) to indicate a new situation or change in state, often used to describe something that has just happened or is now the case.",
+      "examples": [
+        {
+          "sentence": "我饿了。",
+          "pinyin": "Wǒ è le.",
+          "english": "I am hungry now."
+        },
+        {
+          "sentence": "他累了。",
+          "pinyin": "Tā lèi le.",
+          "english": "He is tired now."
+        },
+        {
+          "sentence": "我们回家了。",
+          "pinyin": "Wǒmen huí jiā le.",
+          "english": "We are home now."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-23",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing possession with \"de\"",
+      "grammar_pattern": "Noun 1 + 的 + Noun 2",
+      "description": "This pattern uses \"的\" (de) to indicate possession, showing that Noun 2 belongs to or is associated with Noun 1.",
+      "examples": [
+        {
+          "sentence": "我的书。",
+          "pinyin": "Wǒ de shū.",
+          "english": "My book."
+        },
+        {
+          "sentence": "他的笔。",
+          "pinyin": "Tā de bǐ.",
+          "english": "His pen."
+        },
+        {
+          "sentence": "我们的老师。",
+          "pinyin": "Wǒmen de lǎoshī.",
+          "english": "Our teacher."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-24",
+      "hsk_level": 1,
+      "grammar_point_name": "Questions with \"ne\"",
+      "grammar_pattern": "⋯⋯呢 ?",
+      "description": "This pattern uses \"呢\" (ne) to form a question, often used to inquire about the state or location of someone or something, or to follow up on a previous statement.",
+      "examples": [
+        {
+          "sentence": "你呢？",
+          "pinyin": "Nǐ ne?",
+          "english": "And you?"
+        },
+        {
+          "sentence": "书呢？",
+          "pinyin": "Shū ne?",
+          "english": "Where is the book?"
+        },
+        {
+          "sentence": "我们呢？",
+          "pinyin": "Wǒmen ne?",
+          "english": "What about us?"
+        }
+      ]
+    },
+    {
+      "key": "hsk1-25",
+      "hsk_level": 1,
+      "grammar_point_name": "Sentence-final interjection \"a\"",
+      "grammar_pattern": "⋯⋯啊",
+      "description": "This pattern uses \"啊\" (a) at the end of a sentence to add emphasis or express emotion, often used to soften a statement or show surprise.",
+      "examples": [
+        {
+          "sentence": "你好啊！",
+          "pinyin": "Nǐ hǎo a!",
+          "english": "Hello!"
+        },
+        {
+          "sentence": "真好啊！",
+          "pinyin": "Zhēn hǎo a!",
+          "english": "That's really good!"
+        },
+        {
+          "sentence": "我们去啊！",
+          "pinyin": "Wǒmen qù a!",
+          "english": "Let's go!"
+        }
+      ]
+    },
+    {
+      "key": "hsk1-26",
+      "hsk_level": 1,
+      "grammar_point_name": "Softening speech with \"ba\"",
+      "grammar_pattern": "⋯⋯吧",
+      "description": "This pattern uses \"吧\" (ba) at the end of a sentence to soften a suggestion or request, making it sound more polite or less direct.",
+      "examples": [
+        {
+          "sentence": "我们去吧。",
+          "pinyin": "Wǒmen qù ba.",
+          "english": "Let's go."
+        },
+        {
+          "sentence": "你吃吧。",
+          "pinyin": "Nǐ chī ba.",
+          "english": "You eat."
+        },
+        {
+          "sentence": "你看吧。",
+          "pinyin": "Nǐ kàn ba.",
+          "english": "You look."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-27",
+      "hsk_level": 1,
+      "grammar_point_name": "Suggestions with \"ba\"",
+      "grammar_pattern": "Command + 吧",
+      "description": "This pattern uses \"吧\" (ba) at the end of a command to turn it into a suggestion, making it sound more friendly or less forceful.",
+      "examples": [
+        {
+          "sentence": "我们去吃饭吧。",
+          "pinyin": "Wǒmen qù chīfàn ba.",
+          "english": "Let's go eat."
+        },
+        {
+          "sentence": "你休息吧。",
+          "pinyin": "Nǐ xiūxi ba.",
+          "english": "You should rest."
+        },
+        {
+          "sentence": "我们学习吧。",
+          "pinyin": "Wǒmen xuéxí ba.",
+          "english": "Let's study."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-28",
+      "hsk_level": 1,
+      "grammar_point_name": "Directional verbs \"lai\" and \"qu\"",
+      "grammar_pattern": "来 / 去 + Place",
+      "description": "This pattern uses \"来\" (lái) or \"去\" (qù) to indicate movement towards or away from a place, respectively.",
+      "examples": [
+        {
+          "sentence": "我来学校。",
+          "pinyin": "Wǒ lái xuéxiào.",
+          "english": "I am coming to school."
+        },
+        {
+          "sentence": "他去家。",
+          "pinyin": "Tā qù jiā.",
+          "english": "He is going home."
+        },
+        {
+          "sentence": "我们去公园。",
+          "pinyin": "Wǒmen qù gōngyuán.",
+          "english": "We are going to the park."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-29",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing existence in a place with \"zai\"",
+      "grammar_pattern": "在 + Place",
+      "description": "This pattern uses \"在\" (zài) to indicate that someone or something exists or is located in a specific place.",
+      "examples": [
+        {
+          "sentence": "我在家。",
+          "pinyin": "Wǒ zài jiā.",
+          "english": "I am at home."
+        },
+        {
+          "sentence": "他在学校。",
+          "pinyin": "Tā zài xuéxiào.",
+          "english": "He is at school."
+        },
+        {
+          "sentence": "我们在公园。",
+          "pinyin": "Wǒmen zài gōngyuán.",
+          "english": "We are at the park."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-30",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing existence with \"you\"",
+      "grammar_pattern": "Place + 有 + Obj.",
+      "description": "This pattern uses \"有\" (yǒu) to indicate that something exists in a specific place, often used to describe the presence of objects or people.",
+      "examples": [
+        {
+          "sentence": "学校有学生。",
+          "pinyin": "Xuéxiào yǒu xuéshēng.",
+          "english": "There are students at school."
+        },
+        {
+          "sentence": "家有猫。",
+          "pinyin": "Jiā yǒu māo.",
+          "english": "There is a cat at home."
+        },
+        {
+          "sentence": "公园有树。",
+          "pinyin": "Gōngyuán yǒu shù.",
+          "english": "There are trees in the park."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-31",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing possession with \"you\"",
+      "grammar_pattern": "Subj. + 有 + Obj.",
+      "description": "This pattern uses \"有\" (yǒu) to indicate that the subject possesses or has something, similar to \"have\" in English.",
+      "examples": [
+        {
+          "sentence": "我有书。",
+          "pinyin": "Wǒ yǒu shū.",
+          "english": "I have a book."
+        },
+        {
+          "sentence": "他有笔。",
+          "pinyin": "Tā yǒu bǐ.",
+          "english": "He has a pen."
+        },
+        {
+          "sentence": "我们有老师。",
+          "pinyin": "Wǒmen yǒu lǎoshī.",
+          "english": "We have a teacher."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-32",
+      "hsk_level": 1,
+      "grammar_point_name": "Polite requests with \"qing\"",
+      "grammar_pattern": "请 + Verb",
+      "description": "This pattern uses \"请\" (qǐng) to make a polite request, often used to ask someone to do something in a courteous manner.",
+      "examples": [
+        {
+          "sentence": "请坐。",
+          "pinyin": "Qǐng zuò.",
+          "english": "Please sit down."
+        },
+        {
+          "sentence": "请吃。",
+          "pinyin": "Qǐng chī.",
+          "english": "Please eat."
+        },
+        {
+          "sentence": "请看书。",
+          "pinyin": "Qǐng kànshū.",
+          "english": "Please read the book."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-33",
+      "hsk_level": 1,
+      "grammar_point_name": "Using the verb \"jiao\"",
+      "grammar_pattern": "叫 + Name",
+      "description": "This pattern uses \"叫\" (jiào) to indicate someone's name, often used to introduce or refer to someone by their name.",
+      "examples": [
+        {
+          "sentence": "我叫小明。",
+          "pinyin": "Wǒ jiào Xiǎo Míng.",
+          "english": "My name is Xiao Ming."
+        },
+        {
+          "sentence": "他叫李华。",
+          "pinyin": "Tā jiào Lǐ Huá.",
+          "english": "His name is Li Hua."
+        },
+        {
+          "sentence": "我们叫王老师。",
+          "pinyin": "Wǒmen jiào Wáng lǎoshī.",
+          "english": "We call him Teacher Wang."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-34",
+      "hsk_level": 1,
+      "grammar_point_name": "Using the verb \"qu\"",
+      "grammar_pattern": "去 + Place",
+      "description": "This pattern uses \"去\" (qù) to indicate movement towards a specific place, often used to describe going somewhere.",
+      "examples": [
+        {
+          "sentence": "我去学校。",
+          "pinyin": "Wǒ qù xuéxiào.",
+          "english": "I am going to school."
+        },
+        {
+          "sentence": "他去家。",
+          "pinyin": "Tā qù jiā.",
+          "english": "He is going home."
+        },
+        {
+          "sentence": "我们去公园。",
+          "pinyin": "Wǒmen qù gōngyuán.",
+          "english": "We are going to the park."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-35",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing ability or possibility with \"neng\"",
+      "grammar_pattern": "能 + Verb",
+      "description": "This pattern uses \"能\" (néng) to indicate the ability or possibility of performing an action, similar to \"can\" or \"be able to\" in English.",
+      "examples": [
+        {
+          "sentence": "我能去。",
+          "pinyin": "Wǒ néng qù.",
+          "english": "I can go."
+        },
+        {
+          "sentence": "他能吃。",
+          "pinyin": "Tā néng chī.",
+          "english": "He can eat."
+        },
+        {
+          "sentence": "我们能学习。",
+          "pinyin": "Wǒmen néng xuéxí.",
+          "english": "We can study."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-36",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing a learned skill with \"hui\"",
+      "grammar_pattern": "会 + Verb",
+      "description": "This pattern uses \"会\" (huì) to indicate a learned skill or ability, often used to describe something that someone has learned to do.",
+      "examples": [
+        {
+          "sentence": "我会说中文。",
+          "pinyin": "Wǒ huì shuō Zhōngwén.",
+          "english": "I can speak Chinese."
+        },
+        {
+          "sentence": "他会开车。",
+          "pinyin": "Tā huì kāichē.",
+          "english": "He can drive."
+        },
+        {
+          "sentence": "我们会游泳。",
+          "pinyin": "Wǒmen huì yóuyǒng.",
+          "english": "We can swim."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-37",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing \"will\" with \"hui\"",
+      "grammar_pattern": "会 + Verb",
+      "description": "This pattern uses \"会\" (huì) to indicate future intention or certainty, similar to \"will\" in English.",
+      "examples": [
+        {
+          "sentence": "我会去。",
+          "pinyin": "Wǒ huì qù.",
+          "english": "I will go."
+        },
+        {
+          "sentence": "他会来。",
+          "pinyin": "Tā huì lái.",
+          "english": "He will come."
+        },
+        {
+          "sentence": "我们会学习。",
+          "pinyin": "Wǒmen huì xuéxí.",
+          "english": "We will study."
+        }
+      ]
+    },
+    {
+      "key": "hsk1-38",
+      "hsk_level": 1,
+      "grammar_point_name": "Expressing \"would like to\" with \"xiang\"",
+      "grammar_pattern": "想 + Verb",
+      "description": "This pattern uses \"想\" (xiǎng) to express a desire or intention to do something, similar to \"would like to\" in English.",
+      "examples": [
+        {
+          "sentence": "我想去。",
+          "pinyin": "Wǒ xiǎng qù.",
+          "english": "I would like to go."
+        },
+        {
+          "sentence": "他想吃。",
+          "pinyin": "Tā xiǎng chī.",
+          "english": "He would like to eat."
+        },
+        {
+          "sentence": "我们想学习。",
+          "pinyin": "Wǒmen xiǎng xuéxí.",
+          "english": "We would like to study."
+        }
+      ]
+    },
+    {
+        "key": "hsk1-39",
+        "hsk_level": 1,
+        "grammar_point_name": "How to do something with \"zenme\"",
+        "grammar_pattern": "怎么 + Verb ?",
+        "description": "This pattern uses \"怎么\" (zěnme) to ask about the method or way to do something. It is equivalent to asking \"how\" in English.",
+        "examples": [
+        {
+            "sentence": "你怎么去学校？",
+            "pinyin": "Nǐ zěnme qù xuéxiào?",
+            "english": "How do you go to school?"
+        },
+        {
+            "sentence": "这个字怎么写？",
+            "pinyin": "Zhège zì zěnme xiě?",
+            "english": "How do you write this character?"
+        },
+        {
+            "sentence": "怎么打开这个门？",
+            "pinyin": "Zěnme dǎkāi zhège mén?",
+            "english": "How do you open this door?"
+        }
+        ]
+    },
+    {
+        "key": "hsk1-40",
+        "hsk_level": 1,
+        "grammar_point_name": "Indicating location with \"zai\" before verbs",
+        "grammar_pattern": "Subj. + 在 + Place + Verb",
+        "description": "This pattern uses \"在\" (zài) to indicate the location where an action takes place. It is used to describe where someone is doing something.",
+        "examples": [
+        {
+            "sentence": "我在家吃饭。",
+            "pinyin": "Wǒ zài jiā chīfàn.",
+            "english": "I eat at home."
+        },
+        {
+            "sentence": "他在学校学习。",
+            "pinyin": "Tā zài xuéxiào xuéxí.",
+            "english": "He studies at school."
+        },
+        {
+            "sentence": "我们在公园玩。",
+            "pinyin": "Wǒmen zài gōngyuán wán.",
+            "english": "We play in the park."
+        }
+        ]
+    },
+    {
+        "key": "hsk1-41",
+        "hsk_level": 1,
+        "grammar_point_name": "Negation of past actions with \"meiyou\"",
+        "grammar_pattern": "没有 + Verb",
+        "description": "This pattern uses \"没有\" (méiyǒu) to negate actions that occurred in the past. It is equivalent to saying \"did not\" in English.",
+        "examples": [
+        {
+            "sentence": "我没有看电视。",
+            "pinyin": "Wǒ méiyǒu kàn diànshì.",
+            "english": "I did not watch TV."
+        },
+        {
+            "sentence": "他没有去北京。",
+            "pinyin": "Tā méiyǒu qù Běijīng.",
+            "english": "He did not go to Beijing."
+        },
+        {
+            "sentence": "我们没有吃晚饭。",
+            "pinyin": "Wǒmen méiyǒu chī wǎnfàn.",
+            "english": "We did not eat dinner."
+        }
+        ]
+    },
+    {
+        "key": "hsk1-42",
+        "hsk_level": 1,
+        "grammar_point_name": "Basic sentence order",
+        "grammar_pattern": "Subj. + Verb (+ Obj.)",
+        "description": "This is the most basic sentence structure in Chinese, where the subject performs an action, optionally followed by an object.",
+        "examples": [
+        {
+            "sentence": "我喝水。",
+            "pinyin": "Wǒ hē shuǐ.",
+            "english": "I drink water."
+        },
+        {
+            "sentence": "他看书。",
+            "pinyin": "Tā kàn shū.",
+            "english": "He reads a book."
+        },
+        {
+            "sentence": "我们学习中文。",
+            "pinyin": "Wǒmen xuéxí Zhōngwén.",
+            "english": "We study Chinese."
+        }
+        ]
+    },
+    {
+        "key": "hsk1-43",
+        "hsk_level": 1,
+        "grammar_point_name": "Connecting nouns with \"shi\"",
+        "grammar_pattern": "A + 是 + B",
+        "description": "This pattern uses \"是\" (shì) to connect two nouns, indicating that A is equal to or the same as B. It is equivalent to the verb \"to be\" in English.",
+        "examples": [
+        {
+            "sentence": "我是学生。",
+            "pinyin": "Wǒ shì xuéshēng.",
+            "english": "I am a student."
+        },
+        {
+            "sentence": "这是书。",
+            "pinyin": "Zhè shì shū.",
+            "english": "This is a book."
+        },
+        {
+            "sentence": "他是老师。",
+            "pinyin": "Tā shì lǎoshī.",
+            "english": "He is a teacher."
+        }
+        ]
+    },
+    {
+        "key": "hsk1-44",
+        "hsk_level": 1,
+        "grammar_point_name": "Expressing \"excessively\" with \"tai\"",
+        "grammar_pattern": "太 + Adj. + 了",
+        "description": "This pattern uses \"太\" (tài) to indicate that something is excessively or extremely a certain way, often implying a sense of exaggeration or emphasis.",
+        "examples": [
+        {
+            "sentence": "这本书太贵了。",
+            "pinyin": "Zhè běn shū tài guì le.",
+            "english": "This book is too expensive."
+        },
+        {
+            "sentence": "他太高了。",
+            "pinyin": "Tā tài gāo le.",
+            "english": "He is too tall."
+        },
+        {
+            "sentence": "今天太热了。",
+            "pinyin": "Jīntiān tài rè le.",
+            "english": "Today is too hot."
+        }
+        ]
+    },
+    {
+        "key": "hsk1-45",
+        "hsk_level": 1,
+        "grammar_point_name": "Simple \"noun + adjective\" sentences",
+        "grammar_pattern": "Noun + 很 + Adj.",
+        "description": "This pattern uses \"很\" (hěn) to link a noun with an adjective, describing the noun in a simple and straightforward manner.",
+        "examples": [
+        {
+            "sentence": "他很高兴。",
+            "pinyin": "Tā hěn gāoxìng.",
+            "english": "He is very happy."
+        },
+        {
+            "sentence": "这本书很好。",
+            "pinyin": "Zhè běn shū hěn hǎo.",
+            "english": "This book is very good."
+        },
+        {
+            "sentence": "我们很忙。",
+            "pinyin": "Wǒmen hěn máng.",
+            "english": "We are very busy."
+        }
+        ]
+    },
+    {
+        "key": "hsk1-46",
+        "hsk_level": 1,
+        "grammar_point_name": "Expressing \"some\" with \"yixie\"",
+        "grammar_pattern": "一些 + Noun",
+        "description": "This pattern uses \"一些\" (yīxiē) to indicate an indefinite quantity of something, equivalent to \"some\" or \"a few\" in English.",
+        "examples": [
+        {
+            "sentence": "我买了一些水果。",
+            "pinyin": "Wǒ mǎi le yīxiē shuǐguǒ.",
+            "english": "I bought some fruits."
+        },
+        {
+            "sentence": "他吃了一些面包。",
+            "pinyin": "Tā chī le yīxiē miànbāo.",
+            "english": "He ate some bread."
+        },
+        {
+            "sentence": "我们看了一些电影。",
+            "pinyin": "Wǒmen kàn le yīxiē diànyǐng.",
+            "english": "We watched some movies."
+        }
+        ]
+    },
+    {
+        "key": "hsk1-47",
+        "hsk_level": 1,
+        "grammar_point_name": "Counting money",
+        "grammar_pattern": "Number + 块 / 元 (+ Number + 毛 / 角) (+ 钱)",
+        "description": "This pattern is used to express amounts of money in Chinese, using \"块\" (kuài) or \"元\" (yuán) for the main unit and \"毛\" (máo) or \"角\" (jiǎo) for smaller units.",
+        "examples": [
+        {
+            "sentence": "这本书十块钱。",
+            "pinyin": "Zhè běn shū shí kuài qián.",
+            "english": "This book costs ten yuan."
+        },
+        {
+            "sentence": "我买了五块五毛钱的水果。",
+            "pinyin": "Wǒ mǎi le wǔ kuài wǔ máo qián de shuǐguǒ.",
+            "english": "I bought fruits for five yuan and five mao."
+        },
+        {
+            "sentence": "他有两块钱。",
+            "pinyin": "Tā yǒu liǎng kuài qián.",
+            "english": "He has two yuan."
+        }
+        ]
+    },
+    {
+        "key": "hsk1-48",
+        "hsk_level": 1,
+        "grammar_point_name": "Measure words in quantity questions",
+        "grammar_pattern": "几 + Measure Word (+ Noun) ?",
+        "description": "This pattern uses \"几\" (jǐ) to ask about small quantities, followed by a measure word and optionally a noun. It is equivalent to asking \"how many\" in English.",
+        "examples": [
+        {
+            "sentence": "你有几本书？",
+            "pinyin": "Nǐ yǒu jǐ běn shū?",
+            "english": "How many books do you have?"
+        },
+        {
+            "sentence": "他买了几支笔？",
+            "pinyin": "Tā mǎi le jǐ zhī bǐ?",
+            "english": "How many pens did he buy?"
+        },
+        {
+            "sentence": "你们班有几个学生？",
+            "pinyin": "Nǐmen bān yǒu jǐ ge xuéshēng?",
+            "english": "How many students are in your class?"
+        }
+        ]
+    },
+    {
+        "key": "hsk1-49",
+        "hsk_level": 1,
+        "grammar_point_name": "Asking how something is with \"zenmeyang\"",
+        "grammar_pattern": "⋯⋯怎么样？",
+        "description": "This pattern uses \"怎么样\" (zěnmeyàng) to ask about the state or quality of something, equivalent to asking \"how is...\" in English.",
+        "examples": [
+        {
+            "sentence": "这本书怎么样？",
+            "pinyin": "Zhè běn shū zěnmeyàng?",
+            "english": "How is this book?"
+        },
+        {
+            "sentence": "你的新老师怎么样？",
+            "pinyin": "Nǐ de xīn lǎoshī zěnmeyàng?",
+            "english": "How is your new teacher?"
+        },
+        {
+            "sentence": "今天的天气怎么样？",
+            "pinyin": "Jīntiān de tiānqì zěnmeyàng?",
+            "english": "How is the weather today?"
+        }
+        ]
+    },
+    {
+        "key": "hsk1-50",
+        "hsk_level": 1,
+        "grammar_point_name": "Placement of question words",
+        "grammar_pattern": "什么 / 什么时候 / 谁 / 哪儿 / 为什么 / 怎么",
+        "description": "This pattern involves placing question words like \"什么\" (shénme), \"什么时候\" (shénme shíhou), \"谁\" (shéi), \"哪儿\" (nǎr), \"为什么\" (wèishénme), and \"怎么\" (zěnme) in the appropriate position within a sentence to form questions.",
+        "examples": [
+        {
+            "sentence": "你什么时候去北京？",
+            "pinyin": "Nǐ shénme shíhou qù Běijīng?",
+            "english": "When are you going to Beijing?"
+        },
+        {
+            "sentence": "这是谁的书？",
+            "pinyin": "Zhè shì shéi de shū?",
+            "english": "Whose book is this?"
+        },
+        {
+            "sentence": "你为什么学习中文？",
+            "pinyin": "Nǐ wèishénme xuéxí Zhōngwén?",
+            "english": "Why do you study Chinese?"
+        }
+        ]
+    },
+    {
+        "key": "hsk1-51",
+        "hsk_level": 1,
+        "grammar_point_name": "Questions with \"le ma\"",
+        "grammar_pattern": "Verb + 了 + 吗？",
+        "description": "This pattern uses \"了\" (le) and \"吗\" (ma) to form questions about whether an action has been completed or not. It is equivalent to asking \"Have you...?\" in English.",
+        "examples": [
+        {
+            "sentence": "你吃饭了吗？",
+            "pinyin": "Nǐ chīfàn le ma?",
+            "english": "Have you eaten?"
+        },
+        {
+            "sentence": "他去了学校了吗？",
+            "pinyin": "Tā qù le xuéxiào le ma?",
+            "english": "Has he gone to school?"
+        },
+        {
+            "sentence": "你们看完了电影了吗？",
+            "pinyin": "Nǐmen kàn wán le diànyǐng le ma?",
+            "english": "Have you finished watching the movie?"
+        }
+        ]
+    },
+    {
+        "key": "hsk1-52",
+        "hsk_level": 1,
+        "grammar_point_name": "Yes-no questions with \"ma\"",
+        "grammar_pattern": "⋯⋯吗？",
+        "description": "This pattern uses \"吗\" (ma) at the end of a statement to turn it into a yes-no question. It is equivalent to adding \"...right?\" or \"...is it?\" in English.",
+        "examples": [
+        {
+            "sentence": "你是学生吗？",
+            "pinyin": "Nǐ shì xuéshēng ma?",
+            "english": "Are you a student?"
+        },
+        {
+            "sentence": "他喜欢中文吗？",
+            "pinyin": "Tā xǐhuān Zhōngwén ma?",
+            "english": "Does he like Chinese?"
+        },
+        {
+            "sentence": "你们去公园吗？",
+            "pinyin": "Nǐmen qù gōngyuán ma?",
+            "english": "Are you going to the park?"
+        }
+        ]
+    },
+    {
+        "key": "hsk1-53",
+        "hsk_level": 1,
+        "grammar_point_name": "The \"shi... de\" construction for emphasizing details",
+        "grammar_pattern": "是⋯⋯ 的",
+        "description": "This pattern uses \"是...的\" (shì...de) to emphasize specific details about a past event, such as time, place, or manner. It is often used to provide additional context or focus.",
+        "examples": [
+        {
+            "sentence": "我是昨天来的。",
+            "pinyin": "Wǒ shì zuótiān lái de.",
+            "english": "I came yesterday."
+        },
+        {
+            "sentence": "他是在北京学的汉语。",
+            "pinyin": "Tā shì zài Běijīng xué de Hànyǔ.",
+            "english": "He learned Chinese in Beijing."
+        },
+        {
+            "sentence": "我们是坐飞机去的。",
+            "pinyin": "Wǒmen shì zuò fēijī qù de.",
+            "english": "We went by plane."
+        }
+        ]
+    },
+    {
+        "key": "hsk1-54",
+        "hsk_level": 1,
+        "grammar_point_name": "Comparing \"bu\" and \"mei\"",
+        "grammar_pattern": "不 vs 没",
+        "description": "This pattern compares the use of \"不\" (bù) and \"没\" (méi) for negation. \"不\" is used to negate present or future actions, while \"没\" is used to negate past actions or the existence of something.",
+        "examples": [
+        {
+            "sentence": "我不去学校。",
+            "pinyin": "Wǒ bù qù xuéxiào.",
+            "english": "I am not going to school."
+        },
+        {
+            "sentence": "他没吃早饭。",
+            "pinyin": "Tā méi chī zǎofàn.",
+            "english": "He did not eat breakfast."
+        },
+        {
+            "sentence": "我不喜欢咖啡。",
+            "pinyin": "Wǒ bù xǐhuān kāfēi.",
+            "english": "I do not like coffee."
+        }
+        ]
+    }
+]
+   

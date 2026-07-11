@@ -1,0 +1,572 @@
+[
+    {
+      "刀": {
+        "pinyin": "dāo",
+        "definition": [
+          {
+            "meaning": "knife",
+            "example": {
+              "chinese": "我用刀切水果。",
+              "pinyin": "Wǒ yòng dāo qiē shuǐguǒ.",
+              "english": "I use a knife to cut fruit."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "叉子": {
+        "pinyin": "chāzi",
+        "definition": [
+          {
+            "meaning": "fork",
+            "example": {
+              "chinese": "请用叉子吃面条。",
+              "pinyin": "Qǐng yòng chāzi chī miàntiáo.",
+              "english": "Please use a fork to eat noodles."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "勺子": {
+        "pinyin": "sháozi",
+        "definition": [
+          {
+            "meaning": "spoon",
+            "example": {
+              "chinese": "她用勺子喝汤。",
+              "pinyin": "Tā yòng sháozi hē tāng.",
+              "english": "She uses a spoon to drink soup."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "盘子": {
+        "pinyin": "pánzi",
+        "definition": [
+          {
+            "meaning": "plate",
+            "example": {
+              "chinese": "他把菜放在盘子里。",
+              "pinyin": "Tā bǎ cài fàng zài pánzi lǐ.",
+              "english": "He put the dishes on the plate."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "碗": {
+        "pinyin": "wǎn",
+        "definition": [
+          {
+            "meaning": "bowl",
+            "example": {
+              "chinese": "这个碗很漂亮。",
+              "pinyin": "Zhège wǎn hěn piàoliang.",
+              "english": "This bowl is very beautiful."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "杯子": {
+        "pinyin": "bēizi",
+        "definition": [
+          {
+            "meaning": "cup",
+            "example": {
+              "chinese": "我的杯子里有水。",
+              "pinyin": "Wǒ de bēizi lǐ yǒu shuǐ.",
+              "english": "There is water in my cup."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "玻璃杯": {
+        "pinyin": "bōlibēi",
+        "definition": [
+          {
+            "meaning": "glass (for drinking)",
+            "example": {
+              "chinese": "他用玻璃杯喝果汁。",
+              "pinyin": "Tā yòng bōlibēi hē guǒzhī.",
+              "english": "He drinks juice with a glass."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "锅": {
+        "pinyin": "guō",
+        "definition": [
+          {
+            "meaning": "pot",
+            "example": {
+              "chinese": "妈妈用锅煮汤。",
+              "pinyin": "Māma yòng guō zhǔ tāng.",
+              "english": "Mom uses a pot to cook soup."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "平底锅": {
+        "pinyin": "píngdǐguō",
+        "definition": [
+          {
+            "meaning": "pan",
+            "example": {
+              "chinese": "我用平底锅煎蛋。",
+              "pinyin": "Wǒ yòng píngdǐguō jiān dàn.",
+              "english": "I fry eggs with a pan."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "盖子": {
+        "pinyin": "gàizi",
+        "definition": [
+          {
+            "meaning": "lid",
+            "example": {
+              "chinese": "请把盖子盖上。",
+              "pinyin": "Qǐng bǎ gàizi gài shàng.",
+              "english": "Please put the lid on."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "炉子": {
+        "pinyin": "lúzi",
+        "definition": [
+          {
+            "meaning": "stove",
+            "example": {
+              "chinese": "炉子上在烧水。",
+              "pinyin": "Lúzi shàng zài shāo shuǐ.",
+              "english": "Water is boiling on the stove."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "烤箱": {
+        "pinyin": "kǎoxiāng",
+        "definition": [
+          {
+            "meaning": "oven",
+            "example": {
+              "chinese": "她把蛋糕放进烤箱。",
+              "pinyin": "Tā bǎ dàngāo fàng jìn kǎoxiāng.",
+              "english": "She put the cake into the oven."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "水槽": {
+        "pinyin": "shuǐcáo",
+        "definition": [
+          {
+            "meaning": "sink",
+            "example": {
+              "chinese": "水槽里有脏盘子。",
+              "pinyin": "Shuǐcáo lǐ yǒu zāng pánzi.",
+              "english": "There are dirty dishes in the sink."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "水龙头": {
+        "pinyin": "shuǐlóngtóu",
+        "definition": [
+          {
+            "meaning": "faucet",
+            "example": {
+              "chinese": "请关掉水龙头。",
+              "pinyin": "Qǐng guān diào shuǐlóngtóu.",
+              "english": "Please turn off the faucet."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "柜台": {
+        "pinyin": "guìtái",
+        "definition": [
+          {
+            "meaning": "counter",
+            "example": {
+              "chinese": "他把钥匙放在柜台上。",
+              "pinyin": "Tā bǎ yàoshi fàng zài guìtái shàng.",
+              "english": "He put the keys on the counter."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "桌子": {
+        "pinyin": "zhuōzi",
+        "definition": [
+          {
+            "meaning": "table",
+            "example": {
+              "chinese": "我们在桌子上吃饭。",
+              "pinyin": "Wǒmen zài zhuōzi shàng chīfàn.",
+              "english": "We eat at the table."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "椅子": {
+        "pinyin": "yǐzi",
+        "definition": [
+          {
+            "meaning": "chair",
+            "example": {
+              "chinese": "请坐在椅子上。",
+              "pinyin": "Qǐng zuò zài yǐzi shàng.",
+              "english": "Please sit on the chair."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "冰箱": {
+        "pinyin": "bīngxiāng",
+        "definition": [
+          {
+            "meaning": "refrigerator",
+            "example": {
+              "chinese": "牛奶在冰箱里。",
+              "pinyin": "Niúnǎi zài bīngxiāng lǐ.",
+              "english": "The milk is in the refrigerator."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "冷冻柜": {
+        "pinyin": "lěngdòngguì",
+        "definition": [
+          {
+            "meaning": "freezer",
+            "example": {
+              "chinese": "我把冰淇淋放在冷冻柜里。",
+              "pinyin": "Wǒ bǎ bīngqílín fàng zài lěngdòngguì lǐ.",
+              "english": "I put the ice cream in the freezer."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "盘子": {
+        "pinyin": "pánzi",
+        "definition": [
+          {
+            "meaning": "dish",
+            "example": {
+              "chinese": "这个盘子很干净。",
+              "pinyin": "Zhège pánzi hěn gānjìng.",
+              "english": "This dish is very clean."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "毛巾": {
+        "pinyin": "máojīn",
+        "definition": [
+          {
+            "meaning": "towel",
+            "example": {
+              "chinese": "我用毛巾擦手。",
+              "pinyin": "Wǒ yòng máojīn cā shǒu.",
+              "english": "I use a towel to dry my hands."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "海绵": {
+        "pinyin": "hǎimián",
+        "definition": [
+          {
+            "meaning": "sponge",
+            "example": {
+              "chinese": "她用海绵洗碗。",
+              "pinyin": "Tā yòng hǎimián xǐ wǎn.",
+              "english": "She washes dishes with a sponge."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "垃圾桶": {
+        "pinyin": "lājītǒng",
+        "definition": [
+          {
+            "meaning": "trash can",
+            "example": {
+              "chinese": "请把垃圾扔进垃圾桶。",
+              "pinyin": "Qǐng bǎ lājī rēng jìn lājītǒng.",
+              "english": "Please throw the trash into the trash can."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "容器": {
+        "pinyin": "róngqì",
+        "definition": [
+          {
+            "meaning": "container",
+            "example": {
+              "chinese": "这个容器可以装水。",
+              "pinyin": "Zhège róngqì kěyǐ zhuāng shuǐ.",
+              "english": "This container can hold water."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "切菜板": {
+        "pinyin": "qiēcàibǎn",
+        "definition": [
+          {
+            "meaning": "cutting board",
+            "example": {
+              "chinese": "请在切菜板上切菜。",
+              "pinyin": "Qǐng zài qiēcàibǎn shàng qiē cài.",
+              "english": "Please cut vegetables on the cutting board."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "量杯": {
+        "pinyin": "liángbēi",
+        "definition": [
+          {
+            "meaning": "measuring cup",
+            "example": {
+              "chinese": "用量杯量面粉。",
+              "pinyin": "Yòng liángbēi liáng miànfěn.",
+              "english": "Measure flour with a measuring cup."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "搅拌器": {
+        "pinyin": "jiǎobànqì",
+        "definition": [
+          {
+            "meaning": "mixer",
+            "example": {
+              "chinese": "她用搅拌器打蛋。",
+              "pinyin": "Tā yòng jiǎobànqì dǎ dàn.",
+              "english": "She beats eggs with a mixer."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "搅拌机": {
+        "pinyin": "jiǎobànjī",
+        "definition": [
+          {
+            "meaning": "blender",
+            "example": {
+              "chinese": "我用搅拌机做果汁。",
+              "pinyin": "Wǒ yòng jiǎobànjī zuò guǒzhī.",
+              "english": "I make juice with a blender."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "切": {
+        "pinyin": "qiē",
+        "definition": [
+          {
+            "meaning": "to cut",
+            "example": {
+              "chinese": "请把苹果切成两半。",
+              "pinyin": "Qǐng bǎ píngguǒ qiē chéng liǎng bàn.",
+              "english": "Please cut the apple in half."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "搅拌": {
+        "pinyin": "jiǎobàn",
+        "definition": [
+          {
+            "meaning": "to stir",
+            "example": {
+              "chinese": "请搅拌一下汤。",
+              "pinyin": "Qǐng jiǎobàn yīxià tāng.",
+              "english": "Please stir the soup."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "混合": {
+        "pinyin": "hùnhé",
+        "definition": [
+          {
+            "meaning": "to mix",
+            "example": {
+              "chinese": "把面粉和水混合在一起。",
+              "pinyin": "Bǎ miànfěn hé shuǐ hùnhé zài yīqǐ.",
+              "english": "Mix the flour and water together."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "倒": {
+        "pinyin": "dào",
+        "definition": [
+          {
+            "meaning": "to pour",
+            "example": {
+              "chinese": "请把茶倒进杯子里。",
+              "pinyin": "Qǐng bǎ chá dào jìn bēizi lǐ.",
+              "english": "Please pour the tea into the cup."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "洗": {
+        "pinyin": "xǐ",
+        "definition": [
+          {
+            "meaning": "to wash",
+            "example": {
+              "chinese": "我要洗衣服。",
+              "pinyin": "Wǒ yào xǐ yīfu.",
+              "english": "I want to wash clothes."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "擦干": {
+        "pinyin": "cāgān",
+        "definition": [
+          {
+            "meaning": "to dry",
+            "example": {
+              "chinese": "请把盘子擦干。",
+              "pinyin": "Qǐng bǎ pánzi cāgān.",
+              "english": "Please dry the dishes."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "煮": {
+        "pinyin": "zhǔ",
+        "definition": [
+          {
+            "meaning": "to cook",
+            "example": {
+              "chinese": "妈妈在煮饭。",
+              "pinyin": "Māma zài zhǔ fàn.",
+              "english": "Mom is cooking."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "烤": {
+        "pinyin": "kǎo",
+        "definition": [
+          {
+            "meaning": "to bake",
+            "example": {
+              "chinese": "我喜欢烤面包。",
+              "pinyin": "Wǒ xǐhuān kǎo miànbāo.",
+              "english": "I like to bake bread."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "煎": {
+        "pinyin": "jiān",
+        "definition": [
+          {
+            "meaning": "to fry",
+            "example": {
+              "chinese": "他在煎鱼。",
+              "pinyin": "Tā zài jiān yú.",
+              "english": "He is frying fish."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "煮": {
+        "pinyin": "zhǔ",
+        "definition": [
+          {
+            "meaning": "to boil",
+            "example": {
+              "chinese": "水煮开了。",
+              "pinyin": "Shuǐ zhǔ kāi le.",
+              "english": "The water has boiled."
+            }
+          }
+        ]
+      }
+    }
+  ]

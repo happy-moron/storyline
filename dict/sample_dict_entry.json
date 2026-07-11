@@ -1,0 +1,31 @@
+{
+    "在": {
+      "pinyin": "zài",
+      "definition": [
+        {
+          "meaning": "to be at; to be in; to be on",
+          "example": {
+            "chinese": "我在家。",
+            "pinyin": "Wǒ zài jiā.",
+            "english": "I am at home."
+          }
+        },
+        {
+          "meaning": "to be present; to exist",
+          "example": {
+            "chinese": "问题在于钱。",
+            "pinyin": "Wèn tí zài yú qián.",
+            "english": "The problem lies in money."
+          }
+        },
+        {
+          "meaning": "in the process of; indicating an action in progress",
+          "example": {
+            "chinese": "他们在学习。",
+            "pinyin": "Tā men zài xué xí.",
+            "english": "They are studying."
+          }
+        }
+      ]
+    }
+}

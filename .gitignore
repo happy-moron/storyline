@@ -101,5 +101,5 @@ books/
 .ruff_cache/
 apilog/
 .aider*
-books/
+.roo/
 dict/audio

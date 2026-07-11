@@ -1,0 +1,615 @@
+# Task
+Please take the following wiki markup and extract out the grammar points (with patterns) in a compact format which would be suitable for providing to an LLM as additional context within a prompt.
+
+# Requirements
+
+1. The output should be JSON format
+2. The output should use short key names for efficiency
+3. Each entry should have a unique id/key generated with an increasing sequence level and the 'hsk3' prefix
+   - e.g. "hsk3-1", "hsk3-2" etc.
+   - the sequence should be shared across categories
+4. Each entry should be condensed into an array of form [key, grammar_point, pattern]
+5. Examples should not be preserved.
+
+#Sample output
+[ {"c":"Adverbs", "g":[[hsk3-1"Expressing actions in progress with \"zai\"","(正) 在 + Verb"], ...]},
+  {"c":"Adverbs with Adjectives", ...}
+]
+
+# Wiki Markup 
+
+== Parts of Speech ==
+These following grammar points fit pretty neatly into one part of speech category.
+
+=== Adjectives ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Adjectives with "-ji le"
+|Adj. + 极了
+|这个 主意 好 极了 。
+This is a very good idea.
+|-
+|Reduplication of adjectives
+|Adj. + Adj.
+|你 应该 慢慢 地 走。
+You should walk slowly.
+|-
+|Turning adjectives into adverbs
+|Adj. + 地 + Verb
+|你 要 认真 地 学习。
+You should study seriously.
+|}
+
+=== Adverbs ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "again" in the past with "you"
+|又 + Verb + 了
+|你 又 迟到 '''了''' 。
+You are late again.
+|-
+|Expressing "all along" with "yizhi"
+|Subj. + 一直 + Predicate
+|我 一直 在 现在 的 公司 工作。
+I'm still working at my current company all along.
+|-
+|Expressing "always" with "zongshi"
+|总是 + Verb
+|他 总是 迟到。
+He is always late.
+|-
+|Expressing duration of inaction
+|Duration + 没 + Verb + 了
+|他 '''已经''' 一 个 星期 没 洗澡 '''了''' 。
+It's been 1 week and he still hasn't bathed yet.
+|-
+|Expressing "finally" with "zhongyu"
+|Subj. + 终于 + Predicate + 了
+|你 终于 到 '''了''' 。
+You are finally here.
+|-
+|Expressing lateness with "cai"
+|Subj. + Time + 才 + Verb
+|他 二十五 岁 才 上 大学 。
+He only entered university at 25 years old.
+|-
+|Expressing "nearly" with "jihu"
+|Subj. + 几乎 + Verb
+|他 的 头发 几乎 全 白 了 。
+His hair is almost all white.
+|-
+|Expressing "only" with "zhi"
+|只 + Verb
+|我 只 有 一个 妹妹。
+I only have a younger sister.
+|-
+|Sequencing with "xian" and "zai"
+|先⋯⋯ ，再⋯⋯
+|先 洗 手 ，再 吃饭 。
+Wash hands first before eating.
+|-
+|Simultaneous tasks with "yibian"
+|一边 + Verb 1 (，) 一边 + Verb 2
+|不要 一边 说话 ，一边 吃 东西。
+Don't talk while you're eating.
+|-
+|Using "always" as a complaint with "laoshi"
+|Subj. + 老 (是 ) + Verb
+|你 怎么 老是 加班 ？
+How are you always still working overtime?
+|-
+|Using "cai" for small numbers
+|才 + Number + Measure Word + Noun
+|这 个 班 才 两 个 学生 。
+There are only 2 students in this class.
+|}
+
+=== Adverbs with Adjectives ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Adjectives with "name" and "zheme"
+|那么 / 这么 + Adj.
+|你 怎么 那么 忙 ？
+Why are you always this busy?
+|-
+|Basic comparisons with "yiyang"
+|Noun 1 + 跟 / 和 + Noun 2 + 一样 + Adj.
+|你 跟 他 一样 高 。
+You are as tall as him.
+|-
+|Expressing "both A and B" with "you"
+|又⋯⋯ 又⋯⋯
+|他 又 高 又 帅。
+He is both tall and handsome.
+|-
+|Expressing "rather" with "bijiao"
+|Subj. + 比较 + Adj.
+|这个 问题 比较 简单 。
+This question is more simpler.
+|-
+|Intensifying with "duo"
+|Subj. + 多 + Adj.
+|多 好！外面 多 舒服！
+So good! It's so comfortable outside!
+|-
+|Modifying nouns with adjective + "de"
+|Adj. + 的 + Noun
+|好喝 的 啤酒 / 可爱 的 宝宝
+Yummy beer / Cute baby
+|}
+
+=== Conjunctions ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "or" in statements
+|⋯⋯或者⋯⋯
+|我 想 去 青岛 或者 南京。
+I want to go to Qingdao or Nanking.
+|-
+|Expressing "then…" with "name"
+|那么⋯⋯
+|他 不 听 ，那 我 应该 怎么办 ？
+He doesn't listen, so what should I do?
+|-
+|Expressing "with" with "gen"
+|跟⋯⋯ + Verb
+|你 要 跟 我 一起 去 吗？
+Do you want to go with me?
+|-
+|Offering choices with "haishi"
+|A + 还是 + B ?
+|你 要 喝 茶 还是 咖啡 ?
+Do you want to drink tea or coffee?
+|}
+
+=== Nouns ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Before a specific time with "yiqian"
+|Time / Verb + 以前
+|十 点 以前，我 在 家。
+I'm at home before 10.
+|-
+|Expressing "before" in general with "yiqian"
+|以前，⋯⋯
+|以前，我 不 会 说 中文。
+I didn't know how to speak Chinese in the past.
+|-
+|Expressing "just now" with "gangcai"
+|刚才 + Verb
+|你 刚才 '''说''' 什么 了？
+What did you just say?
+|-
+|Expressing "when" with "shi"
+|Time + 时
+|考试 时 不要 说话 。
+Don't talk during the exam.
+|-
+|In the future in general with "yihou"
+|以后，⋯⋯
+|以后，你 不要 问 我。
+Don't ask me next time.
+|-
+|Sequencing past events with "houlai"
+|⋯⋯ ，后来 ⋯⋯
+|开始 他 不 同意， 但 后来 同意了。
+At first he didn't agree, but later he agreed.
+|}
+
+=== Numbers ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Approximating with sequential numbers
+|Number 1 + Number 2
+|三 四个 人。一 两 天。
+3 or 4 people. 1 or 2 days.
+|-
+|Big numbers in Chinese
+|Number + 万 / 亿
+|五 万
+50, 000
+|-
+|Structure of times (advanced)
+|Number 1 + 点(钟) + Number 2 + 分
+|现在 十一点十八分 。
+It's now 11:18.
+|-
+|Structure of times (basic)
+|Number + 点(钟)
+|现在 十一点 。
+It's now 11 o' clock.
+|}
+
+=== Particles ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Aspect particle "zhe"
+|Verb + 着
+|我 读 ，你 听 着 。
+I read, you listen.
+|-
+|Change of state with "le"
+|⋯⋯了
+|我 25 岁 了。
+I'm 25 years old already.
+|-
+|Questions with "ne"
+|⋯⋯呢 ?
+|我 很 好。你 呢 ?
+I'm fine. And you?
+|-
+|Structural particle "de"
+|的 / 得 / 地
+|红色的车，跑得很快，慢慢地走
+A red car, runs very fast, walks slowly
+|}
+
+=== Prepositions ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "about" with "guanyu"
+|关于 + Obj. ，⋯⋯
+|关于 中国 历史 ，我 知道 的 不 多 。
+I don't know much about Chinese history.
+|-
+|Expressing "all the way until" with "zhidao"
+|直到 + Time / Event ，Subj. + 才 ⋯⋯
+|直到 十二 点 半 ，我 才 做 完 作业 。
+I only completed my homework until 12:30.
+|-
+|Expressing "towards" with "xiang"
+|向 + Direction / Person + Verb
+|你 必须 向 他 道歉！
+You must apologize to him!
+|}
+
+=== Verbs ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Appearance with "kanqilai"
+|看起来⋯⋯
+|这 家 餐厅 看起来 不错 。
+This restaurant looks good.
+|-
+|Basic comparisons with "meiyou"
+|Noun 1 + 没(有) + Noun 2 + Adj.
+|你 没有 我 胖 。
+You aren't as fat as me.
+|-
+|Causative verbs
+|Subj. + 让 / 叫 / 请 / 使 + Person + Predicate
+|你 为什么 不 让 我 去 ？
+Why won't you let me go?
+|-
+|Expressing "through" with "jingguo"
+|经过 + Event / Time ，⋯⋯
+|经过 自己 的 努力 ，她 考上 了 北京 大学 。
+She got into Beijing University thanks to her own efforts.
+|}
+
+==== Auxiliary verbs ====
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "should" with "yinggai"
+|应该 / 该 + Verb
+|你 应该 工作。
+You should work.
+|}
+
+==== Verb phrases ====
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "difficult" with "nan"
+|难 + Verb
+|难 做。难 买。
+Tough to do. Hard to buy.
+|-
+|Expressing duration with "le"
+|Verb + 了 + Duration
+|他 在 北京 住 了 两 年。
+He lived in Beijing for 2 years.
+|-
+|Expressing ongoing duration with double "le"
+|Verb + 了 + Duration + 了
+|他 在 北京 住 了 两 年 了。
+It's been 2 years that he lives in Beijing.
+|-
+|Inability with "mei banfa"
+|没办法 + Verb
+|我 没 办法 帮 你。
+I can't help you.
+|-
+|Reduplication of verbs
+|Verb + Verb
+|你 看看。
+You look at this.
+|-
+|Special verbs with "hen"
+|很 + Verb
+|我 很 喜欢 他。
+I like him very much.
+|}
+
+== Grammatical Structures ==
+These are grammatical structures that do not correspond to one particular part of speech.
+
+=== Complements ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Direction complement
+|Verb (+ Direction) + 来 / 去
+|我们 走 过去 吧 。
+Let's walk over there.
+|-
+|Potential complement
+|Verb + 得 / 不 + Complement
+|做 得 完 / 做 不 完
+Can finish / cannot finish
+|-
+|Result complements
+|Verb + 好 / 完 / 错
+|我们 吃 好 了 。
+We're finished eating.
+|-
+|Result complement "-xiaqu"
+|Verb + 下去
+|这个 故事 太 无聊 了 ，我 听 不 下去 '''了''' 。
+This story is too boring, I can't keep on listening to it.
+|}
+
+=== Conditional Statements ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "as long as" with "zhiyao"
+|只要⋯⋯，就⋯⋯
+|只要 你 过来 ， 我们 就 很 开心 。
+We will be happy as long as you come over here.
+|-
+|Expressing "only after" with "cai"
+|⋯⋯，才⋯⋯
+|那 本 书 我 看 了 两 遍 才 看 懂。
+I only read that book 2 times to understand it.
+|-
+|Expressing "only if" with "zhiyou"
+|只有⋯⋯，才⋯⋯
+|只有 你 帮忙 ， 我 才 能 完成 任务 。
+I can only finish the task if you help.
+|}
+
+=== Noun Phrases ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Using "youde" to mean "some"
+|有的 + Noun
+|派对的时候，有的人在喝酒，有的人在跳舞，还有的人在聊天。
+During parties, some people are drinking booze, some people are dancing,  and even some people are chatting.
+|}
+
+=== Numbers and Measure Words ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "half" with "ban"
+|Number + Measure Word + 半 + Noun
+|三 个 半 小时
+3 and a half hour
+|}
+
+=== Sentence Patterns ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "not even one"
+|一 + Measure Word + (Noun) + 也 / 都 + 不 / 没 + Verb
+|一 句 中文 都 不 会 说 。
+Can't even speak 1 Chinese sentence.
+|-
+|Expressing "the more... the more..." with "yue… yue…"
+|Subj.＋越＋Verb＋越 + Adj. / Verb
+|她 越 想 越 生气 。
+The more she thought about it, the more she got angry.
+|-
+|Using "ba" sentences
+|Subj. + 把 + Obj.+ Verb Phrase
+|我 把 书 看 完 了。
+I finished reading the book.
+|-
+|Using "bei" sentences
+|Subj. + 被 + Doer + Verb Phrase
+|我 被 '''他''' 骗 了 。
+I got cheated by him.
+|}
+
+==== Basic/Simple Sentence Patterns ====
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Alternative existential sentences
+|Place + Verb + 着 + Noun Phrase
+|桌子 上 放 着 一 本 书 。
+There is a book placed on the table.
+|-
+|Expressing "as one likes" with "jiu"
+|想 + Question Word + 就 + Question Word
+|想 去 '''哪儿''' 就 去 '''哪儿''' 。
+Go wherever you want to go.
+|-
+|Expressing "every" with question words
+|Question Word + 都 + Predicate
+|谁 '''都''' 可以 进 。
+Anyone can enter,
+|-
+|Expressing "more and more" with "yuelaiyue"
+|Subj. + 越来越 + Adj. + 了
+|天气 越来越 冷 了。
+The weather is getting cold.
+|-
+|Expressing purpose with "weile"
+|为了 + Purpose + Verb
+|为了 钱 ，他 什么 都 愿意 做 。
+He is willing to do anything for money.
+|-
+|Expressing "some" with question words
+|在哪儿 / 谁 / 什么 / 什么时候
+|这个 人 我 在 哪儿 见 过 。
+I think I so this person somewhere.
+|}
+
+==== Comparison Patterns ====
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing comparable degree with "you"
+|Noun 1 有 Noun 2 + Adj. + 吗？
+|他 有 我 帅 吗 ？
+Is he more handsome than me?
+|-
+|Expressing "compared with" using "gen"
+|跟 + Noun 1 + 比 (起来) ，Noun 2⋯⋯
+|跟 上海 '''比''' ，北京 的 冬天 比较 干 。
+Beijing's winter is dryer compared to Shanghai.
+|-
+|Expressing "even more" with "geng" or "hai"
+|Noun 1 + 比 + Noun 2 + 更 / 还 + Adj.
+|他 比 姚明 '''还''' 高 。
+He is taller than Yaoming.
+|-
+|Expressing "much more" in comparisons
+|Noun 1 + 比 + Noun 2 + Adj. + 多了
+|拼音 比 汉字 容易 多了 。
+Pinyin is easier than Chinese characters.
+|}
+
+==== Complex Sentence Patterns ====
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Expressing "except" and "in addition" with "chule… yiwai"
+|除了 ⋯⋯ (+ 以外) ，Subj. + 都 / 也 / 还 ⋯⋯
+|除了 他 ，我们 '''都''' 去 过 。
+We all went there except for him.
+|-
+|Expressing "if... then..." with "ruguo... jiu..."
+|如果 ⋯⋯ ，就 ⋯⋯
+|如果 有 困难 ，就 给 我 打 电话 。
+If you have any difficulties, call me.
+|-
+|Expressing "if" with "ruguo... dehua"
+|如果⋯⋯ (的话) ，(就) ⋯⋯
+|如果 明天 下雨 的话 ，我们 就 不 去 了 。
+We won't be going if it rains tomorrow.
+|-
+|Expressing "not only... but also" with "budan... erqie..."
+|不但⋯⋯，而且⋯⋯
+|他 不但 聪明，而且 勤劳。
+He is not only smart, but also hardworking.
+|}
+
+== Comparisons of Similar Grammar Points ==
+What's the difference between this grammar point and that grammar point? Check here.
+
+=== Adverbs ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Comparing "cai" and "jiu"
+|才 vs 就
+|我 花 了 两 天 才修 好 ，你 一下子 就 弄 坏 了。
+It took me 2 days to fix it and you just broke it immediately.
+|-
+|Comparing "gang" and "gangcai"
+|刚 vs. 刚才
+|你 刚才 去 哪儿 了？我 刚 回来 。
+Where did you just go? I just returned.
+|-
+|Comparing "youdian" and "yidian"
+|有点 vs. 一点
+|这 衣服 有点 贵 ，便宜 一点 吧。
+This cloth is so expensive, a cheaper one will do.
+|-
+|Comparing "zai" and "you"
+|再 vs 又
+|我不能再喝了，你走后我又喝了两瓶 。
+I can't drink some more, but I drank another 2 more after you left.
+|}
+
+=== Conjunctions ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Comparing "haishi" and "huozhe"
+|还是 vs. 或者
+|我们 明天 见 还是 后天 见 ？明天 或者 后天 都 可以 。
+When should we meet, tomorrow or the day after tomorrow? Both will do.
+|}
+
+=== Time Words ===
+{| class="wikitable"
+!Grammar Point (English)
+!Pattern
+!Examples
+|-
+|Comparing "yihou" "ranhou" "houlai"
+|以后 vs. 然后 vs. 后来
+|我 以后 想 开 公司 。/ 后来 他 去 了 美国 ，然后 他 的 父母 也 搬 过去 了 。
+I want to start a company in the future. / Later he went to the USA, then his parents also moved over there.
+|}
+
+{{BookCat}}
+

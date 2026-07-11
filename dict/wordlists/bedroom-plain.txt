@@ -1,0 +1,279 @@
+床
+chuáng
+bed
+我每天晚上十点上床睡觉。
+Wǒ měi tiān wǎn shàng shí diǎn shàng chuáng shuì jiào.
+I go to bed at 10 pm every night.
+
+枕头
+zhěn tou
+pillow
+这个枕头很软。
+Zhè ge zhěn tou hěn ruǎn.
+This pillow is very soft.
+
+毯子
+tǎn zi
+blanket
+晚上冷的时候我会盖毯子。
+Wǎn shàng lěng de shí hou wǒ huì gài tǎn zi.
+I cover myself with a blanket when it's cold at night.
+
+床单
+chuáng dān
+sheet
+我每周换一次床单。
+Wǒ měi zhōu huàn yī cì chuáng dān.
+I change the sheets once a week.
+
+床垫
+chuáng diàn
+mattress
+这个床垫太硬了。
+Zhè ge chuáng diàn tài yìng le.
+This mattress is too hard.
+
+衣柜
+yī guì
+wardrobe
+我的衣柜里有很多衣服。
+Wǒ de yī guì lǐ yǒu hěn duō yī fu.
+There are many clothes in my wardrobe.
+
+梳妆台
+shū zhuāng tái
+dresser
+她把化妆品放在梳妆台上。
+Tā bǎ huà zhuāng pǐn fàng zài shū zhuāng tái shàng.
+She puts her cosmetics on the dresser.
+
+镜子
+jìng zi
+mirror
+我每天早晨在镜子前刷牙。
+Wǒ měi tiān zǎo chén zài jìng zi qián shuā yá.
+I brush my teeth in front of the mirror every morning.
+
+床头柜
+chuáng tóu guì
+nightstand
+我的手机放在床头柜上。
+Wǒ de shǒu jī fàng zài chuáng tóu guì shàng.
+My phone is on the nightstand.
+
+台灯
+tái dēng
+lamp
+我晚上用台灯看书。
+Wǒ wǎn shàng yòng tái dēng kàn shū.
+I use a lamp to read at night.
+
+闹钟
+nào zhōng
+alarm clock
+我的闹钟每天早上七点响。
+Wǒ de nào zhōng měi tiān zǎo shàng qī diǎn xiǎng.
+My alarm clock goes off at 7 am every morning.
+
+衣架
+yī jià
+hanger
+请把外套挂在衣架上。
+Qǐng bǎ wài tào guà zài yī jià shàng.
+Please hang the coat on the hanger.
+
+壁橱
+bì chú
+closet
+我的鞋子都放在壁橱里。
+Wǒ de xié zi dōu fàng zài bì chú lǐ.
+All my shoes are in the closet.
+
+抽屉
+chōu ti
+drawer
+我把袜子放在抽屉里。
+Wǒ bǎ wà zi fàng zài chōu ti lǐ.
+I put my socks in the drawer.
+
+洗衣
+xǐ yī
+laundry
+我周末要洗衣服。
+Wǒ zhōu mò yào xǐ yī fu.
+I need to do laundry this weekend.
+
+脏衣篮
+zāng yī lán
+hamper
+请把脏衣服放进脏衣篮。
+Qǐng bǎ zāng yī fu fàng jìn zāng yī lán.
+Please put the dirty clothes in the hamper.
+
+地毯
+dì tǎn
+rug
+客厅的地毯很漂亮。
+Kè tīng de dì tǎn hěn piào liang.
+The rug in the living room is very beautiful.
+
+窗帘
+chuāng lián
+curtain
+请把窗帘拉上。
+Qǐng bǎ chuāng lián lā shàng.
+Please draw the curtains.
+
+窗户
+chuāng hu
+window
+请打开窗户让新鲜空气进来。
+Qǐng dǎ kāi chuāng hu ràng xīn xiān kōng qì jìn lái.
+Please open the window to let fresh air in.
+
+相框
+xiàng kuàng
+photo frame
+我把家人的照片放在相框里。
+Wǒ bǎ jiā rén de zhào piàn fàng zài xiàng kuàng lǐ.
+I put family photos in the photo frame.
+
+日记
+rì jì
+diary
+我每天写日记。
+Wǒ měi tiān xiě rì jì.
+I write in my diary every day.
+
+书
+shū
+book
+我喜欢在床上看书。
+Wǒ xǐ huān zài chuáng shàng kàn shū.
+I like to read books in bed.
+
+玩具
+wán jù
+toy
+孩子们在玩玩具。
+Hái zi men zài wán wán jù.
+The children are playing with toys.
+
+毛绒玩具
+máo róng wán jù
+stuffed animal
+小女孩抱着她的毛绒玩具睡觉。
+Xiǎo nǚ hái bào zhe tā de máo róng wán jù shuì jiào.
+The little girl sleeps holding her stuffed animal.
+
+首饰
+shǒu shì
+jewelry
+她把首饰放在盒子里。
+Tā bǎ shǒu shì fàng zài hé zi lǐ.
+She keeps her jewelry in a box.
+
+拖鞋
+tuō xié
+slippers
+我在家里穿拖鞋。
+Wǒ zài jiā lǐ chuān tuō xié.
+I wear slippers at home.
+
+睡衣
+shuì yī
+pajamas
+我睡觉前换上睡衣。
+Wǒ shuì jiào qián huàn shàng shuì yī.
+I change into pajamas before going to bed.
+
+电灯开关
+diàn dēng kāi guān
+light switch
+进门后请打开电灯开关。
+Jìn mén hòu qǐng dǎ kāi diàn dēng kāi guān.
+Please turn on the light switch after entering.
+
+风扇
+fēng shàn
+fan
+夏天我开风扇睡觉。
+Xià tiān wǒ kāi fēng shàn shuì jiào.
+I sleep with the fan on in summer.
+
+枕套
+zhěn tào
+pillowcase
+我需要换洗枕套。
+Wǒ xū yào huàn xǐ zhěn tào.
+I need to change the pillowcase.
+
+睡觉
+shuì jiào
+sleep
+我每天晚上十点睡觉。
+Wǒ měi tiān wǎn shàng shí diǎn shuì jiào.
+I go to sleep at 10 pm every night.
+
+休息
+xiū xi
+rest
+午饭后我需要休息一会儿。
+Wǔ fàn hòu wǒ xū yào xiū xi yī huì er.
+I need to rest for a while after lunch.
+
+换
+huàn
+change
+我每天换衣服。
+Wǒ měi tiān huàn yī fu.
+I change clothes every day.
+
+整理
+zhěng lǐ
+organize
+我周末整理房间。
+Wǒ zhōu mò zhěng lǐ fáng jiān.
+I organize my room on weekends.
+
+叠
+dié
+fold
+请把衣服叠好。
+Qǐng bǎ yī fu dié hǎo.
+Please fold the clothes.
+
+挂
+guà
+hang
+请把外套挂在衣柜里。
+Qǐng bǎ wài tào guà zài yī guì lǐ.
+Please hang the coat in the wardrobe.
+
+起床
+qǐ chuáng
+wake up
+我每天早上七点起床。
+Wǒ měi tiān zǎo shàng qī diǎn qǐ chuáng.
+I wake up at 7 am every morning.
+
+铺床
+pū chuáng
+make (the bed)
+我每天早上铺床。
+Wǒ měi tiān zǎo shàng pū chuáng.
+I make the bed every morning.
+
+读
+dú
+read
+我喜欢在床上读书。
+Wǒ xǐ huān zài chuáng shàng dú shū.
+I like to read books in bed.
+
+做梦
+zuò mèng
+dream
+昨晚我做了一个奇怪的梦。
+Zuó wǎn wǒ zuò le yī gè qí guài de mèng.
+I had a strange dream last night.
