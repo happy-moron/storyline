@@ -37,13 +37,13 @@ systemctl --user stop qwentts
 
 ## Image-gen
 
-The Image-gen model is a custom flask server ( external_docs/qwen3-tts-flask/README.md ).
+Imagegen is planned in the future. There's a ComfyUI server.
 
 It runs on http://127.0.0.1:11434 and can be started/stopped by systemctl.
 
 ```bash
-systemctl --user start qwentts
-systemctl --user stop qwentts
+systemctl --user start comfyui
+systemctl --user stop comfyui
 ```
 
 # Python Install
@@ -57,6 +57,12 @@ If running python commands, make sure to run ". .venv/bin/activate" prior.
 Testing uses 'pytest'
 
 # Code Guidelines
+
+Write SOLID code.
+Keep algorithmic code and logic clearly separate in modules that are easy to unit test.
+Maintain the unix philosophy of small units which do one thing and which can be composed together.
+Build small-self contained units first with proper testing.
+Take a TDD approach and define test cases first, design the harness needed to run those tests, and then implement. Implement a few test cases to get the  happy-path implementation up and then implement the remainder of the tests to get proper coverage across non-happypath cases.
 
 ## Code should be self-documenting
 

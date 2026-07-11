@@ -8,6 +8,10 @@ from zsp_llm_client.prompt_runner import PromptRunner
 import tempfile
 import os
 
+import pytest
+
+pytestmark = pytest.mark.integration
+
 
 def test_prompt_runner_basic():
     """Test basic PromptRunner functionality with a simple prompt."""

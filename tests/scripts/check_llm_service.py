@@ -10,7 +10,7 @@ import time
 from pathlib import Path
 
 # Add parent directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / "src"))
 
 from zsp_llm_client.prompt_runner import PromptRunner
 from storyline.services.manager import ServiceManager, ServiceStatus
