@@ -87,6 +87,7 @@ htmlcov/
 # Uploaded media (if applicable)
 media/
 static/
+tests/audio/samples/
 
 # Database files (if applicable)
 *.sqlite
