@@ -1,0 +1,105 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+*.egg-info/
+.installed.txt
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+virtualenv/
+__pypackages__/
+*.pth
+
+# Environments created by poetry
+poetry.lock
+
+# Environments created by pipenv
+Pipfile.lock
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# pyenv local versions
+.python-version
+
+# mypy cache
+.mypy_cache/
+
+# pytest cache
+.pytest_cache/
+
+# Coverage data
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# Compiled resources
+*.pyc
+*.pyo
+
+# Translations
+*.mo
+*.pot
+
+# Log files
+*.log
+
+# OS or Editor related files
+.DS_Store
+.vscode/
+*.swp
+*.swo
+.idea/
+*.bak
+*.orig
+
+# Temporary files
+*~
+\#*
+
+# Environment variable files
+.env
+.env.*
+
+# Uploaded media (if applicable)
+media/
+static/
+
+# Database files (if applicable)
+*.sqlite
+*.db
+
+# Documentation build products
+docs/_build/
+books/
+
+# Other
+.ropeproject/
+.ruff_cache/
+apilog/
+.aider*
+books/
+dict/audio
