@@ -8,7 +8,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 from zsp_llm_client.prompt_runner import PromptRunner
 
-from learnbook.book.parse_pipe_format import parse_tokenized_file
+from storyline.book.parse_pipe_format import parse_tokenized_file
 
 def create_dictionary_key(simplified, pinyin):
     return f"{simplified}_{pinyin.replace(' ', '_')}"

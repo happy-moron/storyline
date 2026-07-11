@@ -17,8 +17,8 @@ from pathlib import Path
 
 from zsp_llm_client.prompt_runner import PromptRunner
 
-from learnbook.benchmark import TaskResult, TranslateValidation
-from learnbook.prompt_utils.clean_response import strip_markdown_fences, strip_think_tags
+from storyline.benchmark import TaskResult, TranslateValidation
+from storyline.prompt_utils.clean_response import strip_markdown_fences, strip_think_tags
 
 _log = logging.getLogger(__name__)
 

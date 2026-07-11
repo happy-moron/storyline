@@ -50,7 +50,7 @@ prompt/eval tokens, prompt/eval time (ms), total time, and tokens/sec.
 
 ## Key Files
 
-### Source: `src/learnbook/benchmark/`
+### Source: `src/storyline/benchmark/`
 
 | File | Purpose |
 |---|---|
@@ -78,7 +78,7 @@ prompt/eval tokens, prompt/eval time (ms), total time, and tokens/sec.
 | `block_0N_golden_tokenization.txt` | Reference tokenization in compact pipe format |
 | `block_0N_golden_tokenization_{1,2}.txt` | Alternate references for calibration |
 
-### Config: `src/learnbook/config/llms_for_tasks.toml`
+### Config: `src/storyline/config/llms_for_tasks.toml`
 
 ```toml
 [llm]
@@ -108,7 +108,7 @@ the local LLM service with the correct profile when needed. The check-translatio
 runs on a remote provider. `--translate-models`, `--tokenize-models`, and
 `--check-translation-models` flags override the config.
 
-### Tests: `tests/learnbook/benchmark/`
+### Tests: `tests/storyline/benchmark/`
 
 | File | Tests |
 |---|---|
@@ -142,30 +142,30 @@ runs on a remote provider. `--translate-models`, `--tokenize-models`, and
 
 ```bash
 # Full run with default models from config
-python -m learnbook.benchmark.runner
+python -m storyline.benchmark.runner
 
 # Override models
-python -m learnbook.benchmark.runner --translate-models qwen36-35b-a3b
-python -m learnbook.benchmark.runner --tokenize-models qwen36-35b-a3b
-python -m learnbook.benchmark.runner --check-translation-models openrouter/deepseek/deepseek-v4-pro
+python -m storyline.benchmark.runner --translate-models qwen36-35b-a3b
+python -m storyline.benchmark.runner --tokenize-models qwen36-35b-a3b
+python -m storyline.benchmark.runner --check-translation-models openrouter/deepseek/deepseek-v4-pro
 
 # Quick smoke test (1 attempt, block_01 only)
-python -m learnbook.benchmark.runner --smoke
+python -m storyline.benchmark.runner --smoke
 
 # Multiple attempts per block
-python -m learnbook.benchmark.runner --attempts 3
+python -m storyline.benchmark.runner --attempts 3
 
 # Repeat the entire benchmark N times (aggregates results across runs)
-python -m learnbook.benchmark.runner --repeat 3
+python -m storyline.benchmark.runner --repeat 3
 
 # Output full results to JSON
-python -m learnbook.benchmark.runner --output results.json
+python -m storyline.benchmark.runner --output results.json
 
 # Parse logs only (no LLM calls)
-python -m learnbook.benchmark.runner --no-run --since "1 hour ago"
+python -m storyline.benchmark.runner --no-run --since "1 hour ago"
 
 # Skip log parsing (LLM calls only, no server-side cost data)
-python -m learnbook.benchmark.runner --no-parse-logs
+python -m storyline.benchmark.runner --no-parse-logs
 ```
 
 ### Options
@@ -189,15 +189,15 @@ The log parser also works standalone:
 
 ```bash
 # Summary of recent requests
-python -m learnbook.benchmark.llamacpp_log_parser --lines 200
+python -m storyline.benchmark.llamacpp_log_parser --lines 200
 
 # Time-window query
-python -m learnbook.benchmark.llamacpp_log_parser --since "1 hour ago"
+python -m storyline.benchmark.llamacpp_log_parser --since "1 hour ago"
 
 # Output to JSON or CSV
-python -m learnbook.benchmark.llamacpp_log_parser --since "1 hour ago" --output-json out.json
-python -m learnbook.benchmark.llamacpp_log_parser --since "1 hour ago" --output-csv out.csv
+python -m storyline.benchmark.llamacpp_log_parser --since "1 hour ago" --output-json out.json
+python -m storyline.benchmark.llamacpp_log_parser --since "1 hour ago" --output-csv out.csv
 
 # Parse a saved log file
-python -m learnbook.benchmark.llamacpp_log_parser --input-file mylog.txt
+python -m storyline.benchmark.llamacpp_log_parser --input-file mylog.txt
 ```

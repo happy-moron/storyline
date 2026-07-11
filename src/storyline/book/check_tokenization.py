@@ -3,8 +3,8 @@ import logging
 import os
 import re
 
-from learnbook.book.parse_pipe_format import parse_source_file, parse_tokenized_file
-from learnbook.book.tokenization_repair import validate_full, ErrorType
+from storyline.book.parse_pipe_format import parse_source_file, parse_tokenized_file
+from storyline.book.tokenization_repair import validate_full, ErrorType
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Compare sentences between source and tokenized files.')

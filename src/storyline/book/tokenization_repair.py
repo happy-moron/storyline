@@ -12,7 +12,7 @@ costly full regeneration.
 from dataclasses import dataclass, field
 from enum import Enum, auto
 
-from learnbook.book.parse_pipe_format import _normalize_for_comparison
+from storyline.book.parse_pipe_format import _normalize_for_comparison
 
 
 class ErrorType(Enum):

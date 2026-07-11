@@ -11,7 +11,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
 
-from learnbook.benchmark.token_compare import compare_files, ComparisonResult
+from storyline.benchmark.token_compare import compare_files, ComparisonResult
 
 
 def _token_key(token: str) -> str:

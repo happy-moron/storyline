@@ -1,8 +1,8 @@
 import pytest
 from unittest.mock import patch, MagicMock
 
-from learnbook.services import ServiceManager, ServiceStatus
-from learnbook.services.config import ServiceConfig
+from storyline.services import ServiceManager, ServiceStatus
+from storyline.services.config import ServiceConfig
 
 
 @pytest.fixture(autouse=True)

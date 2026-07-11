@@ -13,7 +13,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 from zsp_llm_client.prompt_runner import PromptRunner
-from learnbook.services.manager import ServiceManager, ServiceStatus
+from storyline.services.manager import ServiceManager, ServiceStatus
 
 
 def test_llm_service():

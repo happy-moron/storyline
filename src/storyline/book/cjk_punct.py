@@ -79,7 +79,7 @@ def reinsert(
 
 def format_compact(tokens: list[list]) -> str:
     """Serialize a list of token lists to the compact pipe-delimited format
-    that :func:`learnbook.book.parse_pipe_format.parse_tokenized_compact` can
+    that :func:`storyline.book.parse_pipe_format.parse_tokenized_compact` can
     read back.
 
     >>> format_compact([["\u6211","w\u01d2","r"],["\u3002","\u3002","w"]])

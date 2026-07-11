@@ -6,7 +6,7 @@ from pathlib import Path
 
 from pydub import AudioSegment
 
-from learnbook.book.parse_pipe_format import parse_source_file
+from storyline.book.parse_pipe_format import parse_source_file
 
 
 def change_tempo(audio_segment, speed_change):

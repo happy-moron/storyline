@@ -1,5 +1,5 @@
 [project]
-name = "learnbook"
+name = "storyline"
 version = "0.1.0"
 description = "Language learning material generation toolkit"
 requires-python = ">=3.9"

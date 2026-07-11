@@ -26,17 +26,17 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from learnbook.services.manager import ServiceManager, ServiceStatus
-from learnbook.audio.audiobook_gen_base import load_profile_from_toml
-from learnbook.audio.audiobook_gen_qwen3 import Qwen3TTSService, generate_tts_audio, process_json_to_audio
-from learnbook.book.split_text import split_text
+from storyline.services.manager import ServiceManager, ServiceStatus
+from storyline.audio.audiobook_gen_base import load_profile_from_toml
+from storyline.audio.audiobook_gen_qwen3 import Qwen3TTSService, generate_tts_audio, process_json_to_audio
+from storyline.book.split_text import split_text
 
-INPUT_TEXT = "books/childrens/gossie.txt"
+INPUT_TEXT = "books_src/childrens/gossie.txt"
 AUTHOR = "childrens"
 BOOK = "gossie"
 BASE_DIR = f"books/{AUTHOR}/{BOOK}"
 AUDIOBOOK_DIR = f"/home/zspdude/temp/audio/{BOOK}"
-AUDIO_TOML_PATH = Path("src/learnbook/config/audio.toml")
+AUDIO_TOML_PATH = Path("src/storyline/config/audio.toml")
 
 
 def print_section(title):
@@ -464,10 +464,10 @@ def test_audio_gen_from_json(manager, clean):
 def test_full_pipeline(manager, skip_llm, skip_tts, clean):
     print_section("Test 5: Full create_book Pipeline")
 
-    from learnbook.book.create_book import create_book
+    from storyline.book.create_book import create_book
 
     # Load task profiles from config
-    config_path = Path("src/learnbook/config/llms_for_tasks.toml")
+    config_path = Path("src/storyline/config/llms_for_tasks.toml")
     try:
         with config_path.open("rb") as f:
             cfg = tomllib.load(f)

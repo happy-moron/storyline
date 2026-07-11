@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Manual testing script for the book creation pipeline.
-Tests each step individually on books/childrens/gossie.txt
+Tests each step individually on books_src/childrens/gossie.txt
 """
 
 import sys
@@ -12,13 +12,13 @@ from pathlib import Path
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent / "src"))
 
-from learnbook.book.split_text import split_text
-from learnbook.prompt_utils.run_prompt import run_prompt
-from learnbook.book.create_custom_dict import load_dictionary, process_json_file
-from learnbook.book.parse_pipe_format import parse_source_file, parse_tokenized_file
+from storyline.book.split_text import split_text
+from storyline.prompt_utils.run_prompt import run_prompt
+from storyline.book.create_custom_dict import load_dictionary, process_json_file
+from storyline.book.parse_pipe_format import parse_source_file, parse_tokenized_file
 
 # Configuration
-INPUT_TEXT = "books/childrens/gossie.txt"
+INPUT_TEXT = "books_src/childrens/gossie.txt"
 OUTPUT_DIR = "books/childrens/gossie_test"
 MAX_CHUNKS = 5
 

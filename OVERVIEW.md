@@ -2,7 +2,7 @@
 
 ## Entry Point
 
-`src/learnbook/book/create_book.py` — invoked via CLI or imported programmatically. The `create_book()` function orchestrates the full pipeline; the `__main__` block parses CLI args, loads model config, and calls `create_book()`.
+`src/storyline/book/create_book.py` — invoked via CLI or imported programmatically. The `create_book()` function orchestrates the full pipeline; the `__main__` block parses CLI args, loads model config, and calls `create_book()`.
 
 ### CLI Arguments
 
@@ -38,7 +38,7 @@ Dictionary updates go to `dict/custom_dict.json` (Step 6).
 
 ### Step 1 — Text Splitting
 
-**Module:** `src/learnbook/book/split_text.py`
+**Module:** `src/storyline/book/split_text.py`
 
 The input plaintext book is split on paragraph boundaries (`\n\n+`). Paragraphs are accumulated into chunks of ≤ 2000 characters. Each chunk is written as `{book}_{N}.txt` under `split/source/`, where `N` is a sequential number starting at 1.
 
@@ -48,7 +48,7 @@ Files are processed in natural numeric order (e.g. `1, 2, 10, 11`, not `1, 10, 1
 
 ### Step 2 — Simplify English Text
 
-**Module:** `src/learnbook/prompt_utils/run_prompt.py`
+**Module:** `src/storyline/prompt_utils/run_prompt.py`
 **Prompt:** `prompts/simplify-text.txt`
 **Default model:** `qwen35-9b`
 
@@ -69,7 +69,7 @@ If `--skip-simplify` is set, the raw chunk is copied directly to this location.
 
 ### Step 3 — Translate to Chinese (with Backtranslation)
 
-**Module:** `src/learnbook/prompt_utils/run_prompt.py`
+**Module:** `src/storyline/prompt_utils/run_prompt.py`
 **Prompt:** `prompts/translate_deepseek.txt`
 **Default model:** `qwen35-9b`
 
@@ -87,7 +87,7 @@ Output: `json/source/{N}.json` — a JSON array of sentence pairs.
 
 ### Step 4 — Tokenize & POS-Annotate Chinese
 
-**Module:** `src/learnbook/prompt_utils/run_prompt.py` then `src/learnbook/book/fix_missing_commas.py`
+**Module:** `src/storyline/prompt_utils/run_prompt.py` then `src/storyline/book/fix_missing_commas.py`
 **Prompt:** `prompts/tokenize.txt`
 **Default model:** `qwen35-35b-a3b` (largest model; this is the most complex task)
 
@@ -103,7 +103,7 @@ Output: `json/tokenized/{N}.json`
 
 ### Step 5 — Audio Generation
 
-**Module:** `src/learnbook/audio/audiobook_gen_qwen3.py` + `audiobook_gen_base.py`
+**Module:** `src/storyline/audio/audiobook_gen_qwen3.py` + `audiobook_gen_base.py`
 **TTS endpoint:** `http://127.0.0.1:11433` (Qwen3-TTS Flask service)
 
 The source translation JSON (`json/source/`) is processed for audio. Each sentence pair (`chinese`, `english`) is rendered with a specific audio cadence (repetition sequence):
@@ -120,7 +120,7 @@ Each segment is separated by a 300 ms pause; sentences are separated by 800 ms.
 
 If `--skip-audio` is set, this step is skipped entirely.
 
-**Audio config** is in `src/learnbook/config/audio.toml`. Voices are defined with a `mode` field:
+**Audio config** is in `src/storyline/config/audio.toml`. Voices are defined with a `mode` field:
 
 - **`custom_voice`** — calls `/custom_voice` with a Qwen3 pretrained speaker name (e.g. Vivian, Ryan) and an optional `instruct` string for voice direction.
 - **`voice_clone`** — calls `/voice_clone` with a reference audio file + its transcript to clone a custom voice.
@@ -131,7 +131,7 @@ Profiles select which voices to use and the pause timing. The default profile is
 
 ### Step 6 — Dictionary Building
 
-**Module:** `src/learnbook/book/create_custom_dict.py`
+**Module:** `src/storyline/book/create_custom_dict.py`
 **Prompt:** `prompts/create_single_dictionary_entry.txt`
 **Default model:** `qwen35-9b`
 
@@ -153,7 +153,7 @@ The dictionary (`dict/custom_dict.json`) is saved after each file is processed.
 
 ## Service Orchestration
 
-**Module:** `src/learnbook/services/manager.py`
+**Module:** `src/storyline/services/manager.py`
 
 Because VRAM is limited, only one of the LLM or TTS models can run at a time. The `ServiceManager` singleton manages this mutual exclusion:
 
@@ -172,7 +172,7 @@ The pipeline lifecycle:
 
 ## Model Configuration
 
-**File:** `src/learnbook/config/llms_for_tasks.toml`
+**File:** `src/storyline/config/llms_for_tasks.toml`
 
 Each pipeline step can use a different model. Default values:
 

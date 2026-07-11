@@ -1,6 +1,6 @@
 import pytest
 
-from learnbook.book.tokenization_repair import (
+from storyline.book.tokenization_repair import (
     ErrorType,
     TokenError,
     ValidationReport,

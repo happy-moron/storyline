@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from learnbook.benchmark.token_compare import ComparisonResult
+from storyline.benchmark.token_compare import ComparisonResult
 
 
 @dataclass

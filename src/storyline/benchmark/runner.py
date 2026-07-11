@@ -2,11 +2,11 @@
 
 Usage::
 
-    python -m learnbook.benchmark.runner
-    python -m learnbook.benchmark.runner --translate-models qwen36-35b-a3b
-    python -m learnbook.benchmark.runner --smoke
-    python -m learnbook.benchmark.runner --output results.json
-    python -m learnbook.benchmark.runner --parse-logs --since "1 hour ago"
+    python -m storyline.benchmark.runner
+    python -m storyline.benchmark.runner --translate-models qwen36-35b-a3b
+    python -m storyline.benchmark.runner --smoke
+    python -m storyline.benchmark.runner --output results.json
+    python -m storyline.benchmark.runner --parse-logs --since "1 hour ago"
 """
 
 from __future__ import annotations
@@ -26,25 +26,25 @@ from typing import Sequence
 
 from zsp_llm_client.prompt_runner import PromptRunner
 
-from learnbook.book.cjk_punct import strip as strip_cjk_punct
-from learnbook.benchmark import TaskResult, TokenizeValidation, TranslateValidation
-from learnbook.benchmark.llamacpp_log_parser import (
+from storyline.book.cjk_punct import strip as strip_cjk_punct
+from storyline.benchmark import TaskResult, TokenizeValidation, TranslateValidation
+from storyline.benchmark.llamacpp_log_parser import (
     RequestRecord,
     fetch_logs,
     parse_logs,
     parse_window,
     find_request_in_window,
 )
-from learnbook.benchmark.token_compare import ComparisonResult, GlobalMetrics, compare_files
-from learnbook.benchmark.translate_compare import (
+from storyline.benchmark.token_compare import ComparisonResult, GlobalMetrics, compare_files
+from storyline.benchmark.translate_compare import (
     aggregate_translations,
     call_translation_check,
     compute_error_ratio,
     parse_check_response,
     partition_errors_by_block,
 )
-from learnbook.prompt_utils.clean_response import strip_markdown_fences, strip_think_tags
-from learnbook.services.manager import ServiceManager
+from storyline.prompt_utils.clean_response import strip_markdown_fences, strip_think_tags
+from storyline.services.manager import ServiceManager
 
 _log = logging.getLogger(__name__)
 
@@ -254,7 +254,7 @@ def _populate_server_metrics(results: list[TaskResult], log_records: list[Reques
     (no absolute timestamps), falls back to sequential matching, skipping
     warmup/trivial records.
     """
-    from learnbook.benchmark.llamacpp_log_parser import _parse_record_start
+    from storyline.benchmark.llamacpp_log_parser import _parse_record_start
 
     # Separate records into those with ISO timestamps (legacy) and
     # those without (native).  Native records match sequentially.
@@ -293,7 +293,7 @@ def _find_log_record(result: TaskResult, log_records: list[RequestRecord]) -> Re
         # Verify the record actually has a parseable ISO time within the window.
         # Native-format records use relative timestamps and will pass through
         # the fallback automatically — those are fine.
-        from learnbook.benchmark.llamacpp_log_parser import _parse_record_start
+        from storyline.benchmark.llamacpp_log_parser import _parse_record_start
         ts = _parse_record_start(rec)
         if ts is not None and not (wall_start <= ts < wall_end):
             return None
@@ -914,7 +914,7 @@ def _reconcile_standalone(since: str) -> None:
     if not records:
         print("No request records found.")
         return
-    from learnbook.benchmark.llamacpp_log_parser import print_summary
+    from storyline.benchmark.llamacpp_log_parser import print_summary
     print_summary(records)
 
 

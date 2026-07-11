@@ -1,10 +1,10 @@
-"""Tests for learnbook.benchmark.translate_compare."""
+"""Tests for storyline.benchmark.translate_compare."""
 
 import pytest
 from unittest.mock import patch, MagicMock
 
-from learnbook.benchmark import TaskResult, TranslateValidation, TokenizeValidation
-from learnbook.benchmark.translate_compare import (
+from storyline.benchmark import TaskResult, TranslateValidation, TokenizeValidation
+from storyline.benchmark.translate_compare import (
     aggregate_translations,
     call_translation_check,
     parse_check_response,
@@ -142,7 +142,7 @@ class TestAggregateTranslations:
 
 class TestCallTranslationCheck:
     def test_calls_prompt_runner(self):
-        with patch("learnbook.benchmark.translate_compare.PromptRunner") as MockPR:
+        with patch("storyline.benchmark.translate_compare.PromptRunner") as MockPR:
             mock_runner = MockPR.return_value
             mock_runner.run.return_value = "1:grammar:bad\n2:style:awkward\n"
 
@@ -157,7 +157,7 @@ class TestCallTranslationCheck:
             assert "1:grammar:bad" in result
 
     def test_strips_think_tags(self):
-        with patch("learnbook.benchmark.translate_compare.PromptRunner") as MockPR:
+        with patch("storyline.benchmark.translate_compare.PromptRunner") as MockPR:
             mock_runner = MockPR.return_value
             mock_runner.run.return_value = "   1:grammar:bad\n"
 
@@ -166,7 +166,7 @@ class TestCallTranslationCheck:
             assert "1:grammar:bad" in result
 
     def test_strips_markdown_fences(self):
-        with patch("learnbook.benchmark.translate_compare.PromptRunner") as MockPR:
+        with patch("storyline.benchmark.translate_compare.PromptRunner") as MockPR:
             mock_runner = MockPR.return_value
             mock_runner.run.return_value = "```\n1:grammar:bad\n```"
 
@@ -174,7 +174,7 @@ class TestCallTranslationCheck:
             assert "```" not in result
 
     def test_raises_on_none_response(self):
-        with patch("learnbook.benchmark.translate_compare.PromptRunner") as MockPR:
+        with patch("storyline.benchmark.translate_compare.PromptRunner") as MockPR:
             mock_runner = MockPR.return_value
             mock_runner.run.return_value = None
 
@@ -315,7 +315,7 @@ class TestIntegrationFlow:
         assert text == "你好\n世界\n你好吗\n我很好"
         assert ranges == [(1, 2), (3, 4)]
 
-        with patch("learnbook.benchmark.translate_compare.PromptRunner") as MockPR:
+        with patch("storyline.benchmark.translate_compare.PromptRunner") as MockPR:
             mock_runner = MockPR.return_value
             mock_runner.run.return_value = "1:grammar:bad\n3:style:awkward\n"
 

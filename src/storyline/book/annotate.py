@@ -2,7 +2,7 @@ import json
 import os
 import argparse
 
-from learnbook.book.parse_pipe_format import parse_tokenized_file
+from storyline.book.parse_pipe_format import parse_tokenized_file
 
 def load_dictionary(dict_file):
     """Loads the dictionary from a JSON file."""

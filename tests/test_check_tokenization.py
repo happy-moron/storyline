@@ -1,7 +1,7 @@
 import pytest
 
 # Keep old compare_sentences for backward compatibility testing
-from learnbook.book.check_tokenization import compare_sentences
+from storyline.book.check_tokenization import compare_sentences
 
 
 def test_compare_sentences_all_match():

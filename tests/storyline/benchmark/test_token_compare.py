@@ -1,7 +1,7 @@
-"""Tests for learnbook.benchmark.token_compare."""
+"""Tests for storyline.benchmark.token_compare."""
 
 import pytest
-from learnbook.benchmark.token_compare import (
+from storyline.benchmark.token_compare import (
     compare,
     compare_files,
     ComparisonResult,

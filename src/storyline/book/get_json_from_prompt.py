@@ -6,7 +6,7 @@ from pathlib import Path
 
 # Add parent directory to path for imports
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from learnbook.prompt_utils.run_prompt import run_prompt
+from storyline.prompt_utils.run_prompt import run_prompt
 
 def get_json_from_prompt(prompt, input_dir, input_ext, output_dir, output_ext, file_prefix, pre_process_module, models):
     models_list = [model.strip() for model in models.split(',')]

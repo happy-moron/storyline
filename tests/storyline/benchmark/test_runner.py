@@ -1,4 +1,4 @@
-"""Tests for learnbook.benchmark.runner."""
+"""Tests for storyline.benchmark.runner."""
 
 import json
 import tempfile
@@ -9,8 +9,8 @@ import pytest
 
 from datetime import datetime, timezone
 
-from learnbook.benchmark import TaskResult, TranslateValidation, TokenizeValidation
-from learnbook.benchmark.runner import (
+from storyline.benchmark import TaskResult, TranslateValidation, TokenizeValidation
+from storyline.benchmark.runner import (
     BenchmarkRunner,
     validate_translate_output,
     validate_tokenize_output,
@@ -21,7 +21,7 @@ from learnbook.benchmark.runner import (
     reconcile_logs,
     _reconstruct_token_texts,
 )
-from learnbook.benchmark.llamacpp_log_parser import RequestRecord
+from storyline.benchmark.llamacpp_log_parser import RequestRecord
 
 
 # ---------------------------------------------------------------------------
@@ -123,14 +123,14 @@ class TestValidateTokenizeOutput:
         assert v.reconstruction_match is False
         assert any("reconstruction mismatch" in e for e in (v.errors or []))
 
-    @patch("learnbook.benchmark.runner.compare_files")
+    @patch("storyline.benchmark.runner.compare_files")
     def test_golden_comparison(self, mock_compare, tmp_path):
         golden_dir = tmp_path / "eval"
         golden_dir.mkdir()
         golden_file = golden_dir / "test_golden_golden_tokenization.txt"
         golden_file.write_text("我|wǒ|r||是|shì|v\n")
 
-        from learnbook.benchmark.token_compare import ComparisonResult, ComparisonMeta, GlobalMetrics
+        from storyline.benchmark.token_compare import ComparisonResult, ComparisonMeta, GlobalMetrics
         mock_result = ComparisonResult(
             meta=ComparisonMeta("a", "b", 1, 1, 2, 2),
             global_metrics=GlobalMetrics(1, 0, 0, 1, 0, 0, 0, 0, 0.0),
@@ -183,7 +183,7 @@ class TestRunCalibration:
 
 class TestLoadConfig:
     def test_loads_defaults(self):
-        with patch("learnbook.benchmark.runner.Path.open", side_effect=FileNotFoundError):
+        with patch("storyline.benchmark.runner.Path.open", side_effect=FileNotFoundError):
             t, tok, check, _, _, repeat = _load_config()
             assert t == ["local-llamacpp"]
             assert tok == ["local-llamacpp"]
@@ -245,7 +245,7 @@ def eval_fixture(tmp_path):
 
 @pytest.fixture
 def runner_factory(mock_svc, eval_fixture, monkeypatch):
-    from learnbook.benchmark import runner as rmod
+    from storyline.benchmark import runner as rmod
 
     monkeypatch.setattr(rmod, "BOOK_DIR", eval_fixture)
     monkeypatch.setattr(rmod, "PROMPT_TRANSLATE", "prompts/translate.md")
@@ -618,7 +618,7 @@ class TestReconcileLogs:
             eval_time_ms=2800.0, eval_tokens=185,
         )
 
-        with patch("learnbook.benchmark.runner.parse_window", return_value=[log_record]):
+        with patch("storyline.benchmark.runner.parse_window", return_value=[log_record]):
             reconcile_logs(results, wall_start, wall_end)
 
         assert results[0].prompt_tokens == 512
@@ -634,7 +634,7 @@ class TestReconcileLogs:
             ),
         ]
 
-        with patch("learnbook.benchmark.runner.parse_window", side_effect=RuntimeError("journalctl unavailable")):
+        with patch("storyline.benchmark.runner.parse_window", side_effect=RuntimeError("journalctl unavailable")):
             reconcile_logs(
                 results,
                 datetime(2026, 7, 4, 21, 50, tzinfo=timezone.utc),
@@ -653,7 +653,7 @@ class TestReconcileLogs:
             ),
         ]
 
-        with patch("learnbook.benchmark.runner.parse_window", return_value=[]):
+        with patch("storyline.benchmark.runner.parse_window", return_value=[]):
             reconcile_logs(
                 results,
                 datetime(2026, 7, 4, 21, 50, tzinfo=timezone.utc),
@@ -743,7 +743,7 @@ class TestReportWithServerMetrics:
         assert "prompt=" not in out
 
     def test_print_report_includes_golden_metrics(self, runner_factory, capsys):
-        from learnbook.benchmark.token_compare import ComparisonResult, ComparisonMeta, GlobalMetrics
+        from storyline.benchmark.token_compare import ComparisonResult, ComparisonMeta, GlobalMetrics
 
         r = runner_factory(smoke=True)
         r.results = [
@@ -874,7 +874,7 @@ class TestTranslateCheckPhase:
             ),
         ]
 
-        with patch("learnbook.benchmark.runner.call_translation_check") as mock_check:
+        with patch("storyline.benchmark.runner.call_translation_check") as mock_check:
             mock_check.return_value = "1:grammar:bad grammar\n"
             r._run_translate_check_phase()
 
@@ -896,7 +896,7 @@ class TestTranslateCheckPhase:
             ),
         ]
 
-        with patch("learnbook.benchmark.runner.call_translation_check") as mock_check:
+        with patch("storyline.benchmark.runner.call_translation_check") as mock_check:
             r._run_translate_check_phase()
 
         mock_check.assert_not_called()
@@ -914,7 +914,7 @@ class TestTranslateCheckPhase:
             ),
         ]
 
-        with patch("learnbook.benchmark.runner.call_translation_check") as mock_check:
+        with patch("storyline.benchmark.runner.call_translation_check") as mock_check:
             r._run_translate_check_phase()
 
         mock_check.assert_not_called()
@@ -932,7 +932,7 @@ class TestTranslateCheckPhase:
             ),
         ]
 
-        with patch("learnbook.benchmark.runner.call_translation_check",
+        with patch("storyline.benchmark.runner.call_translation_check",
                    side_effect=RuntimeError("API error")):
             r._run_translate_check_phase()
 
@@ -962,7 +962,7 @@ class TestTranslateCheckPhase:
             ),
         ]
 
-        with patch("learnbook.benchmark.runner.call_translation_check") as mock_check:
+        with patch("storyline.benchmark.runner.call_translation_check") as mock_check:
             mock_check.return_value = "1:grammar:err1\n4:style:err2\n"
             r._run_translate_check_phase()
 
@@ -996,7 +996,7 @@ class TestTranslateCheckPhase:
             ),
         ]
 
-        with patch("learnbook.benchmark.runner.call_translation_check") as mock_check:
+        with patch("storyline.benchmark.runner.call_translation_check") as mock_check:
             mock_check.return_value = "1:grammar:err\n"
             r._run_translate_check_phase()
 
@@ -1081,7 +1081,7 @@ class TestJsonOutputWithTranslateCheck:
 
 class TestConfigLoadingWithCheck:
     def test_loads_check_models(self):
-        with patch("learnbook.benchmark.runner.Path.open", side_effect=FileNotFoundError):
+        with patch("storyline.benchmark.runner.Path.open", side_effect=FileNotFoundError):
             t, tok, check, _, _, repeat = _load_config()
             assert t == ["local-llamacpp"]
             assert tok == ["local-llamacpp"]

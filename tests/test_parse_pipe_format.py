@@ -2,7 +2,7 @@
 
 import pytest
 
-from learnbook.book.parse_pipe_format import (
+from storyline.book.parse_pipe_format import (
     parse_source_pipe,
     parse_tokenized_compact,
     parse_tokenized_file,

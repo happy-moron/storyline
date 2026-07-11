@@ -1,11 +1,11 @@
-"""Tests for learnbook.benchmark.llamacpp_log_parser (new functions)."""
+"""Tests for storyline.benchmark.llamacpp_log_parser (new functions)."""
 
 from datetime import datetime, timezone, timedelta
 from unittest.mock import patch
 
 import pytest
 
-from learnbook.benchmark.llamacpp_log_parser import (
+from storyline.benchmark.llamacpp_log_parser import (
     RequestRecord,
     fetch_logs,
     parse_logs,
@@ -159,7 +159,7 @@ class TestParseWindow:
             '2026-07-04T23:00:03-0700 host python[1]: INFO: 127.0.0.1 - "POST /v1/chat/completions HTTP/1.1" 200\n'
         )
 
-        with patch("learnbook.benchmark.llamacpp_log_parser.fetch_logs", return_value=log_text):
+        with patch("storyline.benchmark.llamacpp_log_parser.fetch_logs", return_value=log_text):
             records = parse_window(
                 start=datetime(2026, 7, 4, 21, 0, tzinfo=timezone.utc),
                 end=datetime(2026, 7, 4, 22, 0, tzinfo=timezone.utc),
@@ -171,7 +171,7 @@ class TestParseWindow:
         assert records[1].prompt_eval_tokens == 20
 
     def test_empty_window(self):
-        with patch("learnbook.benchmark.llamacpp_log_parser.fetch_logs", return_value=""):
+        with patch("storyline.benchmark.llamacpp_log_parser.fetch_logs", return_value=""):
             records = parse_window(
                 start=datetime(2026, 7, 4, 21, 0, tzinfo=timezone.utc),
                 end=datetime(2026, 7, 4, 22, 0, tzinfo=timezone.utc),

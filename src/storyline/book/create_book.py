@@ -6,19 +6,19 @@ import logging
 from pathlib import Path
 
 # Absolute imports for internal modules
-from learnbook.book.parse_pipe_format import (
+from storyline.book.parse_pipe_format import (
     parse_source_pipe,
     parse_source_file,
     parse_tokenized_file,
     parse_tokenized_pipe,
 )
-from learnbook.book.cjk_punct import strip as strip_cjk_punct, reinsert as reinsert_cjk_punct, format_compact
-from learnbook.book.split_text import split_text
-from learnbook.prompt_utils.run_prompt import run_prompt
-from learnbook.book.create_custom_dict import process_json_file, load_dictionary
-from learnbook.services.manager import ServiceManager
-from learnbook.audio.audiobook_gen_qwen3 import process_json_to_audio
-from learnbook.book.tokenization_repair import (
+from storyline.book.cjk_punct import strip as strip_cjk_punct, reinsert as reinsert_cjk_punct, format_compact
+from storyline.book.split_text import split_text
+from storyline.prompt_utils.run_prompt import run_prompt
+from storyline.book.create_custom_dict import process_json_file, load_dictionary
+from storyline.services.manager import ServiceManager
+from storyline.audio.audiobook_gen_qwen3 import process_json_to_audio
+from storyline.book.tokenization_repair import (
     validate_full,
     build_repair_input,
     apply_repairs,
