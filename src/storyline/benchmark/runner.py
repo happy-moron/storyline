@@ -33,7 +33,6 @@ from storyline.benchmark.llamacpp_log_parser import (
     fetch_logs,
     parse_logs,
     parse_window,
-    find_request_in_window,
 )
 from storyline.benchmark.token_compare import ComparisonResult, GlobalMetrics, compare_files
 from storyline.benchmark.translate_compare import (
@@ -249,57 +248,19 @@ def _apply_record(result: TaskResult, rec: RequestRecord) -> None:
 def _populate_server_metrics(results: list[TaskResult], log_records: list[RequestRecord]) -> None:
     """Mutate each TaskResult in-place with server-side metrics matched from logs.
 
-    For legacy format (ISO timestamps), time-based matching via
-    find_request_in_window is used when available.  For native format
-    (no absolute timestamps), falls back to sequential matching, skipping
-    warmup/trivial records.
+    Matches log records sequentially, skipping warmup/trivial records.
     """
-    from storyline.benchmark.llamacpp_log_parser import _parse_record_start
-
-    # Separate records into those with ISO timestamps (legacy) and
-    # those without (native).  Native records match sequentially.
-    native_records = [r for r in log_records if _parse_record_start(r) is None]
-    legacy_records = [r for r in log_records if _parse_record_start(r) is not None]
-
-    # For native, skip warmup/trivial calls.
-    meaningful_native = [r for r in native_records
-                         if r.total_tokens is not None and r.total_tokens > 100]
-    native_pool = list(meaningful_native) if meaningful_native else list(native_records)
+    meaningful = [r for r in log_records
+                  if r.total_tokens is not None and r.total_tokens > 100]
+    pool = list(meaningful) if meaningful else list(log_records)
 
     for r in results:
-        # Try time-based matching against legacy records
-        rec = _find_log_record(r, legacy_records)
-        if rec is not None:
-            _apply_record(r, rec)
-            continue
-        # Fall back to sequential matching for native records
-        if native_pool:
-            rec = native_pool.pop(0)
+        if pool:
+            rec = pool.pop(0)
             _apply_record(r, rec)
 
 
-def _find_log_record(result: TaskResult, log_records: list[RequestRecord]) -> RequestRecord | None:
-    """Find the log record that best matches a TaskResult by time proximity.
 
-    Falls back to sequential matching if wall-time metadata is unavailable.
-    """
-    wall_end = getattr(result, "_wall_end", None)
-    wall_start = getattr(result, "_wall_start", None)
-
-    if wall_start is not None and wall_end is not None:
-        rec = find_request_in_window(log_records, wall_start, wall_end)
-        if rec is None:
-            return None
-        # Verify the record actually has a parseable ISO time within the window.
-        # Native-format records use relative timestamps and will pass through
-        # the fallback automatically — those are fine.
-        from storyline.benchmark.llamacpp_log_parser import _parse_record_start
-        ts = _parse_record_start(rec)
-        if ts is not None and not (wall_start <= ts < wall_end):
-            return None
-        return rec
-
-    return None
 
 
 def reconcile_logs(
@@ -320,8 +281,7 @@ def reconcile_logs(
             end=latest_buffered,
             unit="llamacpp",
             user_scope=True,
-            fmt="auto",
-        )
+            )
     except Exception:
         _log.warning("Failed to fetch/parse llamacpp logs", exc_info=True)
         return
@@ -912,7 +872,7 @@ def main() -> None:
 def _reconcile_standalone(since: str) -> None:
     """Fetch logs since *since* and print a summary (--parse-logs --since mode)."""
     text = fetch_logs(unit="llamacpp", user_scope=True, since=since)
-    records = parse_logs(text, fmt="auto")
+    records = parse_logs(text)
     if not records:
         print("No request records found.")
         return

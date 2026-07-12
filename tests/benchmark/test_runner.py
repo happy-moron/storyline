@@ -17,7 +17,6 @@ from storyline.benchmark.runner import (
     run_calibration,
     _load_config,
     _populate_server_metrics,
-    _find_log_record,
     reconcile_logs,
     _reconstruct_token_texts,
 )
@@ -449,18 +448,18 @@ class TestPopulateServerMetrics:
         results[1]._wall_start = datetime(2026, 7, 4, 21, 51, 0, tzinfo=timezone.utc)
         results[1]._wall_end = datetime(2026, 7, 4, 21, 51, 8, tzinfo=timezone.utc)
 
+        assert True
+
         log_records = [
             RequestRecord(
-                log_format="legacy",
-                start_time="2026-07-04T21:50:01",
+                log_format="native",
                 prompt_eval_time_ms=1200.0, prompt_eval_tokens=512,
                 eval_time_ms=2800.0, eval_tokens=185,
                 total_time_ms=4000.0, total_tokens=697,
                 prompt_eval_tokens_per_sec=426.7, eval_tokens_per_sec=66.1,
             ),
             RequestRecord(
-                log_format="legacy",
-                start_time="2026-07-04T21:51:02",
+                log_format="native",
                 prompt_eval_time_ms=2300.0, prompt_eval_tokens=890,
                 eval_time_ms=5500.0, eval_tokens=420,
                 total_time_ms=7800.0, total_tokens=1310,
@@ -483,7 +482,7 @@ class TestPopulateServerMetrics:
         assert results[1].prompt_tokens == 890
         assert results[1].eval_tokens == 420
 
-    def test_no_wall_time_leaves_fields_none(self):
+    def test_no_log_records_leaves_fields_none(self):
         results = [
             TaskResult(
                 task="translate", model="m", eval_case_id="block_01",
@@ -492,107 +491,13 @@ class TestPopulateServerMetrics:
                 validation=TranslateValidation(True, True, True, True, total_sentences=2),
             ),
         ]
-        log_records = [
-            RequestRecord(
-                log_format="legacy",
-                start_time="2026-07-04T21:50:01",
-                prompt_eval_tokens=512,
-            ),
-        ]
+        log_records: list[RequestRecord] = []
 
         _populate_server_metrics(results, log_records)
 
         assert results[0].prompt_tokens is None
         assert results[0].eval_tokens is None
 
-    def test_no_matching_log_record(self):
-        results = [
-            TaskResult(
-                task="translate", model="m", eval_case_id="block_01",
-                attempt=1, wall_time_ms=500.0, response_chars=10,
-                valid=True,
-                validation=TranslateValidation(True, True, True, True, total_sentences=2),
-            ),
-        ]
-        results[0]._wall_start = datetime(2026, 7, 4, 21, 50, 0, tzinfo=timezone.utc)
-        results[0]._wall_end = datetime(2026, 7, 4, 21, 50, 5, tzinfo=timezone.utc)
-
-        # Log record outside the time window
-        log_records = [
-            RequestRecord(
-                log_format="legacy",
-                start_time="2026-07-04T23:00:01",
-                prompt_eval_tokens=512,
-            ),
-        ]
-
-        _populate_server_metrics(results, log_records)
-
-        assert results[0].prompt_tokens is None
-
-
-class TestFindLogRecord:
-    def test_finds_by_time_proximity(self):
-        wall_start = datetime(2026, 7, 4, 21, 50, 0, tzinfo=timezone.utc)
-        wall_end = datetime(2026, 7, 4, 21, 50, 5, tzinfo=timezone.utc)
-
-        result = TaskResult(
-            task="translate", model="m", eval_case_id="block_01",
-            attempt=1, wall_time_ms=500.0, response_chars=10,
-            valid=True,
-            validation=TranslateValidation(True, True, True, True, total_sentences=2),
-        )
-        result._wall_start = wall_start
-        result._wall_end = wall_end
-
-        target = RequestRecord(
-            log_format="legacy",
-            start_time="2026-07-04T21:50:02",
-            prompt_eval_tokens=512,
-        )
-
-        records = [
-            RequestRecord(log_format="legacy", start_time="2026-07-04T20:00:00"),
-            target,
-            RequestRecord(log_format="legacy", start_time="2026-07-04T22:00:00"),
-        ]
-
-        found = _find_log_record(result, records)
-        assert found is target
-
-    def test_returns_none_when_no_wall_times(self):
-        result = TaskResult(
-            task="translate", model="m", eval_case_id="block_01",
-            attempt=1, wall_time_ms=500.0, response_chars=10,
-            valid=True,
-            validation=TranslateValidation(True, True, True, True, total_sentences=2),
-        )
-        records = [
-            RequestRecord(log_format="legacy", start_time="2026-07-04T21:50:01"),
-        ]
-
-        found = _find_log_record(result, records)
-        assert found is None
-
-    def test_returns_none_when_no_match(self):
-        wall_start = datetime(2026, 7, 4, 21, 50, 0, tzinfo=timezone.utc)
-        wall_end = datetime(2026, 7, 4, 21, 50, 5, tzinfo=timezone.utc)
-
-        result = TaskResult(
-            task="translate", model="m", eval_case_id="block_01",
-            attempt=1, wall_time_ms=500.0, response_chars=10,
-            valid=True,
-            validation=TranslateValidation(True, True, True, True, total_sentences=2),
-        )
-        result._wall_start = wall_start
-        result._wall_end = wall_end
-
-        records = [
-            RequestRecord(log_format="legacy", start_time="2026-07-04T23:00:01"),
-        ]
-
-        found = _find_log_record(result, records)
-        assert found is None
 
 
 class TestReconcileLogs:
@@ -612,10 +517,10 @@ class TestReconcileLogs:
         results[0]._wall_end = datetime(2026, 7, 4, 21, 50, 4, tzinfo=timezone.utc)
 
         log_record = RequestRecord(
-            log_format="legacy",
-            start_time="2026-07-04T21:50:02",
+            log_format="native",
             prompt_eval_time_ms=1200.0, prompt_eval_tokens=512,
             eval_time_ms=2800.0, eval_tokens=185,
+            total_time_ms=4000.0, total_tokens=697,
         )
 
         with patch("storyline.benchmark.runner.parse_window", return_value=[log_record]):
