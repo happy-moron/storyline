@@ -818,20 +818,22 @@ class BenchmarkRunner:
 # ---------------------------------------------------------------------------
 
 def _load_config() -> tuple[list[str], list[str], list[str], str | None, str | None, int]:
+    from storyline.config.pipeline_config import PipelineConfig
+    config = PipelineConfig.from_files_and_args()
+    models = config.models
+    translate_profile = config.task_profiles.get("translate")
+    tokenize_profile = config.task_profiles.get("tokenize")
+
     config_path = Path(__file__).resolve().parent.parent / "config" / "llms_for_tasks.toml"
     try:
         with config_path.open("rb") as f:
             cfg = tomllib.load(f)
-        llm_cfg = cfg.get("llm", {})
-        model_id = llm_cfg.get("model_id", "local-llamacpp")
-        default_profile = cfg.get("default", {}).get("profile")
-        translate_profile = cfg.get("translate", {}).get("profile", default_profile)
-        tokenize_profile = cfg.get("tokenize", {}).get("profile", default_profile)
         cfg_check = cfg.get("check_translation", {}).get("models", ["glm-4.7-flash"])
         repeat = cfg.get("benchmark", {}).get("repeat", 1)
-        return ([model_id], [model_id], cfg_check, translate_profile, tokenize_profile, repeat)
     except Exception:
-        return (["local-llamacpp"], ["local-llamacpp"], ["glm-4.7-flash"], None, None, 1)
+        cfg_check = ["glm-4.7-flash"]
+        repeat = 1
+    return (models, models, cfg_check, translate_profile, tokenize_profile, repeat)
 
 
 

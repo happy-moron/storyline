@@ -11,7 +11,9 @@ from .audiobook_gen_base import process_json_to_audio_common
 class Qwen3TTSService:
     """Client for Qwen3-TTS Flask service."""
 
-    def __init__(self, base_url="http://127.0.0.1:11433"):
+    def __init__(self, base_url: str | None = None):
+        if base_url is None:
+            base_url = "http://127.0.0.1:11433"
         self.base_url = base_url.rstrip('/')
         self.session = requests.Session()
 

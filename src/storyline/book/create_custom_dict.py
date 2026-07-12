@@ -25,7 +25,10 @@ def save_dictionary(dictionary, dict_file_path):
     with open(dict_file_path, 'w', encoding='utf-8') as f:
         json.dump(dictionary, f, ensure_ascii=False, indent=2)
 
-def process_json_file(filepath, dictionary, dict_file_path, prompt_template_path, models):
+def process_json_file(filepath, dictionary, dict_file_path, prompt_template_path, models,
+                      punctuation_skip: list[str] | None = None):
+    if punctuation_skip is None:
+        punctuation_skip = [',', '.', '?', '!', '，', '。', '？', '！', '"', '“', '”', '、']
     print(f"Processing file: {os.path.basename(filepath)}")
     try:
         data = parse_tokenized_file(filepath)
@@ -36,7 +39,7 @@ def process_json_file(filepath, dictionary, dict_file_path, prompt_template_path
                 pinyin_word = token[1]
                 dict_key = create_dictionary_key(simplified_word, pinyin_word)
 
-                if simplified_word.strip() and simplified_word != pinyin_word and simplified_word not in [',', '.', '?', '!', '，', '。', '？', '！', '"', '“', '”', '、'] and simplified_word not in dictionary:
+                if simplified_word.strip() and simplified_word != pinyin_word and simplified_word not in punctuation_skip and simplified_word not in dictionary:
                     print(f"  Word not in dictionary: {simplified_word} {pinyin_word}")
                     prompt_input = simplified_word
  

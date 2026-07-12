@@ -1,7 +1,7 @@
 import os
 import re
 
-def split_text(input_file_path, output_dir):
+def split_text(input_file_path, output_dir, chunk_size: int = 2000):
     # Read the input file
     with open(input_file_path, 'r', encoding='utf-8') as infile:
         content = infile.read()
@@ -20,7 +20,7 @@ def split_text(input_file_path, output_dir):
     current_file_content = ""
 
     for paragraph in paragraphs:
-        if len(current_file_content) + len(paragraph) + 2 > 2000:  # Add 2 for newline characters
+        if len(current_file_content) + len(paragraph) + 2 > chunk_size:  # Add 2 for newline characters
             # Write the current file content to a new file
             output_file_path = os.path.join(output_dir, f"{input_filename}_{file_counter}.txt")
             with open(output_file_path, 'w', encoding='utf-8') as outfile:

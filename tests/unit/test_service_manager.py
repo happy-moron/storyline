@@ -108,19 +108,15 @@ class TestServiceManager:
                 manager.stop('llm')
 
     def test_wait_for_service_online(self, manager):
-        mock_result1 = MagicMock()
-        mock_result1.returncode = 3
-        mock_result2 = MagicMock()
-        mock_result2.returncode = 0
-        with patch.object(manager, '_subprocess_run') as mock_run:
-            mock_run.side_effect = [mock_result1, mock_result2]
+        with patch('requests.get') as mock_get:
+            mock_response = MagicMock()
+            mock_response.status_code = 200
+            mock_get.return_value = mock_response
             assert manager._wait_for_service('llm')
 
     def test_wait_for_service_timeout(self, manager):
-        mock_result = MagicMock()
-        mock_result.returncode = 3
         with patch('time.time', side_effect=[0, 0, 200]):
-            with patch.object(manager, '_subprocess_run', return_value=mock_result):
+            with patch('requests.get', side_effect=Exception('test')):
                 assert not manager._wait_for_service('llm')
 
     def test_wait_for_service_offline(self, manager):
@@ -139,19 +135,7 @@ class TestServiceManager:
             with patch.object(manager, '_subprocess_run', return_value=mock_result):
                 assert not manager._wait_for_service_offline('llm')
 
-    def test_check_health_success(self, manager):
-        with patch('requests.get') as mock_get:
-            mock_response = MagicMock()
-            mock_response.status_code = 200
-            mock_get.return_value = mock_response
-            assert manager._check_health('llm')
-
-    def test_check_health_failure(self, manager):
-        with patch('requests.get') as mock_get:
-            mock_get.side_effect = Exception('test')
-            assert not manager._check_health('llm')
-
-    def test_start_already_online(self, manager):
+    def test_start_if_needed_online(self, manager):
         mock_result = MagicMock()
         mock_result.returncode = 0
         with patch.object(manager, '_subprocess_run', return_value=mock_result):
@@ -169,11 +153,14 @@ class TestServiceManager:
             gpu_free_result,          # _wait_for_gpu_memory: nvidia-smi showing 5000 MiB free
             MagicMock(returncode=3),  # get_status('llm') → OFFLINE in start()
             MagicMock(returncode=0),  # _start_service('llm')
-            MagicMock(returncode=0),  # _wait_for_service → ONLINE
         ]
         with patch.object(manager, '_subprocess_run', side_effect=results):
-            assert manager.start('llm')
-            assert manager.get_active_service() == 'llm'
+            with patch('requests.get') as mock_get:
+                mock_response = MagicMock()
+                mock_response.status_code = 200
+                mock_get.return_value = mock_response
+                assert manager.start('llm')
+                assert manager.get_active_service() == 'llm'
 
     def test_start_service_failure(self, manager):
         with patch.object(manager, '_subprocess_run', side_effect=RuntimeError()):
@@ -183,9 +170,12 @@ class TestServiceManager:
     def test_start_timeout(self, manager):
         mock_result = MagicMock()
         mock_result.returncode = 3
-        with patch.object(manager, '_subprocess_run', return_value=mock_result):
-            with pytest.raises(RuntimeError, match="failed to start within timeout"):
-                manager.start('llm')
+        with patch('time.time', side_effect=[0, 0, 200, 200, 200]):
+            with patch('time.sleep'):
+                with patch.object(manager, '_subprocess_run', return_value=mock_result):
+                    with patch('requests.get', side_effect=Exception('test')):
+                        with pytest.raises(RuntimeError, match="failed to start within timeout"):
+                            manager.start('llm')
 
     def test_stop_already_offline(self, manager):
         assert manager.stop('llm')
@@ -208,7 +198,7 @@ class TestServiceManager:
             assert manager.get_active_service() is None
 
         with patch.object(manager, '_subprocess_run', side_effect=[mock_offline, mock_offline, mock_online]):
-            assert manager.get_active_service() == 'image-gen'
+            assert manager.get_active_service() == 'image_gen'
 
         with patch.object(manager, '_subprocess_run', side_effect=[mock_offline, mock_online, mock_offline]):
             assert manager.get_active_service() == 'tts'
@@ -224,9 +214,13 @@ class TestServiceManager:
 
     def test_start_if_needed_offline(self, manager):
         mock_result = MagicMock()
-        mock_result.returncode = 0
+        mock_result.returncode = 3  # OFFLINE
         with patch.object(manager, '_subprocess_run', return_value=mock_result):
-            assert manager.start_if_needed('llm')
+            with patch('requests.get') as mock_get:
+                mock_response = MagicMock()
+                mock_response.status_code = 200
+                mock_get.return_value = mock_response
+                assert manager.start_if_needed('llm')
 
     def test_stop_if_running_offline(self, manager):
         assert manager.stop_if_running('llm')
@@ -243,10 +237,14 @@ class TestServiceManager:
         mock_result = MagicMock()
         mock_result.returncode = 0
         with patch.object(manager, '_subprocess_run', return_value=mock_result):
-            results = manager.start_all()
-            assert results['llm'] is True
-            assert results['tts'] is True
-            assert results['image-gen'] is True
+            with patch('requests.get') as mock_get:
+                mock_response = MagicMock()
+                mock_response.status_code = 200
+                mock_get.return_value = mock_response
+                results = manager.start_all()
+                assert results['llm'] is True
+                assert results['tts'] is True
+                assert results['image_gen'] is True
 
     def test_stop_all(self, manager):
         with patch.object(manager, '_subprocess_run', side_effect=[
@@ -256,14 +254,14 @@ class TestServiceManager:
             MagicMock(returncode=0),  # tts: get_status → ONLINE
             MagicMock(returncode=0),  # tts: _stop_service
             MagicMock(returncode=3),  # tts: wait offline → OFFLINE
-            MagicMock(returncode=0),  # image-gen: get_status → ONLINE
-            MagicMock(returncode=0),  # image-gen: _stop_service
-            MagicMock(returncode=3),  # image-gen: wait offline → OFFLINE
+            MagicMock(returncode=0),  # image_gen: get_status → ONLINE
+            MagicMock(returncode=0),  # image_gen: _stop_service
+            MagicMock(returncode=3),  # image_gen: wait offline → OFFLINE
         ]):
             results = manager.stop_all()
             assert results['llm'] is True
             assert results['tts'] is True
-            assert results['image-gen'] is True
+            assert results['image_gen'] is True
 
     def test_ensure_only_one_active_multiple(self, manager):
         mock_result = MagicMock()
@@ -288,7 +286,7 @@ class TestServiceManager:
         mock_online.returncode = 0
         
         with patch.object(manager, '_subprocess_run', side_effect=[mock_offline, mock_offline, mock_online]):
-            assert manager.ensure_only_one_active() == 'image-gen'
+            assert manager.ensure_only_one_active() == 'image_gen'
 
         with patch.object(manager, '_subprocess_run', side_effect=[mock_offline, mock_online, mock_offline]):
             assert manager.ensure_only_one_active() == 'tts'

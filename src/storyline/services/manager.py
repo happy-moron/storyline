@@ -2,12 +2,16 @@ import os
 import subprocess
 import time
 import logging
+import tomllib
 from enum import Enum
+from pathlib import Path
 from typing import Optional
 
 from .config import ServiceConfig
 
 _log = logging.getLogger(__name__)
+
+_SERVICES_CONFIG_PATH = Path(__file__).resolve().parent.parent / "config" / "services.toml"
 
 
 class ServiceStatus(Enum):
@@ -37,29 +41,35 @@ class ServiceManager:
         self._TimeoutExpired = subprocess.TimeoutExpired
         self._CalledProcessError = subprocess.CalledProcessError
         self._active_llm_profile = None
-        self._configs = {
-            'llm': ServiceConfig(
-                name='llamacpp',
-                port=11432,
-                health_endpoint='http://127.0.0.1:11432/v1/models',
-                start_timeout=120,
-                stop_timeout=60,
-            ),
-            'tts': ServiceConfig(
-                name='qwentts',
-                port=11433,
-                health_endpoint='http://127.0.0.1:11433/health',
-                start_timeout=120,
-                stop_timeout=30,
-            ),
-            'image-gen': ServiceConfig(
-                name='qwen-image-gen',
-                port=11434,
-                health_endpoint='http://127.0.0.1:11434/health',
-                start_timeout=60,
-                stop_timeout=15,
-            ),
-        }
+        self._gpu_free_memory_mb = 4000
+        self._configs = self._load_service_configs()
+
+    def _load_service_configs(self) -> dict[str, ServiceConfig]:
+        configs: dict[str, ServiceConfig] = {}
+        try:
+            with _SERVICES_CONFIG_PATH.open("rb") as f:
+                raw = tomllib.load(f)
+            svc_cfg = raw.get("services", {})
+            for key in ("llm", "tts", "image_gen"):
+                entry = svc_cfg.get(key, {})
+                if not entry:
+                    continue
+                configs[key] = ServiceConfig(
+                    name=entry.get("systemd_name", key),
+                    port=entry.get("port", 0),
+                    health_endpoint=entry.get("health_endpoint", ""),
+                    start_timeout=entry.get("start_timeout", 240),
+                    stop_timeout=entry.get("stop_timeout", 30),
+                    base_url=entry.get("base_url", ""),
+                    request_timeout=entry.get("request_timeout", 60),
+                    profile_dir=entry.get("profile_dir", ""),
+                )
+            self._gpu_free_memory_mb = raw.get("gpu", {}).get(
+                "free_memory_threshold_mb", 4000
+            )
+        except Exception:
+            _log.warning("Could not load services.toml, using defaults", exc_info=True)
+        return configs
 
     def get_config(self, service_name: str) -> ServiceConfig:
         if service_name not in self._configs:
@@ -166,13 +176,15 @@ class ServiceManager:
         _log.info("%s did not go offline within %ds.", service_name, timeout)
         return False
 
-    def _wait_for_gpu_memory(self, free_mb: int = 4000, timeout: int = 30) -> bool:
+    def _wait_for_gpu_memory(self, free_mb: int | None = None, timeout: int = 30) -> bool:
         """Wait for sufficient free GPU memory, not just for systemd to report offline.
 
         systemd may report a service as inactive before the process has exited
         and released its CUDA allocations.  This polls nvidia-smi until the
         GPU reports *free_mb* MiB available, or until *timeout* seconds elapse.
         """
+        if free_mb is None:
+            free_mb = self._gpu_free_memory_mb
         start_time = time.time()
         while time.time() - start_time < timeout:
             try:
@@ -276,7 +288,9 @@ class ServiceManager:
         return results
 
     def _set_llm_profile(self, profile: str) -> None:
-        llamacpp_dir = os.path.expanduser("~/llamacpp")
+        llm_config = self._configs.get("llm")
+        profile_dir = llm_config.profile_dir if llm_config else "~/llamacpp"
+        llamacpp_dir = os.path.expanduser(profile_dir)
         target = os.path.join(llamacpp_dir, f"{profile}.conf")
         current = os.path.join(llamacpp_dir, "current.conf")
 

@@ -8,6 +8,13 @@ It implements:
 * A pipeline for chunking, translating and generating audio and dictionary entries for the reader
 * Supporting scripts and LLM prompts
 
+## Notes on state
+
+Some areas of the project represent earlier experimental work or ideas which are proof of concept or not fully implemented. 
+
+dict/wordlists, prompts/flashcards - used for generating lists of word for flashcard creation via image-gen (not implemented)
+dict/hsk*, prompts/grammar, prompts/dict - investigation work for augmenting the reader app with detected grammar points
+
 # Environment
 
 This project is intended to run on a single workstation ("to work on my box"). VRAM is limited; it has an LLM, a TTS model, and an Image-gen model which run locally.
@@ -52,9 +59,25 @@ All python work for this should be done within a local virtual environment '.ven
 
 If running python commands, make sure to run ". .venv/bin/activate" prior.
 
-# Unit Testing
+# Testing
+
+## Unit Testing
 
 Testing uses 'pytest'
+
+## "RealWorld" test scenarios
+
+To distinguish from ambiguous understandings of 'integration' or 'e2e' tests, "RealWorld" tests have the following characteristics:
+
+* They MUST NOT use mocks or stubs
+* They MUST use real infrastructure (e.g. local or remote llms, GPU hardware etc)
+* They MUST test E2E using existing CLIs or entrypoints
+* They MUST be maintained as a separate suite from other unit tests
+* They SHOULD maintain state responsibly and be re-runnable without intervention (e.g. cleaning up before starting, shutting down services when finished, isolation of artifacts etc.)
+* They SHOULD be relatively few in number and high impact in design
+* They SHOULD be reasonably performant (e.g. small texts or audio samples), single tests not taking longer than 5-10 minutes. 
+* They MAY use either pytest or custom scripts (python, bash) as runners/harness
+
 
 # Code Guidelines
 

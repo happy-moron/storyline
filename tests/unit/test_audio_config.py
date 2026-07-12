@@ -83,19 +83,15 @@ class TestAudioTomlConfig:
     # -- load_profile_from_toml --
 
     def test_load_profile_from_toml_default(self):
-        ref_audio, ref_text, pause_ms, speed = load_profile_from_toml("default")
-        assert "chinese" in ref_audio
-        assert "english" in ref_audio
-        assert "chinese" in ref_text
-        assert "english" in ref_text
+        sequence_steps, pause_ms = load_profile_from_toml("default")
+        assert len(sequence_steps) > 0, "Expected non-empty sequence steps"
+        for step in sequence_steps:
+            assert "lang" in step
+            assert "voice" in step
+            assert "voice_name" in step
+            assert "speed" in step
         assert isinstance(pause_ms, (int, float))
-        assert isinstance(speed, (int, float))
 
     def test_load_profile_from_toml_invalid_raises(self):
         with pytest.raises(KeyError):
             load_profile_from_toml("nonexistent_profile")
-
-    def test_ref_audio_files_exist(self):
-        ref_audio, _, _, _ = load_profile_from_toml("default")
-        for lang, path in ref_audio.items():
-            assert Path(path).exists(), f"ref_audio[{lang}] file not found: {path}"

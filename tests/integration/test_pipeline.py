@@ -3,17 +3,15 @@
 Run with:  pytest tests/integration/test_pipeline.py --run-integration --run-slow
 """
 
-import json
 import os
-import shutil
 import time
-import tomllib
 from pathlib import Path
 
 import pytest
 
 from storyline.audio.audiobook_gen_qwen3 import process_json_to_audio
 from storyline.book.create_book import create_book
+from storyline.config.pipeline_config import PipelineConfig
 from storyline.services.manager import ServiceManager
 
 INPUT_TEXT = "books_src/childrens/gossie.txt"
@@ -32,29 +30,18 @@ class TestFullPipeline:
     @pytest.fixture(scope="class")
     def run_pipeline(self, manager):
         """Run the full pipeline once and return paths for verification."""
-        config_path = Path("src/storyline/config/llms_for_tasks.toml")
-        with config_path.open("rb") as f:
-            cfg = tomllib.load(f)
-
-        llm_cfg = cfg.get("llm", {})
-        model_id = llm_cfg.get("model_id", "local-llamacpp")
-        default_profile = cfg.get("default", {}).get("profile")
-        task_profiles = {
-            task: cfg.get(task, {}).get("profile", default_profile)
-            for task in ("translate", "tokenize", "dictionary")
-        }
+        config = PipelineConfig.from_files_and_args(profile_name="test")
+        # Override specific values for this test suite
+        config.max_chunks = 1
+        config.skip_simplify = True
+        config.skip_audio = False
+        config.audio_profile = "default"
 
         create_book(
             INPUT_TEXT,
             AUTHOR,
-            max_chunks=1,
-            skip_simplify=True,
-            models=[model_id],
-            skip_audio=False,
-            audio_profile="default",
+            config,
             service_manager=manager,
-            task_profiles=task_profiles,
-            llm_provider=llm_cfg.get("provider", "local"),
         )
 
         return {
@@ -62,6 +49,7 @@ class TestFullPipeline:
             "source_pipe": Path(BASE_DIR) / "pipe" / "source",
             "token_pipe": Path(BASE_DIR) / "pipe" / "tokenized",
             "audio": Path(BASE_DIR) / "audio",
+            "audiobook_dir": config.audiobook_output_dir(BOOK),
         }
 
     # -- Split output --
@@ -109,8 +97,7 @@ class TestFullPipeline:
             assert f.stat().st_size > 512, f"Audio file too small: {f.name} ({f.stat().st_size} bytes)"
 
     def test_audiobook_mp3_exists(self, run_pipeline):
-        audiobook_dir = Path(f"/home/zspdude/temp/audio/{BOOK}")
-        audiobook = audiobook_dir / f"{BOOK}_1.mp3"
+        audiobook = Path(run_pipeline["audiobook_dir"]) / f"{BOOK}_1.mp3"
         assert audiobook.exists(), f"Audiobook missing: {audiobook}"
         assert audiobook.stat().st_size > 1024, f"Audiobook too small: {audiobook.stat().st_size} bytes"
 
@@ -136,8 +123,6 @@ class TestAudioGenFromPipe:
     def test_generate_audiobook(self, manager, source_file):
         output = Path("/tmp") / f"test_gossie_audio_{int(time.time())}.mp3"
         try:
-            from storyline.audio.audiobook_gen_base import load_profile_from_toml
-
             # Ensure TTS is running, stop LLM if needed
             from storyline.services.manager import ServiceStatus
             if manager.get_status("tts") == ServiceStatus.OFFLINE:

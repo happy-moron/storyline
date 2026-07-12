@@ -29,4 +29,11 @@ external_docs/qwen3-tts-flask/README.md
 
 # Implementation Order / Plan
 
-## 1 - 
+## 1 - Set up a RealWorld test harness
+
+There should be a RealWorld test harness that is set up which can run the entire pipeline - text processing, audio generation (including both sentence based generation and the repeating/joined together longer audio. )
+
+* run a short single chapter (multi-block) book text through the entire pipeline
+* Leave the artifacts existing for manual examination after the run is finished, but clean expected locations before the test run so that it's re-runnable
+* configured to use a local llm for the text processing stages (default 'qwen36-35b-a3b-nothink')
+* generate sentence level audio and joined together audio

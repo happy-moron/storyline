@@ -1,0 +1,57 @@
+# =============================================================================
+# Pipeline Configuration — central settings for the create_book pipeline
+# =============================================================================
+# All settings live under [defaults].  Named [profiles.<name>] sections
+# override specific values from defaults.  Use --profile <name> on the CLI.
+# CLI arguments take highest priority.
+
+# =============================================================================
+# Defaults — applied to all runs
+# =============================================================================
+[defaults]
+
+# -- Paths --
+paths.books_dir = "books"
+paths.audiobook_dir = "/home/zspdude/temp/audio"
+paths.dict_file = "dict/custom_dict.json"
+
+paths.prompts.warmup = "prompts/warmup.txt"
+paths.prompts.translate = "prompts/translate.md"
+paths.prompts.translate_and_simplify = "prompts/translate_and_simplify.md"
+paths.prompts.tokenize = "prompts/tokenize.txt"
+paths.prompts.fix_tokenization = "prompts/fix_tokenization.txt"
+paths.prompts.dict_entry = "prompts/create_single_dictionary_entry.txt"
+
+# -- Pipeline behaviour --
+pipeline.max_chunks = 500
+pipeline.split_chunk_size = 2000
+pipeline.llm_retries = 3
+pipeline.llm_timeout_s = 600
+pipeline.warmup_on_start = true
+pipeline.skip_simplify = false
+pipeline.skip_audio = false
+pipeline.audio_profile = "default"
+
+# -- Dictionary --
+dictionary.punctuation_skip = [
+    ",", ".", "?", "!", "，", "。", "？", "！",
+    '"', "“", "”", "、",
+]
+
+# =============================================================================
+# Named profiles — override only the values that differ from defaults
+# =============================================================================
+
+[profiles.quick]
+pipeline.max_chunks = 3
+pipeline.warmup_on_start = false
+pipeline.llm_retries = 1
+
+[profiles.test]
+pipeline.max_chunks = 1
+pipeline.skip_simplify = true
+pipeline.skip_audio = false
+pipeline.split_chunk_size = 2000
+
+[profiles.voice-clone]
+pipeline.audio_profile = "voice-clone"

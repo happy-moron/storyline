@@ -34,7 +34,8 @@ def change_tempo(audio_segment, speed_change):
 
 
 def process_sentence(sentence, sequence_steps, index,
-                     service, generate_tts_fn, pause_ms=300, standalone_file=None):
+                     service, generate_tts_fn, pause_ms=300, standalone_file=None,
+                     bitrate: str = "64k"):
     # Generate TTS once per unique (lang, voice) pair; speed is applied post-hoc.
     tts_cache = {}
     for step in sequence_steps:
@@ -64,7 +65,7 @@ def process_sentence(sentence, sequence_steps, index,
             for step in sequence_steps:
                 if step["lang"] == "zh":
                     tts_cache[(step["lang"], step.get("voice_name"))].export(
-                        standalone_file_mp3, format="mp3", bitrate="64k")
+                        standalone_file_mp3, format="mp3", bitrate=bitrate)
                     break
 
     return combined
@@ -72,7 +73,7 @@ def process_sentence(sentence, sequence_steps, index,
 
 def process_json_to_audio_common(input_file, output_file, profile_key="default", service=None,
                                  sentence_pause=800, standalone_file=None,
-                                 generate_tts_fn=None):
+                                 generate_tts_fn=None, bitrate: str = "64k"):
     sequence_steps, pause_ms = load_profile_from_toml(profile_key)
 
     sentences = parse_source_file(input_file)
@@ -84,13 +85,14 @@ def process_json_to_audio_common(input_file, output_file, profile_key="default",
         processed_segment = process_sentence(
             sentence, sequence_steps, i,
             service, generate_tts_fn,
-            pause_ms=pause_ms, standalone_file=standalone_file
+            pause_ms=pause_ms, standalone_file=standalone_file,
+            bitrate=bitrate,
         )
         final_audio += processed_segment
         if i < len(sentences) - 1:
             final_audio += AudioSegment.silent(duration=sentence_pause)
 
-    final_audio.export(output_file, format="mp3", bitrate="64k")
+    final_audio.export(output_file, format="mp3", bitrate=bitrate)
     print(f"Successfully created output file: {output_file}")
 
 

@@ -22,12 +22,7 @@ def load_module(module_name):
 
 def run_prompt(prompt_template_path, input_file_path, output_file_path, pre_process_module=None, models=None,
                timeout: int = 600):
-    """Run a prompt, with a wall‑clock timeout (default 300 s / 5 min).
-
-    The underlying ``llm`` library creates an OpenAI HTTP client whose read
-    timeout defaults to 600 s and is not configurable via environment
-    variables in openai v2.x.  This wrapper enforces a hard deadline.
-    """
+    """Run a prompt, with a wall‑clock timeout (default 600 s / 10 min)."""
     with open(input_file_path, "r", encoding="utf-8", errors="replace") as f:
         raw_input = f.read()
     _log.info("Sending prompt template=%s input=%s (%d chars)",
