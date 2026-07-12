@@ -68,15 +68,25 @@
             selectedChapter: null
         };
 
+        let manifest = null;
+
+        function findBookEntry(bookSlug) {
+            if (!manifest) return null;
+            for (const ae of manifest.books) {
+                const be = ae.books.find(b => b.slug === bookSlug);
+                if (be) return { author: ae.author, book: be };
+            }
+            return null;
+        }
+
         // Initialize app
         document.addEventListener('DOMContentLoaded', async () => {
             try {
-                // Fetch initial list of authors
-                const authors = ["genai","lang","kipling","wodehouse","stevenson", "macdonald","peacock","tolstoy","ruskin"]
-                currentState.authors = authors;
-                populateAuthors(authors);
+                manifest = await fetch('books/manifest.json').then(r => r.json());
+                currentState.authors = manifest.books.map(a => a.author);
+                populateAuthors(currentState.authors);
             } catch (error) {
-                console.error('Failed to load authors:', error);
+                console.error('Failed to load manifest:', error);
             }
         });
         loadDictionary();
@@ -100,18 +110,8 @@
             if (!author) return;
 
             try {
-                const authorBooks = {
-                    "genai": ["thomas-buys-a-car"],
-                    "lang": ["the-blue-fairy-book"],
-                    "stevenson": ["the-black-arrow"],
-                    "kipling": ["stalky"],
-                    "wodehouse": ["right-ho-jeeves"],
-                    "tolstoy": ["where-love-is-there-is-God-also","how-much-land-does-a-man-need"],
-                    "macdonald": ["the-princess-and-the-goblin", "the-princess-and-curdie"],
-                    "peacock": ["boring-thomas-and-the-milk", "boring-thomas-fixes-a-toilet"],
-                    "ruskin": ["the-king-of-the-golden-river"]
-                };
-                const books = authorBooks[author] || [];
+                const authorEntry = manifest.books.find(a => a.author === author);
+                const books = authorEntry ? authorEntry.books : [];
                 currentState.books = books;
                 populateBooks(books, author);
                 document.getElementById('bookSelect').disabled = false;
@@ -127,8 +127,8 @@
             select.innerHTML = '<option value="">Select Book</option>';
             books.forEach(book => {
                 const option = document.createElement('option');
-                option.value = book;
-                option.textContent = book;
+                option.value = book.slug;
+                option.textContent = book.title;
                 select.appendChild(option);
             });
             select.disabled = false;
@@ -161,7 +161,8 @@
         async function loadChapter(chapterNumber) {
             if (loadingChapter) return;
             loadingChapter = true;
-            const prefix = bookPrefixes[currentState.selectedBook] || currentState.selectedBook;
+            const entry = findBookEntry(currentState.selectedBook);
+            const prefix = entry ? entry.book.prefix : currentState.selectedBook;
 
             try {
                 const tokenizedFilePath = `books/${currentState.selectedAuthor}/${currentState.selectedBook}/pipe/tokenized/${prefix}_${chapterNumber}.txt`;
@@ -183,20 +184,7 @@
             }
         }
 
-        const bookPrefixes = {
-            "stalky": "stalky-and-co",
-            "the-blue-fairy-book": "the-blue-fairy-book",
-            "right-ho-jeeves": "right-ho-jeeves",
-            "the-black-arrow": "the-black-arrow",
-            "the-princess-and-the-goblin": "the-princess-and-the-goblin",
-            "the-princess-and-curdie": "the-princess-and-curdie",
-            "where-love-is-there-is-God-also": "where-love-is-there-is-God-also",
-            "the-king-of-the-golden-river": "the-king-of-the-golden-river",
-            "thomas-buys-a-car": "thomas-buys-a-car",
-            "boring-thomas-and-the-milk": "boring-thomas-and-the-milk",
-            "boring-thomas-fixes-a-toilet": "boring-thomas-fixes-a-toilet",
-            "how-much-land-does-a-man-need": "how-much-land-does-a-man-need"
-        };
+
 
         // Pipe format parsers (compact tokenized & source)
         function parseSourcePipe(text) {
@@ -542,7 +530,8 @@
                 const author = currentState.selectedAuthor;
                 const book = currentState.selectedBook;
                 const chapterNumber = currentState.selectedChapter;
-                const bookPrefix = bookPrefixes[book];
+                const entry = findBookEntry(book);
+                const bookPrefix = entry ? entry.book.prefix : book;
                 const sentenceNumber = i + 1;
                 audio.src = `books/${author}/${book}/audio/${bookPrefix}_${chapterNumber}_${sentenceNumber}.mp3`;
                 audio.loop = false;
