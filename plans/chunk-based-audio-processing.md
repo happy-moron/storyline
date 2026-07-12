@@ -29,7 +29,7 @@ external_docs/qwen3-tts-flask/README.md
 
 # Implementation Order / Plan
 
-## 1 - Set up a RealWorld test harness
+## 1 - Set up a RealWorld test harness to make sure the pipeline works
 
 There should be a RealWorld test harness that is set up which can run the entire pipeline - text processing, audio generation (including both sentence based generation and the repeating/joined together longer audio. )
 
@@ -37,3 +37,39 @@ There should be a RealWorld test harness that is set up which can run the entire
 * Leave the artifacts existing for manual examination after the run is finished, but clean expected locations before the test run so that it's re-runnable
 * configured to use a local llm for the text processing stages (default 'qwen36-35b-a3b-nothink')
 * generate sentence level audio and joined together audio
+
+## 2 - Replace the 'translate_and_simplify' flow
+
+The existing flow should be replaced with a separate, skippable 'simplify' prompt which runs to simplify a chapter of text to a targeted reading level and to format it into reading lines. 
+
+The earlier translate_and_simplify flow was a failed experiment at joining the two stages.
+
+Some handwritten source texts will already be suitably formatted and at an appropriate reading level; their chapters won't need to run through this stage.
+
+## 3 - Add a chunking step to the pipeline
+
+The pipeline should add a stage to break up the text into natural-reading chunks. The output of this should not change the content of the reading lines but should use a simple format to mark reading sections and their reading instructions. One possible approach is inserting custom, simple-to-parse tags that clearly mark sections with reading instructions (e.g. inserting <instruct text=" ">).
+
+* Add the prompt
+* Design the output format
+    * rather than repeat full chapter, possibly just output previous/next sentences for tag insertion points. 
+* Design output processing
+    * Should validate that insertion points exist and are valid
+    * extract out reading instructions and break the chunking source text into chunks (maybe just mapping reading instructions to start indices)
+
+## 4 - Update audio generation to use chunks
+
+* pass text in chunks (not reading lines) to tts audio gen 
+* Pass reading instructions as 'instruct' for customvoice
+* Pass resulting audio through forcedaligner to generate word timestamps
+* Calculate reading line timestamps based on word timestamps
+    * "split in the middle of the gap" between end of last word and start of next sentence.
+* Design the output file format for chunk-based audio for the reader app to consume
+* The aggregate/joined audio should use reading-line timestamps to grab audio segements/slices for joining
+
+
+## 5 - Update the reader to use reading line timestamps for audio playback
+
+* Update the reader to honor the chapter/chunk/reading line model
+* implement reading-line playback based of timestamped section of audio according to reading line timestamp metadata
+* 
