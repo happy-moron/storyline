@@ -47,35 +47,60 @@ def test_step_1_split():
             print(f"    Content:\n{fp.read()[:200]}...")
 
 def test_step_2_simplify():
-    """Step 2: Simplify text (no-op — simplification is now part of translate_and_simplify.md)"""
+    """Step 2: Simplify text"""
     print("\n" + "="*60)
-    print("STEP 2: Simplify text (SKIPPED — built into translation prompt)")
+    print("STEP 2: Simplify text")
     print("="*60)
-    print("Simplify is now handled by translate_and_simplify.md.")
+
+    files = sorted(Path(f"{OUTPUT_DIR}/split/source").glob("*.txt"))
+    models = ["gemini-2.0-flash"]
+
+    for i, source_file in enumerate(files[:MAX_CHUNKS]):
+        source_stem = source_file.stem
+        output_file = Path(f"{OUTPUT_DIR}/split/simple/{source_stem}.txt")
+
+        if output_file.exists():
+            print(f"  Skipping {source_stem} (already simplified)")
+            continue
+
+        print(f"  Simplifying {source_stem}...")
+        try:
+            run_prompt("prompts/simplify.md", str(source_file), str(output_file), models=models)
+            print(f"  ✓ Simplified to {output_file}")
+
+            with open(output_file) as fp:
+                content = fp.read()
+                print(f"    First 300 chars: {content[:300]}...")
+        except Exception as e:
+            print(f"  ✗ Error simplifying {source_stem}: {e}")
 
 def test_step_3_translate():
-    """Step 3: Translate simplified text"""
+    """Step 3: Translate text"""
     print("\n" + "="*60)
     print("STEP 3: Translate text")
     print("="*60)
-    
+
     files = sorted(Path(f"{OUTPUT_DIR}/split/source").glob("*.txt"))
     models = ["gemini-2.0-flash"]
-    
+
     for i, source_file in enumerate(files[:MAX_CHUNKS]):
         source_stem = source_file.stem
         output_file = Path(f"{OUTPUT_DIR}/pipe/source/{source_stem}.txt")
-        
+
         if output_file.exists():
             print(f"  Skipping {source_stem} (already translated)")
             continue
-        
+
+        translate_input = source_file
+        simple_file = Path(f"{OUTPUT_DIR}/split/simple/{source_stem}.txt")
+        if simple_file.exists():
+            translate_input = simple_file
+
         print(f"  Translating {source_stem}...")
         try:
-            run_prompt("prompts/translate_and_simplify.md", str(source_file), str(output_file), models=models)
+            run_prompt("prompts/translate.md", str(translate_input), str(output_file), models=models)
             print(f"  ✓ Translated to {output_file}")
-            
-            # Show a snippet of the result
+
             with open(output_file) as fp:
                 content = fp.read()
                 print(f"    First 300 chars: {content[:300]}...")

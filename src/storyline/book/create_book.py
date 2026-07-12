@@ -8,12 +8,17 @@ from storyline.book.parse_pipe_format import (
     parse_source_file,
     parse_tokenized_file,
 )
+from storyline.book.parse_chunk_format import (
+    parse_chunk_format,
+    save_chunks_json,
+)
 from storyline.book.cjk_punct import strip as strip_cjk_punct, reinsert as reinsert_cjk_punct, format_compact
 from storyline.book.split_text import split_text
 from storyline.prompt_utils.run_prompt import run_prompt
 from storyline.book.create_custom_dict import process_json_file, load_dictionary
 from storyline.services.manager import ServiceManager
 from storyline.audio.audiobook_gen_qwen3 import process_json_to_audio
+from storyline.audio.audiobook_gen_chunk import process_chapter_chunks
 from storyline.book.tokenization_repair import (
     validate_full,
     build_repair_input,
@@ -76,7 +81,64 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
         source_file_stem = os.path.splitext(os.path.basename(source_file))[0]
         log.info("processing %s", source_file_stem)
 
-        # -- 2. Translate --
+        # -- 2. Simplify (optional) --
+        simple_dir = os.path.join(base_dir, "split", "simple")
+        os.makedirs(simple_dir, exist_ok=True)
+        simple_file_path = Path(simple_dir) / Path(source_file_stem + ".txt")
+
+        if not config.skip_simplify and not simple_file_path.exists():
+            if service_manager and llm_local:
+                simplify_profile = _resolve_profile(config.task_profiles, 'translate')
+                service_manager.ensure_llm_profile(simplify_profile)
+
+            for attempt in range(config.llm_retries):
+                run_prompt(config.resolve_prompt("simplify"),
+                           source_file, simple_file_path,
+                           models=config.models, timeout=config.llm_timeout_s)
+                simple_text = Path(simple_file_path).read_text(encoding="utf-8").strip()
+                if simple_text:
+                    break
+                if attempt < config.llm_retries - 1:
+                    log.info("  Simplify produced empty output (attempt %d/%d), retrying...",
+                             attempt + 1, config.llm_retries)
+                    os.remove(simple_file_path)
+                else:
+                    raise ValueError("Simplify produced empty output after all retries")
+            log.info("  -> wrote simplified text to %s", simple_file_path)
+
+        # -- 2.5 Chunk --
+        chunks_dir = os.path.join(base_dir, "chunks")
+        os.makedirs(chunks_dir, exist_ok=True)
+        chunk_json_path = Path(chunks_dir) / Path(source_file_stem + ".json")
+        chunk_raw_path = Path(chunks_dir) / Path(source_file_stem + "_raw.txt")
+
+        if not chunk_json_path.exists():
+            chunk_input = simple_file_path if (not config.skip_simplify and simple_file_path.exists()) else source_file
+
+            if service_manager and llm_local:
+                chunk_profile = _resolve_profile(config.task_profiles, 'translate')
+                service_manager.ensure_llm_profile(chunk_profile)
+
+            for attempt in range(config.llm_retries):
+                run_prompt(config.resolve_prompt("chunk"),
+                           chunk_input, chunk_raw_path,
+                           models=config.models, timeout=config.llm_timeout_s)
+                raw_text = chunk_raw_path.read_text(encoding="utf-8").strip()
+                if raw_text:
+                    break
+                if attempt < config.llm_retries - 1:
+                    log.info("  Chunking produced empty output (attempt %d/%d), retrying...",
+                             attempt + 1, config.llm_retries)
+                    os.remove(chunk_raw_path)
+                else:
+                    raise ValueError("Chunking produced empty output after all retries")
+
+            source_lines = [l.strip() for l in Path(chunk_input).read_text(encoding="utf-8").strip().split("\n") if l.strip()]
+            chunks = parse_chunk_format(raw_text, source_lines)
+            save_chunks_json(chunks, chunk_json_path)
+            log.info("  -> wrote %d chunks to %s", len(chunks), chunk_json_path)
+
+        # -- 3. Translate --
         os.makedirs(pipe_source_dir, exist_ok=True)
         source_txt_path = Path(pipe_source_dir) / Path(source_file_stem + ".txt")
         if not source_txt_path.exists():
@@ -84,19 +146,26 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
                 translate_profile = _resolve_profile(config.task_profiles, 'translate')
                 service_manager.ensure_llm_profile(translate_profile)
 
-            translate_prompt = (
-                config.resolve_prompt("translate")
-                if config.skip_simplify
-                else config.resolve_prompt("translate_and_simplify")
-            )
+            translate_input = simple_file_path if (not config.skip_simplify and simple_file_path.exists()) else source_file
 
             for attempt in range(config.llm_retries):
-                run_prompt(translate_prompt, source_file, source_txt_path,
+                run_prompt(config.resolve_prompt("translate"),
+                           translate_input, source_txt_path,
                            models=config.models, timeout=config.llm_timeout_s)
-                if config.skip_simplify:
-                    chinese_lines = Path(source_txt_path).read_text(encoding="utf-8").strip().split("\n")
-                    pipe_text = "\n".join(line.strip() + "|||" for line in chinese_lines if line.strip())
-                    Path(source_txt_path).write_text(pipe_text, encoding="utf-8")
+                chinese_lines = Path(source_txt_path).read_text(encoding="utf-8").strip().split("\n")
+                english_lines = [
+                    l for l in Path(translate_input).read_text(encoding="utf-8").strip().split("\n")
+                    if l.strip()
+                ]
+                pipe_lines = []
+                for i, ch in enumerate(chinese_lines):
+                    ch = ch.strip()
+                    if not ch:
+                        continue
+                    en = english_lines[i] if i < len(english_lines) else ""
+                    pipe_lines.append(f"{ch}|||{en.strip()}")
+                pipe_text = "\n".join(pipe_lines) + "\n"
+                Path(source_txt_path).write_text(pipe_text, encoding="utf-8")
                 try:
                     sentences = parse_source_file(source_txt_path)
                     break
@@ -109,7 +178,7 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
                         raise
             log.info("  -> wrote %d sentence pairs to %s", len(sentences), source_txt_path)
 
-        # -- 3. Tokenize --
+        # -- 4. Tokenize --
         os.makedirs(pipe_token_dir, exist_ok=True)
         token_txt_path = Path(pipe_token_dir) / Path(source_file_stem + ".txt")
         if not token_txt_path.exists():
@@ -212,21 +281,36 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
 
             log.info("  -> wrote %d tokenized sentences to %s", len(tokenized), token_txt_path)
 
-        # -- 4. Audio --
+        # -- 5. Audio --
         if not config.skip_audio:
             audiobook_mp3_path = Path(audiobook_dir) / Path(source_file_stem + ".mp3")
             os.makedirs(audio_dir, exist_ok=True)
             os.makedirs(audiobook_dir, exist_ok=True)
-            if not audiobook_mp3_path.exists():
+            os.makedirs(chunks_dir, exist_ok=True)
+
+            if not audiobook_mp3_path.exists() or not chunk_json_path.exists():
                 if service_manager:
                     service_manager.start_if_needed('tts')
 
-                process_json_to_audio(
-                    source_txt_path,
-                    os.path.join(audiobook_dir, source_file_stem + ".mp3"),
-                    standalone_file=os.path.join(audio_dir, source_file_stem),
-                    profile_key=config.audio_profile,
-                )
+                if chunk_json_path.exists():
+                    # Chunk-based flow (Step 4)
+                    english_input = simple_file_path if (not config.skip_simplify and simple_file_path.exists()) else source_file
+                    process_chapter_chunks(
+                        source_txt_path,
+                        english_input,
+                        chunk_json_path,
+                        chapters_audio_dir=chunks_dir,
+                        aggregate_output_path=audiobook_mp3_path,
+                        profile_key=config.audio_profile,
+                    )
+                else:
+                    # Fallback: per-sentence flow
+                    process_json_to_audio(
+                        source_txt_path,
+                        os.path.join(audiobook_dir, source_file_stem + ".mp3"),
+                        standalone_file=os.path.join(audio_dir, source_file_stem),
+                        profile_key=config.audio_profile,
+                    )
 
                 if service_manager:
                     service_manager.stop_if_running('tts')
@@ -234,7 +318,7 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
                         dict_profile = _resolve_profile(config.task_profiles, 'dictionary')
                         service_manager.ensure_llm_profile(dict_profile)
 
-        # -- 5. Dictionary --
+        # -- 6. Dictionary --
         if service_manager and llm_local:
             dict_profile = _resolve_profile(config.task_profiles, 'dictionary')
             service_manager.ensure_llm_profile(dict_profile)

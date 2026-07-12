@@ -104,3 +104,5 @@ apilog/
 .aider*
 .roo/
 dict/audio
+tests/realworld/output/
+tests/realworld/output/*

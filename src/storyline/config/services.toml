@@ -17,7 +17,7 @@ health_endpoint = "http://127.0.0.1:11433/health"
 start_timeout = 120
 stop_timeout = 30
 base_url = "http://127.0.0.1:11433"
-request_timeout = 60
+request_timeout = 300
 
 [services.image_gen]
 systemd_name = "qwen-image-gen"

@@ -17,8 +17,9 @@ paths.dict_file = "dict/custom_dict.json"
 
 paths.prompts.warmup = "prompts/warmup.txt"
 paths.prompts.translate = "prompts/translate.md"
-paths.prompts.translate_and_simplify = "prompts/translate_and_simplify.md"
+paths.prompts.simplify = "prompts/simplify.md"
 paths.prompts.tokenize = "prompts/tokenize.txt"
+paths.prompts.chunk = "prompts/tts_chunking_prompt_single_narrator.md"
 paths.prompts.fix_tokenization = "prompts/fix_tokenization.txt"
 paths.prompts.dict_entry = "prompts/create_single_dictionary_entry.txt"
 

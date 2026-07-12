@@ -63,8 +63,9 @@ class PipelineConfig:
     dict_file: str = "dict/custom_dict.json"
     prompts: dict[str, str] = field(default_factory=lambda: {
         "warmup": "prompts/warmup.txt",
+        "simplify": "prompts/simplify.md",
+        "chunk": "prompts/tts_chunking_prompt_single_narrator.md",
         "translate": "prompts/translate.md",
-        "translate_and_simplify": "prompts/translate_and_simplify.md",
         "tokenize": "prompts/tokenize.txt",
         "fix_tokenization": "prompts/fix_tokenization.txt",
         "dict_entry": "prompts/create_single_dictionary_entry.txt",

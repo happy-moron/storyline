@@ -11,17 +11,19 @@ from .audiobook_gen_base import process_json_to_audio_common
 class Qwen3TTSService:
     """Client for Qwen3-TTS Flask service."""
 
-    def __init__(self, base_url: str | None = None):
+    def __init__(self, base_url: str | None = None, tts_timeout: int = 300, align_timeout: int = 300):
         if base_url is None:
             base_url = "http://127.0.0.1:11433"
         self.base_url = base_url.rstrip('/')
         self.session = requests.Session()
+        self._tts_timeout = tts_timeout
+        self._align_timeout = align_timeout
 
     def _post_and_decode(self, endpoint, payload):
         response = self.session.post(
             f"{self.base_url}{endpoint}",
             json=payload,
-            timeout=60
+            timeout=self._tts_timeout,
         )
         if response.status_code != 200:
             raise RuntimeError(f"TTS {endpoint} failed ({response.status_code}): {response.text}")
@@ -38,6 +40,31 @@ class Qwen3TTSService:
             "speaker": speaker,
             "instruct": instruct
         })
+
+    def forced_align(self, audio: AudioSegment, text: str, language: str) -> list[dict]:
+        """Run forced alignment on audio with known reference text.
+
+        Returns a list of word dicts: [{"text": "...", "start_time": N, "end_time": N}, ...]
+        """
+        buf = io.BytesIO()
+        audio.export(buf, format="wav")
+        buf.seek(0)
+        audio_b64 = base64.b64encode(buf.read()).decode("utf-8")
+
+        response = self.session.post(
+            f"{self.base_url}/forced_aligner",
+            json={"audio": audio_b64, "text": text, "language": language.capitalize()},
+            timeout=self._align_timeout,
+        )
+        if response.status_code != 200:
+            raise RuntimeError(
+                f"Forced aligner failed ({response.status_code}): {response.text}"
+            )
+        data = response.json()
+        words = data.get("words", [])
+        if not words:
+            raise RuntimeError(f"No words in forced aligner response: {data}")
+        return words
 
     def generate_voice_clone(self, text, language, ref_audio_path, ref_text):
         with open(ref_audio_path, 'rb') as f:
