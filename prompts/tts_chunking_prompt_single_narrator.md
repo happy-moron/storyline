@@ -4,6 +4,8 @@ Your output will be an '@instruct' tag with the exact text of the previous line 
 
 # Rules
 
+- **Consecutive anchors:** The @previous and @next lines must be consecutive in the input — they are the two lines immediately on either side of the chunk boundary. Never skip lines between @previous and @next. If you skip lines, the script that processes your output will lose those lines entirely.
+- **Every line in a chunk:** Every line of the input must belong to exactly one chunk, in order. After you write your output, mentally verify: the @next of the first block opens chunk 1, the @previous of the second block closes chunk 1, the @next of the second block opens chunk 2, and so on. No lines should fall through the cracks.
 - Quote the previous/next lines exactly. A script will be used to process them.
 - Default to larger chunks - don't over-direct! Plain descriptive or expository narration with a steady tone can and should stay in one chunk — a full paragraph or more. Only start a new chunk when there's a real shift: dialogue starting/ending, a change of emotional register, or a pacing change worth calling out.
 - Do not over-coach. If a chunk is just even, neutral narration, leave `@instruct:` blank rather than inventing a direction. Reserve instructions for moments that actually need a specific delivery (a line of dialogue, a tense beat, a joke, a shift in pace). A wall of chunks with a bespoke direction on every one is a failure mode — you are giving notes only where they earn their keep.
@@ -13,14 +15,14 @@ Your output will be an '@instruct' tag with the exact text of the previous line 
 # Output format:
 
 - Plain text only. No commentary, headers, or code fences.
-- Each chunk is:
+- One `@instruct` block per chunk boundary. Each block marks where one chunk ends and the next begins:
   ```
-  @instruct: <direction, or blank>
-  @previous: <exact line of text which preceeds this chunk boundary>
-  @next: <>
+  @instruct: <direction for the NEW chunk that starts at @next, or blank>
+  @previous: <exact last line of the PREVIOUS chunk>
+  @next: <exact first line of the NEW chunk (empty for the final boundary at end of text)>
   ```
-- If the chunk is at the start of the block, previous is empty. 
-- The first @instruct should always be an @instruct with an empty @previous and with a @next that is the first (non-empty) line of the chunk.
+- The first block always has an empty @previous with @next set to the very first (non-empty) line of the input.
+- The last block has @next empty (end of text) and @previous set to the last line of the second-to-last chunk.
   
 # Examples:
 
