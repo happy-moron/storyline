@@ -98,7 +98,8 @@ def compute_line_timestamps(
 
         start_time = 0.0 if i == 0 else results[-1]["end"]
 
-        if i == len(lines) - 1:
+        # If no words remain after this line, treat it as the last line
+        if i == len(lines) - 1 or word_pos + n >= len(words):
             end_time = audio_duration
         else:
             next_first = words[word_pos + n]

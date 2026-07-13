@@ -7,7 +7,10 @@ Each block defines where one chunk ends and the next begins.
 
 import re
 import json
+import logging
 from pathlib import Path
+
+_log = logging.getLogger(__name__)
 
 
 _BLOCK_SEP_RE = re.compile(r'(?=\n@instruct:)')
@@ -53,6 +56,71 @@ def parse_chunk_blocks(text: str) -> list[dict]:
     return blocks
 
 
+def _index_lines(source_lines: list[str]) -> dict[str, list[int]]:
+    """Map each line text to a list of all positions where it occurs."""
+    idx: dict[str, list[int]] = {}
+    for i, line in enumerate(source_lines):
+        idx.setdefault(line, []).append(i)
+    return idx
+
+
+def _find_first(indices: dict[str, list[int]], text: str, label: str) -> int:
+    """Return the first occurrence index of *text*."""
+    idxs = indices.get(text)
+    if not idxs:
+        raise ValueError(f"{label} not found in source: {text!r}")
+    return idxs[0]
+
+
+def _find_last(indices: dict[str, list[int]], text: str, label: str) -> int:
+    """Return the last occurrence index of *text*."""
+    idxs = indices.get(text)
+    if not idxs:
+        raise ValueError(f"{label} not found in source: {text!r}")
+    return idxs[-1]
+
+
+def _find_prev_for_next(
+    indices: dict[str, list[int]],
+    prev_text: str,
+    next_text: str,
+    label: str,
+) -> tuple[int, int]:
+    """Find the closest pair (prev_idx, next_idx) where prev_text occurs before
+    next_text in source_lines.
+
+    When lines repeat, this chooses the occurrence of ``prev_text`` that is
+    closest to (and before) the earliest valid ``next_text`` — matching the
+    intended chunk boundary even when anchor lines aren't unique.
+    """
+    prev_idxs = indices.get(prev_text, [])
+    next_idxs = indices.get(next_text, [])
+
+    if not prev_idxs or not next_idxs:
+        raise ValueError(f"{label} not found in source")
+
+    best_prev = -1
+    best_next = -1
+    best_dist = float("inf")
+
+    for ni in next_idxs:
+        for pi in reversed(prev_idxs):
+            if pi < ni:
+                dist = ni - pi
+                if dist < best_dist:
+                    best_dist = dist
+                    best_prev = pi
+                    best_next = ni
+                break
+
+    if best_prev < 0:
+        raise ValueError(
+            f"{label}: @previous {prev_text!r} must appear before "
+            f"@next {next_text!r} in source"
+        )
+    return best_prev, best_next
+
+
 def parse_chunk_format(text: str, source_lines: list[str]) -> list[dict]:
     """Parse chunking LLM output and map boundaries to source line indices.
 
@@ -66,52 +134,74 @@ def parse_chunk_format(text: str, source_lines: list[str]) -> list[dict]:
     Validates:
         - First @previous is empty (marks start of text)
         - All anchor lines exist in source_lines
-        - @previous and @next within each block are adjacent in source
+        - @previous occurs before @next in the source for each block
     """
     blocks = parse_chunk_blocks(text)
-
-    line_to_idx: dict[str, int] = {}
-    for i, line in enumerate(source_lines):
-        line_to_idx.setdefault(line, i)
-
-    def _find(text: str, label: str) -> int:
-        if not text:
-            return -1
-        idx = line_to_idx.get(text)
-        if idx is None:
-            raise ValueError(f"{label} not found in source: {text!r}")
-        return idx
 
     if blocks[0]["previous"]:
         raise ValueError("First @previous must be empty (start of text)")
 
+    indices = _index_lines(source_lines)
+
+    # Validate first block's @next exists in source (even though chunk 0
+    # always starts at line 0 when @previous is empty).
+    _find_first(indices, blocks[0]["next"], "First @next")
+
+    # First chunk always starts at line 0 (first @previous is empty).
+    chunk_start = 0
     chunks: list[dict] = []
-    chunk_start = _find(blocks[0]["next"], "First @next")
 
     for i, block in enumerate(blocks):
-        next_idx = _find(block["next"], f"Block {i} @next")
+        if i == 0:
+            continue
 
-        if i > 0:
-            prev_idx = _find(block["previous"], f"Block {i} @previous")
-            chunks.append({
-                "instruct": blocks[i - 1]["instruct"],
-                "line_range": [chunk_start, prev_idx],
-            })
-            chunk_start = next_idx
+        prev_text = block["previous"]
+        next_text = block["next"]
+
+        if next_text:
+            prev_idx, next_idx = _find_prev_for_next(
+                indices, prev_text, next_text, f"Block {i}"
+            )
+        else:
+            # Last block: @next is empty (end of text).
+            # The chunk after this boundary starts at the line following @previous.
+            prev_idx = _find_last(indices, prev_text, f"Block {i} @previous")
+            next_idx = prev_idx + 1
+
+        chunks.append({
+            "instruct": blocks[i - 1]["instruct"],
+            "line_range": [chunk_start, prev_idx],
+        })
+        chunk_start = next_idx
 
     chunks.append({
         "instruct": blocks[-1]["instruct"],
         "line_range": [chunk_start, len(source_lines) - 1],
     })
 
-    for i, block in enumerate(blocks):
-        prev_idx = _find(block["previous"], f"Block {i} @previous") if block["previous"] else -1
-        next_idx = _find(block["next"], f"Block {i} @next")
-        if prev_idx >= 0 and next_idx != prev_idx + 1:
-            raise ValueError(
-                f"Block {i}: @previous (line {prev_idx}) and @next (line {next_idx}) "
-                f"are not adjacent in source"
+    # Clamp any inverted or out-of-bounds ranges caused by overlapping LLM boundaries.
+    for ci, chunk in enumerate(chunks):
+        start, end = chunk["line_range"]
+        if start < 0:
+            _log.warning(
+                "Chunk %d has negative start %d — clamping to 0.", ci, start
             )
+            chunk["line_range"][0] = 0
+            start = 0
+        if end < start:
+            _log.warning(
+                "Chunk %d has inverted range [%d, %d] — clamping to [%d, %d]. "
+                "LLM chunk boundaries may be overlapping.",
+                ci, start, end, start, start,
+            )
+            chunk["line_range"][1] = start
+            end = start
+        if start > len(source_lines) - 1:
+            _log.warning(
+                "Chunk %d starts beyond text end (%d > %d) — clamping to end.",
+                ci, start, len(source_lines) - 1,
+            )
+            chunk["line_range"] = [len(source_lines) - 1, len(source_lines) - 1]
 
     return chunks
 

@@ -182,14 +182,15 @@ class PipelineConfig:
     def _apply_cli_overrides(self, args: Any) -> None:
         for attr in (
             "max_chunks", "skip_simplify", "skip_audio",
-            "audio_profile", "models",
+            "audio_profile",
         ):
             if hasattr(args, attr):
                 val = getattr(args, attr)
                 if val is not None:
                     setattr(self, attr, val)
 
-        # models from CLI replaces the list
+        # models from CLI replaces the list (handled separately to guard
+        # against argparse default="" overwriting the config-loaded value)
         if hasattr(args, "models") and args.models:
             if isinstance(args.models, str):
                 self.models = [m.strip() for m in args.models.split(",") if m.strip()]

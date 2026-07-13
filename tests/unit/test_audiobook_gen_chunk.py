@@ -161,6 +161,22 @@ class TestComputeLineTimestamps:
         total = sum(r["word_count"] for r in result)
         assert total <= len(words)
 
+    def test_fewer_words_than_expected(self):
+        """When aligner returns fewer words, last lines get audio_duration end."""
+        words = [
+            {"text": "你", "start_time": 0.1, "end_time": 0.3},
+            {"text": "好", "start_time": 0.4, "end_time": 0.6},
+        ]
+        lines = ["你", "好", "吗", "？"]  # 4 expected, only 2 from aligner
+        result = compute_line_timestamps(words, lines, audio_duration=1.0, language="zh")
+        assert len(result) == 4
+        # First 2 lines get real timestamps
+        assert result[0]["word_count"] == 1
+        assert result[1]["word_count"] == 1
+        # Remaining lines get 0 words each
+        assert result[2]["word_count"] == 0
+        assert result[3]["word_count"] == 0
+
     def test_all_timestamps_rounded(self):
         words = _make_words(["a", "b", "c", "d"], [0.1234, 0.3456, 0.5678, 0.7890])
         lines = ["a b", "c d"]

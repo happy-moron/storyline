@@ -20,6 +20,8 @@ Your output will be an '@instruct' tag with the exact text of the previous line 
   @next: <>
   ```
 - If the chunk is at the start of the block, previous is empty. 
+- The first @instruct should always be an @instruct with an empty @previous and with a @next that is the first (non-empty) line of the chunk.
+  
 # Examples:
 
 ## --- Example 1: dialogue exchange ---
@@ -45,6 +47,7 @@ Output:
 @next: No answer came.
 
 ## --- Example 2: long descriptive passage kept as one chunk ---
+
 Input:
 The valley opened up beneath them, a patchwork of wheat fields turning gold in the late afternoon light. 
 Farmhouses dotted the landscape, their chimneys sending up thin columns of smoke. 
@@ -57,6 +60,7 @@ Output:
 @next: The valley opened up beneath them, a patchwork of wheat fields turning gold in the late afternoon light.
 
 ## --- Example 3: steady narration with one embedded beat that earns a note ---
+
 Input:
 They walked for another hour without speaking. 
 The path narrowed, then widened again as it crossed an old stone bridge. 
@@ -68,10 +72,12 @@ They stood still, listening, until the birdsong resumed and Tom, embarrassed, le
 Output:
 @instruct:
 @previous:
-@next: They walked for another hour without speaking. 
+@next: They walked for another hour without speaking.
+
 @instruct: Sudden, alarmed, low volume
 @previous: The path narrowed, then widened again as it crossed an old stone bridge.
 @next: Halfway across, Tom stopped and grabbed her arm.
+
 @instruct:
 @previous: "Did you hear that?"
 @next: She hadn't. 

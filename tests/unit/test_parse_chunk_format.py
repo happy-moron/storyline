@@ -263,7 +263,8 @@ class TestParseChunkFormat:
         with pytest.raises(ValueError, match="not found in source"):
             parse_chunk_format(text, DIALOGUE_LINES)
 
-    def test_not_adjacent_raises(self):
+    def test_non_adjacent_allowed(self):
+        """Non-adjacent @previous/@next is allowed (LLM may skip lines)."""
         text = (
             "@instruct:\n"
             "@previous:\n"
@@ -272,8 +273,24 @@ class TestParseChunkFormat:
             f"@previous: {DIALOGUE_LINES[0]}\n"
             f"@next: {DIALOGUE_LINES[2]}\n"  # skips line 1
         )
-        with pytest.raises(ValueError, match="not adjacent"):
-            parse_chunk_format(text, DIALOGUE_LINES)
+        chunks = parse_chunk_format(text, DIALOGUE_LINES)
+        assert len(chunks) == 2
+        assert chunks[0]["line_range"] == [0, 0]
+        assert chunks[1]["line_range"] == [2, 4]
+
+    def test_next_before_prev_raises(self):
+        """@next must come after @previous."""
+        lines = ["Line one.", "Line two.", "Line three."]
+        text = (
+            "@instruct:\n"
+            "@previous:\n"
+            "@next: Line two.\n"
+            "@instruct: Reversed\n"
+            "@previous: Line three.\n"
+            "@next: Line one.\n"  # before previous
+        )
+        with pytest.raises(ValueError, match="must appear before"):
+            parse_chunk_format(text, lines)
 
     def test_single_line_chunk(self):
         lines = ["Line one.", "Line two.", "Line three."]
@@ -289,6 +306,62 @@ class TestParseChunkFormat:
         assert len(chunks) == 2
         assert chunks[0]["line_range"] == [0, 0]
         assert chunks[1]["line_range"] == [1, 2]
+
+    def test_last_block_empty_next(self):
+        """Empty @next on the last block marks end-of-text boundary."""
+        lines = [
+            "Mira stared at the door.",
+            "She had heard something.",
+            '"Who\'s there?" she whispered.',
+            "No answer came.",
+            "Just the wind, rattling the old glass.",
+        ]
+        text = (
+            "@instruct:\n"
+            "@previous:\n"
+            f"@next: {lines[0]}\n"
+            "@instruct: Frightened whisper\n"
+            f"@previous: {lines[1]}\n"
+            f"@next: {lines[2]}\n"
+            "@instruct: Gentle close\n"
+            f"@previous: {lines[3]}\n"
+            "@next:\n"
+        )
+        chunks = parse_chunk_format(text, lines)
+        assert len(chunks) == 3
+        assert chunks[0]["line_range"] == [0, 1]
+        assert chunks[0]["instruct"] == ""
+        assert chunks[1]["line_range"] == [2, 3]
+        assert chunks[1]["instruct"] == "Frightened whisper"
+        assert chunks[2]["line_range"] == [4, 4]
+        assert chunks[2]["instruct"] == "Gentle close"
+
+    def test_repeated_lines_pair_lookup(self):
+        """Repeated anchor lines are resolved by finding closest prev-before-next pair."""
+        lines = [
+            "Hello.",       # 0
+            "World.",       # 1
+            "Hello.",       # 2  <-- repeated
+            "Again.",       # 3
+            "Hello.",       # 4  <-- repeated again
+            "Goodbye.",     # 5
+        ]
+        text = (
+            "@instruct:\n"
+            "@previous:\n"
+            "@next: Hello.\n"          # first occurrence at line 0
+            "@instruct: Middle voice\n"
+            "@previous: Hello.\n"       # should resolve to line 2 (before Again. at line 3)
+            "@next: Again.\n"
+            "@instruct: Final voice\n"
+            "@previous: Again.\n"
+            "@next: Hello.\n"           # should resolve to line 4 (before Goodbye., after Again. at line 3)
+        )
+        chunks = parse_chunk_format(text, lines)
+        assert len(chunks) == 3
+        assert chunks[0]["line_range"] == [0, 2]   # Hello(0)..Hello(2)
+        assert chunks[1]["line_range"] == [3, 3]   # Again(3)..Again(3)
+        assert chunks[2]["line_range"] == [4, 5]   # Hello(4)..Goodbye(5)
 
 
 # ---------------------------------------------------------------------------

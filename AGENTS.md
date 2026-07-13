@@ -15,6 +15,16 @@ Some areas of the project represent earlier experimental work or ideas which are
 dict/wordlists, prompts/flashcards - used for generating lists of word for flashcard creation via image-gen (not implemented)
 dict/hsk*, prompts/grammar, prompts/dict - investigation work for augmenting the reader app with detected grammar points
 
+# Terminology
+
+The pipeline and reader use these terms consistently:
+
+| Term | Definition |
+|---|---|
+| **Chapter** | A ~2000-character text block produced by the split step. Numbered sequentially (`{prefix}_{N}`). |
+| **Chunk** | A natural-reading grouping of lines within a chapter, annotated with an `@instruct` voice direction. |
+| **Line** | A single sentence. One line per sentence in source text; translated output preserves the 1:1 mapping. |
+
 # Environment
 
 This project is intended to run on a single workstation ("to work on my box"). VRAM is limited; it has an LLM, a TTS model, and an Image-gen model which run locally.

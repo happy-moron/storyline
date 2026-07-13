@@ -34,7 +34,7 @@
     </div>
 
     <script>
-        // Function to toggle the tiered menu visibility
+        // ── Menu toggle ──────────────────────────────────────────────
         function toggleTieredMenu() {
             const tieredMenu = document.getElementById('tieredMenu');
             const toggleMenuBtn = document.getElementById('toggleMenuBtn');
@@ -42,7 +42,6 @@
             toggleMenuBtn.style.display = tieredMenu.classList.contains('hidden') ? 'block' : 'none';
         }
 
-        // Add event listener to the content area to hide the tiered menu
         document.getElementById('content').addEventListener('click', () => {
             const tieredMenu = document.getElementById('tieredMenu');
             const toggleMenuBtn = document.getElementById('toggleMenuBtn');
@@ -52,13 +51,12 @@
             }
         });
 
-        // Add event listener to the toggle button
         document.getElementById('toggleMenuBtn').addEventListener('click', (event) => {
             toggleTieredMenu();
-            event.stopPropagation(); // Prevent the content click event from firing
+            event.stopPropagation();
         });
 
-        // State management
+        // ── App state ────────────────────────────────────────────────
         let currentState = {
             authors: [],
             books: [],
@@ -79,7 +77,7 @@
             return null;
         }
 
-        // Initialize app
+        // ── Init ─────────────────────────────────────────────────────
         document.addEventListener('DOMContentLoaded', async () => {
             try {
                 manifest = await fetch('books/manifest.json').then(r => r.json());
@@ -91,7 +89,6 @@
         });
         loadDictionary();
 
-        // Populate author dropdown
         function populateAuthors(authors) {
             const select = document.getElementById('authorSelect');
             select.innerHTML = '<option value="">Select Author</option>';
@@ -104,11 +101,10 @@
             select.disabled = false;
         }
 
-        // Author selection handler
+        // ── Selection handlers ───────────────────────────────────────
         document.getElementById('authorSelect').addEventListener('change', async (e) => {
             const author = e.target.value;
             if (!author) return;
-
             try {
                 const authorEntry = manifest.books.find(a => a.author === author);
                 const books = authorEntry ? authorEntry.books : [];
@@ -121,7 +117,6 @@
             }
         });
 
-        // Populate book dropdown
         function populateBooks(books, author) {
             const select = document.getElementById('bookSelect');
             select.innerHTML = '<option value="">Select Book</option>';
@@ -134,15 +129,12 @@
             select.disabled = false;
         }
 
-        // Book selection handler
         document.getElementById('bookSelect').addEventListener('change', async (e) => {
             const book = e.target.value;
             if (!book) return;
-
             try {
                 currentState.chapters = [];
                 currentState.selectedBook = book;
-                // Automatically load first chapter when book is selected
                 document.getElementById('chapterInput').value = 1;
                 loadChapter(1);
             } catch (error) {
@@ -150,23 +142,26 @@
             }
         });
 
-        // Chapter selection handler
         document.getElementById('chapterInput').addEventListener('change', async (e) => {
             const chapterNumber = parseInt(e.target.value);
             if (!chapterNumber || chapterNumber < 1) return;
             loadChapter(chapterNumber);
         });
 
+        // ── Chapter loading ──────────────────────────────────────────
         let loadingChapter = false;
         async function loadChapter(chapterNumber) {
             if (loadingChapter) return;
             loadingChapter = true;
             const entry = findBookEntry(currentState.selectedBook);
             const prefix = entry ? entry.book.prefix : currentState.selectedBook;
+            const author = currentState.selectedAuthor;
+            const book = currentState.selectedBook;
 
             try {
-                const tokenizedFilePath = `books/${currentState.selectedAuthor}/${currentState.selectedBook}/pipe/tokenized/${prefix}_${chapterNumber}.txt`;
-                const sourceFilePath = `books/${currentState.selectedAuthor}/${currentState.selectedBook}/pipe/source/${prefix}_${chapterNumber}.txt`;
+                const tokenizedFilePath = `books/${author}/${book}/pipe/tokenized/${prefix}_${chapterNumber}.txt`;
+                const sourceFilePath = `books/${author}/${book}/pipe/source/${prefix}_${chapterNumber}.txt`;
+                const chunkJsonPath = `books/${author}/${book}/chunks/${prefix}_${chapterNumber}.json`;
 
                 const tokenizedText = await fetch(`/${tokenizedFilePath}`).then(r => r.text());
                 const sourceText = await fetch(`/${sourceFilePath}`).then(r => r.text());
@@ -174,9 +169,20 @@
                 const tokenizedContent = parseTokenizedPipe(tokenizedText);
                 const sourceContent = parseSourcePipe(sourceText);
 
+                // Try to load chunk metadata; null if unavailable (fallback to per-sentence audio)
+                let chunkMeta = null;
+                try {
+                    const resp = await fetch(`/${chunkJsonPath}`);
+                    if (resp.ok) {
+                        chunkMeta = await resp.json();
+                    }
+                } catch (e) {
+                    console.log('No chunk metadata found for this chapter');
+                }
+
                 currentState.selectedChapter = chapterNumber;
-                loadContent(tokenizedContent, sourceContent);
-                applyInitialEnglishVisibility(); // Apply visibility after loading content
+                loadContent(tokenizedContent, sourceContent, chunkMeta);
+                applyInitialEnglishVisibility();
             } catch (error) {
                 console.error('Failed to load chapter:', error);
             } finally {
@@ -184,9 +190,7 @@
             }
         }
 
-
-
-        // Pipe format parsers (compact tokenized & source)
+        // ── Pipe format parsers ─────────────────────────────────────
         function parseSourcePipe(text) {
             return text.trim().split('\n')
                 .filter(line => line.includes('|||'))
@@ -197,7 +201,6 @@
         }
 
         function parseTokenizedPipe(text) {
-            // Auto-detect: compact format uses || as token separator
             if (text.includes('||')) return parseTokenizedCompact(text);
             return parseTokenizedLegacy(text);
         }
@@ -228,7 +231,6 @@
         }
 
         function parseTokenizedLegacy(text) {
-            // One token per line, blank lines between sentences (for old data)
             const sentences = [];
             let current = [];
             for (const line of text.trim().split('\n')) {
@@ -258,7 +260,7 @@
             return sentences;
         }
 
-        // Load dictionary
+        // ── Dictionary ───────────────────────────────────────────────
         let dictionary = {};
         async function loadDictionary() {
             try {
@@ -269,34 +271,21 @@
             }
         }
 
-        // Create dictionary pane
         const dictionaryPane = document.createElement('div');
         dictionaryPane.id = 'dictionary-pane';
         document.body.appendChild(dictionaryPane);
 
-        // Add double click handler for playing sentence audio
         function handleTokenDoubleClick(event) {
-            // Find the sentence container
             const sentenceDiv = event.target.closest('.sentence');
             if (sentenceDiv) {
-                // Find the audio element in this sentence
-                const audio = sentenceDiv.querySelector('audio');
-                if (audio) {
-                    // Stop any currently playing audio
-                    if (currentAudio) {
-                        currentAudio.pause();
-                        currentAudio.currentTime = 0;
-                    }
-                    // Play this sentence's audio from the beginning
-                    audio.currentTime = 0;
-                    audio.play();
-                    currentAudio = audio;
-                    playPauseBtn.textContent = '⏸️';
+                const lineIdx = parseInt(sentenceDiv.dataset.lineIndex);
+                if (!isNaN(lineIdx)) {
+                    stopPlayback();
+                    playLine(lineIdx);
                 }
             }
         }
 
-        // Add click handler for hiding dictionary pane when clicking on active token
         function handleTokenClickWithDictionary(event) {
             let token = event.target.textContent.trim();
             let chineseToken = token;
@@ -309,12 +298,10 @@
 
             const entry = dictionary[chineseToken];
             
-            // If dictionary pane is visible and we're clicking the same token again, hide it
             if (dictionaryPane.style.display === 'block' && dictionaryPane.dataset.currentToken === chineseToken) {
                 clearDictionaryEntry();
-                event.stopPropagation(); // Prevent document click handler from immediately showing it again
+                event.stopPropagation();
             } else {
-                // Otherwise show the dictionary entry as normal
                 if (entry) {
                     displayDictionaryEntry(chineseToken, entry);
                 } else {
@@ -323,9 +310,7 @@
             }
         }
 
-        // Add click handler for hiding dictionary pane when clicking elsewhere
         document.addEventListener('click', (event) => {
-            // Check if click is outside any token and dictionary pane is visible
             if (!event.target.classList.contains('token') && 
                 !event.target.closest('#dictionary-pane') &&
                 dictionaryPane.style.display === 'block') {
@@ -334,8 +319,7 @@
         });
 
         function displayDictionaryEntry(chineseToken, entry) {
-            console.log('displayDictionaryEntry called');
-            dictionaryPane.dataset.currentToken = chineseToken; // Store the current token
+            dictionaryPane.dataset.currentToken = chineseToken;
             let tableHTML = '<table class="dictionary-table">';
             tableHTML += `<tr><td>${chineseToken}</td></tr>`;
 
@@ -363,7 +347,6 @@
         }
         
         function addTokenClickHandlers() {
-            console.log('addTokenClickHandlers called');
             const tokens = document.querySelectorAll('.token');
             tokens.forEach(token => {
                 token.addEventListener('click', handleTokenClickWithDictionary);
@@ -371,120 +354,258 @@
             });
         }
 
+        // ── Chunk-based audio playback ───────────────────────────────
+        // lineMap[globalLineIndex] = { chunkIdx, localIdx, start_zh, end_zh }
+        let lineMap = [];
+        let chunkAudioElements = [];  // <audio> elements, one per chunk (zh)
+        let currentLineIndex = -1;
+        let currentAudio = null;
+        let lineEndTimer = null;
+        let isPlaying = false;
+
         const playPauseBtn = document.getElementById('playPauseBtn');
         const stopBtn = document.getElementById('stopBtn');
-        let currentAudio = null;
+        const speedBtn = document.getElementById('speedBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevChapterBtn = document.getElementById('prevChapterBtn');
+        const nextChapterBtn = document.getElementById('nextChapterBtn');
+        const englishBtn = document.getElementById('englishBtn');
 
-        playPauseBtn.addEventListener('click', () => {
-            if (!currentAudio) {
-                currentAudio = document.querySelector('#content audio');
-            }
-            if (currentAudio) {
-                if (currentAudio.paused) {
-                    currentAudio.play();
-                    playPauseBtn.textContent = '⏸️';
-                } else {
-                    currentAudio.pause();
-                    playPauseBtn.textContent = '▶️';
+        let playbackSpeeds = [0.5, 0.7, 0.85, 1.0];
+        let currentSpeedIndex = 3;
+
+        function buildLineMap(chunkMeta) {
+            lineMap = [];
+            if (!chunkMeta || !chunkMeta.chunks) return;
+
+            for (let ci = 0; ci < chunkMeta.chunks.length; ci++) {
+                const chunk = chunkMeta.chunks[ci];
+                if (!chunk.lines) continue;
+                const range = chunk.line_range;
+                if (!range) continue;
+
+                for (let li = 0; li < chunk.lines.length; li++) {
+                    const globalIdx = range[0] + li;
+                    if (globalIdx > range[1]) break;
+                    const line = chunk.lines[li];
+                    lineMap[globalIdx] = {
+                        chunkIdx: ci,
+                        localIdx: li,
+                        start_zh: line.start_zh,
+                        end_zh: line.end_zh,
+                    };
                 }
+            }
+        }
+
+        function createChunkAudioElements(chunkMeta) {
+            chunkAudioElements.forEach(el => {
+                el.pause();
+                el.removeAttribute('src');
+                el.remove();
+            });
+            chunkAudioElements = [];
+
+            if (!chunkMeta || !chunkMeta.chunks || chunkMeta.chunks.length === 0) {
+                return;
+            }
+
+            const author = currentState.selectedAuthor;
+            const book = currentState.selectedBook;
+
+            for (let ci = 0; ci < chunkMeta.chunks.length; ci++) {
+                const chunk = chunkMeta.chunks[ci];
+                const audioFile = chunk.audio_zh;
+                if (!audioFile) {
+                    return;
+                }
+
+                const audio = document.createElement('audio');
+                audio.id = `chunk-audio-${ci}`;
+                audio.src = `books/${author}/${book}/chunks/${audioFile}`;
+                audio.loop = false;
+                audio.playbackRate = playbackSpeeds[currentSpeedIndex];
+                audio.preload = 'auto';
+
+                audio.addEventListener('play', () => {
+                    currentAudio = audio;
+                    playPauseBtn.textContent = '⏸️';
+                    isPlaying = true;
+                });
+
+                audio.addEventListener('pause', () => {
+                    if (currentAudio === audio) {
+                        playPauseBtn.textContent = '▶️';
+                        isPlaying = false;
+                    }
+                });
+
+                audio.addEventListener('ended', () => {
+                    if (currentAudio === audio) {
+                        isPlaying = false;
+                        playPauseBtn.textContent = '▶️';
+                        clearLineHighlight();
+                    }
+                });
+
+                // Hidden — appended to body so it loads
+                audio.style.display = 'none';
+                document.body.appendChild(audio);
+                chunkAudioElements.push(audio);
+            }
+        }
+
+        function stopPlayback() {
+            clearLineEndTimer();
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio = null;
+            }
+            isPlaying = false;
+            playPauseBtn.textContent = '▶️';
+            clearLineHighlight();
+        }
+
+        function clearLineEndTimer() {
+            if (lineEndTimer) {
+                clearInterval(lineEndTimer);
+                lineEndTimer = null;
+            }
+        }
+
+        function clearLineHighlight() {
+            document.querySelectorAll('.sentence.active-line').forEach(el => {
+                el.classList.remove('active-line');
+            });
+        }
+
+        function highlightLine(lineIndex) {
+            clearLineHighlight();
+            const sentenceDiv = document.querySelector(`.sentence[data-line-index="${lineIndex}"]`);
+            if (sentenceDiv) {
+                sentenceDiv.classList.add('active-line');
+                sentenceDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function playLine(lineIndex) {
+            const mapping = lineMap[lineIndex];
+            if (!mapping) return;
+
+            const audio = chunkAudioElements[mapping.chunkIdx];
+            if (!audio) return;
+
+            clearLineEndTimer();
+            highlightLine(lineIndex);
+            currentLineIndex = lineIndex;
+
+            const startTime = mapping.start_zh;
+            const endTime = mapping.end_zh;
+
+            // If we're already on the right audio, just seek
+            if (currentAudio !== audio) {
+                if (currentAudio) {
+                    currentAudio.pause();
+                }
+                currentAudio = audio;
+            }
+
+            audio.currentTime = startTime;
+            audio.play().catch(e => console.error('Audio play failed:', e));
+            isPlaying = true;
+            playPauseBtn.textContent = '⏸️';
+
+            // Poll for end of line
+            lineEndTimer = setInterval(() => {
+                if (audio.currentTime >= endTime) {
+                    clearLineEndTimer();
+                    advanceToNextLine();
+                }
+            }, 50);
+        }
+
+        function advanceToNextLine() {
+            const nextIdx = currentLineIndex + 1;
+            if (nextIdx < lineMap.length && lineMap[nextIdx]) {
+                playLine(nextIdx);
+            } else {
+                stopPlayback();
+                clearLineHighlight();
+            }
+        }
+
+        function playPrevLine() {
+            if (currentLineIndex > 0) {
+                playLine(currentLineIndex - 1);
+            }
+        }
+
+        // ── Control button handlers ──────────────────────────────────
+        playPauseBtn.addEventListener('click', () => {
+            if (isPlaying) {
+                clearLineEndTimer();
+                if (currentAudio) {
+                    currentAudio.pause();
+                }
+                isPlaying = false;
+                playPauseBtn.textContent = '▶️';
+            } else {
+                if (currentAudio) {
+                    const mapping = lineMap[currentLineIndex >= 0 ? currentLineIndex : 0];
+                    if (mapping && currentAudio.currentTime < mapping.end_zh && currentAudio.currentTime >= mapping.start_zh) {
+                        currentAudio.play().catch(e => console.error('Audio play failed:', e));
+                        isPlaying = true;
+                        playPauseBtn.textContent = '⏸️';
+                        clearLineEndTimer();
+                        lineEndTimer = setInterval(() => {
+                            if (currentAudio.currentTime >= mapping.end_zh) {
+                                clearLineEndTimer();
+                                advanceToNextLine();
+                            }
+                        }, 50);
+                        return;
+                    }
+                }
+                const startIdx = currentLineIndex >= 0 ? currentLineIndex : 0;
+                playLine(startIdx);
             }
         });
 
-        const speedBtn = document.getElementById('speedBtn');
-        let playbackSpeeds = [0.5, 0.7, 0.85, 1.0];
-        let currentSpeedIndex = 3;
+        stopBtn.addEventListener('click', () => {
+            stopPlayback();
+            if (currentAudio) {
+                currentAudio.currentTime = 0;
+            }
+            currentLineIndex = -1;
+        });
 
         speedBtn.addEventListener('click', () => {
             currentSpeedIndex = (currentSpeedIndex + 1) % playbackSpeeds.length;
             let currentSpeed = playbackSpeeds[currentSpeedIndex];
             speedBtn.textContent = currentSpeed + 'x';
-            if (currentAudio) {
-                const audios = document.querySelectorAll('#content audio');
-                audios.forEach(audio => {
-                    audio.playbackRate = currentSpeed;
-                });
-            }
-        });
 
-        stopBtn.addEventListener('click', () => {
-            if (currentAudio) {
-                currentAudio.pause();
-                currentAudio.currentTime = 0;
-                playPauseBtn.textContent = '▶️';
-            }
+            chunkAudioElements.forEach(audio => {
+                audio.playbackRate = currentSpeed;
+            });
         });
-
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-        const prevChapterBtn = document.getElementById('prevChapterBtn');
-        const nextChapterBtn = document.getElementById('nextChapterBtn');
 
         prevBtn.addEventListener('click', () => {
-            if (!currentAudio) {
-                currentAudio = document.querySelector('#content audio');
+            if (currentLineIndex < 0) {
+                currentLineIndex = 0;
             }
-            if (currentAudio && currentAudio.id) {
-                const currentSentenceIndex = parseInt(currentAudio.id.split('-').pop());
-                const previousSentenceIndex = currentSentenceIndex - 1;
-
-                if (previousSentenceIndex >= 0) {
-                    const previousAudio = document.getElementById(`sentence-audio-${previousSentenceIndex}`);
-                    if (previousAudio) {
-                        // Pause current audio and reset to beginning
-                        currentAudio.pause();
-                        currentAudio.currentTime = 0;
-
-                        // Play the previous audio
-                        previousAudio.play();
-                        currentAudio = previousAudio;
-
-                        // Reset other audios
-                        const audios = document.querySelectorAll('#content audio');
-                        audios.forEach(audio => {
-                            if (audio !== previousAudio) {
-                                audio.pause();
-                                audio.currentTime = 0;
-                            }
-                        });
-                    }
-                }
-            }
+            playPrevLine();
         });
 
         nextBtn.addEventListener('click', () => {
-            if (!currentAudio) {
-                currentAudio = document.querySelector('#content audio');
+            if (currentLineIndex < 0) {
+                currentLineIndex = 0;
             }
-            if (currentAudio && currentAudio.id) {
-                const currentSentenceIndex = parseInt(currentAudio.id.split('-').pop());
-                const nextSentenceIndex = currentSentenceIndex + 1;
-                const tokenizedSentences = document.querySelectorAll('.sentence');
-
-                if (nextSentenceIndex < tokenizedSentences.length) {
-                    const nextAudio = document.getElementById(`sentence-audio-${nextSentenceIndex}`);
-                    if (nextAudio) {
-                        // Pause current audio and reset to beginning
-                        currentAudio.pause();
-                        currentAudio.currentTime = 0;
-
-                        // Play the next audio
-                        nextAudio.play();
-                        currentAudio = nextAudio;
-
-                        // Reset other audios
-                        const audios = document.querySelectorAll('#content audio');
-                        audios.forEach(audio => {
-                            if (audio !== nextAudio) {
-                                audio.pause();
-                                audio.currentTime = 0;
-                            }
-                        });
-                    }
-                }
-            }
+            advanceToNextLine();
         });
 
         prevChapterBtn.addEventListener('click', () => {
+            stopPlayback();
             const currentChapter = parseInt(document.getElementById('chapterInput').value);
             if (currentChapter > 1) {
                 document.getElementById('chapterInput').value = currentChapter - 1;
@@ -493,21 +614,55 @@
         });
 
         nextChapterBtn.addEventListener('click', () => {
+            stopPlayback();
             const currentChapter = parseInt(document.getElementById('chapterInput').value);
             document.getElementById('chapterInput').value = currentChapter + 1;
             loadChapter(currentChapter + 1);
         });
 
-        function loadContent(tokenizedSentences, sourceSentences) {
+        // ── Content rendering ────────────────────────────────────────
+        function loadContent(tokenizedSentences, sourceSentences, chunkMeta) {
             const contentDiv = document.getElementById('content');
-            currentAudio = null;
+            stopPlayback();
+            currentLineIndex = -1;
             contentDiv.innerHTML = '';
+
+            // Setup chunk-based or fallback audio
+            createChunkAudioElements(chunkMeta);
+            buildLineMap(chunkMeta);
+
+            // Determine first line of each chunk for visual markers
+            const chunkStarts = new Set();
+            if (chunkMeta && chunkMeta.chunks) {
+                for (const chunk of chunkMeta.chunks) {
+                    if (chunk.line_range) {
+                        chunkStarts.add(chunk.line_range[0]);
+                    }
+                }
+            }
+
+            // Build a lookup: global line index -> chunk instruct text
+            const lineInstruct = {};
+            if (chunkMeta && chunkMeta.chunks) {
+                for (const chunk of chunkMeta.chunks) {
+                    if (chunk.line_range && chunk.instruct) {
+                        for (let li = chunk.line_range[0]; li <= chunk.line_range[1]; li++) {
+                            lineInstruct[li] = chunk.instruct;
+                        }
+                    }
+                }
+            }
 
             for (let i = 0; i < tokenizedSentences.length; i++) {
                 const sentenceData = tokenizedSentences[i];
                 const sentence = sentenceData.t;
                 const sentenceDiv = document.createElement('div');
                 sentenceDiv.className = 'sentence';
+                sentenceDiv.dataset.lineIndex = i;
+
+                if (chunkStarts.has(i)) {
+                    sentenceDiv.classList.add('chunk-start');
+                }
 
                 let chineseSentence = '';
                 let pinyinSentence = '';
@@ -517,70 +672,38 @@
                     pinyinSentence += `<span class="token">${token[1]}</span>`;
                 });
 
-                const englishTranslation = sourceSentences[i].english;
+                const englishTranslation = sourceSentences[i] ? sourceSentences[i].english : '';
+
+                let instructHtml = '';
+                if (chunkStarts.has(i) && lineInstruct[i]) {
+                    instructHtml = `<div class="chunk-instruct">🎭 ${lineInstruct[i]}</div>`;
+                }
 
                 sentenceDiv.innerHTML = `
+                    ${instructHtml}
                     <div class="pinyin">${pinyinSentence}</div>
                     <div class="chinese">${chineseSentence}</div>
                     <div class="translation">${englishTranslation}</div>
                 `;
-
-                const audio = document.createElement('audio');
-                audio.id = `sentence-audio-${i}`;
-                const author = currentState.selectedAuthor;
-                const book = currentState.selectedBook;
-                const chapterNumber = currentState.selectedChapter;
-                const entry = findBookEntry(book);
-                const bookPrefix = entry ? entry.book.prefix : book;
-                const sentenceNumber = i + 1;
-                audio.src = `books/${author}/${book}/audio/${bookPrefix}_${chapterNumber}_${sentenceNumber}.mp3`;
-                audio.loop = false;
-                audio.playbackRate = playbackSpeeds[currentSpeedIndex];
-
-                sentenceDiv.appendChild(audio);
-
-                audio.addEventListener('play', () => {
-                    if (currentAudio && currentAudio !== audio) {
-                        currentAudio.pause();
-                    }
-                    currentAudio = audio;
-                    playPauseBtn.textContent = '⏸️';
-                });
-
-                audio.addEventListener('pause', () => {
-                    playPauseBtn.textContent = '▶️';
-                });
-
-                audio.addEventListener('ended', () => {
-                    nextBtn.click();
-                });
 
                 contentDiv.appendChild(sentenceDiv);
             }
             addTokenClickHandlers();
         }
 
-        const englishBtn = document.getElementById('englishBtn');
+        // ── English translations toggle ──────────────────────────────
         const englishVisibilityKey = 'englishTranslationsVisible';
-
-        // Load the English translations visibility state from localStorage
         let englishTranslationsVisible = localStorage.getItem(englishVisibilityKey) === 'true';
 
-        // Function to toggle the visibility of English translations
         function toggleEnglishTranslations() {
             const translations = document.querySelectorAll('.translation');
             translations.forEach(translation => {
                 translation.classList.toggle('hidden');
             });
-
-            // Update the English translations visibility state
             englishTranslationsVisible = !englishTranslationsVisible;
-
-            // Save the English translations visibility state to localStorage
             localStorage.setItem(englishVisibilityKey, englishTranslationsVisible);
         }
 
-        // Apply initial visibility state
         function applyInitialEnglishVisibility() {
             const translations = document.querySelectorAll('.translation');
             translations.forEach(translation => {

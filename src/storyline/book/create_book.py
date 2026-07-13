@@ -24,6 +24,7 @@ from storyline.book.tokenization_repair import (
     build_repair_input,
     apply_repairs,
 )
+from storyline.book.update_manifest import update_manifest
 from storyline.config.pipeline_config import PipelineConfig
 from zsp_llm_client.prompt_runner import PromptRunner
 
@@ -328,6 +329,8 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
                           models=config.models,
                           punctuation_skip=config.punctuation_skip)
 
+    update_manifest(config.books_dir)
+
     if service_manager and llm_local:
         service_manager.stop('llm')
 
@@ -348,7 +351,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Generate an audio book")
 
     parser.add_argument(
-        "-m", "--models", type=str, default="",
+        "-m", "--models", type=str, default=None,
         help="Comma-separated list of models (overrides config file)",
     )
     parser.add_argument('-a', '--author', required=True, help='author name')
