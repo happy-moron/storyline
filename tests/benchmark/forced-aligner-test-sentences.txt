@@ -1,0 +1,53 @@
+# ForcedAligner evaluation set — English, 50 sentences.
+# Format: <expected_word_count>:<sentence text>
+# Word count = len(text.split()), matching the pipeline's English word-count logic.
+9:The quick brown fox jumped over the lazy dogs.
+1:Hello!
+2:Hi there.
+6:I can't believe it's already Friday.
+6:She sells seashells by the seashore.
+5:Where are you going tonight?
+3:Wow, that's amazing!
+4:Please close the door.
+8:My favorite numbers are 7, 42, and 100.
+8:The year 2026 has been eventful so far.
+7:Dr. Smith arrived at 9:30 a.m. sharp.
+8:Mount Everest is the tallest mountain on Earth.
+7:It was a dark and stormy night.
+5:Twenty-three students passed the exam.
+8:The self-driving car stopped at the red light.
+3:I love you.
+3:Don't stop believing.
+5:New York City never sleeps.
+15:The recipe calls for two cups of flour, one egg, and a pinch of salt.
+8:Can you help me carry these boxes upstairs?
+7:The stock market rose by 2.5% today.
+6:He said, "I'll be there soon."
+8:The Eiffel Tower is located in Paris, France.
+8:Rain, rain, go away, come again another day.
+8:What time does the train to Boston leave?
+11:A journey of a thousand miles begins with a single step.
+8:The password must contain at least eight characters.
+7:Turn left at the second traffic light.
+7:COVID-19 changed the way we work forever.
+8:I've been waiting for over an hour now.
+9:The children played happily in the park all afternoon.
+4:Is this seat taken?
+5:Congratulations on your well-deserved promotion!
+9:The Great Wall of China stretches over 13,000 miles.
+10:Please don't forget to lock the front door before leaving.
+7:The temperature dropped to -5 degrees overnight.
+7:Who's going to the concert this weekend?
+8:The old wooden bridge creaked under our weight.
+8:Thank you so much for everything you've done.
+8:The meeting has been rescheduled to next Tuesday.
+3:Practice makes perfect.
+12:The scientist discovered a new species of butterfly in the Amazon rainforest.
+9:Fifty percent of the respondents agreed with the proposal.
+8:The library closes at 8 p.m. on weekdays.
+10:Once upon a time, there lived a wise old owl.
+8:The company's revenue grew by 15% last quarter.
+12:Never give up on your dreams, no matter how hard it gets.
+11:The chef added a pinch of saffron to the simmering broth.
+4:Are we there yet?
+9:The Wright brothers made their first flight in 1903.

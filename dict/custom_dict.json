@@ -142399,5 +142399,485 @@
         }
       }
     ]
+  },
+  "食": {
+    "pinyin": "shí",
+    "definition": [
+      {
+        "meaning": "food; sustenance",
+        "example": {
+          "chinese": "这里的食物很美味。",
+          "pinyin": "Zhè lǐ de shí wù hěn měi wèi.",
+          "english": "The food here is delicious."
+        }
+      },
+      {
+        "meaning": "to eat; to consume",
+        "example": {
+          "chinese": "我们按时进食。",
+          "pinyin": "Wǒ men àn shí jìn shí.",
+          "english": "We eat at regular times."
+        }
+      }
+    ]
+  },
+  "净": {
+    "pinyin": "jìng",
+    "definition": [
+      {
+        "meaning": "clean; clean up",
+        "example": {
+          "chinese": "请把房间打扫干净。",
+          "pinyin": "Qǐng bǎ fáng jiān dǎ sǎo gān jìng.",
+          "english": "Please clean the room up."
+        }
+      },
+      {
+        "meaning": "empty; nothing left",
+        "example": {
+          "chinese": "钱已经花干净了。",
+          "pinyin": "Qián yǐ jīng huā gān jìng le.",
+          "english": "The money has been spent completely."
+        }
+      }
+    ]
+  },
+  "嚼": {
+    "pinyin": "jiáo",
+    "definition": [
+      {
+        "meaning": "to chew (colloquial)",
+        "example": {
+          "chinese": "吃饭要慢慢嚼，这样有助于消化。",
+          "pinyin": "Chī fàn yào màn màn jiáo, zhè yàng yǒu zhù yú xiāo huà.",
+          "english": "You should chew your food slowly to help with digestion."
+        }
+      },
+      {
+        "meaning": "to chew on; to ponder (often used in 'jué' sense for abstract things or 'jiáo' for physical action in specific compounds)",
+        "example": {
+          "chinese": "他在嘴里嚼着口香糖。",
+          "pinyin": "Tā zài zuǐ lǐ jiáo zhe kǒu xiāng táng.",
+          "english": "He is chewing gum in his mouth."
+        }
+      }
+    ]
+  },
+  "谷粒": {
+    "pinyin": "gǔ lì",
+    "definition": [
+      {
+        "meaning": "grain; caryopsis (the fruit of cereal plants)",
+        "example": {
+          "chinese": "秋天的田野里，金黄的谷粒饱满而沉重。",
+          "pinyin": "Qiū tiān de tián yě lǐ, jīn huáng de gǔ lì bǎo mǎn ér chén zhòng.",
+          "english": "In the autumn fields, the golden grains are full and heavy."
+        }
+      }
+    ]
+  },
+  "巴": {
+    "pinyin": "bā",
+    "definition": [
+      {
+        "meaning": "to cling to; to stick to",
+        "example": {
+          "chinese": "他巴着朋友别走。",
+          "pinyin": "Tā bā zhe péng you bié zǒu.",
+          "english": "He clung to his friend, begging him not to leave."
+        }
+      },
+      {
+        "meaning": "a suffix used in place names (e.g., Chongqing)",
+        "example": {
+          "chinese": "我住在重庆巴南区。",
+          "pinyin": "Wǒ zhù zài Chóng qìng Bā nán Qū.",
+          "english": "I live in the Banan District of Chongqing."
+        }
+      }
+    ]
+  },
+  "鼠": {
+    "pinyin": "shǔ",
+    "definition": [
+      {
+        "meaning": "rat; mouse",
+        "example": {
+          "chinese": "那只老鼠在角落里偷吃粮食。",
+          "pinyin": "Nà zhī lǎo shǔ zài jiǎo luò lǐ tōu chī liáng shi.",
+          "english": "The rat was stealing grain in the corner."
+        }
+      },
+      {
+        "meaning": "the first sign of the Chinese zodiac",
+        "example": {
+          "chinese": "他属鼠，今年是他的本命年。",
+          "pinyin": "Tā shǔ shǔ, jīn nián shì tā de běn mìng nián.",
+          "english": "He was born in the Year of the Rat, so this is his zodiac year."
+        }
+      }
+    ]
+  },
+  "啄": {
+    "pinyin": "zhuó",
+    "definition": [
+      {
+        "meaning": "to peck; to pick at (food) with the beak",
+        "example": {
+          "chinese": "小鸡在啄地上的米粒。",
+          "pinyin": "Xiǎo jī zài zhuó dì shàng de mǐ lì.",
+          "english": "The chick is pecking at the rice grains on the ground."
+        }
+      }
+    ]
+  },
+  "充": {
+    "pinyin": "chōng",
+    "definition": [
+      {
+        "meaning": "to fill; to fulfill; to supply",
+        "example": {
+          "chinese": "请把水箱充满水。",
+          "pinyin": "Qǐng bǎ shuǐ xiāng chōng mǎn shuǐ.",
+          "english": "Please fill the water tank with water."
+        }
+      },
+      {
+        "meaning": "to substitute for; to pass off as",
+        "example": {
+          "chinese": "他假装是专家来冒充行家。",
+          "pinyin": "Tā jiǎ zhuāng shì zhuān jiā lái chōng mào háng jiā.",
+          "english": "He pretended to be an expert to pass himself off as a connoisseur."
+        }
+      }
+    ]
+  },
+  "然": {
+    "pinyin": "rán",
+    "definition": [
+      {
+        "meaning": "correct; right",
+        "example": {
+          "chinese": "你说得很对，我很以为然。",
+          "pinyin": "Nǐ shuō de hěn duì, wǒ hěn yǐ wéi rán.",
+          "english": "What you said is very correct, and I agree with it."
+        }
+      },
+      {
+        "meaning": "so; like that; thus (used in written or formal Chinese)",
+        "example": {
+          "chinese": "既然你不想去，那就算了。",
+          "pinyin": "Jì rán nǐ bù xiǎng qù, nà jiù suàn le.",
+          "english": "Since you don't want to go, then let it be."
+        }
+      },
+      {
+        "meaning": "-ly (suffix forming adverbs)",
+        "example": {
+          "chinese": "他自然地笑了笑。",
+          "pinyin": "Tā zì rán de xiào le xiào.",
+          "english": "He smiled naturally."
+        }
+      }
+    ]
+  },
+  "咕": {
+    "pinyin": "gū",
+    "definition": [
+      {
+        "meaning": "to make a gurgling or grunting sound",
+        "example": {
+          "chinese": "他的肚子咕咕叫。",
+          "pinyin": "Tā de dù zi gū gū jiào.",
+          "english": "His stomach was growling."
+        }
+      },
+      {
+        "meaning": "to murmur; to mutter (usually in complaint)",
+        "example": {
+          "chinese": "他一个人在那里咕咕囔囔。",
+          "pinyin": "Tā yī gè rén zài nà lǐ gū gū nāng nāng.",
+          "english": "He was mumbling to himself."
+        }
+      }
+    ]
+  },
+  "咚": {
+    "pinyin": "dōng",
+    "definition": [
+      {
+        "meaning": "Onomatopoeia for a dull thud or a drum beat",
+        "example": {
+          "chinese": "只听咚的一声，木头掉在地上。",
+          "pinyin": "Zhǐ tīng dōng de yī shēng, mù tou diào zài dì shang.",
+          "english": "There was a loud thud as the wood fell to the ground."
+        }
+      }
+    ]
+  },
+  "乎": {
+    "pinyin": "hū",
+    "definition": [
+      {
+        "meaning": "used as an interrogative particle at the end of a sentence to indicate a question (equivalent to '吗' in modern Chinese)",
+        "example": {
+          "chinese": "学而时习之，不亦说乎？",
+          "pinyin": "Xué ér shí xí zhī, bù yì yuè hū?",
+          "english": "Is it not pleasant to learn with constancy and perseverance?"
+        }
+      },
+      {
+        "meaning": "used as an exclamatory particle to express surprise or strong feeling",
+        "example": {
+          "chinese": "天乎！吾其死矣。",
+          "pinyin": "Tiān hū! Wú qí sǐ yǐ.",
+          "english": "Heaven! I shall surely die."
+        }
+      }
+    ]
+  },
+  "什": {
+    "pinyin": "shén",
+    "definition": [
+      {
+        "meaning": "what; which",
+        "example": {
+          "chinese": "这是什么？",
+          "pinyin": "Zhè shì shén me?",
+          "english": "What is this?"
+        }
+      },
+      {
+        "meaning": "mixed; assorted",
+        "example": {
+          "chinese": "这是什锦菜。",
+          "pinyin": "Zhè shì shén jǐn cài.",
+          "english": "This is a mixed vegetable dish."
+        }
+      }
+    ]
+  },
+  "么": {
+    "pinyin": "me",
+    "definition": [
+      {
+        "meaning": "suffix for forming adverbs",
+        "example": {
+          "chinese": "那么高。",
+          "pinyin": "Nà me gāo.",
+          "english": "So high."
+        }
+      },
+      {
+        "meaning": "suffix used in question words like 什么, 怎么, 多么",
+        "example": {
+          "chinese": "这是什么意思？",
+          "pinyin": "Zhè shì shén me yì si?",
+          "english": "What does this mean?"
+        }
+      }
+    ]
+  },
+  "布布": {
+    "pinyin": "bù bù",
+    "definition": [
+      {
+        "meaning": "an affectionate reduplication of the word for cloth or fabric, often used in children's contexts or dialects",
+        "example": {
+          "chinese": "妈妈给娃娃缝了一块布布的衣裳。",
+          "pinyin": "Mā ma gěi wá wa féng le yī kuài bù bù de yī shang.",
+          "english": "Mom stitched a piece of cloth clothes for the doll."
+        }
+      },
+      {
+        "meaning": "a common nickname for pets or children, sounding cute and soft",
+        "example": {
+          "chinese": "布布今天很乖。",
+          "pinyin": "Bù bù jīn tiān hěn guāi.",
+          "english": "Bubu is very well-behaved today."
+        }
+      }
+    ]
+  },
+  "如": {
+    "pinyin": "rú",
+    "definition": [
+      {
+        "meaning": "to resemble; to be like",
+        "example": {
+          "chinese": "他的笑容如花般灿烂。",
+          "pinyin": "Tā de xiào róng rú huā bān càn làn.",
+          "english": "His smile is as bright as a flower."
+        }
+      },
+      {
+        "meaning": "if; in case",
+        "example": {
+          "chinese": "如有问题，请随时联系。",
+          "pinyin": "Rú yǒu wèn tí, qǐng suí shí lián xì.",
+          "english": "If there are any questions, please contact us at any time."
+        }
+      },
+      {
+        "meaning": "according to; in accordance with",
+        "example": {
+          "chinese": "一切按规矩办。",
+          "pinyin": "Yī qiè àn guī jǔ bàn.",
+          "english": "Everything is done according to the rules."
+        }
+      }
+    ]
+  },
+  "物": {
+    "pinyin": "wù",
+    "definition": [
+      {
+        "meaning": "thing; object; matter",
+        "example": {
+          "chinese": "桌上放着许多小物件。",
+          "pinyin": "Zhuō shàng fàng zhe xǔ duō xiǎo wù jiàn.",
+          "english": "There are many small objects on the table."
+        }
+      },
+      {
+        "meaning": "material goods; produce",
+        "example": {
+          "chinese": "这家商店出售各种各样的物品。",
+          "pinyin": "Zhè jiā shāng diàn chū shòu gè zhǒng gè yàng de wù pǐn.",
+          "english": "This store sells all kinds of items."
+        }
+      }
+    ]
+  },
+  "碟": {
+    "pinyin": "dié",
+    "definition": [
+      {
+        "meaning": "plate; saucer; small dish",
+        "example": {
+          "chinese": "请把这个空碟子收走。",
+          "pinyin": "Qǐng bǎ zhège kōng diézi shōu zǒu.",
+          "english": "Please take away this empty plate."
+        }
+      },
+      {
+        "meaning": "disc (e.g., CD, DVD)",
+        "example": {
+          "chinese": "这是一张新的音乐碟。",
+          "pinyin": "Zhè shì yī zhāng xīn de yīn yuè dié.",
+          "english": "This is a new music disc."
+        }
+      }
+    ]
+  },
+  "藻": {
+    "pinyin": "zǎo",
+    "definition": [
+      {
+        "meaning": "algae; seaweed",
+        "example": {
+          "chinese": "池塘里长满了绿藻。",
+          "pinyin": "Chí táng lǐ zhǎng mǎn le lǜ zǎo.",
+          "english": "The pond is full of green algae."
+        }
+      },
+      {
+        "meaning": "elaborate decorations or rhetoric (often referring to literary composition)",
+        "example": {
+          "chinese": "这篇文章辞藻华丽。",
+          "pinyin": "Zhè piān wén zhāng cí zǎo huá lì.",
+          "english": "This article has ornate rhetoric."
+        }
+      }
+    ]
+  },
+  "天下午": {
+    "pinyin": "tiān xià wǔ",
+    "definition": [
+      {
+        "meaning": "Afternoon (colloquial short form of 今天下午)",
+        "example": {
+          "chinese": "天下午我们去公园散步吧。",
+          "pinyin": "Tiān xià wǔ wǒ men qù gōng yuán sàn bù ba.",
+          "english": "Let's go for a walk in the park this afternoon."
+        }
+      }
+    ]
+  },
+  "漂浮": {
+    "pinyin": "piāo fú",
+    "definition": [
+      {
+        "meaning": "to float; to drift",
+        "example": {
+          "chinese": "树叶漂浮在水面上。",
+          "pinyin": "Shù yè piāo fú zài shuǐ miàn shàng.",
+          "english": "The leaves are floating on the water surface."
+        }
+      },
+      {
+        "meaning": "to hover; to be suspended in the air",
+        "example": {
+          "chinese": "灰尘漂浮在空气中。",
+          "pinyin": "Chén āi piāo fú zài kōng qì zhōng.",
+          "english": "Dust is hovering in the air."
+        }
+      }
+    ]
+  },
+  "咕咚咕咚": {
+    "pinyin": "gū dōng gū dōng",
+    "definition": [
+      {
+        "meaning": "onomatopoeia for the sound of something heavy falling into water or thudding repeatedly",
+        "example": {
+          "chinese": "石头咕咚咕咚地掉进河里。",
+          "pinyin": "Shí tou gū dōng gū dōng de diào jìn hé lǐ.",
+          "english": "The stones fell into the river with a thud."
+        }
+      }
+    ]
+  },
+  "吐出": {
+    "pinyin": "tǔ chū",
+    "definition": [
+      {
+        "meaning": "to spit out; to vomit; to expel",
+        "example": {
+          "chinese": "这条鱼从嘴里吐出了一根刺。",
+          "pinyin": "Zhè tiáo yú cóng zuǐ lǐ tǔ chū le yī gēn cì.",
+          "english": "The fish spat out a thorn from its mouth."
+        }
+      },
+      {
+        "meaning": "to eject; to give out (e.g., smoke, gas)",
+        "example": {
+          "chinese": "汽车排气管正在吐出大量的废气。",
+          "pinyin": "Qì chē pái qì guǎn zhèng zài tǔ chū dà liàng de fèi qì.",
+          "english": "The car's exhaust pipe is emitting a large amount of exhaust gas."
+        }
+      }
+    ]
+  },
+  "极小的": {
+    "pinyin": "jí xiǎo de",
+    "definition": [
+      {
+        "meaning": "extremely small; tiny",
+        "example": {
+          "chinese": "这是一个极小的问题，很容易解决。",
+          "pinyin": "Zhè shì yí gè jí xiǎo de wèn tí, hěn róng yì jiě jué.",
+          "english": "This is an extremely small problem, easy to solve."
+        }
+      },
+      {
+        "meaning": "negligible; insignificant (in size or importance)",
+        "example": {
+          "chinese": "他的贡献虽然极小，但也很重要。",
+          "pinyin": "Tā de gòng xiàn suī rán jí xiǎo, dàn yě hěn zhòng yào.",
+          "english": "Although his contribution was very small, it was still important."
+        }
+      }
+    ]
   }
 }

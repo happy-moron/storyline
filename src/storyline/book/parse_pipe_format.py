@@ -14,7 +14,7 @@ import re
 from pathlib import Path
 
 
-CJK_PUNCT = set("，。？！、：；""''（）《》【】…—～·")
+CJK_PUNCT = set("，。？！、：；""''““（）《》【】…—～·")
 
 
 def _normalize_for_comparison(text: str) -> str:

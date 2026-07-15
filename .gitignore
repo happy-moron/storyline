@@ -106,3 +106,4 @@ apilog/
 dict/audio
 tests/realworld/output/
 tests/realworld/output/*
+fa_eval_logs/

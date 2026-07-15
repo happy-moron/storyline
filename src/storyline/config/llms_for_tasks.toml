@@ -10,16 +10,16 @@ model_id = "local-llamacpp"
 
 # Default llamacpp profile for tasks
 [default]
-profile = "qwen36-35b-a3b"
+profile = "qwen36-35b-a3b-nothink"
 
 [translate]
-profile = "qwen36-35b-a3b"
+profile = "qwen36-35b-a3b-nothink"
 
 [tokenize]
-profile = "qwen36-35b-a3b"
+profile = "qwen36-35b-a3b-nothink"
 
 [dictionary]
-profile = "qwen36-35b-a3b"
+profile = "qwen36-35b-a3b-nothink"
 
 [check_translation]
 models = ["openrouter/deepseek/deepseek-v4-flash"]

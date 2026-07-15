@@ -289,7 +289,7 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
             os.makedirs(audiobook_dir, exist_ok=True)
             os.makedirs(chunks_dir, exist_ok=True)
 
-            if not audiobook_mp3_path.exists() or not chunk_json_path.exists():
+            if not audiobook_mp3_path.exists():
                 if service_manager:
                     service_manager.start_if_needed('tts')
 
