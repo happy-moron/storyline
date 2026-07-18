@@ -778,11 +778,16 @@ class BenchmarkRunner:
 # ---------------------------------------------------------------------------
 
 def _load_config() -> tuple[list[str], list[str], list[str], str | None, str | None, int]:
-    from storyline.config.pipeline_config import PipelineConfig
-    config = PipelineConfig.from_files_and_args()
-    models = config.models
-    translate_profile = config.task_profiles.get("translate")
-    tokenize_profile = config.task_profiles.get("tokenize")
+    try:
+        from storyline.config.pipeline_config import PipelineConfig
+        config = PipelineConfig.from_files_and_args()
+        models = config.models
+        translate_profile = config.task_profiles.get("translate")
+        tokenize_profile = config.task_profiles.get("tokenize")
+    except Exception:
+        models = ["local-llamacpp"]
+        translate_profile = None
+        tokenize_profile = None
 
     config_path = Path(__file__).resolve().parent.parent / "config" / "llms_for_tasks.toml"
     try:

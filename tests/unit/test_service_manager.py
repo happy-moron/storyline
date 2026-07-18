@@ -115,9 +115,10 @@ class TestServiceManager:
             assert manager._wait_for_service('llm')
 
     def test_wait_for_service_timeout(self, manager):
-        with patch('time.time', side_effect=[0, 0, 200]):
-            with patch('requests.get', side_effect=Exception('test')):
-                assert not manager._wait_for_service('llm')
+        with patch('time.time', side_effect=[0, 0, 300, 310]):
+            with patch('time.sleep'):
+                with patch('requests.get', side_effect=Exception('test')):
+                    assert not manager._wait_for_service('llm')
 
     def test_wait_for_service_offline(self, manager):
         mock_result1 = MagicMock()
@@ -131,9 +132,10 @@ class TestServiceManager:
     def test_wait_for_service_offline_timeout(self, manager):
         mock_result = MagicMock()
         mock_result.returncode = 0
-        with patch('time.time', side_effect=[0, 0, 200]):
-            with patch.object(manager, '_subprocess_run', return_value=mock_result):
-                assert not manager._wait_for_service_offline('llm')
+        with patch('time.time', side_effect=[0, 0, 200, 210]):
+            with patch('time.sleep'):
+                with patch.object(manager, '_subprocess_run', return_value=mock_result):
+                    assert not manager._wait_for_service_offline('llm')
 
     def test_start_if_needed_online(self, manager):
         mock_result = MagicMock()
