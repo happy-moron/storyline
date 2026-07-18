@@ -125,14 +125,16 @@ def generate_tts_audio(service, text, voice):
 
 
 def process_json_to_audio(input_file, output_file, profile_key="default",
-                          standalone_file=None, service=None):
+                          standalone_file=None, service=None,
+                          book: str = "", author: str = ""):
     if service is None:
         service = Qwen3TTSService()
 
     process_json_to_audio_common(
         input_file, output_file, profile_key, service,
         standalone_file=standalone_file,
-        generate_tts_fn=generate_tts_audio
+        generate_tts_fn=generate_tts_audio,
+        book=book, author=author,
     )
 
 

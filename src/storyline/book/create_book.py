@@ -412,6 +412,8 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
                         chapters_audio_dir=chunks_dir,
                         aggregate_output_path=audiobook_mp3_path,
                         profile_key=config.audio_profile,
+                        book=book,
+                        author=author,
                     )
                 else:
                     # Fallback: per-sentence flow
@@ -420,6 +422,8 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
                         os.path.join(audiobook_dir, source_file_stem + ".mp3"),
                         standalone_file=os.path.join(audio_dir, source_file_stem),
                         profile_key=config.audio_profile,
+                        book=book,
+                        author=author,
                     )
 
                 if service_manager:

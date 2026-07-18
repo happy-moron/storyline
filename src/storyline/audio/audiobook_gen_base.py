@@ -9,6 +9,31 @@ from pydub import AudioSegment
 from storyline.book.parse_pipe_format import parse_source_file
 
 
+def build_id3_tags(book: str = "", author: str = "", chapter_stem: str = "") -> dict:
+    tags = {}
+    chapter_num = ""
+    if chapter_stem and "_" in chapter_stem:
+        parts = chapter_stem.rsplit("_", 1)
+        if parts[-1].isdigit():
+            chapter_num = parts[-1]
+
+    title = book if book else ""
+    if chapter_num:
+        title = f"{book} — Chapter {int(chapter_num)}" if book else f"Chapter {int(chapter_num)}"
+    if title:
+        tags["title"] = title
+    if chapter_num:
+        tags["track"] = str(int(chapter_num))
+    if book:
+        tags["album"] = book
+    if author:
+        tags["artist"] = author
+    if book or author:
+        tags["genre"] = "Audiobook"
+
+    return tags
+
+
 def change_tempo(audio_segment, speed_change):
     """Change tempo without affecting pitch using soundstretch."""
     with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as tmp_in:
@@ -73,7 +98,8 @@ def process_sentence(sentence, sequence_steps, index,
 
 def process_json_to_audio_common(input_file, output_file, profile_key="default", service=None,
                                  sentence_pause=800, standalone_file=None,
-                                 generate_tts_fn=None, bitrate: str = "64k"):
+                                 generate_tts_fn=None, bitrate: str = "64k",
+                                 book: str = "", author: str = ""):
     sequence_steps, pause_ms = load_profile_from_toml(profile_key)
 
     sentences = parse_source_file(input_file)
@@ -92,7 +118,9 @@ def process_json_to_audio_common(input_file, output_file, profile_key="default",
         if i < len(sentences) - 1:
             final_audio += AudioSegment.silent(duration=sentence_pause)
 
-    final_audio.export(output_file, format="mp3", bitrate=bitrate)
+    chapter_stem = os.path.splitext(os.path.basename(input_file))[0]
+    tags = build_id3_tags(book, author, chapter_stem)
+    final_audio.export(output_file, format="mp3", bitrate=bitrate, tags=tags)
     print(f"Successfully created output file: {output_file}")
 
 

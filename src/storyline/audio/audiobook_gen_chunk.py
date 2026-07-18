@@ -16,7 +16,7 @@ from pathlib import Path
 from pydub import AudioSegment
 
 from storyline.logging import get_logger
-from .audiobook_gen_base import change_tempo, load_profile_from_toml
+from .audiobook_gen_base import change_tempo, load_profile_from_toml, build_id3_tags
 from .audiobook_gen_qwen3 import generate_tts_audio, Qwen3TTSService
 from storyline.book.parse_pipe_format import parse_source_file
 from storyline.book.parse_chunk_format import load_chunks_json
@@ -169,6 +169,8 @@ def process_chapter_chunks(
     chapters_audio_dir: str | Path,
     aggregate_output_path: str | Path,
     profile_key: str = "default",
+    book: str = "",
+    author: str = "",
     service: Qwen3TTSService | None = None,
     bitrate: str = "64k",
 ) -> None:
@@ -320,6 +322,7 @@ def process_chapter_chunks(
         _build_aggregate_audiobook(
             chunk_defs, chapters_audio_dir,
             aggregate_output_path, profile_key, bitrate,
+            book=book, author=author, chapter_stem=chapter_stem,
         )
         total_s = len(AudioSegment.from_file(aggregate_output_path)) / 1000.0
         agg_ms = int((time.time() - t_agg) * 1000)
@@ -340,6 +343,9 @@ def _build_aggregate_audiobook(
     output_path: Path,
     profile_key: str,
     bitrate: str,
+    book: str = "",
+    author: str = "",
+    chapter_stem: str = "",
 ) -> None:
     """Build the repetition-pattern audiobook from chunk audio segments.
 
@@ -375,6 +381,7 @@ def _build_aggregate_audiobook(
 
                 final += seg + AudioSegment.silent(duration=pause_ms)
 
-    final.export(output_path, format="mp3", bitrate=bitrate)
+    tags = build_id3_tags(book, author, chapter_stem)
+    final.export(output_path, format="mp3", bitrate=bitrate, tags=tags)
     _log.info("  Aggregate audiobook written: %d chunks, %.1fs total",
               len(chunk_defs), len(final) / 1000.0)
