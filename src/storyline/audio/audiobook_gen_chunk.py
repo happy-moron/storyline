@@ -8,19 +8,21 @@ Replaces per-sentence audio generation with:
 """
 
 import json
-import logging
 import os
+import time
 import tomllib
 from pathlib import Path
 
 from pydub import AudioSegment
 
+from storyline.logging import get_logger
 from .audiobook_gen_base import change_tempo, load_profile_from_toml
 from .audiobook_gen_qwen3 import generate_tts_audio, Qwen3TTSService
 from storyline.book.parse_pipe_format import parse_source_file
 from storyline.book.parse_chunk_format import load_chunks_json
+from storyline.book.cjk_punct import CJK_PUNCT
 
-_log = logging.getLogger(__name__)
+_log = get_logger("audio")
 
 CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
 
@@ -30,23 +32,24 @@ def _load_audio_toml() -> dict:
         return tomllib.load(f)
 
 
-def _get_chunk_voice(language: str) -> dict:
-    """Return the voice dict for chunk-level TTS from the default profile."""
+def _get_chunk_voice(language: str, profile_key: str = "default") -> dict:
+    """Return the voice dict for chunk-level TTS from the given profile."""
     audio_toml = _load_audio_toml()
     voices = audio_toml["voices"]
-    default_seq = audio_toml["profiles"]["default"]["sequence"]
-    for step in default_seq:
+    seq = audio_toml["profiles"][profile_key]["sequence"]
+    for step in seq:
         if step["lang"] == language:
             voice_name = step["voice"]
             voice = dict(voices[voice_name])
             voice["voice_name"] = voice_name
             return voice
-    raise KeyError(f"No voice for language '{language}' in default profile")
+    raise KeyError(f"No voice for language '{language}' in profile '{profile_key}'")
 
 
 def _word_count(text: str, language: str) -> int:
     if language == "zh":
-        return len("".join(text.split()))
+        clean = "".join(text.split())
+        return len([ch for ch in clean if ch not in CJK_PUNCT])
     else:
         return len(text.split())
 
@@ -196,8 +199,8 @@ def process_chapter_chunks(
         if l.strip()
     ]
 
-    zh_voice = _get_chunk_voice("zh")
-    en_voice = _get_chunk_voice("en")
+    zh_voice = _get_chunk_voice("zh", profile_key)
+    en_voice = _get_chunk_voice("en", profile_key)
 
     chapter_stem = source_txt_path.stem
 
@@ -205,7 +208,8 @@ def process_chapter_chunks(
     for ci, chunk in enumerate(chunk_defs):
         line_range = chunk["line_range"]
         start, end = line_range[0], line_range[1]
-        instruct = chunk.get("instruct", "")
+        instruct_en = chunk.get("instruct", "")
+        instruct_zh = chunk.get("instruct_zh", "")
 
         zh_lines = [pipe_sentences[i]["chinese"] for i in range(start, end + 1)]
         en_lines = [english_lines[i] for i in range(start, end + 1)]
@@ -214,33 +218,78 @@ def process_chapter_chunks(
         zh_text = "".join(zh_lines)  # Chinese: no spaces
         en_text = " ".join(en_lines)  # English: join with spaces
 
-        _log.info("  Chunk %d/%d: lines %d-%d, instruct=%r", ci + 1, len(chunk_defs), start, end, instruct or "(none)")
+        # Validate sentence ranges
+        if start < 0 or end >= len(pipe_sentences):
+            _log.error(
+                "  Chunk %d: line range [%d, %d] out of bounds (0..%d) — skipping",
+                ci, start, end, len(pipe_sentences) - 1,
+            )
+            continue
+        if start > end:
+            _log.warning("  Chunk %d: inverted range [%d, %d] — skipping", ci, start, end)
+            continue
+
+        zh_text_sample = zh_lines[0][:40] + "..." if zh_lines[0] else "(empty)"
+        en_text_sample = en_lines[0][:40] + "..." if en_lines[0] else "(empty)"
+        _log.info(
+            "  Chunk %d/%d: lines %d-%d (%d lines), en_instr=%r, zh_instr=%r",
+            ci + 1, len(chunk_defs), start, end, len(zh_lines),
+            instruct_en or "(none)", instruct_zh or "(none)",
+        )
+        _log.info("    zh[%d]: %s", start, zh_text_sample)
+        _log.info("    en[%d]: %s", start, en_text_sample)
 
         # -- Chinese TTS + alignment --
         zh_audio_path = chapters_audio_dir / f"{chapter_stem}_zh_{ci:02d}.mp3"
+        zh_chars = len(zh_text)
         if not zh_audio_path.exists():
-            zh_audio = _generate_chunk_tts(service, zh_text, zh_voice, instruct)
+            t_zh_tts = time.time()
+            zh_audio = _generate_chunk_tts(service, zh_text, zh_voice, instruct_zh)
+            zh_tts_ms = int((time.time() - t_zh_tts) * 1000)
+            _log.info("event=audio_chunk chapter=%s chunk=%d/%d lang=zh chars=%d duration_ms=%d",
+                      chapter_stem, ci + 1, len(chunk_defs), zh_chars, zh_tts_ms)
+            t_zh_align = time.time()
             zh_words, zh_duration = _align_chunk_audio(service, zh_audio, zh_text, zh_voice["language"])
+            zh_align_ms = int((time.time() - t_zh_align) * 1000)
+            _log.info("event=audio_align chapter=%s chunk=%d/%d lang=zh words=%d duration_ms=%d",
+                      chapter_stem, ci + 1, len(chunk_defs), len(zh_words), zh_align_ms)
             zh_audio.export(zh_audio_path, format="mp3", bitrate=bitrate)
         else:
             _log.info("    zh audio exists, re-loading for alignment")
             zh_audio = AudioSegment.from_file(zh_audio_path)
             zh_duration = len(zh_audio) / 1000.0
+            t_zh_align = time.time()
             zh_words = service.forced_align(zh_audio, zh_text, zh_voice["language"])
+            zh_align_ms = int((time.time() - t_zh_align) * 1000)
+            _log.info("event=audio_align chapter=%s chunk=%d/%d lang=zh words=%d duration_ms=%d",
+                      chapter_stem, ci + 1, len(chunk_defs), len(zh_words), zh_align_ms)
 
         zh_line_ts = compute_line_timestamps(zh_words, zh_lines, zh_duration, "zh")
 
         # -- English TTS + alignment --
         en_audio_path = chapters_audio_dir / f"{chapter_stem}_en_{ci:02d}.mp3"
+        en_chars = len(en_text)
         if not en_audio_path.exists():
-            en_audio = _generate_chunk_tts(service, en_text, en_voice, "")
+            t_en_tts = time.time()
+            en_audio = _generate_chunk_tts(service, en_text, en_voice, instruct_en)
+            en_tts_ms = int((time.time() - t_en_tts) * 1000)
+            _log.info("event=audio_chunk chapter=%s chunk=%d/%d lang=en chars=%d duration_ms=%d",
+                      chapter_stem, ci + 1, len(chunk_defs), en_chars, en_tts_ms)
+            t_en_align = time.time()
             en_words, en_duration = _align_chunk_audio(service, en_audio, en_text, en_voice["language"])
+            en_align_ms = int((time.time() - t_en_align) * 1000)
+            _log.info("event=audio_align chapter=%s chunk=%d/%d lang=en words=%d duration_ms=%d",
+                      chapter_stem, ci + 1, len(chunk_defs), len(en_words), en_align_ms)
             en_audio.export(en_audio_path, format="mp3", bitrate=bitrate)
         else:
             _log.info("    en audio exists, re-loading for alignment")
             en_audio = AudioSegment.from_file(en_audio_path)
             en_duration = len(en_audio) / 1000.0
+            t_en_align = time.time()
             en_words = service.forced_align(en_audio, en_text, en_voice["language"])
+            en_align_ms = int((time.time() - t_en_align) * 1000)
+            _log.info("event=audio_align chapter=%s chunk=%d/%d lang=en words=%d duration_ms=%d",
+                      chapter_stem, ci + 1, len(chunk_defs), len(en_words), en_align_ms)
 
         en_line_ts = compute_line_timestamps(en_words, en_lines, en_duration, "en")
 
@@ -267,10 +316,16 @@ def process_chapter_chunks(
 
     # -- Build aggregate audiobook --
     if not aggregate_output_path.exists():
+        t_agg = time.time()
         _build_aggregate_audiobook(
             chunk_defs, chapters_audio_dir,
             aggregate_output_path, profile_key, bitrate,
         )
+        total_s = len(AudioSegment.from_file(aggregate_output_path)) / 1000.0
+        agg_ms = int((time.time() - t_agg) * 1000)
+        total_segments = sum(len(chunk["lines"]) for chunk in chunk_defs)
+        _log.info("event=audio_aggregate chapter=%s chunks=%d segments=%d duration_ms=%d total_s=%.1f",
+                  chapter_stem, len(chunk_defs), total_segments, agg_ms, total_s)
         _log.info("  -> aggregate audiobook: %s", aggregate_output_path)
 
 

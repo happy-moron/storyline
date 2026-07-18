@@ -22,7 +22,7 @@ def change_tempo(audio_segment, speed_change):
         subprocess.run([
             "soundstretch", input_path, output_path,
             f"-tempo={int((speed_change-1)*100)}"
-        ], check=True)
+        ], check=True, capture_output=True)
 
         result = AudioSegment.from_file(output_path)
         return result

@@ -107,3 +107,6 @@ dict/audio
 tests/realworld/output/
 tests/realworld/output/*
 fa_eval_logs/
+
+# Pipeline logs
+logs/

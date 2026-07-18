@@ -35,6 +35,29 @@ waiting for rate limits during testing.
 
 ---
 
+### Extra options (e.g. `thinking_budget_tokens`)
+
+`run()` and `run_from_file()` accept an `extra_options` dict. Its contents are
+sent as `extra_body` in the underlying API request, which llama.cpp uses for
+server‑side reasoning budgets:
+
+```python
+runner = PromptRunner()
+
+response = runner.run(
+    "templates/prompt.txt",
+    "Translate this sentence.",
+    models=["local-llamacpp"],
+    extra_options={"thinking_budget_tokens": 4096},
+)
+```
+
+The `extra_options` dict is forwarded verbatim. See
+[`llamacpp-features.md`](llamacpp-features.md) for details on llama.cpp's
+supported extra request fields.
+
+---
+
 ## Rate‑limiter basics
 
 The rate‑limiter is initialised automatically on import, persisting state in the

@@ -16,14 +16,21 @@ from storyline.audio.audiobook_gen_chunk import (
 # ---------------------------------------------------------------------------
 
 class TestWordCount:
-    def test_chinese_counts_chars(self):
-        assert _word_count("你好。", "zh") == 3
-        assert _word_count("谢谢！", "zh") == 3
+    def test_chinese_counts_chars_excluding_cjk_punct(self):
+        assert _word_count("你好。", "zh") == 2  # excludes 。
+        assert _word_count("谢谢！", "zh") == 2  # excludes ！
         assert _word_count("", "zh") == 0
 
     def test_chinese_ignores_whitespace(self):
-        assert _word_count("你好 。", "zh") == 3
+        assert _word_count("你好 。", "zh") == 2  # excludes 。
         assert _word_count("  你好  ", "zh") == 2
+
+    def test_chinese_cjk_punct_only(self):
+        assert _word_count("。！？", "zh") == 0
+        assert _word_count("，", "zh") == 0
+
+    def test_chinese_mixed(self):
+        assert _word_count("你好，世界！", "zh") == 4  # 你,好,世,界
 
     def test_english_counts_words(self):
         assert _word_count("Hello world.", "en") == 2
@@ -68,35 +75,35 @@ def _make_words(texts: list[str], starts: list[float]) -> list[dict]:
 
 class TestComputeLineTimestamps:
     def test_single_line(self):
-        words = _make_words(["你", "好", "。"], [0.1, 0.3, 0.5])
+        words = _make_words(["你", "好"], [0.1, 0.3])
         lines = ["你好。"]
         result = compute_line_timestamps(words, lines, audio_duration=1.0, language="zh")
         assert len(result) == 1
         assert result[0]["start"] == 0.0
         assert result[0]["end"] == 1.0
-        assert result[0]["word_count"] == 3
+        assert result[0]["word_count"] == 2
 
     def test_two_lines_chinese(self):
         words = _make_words(
-            ["你", "好", "。", "谢", "谢", "。"],
-            [0.1, 0.3, 0.5, 0.7, 0.9, 1.1],
+            ["你", "好", "谢", "谢"],
+            [0.1, 0.3, 0.7, 0.9],
         )
         lines = ["你好。", "谢谢。"]
         result = compute_line_timestamps(words, lines, audio_duration=1.5, language="zh")
 
         assert len(result) == 2
 
-        # Line 1: words 0-2, start=0.0
+        # Line 1: words 0-1, start=0.0
         assert result[0]["start"] == 0.0
-        assert result[0]["word_count"] == 3
+        assert result[0]["word_count"] == 2
 
-        # Boundary = (w2.end + w3.start) / 2 = (0.52 + 0.7) / 2 = 0.61
-        assert math.isclose(result[0]["end"], 0.61, abs_tol=0.01)
+        # Boundary = (w1.end + w2.start) / 2 = (0.32 + 0.7) / 2 = 0.51
+        assert math.isclose(result[0]["end"], 0.51, abs_tol=0.01)
 
-        # Line 2: words 3-5
-        assert math.isclose(result[1]["start"], 0.61, abs_tol=0.01)
+        # Line 2: words 2-3
+        assert math.isclose(result[1]["start"], 0.51, abs_tol=0.01)
         assert result[1]["end"] == 1.5  # audio_duration
-        assert result[1]["word_count"] == 3
+        assert result[1]["word_count"] == 2
 
     def test_two_lines_english(self):
         words = _make_words(
@@ -167,13 +174,13 @@ class TestComputeLineTimestamps:
             {"text": "你", "start_time": 0.1, "end_time": 0.3},
             {"text": "好", "start_time": 0.4, "end_time": 0.6},
         ]
-        lines = ["你", "好", "吗", "？"]  # 4 expected, only 2 from aligner
+        lines = ["你", "好", "吗", "？"]  # 4 lines: expects 1+1+1+0=3 words, only 2 from aligner
         result = compute_line_timestamps(words, lines, audio_duration=1.0, language="zh")
         assert len(result) == 4
         # First 2 lines get real timestamps
         assert result[0]["word_count"] == 1
         assert result[1]["word_count"] == 1
-        # Remaining lines get 0 words each
+        # Remaining lines get 0 words each (？excluded by _word_count)
         assert result[2]["word_count"] == 0
         assert result[3]["word_count"] == 0
 
@@ -200,25 +207,23 @@ class TestComputeLineTimestampsRealistic:
             {"text": "你", "start_time": 0.12, "end_time": 0.28},
             {"text": "好", "start_time": 0.30, "end_time": 0.46},
             {"text": "吗", "start_time": 0.48, "end_time": 0.58},
-            {"text": "？", "start_time": 0.60, "end_time": 0.64},
             {"text": "我", "start_time": 0.80, "end_time": 0.96},
             {"text": "很", "start_time": 0.98, "end_time": 1.14},
             {"text": "好", "start_time": 1.16, "end_time": 1.32},
-            {"text": "。", "start_time": 1.34, "end_time": 1.38},
         ]
         lines = ["你好吗？", "我很好。"]
         result = compute_line_timestamps(words, lines, audio_duration=1.5, language="zh")
 
-        # Line 1: words 0-3 (你好吗？)
+        # Line 1: words 0-2 (你好吗, no punct in alignment)
         assert result[0]["start"] == 0.0
-        # boundary = (0.64 + 0.80) / 2 = 0.72
-        assert math.isclose(result[0]["end"], 0.72, abs_tol=0.01)
-        assert result[0]["word_count"] == 4
+        # boundary = (0.58 + 0.80) / 2 = 0.69
+        assert math.isclose(result[0]["end"], 0.69, abs_tol=0.01)
+        assert result[0]["word_count"] == 3
 
-        # Line 2: words 4-7 (我很好。)
-        assert math.isclose(result[1]["start"], 0.72, abs_tol=0.01)
+        # Line 2: words 3-5 (我很好, no punct in alignment)
+        assert math.isclose(result[1]["start"], 0.69, abs_tol=0.01)
         assert result[1]["end"] == 1.5
-        assert result[1]["word_count"] == 4
+        assert result[1]["word_count"] == 3
 
     def test_english_dialogue(self):
         words = [

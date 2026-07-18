@@ -1,0 +1,18 @@
+# Chinese test sentences for forced aligner evaluation.
+# Format: expected_content_character_count:sentence
+# Counts exclude CJK punctuation — the ForcedAligner only returns alignment
+# entries for content characters, not punctuation.
+
+4:这是布布。
+7:布布是一只小鹅。
+8:一只爱吃的小蓝鹅。
+9:布布从早到晚都在吃。
+7:每一天都是如此。
+15:早上，她会把食盆里的东西吃个精光。
+4:“好吃，”她说。
+19:布布去串门母鸡，把它们的谷物啄得干干净净。
+4:“好吃，”她说。
+13:布布去找山羊，把扁嘴伸进食槽。
+4:“好吃，”她说。
+15:布布去找小老鼠，从它的食碟里啄食。
+4:“好吃，”她说。

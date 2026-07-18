@@ -91,6 +91,7 @@ class PipelineConfig:
     models: list[str] = field(default_factory=lambda: ["local-llamacpp"])
     llm_provider: str = "local"
     task_profiles: dict[str, str] = field(default_factory=dict)
+    task_thinking_budget: dict[str, int | None] = field(default_factory=dict)
 
     # -- Profile name (for reference) --
     profile_name: str | None = None
@@ -169,15 +170,22 @@ class PipelineConfig:
             self.llm_provider = llm.get("provider", "local")
             model_id = llm.get("model_id", "local-llamacpp")
             self.models = [model_id]
-            default_profile = llm_cfg.get("default", {}).get("profile")
+            default = llm_cfg.get("default", {})
+            default_profile = default.get("profile")
+            default_thinking = default.get("thinking_budget_tokens")
             self.task_profiles = {
                 task: llm_cfg.get(task, {}).get("profile", default_profile)
+                for task in ("translate", "tokenize", "dictionary")
+            }
+            self.task_thinking_budget = {
+                task: llm_cfg.get(task, {}).get("thinking_budget_tokens", default_thinking)
                 for task in ("translate", "tokenize", "dictionary")
             }
         except Exception:
             self.llm_provider = "local"
             self.models = ["local-llamacpp"]
             self.task_profiles = {}
+            self.task_thinking_budget = {}
 
     def _apply_cli_overrides(self, args: Any) -> None:
         for attr in (
@@ -200,6 +208,10 @@ class PipelineConfig:
     def resolve_prompt(self, prompt_name: str) -> str:
         """Return the path for a named prompt, or raise KeyError."""
         return self.prompts[prompt_name]
+
+    def resolve_thinking_budget(self, task: str) -> int | None:
+        default = self.task_thinking_budget.get("default")
+        return self.task_thinking_budget.get(task, default)
 
     # ------------------------------------------------------------------
     # Convenience computed properties (used by create_book)

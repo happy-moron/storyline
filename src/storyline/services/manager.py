@@ -1,15 +1,15 @@
 import os
 import subprocess
 import time
-import logging
 import tomllib
 from enum import Enum
 from pathlib import Path
 from typing import Optional
 
+from storyline.logging import get_logger
 from .config import ServiceConfig
 
-_log = logging.getLogger(__name__)
+_log = get_logger("services")
 
 _SERVICES_CONFIG_PATH = Path(__file__).resolve().parent.parent / "config" / "services.toml"
 
@@ -144,21 +144,22 @@ class ServiceManager:
         start_time = time.time()
         timeout = config.start_timeout
 
-        print(f"Waiting for {service_name} to become healthy (timeout={timeout}s)...")
+        _log.info("event=service_wait service=%s phase=starting timeout=%d", service_name, timeout)
         last_error = None
         while time.time() - start_time < timeout:
             try:
                 import requests
                 response = requests.get(config.health_endpoint, timeout=5)
                 if response.status_code == 200:
-                    _log.info("%s is healthy.", service_name)
+                    _log.info("event=service_health service=%s status=healthy", service_name)
                     return True
                 last_error = f"HTTP {response.status_code}"
             except Exception as exc:
                 last_error = str(exc)
             time.sleep(1)
 
-        _log.info("%s health check failed after %ds. Last error: %s", service_name, timeout, last_error)
+        _log.info("event=service_health service=%s status=timeout elapsed_ms=%d error=%s",
+                  service_name, int((time.time() - start_time) * 1000), last_error)
         return False
 
     def _wait_for_service_offline(self, service_name: str) -> bool:
@@ -166,14 +167,15 @@ class ServiceManager:
         start_time = time.time()
         timeout = config.stop_timeout
 
-        print(f"Waiting for {service_name} to go offline (timeout={timeout}s)...")
+        _log.info("event=service_wait service=%s phase=stopping timeout=%d", service_name, timeout)
         while time.time() - start_time < timeout:
             if self.get_status(service_name) == ServiceStatus.OFFLINE:
-                _log.info("%s is offline.", service_name)
+                _log.info("event=service_health service=%s status=offline", service_name)
                 return True
             time.sleep(1)
 
-        _log.info("%s did not go offline within %ds.", service_name, timeout)
+        _log.info("event=service_health service=%s status=timeout phase=stopping elapsed_ms=%d",
+                  service_name, int((time.time() - start_time) * 1000))
         return False
 
     def _wait_for_gpu_memory(self, free_mb: int | None = None, timeout: int = 30) -> bool:
@@ -220,13 +222,14 @@ class ServiceManager:
             if self.get_status(other_service) == ServiceStatus.ONLINE:
                 if not self.stop(other_service):
                     raise RuntimeError(f"Failed to stop active service: {other_service}")
-                # systemd may report inactive before the process exits and
-                # releases CUDA allocations; wait for actual GPU memory.
+                t_gpu_wait = time.time()
                 if not self._wait_for_gpu_memory():
                     raise RuntimeError(
                         f"GPU memory not freed after stopping {other_service}. "
                         f"The process may still be alive or another process is using the GPU."
                     )
+                _log.info("event=service_switch from=%s to=%s gpu_wait_ms=%d",
+                          other_service, service_name, int((time.time() - t_gpu_wait) * 1000))
 
         if not self._start_service(service_name):
             raise RuntimeError(f"Failed to start service: {service_name}")
@@ -235,6 +238,7 @@ class ServiceManager:
             raise RuntimeError(f"Service {service_name} failed to start within timeout")
 
         self._active_service = service_name
+        _log.info("event=service_start service=%s", service_name)
         return True
 
     def stop(self, service_name: str) -> bool:
@@ -257,6 +261,7 @@ class ServiceManager:
         if not self._wait_for_service_offline(service_name):
             raise RuntimeError(f"Service {service_name} failed to stop within timeout")
 
+        _log.info("event=service_stop service=%s", service_name)
         return True
 
     def ensure_only_one_active(self) -> Optional[str]:
@@ -314,6 +319,7 @@ class ServiceManager:
         self._set_llm_profile(profile)
         self.start('llm')
         self._active_llm_profile = profile
+        _log.info("event=llm_profile profile=%s", profile)
 
     def stop_all(self) -> dict[str, bool]:
         results = {}

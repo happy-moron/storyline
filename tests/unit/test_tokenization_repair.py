@@ -5,8 +5,7 @@ from storyline.book.tokenization_repair import (
     TokenError,
     ValidationReport,
     validate_full,
-    build_repair_input,
-    apply_repairs,
+    apply_fixes,
     VALID_POS,
 )
 
@@ -137,101 +136,47 @@ class TestValidateFull:
 
 
 # ---------------------------------------------------------------------------
-# build_repair_input
+# apply_fixes
 # ---------------------------------------------------------------------------
 
-class TestBuildRepairInput:
-    def test_single_content_error(self):
-        report = ValidationReport(
-            errors=[
-                TokenError(0, ErrorType.CONTENT_MISMATCH,
-                           source_text="你好", tokenized_line="你|nǐ|r||吗|ma|y",
-                           detail="Expected chars '你好', got '你好吗'"),
-            ],
-            bad_indices=[0],
-        )
-        source = ["你好", "世界"]
-        raw = ["你|nǐ|r||吗|ma|y", "世|shì|n||界|jiè|n"]
-        result = build_repair_input(report, source, raw)
-        assert "[Sentence 0]" in result
-        assert "Source: 你好" in result
-        assert "你|nǐ|r||吗|ma|y" in result
-
-    def test_multiple_errors(self):
-        report = ValidationReport(
-            errors=[
-                TokenError(1, ErrorType.CONTENT_MISMATCH,
-                           source_text="世界", tokenized_line="bad|line",
-                           detail="mismatch"),
-                TokenError(3, ErrorType.CONTENT_MISMATCH,
-                           source_text="测试", tokenized_line="bad2|line",
-                           detail="mismatch"),
-            ],
-            bad_indices=[1, 3],
-        )
-        source = ["你好", "世界", "foo", "测试"]
-        raw = ["a", "b", "c", "d"]
-        result = build_repair_input(report, source, raw)
-        assert "[Sentence 1]" in result
-        assert "[Sentence 3]" in result
-
-    def test_missing_sentence_error(self):
-        report = ValidationReport(
-            errors=[
-                TokenError(2, ErrorType.MISSING,
-                           source_text="missing_sent",
-                           detail="Sentence 2 missing"),
-            ],
-            bad_indices=[2],
-        )
-        source = ["s0", "s1", "missing_sent"]
-        raw = ["line0", "line1"]
-        result = build_repair_input(report, source, raw)
-        assert "missing_sent" in result
-        assert "[MISSING]" in result
-
-
-# ---------------------------------------------------------------------------
-# apply_repairs
-# ---------------------------------------------------------------------------
-
-class TestApplyRepairs:
-    def test_single_repair(self):
+class TestApplyFixes:
+    def test_single_fix(self):
         raw = ["bad|line", "good|line", "also|good"]
-        repaired_text = "fixed|line"
-        result = apply_repairs(raw, repaired_text, [0])
+        fix_output = "fixed|line"
+        result = apply_fixes(raw, fix_output, [0])
         assert result == ["fixed|line", "good|line", "also|good"]
 
-    def test_multiple_repairs(self):
+    def test_multiple_fixes(self):
         raw = ["bad1", "good", "bad2"]
-        repaired_text = "fixed1\nfixed2"
-        result = apply_repairs(raw, repaired_text, [0, 2])
+        fix_output = "fixed1\nfixed2"
+        result = apply_fixes(raw, fix_output, [0, 2])
         assert result == ["fixed1", "good", "fixed2"]
 
     def test_skips_fence_lines(self):
         raw = ["bad", "good"]
-        repaired_text = "```\nfixed\n```"
-        result = apply_repairs(raw, repaired_text, [0])
+        fix_output = "```\nfixed\n```"
+        result = apply_fixes(raw, fix_output, [0])
         assert result == ["fixed", "good"]
 
     def test_pads_result_for_bad_index(self):
         raw = ["only_one"]
-        repaired_text = "fixed"
-        result = apply_repairs(raw, repaired_text, [2])
+        fix_output = "fixed"
+        result = apply_fixes(raw, fix_output, [2])
         assert len(result) == 3
         assert result[2] == "fixed"
         assert result[0] == "only_one"
 
-    def test_empty_bad_indices(self):
-        raw = ["a", "b"]
-        result = apply_repairs(raw, "anything", [])
-        assert result == ["a", "b"]
-
     def test_bad_indices_out_of_order(self):
         raw = ["a", "b", "c"]
-        repaired_text = "fix_a\nfix_c"
-        result = apply_repairs(raw, repaired_text, [2, 0])
+        fix_output = "fix_a\nfix_c"
+        result = apply_fixes(raw, fix_output, [2, 0])
         assert result == ["fix_a", "b", "fix_c"]
+
+    def test_line_count_mismatch_raises(self):
+        raw = ["a", "b", "c"]
+        fix_output = "only_one_line"
+        with pytest.raises(ValueError, match="line count mismatch"):
+            apply_fixes(raw, fix_output, [0, 2])
 
 
 # ---------------------------------------------------------------------------

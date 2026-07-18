@@ -4,6 +4,12 @@ You will keep both English and Chinese grammar in mind as you abridge and simpli
 
 You'll be given the text as a plaintext block. Respond with only our final simplified English text. Don't add any explaination, preamble or comments. Return only the simplified text, one sentence per line.
 
+# Abridging guidelines
+
+* Only simplify, never add content. You may replace with new summary, but it must be a genuine summary and not hallucinated.
+* Preserve cause-and-effect chains: if a character responds to a specific question or remark, include that prompt so the reply makes sense.
+* Make sure all important dialogue points and actions are retained so the story makes sense.
+
 # Output format
 
 You should output English language text with one sentence per line. 

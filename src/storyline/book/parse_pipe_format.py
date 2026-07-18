@@ -6,15 +6,22 @@ convert it to the format consumed by ``create_custom_dict.py``,
 ``audiobook_gen_base.py``, and the webapp ``index.html``.
 
 Two tokenized formats are supported:
-  - *compact* (one sentence per line, ``||`` token separator) — current
-  - *legacy*  (one token per line, blank lines between sentences) — for old data
+  - *compact* (one sentence per line, ``||`` token separator) - current
+  - *legacy*  (one token per line, blank lines between sentences) - for old data
 """
 
 import re
 from pathlib import Path
 
 
-CJK_PUNCT = set("，。？！、：；""''““（）《》【】…—～·")
+CJK_PUNCT = set(
+    "\u0022\u0027"          # ASCII double/single quote
+    "\u2018\u2019"            # curly single quotes
+    "\u201c\u201d"            # curly double quotes
+    "\u300c\u300d\u300e\u300f"  # CJK corner brackets
+    "\uff02\uff07"            # fullwidth quotes
+    "，。？！、：；（）《》【】…—～·"
+)
 
 
 def _normalize_for_comparison(text: str) -> str:
@@ -33,7 +40,7 @@ def strip_fences(text: str) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Source pipe (chinese|||english) — unchanged format
+# Source pipe (chinese|||english) - unchanged format
 # ---------------------------------------------------------------------------
 
 def parse_source_pipe(text: str) -> list[dict]:
@@ -65,7 +72,7 @@ def parse_source_file(path: str | Path) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Tokenized — compact format (current)
+# Tokenized - compact format (current)
 # ---------------------------------------------------------------------------
 
 def parse_tokenized_compact(
@@ -174,7 +181,7 @@ def parse_tokenized_file(
 
 
 # ---------------------------------------------------------------------------
-# Tokenized — legacy format (one token per line, for old data)
+# Tokenized - legacy format (one token per line, for old data)
 # ---------------------------------------------------------------------------
 
 def parse_tokenized_pipe(text: str) -> list[dict]:

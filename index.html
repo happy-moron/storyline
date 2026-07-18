@@ -163,8 +163,8 @@
                 const sourceFilePath = `books/${author}/${book}/pipe/source/${prefix}_${chapterNumber}.txt`;
                 const chunkJsonPath = `books/${author}/${book}/chunks/${prefix}_${chapterNumber}.json`;
 
-                const tokenizedText = await fetch(`/${tokenizedFilePath}`).then(r => r.text());
-                const sourceText = await fetch(`/${sourceFilePath}`).then(r => r.text());
+                const tokenizedText = await fetch(`${tokenizedFilePath}`).then(r => r.text());
+                const sourceText = await fetch(`${sourceFilePath}`).then(r => r.text());
 
                 const tokenizedContent = parseTokenizedPipe(tokenizedText);
                 const sourceContent = parseSourcePipe(sourceText);
@@ -172,7 +172,7 @@
                 // Try to load chunk metadata; null if unavailable (fallback to per-sentence audio)
                 let chunkMeta = null;
                 try {
-                    const resp = await fetch(`/${chunkJsonPath}`);
+                    const resp = await fetch(`${chunkJsonPath}`);
                     if (resp.ok) {
                         chunkMeta = await resp.json();
                     }
@@ -264,7 +264,7 @@
         let dictionary = {};
         async function loadDictionary() {
             try {
-                const response = await fetch('/dict/custom_dict.json');
+                const response = await fetch('dict/custom_dict.json');
                 dictionary = await response.json();
             } catch (error) {
                 console.error('Failed to load dictionary:', error);
@@ -631,38 +631,12 @@
             createChunkAudioElements(chunkMeta);
             buildLineMap(chunkMeta);
 
-            // Determine first line of each chunk for visual markers
-            const chunkStarts = new Set();
-            if (chunkMeta && chunkMeta.chunks) {
-                for (const chunk of chunkMeta.chunks) {
-                    if (chunk.line_range) {
-                        chunkStarts.add(chunk.line_range[0]);
-                    }
-                }
-            }
-
-            // Build a lookup: global line index -> chunk instruct text
-            const lineInstruct = {};
-            if (chunkMeta && chunkMeta.chunks) {
-                for (const chunk of chunkMeta.chunks) {
-                    if (chunk.line_range && chunk.instruct) {
-                        for (let li = chunk.line_range[0]; li <= chunk.line_range[1]; li++) {
-                            lineInstruct[li] = chunk.instruct;
-                        }
-                    }
-                }
-            }
-
             for (let i = 0; i < tokenizedSentences.length; i++) {
                 const sentenceData = tokenizedSentences[i];
                 const sentence = sentenceData.t;
                 const sentenceDiv = document.createElement('div');
                 sentenceDiv.className = 'sentence';
                 sentenceDiv.dataset.lineIndex = i;
-
-                if (chunkStarts.has(i)) {
-                    sentenceDiv.classList.add('chunk-start');
-                }
 
                 let chineseSentence = '';
                 let pinyinSentence = '';
@@ -674,13 +648,7 @@
 
                 const englishTranslation = sourceSentences[i] ? sourceSentences[i].english : '';
 
-                let instructHtml = '';
-                if (chunkStarts.has(i) && lineInstruct[i]) {
-                    instructHtml = `<div class="chunk-instruct">🎭 ${lineInstruct[i]}</div>`;
-                }
-
                 sentenceDiv.innerHTML = `
-                    ${instructHtml}
                     <div class="pinyin">${pinyinSentence}</div>
                     <div class="chinese">${chineseSentence}</div>
                     <div class="translation">${englishTranslation}</div>

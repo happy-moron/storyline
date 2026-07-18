@@ -26,7 +26,8 @@ def save_dictionary(dictionary, dict_file_path):
         json.dump(dictionary, f, ensure_ascii=False, indent=2)
 
 def process_json_file(filepath, dictionary, dict_file_path, prompt_template_path, models,
-                      punctuation_skip: list[str] | None = None):
+                      punctuation_skip: list[str] | None = None,
+                      extra_options: dict | None = None):
     if punctuation_skip is None:
         punctuation_skip = [',', '.', '?', '!', '，', '。', '？', '！', '"', '“', '”', '、']
     print(f"Processing file: {os.path.basename(filepath)}")
@@ -47,7 +48,8 @@ def process_json_file(filepath, dictionary, dict_file_path, prompt_template_path
                     new_entry_json_str = runner.run(
                         prompt_template_path,
                         prompt_input,
-                        models=models
+                        models=models,
+                        extra_options=extra_options,
                     )
 
                     try:

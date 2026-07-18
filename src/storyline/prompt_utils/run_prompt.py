@@ -1,15 +1,16 @@
 import argparse
 import concurrent.futures
 import importlib.util
-import logging
 import os
 import sys
+from datetime import datetime, timezone, timedelta
 
 from zsp_llm_client.prompt_runner import PromptRunner
 
+from storyline.logging import get_logger
 from .clean_response import strip_think_tags, strip_markdown_fences
 
-_log = logging.getLogger(__name__)
+_log = get_logger("prompt_utils")
 
 def load_module(module_name):
     """Dynamically import a module located in the current working directory.
@@ -21,7 +22,7 @@ def load_module(module_name):
     return module
 
 def run_prompt(prompt_template_path, input_file_path, output_file_path, pre_process_module=None, models=None,
-               timeout: int = 600):
+               timeout: int = 600, extra_options: dict | None = None):
     """Run a prompt, with a wall‑clock timeout (default 600 s / 10 min)."""
     with open(input_file_path, "r", encoding="utf-8", errors="replace") as f:
         raw_input = f.read()
@@ -37,6 +38,7 @@ def run_prompt(prompt_template_path, input_file_path, output_file_path, pre_proc
             input_file_path,
             pre_process_module=pre_process_module,
             models=models,
+            extra_options=extra_options,
         )
         try:
             response = future.result(timeout=timeout)
@@ -61,6 +63,47 @@ def run_prompt(prompt_template_path, input_file_path, output_file_path, pre_proc
 
     with open(output_file_path, "w", encoding="utf-8") as outfile:
         outfile.write(response)
+
+
+def run_prompt_with_metrics(
+    prompt_template_path, input_file_path, output_file_path,
+    pre_process_module=None, models=None, timeout: int = 600,
+    prompt_label: str = "",
+    extra_options: dict | None = None,
+) -> dict:
+    wall_start = datetime.now(timezone.utc)
+    run_prompt(prompt_template_path, input_file_path, output_file_path,
+               pre_process_module=pre_process_module, models=models, timeout=timeout,
+               extra_options=extra_options)
+    wall_end = datetime.now(timezone.utc)
+    wall_ms = int((wall_end - wall_start).total_seconds() * 1000)
+
+    metrics = {"wall_ms": wall_ms}
+
+    try:
+        from storyline.benchmark.llamacpp_log_parser import parse_window
+
+        records = parse_window(
+            start=wall_start - timedelta(seconds=2),
+            end=wall_end + timedelta(seconds=5),
+        )
+        meaningful = [r for r in records
+                      if r.total_tokens is not None and r.total_tokens > 50]
+        if meaningful:
+            rec = meaningful[-1]
+            metrics.update({
+                "prompt_tokens": rec.prompt_eval_tokens,
+                "eval_tokens": rec.eval_tokens,
+                "prompt_tps": rec.prompt_eval_tokens_per_sec,
+                "eval_tps": rec.eval_tokens_per_sec,
+                "server_total_ms": rec.total_time_ms,
+                "cache": rec.cache_selected_by,
+                "model_hint": rec.model_hint,
+            })
+    except Exception:
+        pass
+
+    return metrics
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Run an LLM prompt with optional pre-processing using zsp-llm-client.")

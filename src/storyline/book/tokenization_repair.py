@@ -159,55 +159,35 @@ def _is_ascii_token(text: str) -> bool:
     return all(ch in _ASCII_CHARS for ch in text)
 
 
-def build_repair_input(
-    report: ValidationReport,
-    source_sentences: list[str],
+def apply_fixes(
     raw_lines: list[str],
-) -> str:
-    """Build the input portion for a repair prompt.
-
-    Includes only the errored sentences: source text, erroneous output line,
-    and a description of the error.
-    """
-    parts = []
-    for err in report.errors:
-        idx = err.sentence_index
-        parts.append(f"[Sentence {idx}]")
-        parts.append(f"Source: {source_sentences[idx] if idx < len(source_sentences) else '(missing)'}")
-        parts.append(f"Erroneous output: {err.tokenized_line or '[MISSING]'}")
-        parts.append(f"Error: {err.detail}")
-        parts.append("")
-    return "\n".join(parts)
-
-
-def apply_repairs(
-    raw_lines: list[str],
-    repaired_text: str,
+    fix_output_text: str,
     bad_indices: list[int],
 ) -> list[str]:
-    """Splice corrected lines from the LLM repair response back into *raw_lines*.
+    """Splice fixed lines from a fix-prompt response back into *raw_lines*.
 
-    Args:
-        raw_lines: Original pipe-format lines.
-        repaired_text: Raw response from the repair LLM call.
-        bad_indices: Sorted list of sentence indices to replace.
-
-    Returns:
-        Updated line list with repairs applied.
+    The fix prompt is given only the failing sentences (stripped Chinese),
+    so its output lines map 1:1 to *bad_indices* in order.
     """
-    repaired_lines = [
-        l.strip() for l in repaired_text.strip().split("\n")
+    fix_lines = [
+        l.strip() for l in fix_output_text.strip().split("\n")
         if l.strip() and not l.strip().startswith("```")
     ]
 
-    result = list(raw_lines)
+    sorted_indices = sorted(bad_indices)
+    if len(fix_lines) != len(sorted_indices):
+        raise ValueError(
+            f"Fix output line count mismatch: expected {len(sorted_indices)}, "
+            f"got {len(fix_lines)}"
+        )
 
-    max_idx = max(bad_indices) if bad_indices else -1
+    result = list(raw_lines)
+    max_idx = max(sorted_indices) if sorted_indices else -1
     while len(result) <= max_idx:
         result.append("")
 
-    for target_idx, repaired_line in zip(sorted(bad_indices), repaired_lines):
+    for target_idx, fix_line in zip(sorted_indices, fix_lines):
         if target_idx < len(result):
-            result[target_idx] = repaired_line
+            result[target_idx] = fix_line
 
     return result

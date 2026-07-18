@@ -1,10 +1,13 @@
 import argparse
-import logging
 import os
 import re
 
+import storyline.logging
+from storyline.logging import get_logger
 from storyline.book.parse_pipe_format import parse_source_file, parse_tokenized_file
 from storyline.book.tokenization_repair import validate_full, ErrorType
+
+_log = get_logger("book.check_tokenization")
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Compare sentences between source and tokenized files.')
@@ -47,16 +50,16 @@ def compare_sentences(source_data, tokenized_data):
             mismatches.append((i, source_no_ws, reconstructed_no_ws))
     
     if len(source_data) != len(tokenized_data):
-        logging.warning(f"File has different sentence counts: source={len(source_data)}, tokenized={len(tokenized_data)}")
+        _log.warning(f"File has different sentence counts: source={len(source_data)}, tokenized={len(tokenized_data)}")
     return mismatches
 
 def main():
     args = parse_args()
-    logging.basicConfig(level=logging.INFO, format='%(message)s')
+    storyline.logging.init()
 
     file_pairs = find_matching_files(args.source_dir, args.tokenized_dir, args.prefix)
     if not file_pairs:
-        logging.warning("No matching file pairs found.")
+        _log.warning("No matching file pairs found.")
         return
 
     total_errors = 0
@@ -64,7 +67,7 @@ def main():
         try:
             source_data = parse_source_file(source_path)
         except Exception as e:
-            logging.error(f"Failed to load {source_path}: {e}")
+            _log.error(f"Failed to load {source_path}: {e}")
             continue
 
         raw_text = None
@@ -73,7 +76,7 @@ def main():
                 raw_text = f.read()
             tokenized_data = parse_tokenized_file(tokenized_path)
         except Exception as e:
-            logging.error(f"Failed to load {tokenized_path}: {e}")
+            _log.error(f"Failed to load {tokenized_path}: {e}")
             continue
 
         # Strip whitespace from source Chinese for comparison
@@ -84,23 +87,23 @@ def main():
         report = validate_full(source_sentences, tokenized_data, raw_lines)
 
         if report.is_clean:
-            logging.info(f"{filename}: OK ({len(source_sentences)} sentences)")
+            _log.info(f"{filename}: OK ({len(source_sentences)} sentences)")
             continue
 
         for err in report.errors:
-            logging.info(f"{filename}, sentence {err.sentence_index}: [{err.error_type.name}]")
+            _log.info(f"{filename}, sentence {err.sentence_index}: [{err.error_type.name}]")
             if err.source_text:
-                logging.info(f"  Source:      {err.source_text}")
+                _log.info(f"  Source:      {err.source_text}")
             if err.tokenized_line:
-                logging.info(f"  Tokenized:   {err.tokenized_line}")
-            logging.info(f"  {err.detail}")
-            logging.info("")
+                _log.info(f"  Tokenized:   {err.tokenized_line}")
+            _log.info(f"  {err.detail}")
+            _log.info("")
             total_errors += 1
 
     if total_errors == 0:
-        logging.info("All sentences validated successfully.")
+        _log.info("All sentences validated successfully.")
     else:
-        logging.info(f"Total errors found: {total_errors}")
+        _log.info(f"Total errors found: {total_errors}")
 
 if __name__ == '__main__':
     main()

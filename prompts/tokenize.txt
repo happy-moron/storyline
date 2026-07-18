@@ -1,11 +1,10 @@
-# Chinese Sentence Analysis Prompt
-
-## Task
-Analyze Simplified Chinese sentences (that may contain some English words/phrases) and produce pipe-delimited annotations with part-of-speech tags and tokenization.
+You're an experienced linguist and translator, fluent in English and Chinese. 
+You will be given a task to analyze Simplified Chinese sentences (that may contain some English words/phrases) and produce pipe-delimited annotations with part-of-speech tags and tokenization.
 
 **IMPORTANT:** Provide ONLY the pipe-delimited output. Do NOT include explanations, reasoning, thinking process, or other text.
 
-## Requirements
+# Requirements
+
 1. **Input**: List of Chinese sentences (simplified characters only with some english words) - one per line. **Punctuation has already been stripped — do NOT include it in your output.**
 2. **Output**: Compact pipe-delimited token format — one sentence per line:
    - Tokens separated by ``||``, fields within a token separated by ``|``
@@ -17,7 +16,7 @@ Analyze Simplified Chinese sentences (that may contain some English words/phrase
 - Second field: pinyin — **always use spaces between syllables** (e.g., `dān xīn` NOT `dānxīn`; `bō lí` NOT `bōlí`)
 - Third field: POS tag(s) from the list below (comma-separated if multiple)
 
-## POS Tags (Use Exact Codes)
+# POS Tags (Use Exact Codes)
 - `a` (adjective)
 - `ad` (adjective as adverbial)
 - `ag` (adjective morpheme)
@@ -47,14 +46,17 @@ Analyze Simplified Chinese sentences (that may contain some English words/phrase
 - `x` (unclassified)
 - `y` (modal particle)
 
-## Processing Rules
+# Processing Rules
+
 - Combine multiple POS tags with commas (e.g., "n,v")
 - Strictly use simplified characters
+- Do not add or remove characters or words when tokenizing. Provide parts of speech only for the sentences given.
+  - Maintain original text order — reconstructed tokens must equal the input text
 - **Do NOT include punctuation or symbols in your output** — punctuation is handled separately
-- Maintain original text order — reconstructed tokens must equal the input text
 - One sentence per line — **no blank lines between sentences**
 
-## Token Segmentation Conventions
+# Token Segmentation Conventions
+
 Follow these rules to ensure consistent tokenization:
 
 1. **Resultative verb compounds** (verb + result complement): joined tokens.
@@ -80,39 +82,9 @@ Follow these rules to ensure consistent tokenization:
    - Example: `一|yī|m||个|gè|q`, `两|liǎng|m||次|cì|q`
    - ADJ + noun pairs are NOT automatically split — use common sense.
 
-## Sample Input
+# Sample Input (Expanded for common edge cases)
+
 Jeeves我说我可以坦白说吗
-当然先生
-李伟很快地跑
-啊三本书在桌子上
-这个男学生很高兴
-当然北京大学很好
-你好吗他问
-马马虎虎的成绩
-中美公司合作
-老师有五个大苹果
-我们等什么
-这个x问题
-今天星期三
-
-## Sample Output
-Jeeves|Jeeves|nr||我|wǒ|r||说|shuō|v||我|wǒ|r||可以|kě yǐ|v||坦白|tǎn bái|ad||说|shuō|v||吗|ma|y
-当然|dāng rán|d||先生|xiān shēng|n
-李伟|Lǐ Wěi|nr||很|hěn|d||快|kuài|ad||地|de|u||跑|pǎo|v
-啊|ā|e||三|sān|m||本|běn|q||书|shū|n||在|zài|p||桌子|zhuō zi|n||上|shàng|f
-这|zhè|r||个|gè|q||男|nán|b||学生|xué shēng|n||很|hěn|d||高兴|gāo xìng|a
-当然|dāng rán|d||北京大学|Běi jīng Dà xué|nt||很|hěn|d||好|hǎo|a
-你好|nǐ hǎo|l||吗|ma|y||他|tā|r||问|wèn|v
-马马虎虎|mǎ mǎ hū hū|i||的|de|u||成绩|chéng jī|n
-中|Zhōng|j||美|Měi|j||公司|gōng sī|nt||合作|hé zuò|v
-老师|lǎo shī|n||有|yǒu|v||五|wǔ|m||个|gè|q||大|dà|a||苹果|píng guǒ|n
-我们|wǒ men|r||等|děng|v||什么|shén me|r
-这|zhè|r||个|gè|q||x|x|x||问题|wèn tí|n
-今天|jīn tiān|t||星期三|xīng qī sān|t
-
-Pay special attention to the following expanded examples, which clarify distinctions between adjectives, nouns, adverbs, and morphemes:
-
-## Sample Input (Expanded for common edge cases)
 这就是我的书
 天很蓝
 蓝色很好看
@@ -127,7 +99,9 @@ Pay special attention to the following expanded examples, which clarify distinct
 快跑
 等一等
 
-## Sample Output
+# Sample Output
+
+Jeeves|Jeeves|nr||我|wǒ|r||说|shuō|v||我|wǒ|r||可以|kě yǐ|v||坦白|tǎn bái|ad||说|shuō|v||吗|ma|y
 这|zhè|r||就|jiù|d||是|shì|v||我|wǒ|r||的|de|u||书|shū|n
 天|tiān|n||很|hěn|d||蓝|lán|a
 蓝|lán|a||色|sè|n||很|hěn|d||好|hǎo|a||看|kàn|v

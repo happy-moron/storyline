@@ -1,11 +1,15 @@
 import argparse
 import base64
 import io
+import time
 
 import requests
 from pydub import AudioSegment
 
+from storyline.logging import get_logger
 from .audiobook_gen_base import process_json_to_audio_common
+
+_log = get_logger("audio")
 
 
 class Qwen3TTSService:
@@ -20,18 +24,23 @@ class Qwen3TTSService:
         self._align_timeout = align_timeout
 
     def _post_and_decode(self, endpoint, payload):
+        t0 = time.time()
         response = self.session.post(
             f"{self.base_url}{endpoint}",
             json=payload,
             timeout=self._tts_timeout,
         )
+        elapsed_ms = int((time.time() - t0) * 1000)
         if response.status_code != 200:
             raise RuntimeError(f"TTS {endpoint} failed ({response.status_code}): {response.text}")
         data = response.json()
         audio_b64 = data.get('audio')
         if not audio_b64:
             raise RuntimeError(f"No audio in response: {data}")
-        return AudioSegment.from_file(io.BytesIO(base64.b64decode(audio_b64)))
+        audio = AudioSegment.from_file(io.BytesIO(base64.b64decode(audio_b64)))
+        _log.debug("event=tts_call endpoint=%s chars=%d duration_ms=%d audio_s=%.1f",
+                   endpoint, len(payload.get("text", "")), elapsed_ms, len(audio) / 1000.0)
+        return audio
 
     def generate_audio(self, text, language, speaker, instruct=""):
         return self._post_and_decode("/custom_voice", {
@@ -51,11 +60,13 @@ class Qwen3TTSService:
         buf.seek(0)
         audio_b64 = base64.b64encode(buf.read()).decode("utf-8")
 
+        t0 = time.time()
         response = self.session.post(
             f"{self.base_url}/forced_aligner",
             json={"audio": audio_b64, "text": text, "language": language.capitalize()},
             timeout=self._align_timeout,
         )
+        elapsed_ms = int((time.time() - t0) * 1000)
         if response.status_code != 200:
             raise RuntimeError(
                 f"Forced aligner failed ({response.status_code}): {response.text}"
@@ -64,17 +75,23 @@ class Qwen3TTSService:
         words = data.get("words", [])
         if not words:
             raise RuntimeError(f"No words in forced aligner response: {data}")
+        _log.debug("event=tts_align chars=%d words=%d duration_ms=%d",
+                   len(text), len(words), elapsed_ms)
         return words
 
     def generate_voice_clone(self, text, language, ref_audio_path, ref_text):
         with open(ref_audio_path, 'rb') as f:
             ref_audio_b64 = base64.b64encode(f.read()).decode('utf-8')
-        return self._post_and_decode("/voice_clone", {
+        t0 = time.time()
+        result = self._post_and_decode("/voice_clone", {
             "text": text,
             "language": language.capitalize(),
             "ref_audio": ref_audio_b64,
             "ref_text": ref_text
         })
+        _log.debug("event=tts_clone chars=%d duration_ms=%d",
+                   len(text), int((time.time() - t0) * 1000))
+        return result
 
 
 def generate_tts_audio(service, text, voice):
