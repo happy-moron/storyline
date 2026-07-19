@@ -10,17 +10,17 @@ model_id = "local-llamacpp"
 
 # Default llamacpp profile for tasks
 [default]
-profile = "qwen36-35b-a3b"
+profile = "gemma4-26b-a4b"
 # Optional: thinking_budget_tokens controls llama.cpp reasoning budget per request.
 # Omit or set to null to disable.
-# thinking_budget_tokens = 4096
+thinking_budget_tokens = 4096
 
 [translate]
-profile = "qwen36-35b-a3b"
+profile = "gemma4-26b-a4b"
 # thinking_budget_tokens = 4096
 
 [tokenize]
-profile = "qwen36-35b-a3b"
+profile = "gemma4-26b-a4b"
 # thinking_budget_tokens = 2048
 
 [dictionary]

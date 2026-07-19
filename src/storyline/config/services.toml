@@ -6,7 +6,7 @@
 systemd_name = "llamacpp"
 port = 11432
 health_endpoint = "http://127.0.0.1:11432/v1/models"
-start_timeout = 120
+start_timeout = 300
 stop_timeout = 60
 profile_dir = "~/llamacpp"
 

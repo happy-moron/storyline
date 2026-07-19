@@ -145091,5 +145091,729 @@
         }
       }
     ]
+  },
+  "春末": {
+    "pinyin": "chūn mò",
+    "definition": [
+      {
+        "meaning": "late spring",
+        "example": {
+          "chinese": "春末时节，花开了。",
+          "pinyin": "Chūn mò shí jié, huā kāi le.",
+          "english": "At late spring, the flowers bloomed."
+        }
+      }
+    ]
+  },
+  "骤然": {
+    "pinyin": "zhòu rán",
+    "definition": [
+      {
+        "meaning": "suddenly; all of a sudden",
+        "example": {
+          "chinese": "天气骤然变冷，大家都穿上了厚外套。",
+          "pinyin": "Tiān qì zhòu rán biàn lěng, dà jiā dōu chuān shàng le hòu wài tào.",
+          "english": "The weather suddenly turned cold, and everyone put on thick coats."
+        }
+      }
+    ]
+  },
+  "田野里": {
+    "pinyin": "tián yě lǐ",
+    "definition": [
+      {
+        "meaning": "in the fields; in the countryside",
+        "example": {
+          "chinese": "春天，田野里开满了油菜花。",
+          "pinyin": "Chūn tiān, tián yě lǐ kāi mǎn le yóu cài huā.",
+          "english": "In spring, the fields are filled with blooming rapeseed flowers."
+        }
+      }
+    ]
+  },
+  "奇特": {
+    "pinyin": "qí tè",
+    "definition": [
+      {
+        "meaning": "strange; unusual",
+        "example": {
+          "chinese": "这种植物的形状很奇特。",
+          "pinyin": "Zhè zhǒng zhí wù de xíng zhuàng hěn qí tè.",
+          "english": "The shape of this plant is very strange."
+        }
+      }
+    ]
+  },
+  "声响": {
+    "pinyin": "shēng xiǎng",
+    "definition": [
+      {
+        "meaning": "sound; noise",
+        "example": {
+          "chinese": "深夜里突然传来一阵声响。",
+          "pinyin": "Shēn yè lǐ tū rán chuán lái yī zhèn shēng xiǎng.",
+          "english": "A sudden noise came in the dead of night."
+        }
+      }
+    ]
+  },
+  "活计": {
+    "pinyin": "huó ji",
+    "definition": [
+      {
+        "meaning": "work; task; job (often referring to manual labor or household chores)",
+        "example": {
+          "chinese": "这些活计不重，半天就能做完。",
+          "pinyin": "Zhè xiē huó ji bù zhòng, bàn tiān jiù néng zuò wán.",
+          "english": "This work is not heavy; it can be finished in half a day."
+        }
+      },
+      {
+        "meaning": "stitching; sewing; needlework",
+        "example": {
+          "chinese": "她从小跟奶奶学活计。",
+          "pinyin": "Tā cóng xiǎo gēn nǎi nai xué huó ji.",
+          "english": "She learned needlework from her grandmother since childhood."
+        }
+      }
+    ]
+  },
+  "赶去": {
+    "pinyin": "gǎn qù",
+    "definition": [
+      {
+        "meaning": "to hurry to; to rush to",
+        "example": {
+          "chinese": "他赶去火车站接朋友。",
+          "pinyin": "Tā gǎn qù huǒ chē zhàn jiē péng you.",
+          "english": "He hurried to the train station to pick up his friend."
+        }
+      },
+      {
+        "meaning": "to go with the intention of making it in time",
+        "example": {
+          "chinese": "为了不迟到，我们赶紧赶去学校。",
+          "pinyin": "Wèi le bù chí dào, wǒ men gǎn jǐn gǎn qù xué xiào.",
+          "english": "To avoid being late, we hurried to the school."
+        }
+      }
+    ]
+  },
+  "村民们": {
+    "pinyin": "cūn mín men",
+    "definition": [
+      {
+        "meaning": "villagers (plural form of villager)",
+        "example": {
+          "chinese": "村民们正在广场上跳舞。",
+          "pinyin": "Cūn mín men zhèng zài guǎng chǎng shàng tiào wǔ.",
+          "english": "The villagers are dancing in the square."
+        }
+      }
+    ]
+  },
+  "石制": {
+    "pinyin": "shí zhì",
+    "definition": [
+      {
+        "meaning": "made of stone",
+        "example": {
+          "chinese": "这座古老的寺庙是石制的。",
+          "pinyin": "Zhè zuò gǔ lǎo de sì miào shì shí zhì de.",
+          "english": "This ancient temple is made of stone."
+        }
+      }
+    ]
+  },
+  "十字架旁": {
+    "pinyin": "shí zì jià páng",
+    "definition": [
+      {
+        "meaning": "beside the cross",
+        "example": {
+          "chinese": "他们在十字架旁祈祷。",
+          "pinyin": "Tā men zài shí zì jià páng qí dǎo.",
+          "english": "They prayed beside the cross."
+        }
+      }
+    ]
+  },
+  "议论": {
+    "pinyin": "yì lùn",
+    "definition": [
+      {
+        "meaning": "to discuss; to talk about; to comment on",
+        "example": {
+          "chinese": "同事们正在议论新来的经理。",
+          "pinyin": "Tóng shì men zhèng zài yì lùn xīn lái de jīng lǐ.",
+          "english": "The colleagues are discussing the new manager."
+        }
+      },
+      {
+        "meaning": "discussion; comment; criticism",
+        "example": {
+          "chinese": "这件事引起了大家的广泛议论。",
+          "pinyin": "Zhè jiàn shì yǐn qǐ le dà jiā de guǎng fàn yì lùn.",
+          "english": "This matter has caused widespread discussion among everyone."
+        }
+      }
+    ]
+  },
+  "琢磨": {
+    "pinyin": "zuó mo",
+    "definition": [
+      {
+        "meaning": "to think over; to ponder; to reflect on",
+        "example": {
+          "chinese": "这个问题我琢磨了很久。",
+          "pinyin": "Zhège wèntí wǒ zuó mo le hěn jiǔ.",
+          "english": "I have thought about this problem for a long time."
+        }
+      },
+      {
+        "meaning": "to polish (a literary work or piece of art); to refine",
+        "example": {
+          "chinese": "他正在琢磨这首诗的韵脚。",
+          "pinyin": "Tā zhèngzài zuó mo zhè shǒu shī de yùn jiǎo.",
+          "english": "He is refining the rhymes of this poem."
+        }
+      }
+    ]
+  },
+  "户": {
+    "pinyin": "hù",
+    "definition": [
+      {
+        "meaning": "door; gate",
+        "example": {
+          "chinese": "他打开户，走了出去。",
+          "pinyin": "Tā dǎ kāi hù, zǒu le chū qù.",
+          "english": "He opened the door and walked out."
+        }
+      },
+      {
+        "meaning": "household; family",
+        "example": {
+          "chinese": "这是一户普通人家。",
+          "pinyin": "Zhè shì yī hù pǔ tōng rén jiā.",
+          "english": "This is an ordinary household."
+        }
+      },
+      {
+        "meaning": "户 (surname)",
+        "example": {
+          "chinese": "我的邻居姓户。",
+          "pinyin": "Wǒ de lín jū xìng hù.",
+          "english": "My neighbor's surname is Hu."
+        }
+      }
+    ]
+  },
+  "木屋": {
+    "pinyin": "mù wū",
+    "definition": [
+      {
+        "meaning": "wooden house; cabin",
+        "example": {
+          "chinese": "我们在森林里看到了一座小木屋。",
+          "pinyin": "Wǒ men zài sēn lín lǐ kàn dào le yī zuò xiǎo mù wū.",
+          "english": "We saw a small wooden cabin in the forest."
+        }
+      }
+    ]
+  },
+  "狭长": {
+    "pinyin": "xiá cháng",
+    "definition": [
+      {
+        "meaning": "narrow and long",
+        "example": {
+          "chinese": "这条走廊非常狭长。",
+          "pinyin": "Zhè tiáo zǒu láng fēi cháng xiá cháng.",
+          "english": "This corridor is very narrow and long."
+        }
+      }
+    ]
+  },
+  "翠绿": {
+    "pinyin": "cuì lǜ",
+    "definition": [
+      {
+        "meaning": "emerald green; verdant",
+        "example": {
+          "chinese": "湖边的柳树呈现出翠绿的颜色。",
+          "pinyin": "Hú biān de liǔ shù chéng xiàn chū cuì lǜ de yán sè.",
+          "english": "The willow trees by the lake display an emerald green color."
+        }
+      }
+    ]
+  },
+  "山谷中": {
+    "pinyin": "shān gǔ zhōng",
+    "definition": [
+      {
+        "meaning": "in the valley; inside the mountain valley",
+        "example": {
+          "chinese": "清晨，山谷中弥漫着淡淡的雾气。",
+          "pinyin": "Qīng chén, shān gǔ zhōng mí màn zhe dàn dàn de wù qì.",
+          "english": "In the early morning, a light mist fills the valley."
+        }
+      },
+      {
+        "meaning": "amidst the valley (indicating location)",
+        "example": {
+          "chinese": "一座古老的庙宇隐藏在山谷中。",
+          "pinyin": "Yī zuò gǔ lǎo de miào yǔ yǐn cáng zài shān gǔ zhōng.",
+          "english": "An ancient temple is hidden in the valley."
+        }
+      }
+    ]
+  },
+  "石桥": {
+    "pinyin": "shí qiáo",
+    "definition": [
+      {
+        "meaning": "stone bridge",
+        "example": {
+          "chinese": "这座古老的石桥已经有一百年的历史了。",
+          "pinyin": "Zhè zuò gǔ lǎo de shí qiáo yǐ jīng yǒu yī bǎi nián de lì shǐ le.",
+          "english": "This ancient stone bridge is already a hundred years old."
+        }
+      }
+    ]
+  },
+  "大宅": {
+    "pinyin": "dà zhái",
+    "definition": [
+      {
+        "meaning": "large house; mansion",
+        "example": {
+          "chinese": "这座城市里有许多豪华的大宅。",
+          "pinyin": "Zhè zuò chéng shì lǐ yǒu xǔ duō háo huá de dà zhái.",
+          "english": "There are many luxurious mansions in this city."
+        }
+      }
+    ]
+  },
+  "绿树": {
+    "pinyin": "lǜ shù",
+    "definition": [
+      {
+        "meaning": "green tree(s)",
+        "example": {
+          "chinese": "公园里有很多绿树。",
+          "pinyin": "Gōng yuán lǐ yǒu hěn duō lǜ shù.",
+          "english": "There are many green trees in the park."
+        }
+      },
+      {
+        "meaning": "verdant trees; lush foliage",
+        "example": {
+          "chinese": "春天来了，山上绿树成荫。",
+          "pinyin": "Chūn tiān lái le, shān shàng lǜ shù chéng yīn.",
+          "english": "Spring has come, and the mountains are shaded by lush trees."
+        }
+      }
+    ]
+  },
+  "丘陵": {
+    "pinyin": "qiū líng",
+    "definition": [
+      {
+        "meaning": "hill; low hill",
+        "example": {
+          "chinese": "这片土地是起伏的丘陵。",
+          "pinyin": "Zhè piàn tǔ dì shì qǐ fú de qiū líng.",
+          "english": "This land consists of rolling hills."
+        }
+      }
+    ]
+  },
+  "顺手": {
+    "pinyin": "shùn shǒu",
+    "definition": [
+      {
+        "meaning": "convenient; handy (while doing something else)",
+        "example": {
+          "chinese": "出门的时候，顺手帮邻居带一下垃圾。",
+          "pinyin": "Chū mén de shí hou, shùn shǒu bāng lín jū dài yī xià lā jī.",
+          "english": "When going out, conveniently take out the trash for the neighbor."
+        }
+      },
+      {
+        "meaning": "with good timing; skillfully",
+        "example": {
+          "chinese": "他打篮球动作很顺手。",
+          "pinyin": "Tā dǎ lán qiú dòng zuò hěn shùn shǒu.",
+          "english": "His basketball movements are very smooth and skillful."
+        }
+      }
+    ]
+  },
+  "麦酒": {
+    "pinyin": "mài jiǔ",
+    "definition": [
+      {
+        "meaning": "beer; malt liquor",
+        "example": {
+          "chinese": "他喜欢在夏天喝冰镇的麦酒。",
+          "pinyin": "Tā xǐ huān zài xià tiān hē bīng zhèn de mài jiǔ.",
+          "english": "He likes to drink chilled beer in the summer."
+        }
+      }
+    ]
+  },
+  "未": {
+    "pinyin": "wèi",
+    "definition": [
+      {
+        "meaning": "not yet; still not",
+        "example": {
+          "chinese": "这件事尚未解决。",
+          "pinyin": "Zhè jiàn shì shàng wèi jiě jué.",
+          "english": "This matter has not been resolved yet."
+        }
+      },
+      {
+        "meaning": "never (used with '有' or '曾')",
+        "example": {
+          "chinese": "我未曾去过北京。",
+          "pinyin": "Wǒ wèi céng qù guò Běi jīng.",
+          "english": "I have never been to Beijing."
+        }
+      },
+      {
+        "meaning": "before (used in formal contexts to mean 'not yet done')",
+        "example": {
+          "chinese": "请勿未请自取。",
+          "pinyin": "Qǐng wù wèi qǐng zì qǔ.",
+          "english": "Please do not take without asking."
+        }
+      }
+    ]
+  },
+  "村中": {
+    "pinyin": "cūn zhōng",
+    "definition": [
+      {
+        "meaning": "in the village; within the village",
+        "example": {
+          "chinese": "村中有一条清澈的小河。",
+          "pinyin": "Cūn zhōng yǒu yī tiáo qīng chè de xiǎo hé.",
+          "english": "There is a clear little river in the village."
+        }
+      }
+    ]
+  },
+  "出自": {
+    "pinyin": "chū zì",
+    "definition": [
+      {
+        "meaning": "to come from; to originate from (often used for quotes, allusions, or sources)",
+        "example": {
+          "chinese": "这句话出自《论语》。",
+          "pinyin": "Zhè jù huà chū zì 《Lún Yǔ》.",
+          "english": "This sentence comes from the Analects."
+        }
+      },
+      {
+        "meaning": "to stem from; to result from",
+        "example": {
+          "chinese": "他的成功出自不懈的努力。",
+          "pinyin": "Tā de chéng gōng chū zì bù xiè de nǔ lì.",
+          "english": "His success stems from unremitting effort."
+        }
+      }
+    ]
+  },
+  "午后": {
+    "pinyin": "wǔ hòu",
+    "definition": [
+      {
+        "meaning": "afternoon; after noon",
+        "example": {
+          "chinese": "午后的阳光很温暖。",
+          "pinyin": "Wǔ hòu de yáng guāng hěn wēn nuǎn.",
+          "english": "The afternoon sunshine is very warm."
+        }
+      }
+    ]
+  },
+  "庄园": {
+    "pinyin": "zhuāng yuán",
+    "definition": [
+      {
+        "meaning": "manor; estate",
+        "example": {
+          "chinese": "他们在郊区拥有一座美丽的庄园。",
+          "pinyin": "Tā men zài jiāo qū yōng yǒu yī zuò měi lì de zhuāng yuán.",
+          "english": "They own a beautiful manor in the suburbs."
+        }
+      },
+      {
+        "meaning": "vineyard",
+        "example": {
+          "chinese": "这家酒庄的葡萄庄园位于山谷中。",
+          "pinyin": "Zhè jiā jiǔ zhuāng de pú táo zhuāng yuán wèi yú shān gǔ zhōng.",
+          "english": "The vineyard of this winery is located in the valley."
+        }
+      }
+    ]
+  },
+  "蹊跷": {
+    "pinyin": "qī qiāo",
+    "definition": [
+      {
+        "meaning": "suspicious; queer; strange",
+        "example": {
+          "chinese": "这件事很蹊跷，我们需要仔细调查。",
+          "pinyin": "Zhè jiàn shì hěn qī qiāo, wǒ men xū yào zǐ xì diào chá.",
+          "english": "This matter is very suspicious; we need to investigate carefully."
+        }
+      }
+    ]
+  },
+  "河畔": {
+    "pinyin": "hé pàn",
+    "definition": [
+      {
+        "meaning": "river bank; river shore",
+        "example": {
+          "chinese": "我们喜欢在河畔散步。",
+          "pinyin": "Wǒ men xǐ huān zài hé pàn sàn bù.",
+          "english": "We like to take strolls by the river."
+        }
+      }
+    ]
+  },
+  "早些": {
+    "pinyin": "zǎo xiē",
+    "definition": [
+      {
+        "meaning": "earlier; sooner",
+        "example": {
+          "chinese": "请早些来，不要迟到。",
+          "pinyin": "Qǐng zǎo xiē lái, bù yào chǐ dào.",
+          "english": "Please come earlier, don't be late."
+        }
+      }
+    ]
+  },
+  "赶来": {
+    "pinyin": "gǎn lái",
+    "definition": [
+      {
+        "meaning": "to hurry over; to rush to arrive",
+        "example": {
+          "chinese": "听到消息后，大家立刻赶来了。",
+          "pinyin": "Tīng dào xiāo xi hòu, dà jiā lì kè gǎn lái le.",
+          "english": "Hearing the news, everyone rushed over immediately."
+        }
+      }
+    ]
+  },
+  "迫在眉睫": {
+    "pinyin": "pò zài méi jié",
+    "definition": [
+      {
+        "meaning": "imminent; impending; on the verge of happening; pressing",
+        "example": {
+          "chinese": "环保问题迫在眉睫，我们必须立即采取行动。",
+          "pinyin": "Huán bǎo wèn tí pò zài méi jié, wǒ men bì xū lì jí cǎi qǔ xíng dòng.",
+          "english": "Environmental issues are pressing, we must take action immediately."
+        }
+      }
+    ]
+  },
+  "赏金": {
+    "pinyin": "shǎng jīn",
+    "definition": [
+      {
+        "meaning": "bounty; reward",
+        "example": {
+          "chinese": "警察悬赏十万赏金来抓捕这名逃犯。",
+          "pinyin": "Jǐng chá xuán shǎng shí wàn shǎng jīn lái zhuā bǔ zhè míng táo fàn.",
+          "english": "The police offered a 100,000 bounty to capture this fugitive."
+        }
+      }
+    ]
+  },
+  "死了": {
+    "pinyin": "sǐ le",
+    "definition": [
+      {
+        "meaning": "to be dead; to have died",
+        "example": {
+          "chinese": "那只可怜的猫昨天死了。",
+          "pinyin": "Nà zhī kě lián de māo zuó tiān sǐ le.",
+          "english": "That poor cat died yesterday."
+        }
+      },
+      {
+        "meaning": "used as an intensifier to mean 'very' or 'extremely'",
+        "example": {
+          "chinese": "今天热死了。",
+          "pinyin": "Jīn tiān rè sǐ le.",
+          "english": "It is extremely hot today."
+        }
+      }
+    ]
+  },
+  "改换": {
+    "pinyin": "gǎi huàn",
+    "definition": [
+      {
+        "meaning": "to change; to replace; to alter",
+        "example": {
+          "chinese": "他改换了工作，去了一家大公司。",
+          "pinyin": "Tā gǎi huàn le gōng zuò, qù le yī jiā dà gōng sī.",
+          "english": "He changed jobs and went to a big company."
+        }
+      },
+      {
+        "meaning": "to turn over; to transform (usually appearance or situation)",
+        "example": {
+          "chinese": "经过修缮，这座老建筑改换了旧貌。",
+          "pinyin": "Jīng guò xiū shàn, zhè zuò lǎo jiàn zhù gǎi huàn le jiù mào.",
+          "english": "After renovation, this old building has completely changed its appearance."
+        }
+      }
+    ]
+  },
+  "阵营": {
+    "pinyin": "zhèn yíng",
+    "definition": [
+      {
+        "meaning": "camp; faction; side (in a conflict or dispute)",
+        "example": {
+          "chinese": "他站在正义的阵营一边。",
+          "pinyin": "Tā zhàn zài zhèng yì de zhèn yíng yī biān.",
+          "english": "He stood on the side of the justice camp."
+        }
+      },
+      {
+        "meaning": "group with common interests or views",
+        "example": {
+          "chinese": "他们加入了反对该政策的阵营。",
+          "pinyin": "Tāmen jiā rù le fǎn duì gāi zhèng cè de zhèn yíng.",
+          "english": "They joined the faction opposing the policy."
+        }
+      }
+    ]
+  },
+  "渴望": {
+    "pinyin": "kě wàng",
+    "definition": [
+      {
+        "meaning": "to long for; to yearn for; to crave",
+        "example": {
+          "chinese": "他渴望得到父母的认可。",
+          "pinyin": "Tā kě wàng dé dào fù mǔ de rèn kě.",
+          "english": "He longs for his parents' approval."
+        }
+      },
+      {
+        "meaning": "eager; keen (to do something)",
+        "example": {
+          "chinese": "学生们渴望学习新知识。",
+          "pinyin": "Xué shēng men kě wàng xué xí xīn zhī shi.",
+          "english": "The students are eager to learn new knowledge."
+        }
+      }
+    ]
+  },
+  "笑了起来": {
+    "pinyin": "xiào qǐ lái le",
+    "definition": [
+      {
+        "meaning": "to start laughing; burst out laughing",
+        "example": {
+          "chinese": "看到小丑滑稽的表演，观众都笑了起来。",
+          "pinyin": "Kàn dào xiǎo chǒu huá jī de biǎo yǎn, guān zhòng dōu xiào qǐ lái le.",
+          "english": "Seeing the clown's funny performance, the audience burst out laughing."
+        }
+      }
+    ]
+  },
+  "一贫如洗": {
+    "pinyin": "yī pín rú xǐ",
+    "definition": [
+      {
+        "meaning": "to be as poor as a dog; to have not a penny to one's name; destitute",
+        "example": {
+          "chinese": "他虽然一贫如洗，但精神非常富足。",
+          "pinyin": "Tā suī rán yī pín rú xǐ, dàn jīng shén fēi cháng fù zú.",
+          "english": "Although he was extremely poor, his spirit was very abundant."
+        }
+      }
+    ]
+  },
+  "窘迫": {
+    "pinyin": "jiǒng pò",
+    "definition": [
+      {
+        "meaning": "in a difficult or awkward position; embarrassed; in dire straits",
+        "example": {
+          "chinese": "他的经济状况非常窘迫，不得不向朋友借钱。",
+          "pinyin": "Tā de jīng jì zhuàng kuàng fēi cháng jiǒng pò, bù dé bù xiàng péng you jiè qián.",
+          "english": "His financial situation was very difficult, and he had no choice but to borrow money from a friend."
+        }
+      },
+      {
+        "meaning": "feeling awkward or uncomfortable due to a situation",
+        "example": {
+          "chinese": "面对记者的提问，他显得十分窘迫。",
+          "pinyin": "Miàn duì jì zhě de tí wèn, tā xiǎn de shí fēn jiǒng pò.",
+          "english": "Faced with the reporter's questions, he seemed extremely embarrassed."
+        }
+      }
+    ]
+  },
+  "反复无常": {
+    "pinyin": "fǎn fù wú cháng",
+    "definition": [
+      {
+        "meaning": "fickle; inconstant; changeable",
+        "example": {
+          "chinese": "他的脾气反复无常，让人很难相处。",
+          "pinyin": "Tā de pí qì fǎn fù wú cháng, ràng rén hěn nán xiāng chǔ.",
+          "english": "His temper is fickle, making him difficult to get along with."
+        }
+      },
+      {
+        "meaning": "unstable; irregular (in weather, mood, etc.)",
+        "example": {
+          "chinese": "最近天气反复无常，出门记得带伞。",
+          "pinyin": "Zuì jìn tiān qì fǎn fù wú cháng, chū mén jì de dài sǎn.",
+          "english": "The weather has been unstable recently; remember to bring an umbrella when you go out."
+        }
+      }
+    ]
+  },
+  "显赫": {
+    "pinyin": "xiǎn hè",
+    "definition": [
+      {
+        "meaning": "prominent; distinguished; illustrious (referring to high status, influence, or fame)",
+        "example": {
+          "chinese": "他出身于一个显赫的家族。",
+          "pinyin": "Tā chū shēn yú yī gè xiǎn hè de jiā zú.",
+          "english": "He comes from a prominent family."
+        }
+      }
+    ]
+  },
+  "最先": {
+    "pinyin": "zuì xiān",
+    "definition": [
+      {
+        "meaning": "first; earliest; at the very beginning",
+        "example": {
+          "chinese": "他最先到达学校。",
+          "pinyin": "Tā zuì xiān dào dá xué xiào.",
+          "english": "He was the first to arrive at school."
+        }
+      }
+    ]
   }
 }

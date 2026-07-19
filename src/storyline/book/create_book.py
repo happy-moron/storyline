@@ -67,7 +67,7 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
                 service_manager: ServiceManager | None = None):
 
     book = os.path.splitext(os.path.basename(input_text))[0]
-    run_id = storyline.logging.init(run_id=f"{book}_{config.profile_name or 'default'}")
+    storyline.logging.init()
     log = get_logger("book")
 
     t_pipeline_start = time.time()
