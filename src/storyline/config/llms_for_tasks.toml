@@ -10,21 +10,26 @@ model_id = "local-llamacpp"
 
 # Default llamacpp profile for tasks
 [default]
-profile = "gemma4-26b-a4b"
+profile = "qwen36-35b-a3b-nothink-mtp"
+
+# profile = "gemma4-26b-a4b"
 # Optional: thinking_budget_tokens controls llama.cpp reasoning budget per request.
 # Omit or set to null to disable.
 thinking_budget_tokens = 4096
 
 [translate]
-profile = "gemma4-26b-a4b"
+profile = "qwen36-35b-a3b-nothink-mtp"
+# profile = "gemma4-26b-a4b"
 # thinking_budget_tokens = 4096
 
 [tokenize]
-profile = "gemma4-26b-a4b"
+profile = "qwen36-35b-a3b-nothink-mtp"
+# profile = "gemma4-26b-a4b"
 # thinking_budget_tokens = 2048
 
 [dictionary]
-profile = "qwen36-35b-a3b-nothink"
+profile = "qwen36-35b-a3b-nothink-mtp"
+# profile = "qwen36-35b-a3b-nothink"
 # No thinking_budget_tokens = no reasoning budget sent
 
 [check_translation]

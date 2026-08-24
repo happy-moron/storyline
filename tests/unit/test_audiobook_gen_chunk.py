@@ -6,36 +6,8 @@ import pytest
 
 from storyline.audio.audiobook_gen_chunk import (
     compute_line_timestamps,
-    _word_count,
     _get_chunk_voice,
 )
-
-
-# ---------------------------------------------------------------------------
-# _word_count
-# ---------------------------------------------------------------------------
-
-class TestWordCount:
-    def test_chinese_counts_chars_excluding_cjk_punct(self):
-        assert _word_count("你好。", "zh") == 2  # excludes 。
-        assert _word_count("谢谢！", "zh") == 2  # excludes ！
-        assert _word_count("", "zh") == 0
-
-    def test_chinese_ignores_whitespace(self):
-        assert _word_count("你好 。", "zh") == 2  # excludes 。
-        assert _word_count("  你好  ", "zh") == 2
-
-    def test_chinese_cjk_punct_only(self):
-        assert _word_count("。！？", "zh") == 0
-        assert _word_count("，", "zh") == 0
-
-    def test_chinese_mixed(self):
-        assert _word_count("你好，世界！", "zh") == 4  # 你,好,世,界
-
-    def test_english_counts_words(self):
-        assert _word_count("Hello world.", "en") == 2
-        assert _word_count("Thank you very much.", "en") == 4
-        assert _word_count("", "en") == 0
 
 
 # ---------------------------------------------------------------------------
@@ -169,18 +141,16 @@ class TestComputeLineTimestamps:
         assert total <= len(words)
 
     def test_fewer_words_than_expected(self):
-        """When aligner returns fewer words, last lines get audio_duration end."""
+        """When aligner returns fewer words, trailing lines get 0 words."""
         words = [
             {"text": "你", "start_time": 0.1, "end_time": 0.3},
             {"text": "好", "start_time": 0.4, "end_time": 0.6},
         ]
-        lines = ["你", "好", "吗", "？"]  # 4 lines: expects 1+1+1+0=3 words, only 2 from aligner
+        lines = ["你", "好", "吗", "？"]  # 4 lines; ？strips to empty, 吗 mismatched
         result = compute_line_timestamps(words, lines, audio_duration=1.0, language="zh")
         assert len(result) == 4
-        # First 2 lines get real timestamps
         assert result[0]["word_count"] == 1
         assert result[1]["word_count"] == 1
-        # Remaining lines get 0 words each (？excluded by _word_count)
         assert result[2]["word_count"] == 0
         assert result[3]["word_count"] == 0
 

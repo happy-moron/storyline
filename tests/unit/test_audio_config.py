@@ -83,7 +83,7 @@ class TestAudioTomlConfig:
     # -- load_profile_from_toml --
 
     def test_load_profile_from_toml_default(self):
-        sequence_steps, pause_ms = load_profile_from_toml("default")
+        sequence_steps, pause_ms, use_instruct = load_profile_from_toml("default")
         assert len(sequence_steps) > 0, "Expected non-empty sequence steps"
         for step in sequence_steps:
             assert "lang" in step
@@ -91,6 +91,7 @@ class TestAudioTomlConfig:
             assert "voice_name" in step
             assert "speed" in step
         assert isinstance(pause_ms, (int, float))
+        assert isinstance(use_instruct, bool)
 
     def test_load_profile_from_toml_invalid_raises(self):
         with pytest.raises(KeyError):

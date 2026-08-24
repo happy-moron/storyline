@@ -20,8 +20,6 @@ from .audiobook_gen_base import change_tempo, load_profile_from_toml, build_id3_
 from .audiobook_gen_qwen3 import generate_tts_audio, Qwen3TTSService
 from storyline.book.parse_pipe_format import parse_source_file
 from storyline.book.parse_chunk_format import load_chunks_json
-from storyline.book.cjk_punct import CJK_PUNCT
-
 _log = get_logger("audio")
 
 CONFIG_DIR = Path(__file__).resolve().parent.parent / "config"
@@ -46,51 +44,95 @@ def _get_chunk_voice(language: str, profile_key: str = "default") -> dict:
     raise KeyError(f"No voice for language '{language}' in profile '{profile_key}'")
 
 
-def _word_count(text: str, language: str) -> int:
-    if language == "zh":
-        clean = "".join(text.split())
-        return len([ch for ch in clean if ch not in CJK_PUNCT])
-    else:
-        return len(text.split())
-
-
 # ---------------------------------------------------------------------------
 # Line timestamp calculation
 # ---------------------------------------------------------------------------
 
 
-def compute_line_timestamps(
+def _build_clean_text_zh(text: str) -> str:
+    """Normalize Chinese text for character-level matching.
+
+    Removes whitespace and CJK punctuation so that aligner word characters
+    can be matched against cleaned source line characters one-to-one.
+    """
+    from storyline.book.cjk_punct import CJK_PUNCT
+    clean = "".join(text.split())
+    return "".join(ch for ch in clean if ch not in CJK_PUNCT)
+
+
+def _compute_zh_line_timestamps(
     words: list[dict],
     lines: list[str],
     audio_duration: float,
-    language: str,
 ) -> list[dict]:
-    """Calculate per-line start/end timestamps from forced-alignment word data.
+    """Character-level line-boundary detection for Chinese.
 
-    Boundary between lines: (last_word_of_line.end_time + first_word_of_next.start_time) / 2.
-    First line starts at 0.0; last line ends at audio_duration.
+    Accumulates aligner word text (stripped of whitespace + CJK_PUNCT) and
+    matches against cleaned source line text.  This handles multi-byte tokens
+    like "Jeeves" (6 chars but 1 aligner token) correctly.
     """
-    if not lines:
-        return []
+    full_text = "".join(lines)
+    clean_full = _build_clean_text_zh(full_text)
 
-    if len(lines) == 1:
-        return [{"start": 0.0, "end": audio_duration, "word_count": _word_count(lines[0], language)}]
+    line_end_chars: list[int] = []
+    pos = 0
+    for line in lines:
+        pos += len(_build_clean_text_zh(line))
+        line_end_chars.append(pos)
 
-    line_word_counts = [_word_count(l, language) for l in lines]
+    accumulated = ""
+    word_idx = 0
+    line_boundaries: list[tuple[int, int]] = []
+
+    for boundary_char in line_end_chars[:-1]:
+        while word_idx < len(words) and len(accumulated) < boundary_char:
+            accumulated += _build_clean_text_zh(words[word_idx]["text"])
+            word_idx += 1
+
+        if word_idx == 0:
+            line_boundaries.append((-1, 0))
+        elif word_idx >= len(words) and len(accumulated) < boundary_char:
+            line_boundaries.append((len(words) - 1, -1))
+        else:
+            line_boundaries.append((word_idx - 1, word_idx))
+
+    expected_char = len(clean_full)
+    if abs(len(accumulated) - expected_char) > expected_char * 0.15:
+        _log.warning(
+            "Alignment text mismatch: text=%d chars, aligner accum=%d chars",
+            expected_char, len(accumulated),
+        )
+
+    return _build_line_results(words, lines, line_boundaries, audio_duration)
+
+
+def _compute_en_line_timestamps(
+    words: list[dict],
+    lines: list[str],
+    audio_duration: float,
+) -> list[dict]:
+    """Word-level line-boundary detection for English.
+
+    Uses ``text.split()`` to count words per line (same tokenisation the
+    ForcedAligner produces) and distributes aligner word tokens accordingly.
+    """
+    line_word_counts = [len(line.split()) for line in lines]
     total = sum(line_word_counts)
+
     if total != len(words):
         _log.warning(
             "Word count mismatch: text=%d words, aligner=%d words. Clamping.",
             total, len(words),
         )
 
-    results: list[dict] = []
     word_pos = 0
+    results: list[dict] = []
 
     for i, line in enumerate(lines):
         n = line_word_counts[i]
         remaining = len(words) - word_pos
         n = max(0, min(n, remaining))
+
         if n <= 0 or word_pos >= len(words):
             prev_end = results[-1]["end"] if results else 0.0
             results.append({"start": prev_end, "end": prev_end, "word_count": 0})
@@ -101,7 +143,6 @@ def compute_line_timestamps(
 
         start_time = 0.0 if i == 0 else results[-1]["end"]
 
-        # If no words remain after this line, treat it as the last line
         if i == len(lines) - 1 or word_pos + n >= len(words):
             end_time = audio_duration
         else:
@@ -114,6 +155,81 @@ def compute_line_timestamps(
     return results
 
 
+def _build_line_results(
+    words: list[dict],
+    lines: list[str],
+    line_boundaries: list[tuple[int, int]],
+    audio_duration: float,
+) -> list[dict]:
+    """Convert (last_idx, next_idx) boundaries into per-line timestamp dicts."""
+    results: list[dict] = []
+    prev_end = 0.0
+
+    for i in range(len(lines)):
+        if i == 0:
+            start_time = 0.0
+            first_word_idx = 0
+        else:
+            start_time = prev_end
+            _, next_idx = line_boundaries[i - 1]
+            first_word_idx = len(words) if next_idx < 0 else next_idx
+
+        if i == len(lines) - 1:
+            end_time = audio_duration
+            last_word_idx = len(words) - 1
+        else:
+            last_idx, next_idx = line_boundaries[i]
+            if last_idx < 0 or next_idx < 0 or next_idx >= len(words):
+                end_time = audio_duration
+                last_word_idx = last_idx if last_idx >= 0 else (len(words) - 1 if words else 0)
+            else:
+                end_time = (words[last_idx]["end_time"] + words[next_idx]["start_time"]) / 2.0
+                last_word_idx = last_idx
+
+        if not words or first_word_idx >= len(words):
+            n_words = 0
+        elif i == len(lines) - 1:
+            n_words = len(words) - first_word_idx
+        else:
+            n_words = last_word_idx - first_word_idx + 1
+        n_words = max(0, n_words)
+
+        results.append({
+            "start": round(start_time, 3),
+            "end": round(end_time, 3),
+            "word_count": n_words,
+        })
+        prev_end = end_time
+
+    return results
+
+
+def compute_line_timestamps(
+    words: list[dict],
+    lines: list[str],
+    audio_duration: float,
+    language: str,
+) -> list[dict]:
+    """Calculate per-line start/end timestamps from forced-alignment word data.
+
+    Uses character-level matching for Chinese (which handles multi-byte
+    tokens like "Jeeves") and word-level matching for English.
+
+    Boundary between lines: (last_word_of_line.end_time + first_word_of_next.start_time) / 2.
+    First line starts at 0.0; last line ends at audio_duration.
+    """
+    if not lines:
+        return []
+
+    if len(lines) == 1:
+        return [{"start": 0.0, "end": audio_duration, "word_count": len(words)}]
+
+    if language == "zh":
+        return _compute_zh_line_timestamps(words, lines, audio_duration)
+    else:
+        return _compute_en_line_timestamps(words, lines, audio_duration)
+
+
 # ---------------------------------------------------------------------------
 # Chunk-level TTS + alignment
 # ---------------------------------------------------------------------------
@@ -124,8 +240,12 @@ def _generate_chunk_tts(
     text: str,
     voice: dict,
     instruct: str,
+    use_instruct: bool = True,
 ) -> AudioSegment:
-    """Generate TTS audio for a chunk, passing the chunk instruct."""
+    """Generate TTS audio for a chunk.
+
+    When *use_instruct* is False, the chunk @instruct is suppressed.
+    """
     mode = voice["mode"]
     language = voice["language"]
 
@@ -133,7 +253,7 @@ def _generate_chunk_tts(
         return service.generate_audio(
             text, language,
             speaker=voice["speaker"],
-            instruct=instruct,
+            instruct=instruct if use_instruct else "",
         )
     elif mode == "voice_clone":
         return service.generate_voice_clone(
@@ -173,6 +293,7 @@ def process_chapter_chunks(
     author: str = "",
     service: Qwen3TTSService | None = None,
     bitrate: str = "64k",
+    use_instruct: bool | None = None,
 ) -> None:
     """Generate chunk-based audio for one chapter.
 
@@ -203,6 +324,12 @@ def process_chapter_chunks(
 
     zh_voice = _get_chunk_voice("zh", profile_key)
     en_voice = _get_chunk_voice("en", profile_key)
+
+    # Resolve use_instruct: explicit override > audio.toml profile > False
+    if use_instruct is None:
+        use_instruct = _load_audio_toml().get("profiles", {}).get(
+            profile_key, {}
+        ).get("use_instruct", False)
 
     chapter_stem = source_txt_path.stem
 
@@ -242,11 +369,11 @@ def process_chapter_chunks(
         _log.info("    en[%d]: %s", start, en_text_sample)
 
         # -- Chinese TTS + alignment --
-        zh_audio_path = chapters_audio_dir / f"{chapter_stem}_zh_{ci:02d}.mp3"
+        zh_audio_path = chapters_audio_dir / f"{ci:03d}_{chapter_stem}_zh.mp3"
         zh_chars = len(zh_text)
         if not zh_audio_path.exists():
             t_zh_tts = time.time()
-            zh_audio = _generate_chunk_tts(service, zh_text, zh_voice, instruct_zh)
+            zh_audio = _generate_chunk_tts(service, zh_text, zh_voice, instruct_zh, use_instruct)
             zh_tts_ms = int((time.time() - t_zh_tts) * 1000)
             _log.info("event=audio_chunk chapter=%s chunk=%d/%d lang=zh chars=%d duration_ms=%d",
                       chapter_stem, ci + 1, len(chunk_defs), zh_chars, zh_tts_ms)
@@ -269,11 +396,11 @@ def process_chapter_chunks(
         zh_line_ts = compute_line_timestamps(zh_words, zh_lines, zh_duration, "zh")
 
         # -- English TTS + alignment --
-        en_audio_path = chapters_audio_dir / f"{chapter_stem}_en_{ci:02d}.mp3"
+        en_audio_path = chapters_audio_dir / f"{ci:03d}_{chapter_stem}_en.mp3"
         en_chars = len(en_text)
         if not en_audio_path.exists():
             t_en_tts = time.time()
-            en_audio = _generate_chunk_tts(service, en_text, en_voice, instruct_en)
+            en_audio = _generate_chunk_tts(service, en_text, en_voice, instruct_en, use_instruct)
             en_tts_ms = int((time.time() - t_en_tts) * 1000)
             _log.info("event=audio_chunk chapter=%s chunk=%d/%d lang=en chars=%d duration_ms=%d",
                       chapter_stem, ci + 1, len(chunk_defs), en_chars, en_tts_ms)
@@ -296,8 +423,8 @@ def process_chapter_chunks(
         en_line_ts = compute_line_timestamps(en_words, en_lines, en_duration, "en")
 
         # -- Update chunk metadata --
-        chunk["audio_zh"] = f"{chapter_stem}_zh_{ci:02d}.mp3"
-        chunk["audio_en"] = f"{chapter_stem}_en_{ci:02d}.mp3"
+        chunk["audio_zh"] = f"{ci:03d}_{chapter_stem}_zh.mp3"
+        chunk["audio_en"] = f"{ci:03d}_{chapter_stem}_en.mp3"
         chunk["lines"] = []
         for i, (zh_ts, en_ts) in enumerate(zip(zh_line_ts, en_line_ts)):
             chunk["lines"].append({
@@ -352,7 +479,7 @@ def _build_aggregate_audiobook(
     Uses line timestamps to extract individual sentence audio slices,
     applies speed changes, and assembles in the profile's cadence pattern.
     """
-    sequence_steps, pause_ms = load_profile_from_toml(profile_key)
+    sequence_steps, pause_ms, _use_instruct = load_profile_from_toml(profile_key)
 
     final = AudioSegment.empty()
 

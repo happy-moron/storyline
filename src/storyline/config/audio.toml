@@ -12,10 +12,10 @@
 
 # -- Pretrained speakers (custom_voice) --
 
-[voices.vivian]
+[voices.serena]
 mode = "custom_voice"
 language = "chinese"
-speaker = "Vivian"
+speaker = "Serena"
 instruct = ""
 
 [voices.ryan]
@@ -56,17 +56,19 @@ ref_text = "嗯听着倒是个不错的主意但南方的气候我实在不敢�
 # pause_ms:  silence (ms) between steps within a sentence.
 
 [profiles.default]
+use_instruct = false
 pause_ms = 300
 sequence = [
-  { lang = "zh", voice = "vivian", speed = 0.8 },
+  { lang = "zh", voice = "serena", speed = 0.8 },
   { lang = "en", voice = "ryan", speed = 1.0 },
-  { lang = "zh", voice = "vivian", speed = 0.9 },
+  { lang = "zh", voice = "serena", speed = 0.9 },
   { lang = "en", voice = "ryan", speed = 1.0 },
-  { lang = "zh", voice = "vivian", speed = 1.0 },
+  { lang = "zh", voice = "serena", speed = 1.0 },
   { lang = "en", voice = "ryan", speed = 1.0 },
 ]
 
 [profiles.voice-clone]
+use_instruct = false
 pause_ms = 300
 sequence = [
   { lang = "zh", voice = "ann", speed = 0.8 },

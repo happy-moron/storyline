@@ -355,10 +355,11 @@ def audio_stage(source_txt_path: Path, english_input: Path,
     if chunk_json_path.exists():
         process_chapter_chunks(
             source_txt_path, english_input, chunk_json_path,
-            chapters_audio_dir=str(chunks_dir),
+            chapters_audio_dir=str(audio_dir),
             aggregate_output_path=str(audiobook_mp3_path),
             profile_key=config.audio_profile,
             book=book, author=author,
+            use_instruct=config.audio_use_instruct,
         )
     else:
         process_json_to_audio(
@@ -449,7 +450,7 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
     dictionary = load_dictionary(config.dict_file)
 
     # -- Per-chapter stages --
-    for source_file in chapter_files:
+    for chapter_idx, source_file in enumerate(chapter_files):
         stem = os.path.splitext(os.path.basename(source_file))[0]
         log.info("processing %s", stem)
 
@@ -514,7 +515,7 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
         if not config.skip_audio:
             os.makedirs(audio_dir, exist_ok=True)
             os.makedirs(audiobook_dir, exist_ok=True)
-            audiobook_mp3_path = Path(audiobook_dir) / f"{stem}.mp3"
+            audiobook_mp3_path = Path(audiobook_dir) / f"{chapter_idx:03d}_{stem}.mp3"
             if not audiobook_mp3_path.exists():
                 n_chunks = audio_stage(
                     pipe_output_path, stage_input, chunk_json_path,
@@ -580,6 +581,12 @@ if __name__ == '__main__':
     parser.add_argument(
         '--audio-profile', default=None,
         help='Audio profile from audio.toml (e.g. default, voice-clone)',
+    )
+    parser.add_argument(
+        '--audio-use-instruct', default=None,
+        action=argparse.BooleanOptionalAction,
+        dest='audio_use_instruct',
+        help='Pass chunk @instruct directions to TTS engine (overrides audio.toml)',
     )
     args = parser.parse_args()
 

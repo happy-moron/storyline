@@ -196,7 +196,7 @@ RE_RELEASE = re.compile(
 
 RE_SELECTED_LRU = re.compile(r"selected slot by LRU, t_last\s*=\s*(?P<t_last>-?\d+)")
 RE_SELECTED_LCP = re.compile(
-    r"selected slot by LCP similarity, sim_best\s*=\s*(?P<sim>[\d.]+)\s*"
+    r"selected slot by LCP similarity, f_sim_best\s*=\s*(?P<sim>[\d.]+)\s*"
     r"\(>\s*[\d.]+\s*thold\),\s*f_keep\s*=\s*(?P<f_keep>[\d.]+)"
 )
 
@@ -367,10 +367,16 @@ def fetch_logs(
     until: Optional[str] = None,
     lines: Optional[int] = None,
 ) -> str:
-    """Run journalctl and return the raw log text (short-iso format)."""
+    """Run journalctl and return the raw log text (cat format — no prefix).
+
+    We use ``-o cat`` (message-only) so that native-format timestamps
+    (e.g. ``1.44.356.190``) appear at the start of each line, matching
+    the parser's ``RE_NATIVE_LINE``.  journalctl's ``--since`` / ``--until``
+    still filter by wall-clock time at the source.
+    """
     cmd = ["journalctl"]
     cmd += ["--user"] if user_scope else []
-    cmd += ["-u", unit, "--no-pager", "-o", "short-iso"]
+    cmd += ["-u", unit, "--no-pager", "-o", "cat"]
     if since:
         cmd += ["--since", since]
     if until:

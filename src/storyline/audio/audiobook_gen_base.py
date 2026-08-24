@@ -100,7 +100,7 @@ def process_json_to_audio_common(input_file, output_file, profile_key="default",
                                  sentence_pause=800, standalone_file=None,
                                  generate_tts_fn=None, bitrate: str = "64k",
                                  book: str = "", author: str = ""):
-    sequence_steps, pause_ms = load_profile_from_toml(profile_key)
+    sequence_steps, pause_ms, _use_instruct = load_profile_from_toml(profile_key)
 
     sentences = parse_source_file(input_file)
 
@@ -133,6 +133,8 @@ def load_profile_from_toml(profile_key="default"):
     sequence = profile.get("sequence", [])
     pause_ms = profile.get("pause_ms", 300)
 
+    use_instruct = profile.get("use_instruct", False)
+
     if not sequence:
         raise KeyError(f"Profile '{profile_key}' not found or has no sequence in audio.toml")
 
@@ -154,4 +156,4 @@ def load_profile_from_toml(profile_key="default"):
             "speed": step.get("speed", 1.0),
         })
 
-    return sequence_steps, pause_ms
+    return sequence_steps, pause_ms, use_instruct

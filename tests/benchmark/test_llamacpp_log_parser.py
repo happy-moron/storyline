@@ -97,7 +97,7 @@ class TestParseNative:
     def test_cache_lcp_selection(self):
         log_text = (
             "1.01.276.000 I slot launch_slot_: id  3 | task -1 | "
-            "selected slot by LCP similarity, sim_best = 0.95 (> 0.3 thold), f_keep = 0.8\n"
+            "selected slot by LCP similarity, f_sim_best = 0.95 (> 0.3 thold), f_keep = 0.8\n"
             "1.01.276.100 I srv  update_slots: prompt cache update took 50.0 ms\n"
             "1.01.276.446 I slot launch_slot_: id  3 | task 0 | \n"
             "1.01.276.500 I slot print_timing: id  3 | task 0 | "

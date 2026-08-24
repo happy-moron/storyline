@@ -143,6 +143,43 @@ pytest --run-integration --run-slow
 
 See [AGENTS.md](AGENTS.md) for testing guidelines and terminology.
 
+## Utility Scripts
+
+### `scripts/voice_design.py` — Generate voice-design audio samples
+
+Designs a custom voice from a natural-language instruction and generates a short audio sample using the TTS server's `/voice_design` endpoint.
+
+**Usage:**
+```bash
+# English (uses ~/temp/audio/clones/reference-30s-en.txt)
+python scripts/voice_design.py -i /path/to/instruct.txt
+
+# Chinese (uses ~/temp/audio/clones/reference-zh.txt)
+python scripts/voice_design.py -l zh -i /path/to/instruct.txt
+
+# Custom output file
+python scripts/voice_design.py -l en -i instruct.txt -o custom_design.wav
+```
+
+**Arguments:**
+
+| Flag | Description |
+|------|-------------|
+| `-l`, `--language` | Language code: `en` or `zh` (default: `en`). Selects the corresponding reference text file. |
+| `-i`, `--instruct-file` | **Required.** Path to a file containing the voice-design instruction (e.g. "Male, 17 years old, tenor range..."). |
+| `-o`, `--output` | Output WAV path (default: `~/temp/audio/clones/voice_design_output.wav`). |
+| `-t`, `--timeout` | HTTP timeout in seconds (default: 300). |
+
+**Service management:**
+- Uses the same `ServiceManager` as the main pipeline (`src/storyline/services/manager.py`)
+- Checks if the TTS service (`qwentts`) is running; starts it via `systemctl --user` if not
+- Only stops the TTS service if *this script* started it — leaves it running if it was already active
+
+**Example instruct file contents:**
+```
+Male, 17 years old, tenor range, gaining confidence - deeper breath support now, though vowels still tighten when nervous
+```
+
 ## Configuration
 
 All TOML config files live in `src/storyline/config/`:

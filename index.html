@@ -423,7 +423,7 @@
 
                 const audio = document.createElement('audio');
                 audio.id = `chunk-audio-${ci}`;
-                audio.src = `books/${author}/${book}/chunks/${audioFile}`;
+                audio.src = `books/${author}/${book}/audio/${audioFile}`;
                 audio.loop = false;
                 audio.playbackRate = playbackSpeeds[currentSpeedIndex];
                 audio.preload = 'auto';

@@ -80,6 +80,7 @@ class PipelineConfig:
     skip_simplify: bool = False
     skip_audio: bool = False
     audio_profile: str = "default"
+    audio_use_instruct: bool | None = None
 
     # -- Dictionary --
     punctuation_skip: list[str] = field(default_factory=lambda: [
@@ -190,7 +191,7 @@ class PipelineConfig:
     def _apply_cli_overrides(self, args: Any) -> None:
         for attr in (
             "max_chunks", "skip_simplify", "skip_audio",
-            "audio_profile",
+            "audio_profile", "audio_use_instruct",
         ):
             if hasattr(args, attr):
                 val = getattr(args, attr)
