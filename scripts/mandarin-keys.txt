@@ -1,0 +1,10 @@
+gender,性别
+age,年龄
+pitch,音高
+pace,语速
+volume,音量
+clarity,清晰度
+fluency,流畅度
+timbre,音色质感
+emotion,情绪
+usecase,或质疑

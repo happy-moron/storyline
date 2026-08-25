@@ -13,6 +13,7 @@ Usage:
 import argparse
 import base64
 import io
+import re
 import sys
 import time
 from pathlib import Path
@@ -39,6 +40,82 @@ LANGUAGE_MAP = {
 }
 
 TTS_BASE_URL = "http://127.0.0.1:11433"
+
+_DIALOGUE_RE = re.compile(r'^dialogue\s*=\s*"(.*)"\s*$')
+# Matches any key = "value" line (but not dialogue, which is stripped above)
+_KEY_LINE_RE = re.compile(r'^(\w+)\s*=\s*"(.*)"\s*$')
+
+_MANDARIN_KEYS_PATH = PROJECT_ROOT / "scripts" / "mandarin-keys.txt"
+
+
+def _load_mandarin_keys() -> dict[str, str]:
+    """Load English→Mandarin key mapping from mandarin-keys.txt."""
+    mapping: dict[str, str] = {}
+    if not _MANDARIN_KEYS_PATH.exists():
+        return mapping
+    for line in _MANDARIN_KEYS_PATH.read_text(encoding="utf-8").strip().splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        parts = line.split(",", 1)
+        if len(parts) == 2:
+            mapping[parts[0].strip()] = parts[1].strip()
+    return mapping
+
+
+def _preprocess_instruct(instruct: str, language: str) -> str:
+    """Convert voice profile lines from TOML-style to human-friendly format.
+
+    For each line matching ``key = "value"`` converts to ``key: value``.
+    If *language* is ``"zh"``, English keys are swapped for their Mandarin
+    equivalents (loaded from *mandarin-keys.txt*).  Lines that do not match
+    the pattern (blank lines, non-key lines) are passed through unchanged.
+    """
+    key_map = _load_mandarin_keys() if language == "zh" else {}
+    result: list[str] = []
+    for line in instruct.split("\n"):
+        m = _KEY_LINE_RE.match(line)
+        if m:
+            eng_key = m.group(1)
+            value = m.group(2)
+            display_key = key_map.get(eng_key, eng_key)
+            result.append(f"{display_key}: {value}")
+        else:
+            result.append(line)
+    return "\n".join(result)
+
+
+def _normalize_curly_quotes(s: str) -> str:
+    """Replace Unicode curly quotes with ASCII double quotes.
+
+    Voice profiles are often written with typographic quotes (\u201c/\u201d)
+    which won't match the ASCII-quote regexes used for parsing.
+    """
+    return s.replace("\u201c", '"').replace("\u201d", '"').replace("\u2018", "'").replace("\u2019", "'")
+
+
+def _parse_voice_profile(path: str | Path) -> tuple[str | None, str]:
+    """Parse a voice profile file.
+
+    Returns (dialogue_value_or_None, instruct_content).
+    The instruct content is the full file content minus the dialogue line,
+    so the dialogue value is never sent as part of the instruct.
+    """
+    p = Path(path)
+    content = p.read_text(encoding="utf-8").strip()
+    content = _normalize_curly_quotes(content)
+
+    dialogue = None
+    filtered_lines = []
+    for line in content.split('\n'):
+        m = _DIALOGUE_RE.match(line)
+        if m:
+            dialogue = m.group(1)
+        else:
+            filtered_lines.append(line)
+
+    instruct = '\n'.join(filtered_lines).strip()
+    return dialogue, instruct
 
 
 def _resolve_service_manager() -> ServiceManager:
@@ -167,15 +244,29 @@ def main():
     failures = []
     try:
         for txt in txt_files:
-            instruct = txt.read_text(encoding="utf-8").strip()
+            # Parse the voice profile — dialogue becomes the reference text
+            # when present, otherwise we use the language-level reference.
+            dialogue, instruct = _parse_voice_profile(txt)
+
+            # Pre-process instruct: convert TOML keys to human-friendly format
+            # and swap to Mandarin keys for zh profiles.
+            instruct = _preprocess_instruct(instruct, args.language)
+
+            if dialogue:
+                current_text = dialogue
+                dialogue_label = " (dialogue)"
+            else:
+                current_text = text
+                dialogue_label = ""
+
             wav_path = txt.with_suffix(".wav")
 
-            print(f"[{txt.stem}] Generating…  ({len(instruct)} chars instruct)", end="")
+            print(f"[{txt.stem}] Generating{dialogue_label}…  ({len(instruct)} chars instruct)", end="")
 
             t0 = time.time()
             try:
                 audio = _call_voice_design(
-                    text=text,
+                    text=current_text,
                     language=args.language,
                     instruct=instruct,
                     timeout=args.timeout,
