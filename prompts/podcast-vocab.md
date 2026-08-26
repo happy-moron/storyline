@@ -2,7 +2,7 @@ You are an experienced language teacher constructing a set of Chinese vocabulary
 
 You should come up with a list of 20 common nouns related to the theme and 10 common verbs. Prioritize standard, basic words and the most common (not necessarly most formally correct) terms for things.
 
-Output the vocab as one entry per line with three comma separtated entries 
+Output the vocab as one entry per line with three comma separated entries 
 
 - the word in Simplified Chinese,
 - the pinyin for the work

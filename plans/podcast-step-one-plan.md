@@ -21,11 +21,12 @@ Background files:
 
 * Parsing/validating the produced scripts
 
-# Set up a cli shell similar to create_book.py
+# Implementation Plan
+# 1 - Set up a cli shell similar to create_book.py
 
 This will be the entry point for running it. It doesn't need any options to begin with.
 
-# Set up next theme and grammar point selection 
+# 2 - Set up next theme and grammar point selection 
 
 As part of this, the pipeline:
 
@@ -37,12 +38,18 @@ Should implement all the logic for determining the next (not-yet-covered-in-exis
 
 Should have full unit testing for all the different relevant cases, including non-contiguous cases where grammar points and/or topics have been covered out-of-order.
 
-# Create vocab for the "next" theme
+# 3 - Wire up LLM integration and vocab creation for the "next" theme
 
 Set up the pipeline to initialize the LLM using the existing ServiceManager that the create_book pipeline uses.
-Update llms_for_tasks.toml with a task for vocab generation
+Update llms_for_tasks.toml with a task for vocab generation.
+Set the default model to qwen38-27b for vocab creation.
 
 Wire the pipeline up with the existing prompt template in prompts/podcast-vocab.md
 
-Generate vocab into a folder books_src/podcasts/vocab/<normalized-theme-name>.txt
+The pipeline should generate vocab into a folder books_src/podcasts/vocab/<normalized-theme-name>.txt
+It's okay to overwrite existing artifacts.
+
+# 4 - Wire up the Podcast Script prompt
+
+The existing podcast-script.md has examples already fixed in the HSK points, Theme and Vocab sections. The pipeline needs to update/append these. The simplest way may just to be to take the examples out of the existing prompt and then just dynamically append (with the known section headers) the hsk/theme/vocab into the "Input" section of the prompt. Note that the formatting of the HSK grammar points in the existing is approximate and doesn't need to be followed exactly.
 

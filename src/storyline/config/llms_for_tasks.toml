@@ -32,6 +32,12 @@ profile = "qwen36-35b-a3b-nothink-mtp"
 # profile = "qwen36-35b-a3b-nothink"
 # No thinking_budget_tokens = no reasoning budget sent
 
+[podcast_vocab]
+profile = "qwen38-27b"
+
+[podcast_script]
+profile = "qwen38-27b"
+
 [check_translation]
 models = ["openrouter/deepseek/deepseek-v4-flash"]
 provider = "remote"

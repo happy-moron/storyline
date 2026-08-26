@@ -1,0 +1,20 @@
+菜单, càidān, menu
+点菜, diǎncài, to order food
+米饭, mǐfàn, rice
+面条, miàntiáo, noodles
+饺子, jiǎozi, dumplings
+牛肉, niúròu, beef
+猪肉, zhūròu, pork
+鸡肉, jīròu, chicken
+鱼, yú, fish
+蔬菜, shūcài, vegetables
+水果, shuǐguǒ, fruit
+茶, chá, tea
+咖啡, kāfēi, coffee
+啤酒, píjiǔ, beer
+可乐, kělè, cola
+米饭, mǐfàn, rice
+面条, miàntiáo, noodles
+饺子, jiǎozi, dumplings
+牛肉, niúròu, beef
+猪肉, zhūròu, pork

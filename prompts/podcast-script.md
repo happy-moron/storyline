@@ -120,31 +120,3 @@ usecase = "一个意志坚强的海盗船长"
 dialogue = "你们休想活捉我或我的船。这就是终点了，弟兄们。全员就位！备炮！"
 
 # Input
-
-## HSK Point(s)
-
-["hsk1-21","Expressing \"not anymore\" with \"le\"","不 / 没(有) + Verb Phrase + 了"]
-["hsk1-22","Expressing \"now\" with \"le\"","New Situation + 了"]
-
-## Theme
-
-Talking about last night's soccer results
-
-## Vocab
-
-足球 (zúqiú) - Soccer / Football
-球场 (qiúchǎng) - Field / Pitch
-球门 (qiúmén) - Goal (the net)
-球员 (qiúyuán) - Player
-守门员 (shǒuményuán) - Goalkeeper
-裁判 (cáipàn) - Referee
-比赛 (bǐsài) - Match / Game
-比分 (bǐfēn) - Score
-进球 (jìnqiú) - Goal (the scored point)
-结果 (jiéguǒ) - Result / Outcome
-踢 (tī) - To kick / To play (soccer)
-射门 (shèmén) - To shoot (at goal)
-得分 (défēn) - To score (points)
-赢 (yíng) - To win
-输 (shū) - To lose
-平 (píng) - To draw / To tie

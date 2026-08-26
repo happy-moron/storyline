@@ -1,0 +1,30 @@
+比赛- bǐsài - match/game
+足球- zúqiú - soccer/football
+球队- qiúduì - team
+球员- qiúyuán - player
+教练- jiàoliàn - coach
+裁判- cáipàn - referee
+球场- qiúchǎng - soccer field/stadium
+球门- qiúmén - goal (structure)
+进球- jìnqiú - goal (scored)
+比分- bǐfēn - score
+上半场- shàngbànchǎng - first half
+下半场- xiàbànchǎng - second half
+点球- diǎnqiú - penalty kick
+任意球- rènyìqiú - free kick
+角球- jiǎoqiú - corner kick
+红牌- hóngpái - red card
+黄牌- huángpái - yellow card
+犯规- fànguī - foul
+越位- yuèwèi - offside
+守门员- shǒuményuán - goalkeeper
+赢- yíng - to win
+输- shū - to lose
+踢- tī - to kick
+进- jìn - to score
+守- shǒu - to defend
+攻- gōng - to attack
+传- chuán - to pass
+射门- shèmén - to shoot (at goal)
+扑- pū - to save/block (a shot)
+看- kàn - to watch

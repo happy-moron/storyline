@@ -69,6 +69,8 @@ class PipelineConfig:
         "tokenize": "prompts/tokenize.txt",
         "fix_tokenization": "prompts/fix_tokenization.txt",
         "dict_entry": "prompts/create_single_dictionary_entry.txt",
+        "podcast_vocab": "prompts/podcast-vocab.md",
+        "podcast_script": "prompts/podcast-script.md",
     })
 
     # -- Pipeline behaviour --
@@ -174,13 +176,17 @@ class PipelineConfig:
             default = llm_cfg.get("default", {})
             default_profile = default.get("profile")
             default_thinking = default.get("thinking_budget_tokens")
+            tasks = (
+                "translate", "tokenize", "dictionary",
+                "podcast_vocab", "podcast_script",
+            )
             self.task_profiles = {
                 task: llm_cfg.get(task, {}).get("profile", default_profile)
-                for task in ("translate", "tokenize", "dictionary")
+                for task in tasks
             }
             self.task_thinking_budget = {
                 task: llm_cfg.get(task, {}).get("thinking_budget_tokens", default_thinking)
-                for task in ("translate", "tokenize", "dictionary")
+                for task in tasks
             }
         except Exception:
             self.llm_provider = "local"
