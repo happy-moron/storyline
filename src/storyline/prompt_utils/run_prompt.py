@@ -22,7 +22,7 @@ def load_module(module_name):
     return module
 
 def run_prompt(prompt_template_path, input_file_path, output_file_path, pre_process_module=None, models=None,
-               timeout: int = 600, extra_options: dict | None = None):
+               timeout: int = 1500, extra_options: dict | None = None):
     """Run a prompt, with a wall‑clock timeout (default 600 s / 10 min)."""
     with open(input_file_path, "r", encoding="utf-8", errors="replace") as f:
         raw_input = f.read()
@@ -67,7 +67,7 @@ def run_prompt(prompt_template_path, input_file_path, output_file_path, pre_proc
 
 def run_prompt_with_metrics(
     prompt_template_path, input_file_path, output_file_path,
-    pre_process_module=None, models=None, timeout: int = 600,
+    pre_process_module=None, models=None, timeout: int = 1500,
     prompt_label: str = "",
     extra_options: dict | None = None,
 ) -> dict:

@@ -1,0 +1,217 @@
+INTRO
+
+en=teacher
+Hello everyone! Welcome to our Chinese learning podcast. I am Mei.
+
+en=student
+And I am Ryan. Today we are tackling a very practical theme: cleaning the house.
+
+en=teacher
+Cleaning the house involves many tools and actions. To talk about the state of your home, we are going to learn how to use the grammar point "不太" to mean "not very."
+
+en=student
+Right, so instead of just saying something is dirty, you can say it is "not very clean," which sounds a bit more natural and less harsh.
+
+en=teacher
+Exactly. We will also practice using "和" to connect nouns, such as saying "a broom and a mop."
+
+en=student
+Can I use "和" to connect two actions, like "I sweep and I mop"?
+
+en=teacher
+That is a great question, Ryan. No, you cannot. "和" is specifically for nouns. For verbs, we would use different structures.
+
+en=student
+Got it. And for our vocabulary today, we have words like "地板" which means floor, "灰尘" which means dust, "扫帚" which means broom, and "吸尘器" which means vacuum cleaner.
+
+en=teacher
+We also have "拖把" for mop, "抹布" for rag, and "垃圾" for trash.
+
+en=student
+So, what is the scenario for today?
+
+en=teacher
+In this episode, you are going to hear two roommates, a woman and a man, discussing the cleaning tasks needed in their living room. They are deciding which tools to use to get the job done.
+
+DIALOGUE
+
+zh=1
+这里的地板不太干净。
+The floor here is not very clean.
+
+zh=2
+是的，有很多灰尘和垃圾。
+Yes, there is a lot of dust and trash.
+
+zh=1
+我们一起打扫吧。你要用吸尘器和扫帚，好吗？
+Let's clean together. You use the vacuum and the broom, okay?
+
+zh=2
+没问题。那窗户呢？
+No problem. What about the windows?
+
+zh=1
+窗户也不太干净，我们需要用抹布和清洁剂。
+The windows are also not very clean; we need a rag and cleaning agent.
+
+zh=2
+好，那我还要准备垃圾桶和垃圾袋。
+Okay, then I also need to prepare the trash can and trash bags.
+
+BREAKDOWN
+
+en=teacher
+Now, let's break down this dialogue line by line.
+
+en=teacher
+The first line is: 这里的地板不太干净。
+zh=1
+这里的地板不太干净。
+The floor here is not very clean.
+en=student
+"这里的" means "here's." "地板" is the floor.
+
+en=teacher
+Yes, "地板." Let's say it three times: 地板，地板，地板。
+
+en=student
+And "不太干净" means "not very clean."
+
+en=teacher
+Correct. "干净" means clean. And "不太" means not very.
+
+en=student
+So, Mei, if I say "地板不干净," that means "the floor is dirty." But "地板不太干净" is a softer way to say "the floor is not very clean"?
+
+en=teacher
+Exactly! It's a very common way to express something politely.
+
+en=teacher
+The second line is: 是的，有很多灰尘和垃圾。
+zh=2
+是的，有很多灰尘和垃圾。
+Yes, there is a lot of dust and trash.
+en=student
+"是的" means "yes." "有很多" means "there are many."
+
+en=teacher
+And we have our two key nouns here. "灰尘" means dust. Let's practice: 灰尘，灰尘，灰尘。
+
+en=student
+And "垃圾" is trash.
+
+en=teacher
+Yes: 垃圾，垃圾，垃圾。 And here, we see our second grammar point. "灰尘和垃圾" means "dust and trash." We use "和" to link these two nouns.
+
+en=teacher
+The third line is: 我们一起打扫吧。你要用吸尘器和扫帚，好吗？
+zh=1
+我们一起打扫吧。你要用吸尘器和扫帚，好吗？
+Let's clean up together. You'll need a vacuum cleaner and a broom, okay?
+en=student
+"我们一起" means "us together." "打扫" is the verb "to clean."
+
+en=teacher
+"打扫，打扫，打扫." And the tools are "吸尘器," the vacuum cleaner, and "扫帚," the broom.
+
+en=student
+Let's practice the vacuum: 吸尘器，吸尘器，吸尘器. And the broom: 扫帚，扫帚，扫帚.
+
+en=teacher
+Perfect.
+
+en=teacher
+The fourth line is: 没问题。那窗户呢？
+zh=2
+没问题。那窗户呢？
+No problem. What about the windows?
+en=student
+"没问题" means "no problem." "那...呢" is "what about...?" So, "What about the windows?"
+
+en=teacher
+Yes. "窗户" is window.
+
+en=teacher
+The fifth line is: 窗户也不太干净，我们需要用抹布和清洁剂。
+zh=1
+窗户也不太干净，我们需要用抹布和清洁剂。
+The windows are also not very clean, we need a rag and cleaning agent.
+en=student
+"窗户也不太干净" means "the windows are also not very clean."
+
+en=teacher
+Notice the word "也" meaning "also." It goes before "不太." So, "also not very clean."
+
+en=student
+And the tools are "抹布" and "清洁剂."
+
+en=teacher
+Let's practice "抹布," the rag: 抹布，抹布，抹布. And "清洁剂," the cleaning agent: 清洁剂，清洁剂，清洁剂.
+
+en=student
+And the last line: 好，那我还要准备垃圾桶和垃圾袋。
+zh=2
+好，那我还要准备垃圾桶和垃圾袋。
+Okay, then I also need to prepare a trash can and trash bags.
+en=student
+"还要" means "also need to." "准备" is "to prepare."
+
+en=teacher
+And the last set of nouns. "垃圾桶" is trash can, and "垃圾袋" is trash bag.
+
+en=student
+They both have "垃圾" in them! So, 垃圾桶 and 垃圾袋.
+
+en=teacher
+Yes! "垃圾桶，垃圾桶，垃圾桶" and "垃圾袋，垃圾袋，垃圾袋." You are getting very good at this, Ryan.
+
+OUTRO
+
+en=teacher
+That brings us to the end of our episode. Today we learned how to express that something is "not very" using "不太" before an adjective, and how to connect two nouns using "和."
+
+en=student
+We also covered a lot of cleaning vocabulary, from "扫帚" to "吸尘器."
+
+en=teacher
+Practice these words and try to describe things in your own home using "不太." For example, "我的房间不太干净" — my room is not very clean!
+
+en=student
+I'll try to keep my room cleaner so I don't have to use that sentence!
+
+en=teacher
+Goodbye everyone!
+
+en=student
+See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "二十五岁左右"
+pitch = "中音域，因热情而略微升高"
+pace = "中速，节奏轻快"
+volume = "中等，语调清晰"
+clarity = "清晰，发音圆润"
+fluency = "流利，表达自然"
+timbre = "清脆，甜美"
+emotion = "充满活力，有些许督促感"
+usecase = "一个热爱干净、做事利落的年轻女性室友"
+dialogue = "这里的地板不太干净。我们一起打扫吧。窗户也不太干净，我们需要用抹布和清洁剂。"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "二十五岁左右"
+pitch = "中音域，平稳"
+pace = "中速，节奏自然"
+volume = "中等"
+clarity = "清晰，字迹分明"
+fluency = "流利，略带随性"
+timbre = "温和，略带磁性"
+emotion = "配合，随和"
+usecase = "一个乐于助人但不太在意整洁的年轻男性室友"
+dialogue = "是的，有很多灰尘和垃圾。没问题。那窗户呢？好，那我还要准备垃圾桶和垃圾袋。"

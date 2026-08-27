@@ -35,22 +35,24 @@ profile = "gemma4-26b-a4b"
 # No thinking_budget_tokens = no reasoning budget sent
 
 [podcast_vocab]
+# profile = "qwen38-27b"
 profile = "gemma4-26b-a4b"
 
-# profile = "qwen38-27b"
 
 [podcast_script]
+# profile = "qwen38-27b"
 profile = "gemma4-26b-a4b"
 
-# profile = "qwen38-27b"
-
 [podcast_fix_script]
+# profile = "qwen38-27b"
 profile = "gemma4-26b-a4b"
 
 [podcast_fix_dialogue]
+# profile = "qwen38-27b"
 profile = "gemma4-26b-a4b"
 
 [podcast_fix_voice_profiles]
+# profile = "qwen38-27b"
 profile = "gemma4-26b-a4b"
 
 [check_translation]

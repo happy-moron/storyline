@@ -1,0 +1,191 @@
+INTRO
+
+en=teacher
+Welcome to our Chinese learning podcast! I am Mei.
+
+en=student
+And I am Ryan. Today we are heading to the beach, but first, we need to master some time-related grammar.
+
+en=teacher
+That is right. Today we are learning how to say "before" and "after" in Chinese. In HSK grammar, this means using the words 以前 and 以后.
+
+en=student
+So, if I want to say "after three o'clock" or "before eating," I use these two?
+
+en=teacher
+Exactly. But pay attention to the word order! In English, we say "before" or "after" first, like "before lunch." In Chinese, the time or the action always comes first. You say "lunch before" or "three o'clock after."
+
+en=student
+Wait, so it is [Time/Action] plus 以前 or 以后?
+
+en=teacher
+Spot on! For example, if you want to say "after eating," you say 吃 以后. Or if you want to say "before the beach," you say 沙滩 以前.
+
+en=student
+Got it. So, if I say 游泳 以前, I am saying "before swimming."
+
+en=teacher
+Perfect. Today's vocabulary includes things you would definitely find at the beach: 太阳 meaning sun, 防晒霜 meaning sunscreen, 游泳 meaning to swim, 冲浪 meaning to surf, and 潜水 meaning to dive.
+
+en=student
+I am ready. I can already feel the sun! What is our dialogue about?
+
+en=teacher
+You are going to hear two friends, Lili and Ming, planning their afternoon at the beach. Listen for how they use 以前 and 以后 to organize their day.
+
+DIALOGUE
+
+zh=1
+太阳真大！我们快去大海边玩吧！
+The sun is so bright! Let's go to the seaside to play!
+
+zh=2
+等一下，游泳以前，我们要先用防晒霜。
+Wait, before swimming, we need to use sunscreen first.
+
+zh=1
+好！我们先在沙滩上挖沙堡。
+Okay! Let's dig sandcastles on the beach first.
+
+zh=2
+没问题。喝完饮料以后，我们去冲浪吧。
+No problem. After drinking our drinks, let's go surfing.
+
+zh=1
+太棒了！两点以后，我们再去潜水。
+Great! After two o'clock, we can go diving.
+
+BREAKDOWN
+
+en=teacher
+Let's look at our dialogue. I will repeat the lines clearly.
+
+zh=1
+太阳真大！我们快去大海边玩吧！
+The sun is so bright! Let's go to the seaside to play!
+
+en=student
+"The sun is so bright!" That is 太阳真大. 太阳 is sun, and 大 means big or bright in this context. 
+
+en=teacher
+Yes. And look at 大海. 大 means big, and 海 means sea. Together, they mean the ocean. 大海... 大海... 大海...
+
+en=student
+And "to play" is 玩.
+
+en=teacher
+Right. Now, let's look at the next line, which contains our first grammar point.
+
+zh=2
+等一下，游泳以前，我们要先用防晒霜。
+Wait, before swimming, we need to use sunscreen first.
+
+en=student
+Here we see 游泳 以前. "Before swimming."
+
+en=teacher
+Correct. The action 游泳, which means to swim, comes first, followed by 以前. 游泳... 游泳... 游泳... 以前... 以前... 以前...
+
+en=student
+And the vocabulary here is 防晒霜. That is a long one!
+
+en=teacher
+It is! It is composed of 防 which means prevent, 晒 which means sunbathe, and 霜 which means cream. So, sunscreen!
+
+en=student
+Makes sense. Now, Lili wants to play in the sand.
+
+zh=1
+好！我们先在沙滩上挖沙堡。
+Okay! Let's dig sandcastles on the beach first.
+
+en=teacher
+In this line, we have 沙滩, which means beach. 沙 means sand, and 滩 means shore.
+
+en=student
+And 挖沙堡? Is 挖 the verb for digging?
+
+en=teacher
+Yes! 挖... 挖... 挖... And 沙堡 is sandcastle. 沙 is sand, and 堡 is castle.
+
+en=student
+Okay, next line. This one uses the other grammar point.
+
+zh=2
+没问题。喝完饮料以后，我们去冲浪吧。
+No problem. After drinking our drinks, let's go surfing.
+
+en=teacher
+Here is 以后, meaning "after." The action is 喝完饮料. 喝 is to drink, and 完 means to finish. So, "after finishing the drinks." 
+
+en=student
+So the structure is [Action] + 完 (optional) + 以后.
+
+en=teacher
+Exactly! And the activity is 冲浪, which means surfing. 冲浪... 冲浪... 冲浪...
+
+en=student
+Last line!
+
+zh=1
+太棒了！两点以后，我们再去潜水。
+Great! After two o'clock, we can go diving.
+
+en=teacher
+This line uses 以后 with a specific time. 两点以后, meaning "after two o'clock." 
+
+en=student
+Is it okay to use 以后 with just a time? Like, "after Monday"?
+
+en=teacher
+Yes! 星期一 以后, meaning after Monday. Or 昨天 以后, meaning after yesterday.
+
+en=student
+And the last activity is 潜水, to dive.
+
+en=teacher
+Yes! 潜水... 潜水... 潜水...
+
+OUTRO
+
+en=teacher
+That is all for today! We learned how to use 以前 and 以后 to talk about sequences of events.
+
+en=student
+Just remember: in Chinese, the time or the action always comes before the words "before" or "after."
+
+en=teacher
+Perfectly summarized. Practice by planning your own day using these words. See you next time!
+
+en=student
+Bye!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "二十岁左右"
+pitch = "高音域，因兴奋而不断起伏"
+pace = "略快，充满活力"
+volume = "中等，语气轻快"
+clarity = "清晰，带有俏皮感"
+fluency = "流利，非常有感染力"
+timbre = "清脆，甜美"
+emotion = "兴奋，充满活力"
+usecase = "一个在海滩度假的快乐年轻女孩"
+dialogue = "太阳真大！我们快去大海边玩吧！太棒了！两点以后，我们再去潜水。"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "二十岁左右"
+pitch = "中音域，平稳"
+pace = "中速，节奏放松"
+volume = "中等，声音柔和"
+clarity = "清晰，语气自然"
+fluency = "流利，从容不迫"
+timbre = "圆润，温和"
+emotion = "悠闲，随性"
+usecase = "一个正在享受阳光的悠闲男孩"
+dialogue = "等一下，游泳以前，我们要先用防晒霜。没问题。喝完饮料以后，我们去冲浪吧。"

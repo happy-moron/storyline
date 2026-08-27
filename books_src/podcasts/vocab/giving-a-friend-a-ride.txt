@@ -1,0 +1,35 @@
+### Nouns
+
+车, chē, car
+司机, sījī, driver
+乘客, chéngkè, passenger
+座位, zuòwèi, seat
+安全带, ānquándài, seatbelt
+门, mén, door
+钥匙, yàoshi, key
+路, lù, road
+目的地, mùdìdì, destination
+地图, dìtú, map
+导航, dǎoháng, navigation
+汽油, qìyóu, gasoline
+停车场, tíngchēchǎng, parking lot
+行李, xínglǐ, luggage
+朋友, péngyou, friend
+驾照, jiàzhào, driver's license
+交通, jiāotōng, traffic
+窗户, chuānghu, window
+路口, lùkǒu, intersection
+手机, shǒujī, phone
+
+### Verbs
+
+开车, kāichē, to drive
+接, jiē, to pick up
+送, sòng, to drop off
+到达, dàodá, to arrive
+停车, tíngchē, to park
+出发, chūfā, to set off
+转弯, zhuǎnwān, to turn
+停, tíng, to stop
+等, děng, to wait
+帮, bāng, to help

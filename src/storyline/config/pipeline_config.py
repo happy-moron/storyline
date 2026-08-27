@@ -80,7 +80,7 @@ class PipelineConfig:
     max_chunks: int = 500
     split_chunk_size: int = 2000
     llm_retries: int = 3
-    llm_timeout_s: int = 1200
+    llm_timeout_s: int = 1500
     warmup_on_start: bool = True
     skip_simplify: bool = False
     skip_audio: bool = False

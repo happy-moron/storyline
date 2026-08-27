@@ -149033,5 +149033,177 @@
         }
       }
     ]
+  },
+  "欢迎光临": {
+    "pinyin": "huānyíng guānglín",
+    "definition": [
+      {
+        "meaning": "welcome (used to greet customers or guests)",
+        "example": {
+          "chinese": "欢迎光临我们的餐厅。",
+          "pinyin": "Huānyíng guānglín wǒmen de cāntīng.",
+          "english": "Welcome to our restaurant."
+        }
+      }
+    ]
+  },
+  "服务员": {
+    "pinyin": "fú wù yuán",
+    "definition": [
+      {
+        "meaning": "waiter; waitress; server",
+        "example": {
+          "chinese": "服务员，请给我一张菜单。",
+          "pinyin": "Fú wù yuán, qǐng gěi wǒ yī zhāng càidān.",
+          "english": "Waiter, please give me a menu."
+        }
+      }
+    ]
+  },
+  "电脑": {
+    "pinyin": "diàn nǎo",
+    "definition": [
+      {
+        "meaning": "computer",
+        "example": {
+          "chinese": "我正在用电脑工作。",
+          "pinyin": "Wǒ zhèngzài yòng diànnǎo gōngzuò.",
+          "english": "I am working on the computer."
+        }
+      }
+    ]
+  },
+  "笔记本": {
+    "pinyin": "bǐ jì běn",
+    "definition": [
+      {
+        "meaning": "notebook",
+        "example": {
+          "chinese": "请在笔记本上记录这些要点。",
+          "pinyin": "Qǐng zài bǐ jì běn shàng jì lù zhè xiē yào diǎn.",
+          "english": "Please record these key points in the notebook."
+        }
+      },
+      {
+        "meaning": "laptop",
+        "example": {
+          "chinese": "这台笔记本非常轻便，适合出差携带。",
+          "pinyin": "Zhè tái bǐ jì běn fēi cháng qīng biàn, shì hé chū chāi dài dài.",
+          "english": "This laptop is very lightweight and suitable to carry on business trips."
+        }
+      }
+    ]
+  },
+  "你们好": {
+    "pinyin": "nǐ men hǎo",
+    "definition": [
+      {
+        "meaning": "hello (to a group of people)",
+        "example": {
+          "chinese": "你们好，很高兴见到大家。",
+          "pinyin": "Nǐmen hǎo, hěn gāoxìng jiàndào dàjiā.",
+          "english": "Hello, it's very nice to see you all."
+        }
+      }
+    ]
+  },
+  "吸尘器": {
+    "pinyin": "xī chén qì",
+    "definition": [
+      {
+        "meaning": "vacuum cleaner",
+        "example": {
+          "chinese": "我需要买一个新的吸尘器。",
+          "pinyin": "Wǒ xūyào mǎi yīgè xīn de xīchénqì.",
+          "english": "I need to buy a new vacuum cleaner."
+        }
+      }
+    ]
+  },
+  "清洁剂": {
+    "pinyin": "qīng jié jì",
+    "definition": [
+      {
+        "meaning": "detergent; cleaning agent",
+        "example": {
+          "chinese": "请使用这种清洁剂来洗衣服。",
+          "pinyin": "Qǐng shǐyòng zhè zhǒng qīngjiéjì lái xǐ yīfu.",
+          "english": "Please use this detergent to wash clothes."
+        }
+      }
+    ]
+  },
+  "大海边": {
+    "pinyin": "dà hǎi biān",
+    "definition": [
+      {
+        "meaning": "seaside; seashore; beach",
+        "example": {
+          "chinese": "我们周末去大海边玩吧。",
+          "pinyin": "Wǒmen zhōumò qù dà hǎibiān wán ba.",
+          "english": "Let's go to the seaside this weekend."
+        }
+      }
+    ]
+  },
+  "沙滩上": {
+    "pinyin": "shā tān shàng",
+    "definition": [
+      {
+        "meaning": "on the beach",
+        "example": {
+          "chinese": "我们在沙滩上晒太阳。",
+          "pinyin": "Wǒmen zài shātān shàng shài tàiyáng.",
+          "english": "We are sunbathing on the beach."
+        }
+      }
+    ]
+  },
+  "沙堡": {
+    "pinyin": "shā bǎo",
+    "definition": [
+      {
+        "meaning": "sandcastle",
+        "example": {
+          "chinese": "孩子们在海滩上堆沙堡。",
+          "pinyin": "Háizimen zài hǎitān shàng duī shābǎo.",
+          "english": "Children are building sandcastles on the beach."
+        }
+      }
+    ]
+  },
+  "冲浪": {
+    "pinyin": "chōng làng",
+    "definition": [
+      {
+        "meaning": "to surf",
+        "example": {
+          "chinese": "他想去夏威夷冲浪。",
+          "pinyin": "Tā xiǎng qù Xiàwēiyí chōnglàng.",
+          "english": "He wants to go surfing in Hawaii."
+        }
+      }
+    ]
+  },
+  "潜水": {
+    "pinyin": "qián shuǐ",
+    "definition": [
+      {
+        "meaning": "to dive; diving",
+        "example": {
+          "chinese": "他非常喜欢去海边潜水。",
+          "pinyin": "Tā fēi cháng xǐ huān qù hǎi biān qián shuǐ.",
+          "english": "He likes going diving at the seaside very much."
+        }
+      },
+      {
+        "meaning": "to lie low; to lurk (online)",
+        "example": {
+          "chinese": "他在群聊里总是潜水，很少说话。",
+          "pinyin": "Tā zài qún liáo lǐ zǒng shì qián shuǐ, hěn shǎo shuō huà.",
+          "english": "He is always lurking in the group chat and rarely speaks."
+        }
+      }
+    ]
   }
 }
