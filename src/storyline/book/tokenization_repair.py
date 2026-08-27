@@ -91,6 +91,8 @@ def validate_full(
                     detail=f"Sentence {i} missing from tokenized output",
                 ))
                 report.bad_indices.append(i)
+            else:
+                report.good_indices.append(i)
         for i in range(n_src, n_tok):
             reconstructed = "".join(t[0] for t in tokenized_sentences[i].get("t", []))
             report.errors.append(TokenError(
@@ -98,7 +100,6 @@ def validate_full(
                 tokenized_line=reconstructed,
                 detail=f"Extra tokenized sentence at index {i}",
             ))
-            report.bad_indices.append(i)
         return report
 
     # ---------- Phase 2: content ----------

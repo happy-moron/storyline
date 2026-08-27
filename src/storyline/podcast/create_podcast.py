@@ -90,8 +90,6 @@ def generate_podcast(
         ",".join(p.id for p in selection.grammar_points),
     )
 
-    append_episode(Path(episodes_path), selection)
-
     _ensure_llm(service_manager, config, "podcast_vocab")
 
     vocab_output = Path(vocab_dir) / f"{selection.theme_slug}.txt"
@@ -135,7 +133,131 @@ def generate_podcast(
             selection.theme_slug, script_output.stat().st_size, metrics.get("wall_ms", 0),
         )
 
+        _validate_and_fix(config, script_output, tmp_path, log)
+
+    append_episode(Path(episodes_path), selection)
+
     return selection, vocab_output, script_output
+
+
+def _build_fix_input(script_text: str, error_message: str) -> str:
+    return script_text + "\n\n# Error Messages/Logs\n\n" + error_message + "\n"
+
+
+def _validate_and_fix(
+    config: PipelineConfig,
+    script_output: Path,
+    tmp_path: Path,
+    log,
+) -> None:
+    from storyline.podcast.script_parser import parse_script, ScriptParseError
+
+    script_text = script_output.read_text(encoding="utf-8")
+    try:
+        parse_script(script_text)
+        log.info("event=script_valid theme=%s", script_output.stem)
+        return
+    except ScriptParseError as e:
+        log.warning("event=script_parse_error theme=%s error=%s", script_output.stem, str(e))
+
+    fixed_text = _fix_script_by_sections(
+        config, script_text, tmp_path, log, script_output.stem
+    )
+
+    script_output.write_text(fixed_text, encoding="utf-8")
+    log.info("event=fixed_script_written theme=%s", script_output.stem)
+
+    try:
+        parse_script(fixed_text)
+        log.info("event=fixed_script_valid theme=%s", script_output.stem)
+    except ScriptParseError as e:
+        raise RuntimeError(
+            f"Fixed script still fails validation for {script_output.stem}: {e}"
+        ) from e
+
+
+def _fix_script_by_sections(
+    config: PipelineConfig,
+    script_text: str,
+    tmp_path: Path,
+    log,
+    theme: str,
+) -> str:
+    from storyline.podcast.script_parser import parse_script, ScriptParseError
+    from storyline.podcast.script_fix import plan_fixes, stitch_script
+
+    current = script_text
+    max_rounds = max(1, config.llm_retries)
+
+    for round_no in range(1, max_rounds + 1):
+        plan = plan_fixes(current)
+        if not plan.fixes:
+            break
+
+        bodies = dict(plan.good)
+        for fix in plan.fixes:
+            bodies[fix.section] = _run_section_fix(
+                config, fix, current, tmp_path, log, theme
+            )
+        current = stitch_script(bodies)
+        log.info(
+            "event=section_fix_round theme=%s round=%d fixes=%s",
+            theme, round_no, ",".join(fix.section for fix in plan.fixes),
+        )
+
+        try:
+            parse_script(current)
+            return current
+        except ScriptParseError:
+            continue
+
+    return current
+
+
+def _run_section_fix(
+    config: PipelineConfig,
+    fix,
+    full_script_text: str,
+    tmp_path: Path,
+    log,
+    theme: str,
+) -> str:
+    raw = fix.raw if fix.raw.strip() else full_script_text
+    safe_section = fix.section.lower().replace(" ", "_")
+
+    fix_input_path = tmp_path / f"fix_{safe_section}_input.txt"
+    fix_input_path.write_text(_build_fix_input(raw, fix.error), encoding="utf-8")
+
+    fix_output_path = tmp_path / f"fix_{safe_section}_output.txt"
+    metrics = run_prompt_with_metrics(
+        config.resolve_prompt(fix.prompt_name),
+        fix_input_path,
+        fix_output_path,
+        models=config.models,
+        timeout=config.llm_timeout_s,
+        prompt_label=fix.prompt_name,
+    )
+    log.info(
+        "event=section_fix_prompt theme=%s section=%s wall_ms=%d",
+        theme, fix.section, metrics.get("wall_ms", 0),
+    )
+
+    fixed_text = fix_output_path.read_text(encoding="utf-8").strip()
+    if fixed_text.upper() == "GARBAGE":
+        raise RuntimeError(
+            f"Fix prompt returned GARBAGE for {fix.section} in {theme}: "
+            f"section unfixable"
+        )
+
+    return _strip_section_header(fixed_text, fix.section)
+
+
+def _strip_section_header(text: str, section: str) -> str:
+    body = text.strip()
+    lines = body.split("\n")
+    if lines and lines[0].strip().upper() == section.upper():
+        body = "\n".join(lines[1:]).strip()
+    return body + "\n"
 
 
 if __name__ == "__main__":

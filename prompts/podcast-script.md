@@ -11,13 +11,20 @@ The podcast script will be parsed and rendered using a TTS pipeline so you will 
 
 # Output Guidelines
 
-Each section should have a header with newlines before/after. The header should be all caps and match the following titles exactly:
+The script must have exactly these named sections in exactly this order. There should be no extra sections. 
+Each section must have a header with newlines before and after. The headers should be all caps and match the following titles exactly:
 
 INTRO
 DIALOGUE
 BREAKDOWN
 OUTRO
 VOICE PROFILES
+
+## Notes on text
+
+When the hosts insert Chinese words/phrases, always write them using Simplified Chinese. Never use pinyin in your script, always the simplified characters.
+
+This text is supposed to be read/spoken, so for all dialogue (hosts or characters, English or Chinese), write all numbers and symbols in word form ('three' not '3', 'plus' not '+') etc. 
 
 ## Length 
 
@@ -28,15 +35,18 @@ Dialogue - 100-300 words
 Breakdown - 600-800 words
 Outro - 100-200 words
 
+## Hosts
+
+The hosts are always 'Ryan' a male speaker and 'Mei,' a female native Chinese speaker. They are both fluent in English and Chinese, but Mei carries the main role of the teacher, giving exposition and explaination. Ryan plays the role of a student; Mei and Ryan have fun and playful back and forth banter and the Ryan asks natural questions about the grammar point (e.g. "Is this the same as foo?", "Where doesn't this work?", "Can you also say X?", "What is the difference between Y and Z?", "How does <grammar point> work with <related>"? )
+
 ## Introduction / Explaination
 
 The two hosts should clearly introduce:
 
 * what the grammar point is
 * how/when it's generally used (including a few examples)
+* The main vocab words
 * what the dialogue is about and who the speakers are.
-
-The hosts are always a male English speaker (who is learning Chinese) and a female native Chinese speaker, who is fluent and English and carries the main part of the explaination. They have a back and forth banter and the male host asks natural questions about the grammar point (e.g. "Can you also say X?", "What is the difference between Y and Z?", "How does <grammar point> work with <related>"? )
 
 The hosts should give a short overview of the dialogue (e.g. "You're going to hear a trainer approaching a customer at the gym")
 
@@ -46,8 +56,7 @@ The dialogue should be natural and use common phrases, the way that real people 
 
 ## Breakdown
 
-The female teacher likes to repeat the lines of dialogue, speaking slowly and clearly. Often when repeating a vocab word, she will say it three times in a row to emphasise the tones. The student will do some 'colour' commentary and ask questions about related words/shared roots, similar grammar constructs ("Is this the same as?" )
-
+Mei likes to repeat the lines of dialogue, speaking slowly and clearly. Often when repeating a vocab word, she will say it three times in a row to emphasise the tones. Ryan will do some 'colour' commentary and ask questions about related words/shared roots, similar grammar constructs ("Is this the same as?" ). Together they'll go over the grammar point usage in the dialogue as well as the key vocab.
 
 ## Outro
 
@@ -56,7 +65,8 @@ The hosts perform a brief recap of the topic and grammar points, "Today we learn
 ## Format
 
 The script is a series of sentences, each preceeded by the language of the sentence and the speaker id. 
-For the introduction, the speaker ids are set - 'student' for the male host and 'teacher' for the female host. (e.g. )
+For the introduction, the speaker ids are set - 'student' for the male host Ryan and 'teacher' for the female host Mei.
+
 For the dialogue, the speaker ids are just numbers which are used to identify the voice profiles. In the dialogue, each spoken line should have its English translation provided on a new line directly beneath it.
 
 ### Example of Introduction markup
@@ -86,6 +96,8 @@ Always provide every field of each profile which the template specifies; all the
 For each voice profile in the dialogue, create a voice profile. Your dialogue speakers will be chinese, so fill it out in Chinese. Leave the key/property names in English, though, because a program will parse them.
 
 All properties are mandatory. Use your imagination to come up with colourful, expressive characters. Be overstated, not understated - don't be afraid to "go big" with your profiles. The podcast only has voices/audio to convey emotion, so more expressive is better.
+
+IMPORTANT - always specify within a range from slow to medium; a bit slower than you would naturally, because the podcast is for new learners. So specify a fast speaker as medium and a normal speaker as a bit slow.
 
 #### Voice profile property guide
 

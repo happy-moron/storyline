@@ -109,6 +109,47 @@ def parse_script(text: str) -> PodcastScript:
     )
 
 
+def extract_sections(text: str) -> dict[str, str]:
+    return _extract_sections(text)
+
+
+def parse_section(section_name: str, text: str):
+    if section_name not in _REQUIRED_SECTIONS:
+        raise ValueError(f"Unknown section: {section_name}")
+
+    if section_name == "INTRO":
+        return _parse_host_section(text, "INTRO", strict=True)
+    if section_name == "DIALOGUE":
+        return _parse_dialogue_section(text)
+    if section_name == "BREAKDOWN":
+        return _parse_breakdown_section(text)
+    if section_name == "OUTRO":
+        return _parse_host_section(text, "OUTRO", strict=True)
+    if section_name == "VOICE PROFILES":
+        return _parse_voice_profiles_section(text)
+
+    raise ValueError(f"Unknown section: {section_name}")
+
+
+def validate_sections(text: str) -> dict[str, str]:
+    # Only checks each section's own format; dialogue/voice-profile speaker
+    # consistency is validated separately by parse_script.
+    sections = _extract_sections(text)
+    errors: dict[str, str] = {}
+
+    for required in _REQUIRED_SECTIONS:
+        raw = sections.get(required)
+        if raw is None:
+            errors[required] = f"Missing section: {required}"
+            continue
+        try:
+            parse_section(required, raw)
+        except ScriptParseError as e:
+            errors[required] = str(e)
+
+    return errors
+
+
 # ---------------------------------------------------------------------------
 # Section extraction
 # ---------------------------------------------------------------------------

@@ -261,6 +261,8 @@ def tokenize_stage(source_txt_path: Path, token_txt_path: Path,
             )
         else:
             target_indices = sorted(report.bad_indices)
+            if not target_indices:
+                continue
             bad_sentences = [stripped_sentences[i] for i in target_indices]
 
             fix_input = pipe_token_dir / f"{stem}_fix_input_{attempt}.txt"

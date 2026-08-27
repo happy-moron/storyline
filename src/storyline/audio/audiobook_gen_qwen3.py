@@ -42,12 +42,59 @@ class Qwen3TTSService:
                    endpoint, len(payload.get("text", "")), elapsed_ms, len(audio) / 1000.0)
         return audio
 
+    def _post_and_decode_batch(self, endpoint, payload):
+        t0 = time.time()
+        response = self.session.post(
+            f"{self.base_url}{endpoint}",
+            json=payload,
+            timeout=self._tts_timeout,
+        )
+        elapsed_ms = int((time.time() - t0) * 1000)
+        if response.status_code != 200:
+            raise RuntimeError(f"TTS {endpoint} failed ({response.status_code}): {response.text}")
+        data = response.json()
+        audio_list = data.get('audio')
+        if not audio_list:
+            raise RuntimeError(f"No audio in batch response: {data}")
+        if isinstance(audio_list, str):
+            audio_list = [audio_list]
+        texts = payload.get("text", [])
+        total_chars = sum(len(t) for t in texts) if isinstance(texts, list) else len(texts)
+        _log.debug("event=tts_batch endpoint=%s items=%d total_chars=%d duration_ms=%d",
+                   endpoint, len(audio_list), total_chars, elapsed_ms)
+        return [AudioSegment.from_file(io.BytesIO(base64.b64decode(b64)), format="wav")
+                for b64 in audio_list]
+
     def generate_audio(self, text, language, speaker, instruct=""):
         return self._post_and_decode("/custom_voice", {
             "text": text,
             "language": language.capitalize(),
             "speaker": speaker,
             "instruct": instruct
+        })
+
+    def generate_audio_batch(self, texts, languages, speakers, instructs):
+        n = len(texts)
+        if isinstance(languages, str):
+            languages = [languages.capitalize()] * n
+        else:
+            languages = [l.capitalize() for l in languages]
+        if isinstance(speakers, str):
+            speakers = [speakers] * n
+        if isinstance(instructs, str):
+            instructs = [instructs] * n
+        return self._post_and_decode_batch("/custom_voice", {
+            "text": texts,
+            "language": languages,
+            "speaker": speakers,
+            "instruct": instructs,
+        })
+
+    def voice_design(self, text, language, instruct=""):
+        return self._post_and_decode("/voice_design", {
+            "text": text,
+            "language": language.capitalize(),
+            "instruct": instruct,
         })
 
     def forced_align(self, audio: AudioSegment, text: str, language: str) -> list[dict]:
@@ -92,6 +139,21 @@ class Qwen3TTSService:
         _log.debug("event=tts_clone chars=%d duration_ms=%d",
                    len(text), int((time.time() - t0) * 1000))
         return result
+
+    def generate_voice_clone_batch(self, texts, languages, ref_audio_path, ref_text):
+        with open(ref_audio_path, 'rb') as f:
+            ref_audio_b64 = base64.b64encode(f.read()).decode('utf-8')
+        n = len(texts)
+        if isinstance(languages, str):
+            languages = [languages.capitalize()] * n
+        else:
+            languages = [l.capitalize() for l in languages]
+        return self._post_and_decode_batch("/voice_clone", {
+            "text": texts,
+            "language": languages,
+            "ref_audio": ref_audio_b64,
+            "ref_text": ref_text,
+        })
 
 
 def generate_tts_audio(service, text, voice):

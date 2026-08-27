@@ -202,6 +202,56 @@ Generates audio by cloning a voice using a reference audio/text pair.
 
 ``POST /voice_clone`` – Parameters: ``text``, ``language``, ``ref_audio`` (URL or base64), ``ref_text``.
 
+#### Batch Inference
+
+Batch inference is supported by passing all "synthesis" parameters (``text`` and
+``language``) as lists.  The reference parameters (``ref_audio`` and
+``ref_text``) can be provided in two styles:
+
+**Shared reference (prompt reuse)** — one reference audio, many lines:
+
+```bash
+curl -X POST http://localhost:11433/voice_clone \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": ["Hello world", "How are you?"],
+    "language": ["English", "English"],
+    "ref_audio": "http://example.com/reference.wav",
+    "ref_text": "This is the reference transcript."
+  }'
+```
+
+The server extracts the voice prompt **once** and reuses it for every line in
+the batch, avoiding redundant computation.
+
+**Per‑item references** — each line uses its own reference audio:
+
+```bash
+curl -X POST http://localhost:11433/voice_clone \
+  -H "Content-Type: application/json" \
+  -d '{
+    "text": ["Hello world", "Cómo estás"],
+    "language": ["English", "Spanish"],
+    "ref_audio": [
+      "http://example.com/ref1.wav",
+      "http://example.com/ref2.wav"
+    ],
+    "ref_text": ["Transcript one.", "Transcript two."]
+  }'
+```
+
+**Batch response:**
+
+```json
+{
+  "audio": ["base64_encoded_audio_1", "base64_encoded_audio_2"]
+}
+```
+
+**Error handling:** If ``text`` and ``language`` have mismatched lengths, the
+endpoint returns a 400 error.  The same check is applied when ``ref_audio`` or
+``ref_text`` are provided as lists.
+
 ### Model management
 
 #### GET /models

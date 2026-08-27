@@ -1,6 +1,7 @@
 Ordering food at a restaurant
 Giving a friend a ride
 Settling into work at the office
+Cleaning the house
 A day out at the beach
 Checking into a hotel
 Asking for directions in a new city

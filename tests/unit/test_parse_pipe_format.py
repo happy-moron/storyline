@@ -76,6 +76,27 @@ class TestParseTokenizedPipe:
         assert result[0]["t"][0] == ["\u2026", "\u2026", "w"]
         assert result[0]["t"][1] == ["\uff01", "\uff01", "w"]
 
+    def test_expected_chinese_validation_passes(self):
+        result = parse_tokenized_pipe(
+            "\u6211|w\u01d2|r\n\u597d|h\u01ceo|a",
+            expected_chinese=["\u6211\u597d"],
+        )
+        assert len(result) == 1
+
+    def test_expected_chinese_validation_mismatch_raises(self):
+        with pytest.raises(ValueError, match="reconstructed text does not match"):
+            parse_tokenized_pipe(
+                "\u6211|w\u01d2|r\n\u597d|h\u01ceo|a",
+                expected_chinese=["\u4f60\u597d"],  # wrong
+            )
+
+    def test_expected_chinese_count_mismatch_raises(self):
+        with pytest.raises(ValueError, match="Sentence count mismatch"):
+            parse_tokenized_pipe(
+                "\u6211|w\u01d2|r\n\u597d|h\u01ceo|a",
+                expected_chinese=["\u6211\u597d", "\u4f60\u597d"],
+            )
+
 
 class TestParseTokenizedCompact:
     def test_basic(self):
@@ -173,3 +194,21 @@ class TestParseTokenizedFile:
         p.write_text("我|wǒ|r||。|w", encoding="utf-8")
         result = parse_tokenized_file(p, expected_chinese=["我。"])
         assert len(result) == 1
+
+    def test_legacy_path_validates_expected_chinese(self, tmp_path):
+        p = tmp_path / "test.txt"
+        p.write_text("我|wǒ|r\n。|w", encoding="utf-8")
+        with pytest.raises(ValueError, match="Sentence count mismatch"):
+            parse_tokenized_file(p, expected_chinese=["我。", "你好"])
+
+    def test_garbage_without_pipe_separator_is_rejected(self, tmp_path):
+        """Non-tokenized LLM output without ``||`` must not bypass validation."""
+        p = tmp_path / "test.txt"
+        p.write_text(
+            "| date | A |\n"
+            "| :--- | :--- |\n"
+            "| 2022-01-01 | 1 |\n",
+            encoding="utf-8",
+        )
+        with pytest.raises(ValueError):
+            parse_tokenized_file(p, expected_chinese=["我。"])

@@ -71,13 +71,16 @@ class PipelineConfig:
         "dict_entry": "prompts/create_single_dictionary_entry.txt",
         "podcast_vocab": "prompts/podcast-vocab.md",
         "podcast_script": "prompts/podcast-script.md",
+        "podcast_fix_script": "prompts/podcast-fix-script.md",
+        "podcast_fix_dialogue": "prompts/podcast-fix-dialogue.md",
+        "podcast_fix_voice_profiles": "prompts/podcast-fix-voice-profiles-script.md",
     })
 
     # -- Pipeline behaviour --
     max_chunks: int = 500
     split_chunk_size: int = 2000
     llm_retries: int = 3
-    llm_timeout_s: int = 600
+    llm_timeout_s: int = 1200
     warmup_on_start: bool = True
     skip_simplify: bool = False
     skip_audio: bool = False
@@ -179,6 +182,8 @@ class PipelineConfig:
             tasks = (
                 "translate", "tokenize", "dictionary",
                 "podcast_vocab", "podcast_script",
+                "podcast_fix_script", "podcast_fix_dialogue",
+                "podcast_fix_voice_profiles",
             )
             self.task_profiles = {
                 task: llm_cfg.get(task, {}).get("profile", default_profile)

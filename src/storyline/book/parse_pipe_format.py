@@ -31,6 +31,25 @@ def _normalize_for_comparison(text: str) -> str:
     return "".join(ch for ch in text if ch not in CJK_PUNCT)
 
 
+def _validate_expected_chinese(
+    sentences: list[dict], expected_chinese: list[str]
+) -> None:
+    """Raise if reconstructed token text does not match *expected_chinese*."""
+    if len(sentences) != len(expected_chinese):
+        raise ValueError(
+            f"Sentence count mismatch: expected {len(expected_chinese)}, "
+            f"got {len(sentences)}"
+        )
+    for i, (sentence, expected) in enumerate(zip(sentences, expected_chinese)):
+        reconstructed = "".join(t[0] for t in sentence["t"])
+        if _normalize_for_comparison(reconstructed) != _normalize_for_comparison(expected):
+            raise ValueError(
+                f"Sentence {i}: reconstructed text does not match expected.\n"
+                f"  Expected:  {''.join(expected.split())}\n"
+                f"  Got:       {''.join(reconstructed.split())}"
+            )
+
+
 def strip_fences(text: str) -> str:
     """Strip surrounding markdown code fences (with or without language tag)."""
     text = text.strip()
@@ -120,20 +139,7 @@ def parse_tokenized_compact(
 
     # Inline validation
     if expected_chinese is not None:
-        if len(sentences) != len(expected_chinese):
-            raise ValueError(
-                f"Sentence count mismatch: expected {len(expected_chinese)}, "
-                f"got {len(sentences)}"
-            )
-        for i, (sentence, expected) in enumerate(zip(sentences, expected_chinese)):
-            reconstructed = "".join(t[0] for t in sentence["t"])
-            # Normalize whitespace and CJK/Latin punctuation equivalents
-            if _normalize_for_comparison(reconstructed) != _normalize_for_comparison(expected):
-                raise ValueError(
-                    f"Sentence {i}: reconstructed text does not match expected.\n"
-                    f"  Expected:  {''.join(expected.split())}\n"
-                    f"  Got:       {''.join(reconstructed.split())}"
-                )
+        _validate_expected_chinese(sentences, expected_chinese)
 
     return sentences
 
@@ -177,14 +183,16 @@ def parse_tokenized_file(
         if "||" in repaired:
             return parse_tokenized_compact(repaired, expected_chinese=expected_chinese)
 
-    return parse_tokenized_pipe(text)
+    return parse_tokenized_pipe(text, expected_chinese=expected_chinese)
 
 
 # ---------------------------------------------------------------------------
 # Tokenized - legacy format (one token per line, for old data)
 # ---------------------------------------------------------------------------
 
-def parse_tokenized_pipe(text: str) -> list[dict]:
+def parse_tokenized_pipe(
+    text: str, expected_chinese: list[str] | None = None
+) -> list[dict]:
     """Parse legacy tokenized format (one token per line, blank lines
     between sentences).
 
@@ -221,4 +229,8 @@ def parse_tokenized_pipe(text: str) -> list[dict]:
 
     if not sentences:
         raise ValueError("No valid token sequences found in pipe output")
+
+    if expected_chinese is not None:
+        _validate_expected_chinese(sentences, expected_chinese)
+
     return sentences

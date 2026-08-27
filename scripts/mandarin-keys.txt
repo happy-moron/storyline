@@ -7,4 +7,4 @@ clarity,清晰度
 fluency,流畅度
 timbre,音色质感
 emotion,情绪
-usecase,或质疑
+usecase,用途

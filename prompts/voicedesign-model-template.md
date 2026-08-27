@@ -1,17 +1,3 @@
-# Voice Design Template — for VoiceDesign `instruct` prompts
-
-This version targets one specific model, not a generic TTS pipeline.
-
-**Important correction:** the original sample set this template family was built from is itself a set of official examples for this model — including the long, richly detailed, sometimes field-list-formatted entries with background and mid-line delivery shifts. The "15–40 words" figure from the general usage guide describes the *minimum viable* prompt (the point past which a description stops being "too broad to generate a distinctive voice"), not a ceiling. The only hard ceiling is **2,048 characters**. So: short and dense is fine for minor characters, and long and richly specified is equally valid — and often better — for major or recurring ones. This template now supports both registers explicitly.
-
-## Model constraints this template is built around
-
-- **Length:** hard cap 2,048 characters. No enforced minimum, but single-dimension descriptions ("female voice") are called out as too broad to produce a distinctive voice. Treat 15–40 words as the floor for a workable prompt, not a target to stay under — the official samples routinely run far longer and are not penalized for it.
-- **Language:** English or Chinese only, regardless of the output speech's language.
-- **Form is flexible:** both flowing prose (the "official example prompts" style) and structured field-list text (`Gender: Male. Pitch: ...`) appear in official examples. Pick whichever form best fits the length and complexity of the description — flowing prose for short, dense descriptions; a field list for longer, multi-attribute ones where it aids clarity and consistency.
-- **Delivery arcs are supported.** Several official examples describe a voice that changes over the course of the material — start commanding, shift to narrative amusement; start playful, turn resigned. Encode a genuine dynamic character this way rather than flattening them to one static baseline, when the length budget allows it.
-- **Accent — use with caution.** The general usage guide's own framing ("No Accents") suggests accent isn't one of the model's formally controllable dimensions, yet several official examples explicitly include an Accent field (British English, American English, Standard Mandarin). Treat this as an optional bonus descriptor: include it if it plausibly helps characterize the voice, but don't rely on it to reliably steer output the way Pitch or Pace will.
-- **No celebrity or existing-voice imitation:** this is explicitly blocked by the model. Describe physical/vocal qualities from scratch, never "sounds like X."
 - **Be objective, not evaluative:** "deep, crisp, fast-paced" works; "nice voice" or "sounds trustworthy" does not — those describe listener reaction, not the voice itself.
 
 ---

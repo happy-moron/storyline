@@ -7,6 +7,9 @@ from storyline.podcast.script_parser import (
     PodcastScript,
     VoiceProfile,
     parse_script,
+    parse_section,
+    extract_sections,
+    validate_sections,
     ScriptParseError,
 )
 
@@ -823,6 +826,78 @@ dialogue = "真的吗？"
 # ---------------------------------------------------------------------------
 # Dataclass immutability
 # ---------------------------------------------------------------------------
+
+class TestExtractSections:
+    def test_extracts_known_sections_without_headers(self):
+        sections = extract_sections(_full_script())
+        assert set(sections) == {"INTRO", "DIALOGUE", "BREAKDOWN", "OUTRO", "VOICE PROFILES"}
+        assert "INTRO" not in sections["INTRO"]
+        assert "en=teacher" in sections["INTRO"]
+
+    def test_missing_section_absent(self):
+        text = "INTRO\n\nen=teacher\nHello.\n\nDIALOGUE\n\nzh=1\n你好。\nHello.\n"
+        sections = extract_sections(text)
+        assert "BREAKDOWN" not in sections
+        assert "OUTRO" not in sections
+        assert "VOICE PROFILES" not in sections
+
+
+class TestParseSection:
+    def test_parses_each_section_independently(self):
+        sections = extract_sections(_full_script())
+        assert len(parse_section("INTRO", sections["INTRO"])) == 2
+        assert len(parse_section("DIALOGUE", sections["DIALOGUE"])) == 2
+        assert len(parse_section("BREAKDOWN", sections["BREAKDOWN"])) == 2
+        assert len(parse_section("OUTRO", sections["OUTRO"])) == 2
+        assert len(parse_section("VOICE PROFILES", sections["VOICE PROFILES"])) == 2
+
+    def test_unknown_section_raises_value_error(self):
+        with pytest.raises(ValueError, match="Unknown section"):
+            parse_section("NOPE", "en=teacher\nHello.")
+
+    def test_invalid_dialogue_raises_script_parse_error(self):
+        with pytest.raises(ScriptParseError):
+            parse_section("DIALOGUE", "zh=1\n你好。\n")
+
+
+class TestValidateSections:
+    def test_valid_script_has_no_errors(self):
+        assert validate_sections(_full_script()) == {}
+
+    def test_reports_only_bad_sections(self):
+        text = _full_script(
+            dialogue="DIALOGUE\n\nzh=1\n你好。\n",
+            voice_profiles="VOICE PROFILES\n\n",
+        )
+        errors = validate_sections(text)
+        assert "DIALOGUE" in errors
+        assert "VOICE PROFILES" in errors
+        assert "INTRO" not in errors
+        assert "BREAKDOWN" not in errors
+        assert "OUTRO" not in errors
+
+    def test_reports_missing_section(self):
+        text = "INTRO\n\nen=teacher\nHello.\n\nDIALOGUE\n\nzh=1\n你好。\nHello.\n"
+        errors = validate_sections(text)
+        assert errors["BREAKDOWN"] == "Missing section: BREAKDOWN"
+        assert errors["OUTRO"] == "Missing section: OUTRO"
+        assert errors["VOICE PROFILES"] == "Missing section: VOICE PROFILES"
+
+    def test_cross_section_mismatch_not_reported(self):
+        # Dialogue references speaker 3 with no profile, but validate_sections
+        # only checks individual section formatting.
+        dialogue = """DIALOGUE
+
+zh=1
+你好。
+Hello.
+zh=3
+再见。
+Goodbye.
+"""
+        text = _full_script(dialogue=dialogue)
+        assert validate_sections(text) == {}
+
 
 class TestDataclassImmutability:
     def test_host_line_is_frozen(self):
