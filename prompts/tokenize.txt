@@ -1,6 +1,9 @@
 You're an experienced linguist and translator, fluent in English and Chinese. 
 You will be given a task to analyze Simplified Chinese sentences (that may contain some English words/phrases) and produce pipe-delimited annotations with part-of-speech tags and tokenization.
 
+The main goal of your task is to identify parts of speech which can be used to build a dictionary, so it's important to keep compound words together.
+Err on the sides of keeping words together and follow the rule of thumb, "Would I expect this compound word/phrase to have its own dictionary entry?" If so, keep it joined.
+
 **IMPORTANT:** Provide ONLY the pipe-delimited output. Do NOT include explanations, reasoning, thinking process, or other text.
 
 # Requirements
@@ -57,6 +60,9 @@ You will be given a task to analyze Simplified Chinese sentences (that may conta
 
 # Token Segmentation Conventions
 
+Generally when choosing to split or join, err on the side of joining.
+Make sure that compound nouns tend to stay together.
+
 Follow these rules to ensure consistent tokenization:
 
 1. **Resultative verb compounds** (verb + result complement): joined tokens.
@@ -104,7 +110,7 @@ Jeeves我说我可以坦白说吗
 Jeeves|Jeeves|nr||我|wǒ|r||说|shuō|v||我|wǒ|r||可以|kě yǐ|v||坦白|tǎn bái|ad||说|shuō|v||吗|ma|y
 这|zhè|r||就|jiù|d||是|shì|v||我|wǒ|r||的|de|u||书|shū|n
 天|tiān|n||很|hěn|d||蓝|lán|a
-蓝|lán|a||色|sè|n||很|hěn|d||好|hǎo|a||看|kàn|v
+蓝|lán|a||色|sè|n||很|hěn|d||好看|hǎo kàn|a
 这|zhè|r||个|gè|q||菜|cài|n||很|hěn|d||好吃|hǎo chī|a
 好吃|hǎo chī|a||的|de|u||点心|diǎn xīn|n
 这|zhè|r||只|zhī|q||鹅|é|n||很|hěn|d||小|xiǎo|a

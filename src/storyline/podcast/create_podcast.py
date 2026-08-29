@@ -57,10 +57,10 @@ def build_script_input(selection: Selection, vocab_text: str) -> str:
         "",
         selection.theme,
         "",
-        "## Vocab",
-        "",
-        vocab_text.strip(),
-        "",
+        # "## Vocab",
+        # "",
+        # vocab_text.strip(),
+        # "",
     ]
     return "\n".join(lines)
 
@@ -75,7 +75,6 @@ def generate_podcast(
     script_dir: str = SCRIPT_DIR,
     vocab_dir: str = VOCAB_DIR,
 ):
-    storyline.logging.init()
     log = get_logger("podcast")
 
     selection = select_next(
@@ -90,35 +89,37 @@ def generate_podcast(
         ",".join(p.id for p in selection.grammar_points),
     )
 
-    _ensure_llm(service_manager, config, "podcast_vocab")
+    # _ensure_llm(service_manager, config, "podcast_vocab")
+    _ensure_llm(service_manager, config, "podcast_script")
 
-    vocab_output = Path(vocab_dir) / f"{selection.theme_slug}.txt"
+    # vocab_output = Path(vocab_dir) / f"{selection.theme_slug}.txt"
     script_output = Path(script_dir) / f"{selection.theme_slug}.txt"
-    vocab_output.parent.mkdir(parents=True, exist_ok=True)
+    # vocab_output.parent.mkdir(parents=True, exist_ok=True)
     script_output.parent.mkdir(parents=True, exist_ok=True)
 
     with tempfile.TemporaryDirectory() as tmp:
         tmp_path = Path(tmp)
 
-        vocab_input = tmp_path / "vocab_input.txt"
-        vocab_input.write_text(build_vocab_input(selection.theme), encoding="utf-8")
-        metrics = run_prompt_with_metrics(
-            config.resolve_prompt("podcast_vocab"),
-            vocab_input,
-            vocab_output,
-            models=config.models,
-            timeout=config.llm_timeout_s,
-            prompt_label="podcast_vocab",
-        )
-        log.info(
-            "event=vocab_written theme=%s chars=%d wall_ms=%d",
-            selection.theme_slug, vocab_output.stat().st_size, metrics.get("wall_ms", 0),
-        )
+        # vocab_input = tmp_path / "vocab_input.txt"
+        # vocab_input.write_text(build_vocab_input(selection.theme), encoding="utf-8")
+        # metrics = run_prompt_with_metrics(
+        #     config.resolve_prompt("podcast_vocab"),
+        #     vocab_input,
+        #     vocab_output,
+        #     models=config.models,
+        #     timeout=config.llm_timeout_s,
+        #     prompt_label="podcast_vocab",
+        # )
+        # log.info(
+        #     "event=vocab_written theme=%s chars=%d wall_ms=%d",
+        #     selection.theme_slug, vocab_output.stat().st_size, metrics.get("wall_ms", 0),
+        # )
 
-        vocab_text = vocab_output.read_text(encoding="utf-8")
+        # vocab_text = vocab_output.read_text(encoding="utf-8")
         script_input = tmp_path / "script_input.txt"
         script_input.write_text(
-            build_script_input(selection, vocab_text), encoding="utf-8"
+            # build_script_input(selection, "vocab_text"), encoding="utf-8"
+            build_script_input(selection, ""), encoding="utf-8"
         )
         metrics = run_prompt_with_metrics(
             config.resolve_prompt("podcast_script"),
@@ -137,7 +138,8 @@ def generate_podcast(
 
     append_episode(Path(episodes_path), selection)
 
-    return selection, vocab_output, script_output
+    #return selection, vocab_output, script_output
+    return selection, script_output
 
 
 def _build_fix_input(script_text: str, error_message: str) -> str:
@@ -261,10 +263,51 @@ def _strip_section_header(text: str, section: str) -> str:
 
 
 if __name__ == "__main__":
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Generate podcast scripts"
+    )
+    parser.add_argument(
+        "-n", "--num-episodes", type=int, default=1,
+        help="Number of podcast episodes to attempt (default: 1)",
+    )
+    parser.add_argument(
+        "--profile", type=str, default=None,
+        help="Pipeline profile from pipeline.toml",
+    )
+    parser.add_argument(
+        "-m", "--models", type=str, default=None,
+        help="Comma-separated list of models (overrides config)",
+    )
+    args = parser.parse_args()
+
+    storyline.logging.init()
+    log = get_logger("podcast.batch")
+
     service_manager = ServiceManager()
-    config = PipelineConfig.from_files_and_args()
+    config = PipelineConfig.from_files_and_args(args, profile_name=args.profile)
+
+    successes = 0
+    failures = 0
     try:
-        generate_podcast(config, service_manager=service_manager)
+        for i in range(args.num_episodes):
+            log.info("event=batch_attempt attempt=%d/%d", i + 1, args.num_episodes)
+            try:
+                generate_podcast(config, service_manager=service_manager)
+                successes += 1
+                log.info("event=batch_success attempt=%d/%d", i + 1, args.num_episodes)
+            except Exception as e:
+                failures += 1
+                log.error(
+                    "event=batch_failure attempt=%d/%d error=%s",
+                    i + 1, args.num_episodes, str(e),
+                )
     finally:
         if config.llm_provider == "local":
             service_manager.stop("llm")
+
+    log.info(
+        "event=batch_complete attempted=%d successes=%d failures=%d",
+        args.num_episodes, successes, failures,
+    )

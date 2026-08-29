@@ -1,0 +1,206 @@
+INTRO
+
+en=teacher
+Welcome to another episode of Learning Chinese. I am Ellen, your teacher, and as always, I am joined by Ryan.
+
+en=student
+Hey everyone! I am so excited for today's topic. We are talking about returning things that don't work, right?
+
+en=teacher
+That's right, Ryan. Today's theme is returning a faulty product. If you buy something and it breaks, you might need to go back to the store to ask for a refund or a return.
+
+en=student
+That sounds like a stressful situation! But I know it is a great chance to practice some very important grammar.
+
+en=teacher
+Exactly. Today, we are focusing on two specific grammar points. The first is the adverb 也, which means "also" or "too." It is used before a verb or an adjective. For example, 我也是, which means I am also.
+
+en=student
+Right, and the second one is using 多 before an adjective to ask about the degree of something. Like, how big, how tall, or in our case today, how expensive.
+
+en=teacher
+Perfect. For example, if you want to ask "How expensive is it?", you would say 多贵.
+
+en=student
+Got it. So "也" goes before the verb, and "多" goes before the adjective to ask "how [adjective]."
+
+en=teacher
+You've got it! We will also learn some essential vocabulary like 咖啡机 for coffee machine, 质量 for quality, and 退货 for returning goods.
+
+en=student
+In our dialogue, you are going to hear a customer talking to a store clerk about a broken coffee machine. The customer is a bit disappointed, and the clerk is trying to be very helpful.
+
+en=teacher
+Let's listen to the dialogue.
+
+DIALOGUE
+
+zh=1
+你好，我想退货。这个咖啡机坏了。
+Hello, I want to return goods. This coffee machine is broken.
+
+zh=2
+您好，真抱歉。这个咖啡机原来多贵？
+Hello, I am so sorry. How expensive was this coffee machine originally?
+
+zh=1
+五百块。而且质量也不好。
+Five hundred yuan. And the quality is also not good.
+
+zh=2
+明白了。那它的包装盒也坏了吗？
+Understood. Then is the packaging box also broken?
+
+zh=1
+是的，盒子也很旧。
+Yes, the box is also very old.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this conversation line by line. First, let's listen to the customer.
+
+zh=1
+你好，我想退货。这个咖啡机坏了。
+Hello, I want to return goods. This coffee machine is broken.
+
+en=teacher
+The customer starts by saying 我想退货.
+
+en=student
+退货... that is "return goods," right? Is it like "returning a gift"?
+
+en=teacher
+Very close! 退 means to return or to retreat, and 货 means goods or merchandise. So 退货 is specifically the act of returning purchased items. And then they say 这个咖啡机坏了.
+
+en=student
+坏了. That means "broken," correct?
+
+en=teacher
+Yes, 坏 means broken or bad. And 咖啡机 is our new vocabulary word. 咖啡 is coffee, and 机 is machine.
+
+en=student
+Okay, coffee machine. Got it. Now, the clerk responds.
+
+zh=2
+您好，真抱歉。这个咖啡机原来多贵？
+Hello, I am so sorry. How expensive was this coffee machine originally?
+
+en=teacher
+The clerk says 真抱歉, which is a very polite way to say "I am truly sorry." Then comes our second grammar point: 多贵.
+
+en=student
+Wait, I have a question. I know 多 means "many" or "much," like in 多少. But here, it's used to ask "how expensive"?
+
+en=teacher
+That is a great observation, Ryan. When you put 多 before an adjective, you are asking about the degree of that quality. So 多贵 means "how expensive," 多大 means "how big," and 多高 means "how tall." It's not asking for a specific number immediately, but rather the degree of the quality.
+
+en=student
+Oh! So if I ask "多贵?", the answer is a number, but the question is asking for the degree of the cost. That makes sense.
+
+en=teacher
+Exactly. Now, let's look at the customer's reply.
+
+zh=1
+五百块。而且质量也不好。
+Five hundred yuan. And the quality is also not good.
+
+en=teacher
+The customer says 五百块. 块 is the common colloquial word for the currency. Then, they use the word 质量 for quality.
+
+en=student
+And then we hear the first instance of our first grammar point: 也. 质量也不好.
+
+en=teacher
+Yes! 质量 is the quality, 不 is not, and 好 is good. But the "也" is placed right before the adjective phrase. 质量也不好 means "the quality is also not good."
+
+en=student
+So it's not "质量是不好也," it must be "质量也不好."
+
+en=teacher
+Exactly. "也" always stays before the verb or the adjective. Now, let's hear the clerk's follow-up.
+
+zh=2
+明白了。那它的包装盒也坏了吗？
+Understood. Then is the packaging box also broken?
+
+en=teacher
+The clerk says 明白了, which means "I understand" or "Got it." Then they ask about the 包装盒.
+
+en=student
+包装盒... 包装 is "packaging" and 盒 is "box."
+
+en=teacher
+You're on a roll! And then we have "也坏了吗?"
+
+en=student
+There's "也" again! This time before the verb 坏. So "is the box also broken?"
+
+en=teacher
+Precisely. And finally, the customer's last line.
+
+zh=1
+是的，盒子也很旧。
+Yes, the box is also very old.
+
+en=teacher
+The customer says 是的, meaning "yes." Then 盒子也很旧.
+
+en=student
+"也很旧." "也" is before "很旧." So "is also very old." And 旧 means old, like a used object, right? Not old like an old person?
+
+en=teacher
+That is a very important distinction! 旧 is used for objects that are worn or used, whereas 老 is used for people or things that have existed for a long time.
+
+en=student
+That's a huge difference. I'll remember that. So, to recap, we used 也 before adjectives like 也很好 or 也很旧, and we used 多 before adjectives like 多贵 to ask about the degree of something.
+
+en=teacher
+You've mastered it!
+
+OUTRO
+
+en=teacher
+That's all for today's episode of Learning Chinese. We hope this helped you feel more confident about returning a faulty product and using our two grammar points.
+
+en=student
+Today we learned how to use 也 to mean "also," and how to use 多 before an adjective to ask "how [adjective]."
+
+en=teacher
+And don't forget the vocab: 退货 for returning goods, 咖啡机 for coffee machine, and 质量 for quality.
+
+en=student
+Thanks for listening! See you next time!
+
+en=teacher
+再见!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十五岁左右"
+pitch = "中音域，略微带点沮丧"
+pace = "中速，语速均匀"
+volume = "中等"
+clarity = "清晰，但语气中带着一丝不满"
+fluency = "流利"
+timbre = "柔和但坚决"
+emotion = "略显失望但很有礼貌"
+usecase = "一个遇到问题的消费者"
+dialogue = "你好，我想退货。这个咖啡机坏了。五百块。而且质量也不好。是的，盒子也很旧。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中高音域，平稳"
+pace = "略慢，显得很有耐心"
+volume = "中等偏高"
+clarity = "非常清晰，吐字标准"
+fluency = "流利，职业化"
+timbre = "清脆，亲切"
+emotion = "专业，有礼貌，试图平复客户情绪"
+usecase = "一位专业的商店店员"
+dialogue = "您好，真抱歉。这个咖啡机原来多贵？明白了。那它的包装盒也坏了吗？"

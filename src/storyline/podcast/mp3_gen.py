@@ -166,8 +166,9 @@ def build_podcast_sequence(
 # Audio rendering
 # ---------------------------------------------------------------------------
 
-_BUILTIN_HOST_SPEAKER = {"teacher": "Serena", "student": "Eric"}
-_BUILTIN_HOST_INSTRUCT = "Speak slightly slowly and clearly."
+_BUILTIN_HOST_SPEAKER = {"teacher": "Serena", "student": "Ryan"}
+#_BUILTIN_HOST_INSTRUCT = "Speak slightly slowly and clearly."
+_BUILTIN_HOST_INSTRUCT = ""
 
 
 def _prefetch_host_audio(

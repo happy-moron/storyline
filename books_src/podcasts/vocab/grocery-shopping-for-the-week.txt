@@ -1,0 +1,35 @@
+### Nouns
+
+蔬菜,shūcài,vegetables
+水果,shuǐguǒ,fruit
+肉,ròu,meat
+大米,dàmǐ,rice
+鸡蛋,jīdàn,eggs
+牛奶,niúnǎi,milk
+水,shuǐ,water
+面包,miànbāo,bread
+苹果,píngguǒ,apple
+超市,chāoshì,supermarket
+购物篮,gòuwùlán,shopping basket
+购物车,gòuwùchē,shopping cart
+袋子,dàizi,bag
+价格,jiàgé,price
+收据,shōujù,receipt
+收银员,shōuyínyuán,cashier
+清单,qīngdān,list
+调料,tiáoliào,seasoning
+海鲜,hǎixiān,seafood
+饮料,yǐnliào,drinks
+
+### Verbs
+
+买,mǎi,to buy
+要,yào,to want
+找,zhǎo,to look for
+付,fù,to pay
+拿,ná,to take
+称,chēng,to weigh
+选,xuǎn,to choose
+看,kàn,to look
+带,dài,to bring
+用,yòng,to use

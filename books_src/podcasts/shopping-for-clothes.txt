@@ -1,0 +1,173 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are going to learn how to talk about what we do and do not want, specifically when we are out shopping.
+
+en=student
+That sounds very useful, Ellen. I often find myself in shops in Beijing wanting to say "I don't want this," but I always get a bit nervous about the grammar.
+
+en=teacher
+Don't worry, Ryan! Today we are covering two very important points. First, the negation with "不." You use "不" followed by a verb or an adjective to express "not" in the present or future, or to describe a characteristic. For example, "我不喜欢" means "I don't like."
+
+en=student
+Right, like "我不大" or "我不吃." But wait, I've heard "没" used for negation too. Is "不" the same as "没"?
+
+en=teacher
+That is a great question! "没" is used to negate past actions or the verb "to have," while "不" is for habits, present states, or descriptions. Since we are shopping and talking about what we like right now, we will use "不."
+
+en=student
+Got it. And what about the other grammar point?
+
+en=teacher
+The second point is the adverb "都," which means "all" or "both." This is a very important word for natural-sounding Chinese. A key rule is that "都" must always be placed after the subject and before the verb or adjective. For example, instead of saying "All are big," you say "They all are big" — "他们 đều 大."
+
+en=student
+So, "these are all too big" would be "这些都太大了"?
+
+en=teacher
+Exactly! You've got it. Today's dialogue features two characters: a friendly shop assistant and a customer who is looking for some new clothes. They will use both "不" and "都" several times. Let's listen to their conversation.
+
+DIALOGUE
+
+zh=1
+欢迎光临！您好！您想看点什么？
+Welcome! Hello! What would you like to look at?
+zh=2
+你好。我想看看这些衣服。
+Hello. I would like to look at these clothes.
+zh=1
+这些衣服都很漂亮，也非常便宜。
+These clothes are all very beautiful, and also very cheap.
+zh=2
+这些都太大了。我不喜欢这些。
+These are all too big. I don't like these.
+zh=1
+那这件红色的怎么样？这件也是新的。
+How about this red one? This one is also new.
+zh=2
+所有的衣服都不太合适。我不想要它们。
+All of the clothes are not very suitable. I don't want them.
+zh=1
+没关系。我们还有其他的颜色。
+It's okay. We still have other colors.
+
+BREAKDOWN
+
+en=teacher
+Alright, let's dive into the dialogue. Let's listen to the first line again.
+zh=1
+欢迎光临！您好！您想看点什么？
+Welcome! Hello! What would you like to look at?
+
+en=teacher
+Here, the assistant uses "您" (nín), which is the polite form of "you." And "想看" (xiǎng kàn) means "want to look/see."
+
+en=student
+The customer responds simply.
+zh=2
+你好。我想看看这些衣服。
+Hello. I would like to look at these clothes.
+
+en=teacher
+"这些" (zhèxiē) means "these."
+
+en=student
+Then the assistant tries to make a sale!
+zh=1
+这些衣服都很漂亮，也非常便宜。
+These clothes are all very beautiful, and also very cheap.
+
+en=teacher
+Notice the use of "都" here. "这些衣服都很漂亮." She is saying "These clothes are all very beautiful." Remember, "都" comes after the subject "these clothes" and before the adjective "beautiful." She also uses "非常" (fēicháng), which means "very" or "extremely."
+
+en=student
+And then comes the rejection!
+zh=2
+这些都太大了。我不喜欢这些。
+These are all too big. I don't like these.
+
+en=teacher
+This line is perfect for our lesson. "这些都太大了" uses "都" to say "they are all too big." And "我不喜欢这些" uses "不" to negate the verb "喜欢" (to like).
+
+en=student
+Wait, Ellen, in "这些都太大了," why is there a "了" at the end?
+
+en=teacher
+Good eye! When using "太...了" (tài...le) to mean "too [adjective]," you almost always include that "了" at the end of the phrase. It's a very common pattern.
+
+en=student
+Okay, so "too big" is "太大了." Now let's look at the next part.
+zh=1
+那这件红色的怎么样？这件也是新的。
+How about this red one? This one is also new.
+
+en=teacher
+"件" (jiàn) is the measure word for clothing. "红色" (hóngsè) is the color red.
+
+en=student
+But the customer is still not happy.
+zh=2
+所有的衣服都不太合适。我不想要它们。
+All of the clothes are not very suitable. I don't want them.
+
+en=teacher
+This is a big one! "所有的衣服" (suǒyǒu de yīfú) means "all of the clothes." Then we have "都不太合适" (dōu bù tài héshì). We have "都" (all) followed by "不" (not) and then "太合适" (very suitable). So, "all are not very suitable."
+
+en=student
+So you can have "都" and "不" right next to each other?
+
+en=teacher
+Yes! "都" modifies the whole situation. You are saying "In the case of all these clothes, they are all not suitable." And finally, "我不想要它们" (wǒ bù xiǎng yào tāmen) means "I don't want them." "想要" means "to want."
+
+en=student
+And the shop assistant is very professional.
+zh=1
+没关系。我们还有其他的颜色。
+It's okay. We still have other colors.
+
+en=teacher
+"没关系" (méi guānxi) is "it's okay" or "no problem." And "其他的" (qítā de) means "other" or "another."
+
+OUTRO
+
+en=student
+That was a great lesson, Ellen. I feel much more confident about using "不" and "都" now.
+
+en=teacher
+I'm glad to hear that, Ryan! Just remember: use "不" for current states and descriptions, and always place "都" before your verb or adjective when you want to say "all" or "both."
+
+en=student
+And don't forget "太...了" for saying something is "too" much of something.
+
+en=teacher
+Exactly. Thanks for listening to Learning Chinese. Happy studying!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "二十五岁到三十岁"
+pitch = "中音域，语调轻快上扬"
+pace = "中速，充满活力"
+volume = "中等偏响亮"
+clarity = "非常清晰，富有感染力"
+fluency = "流利，充满热情"
+timbre = "清脆，甜美"
+emotion = "热情洋溢，非常友好"
+usecase = "一位热情的服装店店员"
+dialogue = "欢迎光临！您好！您想看点什么？这些衣服都很漂亮，也非常便宜。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十岁到三十岁"
+pitch = "中低音域，语气平稳"
+pace = "略慢，略显犹豫"
+volume = "中等"
+clarity = "清晰，但语气柔和"
+fluency = "流利，但带有思考时的停顿"
+timbre = "圆润，柔和"
+emotion = "礼貌但有些挑剔"
+usecase = "一位正在挑选衣服的谨慎顾客"
+dialogue = "你好。我想看看这些衣服。这些都太大了。我不喜欢这些。"

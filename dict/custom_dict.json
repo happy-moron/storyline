@@ -149205,5 +149205,266 @@
         }
       }
     ]
+  },
+  "入住": {
+    "pinyin": "rù zhù",
+    "definition": [
+      {
+        "meaning": "to check in (to a hotel)",
+        "example": {
+          "chinese": "请在柜台办理入住手续。",
+          "pinyin": "Qǐng zài guì tái bàn lǐ rù zhù shǒu xù.",
+          "english": "Please check in at the counter."
+        }
+      },
+      {
+        "meaning": "to move into (a residence)",
+        "example": {
+          "chinese": "他下周就要搬进新家入住了。",
+          "pinyin": "Tā xià zhōu jiù yào bān jìn xīn jiā rù zhù le.",
+          "english": "He is moving into his new home next week."
+        }
+      }
+    ]
+  },
+  "十号": {
+    "pinyin": "shí hào",
+    "definition": [
+      {
+        "meaning": "the 10th (of a month)",
+        "example": {
+          "chinese": "我的生日是五月十号。",
+          "pinyin": "Wǒ de shēngrì shì wǔ yuè shí hào.",
+          "english": "My birthday is on May 10th."
+        }
+      },
+      {
+        "meaning": "number 10",
+        "example": {
+          "chinese": "请问，十号房间在哪儿？",
+          "pinyin": "Qǐngwèn, shí hào fángjiān zài nǎ'er?",
+          "english": "Excuse me, where is room number 10?"
+        }
+      }
+    ]
+  },
+  "斤": {
+    "pinyin": "jīn",
+    "definition": [
+      {
+        "meaning": "jin (a unit of weight equal to 500 grams)",
+        "example": {
+          "chinese": "请帮我称两斤苹果。",
+          "pinyin": "Qǐng bāng wǒ chēng liǎng jīn píng guǒ.",
+          "english": "Please help me weigh two jin of apples."
+        }
+      }
+    ]
+  },
+  "蔬菜": {
+    "pinyin": "shū cài",
+    "definition": [
+      {
+        "meaning": "vegetable(s)",
+        "example": {
+          "chinese": "你应该多吃蔬菜。",
+          "pinyin": "Nǐ yīnggāi duō chī shūcài.",
+          "english": "You should eat more vegetables."
+        }
+      }
+    ]
+  },
+  "公交车": {
+    "pinyin": "gōng jiāo chē",
+    "definition": [
+      {
+        "meaning": "bus; public bus",
+        "example": {
+          "chinese": "我正在等公交车。",
+          "pinyin": "Wǒ zhèng zài děng gōng jiāo chē.",
+          "english": "I am waiting for the bus."
+        }
+      }
+    ]
+  },
+  "交通": {
+    "pinyin": "jiāotōng",
+    "definition": [
+      {
+        "meaning": "traffic; transportation",
+        "example": {
+          "chinese": "这里的交通非常便利。",
+          "pinyin": "Zhèlǐ de jiāotōng fēicháng biànlì.",
+          "english": "The transportation here is very convenient."
+        }
+      },
+      {
+        "meaning": "communication; contact",
+        "example": {
+          "chinese": "两地之间的交通很频繁。",
+          "pinyin": "Liǎng dì zhī jiān de jiāotōng hěn pínfán.",
+          "english": "Communication between the two places is frequent."
+        }
+      }
+    ]
+  },
+  "延误": {
+    "pinyin": "yán wù",
+    "definition": [
+      {
+        "meaning": "to delay; to postpone",
+        "example": {
+          "chinese": "由于天气原因，航班延误了。",
+          "pinyin": "Yóuyú tiānqì yuányīn, hángbān yánwù le.",
+          "english": "The flight was delayed due to weather reasons."
+        }
+      },
+      {
+        "meaning": "to delay (medical treatment or an opportunity)",
+        "example": {
+          "chinese": "如果延误了治疗，病情会恶化。",
+          "pinyin": "Rúguǒ yánwù le zhìliáo, bìngqíng huì èhuà.",
+          "english": "If treatment is delayed, the condition will worsen."
+        }
+      }
+    ]
+  },
+  "预约": {
+    "pinyin": "yù yuē",
+    "definition": [
+      {
+        "meaning": "to make an appointment; to book",
+        "example": {
+          "chinese": "我已经预约了明天的医生。",
+          "pinyin": "Wǒ yǐjīng yùyuēle míngtiān de yīshēng.",
+          "english": "I have already made an appointment with the doctor for tomorrow."
+        }
+      },
+      {
+        "meaning": "appointment; reservation",
+        "example": {
+          "chinese": "由于预约已满，请稍后再试。",
+          "pinyin": "Yóuyú yùyuē yǐ mǎn, qǐng shāohòu zài shì.",
+          "english": "Since the reservations are full, please try again later."
+        }
+      }
+    ]
+  },
+  "体检": {
+    "pinyin": "tǐ jiǎn",
+    "definition": [
+      {
+        "meaning": "physical examination; medical check-up",
+        "example": {
+          "chinese": "我明天要去医院体检。",
+          "pinyin": "Wǒ míngtiān yào qù yīyuàn tǐjiǎn.",
+          "english": "I am going to the hospital for a physical examination tomorrow."
+        }
+      }
+    ]
+  },
+  "您好": {
+    "pinyin": "nín hǎo",
+    "definition": [
+      {
+        "meaning": "hello (polite form)",
+        "example": {
+          "chinese": "您好，请问您需要点什么？",
+          "pinyin": "Nín hǎo, qǐng wèn nín xū yào diǎn shén me?",
+          "english": "Hello, may I ask what you would like to order?"
+        }
+      }
+    ]
+  },
+  "药片": {
+    "pinyin": "yào piàn",
+    "definition": [
+      {
+        "meaning": "tablet; pill",
+        "example": {
+          "chinese": "医生嘱咐我每天吃两片药片。",
+          "pinyin": "Yī shēng zhǔ fù wǒ měi tiān chī liǎng piàn yào piàn.",
+          "english": "The doctor instructed me to take two pills every day."
+        }
+      }
+    ]
+  },
+  "温水": {
+    "pinyin": "wēn shuǐ",
+    "definition": [
+      {
+        "meaning": "warm water",
+        "example": {
+          "chinese": "医生建议早晨喝一杯温水。",
+          "pinyin": "Yī shēng jiàn yì zǎo chén hē yī bēi wēn shuǐ.",
+          "english": "The doctor suggests drinking a cup of warm water in the morning."
+        }
+      }
+    ]
+  },
+  "王明": {
+    "pinyin": "Wáng Míng",
+    "definition": [
+      {
+        "meaning": "a common Chinese name",
+        "example": {
+          "chinese": "王明是我的同学。",
+          "pinyin": "Wáng Míng shì wǒ de tóng xué.",
+          "english": "Wang Ming is my classmate."
+        }
+      }
+    ]
+  },
+  "李华": {
+    "pinyin": "Lǐ Huá",
+    "definition": [
+      {
+        "meaning": "a common Chinese name",
+        "example": {
+          "chinese": "李华是我的好朋友。",
+          "pinyin": "Lǐ Huá shì wǒ de hǎo péng yǒu.",
+          "english": "Li Hua is my good friend."
+        }
+      }
+    ]
+  },
+  "包里": {
+    "pinyin": "bāo lǐ",
+    "definition": [
+      {
+        "meaning": "in the bag; inside the bag",
+        "example": {
+          "chinese": "我的钥匙在包里。",
+          "pinyin": "Wǒ de yàoshi zài bāo lǐ.",
+          "english": "My keys are in the bag."
+        }
+      }
+    ]
+  },
+  "理发店": {
+    "pinyin": "lǐ fà diàn",
+    "definition": [
+      {
+        "meaning": "barbershop; hair salon",
+        "example": {
+          "chinese": "这家理发店的服务很好。",
+          "pinyin": "Zhè jiā lǐ fà diàn de fú wù hěn hǎo.",
+          "english": "The service at this barbershop is very good."
+        }
+      }
+    ]
+  },
+  "照片": {
+    "pinyin": "zhào piàn",
+    "definition": [
+      {
+        "meaning": "photo; photograph",
+        "example": {
+          "chinese": "这张照片很漂亮。",
+          "pinyin": "Zhè zhāng zhàopiàn hěn piàoliang.",
+          "english": "This photo is very beautiful."
+        }
+      }
+    ]
   }
 }

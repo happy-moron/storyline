@@ -33,7 +33,8 @@ def run_full_pipeline(
     # ── Stage 1 — Script ───────────────────────────────────────────────
     log.info("event=pipeline_stage stage=1 script")
     t0 = time.time()
-    selection, vocab_output, script_output = generate_podcast(
+    #selection, vocab_output, script_output = generate_podcast(
+    selection, script_output = generate_podcast(
         config, service_manager=service_manager,
     )
     script_path = str(script_output)

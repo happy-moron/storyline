@@ -1,3 +1,16 @@
+Getting a haircut
+Shopping for clothes
+Returning a faulty product
+Calling customer support
+Setting up a new phone
+Troubleshooting a computer problem
+Attending a work meeting
+Giving a presentation at work
+Negotiating a raise
+Retiring after many years of work
+Visiting a museum
+Going to a concert
+Watching a sports game with friends
 Ordering food at a restaurant
 Giving a friend a ride
 Settling into work at the office
@@ -26,19 +39,6 @@ Talking to a personal trainer
 Booking a flight online
 Going through airport security
 Chatting with a taxi or rideshare driver
-Getting a haircut
-Shopping for clothes
-Returning a faulty product
-Calling customer support
-Setting up a new phone
-Troubleshooting a computer problem
-Attending a work meeting
-Giving a presentation at work
-Negotiating a raise
-Retiring after many years of work
-Visiting a museum
-Going to a concert
-Watching a sports game with friends
 Joining a local sports team
 Volunteering at a community event
 Adopting a pet

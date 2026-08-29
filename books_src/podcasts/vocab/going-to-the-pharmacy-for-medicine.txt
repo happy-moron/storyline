@@ -1,0 +1,33 @@
+### Nouns
+药店, yàodiàn, pharmacy
+药, yào, medicine
+医生, yīshēng, doctor
+处方, chǔfāng, prescription
+药剂师, yàojìshī, pharmacist
+感冒, gǎnmào, cold
+发烧, fāshāo, fever
+咳嗽, késou, cough
+头疼, tóuténg, headache
+胃疼, wèiténg, stomach ache
+止痛药, zhǐtòngyào, painkiller
+药片, yàopiàn, pill
+胶囊, jiāonáng, capsule
+药水, yàoshuǐ, liquid medicine
+维生素, wéishēngsù, vitamin
+过敏, guòmǐn, allergy
+症状, zhèngzhuàng, symptom
+副作用, fùzuòyòng, side effect
+体温计, tǐwēnjì, thermometer
+绷带, bēngdài, bandage
+
+### Verbs
+买, mǎi, buy
+吃, chī, take (medicine)
+开, kāi, issue (a prescription)
+疼, téng, ache/hurt
+需要, xūyào, need
+问, wèn, ask
+用, yòng, use
+休息, xiūxi, rest
+感觉, gǎnjué, feel
+拿, ná, take/pick up
