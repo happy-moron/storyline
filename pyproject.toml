@@ -9,6 +9,7 @@ license = {text = "MIT"}
 dependencies = [
     "zsp-llm-client>=0.1.0",
     "pydub>=0.25.1",
+    "reportlab",
 ]
 
 [project.scripts]

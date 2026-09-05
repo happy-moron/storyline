@@ -1,3 +1,4 @@
+import json
 import time
 from pathlib import Path
 
@@ -7,7 +8,11 @@ from storyline.audio.audiobook_gen_qwen3 import Qwen3TTSService
 from storyline.config.pipeline_config import PipelineConfig
 from storyline.podcast.audio_gen import voice_profile_stem
 from storyline.podcast.create_ereader import _slug_from_filename, _title_from_slug
-from storyline.podcast.mp3_gen import assemble_podcast_mp3
+from storyline.podcast.mp3_gen import (
+    assemble_podcast_mp3,
+    build_flashcard_intro_sequence,
+)
+from storyline.podcast.omnivoice_audio import OmnivoiceTTSService
 from storyline.podcast.script_parser import parse_script
 from storyline.services.manager import ServiceManager
 
@@ -21,6 +26,8 @@ def create_mp3(
     service_manager: ServiceManager | None = None,
     *,
     use_builtin_hosts: bool = False,
+    use_omnivoice: bool = False,
+    flashcard_dir: Path | None = None,
 ):
     storyline.logging.init()
     log = get_logger("podcast.mp3")
@@ -46,22 +53,62 @@ def create_mp3(
 
     log.info("event=podcast_mp3_start episode=%s", slug)
 
-    t0 = time.time()
+    # Host voices always use Qwen3TTS; only start the TTS service when hosts
+    # will actually be rendered by Qwen3TTS (not by Omnivoice).
+    need_tts = use_builtin_hosts or not use_omnivoice
     if service_manager:
         service_manager.stop_if_running("llm")
-        service_manager.start_if_needed("tts")
+        if need_tts:
+            service_manager.start_if_needed("tts")
+        else:
+            service_manager.stop_if_running("tts")
+    host_service = Qwen3TTSService()
+
+    if use_omnivoice:
+        clone_service = OmnivoiceTTSService(
+            binary=config.omnivoice_binary,
+            model=config.omnivoice_model,
+            timeout=config.omnivoice_timeout,
+            batch_size=config.omnivoice_batch_size,
+            batch_binary=config.omnivoice_batch_binary,
+            batch_model=config.omnivoice_batch_model,
+        )
+    else:
+        clone_service = host_service
+
+    t0 = time.time()
+
+    flashcard_intro = None
+    if flashcard_dir:
+        entries_path = flashcard_dir / "flashcard_entries.json"
+        if entries_path.is_file():
+            with open(entries_path, encoding="utf-8") as f:
+                entries = json.load(f)
+            flashcard_intro = build_flashcard_intro_sequence(entries)
+            log.info(
+                "event=flashcard_intro_built entries=%d steps=%d",
+                len(entries), len(flashcard_intro),
+            )
+
     try:
-        service = Qwen3TTSService()
+        vocab_output_path = output_dir / f"{slug}-vocab.mp3" if flashcard_intro else None
         result = assemble_podcast_mp3(
             script,
             slug,
-            service,
+            clone_service,
             base_dir,
             output_path,
+            host_service=host_service,
+            service_manager=service_manager if use_omnivoice else None,
             voices_dir=_DEFAULT_VOICES_DIR,
             title=title,
             use_builtin_hosts=use_builtin_hosts,
+            flashcard_intro=flashcard_intro,
+            vocab_output_path=vocab_output_path,
         )
+
+        if vocab_output_path:
+            log.info("event=flashcard_vocab_mp3 path=%s", vocab_output_path)
     finally:
         if service_manager:
             service_manager.stop_if_running("tts")
@@ -91,9 +138,14 @@ if __name__ == "__main__":
         "--builtin-hosts", action="store_true",
         help="Use built-in Qwen3 voices (Serena/Eric) for hosts instead of voice clone",
     )
+    parser.add_argument(
+        "--omnivoice", action="store_true",
+        help="Use omnivoice-infer (CUDA/GPU) for voice cloning instead of Qwen3-TTS",
+    )
     args = parser.parse_args()
 
     config = PipelineConfig.from_files_and_args(args, profile_name=args.profile)
     service_manager = ServiceManager()
 
-    create_mp3(args.input, config, service_manager=service_manager, use_builtin_hosts=args.builtin_hosts)
+    create_mp3(args.input, config, service_manager=service_manager,
+               use_builtin_hosts=args.builtin_hosts, use_omnivoice=args.omnivoice)

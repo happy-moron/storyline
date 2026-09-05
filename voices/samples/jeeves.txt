@@ -1,0 +1,25 @@
+Jeeves
+
+Character Name: Jeeves
+
+Core Vocal Parameters
+
+Gender: Male
+Pitch: Low male register, almost perfectly flat, no discernible rise even under provocation
+Tempo: Slow, measured, unhurried — never accelerates regardless of the surrounding chaos
+Volume: Quiet, restrained, never above a controlled murmur
+Age: 30s to 40s
+Clarity: Extremely precise, every word given full weight
+Fluency: Flawless, formal, faintly ornate — long, correctly subordinated sentences delivered without hesitation
+Accent: Received Pronunciation, formal and understated English
+Timbre: Smooth, dry, faintly resonant
+Emotion: Outwardly near-total composure at all times; the only "emotion" is a barely perceptible cooling or warming of tone that Bertie alone seems to detect
+Tone: Deferential on the surface ("Very good, sir"), with a dry, ironic undercurrent that quietly signals disapproval or amusement
+Personality: Imperturbable, discreet, formidably intelligent, quietly and permanently in control of every situation
+
+Character Context
+
+Background: A "gentleman's personal gentleman" of the highest professional order — valet to Bertie Wooster — whose encyclopedic knowledge, psychological insight, and fondness for Spinoza make him the actual engine behind every plot he is nominally just tidying up after.
+Appearance/Presence: Immaculately turned out, moves without apparent haste or wasted motion; famous for materializing silently at exactly the right (or most inconvenient) moment.
+Personality Traits: Unshakeable composure; quietly paternalistic toward Bertie while never overstepping the form of service; strong personal opinions on taste (clothing, ties, banjolele-ownership) delivered as gentle but immovable pressure rather than argument; takes evident private satisfaction in solving problems, never claims credit aloud.
+Signature Line: "I endeavour to give satisfaction, sir."

@@ -4,11 +4,14 @@ from pathlib import Path
 from pydub import AudioSegment
 
 from storyline.audio.audiobook_gen_qwen3 import Qwen3TTSService
+from storyline.logging import get_logger
 from storyline.podcast.script_parser import PodcastScript, VoiceProfile
 
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 _DEFAULT_MANDARIN_KEYS = _PROJECT_ROOT / "scripts" / "mandarin-keys.txt"
 _DEFAULT_VOICES_DIR = _PROJECT_ROOT / "voices"
+
+_log = get_logger("podcast.audio_gen")
 
 LANGUAGE_MAP = {"zh": "chinese", "en": "english"}
 
@@ -84,6 +87,12 @@ def generate_voice_design(service, profile: VoiceProfile, slug: str,
 def _chunked_voice_clone_batch(service, texts, languages, ref_audio_path, ref_text):
     if isinstance(languages, str):
         languages = [languages] * len(texts)
+    if hasattr(service, 'batch_size'):
+        return service.generate_voice_clone_batch(
+            texts, languages,
+            ref_audio_path=ref_audio_path,
+            ref_text=ref_text,
+        )
     audios = []
     for i in range(0, len(texts), _BATCH_SIZE):
         batch_texts = texts[i:i + _BATCH_SIZE]
@@ -104,11 +113,15 @@ def generate_dialogue_audio(
     base_dir: Path,
     service: Qwen3TTSService | None = None,
     *,
+    clone_service=None,
+    service_manager=None,
     voices_dir: Path | None = None,
     bitrate: str = "64k",
 ) -> int:
     if service is None:
         service = Qwen3TTSService()
+    if clone_service is None:
+        clone_service = service
     if voices_dir is None:
         voices_dir = _DEFAULT_VOICES_DIR
 
@@ -136,6 +149,12 @@ def generate_dialogue_audio(
         audio_path = audio_dir / audio_file
         chunk_items.append((ci, chunk, line.speaker_id, audio_file))
 
+    if service_manager and clone_service is not service:
+        service_manager.stop_if_running("tts")
+        if hasattr(service_manager, '_wait_for_gpu_memory'):
+            if not service_manager._wait_for_gpu_memory(timeout=30):
+                _log.warning("event=gpu_memory_wait_timeout continuing anyway")
+
     for speaker_id in set(sid for _, _, sid, _ in chunk_items):
         profile = profiles[speaker_id]
         ref_audio = str(voices_dir / f"{voice_profile_stem(slug, speaker_id)}.wav")
@@ -151,7 +170,7 @@ def generate_dialogue_audio(
             texts = [script.dialogue[chunk["line_range"][0]].chinese
                      for _, chunk, _ in new_items]
             audios = _chunked_voice_clone_batch(
-                service, texts, language,
+                clone_service, texts, language,
                 ref_audio_path=ref_audio,
                 ref_text=profile.dialogue,
             )

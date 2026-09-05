@@ -125,7 +125,7 @@ class TestReadProfileDialogue:
     def test_handles_curly_quotes(self, tmp_path):
         path = tmp_path / "teacher.txt"
         path.write_text(
-            'dialogue = “你学得很快。现在，我们来试一点。”\n',
+            'dialogue = "你学得很快。现在，我们来试一点。"\n',
             encoding="utf-8",
         )
         assert read_profile_dialogue(path) == "你学得很快。现在，我们来试一点。"
@@ -165,43 +165,70 @@ class TestBuildPodcastSequence:
     def test_flat_sequence_order(self):
         steps = build_podcast_sequence(_script(), 3, 3)
 
-        assert steps[0] == HostStep("teacher", "en", "Welcome, everyone.")
-        assert steps[1] == HostStep("student", "en", "Hi! I'm Mark.")
+        def check(actual, expected):
+            assert actual == expected
 
-        # Dialogue, three full passes
-        for rep in range(3):
-            base = 2 + rep * 2
-            assert steps[base] == CharacterStep(1, "你好。", 0)
-            assert steps[base + 1] == CharacterStep(2, "你好吗？", 1)
+        check(steps[0], HostStep("teacher", "en", "Welcome, everyone."))
+        check(steps[1], HostStep("student", "en", "Hi! I'm Mark."))
 
-        # Line by line: teacher zh + student en, three times per line
-        llb_start = 2 + 3 * 2
-        expected_pairs = [
-            ("teacher", "zh", "你好。"),
-            ("student", "en", "Hello."),
-        ] * 3 + [
-            ("teacher", "zh", "你好吗？"),
-            ("student", "en", "How are you?"),
-        ] * 3
-        for offset, (speaker, lang, text) in enumerate(expected_pairs):
-            assert steps[llb_start + offset] == HostStep(speaker, lang, text)
+        # First dialogue section: label + 3 reps with transitions
+        idx = 2
+        check(steps[idx], HostStep("teacher", "en", "Now we'll hear the dialogue three times"))
+        idx += 1
+        check(steps[idx], CharacterStep(1, "你好。", 0)); idx += 1
+        check(steps[idx], CharacterStep(2, "你好吗？", 1)); idx += 1
+        check(steps[idx], HostStep("teacher", "en", "Second time")); idx += 1
+        check(steps[idx], CharacterStep(1, "你好。", 0)); idx += 1
+        check(steps[idx], CharacterStep(2, "你好吗？", 1)); idx += 1
+        check(steps[idx], HostStep("teacher", "en", "Third time")); idx += 1
+        check(steps[idx], CharacterStep(1, "你好。", 0)); idx += 1
+        check(steps[idx], CharacterStep(2, "你好吗？", 1)); idx += 1
 
-        # Breakdown: host line then quoted dialogue (matched to index 0)
-        bd_start = llb_start + len(expected_pairs)
-        assert steps[bd_start] == HostStep("teacher", "en", "Let's break it down.")
-        assert steps[bd_start + 1] == CharacterStep(1, "你好。", 0)
+        # Line-by-line: label + 3 reps with transitions
+        check(steps[idx], HostStep("teacher", "en", "Now we'll hear the dialogue with translation three times"))
+        idx += 1
+        check(steps[idx], HostStep("teacher", "zh", "你好。")); idx += 1
+        check(steps[idx], HostStep("student", "en", "Hello.")); idx += 1
+        check(steps[idx], HostStep("teacher", "zh", "你好吗？")); idx += 1
+        check(steps[idx], HostStep("student", "en", "How are you?")); idx += 1
+        check(steps[idx], HostStep("teacher", "en", "Second time")); idx += 1
+        check(steps[idx], HostStep("teacher", "zh", "你好。")); idx += 1
+        check(steps[idx], HostStep("student", "en", "Hello.")); idx += 1
+        check(steps[idx], HostStep("teacher", "zh", "你好吗？")); idx += 1
+        check(steps[idx], HostStep("student", "en", "How are you?")); idx += 1
+        check(steps[idx], HostStep("teacher", "en", "Third time")); idx += 1
+        check(steps[idx], HostStep("teacher", "zh", "你好。")); idx += 1
+        check(steps[idx], HostStep("student", "en", "Hello.")); idx += 1
+        check(steps[idx], HostStep("teacher", "zh", "你好吗？")); idx += 1
+        check(steps[idx], HostStep("student", "en", "How are you?")); idx += 1
+
+        # Breakdown
+        check(steps[idx], HostStep("teacher", "en", "Let's break it down.")); idx += 1
+        check(steps[idx], CharacterStep(1, "你好。", 0)); idx += 1
+
+        # Final dialogue section: label + 3 reps
+        check(steps[idx], HostStep("teacher", "en", "Let's hear the dialogue three more times")); idx += 1
+        check(steps[idx], CharacterStep(1, "你好。" , 0)); idx += 1
+        check(steps[idx], CharacterStep(2, "你好吗？", 1)); idx += 1
+        check(steps[idx], HostStep("teacher", "en", "Second time")); idx += 1
+        check(steps[idx], CharacterStep(1, "你好。", 0)); idx += 1
+        check(steps[idx], CharacterStep(2, "你好吗？", 1)); idx += 1
+        check(steps[idx], HostStep("teacher", "en" , "Third time")); idx += 1
+        check(steps[idx], CharacterStep(1, "你好。", 0)); idx += 1
+        check(steps[idx], CharacterStep(2, "你好吗？", 1)); idx += 1
 
         # Outro
-        assert steps[bd_start + 2] == HostStep("teacher", "en", "That's all for today.")
-        assert steps[bd_start + 3] == HostStep("student", "en", "See you next time!")
+        check(steps[idx], HostStep("teacher", "en", "That's all for today."))
+        check(steps[idx + 1], HostStep("student", "en", "See you next time!"))
 
-        assert len(steps) == 24
+        assert len(steps) == 39
 
     def test_custom_repetition_counts(self):
         steps = build_podcast_sequence(_script(), dialogue_repetitions=2,
-                                       line_by_line_repetitions=1)
-        # intro(2) + dialogue(2*2) + line-by-line(2*1*2) + breakdown(2) + outro(2)
-        assert len(steps) == 2 + 4 + 4 + 2 + 2
+                                       line_by_line_repetitions=2)
+        # intro(2) + first_dialogue(1+2+1+2=6) + line-by-line(1+4+1+4=10)
+        # + breakdown(2) + final_dialogue(1+2+1+2=6) + outro(2)
+        assert len(steps) == 2 + 6 + 10 + 2 + 6 + 2
 
     def test_dialogue_index_map_first_occurrence(self):
         script = PodcastScript(
@@ -240,7 +267,7 @@ class TestRenderStep:
         audio_dir = tmp_path / "audio"
         audio_dir.mkdir()
         reuse = audio_dir / "000_slug_1_zh.mp3"
-        AudioSegment.silent(duration=150).export(reuse, format="mp3")
+        AudioSegment.silent(duration=150).export(reuse, "mp3")
 
         service = FakeService()
         seg = render_step(
@@ -274,7 +301,7 @@ class TestAssemblePodcastMp3:
     def _setup(self, tmp_path):
         voices_dir = tmp_path / "voices"
         voices_dir.mkdir()
-        (voices_dir / "teacher.txt").write_text('dialogue = "老师。"', encoding="utf-8")
+        (voices_dir / "teacher.txt").write_text('dialogue = "老师。"' , encoding="utf-8")
         (voices_dir / "teacher.wav").write_bytes(b"wav")
         (voices_dir / "student.txt").write_text('dialogue = "Hi there."', encoding="utf-8")
         (voices_dir / "student.wav").write_bytes(b"wav")
@@ -312,10 +339,11 @@ class TestAssemblePodcastMp3:
             voices_dir=voices_dir, pause_ms=0,
         )
 
-        # Character dialogue audio for both lines (full + breakdown) is reused;
-        # only unique hosts (intro/outro/breakdown-host/line-by-line) are cloned.
-        # unique hosts: intro(2) + line-by-line(4 unique) + breakdown host(1) + outro(2) = 9
-        assert len(service.clone_calls) == 9
+        # All character dialogue is reused; only unique hosts are cloned.
+        # Unique teachers: intro(1) + 5 transition labels + line-by-line zh(2)
+        #   + breakdown(1) + outro(1) = 10
+        # Unique students: intro(1) + line-by-line en(2) + outro(1) = 4
+        assert len(service.clone_calls) == 14
 
     def test_clones_when_no_reader_audio(self, tmp_path):
         voices_dir = tmp_path / "voices"
@@ -333,8 +361,9 @@ class TestAssemblePodcastMp3:
             voices_dir=voices_dir, pause_ms=0,
         )
 
-        # Batch groups: 5 teacher host + 4 student host + 1 speaker1 char + 1 speaker2 char
-        assert len(service.clone_calls) == 11
+        # Teacher hosts: 10 unique, student hosts: 4 unique,
+        # characters: 2 (speaker 1 "你好。" + speaker 2 "你好吗？")
+        assert len(service.clone_calls) == 16
         assert output_path.exists()
 
 
@@ -343,7 +372,7 @@ class TestBuildPodcastTags:
         tags = build_podcast_tags("talking-about-last-nights-soccer-results")
         assert tags["title"] == "talking-about-last-nights-soccer-results"
         assert tags["artist"] == "podcasts"
-        assert tags["album"] == "podcasts"
+        assert tags["album" ] == "podcasts"
 
     def test_custom_author(self):
         tags = build_podcast_tags("ep", author="custom")

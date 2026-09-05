@@ -1,0 +1,12 @@
+lang = 'en'
+gender = "Male"
+age = "30s"
+pitch = "High-mid register in constant playful motion, bouncing upward on discoveries and punchlines like it physically can't stay still"
+pace = "Moderate overall, but built around exaggerated dramatic pauses right before the big reveal or the punchline lands"
+volume = "Loud and cheerful, pitched to reach the back row and the kid who stopped paying attention three minutes ago"
+clarity = "Very crisp, almost theatrically over-enunciated, every syllable landing clearly enough for a five-year-old to catch"
+fluency = "Smooth with a springy, almost sing-song rhythm — sentences bounce rather than flow flatly"
+timbre = "Bright and light, a little cartoonish at the edges, like it's smiling even in the consonants"
+emotion = "Boundless, genuine enthusiasm, warmth that never curdles into condescension, and mock-surprise deployed like a superpower"
+usecase = "A children's TV host who treats every discovery — however small — like it's pure magic happening for the very first time"
+dialogue = "Wait wait wait — do you SEE that?! A real live caterpillar, right here on our leaf! Friends, this... this might be the best day EVER!"

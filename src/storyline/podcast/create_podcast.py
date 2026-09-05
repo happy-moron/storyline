@@ -1,5 +1,9 @@
 import json
+import os
+import signal
+import subprocess
 import tempfile
+import time
 from pathlib import Path
 
 import storyline.logging
@@ -15,6 +19,24 @@ from storyline.podcast.selection import (
     load_topics,
     select_next,
 )
+
+
+def _cleanup_orphan_omnivoice():
+    try:
+        result = subprocess.run(
+            ["pgrep", "-f", r"omnivoice.*(infer|batch)"],
+            capture_output=True, text=True, timeout=5,
+        )
+        pids = [int(pid) for pid in result.stdout.strip().split("\n") if pid]
+        for pid in pids:
+            if pid == os.getpid():
+                continue
+            try:
+                os.kill(pid, signal.SIGKILL)
+            except OSError:
+                pass
+    except Exception:
+        pass
 
 
 HSK_INDEX_DIR = "dict"
@@ -74,6 +96,7 @@ def generate_podcast(
     episodes_path: str = EPISODES_PATH,
     script_dir: str = SCRIPT_DIR,
     vocab_dir: str = VOCAB_DIR,
+    flashcards: bool = True,
 ):
     log = get_logger("podcast")
 
@@ -134,16 +157,83 @@ def generate_podcast(
             selection.theme_slug, script_output.stat().st_size, metrics.get("wall_ms", 0),
         )
 
+        _ensure_llm(service_manager, config, "podcast_fix_script")
+
+        # _replace_pinyin(config, script_output, tmp_path, log)
         _validate_and_fix(config, script_output, tmp_path, log)
+
+    flashcard_output_dir: Path | None = None
+
+    if flashcards and service_manager is not None:
+        log.info("event=flashcard_vocab_stage")
+        t0 = time.time()
+        flashcard_output_dir = (
+            Path(script_dir).parent.parent / "books" / "podcasts"
+            / selection.theme_slug / "flashcards"
+        )
+        from storyline.flashcard.run_pipeline import (
+            _extract_entries,
+            _write_text_files_and_collect_prompts,
+        )
+
+        entries = _extract_entries(
+            script_path=script_output,
+            prompt_template_path="prompts/flashcard-vocab-from-script.md",
+            service_manager=service_manager,
+            models=config.models,
+            output_dir=flashcard_output_dir,
+            force=False,
+            llm_already_running=True,
+        )
+        _write_text_files_and_collect_prompts(flashcard_output_dir, entries)
+        log.info(
+            "event=flashcard_vocab_done theme=%s entries=%d duration_ms=%d",
+            selection.theme_slug,
+            len(entries),
+            int((time.time() - t0) * 1000),
+        )
 
     append_episode(Path(episodes_path), selection)
 
-    #return selection, vocab_output, script_output
-    return selection, script_output
+    return {
+        "selection": selection,
+        "script_output": script_output,
+        "flashcard_dir": flashcard_output_dir if flashcards else None,
+    }
 
 
 def _build_fix_input(script_text: str, error_message: str) -> str:
     return script_text + "\n\n# Error Messages/Logs\n\n" + error_message + "\n"
+
+
+def _replace_pinyin(
+    config: PipelineConfig,
+    script_output: Path,
+    tmp_path: Path,
+    log,
+) -> None:
+    script_text = script_output.read_text(encoding="utf-8")
+    if not script_text.strip():
+        return
+
+    pinyin_input = tmp_path / "pinyin_input.txt"
+    pinyin_output = tmp_path / "pinyin_output.txt"
+    pinyin_input.write_text(script_text, encoding="utf-8")
+
+    metrics = run_prompt_with_metrics(
+        config.resolve_prompt("podcast_pinyin_replace"),
+        pinyin_input,
+        pinyin_output,
+        models=config.models,
+        timeout=config.llm_timeout_s,
+        prompt_label="podcast_pinyin_replace",
+    )
+    result = pinyin_output.read_text(encoding="utf-8")
+    script_output.write_text(result, encoding="utf-8")
+    log.info(
+        "event=pinyin_replace_done theme=%s in_chars=%d out_chars=%d wall_ms=%d",
+        script_output.stem, len(script_text), len(result), metrics.get("wall_ms", 0),
+    )
 
 
 def _validate_and_fix(
@@ -306,6 +396,7 @@ if __name__ == "__main__":
     finally:
         if config.llm_provider == "local":
             service_manager.stop("llm")
+        _cleanup_orphan_omnivoice()
 
     log.info(
         "event=batch_complete attempted=%d successes=%d failures=%d",

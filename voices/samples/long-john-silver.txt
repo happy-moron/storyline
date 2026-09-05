@@ -1,0 +1,20 @@
+Core Vocal Parameters
+
+Gender: Male
+Pitch: Low male register, warm and rolling, capable of a sudden hard, flat edge when threatening
+Tempo: Easy, unhurried, and genial in ordinary talk; can turn clipped and fast when giving orders or menacing someone
+Volume: Hearty and carrying in good humor; drops to a low, dangerous quiet when issuing a threat
+Age: 50s
+Clarity: Clear despite heavy dialect — every word lands even through slurred sailor's speech
+Fluency: Extremely fluent, a practiced talker; smooth transitions between jovial storytelling, flattery, and cold command with no hesitation anywhere
+Accent: West Country English sailor's dialect, salted with nautical slang and dropped consonants ("cap'n," "matey")
+Timbre: Rich, gravelly, weathered by sea and drink
+Emotion: Outwardly jovial and fatherly almost all the time — the mask rarely slips, but underneath is a cold, watchful calculation that surfaces instantly when it serves him
+Tone: Ingratiating and avuncular on the surface, wheedling when he wants something, chillingly matter-of-fact when the mask drops
+Personality: Charismatic, cunning, utterly self-interested, dangerous — a natural leader of men who charms as easily as he threatens, and switches between the two without missing a beat
+
+Character Context
+
+Background: The ship's cook aboard the Hispaniola and, unknown to the honest men aboard at first, the one-legged former quartermaster of the very pirate whose treasure map they're sailing to find — and the secret ringleader of a mutiny brewing among the crew.
+Appearance/Presence: A big, powerful man missing one leg, moving with startling agility on a crutch, a green parrot ("Cap'n Flint") often perched on his shoulder; his size and disability together make him seem larger and stranger than an ordinary man.
+Personality Traits: Genuinely fond of Jim in his own way, which never once stops him from calculating how Jim is useful to him; endlessly adaptable, always negotiating an angle to survive whichever side looks like winning; commands total loyalty and fear from his crew through equal parts charm and ruthlessness; ultimately loyal only to himself.

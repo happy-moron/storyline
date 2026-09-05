@@ -5,6 +5,7 @@ from pathlib import Path
 
 import storyline.logging
 from storyline.logging import get_logger
+from storyline.audio.audiobook_gen_qwen3 import Qwen3TTSService
 from storyline.book.cjk_punct import strip as strip_cjk_punct, reinsert as reinsert_cjk_punct, format_compact
 from storyline.book.parse_pipe_format import parse_source_file
 from storyline.book.tokenization_repair import ValidationReport, validate_full
@@ -12,6 +13,7 @@ from storyline.book.create_custom_dict import load_dictionary, process_json_file
 from storyline.book.update_manifest import update_manifest
 from storyline.config.pipeline_config import PipelineConfig
 from storyline.podcast.audio_gen import generate_dialogue_audio
+from storyline.podcast.omnivoice_audio import OmnivoiceTTSService
 from storyline.podcast.script_parser import parse_script
 from storyline.podcast.selection import normalize_name
 from storyline.prompt_utils.run_prompt import run_prompt_with_metrics
@@ -72,6 +74,9 @@ def create_ereader(
     script_path: str,
     config: PipelineConfig,
     service_manager: ServiceManager | None = None,
+    *,
+    tts_service: "Qwen3TTSService | OmnivoiceTTSService | None" = None,
+    use_omnivoice: bool = False,
 ):
     storyline.logging.init()
     log = get_logger("podcast.ereader")
@@ -297,14 +302,35 @@ def create_ereader(
         words_added, int((time.time() - t0) * 1000),
     )
 
-    # ── 6. Audio (voice design + voice clone) ─────────────────────────
+    # ── 6. Audio (voice design via Qwen3 + voice clone) ─────────────
     if not config.skip_audio:
         t0 = time.time()
+
+        # Voice design always uses Qwen3
         if service_manager:
             service_manager.stop_if_running('llm')
             service_manager.start_if_needed('tts')
+        host_service = Qwen3TTSService()
+
+        if use_omnivoice:
+            clone_service = OmnivoiceTTSService(
+                binary=config.omnivoice_binary,
+                model=config.omnivoice_model,
+                timeout=config.omnivoice_timeout,
+                batch_size=config.omnivoice_batch_size,
+                batch_binary=config.omnivoice_batch_binary,
+                batch_model=config.omnivoice_batch_model,
+            )
+        else:
+            clone_service = host_service
+
         try:
-            n_audio = generate_dialogue_audio(script, slug, base_dir)
+            n_audio = generate_dialogue_audio(
+                script, slug, base_dir,
+                service=host_service,
+                clone_service=clone_service,
+                service_manager=service_manager if use_omnivoice else None,
+            )
         finally:
             if service_manager:
                 service_manager.stop_if_running('tts')
@@ -348,13 +374,17 @@ if __name__ == "__main__":
         '--skip-audio', dest='skip_audio', default=None,
         action=argparse.BooleanOptionalAction, help='Skip audio generation',
     )
+    parser.add_argument(
+        '--omnivoice', action='store_true',
+        help='Use omnivoice-infer (CUDA/GPU) for voice cloning instead of Qwen3-TTS',
+    )
     args = parser.parse_args()
 
     config = PipelineConfig.from_files_and_args(args, profile_name=args.profile)
     service_manager = ServiceManager()
 
     try:
-        create_ereader(args.input, config, service_manager=service_manager)
+        create_ereader(args.input, config, service_manager=service_manager, use_omnivoice=args.omnivoice)
     finally:
         if config.llm_provider == "local":
             service_manager.stop("llm")

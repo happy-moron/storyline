@@ -20,11 +20,12 @@ base_url = "http://127.0.0.1:11433"
 request_timeout = 300
 
 [services.image_gen]
-systemd_name = "qwen-image-gen"
-port = 11434
-health_endpoint = "http://127.0.0.1:11434/health"
-start_timeout = 60
-stop_timeout = 15
+systemd_name = "comfyui"
+port = 8188
+health_endpoint = "http://127.0.0.1:8188/system_stats"
+base_url = "http://127.0.0.1:8188"
+start_timeout = 120
+stop_timeout = 30
 
 [gpu]
 free_memory_threshold_mb = 4000

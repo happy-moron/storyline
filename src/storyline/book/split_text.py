@@ -20,15 +20,14 @@ def split_text(input_file_path, output_dir, chunk_size: int = 2000):
     current_file_content = ""
 
     for paragraph in paragraphs:
-        if len(current_file_content) + len(paragraph) + 2 > chunk_size:  # Add 2 for newline characters
-            # Write the current file content to a new file
-            output_file_path = os.path.join(output_dir, f"{input_filename}_{file_counter}.txt")
-            with open(output_file_path, 'w', encoding='utf-8') as outfile:
-                outfile.write(current_file_content.strip())
-            file_counter += 1
+        if len(current_file_content) + len(paragraph) + 2 > chunk_size:
+            if current_file_content.strip():
+                output_file_path = os.path.join(output_dir, f"{input_filename}_{file_counter}.txt")
+                with open(output_file_path, 'w', encoding='utf-8') as outfile:
+                    outfile.write(current_file_content.strip())
+                file_counter += 1
             current_file_content = ""
 
-        # Append the paragraph and a newline to the current file content
         current_file_content += paragraph + "\n\n"
 
     # Write the last file content if it exists

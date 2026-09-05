@@ -10,7 +10,7 @@ model_id = "local-llamacpp"
 
 # Default llamacpp profile for tasks
 [default]
-profile = "gemma4-26b-a4b"
+profile = "gemma4-26b-a4b-nothink"
 
 # profile = "gemma4-26b-a4b"
 # Optional: thinking_budget_tokens controls llama.cpp reasoning budget per request.
@@ -25,35 +25,48 @@ profile = "gemma4-26b-a4b"
 
 [tokenize]
 # profile = "qwen38-27b"
-profile = "gemma4-26b-a4b"
+# profile = "qwen36-35b-a3b-lowthink"
+
+profile = "gemma4-26b-a4b-nothink"
 # thinking_budget_tokens = 2048
 
 [dictionary]
-profile = "gemma4-26b-a4b"
+# profile = "qwen36-35b-a3b-lowthink"
+
+profile = "gemma4-26b-a4b-nothink"
 # profile = "qwen38-27b"
-# profile = "qwen36-35b-a3b-nothink"
+# profile = "qwen36-35b-a3b-lowthink"
 # No thinking_budget_tokens = no reasoning budget sent
 
 [podcast_vocab]
 # profile = "qwen38-27b"
-profile = "gemma4-26b-a4b"
-
+# profile = "gemma4-26b-a4b"
+profile = "qwen36-35b-a3b-lowthink"
 
 [podcast_script]
 # profile = "qwen38-27b"
-profile = "gemma4-26b-a4b"
+profile = "gemma4-26b-a4b-nothink"
 
 [podcast_fix_script]
+# profile = "qwen36-35b-a3b-lowthink"
 # profile = "qwen38-27b"
-profile = "gemma4-26b-a4b"
+profile = "gemma4-26b-a4b-nothink"
 
 [podcast_fix_dialogue]
+# profile = "qwen36-35b-a3b-lowthink"
 # profile = "qwen38-27b"
-profile = "gemma4-26b-a4b"
+profile = "gemma4-26b-a4b-nothink"
 
 [podcast_fix_voice_profiles]
+# profile = "qwen36-35b-a3b-lowthink"
 # profile = "qwen38-27b"
-profile = "gemma4-26b-a4b"
+profile = "gemma4-26b-a4b-nothink"
+
+[podcast_pinyin_replace]
+# profile = "qwen36-35b-a3b-lowthink"
+
+profile = "gemma4-26b-a4b-nothink"
+# profile = "qwen38-27b"
 
 [check_translation]
 models = ["openrouter/deepseek/deepseek-v4-flash"]

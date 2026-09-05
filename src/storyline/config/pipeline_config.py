@@ -74,6 +74,7 @@ class PipelineConfig:
         "podcast_fix_script": "prompts/podcast-fix-script.md",
         "podcast_fix_dialogue": "prompts/podcast-fix-dialogue.md",
         "podcast_fix_voice_profiles": "prompts/podcast-fix-voice-profiles-script.md",
+        "podcast_pinyin_replace": "prompts/podcast-replace-pinyin.md",
     })
 
     # -- Pipeline behaviour --
@@ -98,6 +99,14 @@ class PipelineConfig:
     llm_provider: str = "local"
     task_profiles: dict[str, str] = field(default_factory=dict)
     task_thinking_budget: dict[str, int | None] = field(default_factory=dict)
+
+    # -- Omnivoice (offline CUDA/GPU voice cloning) --
+    omnivoice_binary: str = "/mnt/mac/git/omnivoice/.venv/bin/omnivoice-infer"
+    omnivoice_model: str = "k2-fsa/OmniVoice"
+    omnivoice_timeout: int = 1200
+    omnivoice_batch_size: int = 10
+    omnivoice_batch_binary: str = "/mnt/mac/git/omnivoice/.venv/bin/omnivoice-infer-batch"
+    omnivoice_batch_model: str = "k2-fsa/OmniVoice"
 
     # -- Profile name (for reference) --
     profile_name: str | None = None
@@ -158,6 +167,14 @@ class PipelineConfig:
         # Dictionary
         cfg.punctuation_skip = flat.get("dictionary.punctuation_skip", cfg.punctuation_skip)
 
+        # Omnivoice
+        cfg.omnivoice_binary = flat.get("omnivoice.binary", cfg.omnivoice_binary)
+        cfg.omnivoice_model = flat.get("omnivoice.model", cfg.omnivoice_model)
+        cfg.omnivoice_timeout = int(flat.get("omnivoice.timeout", cfg.omnivoice_timeout))
+        cfg.omnivoice_batch_size = int(flat.get("omnivoice.batch_size", cfg.omnivoice_batch_size))
+        cfg.omnivoice_batch_binary = flat.get("omnivoice.batch_binary", cfg.omnivoice_batch_binary)
+        cfg.omnivoice_batch_model = flat.get("omnivoice.batch_model", cfg.omnivoice_batch_model)
+
         # 5. Load LLM config
         cfg._load_llm_config()
 
@@ -184,6 +201,7 @@ class PipelineConfig:
                 "podcast_vocab", "podcast_script",
                 "podcast_fix_script", "podcast_fix_dialogue",
                 "podcast_fix_voice_profiles",
+                "podcast_pinyin_replace",
             )
             self.task_profiles = {
                 task: llm_cfg.get(task, {}).get("profile", default_profile)

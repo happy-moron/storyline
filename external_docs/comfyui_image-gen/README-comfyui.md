@@ -137,3 +137,8 @@ queue_prompt(prompt)
 
 
 ```
+
+# Image generation notes
+
+The hidream model used is quite slow (~16 minutes for starting up and first image generation, 5-10 minutes per image subsequently) so it will require generous timeouts.
+

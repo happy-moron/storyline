@@ -2,7 +2,7 @@ You will be given a podcast episode script that is written in a custom format wh
 
 The script is being given to you because it has failed to parse. You'll be given a description of the intended script format and the parser error messages along with the erroneous script.
 
-Identify what the error message is and fix the script if you can.
+Identify the errors and fix the script if you can.
 
 # Script Format/Guidelines
 
@@ -13,7 +13,7 @@ The script is a series of sentences, each preceeded by the language of the sente
 There may also be sentences of example dialogue with numeric speaker ids.
 These are in chinese (e.g. (zh=2)) and have a line of Chinese text followed by the English translation.
 
-Whitespace between the lines of dialogue are okay, but not between the Chinese text and its translation
+Whitespace between the lines of dialogue are okay, but not between the Chinese text and its translation.
 
 ### Example of markup
 
@@ -33,12 +33,14 @@ How big is your monitor?
 
 # Your Output Guidelines
 
+You should clean up the script and fix any errors in it. You have reasonable license to fix the text content; the existing script is somewhat arbitrary so you can rewrite small pieces of it (e.g. providing a missing line) if necessary, as long as it stays coherent and focused on the same theme. Obviously don't touch the parts which don't have errors.
+
 ## Output the fixed script if you can.
 
 If the script has clear errors with straightforward fixes, output the fixed script.
 Output ONLY the properly formatted text of the script with no changes or additions except for direct fixes for known/obvious errors.
 
-## Output the word GARBAGE if the script is unfixable
+## Output the word GARBAGE if the script is totally unfixable
 
 If the script has:
 

@@ -29,20 +29,29 @@ instruct = ""
 [voices.ann]
 mode = "voice_clone"
 language = "chinese"
-ref_audio = "tests/audio/samples/ann-c1.mp3"
-ref_text = "你好！我叫齐磊，今年二十五岁。我住在苏州，但每天去上海工作。早上骑自行车到火车站，再坐高铁乘渡。下午帮主人解决计算机问题，晚上练习太极拳。周末我常去山上看日出，或者朋友一起吃火锅。生活很忙碌，但我觉得非常有意思！"
+# ref_audio = "tests/audio/samples/ann-c1.mp3"
+ref_audio = "tests/audio/samples/ann-short.mp3"
+ref_text = "你好！我叫齐磊，今年二十五岁。我住在苏州，但每天去上海工作。"
+# ref_text = "你好！我叫齐磊，今年二十五岁。我住在苏州，但每天去上海工作。早上骑自行车到火车站，再坐高铁乘渡。下午帮主人解决计算机问题，晚上练习太极拳。周末我常去山上看日出，或者朋友一起吃火锅。生活很忙碌，但我觉得非常有意思！"
 
 [voices.scott]
 mode = "voice_clone"
 language = "english"
-ref_audio = "tests/audio/samples/scott-1.mp3"
-ref_text = "That quick beige fox jumped in the air over each thin dog. Look out, I shout, for he's foiled you again, creating chaos. Are those shy Eurasian footwear, cowboy chaps, or jolly earthmoving headgear? The hungry purple dinosaur ate the kind, zingy fox, the jabbering crab, and the mad whale and started vending and quacking. With tenure, Suzie'd have all the more leisure for yachting, but her publications are no good. Shaw, those twelve beige hooks are joined if I patch a young, gooey mouth. The beige hue on the waters of the loch impressed all, including the French queen, before she heard that symphony again, just as young Arthur wanted."
+ref_audio = "voices/scott-short.mp3"
+ref_text = "That quick beige fox jumped in the air over each thin dog."
+# ref_text = "That quick beige fox jumped in the air over each thin dog. Look out, I shout, for he's foiled you again, creating chaos. Are those shy Eurasian footwear, cowboy chaps, or jolly earthmoving headgear? The hungry purple dinosaur ate the kind, zingy fox, the jabbering crab, and the mad whale and started vending and quacking. With tenure, Suzie'd have all the more leisure for yachting, but her publications are no good. Shaw, those twelve beige hooks are joined if I patch a young, gooey mouth. The beige hue on the waters of the loch impressed all, including the French queen, before she heard that symphony again, just as young Arthur wanted."
 
 [voices.male_1]
 mode = "voice_clone"
 language = "chinese"
 ref_audio = "tests/audio/samples/zh-ref-magic-38_5735_20170914204637.mp3"
 ref_text = "嗯听着倒是个不错的主意但南方的气候我实在不敢恭维尤其是受不了了冬季又潮又冷还没暖气"
+
+[voices.ellen]
+mode = "voice_clone"
+language = "chinese"
+ref_audio = "voices/teacher.mp3"
+ref_text = "你学得真快。现在，我们来试个更有挑战性的。你准备好了吗？"
 
 # =============================================================================
 # Profiles
@@ -59,9 +68,9 @@ ref_text = "嗯听着倒是个不错的主意但南方的气候我实在不敢�
 use_instruct = false
 pause_ms = 300
 sequence = [
-  { lang = "zh", voice = "serena", speed = 0.8 },
+  { lang = "zh", voice = "serena", speed = 0.6 },
   { lang = "en", voice = "ryan", speed = 1.0 },
-  { lang = "zh", voice = "serena", speed = 0.9 },
+  { lang = "zh", voice = "serena", speed = 0.8 },
   { lang = "en", voice = "ryan", speed = 1.0 },
   { lang = "zh", voice = "serena", speed = 1.0 },
   { lang = "en", voice = "ryan", speed = 1.0 },
@@ -71,9 +80,9 @@ sequence = [
 use_instruct = false
 pause_ms = 300
 sequence = [
-  { lang = "zh", voice = "ann", speed = 0.8 },
+  { lang = "zh", voice = "ann", speed = 0.6 },
   { lang = "en", voice = "scott", speed = 1.0 },
-  { lang = "zh", voice = "ann", speed = 0.9 },
+  { lang = "zh", voice = "ann", speed = 0.8 },
   { lang = "en", voice = "scott", speed = 1.0 },
   { lang = "zh", voice = "ann", speed = 1.0 },
   { lang = "en", voice = "scott", speed = 1.0 },

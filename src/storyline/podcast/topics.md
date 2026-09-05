@@ -1,3 +1,33 @@
+Helping a friend with depression
+Fixing a flat tire
+Cutting yourself while shaving
+Getting into an argument over the dishes
+Trying to beg forgiveness
+Playing with baby
+Sorting through the laundry
+Recovering from a sports injury
+Telling jokes and laughing
+Comforting a grieving friend
+Meeting the in-laws
+Gaming together online
+Surfing the internet
+Choosing a book to read
+Looking through the fridge
+Making fried rice
+Going for a hike
+Riding in a taxi
+Selling an old bike online
+Hanging out on the couch
+Acting too slowly
+Learning how to paint
+Reviewing a work of art
+Spilling a bowl of ramen
+Losing a set of keys
+Potty training a child
+Having tea with grandma
+Going out in the rain
+Mid autumn festival
+Chinese new years celebration
 Getting a haircut
 Shopping for clothes
 Returning a faulty product

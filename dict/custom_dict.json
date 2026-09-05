@@ -149466,5 +149466,2997 @@
         }
       }
     ]
+  },
+  "输入": {
+    "pinyin": "shū rù",
+    "definition": [
+      {
+        "meaning": "to input; to enter (data, information, etc.)",
+        "example": {
+          "chinese": "请在搜索框内输入关键字。",
+          "pinyin": "Qǐng zài sōu suǒ kuàng nèi shū rù guān jiàn zì.",
+          "english": "Please enter the keywords in the search box."
+        }
+      },
+      {
+        "meaning": "to import",
+        "example": {
+          "chinese": "该国需要大量输入石油。",
+          "pinyin": "Gāi guó xū yào dà liàng shū rù shí yóu.",
+          "english": "The country needs to import a large amount of oil."
+        }
+      }
+    ]
+  },
+  "下载": {
+    "pinyin": "xià zài",
+    "definition": [
+      {
+        "meaning": "to download",
+        "example": {
+          "chinese": "你可以从这个网站下载文件。",
+          "pinyin": "Nǐ kěyǐ cóng zhège wǎngzhàn xiàzài wénjiàn.",
+          "english": "You can download the file from this website."
+        }
+      }
+    ]
+  },
+  "软件": {
+    "pinyin": "ruǎn jiàn",
+    "definition": [
+      {
+        "meaning": "software",
+        "example": {
+          "chinese": "这个软件非常实用。",
+          "pinyin": "Zhège ruǎnjiàn fēicháng shíyòng.",
+          "english": "This software is very practical."
+        }
+      }
+    ]
+  },
+  "二零二四年": {
+    "pinyin": "èr líng èr sì nián",
+    "definition": [
+      {
+        "meaning": "the year 2024",
+        "example": {
+          "chinese": "二零二四年是龙年。",
+          "pinyin": "Èr líng èr sì nián shì lóng nián.",
+          "english": "2024 is the Year of the Dragon."
+        }
+      }
+    ]
+  },
+  "十月": {
+    "pinyin": "shí yuè",
+    "definition": [
+      {
+        "meaning": "October",
+        "example": {
+          "chinese": "十月的北京非常美丽。",
+          "pinyin": "Shí yuè de Běijīng fēicháng měilì.",
+          "english": "Beijing in October is very beautiful."
+        }
+      }
+    ]
+  },
+  "二十号": {
+    "pinyin": "èr shí hào",
+    "definition": [
+      {
+        "meaning": "the 20th (of a month)",
+        "example": {
+          "chinese": "我们二十号见面。",
+          "pinyin": "Wǒ men èr shí hào jiàn miàn.",
+          "english": "We will meet on the 20th."
+        }
+      },
+      {
+        "meaning": "number 20",
+        "example": {
+          "chinese": "他的房间在二十号。",
+          "pinyin": "Tā de fáng jiān zài èr shí hào.",
+          "english": "His room is number 20."
+        }
+      }
+    ]
+  },
+  "新人": {
+    "pinyin": "xīn rén",
+    "definition": [
+      {
+        "meaning": "newcomer; beginner; novice",
+        "example": {
+          "chinese": "他是公司里的一名新人。",
+          "pinyin": "Tā shì gōng sī lǐ de yī míng xīn rén.",
+          "english": "He is a newcomer in the company."
+        }
+      },
+      {
+        "meaning": "newlyweds; new couple",
+        "example": {
+          "chinese": "祝这对新人新婚快乐。",
+          "pinyin": "Zhù zhè duì xīn rén xīn hūn kuài lè.",
+          "english": "I wish this new couple a happy marriage."
+        }
+      }
+    ]
+  },
+  "项目": {
+    "pinyin": "xiàngmù",
+    "definition": [
+      {
+        "meaning": "project; program",
+        "example": {
+          "chinese": "这个新项目需要更多的资金。",
+          "pinyin": "Zhège xīn xiàngmù xūyào gèng duō de zījīn.",
+          "english": "This new project requires more funding."
+        }
+      },
+      {
+        "meaning": "event; discipline (in sports)",
+        "example": {
+          "chinese": "跳高是田径运动会的一个项目。",
+          "pinyin": "Tiàogāo shì tiánjìng yùndònghuì de yīgè xiàngmù.",
+          "english": "High jump is an event in the track and field meet."
+        }
+      },
+      {
+        "meaning": "item; entry",
+        "example": {
+          "chinese": "清单上的项目非常详细。",
+          "pinyin": "Qīngdān shàng de xiàngmù fēicháng xiángxì.",
+          "english": "The items on the list are very detailed."
+        }
+      }
+    ]
+  },
+  "演示": {
+    "pinyin": "yǎn shì",
+    "definition": [
+      {
+        "meaning": "to demonstrate; to show",
+        "example": {
+          "chinese": "他在演示如何操作这台机器。",
+          "pinyin": "Tā zài yǎn shì rú hé cāo zuò zhè tái jī qì.",
+          "english": "He is demonstrating how to operate this machine."
+        }
+      },
+      {
+        "meaning": "demonstration; presentation",
+        "example": {
+          "chinese": "这次演示非常成功。",
+          "pinyin": "Zhè cì yǎn shì fēi cháng chéng gōng.",
+          "english": "This demonstration was very successful."
+        }
+      }
+    ]
+  },
+  "小李": {
+    "pinyin": "xiǎo lǐ",
+    "definition": [
+      {
+        "meaning": "Little Li (a common way to address someone with the surname Li, often a younger person or colleague)",
+        "example": {
+          "chinese": "小李是我的同事。",
+          "pinyin": "Xiǎo Lǐ shì wǒ de tóng shì.",
+          "english": "Xiao Li is my colleague."
+        }
+      }
+    ]
+  },
+  "十分": {
+    "pinyin": "shí fēn",
+    "definition": [
+      {
+        "meaning": "very; extremely; highly",
+        "example": {
+          "chinese": "他对这个结果十分满意。",
+          "pinyin": "Tā duì zhège jiéguǒ shífēn mǎnyì.",
+          "english": "He is very satisfied with this result."
+        }
+      }
+    ]
+  },
+  "加薪": {
+    "pinyin": "jiā xīn",
+    "definition": [
+      {
+        "meaning": "to give a salary increase; pay raise",
+        "example": {
+          "chinese": "如果表现出色，公司会考虑给你加薪。",
+          "pinyin": "Rúguǒ biǎoxiàn chūsè, gōngsī huì kǎolǜ gěi nǐ jiāxīn.",
+          "english": "If you perform excellently, the company will consider giving you a raise."
+        }
+      }
+    ]
+  },
+  "三十分": {
+    "pinyin": "sān shí fēn",
+    "definition": [
+      {
+        "meaning": "thirty points",
+        "example": {
+          "chinese": "他这次考试得了三十分。",
+          "pinyin": "Tā zhè cì kǎo shì dé le sān shí fēn.",
+          "english": "He got 30 points in this exam."
+        }
+      },
+      {
+        "meaning": "thirty minutes (referring to time on a clock)",
+        "example": {
+          "chinese": "现在是两点三十分。",
+          "pinyin": "Xiàn zài shì liǎng diǎn sān shí fēn.",
+          "english": "It is 2:30 now."
+        }
+      }
+    ]
+  },
+  "退休": {
+    "pinyin": "tuì xiū",
+    "definition": [
+      {
+        "meaning": "to retire",
+        "example": {
+          "chinese": "他明年就要退休了。",
+          "pinyin": "Tā míng nián jiù yào tuì xiū le.",
+          "english": "He is going to retire next year."
+        }
+      }
+    ]
+  },
+  "博物馆": {
+    "pinyin": "bó mù guǎn",
+    "definition": [
+      {
+        "meaning": "museum",
+        "example": {
+          "chinese": "这个博物馆收藏了很多珍贵的文物。",
+          "pinyin": "Zhège bómùguǎn shōucángle hěnduō zhēnguì de wénwù.",
+          "english": "This museum collects many precious cultural relics."
+        }
+      }
+    ]
+  },
+  "展览": {
+    "pinyin": "zhǎnlǎn",
+    "definition": [
+      {
+        "meaning": "exhibition; exposition",
+        "example": {
+          "chinese": "明天有一个摄影展览。",
+          "pinyin": "Míngtiān yǒu yīgè shèyǐng zhǎnlǎn.",
+          "english": "There is a photography exhibition tomorrow."
+        }
+      },
+      {
+        "meaning": "to exhibit; to display",
+        "example": {
+          "chinese": "博物馆正在展览这些珍贵的文物。",
+          "pinyin": "Bówùguǎn zhèngzài zhǎnlǎn zhèxiē zhēnguì de wénwù.",
+          "english": "The museum is exhibiting these precious relics."
+        }
+      }
+    ]
+  },
+  "进球": {
+    "pinyin": "jìn qiú",
+    "definition": [
+      {
+        "meaning": "to score a goal",
+        "example": {
+          "chinese": "他在比赛的最后时刻进球了。",
+          "pinyin": "Tā zài bǐ sài de zuì hòu shí kè jìn qiú le.",
+          "english": "He scored a goal in the last moment of the match."
+        }
+      },
+      {
+        "meaning": "a goal",
+        "example": {
+          "chinese": "这是一个非常精彩的进球。",
+          "pinyin": "Zhè shì yī gè fēi cháng jīng cǎi de jìn qiú.",
+          "english": "This is a very wonderful goal."
+        }
+      }
+    ]
+  },
+  "点菜": {
+    "pinyin": "diǎn cài",
+    "definition": [
+      {
+        "meaning": "to order food (at a restaurant)",
+        "example": {
+          "chinese": "服务员，我们可以点菜了吗？",
+          "pinyin": "Fú wù yuán, wǒ men kě yǐ diǎn cài le ma?",
+          "english": "Waiter, can we order food now?"
+        }
+      }
+    ]
+  },
+  "火锅": {
+    "pinyin": "huǒ guō",
+    "definition": [
+      {
+        "meaning": "hotpot",
+        "example": {
+          "chinese": "我们去吃火锅吧。",
+          "pinyin": "Wǒmen qù chī huǒguō ba.",
+          "english": "Let's go eat hotpot."
+        }
+      }
+    ]
+  },
+  "可乐": {
+    "pinyin": "kě lè",
+    "definition": [
+      {
+        "meaning": "cola",
+        "example": {
+          "chinese": "我喜欢喝冰可乐。",
+          "pinyin": "Wǒ xǐ huān hē bīng kě lè.",
+          "english": "I like drinking iced cola."
+        }
+      }
+    ]
+  },
+  "宿舍楼": {
+    "pinyin": "sù shè lóu",
+    "definition": [
+      {
+        "meaning": "dormitory building",
+        "example": {
+          "chinese": "我们住在学校的宿舍楼里。",
+          "pinyin": "Wǒmen zhù zài xuéxiào de sùshèlóu lǐ.",
+          "english": "We live in the school's dormitory building."
+        }
+      }
+    ]
+  },
+  "后座上": {
+    "pinyin": "hòu zuò shàng",
+    "definition": [
+      {
+        "meaning": "on the back seat",
+        "example": {
+          "chinese": "孩子坐在后座上睡觉。",
+          "pinyin": "Háizi zuò zài hòuzuò shàng shuìjiào.",
+          "english": "The child is sleeping in the back seat."
+        }
+      }
+    ]
+  },
+  "饭馆": {
+    "pinyin": "fànguǎn",
+    "definition": [
+      {
+        "meaning": "restaurant; eatery",
+        "example": {
+          "chinese": "这家饭馆的菜非常好吃。",
+          "pinyin": "Zhè jiā fànguǎn de cài fēicháng hǎochī.",
+          "english": "The food in this restaurant is delicious."
+        }
+      }
+    ]
+  },
+  "排球": {
+    "pinyin": "pái qiú",
+    "definition": [
+      {
+        "meaning": "volleyball",
+        "example": {
+          "chinese": "他在周末经常打排球。",
+          "pinyin": "Tā zài zhōu mò jīng cháng dǎ pái qiú.",
+          "english": "He often plays volleyball on weekends."
+        }
+      }
+    ]
+  },
+  "临": {
+    "pinyin": "lín",
+    "definition": [
+      {
+        "meaning": "to face; to overlook (often referring to a building or location facing a direction)",
+        "example": {
+          "chinese": "这间房子临街。",
+          "pinyin": "Zhè jiān fáng zi lín jiē.",
+          "english": "This room faces the street."
+        }
+      },
+      {
+        "meaning": "to approach; to be close to (a time or event)",
+        "example": {
+          "chinese": "春节快临到了。",
+          "pinyin": "Chūn jié kuài lín dào le.",
+          "english": "Spring Festival is approaching."
+        }
+      },
+      {
+        "meaning": "to look at from above; to inspect",
+        "example": {
+          "chinese": "他站在山顶俯视着临下的山谷。",
+          "pinyin": "Tā zhàn zài shān dǐng fǔ shì zhe lín xià de shān gǔ.",
+          "english": "He stood on the mountain peak looking down at the valley below."
+        }
+      }
+    ]
+  },
+  "入": {
+    "pinyin": "rù",
+    "definition": [
+      {
+        "meaning": "to enter; to go in",
+        "example": {
+          "chinese": "请进，屋里面很暖和。",
+          "pinyin": "Qǐng jìn, wū lǐ miàn hěn nuǎn huo.",
+          "english": "Please come in, it is very warm inside the room."
+        }
+      },
+      {
+        "meaning": "to join; to be admitted to (an organization, school, etc.)",
+        "example": {
+          "chinese": "他去年考入了北京大学。",
+          "pinyin": "Tā qù nián kǎo rù le Běi jīng Dà xué.",
+          "english": "He was admitted to Peking University last year."
+        }
+      }
+    ]
+  },
+  "预": {
+    "pinyin": "yù",
+    "definition": [
+      {
+        "meaning": "in advance; beforehand",
+        "example": {
+          "chinese": "请提前预订房间。",
+          "pinyin": "Qǐng tíqián yùdìng fángjiān.",
+          "english": "Please book the room in advance."
+        }
+      },
+      {
+        "meaning": "to foresee; to predict",
+        "example": {
+          "chinese": "他无法预知未来。",
+          "pinyin": "Tā wúfǎ yùzhī wèilái.",
+          "english": "He cannot foresee the future."
+        }
+      }
+    ]
+  },
+  "无": {
+    "pinyin": "wú",
+    "definition": [
+      {
+        "meaning": "no; not have; without",
+        "example": {
+          "chinese": "这个问题毫无意义。",
+          "pinyin": "Zhè gè wèn tí háo wú yì yì.",
+          "english": "This question is completely meaningless."
+        }
+      },
+      {
+        "meaning": "nothing; not anything",
+        "example": {
+          "chinese": "我一无所知。",
+          "pinyin": "Wǒ yī wú suǒ zhī.",
+          "english": "I know nothing."
+        }
+      }
+    ]
+  },
+  "络": {
+    "pinyin": "luò",
+    "definition": [
+      {
+        "meaning": "net; network; mesh",
+        "example": {
+          "chinese": "这张网由许多细线络组成。",
+          "pinyin": "Zhè zhāng wǎng yóu xǔ duō xì xiàn luò zǔ chéng.",
+          "english": "This net is composed of many fine thread networks."
+        }
+      },
+      {
+        "meaning": "to cover with a mesh; to wrap",
+        "example": {
+          "chinese": "他用布络住头。",
+          "pinyin": "Tā yòng bù luò zhù tóu.",
+          "english": "He wrapped his head with cloth."
+        }
+      }
+    ]
+  },
+  "非": {
+    "pinyin": "fēi",
+    "definition": [
+      {
+        "meaning": "not; no",
+        "example": {
+          "chinese": "这非他所有。",
+          "pinyin": "Zhè fēi tā suǒ yǒu.",
+          "english": "This does not belong to him."
+        }
+      },
+      {
+        "meaning": "wrong; incorrect",
+        "example": {
+          "chinese": "非暴力不合作。",
+          "pinyin": "Fēi bào lì bù hé zuò.",
+          "english": "Non-violent non-cooperation."
+        }
+      }
+    ]
+  },
+  "机": {
+    "pinyin": "jī",
+    "definition": [
+      {
+        "meaning": "machine; apparatus",
+        "example": {
+          "chinese": "这是一台自动洗衣机。",
+          "pinyin": "Zhè shì yī tái zì dòng xǐ yī jī.",
+          "english": "This is an automatic washing machine."
+        }
+      },
+      {
+        "meaning": "opportunity; chance",
+        "example": {
+          "chinese": "我们要抓住这次机会。",
+          "pinyin": "Wǒ men yào zhuā zhù zhè cì jī huì.",
+          "english": "We must seize this opportunity."
+        }
+      },
+      {
+        "meaning": "secret; key; pivotal",
+        "example": {
+          "chinese": "这是解决问题的关键。",
+          "pinyin": "Zhè shì jiě jué wèn tí de guān jiàn.",
+          "english": "This is the key to solving the problem."
+        }
+      }
+    ]
+  },
+  "确": {
+    "pinyin": "què",
+    "definition": [
+      {
+        "meaning": "certain; definite; accurate",
+        "example": {
+          "chinese": "这是一个确凿的证据。",
+          "pinyin": "Zhè shì yí gè què záo de zhèng jù.",
+          "english": "This is a definite piece of evidence."
+        }
+      },
+      {
+        "meaning": "firm; resolute",
+        "example": {
+          "chinese": "他的态度很确切。",
+          "pinyin": "Tā de tài dù hěn què qiè.",
+          "english": "His attitude is very firm and resolute."
+        }
+      }
+    ]
+  },
+  "电": {
+    "pinyin": "diàn",
+    "definition": [
+      {
+        "meaning": "electricity",
+        "example": {
+          "chinese": "家里突然没电了。",
+          "pinyin": "Jiā lǐ tū rán méi diàn le.",
+          "english": "The electricity suddenly went out at home."
+        }
+      },
+      {
+        "meaning": "electric; powered by electricity",
+        "example": {
+          "chinese": "这是一辆电动汽车。",
+          "pinyin": "Zhè shì yī liàng diàn dòng qì chē.",
+          "english": "This is an electric car."
+        }
+      }
+    ]
+  },
+  "梯": {
+    "pinyin": "tī",
+    "definition": [
+      {
+        "meaning": "ladder; stairs",
+        "example": {
+          "chinese": "请小心爬梯子。",
+          "pinyin": "Qǐng xiǎo xīn pá tī zi.",
+          "english": "Please be careful when climbing the ladder."
+        }
+      },
+      {
+        "meaning": "step; gradation (metaphorical)",
+        "example": {
+          "chinese": "读书是进步的阶梯。",
+          "pinyin": "Dú shū shì jìn bù de jiē tī.",
+          "english": "Reading is the ladder to progress."
+        }
+      }
+    ]
+  },
+  "地铁": {
+    "pinyin": "dì tiě",
+    "definition": [
+      {
+        "meaning": "subway; underground railway",
+        "example": {
+          "chinese": "我坐地铁去上班。",
+          "pinyin": "Wǒ zuò dì tiě qù shàng bān.",
+          "english": "I take the subway to work."
+        }
+      },
+      {
+        "meaning": "rapid transit system",
+        "example": {
+          "chinese": "这个城市的地铁很发达。",
+          "pinyin": "Zhè ge chéng shì de dì tiě hěn fā dá.",
+          "english": "The subway system in this city is very developed."
+        }
+      }
+    ]
+  },
+  "地铁站": {
+    "pinyin": "dì tiě zhàn",
+    "definition": [
+      {
+        "meaning": "subway station",
+        "example": {
+          "chinese": "我每天早上都在地铁站坐地铁去上班。",
+          "pinyin": "Wǒ měi tiān zǎo shàng dōu zài dì tiě zhàn zuò dì tiě qù shàng bān.",
+          "english": "I take the subway to work at the subway station every morning."
+        }
+      }
+    ]
+  },
+  "换钱": {
+    "pinyin": "huàn qián",
+    "definition": [
+      {
+        "meaning": "to exchange for money; to get money in exchange for something",
+        "example": {
+          "chinese": "我想把这些外币换钱。",
+          "pinyin": "Wǒ xiǎng bǎ zhè xiē wài bì huàn qián.",
+          "english": "I want to exchange these foreign currencies for money."
+        }
+      }
+    ]
+  },
+  "市中心": {
+    "pinyin": "shì zhōng xīn",
+    "definition": [
+      {
+        "meaning": "city center; downtown",
+        "example": {
+          "chinese": "这家商场位于市中心。",
+          "pinyin": "Zhè jiā shāng chǎng wèi yú shì zhōng xīn.",
+          "english": "This shopping mall is located in the city center."
+        }
+      }
+    ]
+  },
+  "医": {
+    "pinyin": "yī",
+    "definition": [
+      {
+        "meaning": "doctor; physician",
+        "example": {
+          "chinese": "这位医非常专业。",
+          "pinyin": "Zhè wèi yī fēi cháng zhuān yè.",
+          "english": "This doctor is very professional."
+        }
+      },
+      {
+        "meaning": "medicine; medical treatment",
+        "example": {
+          "chinese": "中医是中国传统文化的一部分。",
+          "pinyin": "Zhōng yī shì Zhōng guó chuán tǒng wén huà de yī bù fen.",
+          "english": "Traditional Chinese medicine is part of traditional Chinese culture."
+        }
+      }
+    ]
+  },
+  "舒": {
+    "pinyin": "shū",
+    "definition": [
+      {
+        "meaning": "comfortable; cozy",
+        "example": {
+          "chinese": "这张床睡起来很舒服。",
+          "pinyin": "Zhè zhāng chuáng shuì qǐ lái hěn shū fu.",
+          "english": "This bed is very comfortable to sleep on."
+        }
+      },
+      {
+        "meaning": "to stretch; to extend",
+        "example": {
+          "chinese": "他伸了个懒腰，舒展了一下身体。",
+          "pinyin": "Tā shēn le gè lǎn yāo, shū zhǎn le yī xià shēn tǐ.",
+          "english": "He yawned and stretched his body."
+        }
+      },
+      {
+        "meaning": "to unfold; to open",
+        "example": {
+          "chinese": "树叶慢慢舒展开来。",
+          "pinyin": "Shù yè màn màn shū zhǎn kāi lái.",
+          "english": "The leaves slowly unfolded."
+        }
+      }
+    ]
+  },
+  "服": {
+    "pinyin": "fú",
+    "definition": [
+      {
+        "meaning": "clothing; garment",
+        "example": {
+          "chinese": "这身衣服很舒适。",
+          "pinyin": "Zhè shēn yī fu hěn shū shì.",
+          "english": "This outfit is very comfortable."
+        }
+      },
+      {
+        "meaning": "to take (medicine); to use (a drug)",
+        "example": {
+          "chinese": "请按时服药。",
+          "pinyin": "Qǐng àn shí fú yào.",
+          "english": "Please take the medicine on time."
+        }
+      },
+      {
+        "meaning": "to submit to; to accept; to comply with",
+        "example": {
+          "chinese": "我佩服你的勇气。",
+          "pinyin": "Wǒ pèi fu nǐ de yǒng qì.",
+          "english": "I admire your courage."
+        }
+      }
+    ]
+  },
+  "需": {
+    "pinyin": "xū",
+    "definition": [
+      {
+        "meaning": "to need; to require",
+        "example": {
+          "chinese": "这项工作需要仔细处理。",
+          "pinyin": "Zhè xiàng gōng zuò xū yào zǐ xì chǔ lǐ.",
+          "english": "This task requires careful handling."
+        }
+      }
+    ]
+  },
+  "盒": {
+    "pinyin": "hé",
+    "definition": [
+      {
+        "meaning": "box; container",
+        "example": {
+          "chinese": "请把礼物放进盒子里。",
+          "pinyin": "Qǐng bǎ lǐ wù fàng jìn hé zi lǐ.",
+          "english": "Please put the gift into the box."
+        }
+      },
+      {
+        "meaning": "case (e.g., for glasses, jewelry)",
+        "example": {
+          "chinese": "我的眼镜盒坏了。",
+          "pinyin": "Wǒ de yǎn jìng hé huài le.",
+          "english": "My glasses case is broken."
+        }
+      }
+    ]
+  },
+  "粒": {
+    "pinyin": "lì",
+    "definition": [
+      {
+        "meaning": "small particle or grain",
+        "example": {
+          "chinese": "他喜欢数大米粒。",
+          "pinyin": "Tā xǐ huān shǐ dà mǐ lì.",
+          "english": "He likes to count rice grains."
+        }
+      },
+      {
+        "meaning": "pill; tablet (classifier)",
+        "example": {
+          "chinese": "请按时吃药粒。",
+          "pinyin": "Qǐng àn shí chī yào lì.",
+          "english": "Please take the pills on time."
+        }
+      }
+    ]
+  },
+  "共": {
+    "pinyin": "gòng",
+    "definition": [
+      {
+        "meaning": "together; jointly; in common",
+        "example": {
+          "chinese": "我们共同努力。",
+          "pinyin": "Wǒ men gòng tóng nǔ lì.",
+          "english": "We work together."
+        }
+      },
+      {
+        "meaning": "in total; altogether",
+        "example": {
+          "chinese": "全班共有四十人。",
+          "pinyin": "Quán bān gòng yǒu sì shí rén.",
+          "english": "There are forty students in the class in total."
+        }
+      }
+    ]
+  },
+  "拿铁": {
+    "pinyin": "ná tiě",
+    "definition": [
+      {
+        "meaning": "latte (a coffee drink made with espresso and steamed milk)",
+        "example": {
+          "chinese": "我想喝一杯拿铁咖啡。",
+          "pinyin": "Wǒ xiǎng hē yī bēi ná tiě kā fēi.",
+          "english": "I would like to drink a cup of latte coffee."
+        }
+      }
+    ]
+  },
+  "朋友们": {
+    "pinyin": "péng you men",
+    "definition": [
+      {
+        "meaning": "friends (plural)",
+        "example": {
+          "chinese": "周末我和朋友们一起去了公园。",
+          "pinyin": "Zhōu mò wǒ hé péng you men yī qǐ qù le gōng yuán.",
+          "english": "On the weekend, my friends and I went to the park together."
+        }
+      }
+    ]
+  },
+  "网上": {
+    "pinyin": "wǎng shàng",
+    "definition": [
+      {
+        "meaning": "on the Internet; online",
+        "example": {
+          "chinese": "他经常在网上购物。",
+          "pinyin": "Tā jīng cháng zài wǎng shàng gòu wù.",
+          "english": "He often shops online."
+        }
+      }
+    ]
+  },
+  "装修": {
+    "pinyin": "zhuāng xiū",
+    "definition": [
+      {
+        "meaning": "to decorate; to renovate (a house or room)",
+        "example": {
+          "chinese": "他们花了三个月装修新房。",
+          "pinyin": "Tā men huā le sān gè yuè zhuāng xiū xīn fáng.",
+          "english": "They spent three months renovating their new house."
+        }
+      },
+      {
+        "meaning": "decoration; renovation (noun)",
+        "example": {
+          "chinese": "装修完成后，房子变得更漂亮了。",
+          "pinyin": "Zhuāng xiū wán chéng hòu, fáng zi biàn dé gèng piào liàng le.",
+          "english": "After the renovation, the house became much more beautiful."
+        }
+      }
+    ]
+  },
+  "租客": {
+    "pinyin": "zū kè",
+    "definition": [
+      {
+        "meaning": "tenant; renter",
+        "example": {
+          "chinese": "这位租客按时缴纳房租。",
+          "pinyin": "Zhè wèi zū kè àn shí jiǎo nà fáng zū.",
+          "english": "This tenant pays the rent on time."
+        }
+      }
+    ]
+  },
+  "房租": {
+    "pinyin": "fáng zū",
+    "definition": [
+      {
+        "meaning": "rent (for a house or apartment)",
+        "example": {
+          "chinese": "每月的房租太贵了。",
+          "pinyin": "Měi yuè de fáng zū tài guì le.",
+          "english": "The monthly rent is too expensive."
+        }
+      }
+    ]
+  },
+  "降价": {
+    "pinyin": "jiàng jià",
+    "definition": [
+      {
+        "meaning": "to reduce the price; to lower the price",
+        "example": {
+          "chinese": "这家商店为了庆祝新年，决定降价促销。",
+          "pinyin": "Zhè jiā shāng diàn wèi le庆祝 xīn nián, jué dìng jiàng jià cù xiāo.",
+          "english": "To celebrate the New Year, this store decided to reduce prices for promotion."
+        }
+      },
+      {
+        "meaning": "price cut; price drop",
+        "example": {
+          "chinese": "手机降价后，很多消费者都去购买了。",
+          "pinyin": "Shǒu jī jiàng jià hòu, hěn duō xiāo fèi zhě dōu qù gòu mǎi le.",
+          "english": "After the price drop of mobile phones, many consumers went to buy them."
+        }
+      }
+    ]
+  },
+  "业务": {
+    "pinyin": "yè wù",
+    "definition": [
+      {
+        "meaning": "business; operation; work",
+        "example": {
+          "chinese": "他负责公司的主要业务。",
+          "pinyin": "Tā fù zé gōng sī de zhǔ yào yè wù.",
+          "english": "He is responsible for the company's main business."
+        }
+      },
+      {
+        "meaning": "transaction (in banking)",
+        "example": {
+          "chinese": "这家银行办理外汇业务。",
+          "pinyin": "Zhè jiā yín háng bàn lǐ wài huì yè wù.",
+          "english": "This bank handles foreign exchange transactions."
+        }
+      }
+    ]
+  },
+  "礼": {
+    "pinyin": "lǐ",
+    "definition": [
+      {
+        "meaning": "courtesy; civility; good manners",
+        "example": {
+          "chinese": "礼貌是每个人都应该具备的素质。",
+          "pinyin": "Lǐ mào shì měi gè rén dōu yīng gāi jù bèi de sù zhì.",
+          "english": "Politeness is a quality that everyone should possess."
+        }
+      },
+      {
+        "meaning": "ritual; ceremony; etiquette",
+        "example": {
+          "chinese": "婚礼上有很多传统礼仪。",
+          "pinyin": "Hūn lǐ shàng yǒu hěn duō chuán tǒng lǐ yí.",
+          "english": "There are many traditional ceremonies at the wedding."
+        }
+      },
+      {
+        "meaning": "gift; present",
+        "example": {
+          "chinese": "他带了一份礼物去拜访朋友。",
+          "pinyin": "Tā dài le yī fèn lǐ wù qù bài fǎng péng yǒu.",
+          "english": "He brought a gift to visit his friend."
+        }
+      }
+    ]
+  },
+  "貌": {
+    "pinyin": "mào",
+    "definition": [
+      {
+        "meaning": "appearance; looks; facial features",
+        "example": {
+          "chinese": "她的外貌很甜美。",
+          "pinyin": "Tā de wài mào hěn tián měi.",
+          "english": "Her appearance is very sweet."
+        }
+      },
+      {
+        "meaning": "manner; bearing",
+        "example": {
+          "chinese": "他态度傲慢，目中无人。",
+          "pinyin": "Tā tài dù ào màn, mù zhōng wú rén.",
+          "english": "His manner was arrogant, looking down on everyone."
+        }
+      }
+    ]
+  },
+  "夸": {
+    "pinyin": "kuā",
+    "definition": [
+      {
+        "meaning": "to praise; to compliment",
+        "example": {
+          "chinese": "妈妈夸我做得好。",
+          "pinyin": "Mā ma kuā wǒ zuò de hǎo.",
+          "english": "Mom praised me for doing well."
+        }
+      },
+      {
+        "meaning": "to exaggerate; to boast",
+        "example": {
+          "chinese": "别夸大了事实。",
+          "pinyin": "Bié kuā dà le shì shí.",
+          "english": "Don't exaggerate the facts."
+        }
+      }
+    ]
+  },
+  "资": {
+    "pinyin": "zī",
+    "definition": [
+      {
+        "meaning": "capital; funds; assets",
+        "example": {
+          "chinese": "这家公司吸引了大量投资资金。",
+          "pinyin": "Zhè jiā gōng sī xī yǐn le dà liàng tóu zī zī jīn.",
+          "english": "This company attracted a large amount of investment capital."
+        }
+      },
+      {
+        "meaning": "resources; qualifications",
+        "example": {
+          "chinese": "他拥有丰富的自然资源。",
+          "pinyin": "Tā yōng yǒu fēng fù de zì rán zī yuán.",
+          "english": "He has abundant natural resources."
+        }
+      }
+    ]
+  },
+  "备": {
+    "pinyin": "bèi",
+    "definition": [
+      {
+        "meaning": "to prepare; to get ready",
+        "example": {
+          "chinese": "出门前请备好雨伞。",
+          "pinyin": "Chū mén qián qǐng bèi hǎo yǔ sǎn.",
+          "english": "Please prepare an umbrella before going out."
+        }
+      },
+      {
+        "meaning": "to reserve; to keep in stock",
+        "example": {
+          "chinese": "家里储备了很多粮食。",
+          "pinyin": "Jiā lǐ chǔ bèi le hěn duō liáng shi.",
+          "english": "The family has stored a lot of grain."
+        }
+      },
+      {
+        "meaning": "complete; full; thorough",
+        "example": {
+          "chinese": "他的计划准备得很完备。",
+          "pinyin": "Tā de jì huà zhǔn bèi de hěn wán bèi.",
+          "english": "His plan was prepared thoroughly."
+        }
+      }
+    ]
+  },
+  "简历": {
+    "pinyin": "jiǎn lì",
+    "definition": [
+      {
+        "meaning": "resume; curriculum vitae (CV)",
+        "example": {
+          "chinese": "请在申请工作前准备好你的简历。",
+          "pinyin": "Qǐng zài shēn qǐng gōng zuò qián zhǔn bèi hǎo nǐ de jiǎn lì.",
+          "english": "Please prepare your resume before applying for the job."
+        }
+      }
+    ]
+  },
+  "星": {
+    "pinyin": "xīng",
+    "definition": [
+      {
+        "meaning": "star",
+        "example": {
+          "chinese": "夜晚的天空中有许多星星。",
+          "pinyin": "Yè wǎn de tiān kōng zhōng yǒu xǔ duō xīng xing.",
+          "english": "There are many stars in the night sky."
+        }
+      },
+      {
+        "meaning": "star; celebrity",
+        "example": {
+          "chinese": "她是一位著名的电影明星。",
+          "pinyin": "Tā shì yī wèi zhù míng de diàn yǐng míng xīng.",
+          "english": "She is a famous movie star."
+        }
+      }
+    ]
+  },
+  "面试": {
+    "pinyin": "miàn shì",
+    "definition": [
+      {
+        "meaning": "interview (for a job or school admission)",
+        "example": {
+          "chinese": "我明天要去参加一家公司的面试。",
+          "pinyin": "Wǒ míng tiān yào qù cān jiā yī jiā gōng sī de miàn shì.",
+          "english": "I am going to attend a job interview at a company tomorrow."
+        }
+      }
+    ]
+  },
+  "汉语": {
+    "pinyin": "hàn yǔ",
+    "definition": [
+      {
+        "meaning": "the Chinese language; Mandarin Chinese",
+        "example": {
+          "chinese": "他正在学习汉语。",
+          "pinyin": "Tā zhèng zài xué xí hàn yǔ.",
+          "english": "He is studying Chinese."
+        }
+      }
+    ]
+  },
+  "电子": {
+    "pinyin": "diàn zǐ",
+    "definition": [
+      {
+        "meaning": "electron",
+        "example": {
+          "chinese": "电子带负电荷。",
+          "pinyin": "Diàn zǐ dài fù diàn hè.",
+          "english": "The electron carries a negative charge."
+        }
+      },
+      {
+        "meaning": "electronic; electronics",
+        "example": {
+          "chinese": "他买了一部新的电子手表。",
+          "pinyin": "Tā mǎi le yī bù xīn de diàn zǐ shǒu biǎo.",
+          "english": "He bought a new electronic watch."
+        }
+      }
+    ]
+  },
+  "经": {
+    "pinyin": "jīng",
+    "definition": [
+      {
+        "meaning": "to pass through; to go through",
+        "example": {
+          "chinese": "这条小路经过学校。",
+          "pinyin": "Zhè tiáo xiǎo lù jīng guò xué xiào.",
+          "english": "This small path goes through the school."
+        }
+      },
+      {
+        "meaning": "classic; sutra; scripture",
+        "example": {
+          "chinese": "他正在读佛教经典。",
+          "pinyin": "Tā zhèng zài dú fó jiào jīng diǎn.",
+          "english": "He is reading Buddhist scriptures."
+        }
+      }
+    ]
+  },
+  "绩": {
+    "pinyin": "jì",
+    "definition": [
+      {
+        "meaning": "achievement; merit; performance record",
+        "example": {
+          "chinese": "他取得了优异的成绩。",
+          "pinyin": "Tā qǔ dé le yōu yì de chéng jì.",
+          "english": "He achieved excellent results."
+        }
+      }
+    ]
+  },
+  "单": {
+    "pinyin": "dān",
+    "definition": [
+      {
+        "meaning": "single; individual",
+        "example": {
+          "chinese": "他喜欢单独行动，不喜欢结伴。",
+          "pinyin": "Tā xǐ huān dān dú xíng dòng, bù xǐ huān jié bàn.",
+          "english": "He likes to act alone and does not like to go in pairs."
+        }
+      },
+      {
+        "meaning": "simple; plain",
+        "example": {
+          "chinese": "这件衣服设计得很简单。",
+          "pinyin": "Zhè jiàn yī fu shè jì de hěn jiǎn dān.",
+          "english": "This piece of clothing has a very simple design."
+        }
+      },
+      {
+        "meaning": "only; merely",
+        "example": {
+          "chinese": "他单枪匹马地完成了任务。",
+          "pinyin": "Tā dān qiāng pǐ mǎ de wán chéng le rèn wù.",
+          "english": "He completed the task single-handedly."
+        }
+      }
+    ]
+  },
+  "成绩": {
+    "pinyin": "chéng jì",
+    "definition": [
+      {
+        "meaning": "academic score; grade",
+        "example": {
+          "chinese": "他的数学成绩很好。",
+          "pinyin": "Tā de shù xué chéng jì hěn hǎo.",
+          "english": "His math score is very good."
+        }
+      },
+      {
+        "meaning": "performance; result (in work or study)",
+        "example": {
+          "chinese": "他在工作中取得了优异的成绩。",
+          "pinyin": "Tā zài gōng zuò zhōng qǔ dé le yōu yì de chéng jì.",
+          "english": "He achieved excellent results in his work."
+        }
+      }
+    ]
+  },
+  "进步": {
+    "pinyin": "jìn bù",
+    "definition": [
+      {
+        "meaning": "progress; advancement",
+        "example": {
+          "chinese": "他在技术方面有很大的进步。",
+          "pinyin": "Tā zài jì shù fāng miàn yǒu hěn dà de jìn bù.",
+          "english": "He has made great progress in technology."
+        }
+      },
+      {
+        "meaning": "to advance; to progress; to improve",
+        "example": {
+          "chinese": "我们要不断学习，才能进步。",
+          "pinyin": "Wǒ men yào bù duàn xué xí, cái néng jìn bù.",
+          "english": "We must keep learning in order to improve."
+        }
+      }
+    ]
+  },
+  "小明": {
+    "pinyin": "Xiǎo Míng",
+    "definition": [
+      {
+        "meaning": "Xiao Ming (a very common generic name used in Chinese textbooks and examples, similar to 'John Doe')",
+        "example": {
+          "chinese": "小明是我的同学。",
+          "pinyin": "Xiǎo Míng shì wǒ de tóng xué.",
+          "english": "Xiao Ming is my classmate."
+        }
+      }
+    ]
+  },
+  "西红柿": {
+    "pinyin": "xī hóng shì",
+    "definition": [
+      {
+        "meaning": "tomato",
+        "example": {
+          "chinese": "我想吃西红柿炒鸡蛋。",
+          "pinyin": "Wǒ xiǎng chī xī hóng shì chǎo jī dàn.",
+          "english": "I want to eat tomatoes scrambled with eggs."
+        }
+      }
+    ]
+  },
+  "烧烤": {
+    "pinyin": "shāo kǎo",
+    "definition": [
+      {
+        "meaning": "barbecue; roast",
+        "example": {
+          "chinese": "周末我们去烧烤吧。",
+          "pinyin": "Zhōu mò wǒ men qù shāo kǎo ba.",
+          "english": "Let's go barbecue this weekend."
+        }
+      },
+      {
+        "meaning": "to roast food (verb)",
+        "example": {
+          "chinese": "他喜欢在院子里烧烤。",
+          "pinyin": "Tā xǐ huān zài yuàn zi lǐ shāo kǎo.",
+          "english": "He likes to roast food in the yard."
+        }
+      }
+    ]
+  },
+  "练": {
+    "pinyin": "liàn",
+    "definition": [
+      {
+        "meaning": "to practice; to train",
+        "example": {
+          "chinese": "她每天练钢琴一个小时。",
+          "pinyin": "Tā měi tiān liàn gāng qín yī gè xiǎo shí.",
+          "english": "She practices the piano for an hour every day."
+        }
+      },
+      {
+        "meaning": "to exercise (the body)",
+        "example": {
+          "chinese": "我们喜欢早上去公园练太极。",
+          "pinyin": "Wǒ men xǐ huān zǎo shang qù gōng yuàn liàn tài jí.",
+          "english": "We like to go to the park in the morning to practice Tai Chi."
+        }
+      }
+    ]
+  },
+  "减肥": {
+    "pinyin": "jiǎn féi",
+    "definition": [
+      {
+        "meaning": "to lose weight",
+        "example": {
+          "chinese": "为了健康，她决定每天跑步减肥。",
+          "pinyin": "Wèi le jiànkāng, tā juédìng měitiān pǎobù jiǎnféi.",
+          "english": "For the sake of health, she decided to run every day to lose weight."
+        }
+      }
+    ]
+  },
+  "跑步机": {
+    "pinyin": "pǎo bù jī",
+    "definition": [
+      {
+        "meaning": "treadmill (a machine for running or walking in place)",
+        "example": {
+          "chinese": "我每天早上都在跑步机上锻炼。",
+          "pinyin": "Wǒ měi tiān zǎo shang dōu zài pǎo bù jī shàng duàn liàn.",
+          "english": "I exercise on the treadmill every morning."
+        }
+      }
+    ]
+  },
+  "力量训练": {
+    "pinyin": "lì liàng xùn liàn",
+    "definition": [
+      {
+        "meaning": "strength training; resistance training",
+        "example": {
+          "chinese": "每周进行三次力量训练有助于增加肌肉。",
+          "pinyin": "Měi zhōu jìn xíng sān cì lì liàng xùn liàn yǒu zhù yú zēng jiā jī ròu.",
+          "english": "Strength training three times a week helps increase muscle."
+        }
+      }
+    ]
+  },
+  "王先生": {
+    "pinyin": "wáng xiān shēng",
+    "definition": [
+      {
+        "meaning": "Mr. Wang (a polite form of address for a man surnamed Wang)",
+        "example": {
+          "chinese": "王先生正在办公室里工作。",
+          "pinyin": "Wáng xiān shēng zhèng zài bàn gōng shì lǐ gōng zuò.",
+          "english": "Mr. Wang is working in the office."
+        }
+      }
+    ]
+  },
+  "锻炼": {
+    "pinyin": "duàn liàn",
+    "definition": [
+      {
+        "meaning": "to exercise; to work out",
+        "example": {
+          "chinese": "我每天早晨跑步锻炼。",
+          "pinyin": "Wǒ měi tiān zhǎo chén pǎo bù duàn liàn.",
+          "english": "I run and exercise every morning."
+        }
+      },
+      {
+        "meaning": "to temper; to forge (metaphorical, referring to building character or skill through practice)",
+        "example": {
+          "chinese": "这次旅行锻炼了我的独立能力。",
+          "pinyin": "Zhè cì lǚ xíng duàn liàn le wǒ de dú lì néng lì.",
+          "english": "This trip tempered my ability to be independent."
+        }
+      }
+    ]
+  },
+  "义": {
+    "pinyin": "yì",
+    "definition": [
+      {
+        "meaning": "righteousness; justice; moral duty",
+        "example": {
+          "chinese": "他是一个讲义气的人。",
+          "pinyin": "Tā shì yí gè jiǎng yì qì de rén.",
+          "english": "He is a person who values righteousness and loyalty."
+        }
+      },
+      {
+        "meaning": "meaning; significance",
+        "example": {
+          "chinese": "这句话有什么含义？",
+          "pinyin": "Zhè jù huà yǒu shén me hán yì?",
+          "english": "What is the meaning of this sentence?"
+        }
+      },
+      {
+        "meaning": "friendly; benevolent (often used in proper nouns or compounds)",
+        "example": {
+          "chinese": "我们举行了一次慈善义演。",
+          "pinyin": "Wǒ men jǔ xíng le yí cì cí shàn yì yǎn.",
+          "english": "We held a charity benefit performance."
+        }
+      }
+    ]
+  },
+  "健身房": {
+    "pinyin": "jiàn shēn fáng",
+    "definition": [
+      {
+        "meaning": "gym; fitness center",
+        "example": {
+          "chinese": "他每天下班后都去健身房锻炼。",
+          "pinyin": "Tā měi tiān xià bān hòu dōu qù jiàn shēn fáng duàn liàn.",
+          "english": "He goes to the gym to work out every day after work."
+        }
+      }
+    ]
+  },
+  "个个": {
+    "pinyin": "gè gè",
+    "definition": [
+      {
+        "meaning": "each and every; every one of",
+        "example": {
+          "chinese": "这里的风景个个都美得像画一样。",
+          "pinyin": "Zhè lǐ de fēng jǐng gè gè dōu měi de xiàng huà yī yàng.",
+          "english": "Every scene here is as beautiful as a painting."
+        }
+      }
+    ]
+  },
+  "哎哟": {
+    "pinyin": "āi yō",
+    "definition": [
+      {
+        "meaning": "an exclamation expressing pain, surprise, or annoyance",
+        "example": {
+          "chinese": "哎哟，我踩到你的脚了。",
+          "pinyin": "Āi yō, wǒ cǎi dào nǐ de jiǎo le.",
+          "english": "Oops, I stepped on your foot."
+        }
+      },
+      {
+        "meaning": "an exclamation expressing sudden realization or effort",
+        "example": {
+          "chinese": "哎哟，我想起来了！",
+          "pinyin": "Āi yō, wǒ xiǎng qǐ lái le!",
+          "english": "Oh, I remember now!"
+        }
+      }
+    ]
+  },
+  "创口贴": {
+    "pinyin": "chuāng kǒu tiē",
+    "definition": [
+      {
+        "meaning": "adhesive bandage; band-aid",
+        "example": {
+          "chinese": "手指被纸划破了，我贴上创口贴。",
+          "pinyin": "Shǒu zhǐ bèi zhǐ huá pò le, wǒ tiē shàng chuāng kǒu tiē.",
+          "english": "My finger was cut by paper, so I put an adhesive bandage on it."
+        }
+      }
+    ]
+  },
+  "轮胎": {
+    "pinyin": "lún tāi",
+    "definition": [
+      {
+        "meaning": "tyre; tire",
+        "example": {
+          "chinese": "我的汽车轮胎漏气了。",
+          "pinyin": "Wǒ de qì chē lún tāi lòu qì le.",
+          "english": "The tire on my car is leaking air."
+        }
+      }
+    ]
+  },
+  "胡": {
+    "pinyin": "hú",
+    "definition": [
+      {
+        "meaning": "beard; whiskers",
+        "example": {
+          "chinese": "他留着一撮胡子。",
+          "pinyin": "Tā liú zhe yī cuō hú zi.",
+          "english": "He has a tuft of beard."
+        }
+      },
+      {
+        "meaning": "recklessly; blindly; without reason",
+        "example": {
+          "chinese": "不要胡闹。",
+          "pinyin": "Bú yào hú nào.",
+          "english": "Don't act recklessly."
+        }
+      },
+      {
+        "meaning": "foreign (historically referring to peoples from the north or west of China)",
+        "example": {
+          "chinese": "胡饼是中国古代的一种面食。",
+          "pinyin": "Hú bǐng shì Zhōng guó gǔ dài de yī zhǒng miàn shí.",
+          "english": "Hu bing was a type of wheat food in ancient China."
+        }
+      }
+    ]
+  },
+  "零": {
+    "pinyin": "líng",
+    "definition": [
+      {
+        "meaning": "zero; naught",
+        "example": {
+          "chinese": "今天的气温降到了零度以下。",
+          "pinyin": "Jīn tiān de qì wēn jiàng dào le líng dù yǐ xià.",
+          "english": "The temperature today dropped below zero degrees."
+        }
+      },
+      {
+        "meaning": "remaining; residue (after taking away the largest possible multiple)",
+        "example": {
+          "chinese": "十除以三，商是三，余数是零。",
+          "pinyin": "Shí chú yǐ sān, shāng shì sān, yú shù shì líng.",
+          "english": "Ten divided by three gives a quotient of three and a remainder of zero."
+        }
+      },
+      {
+        "meaning": "零星; scattered; detached; fractional",
+        "example": {
+          "chinese": "这里只有零星的几个人。",
+          "pinyin": "Zhè lǐ zhǐ yǒu líng xīng de jǐ gè rén.",
+          "english": "There are only a scattered few people here."
+        }
+      }
+    ]
+  },
+  "己": {
+    "pinyin": "jǐ",
+    "definition": [
+      {
+        "meaning": "self",
+        "example": {
+          "chinese": "我们要严于律己。",
+          "pinyin": "Wǒ men yào yán yú lǜ jǐ.",
+          "english": "We must be strict with ourselves."
+        }
+      },
+      {
+        "meaning": "one of the ten Heavenly Stems",
+        "example": {
+          "chinese": "今年是己亥年。",
+          "pinyin": "Jīn nián shì jǐ hài nián.",
+          "english": "This year is the Year of the Pig (Jihai)."
+        }
+      }
+    ]
+  },
+  "历": {
+    "pinyin": "lì",
+    "definition": [
+      {
+        "meaning": "calendar; date",
+        "example": {
+          "chinese": "今天是几号？请查一下日历。",
+          "pinyin": "Jīn tiān shì jǐ hào? Qǐng chá yī xià rì lì.",
+          "english": "What is today's date? Please check the calendar."
+        }
+      },
+      {
+        "meaning": "experience; go through",
+        "example": {
+          "chinese": "他经历过很多困难。",
+          "pinyin": "Tā jīng lì guò hěn duō kùn nán.",
+          "english": "He has experienced many difficulties."
+        }
+      },
+      {
+        "meaning": "history; historical",
+        "example": {
+          "chinese": "这座建筑有悠久的历史。",
+          "pinyin": "Zhè zuò jiàn zhù yǒu yōu jiǔ de lì shǐ.",
+          "english": "This building has a long history."
+        }
+      }
+    ]
+  },
+  "希": {
+    "pinyin": "xī",
+    "definition": [
+      {
+        "meaning": "hope; expectation",
+        "example": {
+          "chinese": "我们对未来充满希望。",
+          "pinyin": "Wǒmen duì wèi lái chōng mǎn xī wàng.",
+          "english": "We are full of hope for the future."
+        }
+      },
+      {
+        "meaning": "rare; scarce",
+        "example": {
+          "chinese": "这种动物在野外很罕见。",
+          "pinyin": "Zhè zhǒng dòng wù zài yě wài hěn xī yǒu.",
+          "english": "This animal is rare in the wild."
+        }
+      }
+    ]
+  },
+  "纪念": {
+    "pinyin": "jì niàn",
+    "definition": [
+      {
+        "meaning": "to commemorate; to remember; memorial",
+        "example": {
+          "chinese": "人们去纪念碑纪念英雄。",
+          "pinyin": "Rén men qù jì niàn bēi jì niàn yīng xióng.",
+          "english": "People go to the monument to commemorate the heroes."
+        }
+      },
+      {
+        "meaning": "to keep in mind; to bear in mind (as a reminder)",
+        "example": {
+          "chinese": "这张照片是我纪念家乡的照片。",
+          "pinyin": "Zhè zhāng zhào piàn shì wǒ jì niàn jiā xiāng de zhào piàn.",
+          "english": "This photo is a keepsake of my hometown."
+        }
+      }
+    ]
+  },
+  "居然": {
+    "pinyin": "jū rán",
+    "definition": [
+      {
+        "meaning": "unexpectedly; as one would not expect",
+        "example": {
+          "chinese": "他居然在考试中得了第一名。",
+          "pinyin": "Tā jū rán zài kǎo shì zhōng dé le dì yī míng.",
+          "english": "He unexpectedly got first place in the exam."
+        }
+      },
+      {
+        "meaning": "actually; really (expressing surprise)",
+        "example": {
+          "chinese": "这么简单的问题，你居然不知道？",
+          "pinyin": "Zhè me jiǎn dān de wèn tí, nǐ jū rán bù zhī dào?",
+          "english": "You actually don't know such a simple question?"
+        }
+      }
+    ]
+  },
+  "平板": {
+    "pinyin": "píng bǎn",
+    "definition": [
+      {
+        "meaning": "flat; even",
+        "example": {
+          "chinese": "地面很平板，适合散步。",
+          "pinyin": "Dì miàn hěn píng bǎn, shì hé sàn bù.",
+          "english": "The ground is very flat, suitable for walking."
+        }
+      },
+      {
+        "meaning": "tablet (computer)",
+        "example": {
+          "chinese": "她买了一个新的平板电脑。",
+          "pinyin": "Tā mǎi le yī gè xīn de píng bǎn diàn nǎo.",
+          "english": "She bought a new tablet computer."
+        }
+      }
+    ]
+  },
+  "退货": {
+    "pinyin": "tuì huò",
+    "definition": [
+      {
+        "meaning": "to return goods",
+        "example": {
+          "chinese": "这件衣服不合身，我想退货。",
+          "pinyin": "Zhè jiàn yī fu bù hé shēn, wǒ xiǎng tuì huò.",
+          "english": "This piece of clothing doesn't fit, I want to return it."
+        }
+      },
+      {
+        "meaning": "return (as a verb, often regarding products)",
+        "example": {
+          "chinese": "超市规定七天内可以退货。",
+          "pinyin": "Chāo shì guī dìng qī tiān nèi kě yǐ tuì huò.",
+          "english": "The supermarket's policy allows for returns within seven days."
+        }
+      }
+    ]
+  },
+  "李伟": {
+    "pinyin": "Lǐ Wěi",
+    "definition": [
+      {
+        "meaning": "a common Chinese male name (Li Wei)",
+        "example": {
+          "chinese": "李伟是我的同学。",
+          "pinyin": "Lǐ Wěi shì wǒ de tóng xué.",
+          "english": "Li Wei is my classmate."
+        }
+      }
+    ]
+  },
+  "力": {
+    "pinyin": "lì",
+    "definition": [
+      {
+        "meaning": "strength; power; force",
+        "example": {
+          "chinese": "他很有力气。",
+          "pinyin": "Tā hěn yǒu lì qi.",
+          "english": "He is very strong."
+        }
+      },
+      {
+        "meaning": "effort; exertion",
+        "example": {
+          "chinese": "我们要尽力帮忙。",
+          "pinyin": "Wǒ men yào jìn lì bāng máng.",
+          "english": "We should do our best to help."
+        }
+      }
+    ]
+  },
+  "担": {
+    "pinyin": "dān",
+    "definition": [
+      {
+        "meaning": "to carry (on the shoulder with a pole)",
+        "example": {
+          "chinese": "他担着一桶水回家。",
+          "pinyin": "Tā dān zhe yī tǒng shuǐ huí jiā.",
+          "english": "He carried a bucket of water home on a pole."
+        }
+      },
+      {
+        "meaning": "to bear; to take on (responsibility, burden, etc.)",
+        "example": {
+          "chinese": "我们要勇于承担责任。",
+          "pinyin": "Wǒmen yào yǒng yú chéng dān zé rèn.",
+          "english": "We must be brave in taking on responsibility."
+        }
+      }
+    ]
+  },
+  "小林": {
+    "pinyin": "Xiǎo Lín",
+    "definition": [
+      {
+        "meaning": "a familiar way to address someone surnamed Lin; Mr. Lin; young Lin",
+        "example": {
+          "chinese": "小林是我的新同事。",
+          "pinyin": "Xiǎo Lín shì wǒ de xīn tóng shì.",
+          "english": "Xiao Lin is my new colleague."
+        }
+      }
+    ]
+  },
+  "抑郁": {
+    "pinyin": "yì yù",
+    "definition": [
+      {
+        "meaning": "depressed; low-spirited; morose",
+        "example": {
+          "chinese": "他最近心情很抑郁。",
+          "pinyin": "Tā zuì jìn xīn qing hěn yì yù.",
+          "english": "He has been feeling depressed lately."
+        }
+      },
+      {
+        "meaning": "clinical depression; depressive disorder",
+        "example": {
+          "chinese": "长期抑郁需要专业医生的帮助。",
+          "pinyin": "Cháng qī yì yù xū yào zhuān yè yī shēng de bāng zhù.",
+          "english": "Long-term depression requires help from a professional doctor."
+        }
+      }
+    ]
+  },
+  "扳手": {
+    "pinyin": "bān shǒu",
+    "definition": [
+      {
+        "meaning": "wrench; spanner",
+        "example": {
+          "chinese": "他用扳手修理这台机器。",
+          "pinyin": "Tā yòng bān shǒu xiū lǐ zhè tái jī qì.",
+          "english": "He used a wrench to repair this machine."
+        }
+      }
+    ]
+  },
+  "备胎": {
+    "pinyin": "bèitāi",
+    "definition": [
+      {
+        "meaning": "spare tire",
+        "example": {
+          "chinese": "车里备着一个备胎。",
+          "pinyin": "Chē lǐ bèizhe yīgè bèitāi.",
+          "english": "There is a spare tire in the car."
+        }
+      },
+      {
+        "meaning": "a person kept as a backup in a romantic relationship",
+        "example": {
+          "chinese": "她不想再做他的备胎了。",
+          "pinyin": "Tā bù xiǎng zài zuò tā de bèitāi le.",
+          "english": "She doesn't want to be his backup anymore."
+        }
+      }
+    ]
+  },
+  "拖车": {
+    "pinyin": "tuō chē",
+    "definition": [
+      {
+        "meaning": "trailer; tow truck",
+        "example": {
+          "chinese": "那辆拖车停在路边。",
+          "pinyin": "Nà liàng tuō chē tíng zài lù biān.",
+          "english": "That tow truck is parked by the roadside."
+        }
+      },
+      {
+        "meaning": "to tow (a vehicle)",
+        "example": {
+          "chinese": "警察正在拖车。",
+          "pinyin": "Jǐng chá zhèng zài tuō chē.",
+          "english": "The police are towing the car."
+        }
+      }
+    ]
+  },
+  "二十五日": {
+    "pinyin": "èr shí wǔ rì",
+    "definition": [
+      {
+        "meaning": "the 25th (day of the month)",
+        "example": {
+          "chinese": "我的生日是五月二十五日。",
+          "pinyin": "Wǒ de shēng rì shì wǔ yuè èr shí wǔ rì.",
+          "english": "My birthday is May 25th."
+        }
+      }
+    ]
+  },
+  "二十四日": {
+    "pinyin": "èr shí sì rì",
+    "definition": [
+      {
+        "meaning": "the 24th (day of a month)",
+        "example": {
+          "chinese": "我的生日是十二月二十四日。",
+          "pinyin": "Wǒ de shēng rì shì shí èr yuè èr shí sì rì.",
+          "english": "My birthday is December 24th."
+        }
+      }
+    ]
+  },
+  "二十六日": {
+    "pinyin": "èr shí liù rì",
+    "definition": [
+      {
+        "meaning": "the 26th (day of the month)",
+        "example": {
+          "chinese": "我的生日是十二月二十六日。",
+          "pinyin": "Wǒ de shēng rì shì shí èr yuè èr shí liù rì.",
+          "english": "My birthday is December 26th."
+        }
+      }
+    ]
+  },
+  "医院": {
+    "pinyin": "yī yuàn",
+    "definition": [
+      {
+        "meaning": "hospital",
+        "example": {
+          "chinese": "他在医院工作。",
+          "pinyin": "Tā zài yī yuàn gōng zuò.",
+          "english": "He works at the hospital."
+        }
+      }
+    ]
+  },
+  "切到": {
+    "pinyin": "qiē dào",
+    "definition": [
+      {
+        "meaning": "to accidentally cut (a body part)",
+        "example": {
+          "chinese": "我不小心切到手了。",
+          "pinyin": "Wǒ bù xiǎo xīn qiē dào shǒu le.",
+          "english": "I accidentally cut my hand."
+        }
+      },
+      {
+        "meaning": "to switch to (a channel, view, or mode)",
+        "example": {
+          "chinese": "请把画面切到下一个场景。",
+          "pinyin": "Qǐng bǎ huà miàn qiē dào xià yī gè chǎng jǐng.",
+          "english": "Please switch the screen to the next scene."
+        }
+      }
+    ]
+  },
+  "二十八": {
+    "pinyin": "èr shí bā",
+    "definition": [
+      {
+        "meaning": "twenty-eight",
+        "example": {
+          "chinese": "我今年二十八岁。",
+          "pinyin": "Wǒ jīn nián èr shí bā suì.",
+          "english": "I am twenty-eight years old this year."
+        }
+      }
+    ]
+  },
+  "花瓶": {
+    "pinyin": "huā píng",
+    "definition": [
+      {
+        "meaning": "vase",
+        "example": {
+          "chinese": "桌子上放着一个漂亮的花瓶。",
+          "pinyin": "Zhuōzi shàng fàngzhe yīgè piàoliang de huāpíng.",
+          "english": "There is a beautiful vase on the table."
+        }
+      },
+      {
+        "meaning": "a pretty face; someone who is beautiful but lacks substance",
+        "example": {
+          "chinese": "她被批评只是个花瓶，没有真才实学。",
+          "pinyin": "Tā bèi pīpíng zhǐshì gè huāpíng, méiyǒu zhēncáishixué.",
+          "english": "She was criticized for being just a pretty face with no real talent."
+        }
+      }
+    ]
+  },
+  "纪念日": {
+    "pinyin": "jì niàn rì",
+    "definition": [
+      {
+        "meaning": "anniversary; commemoration day",
+        "example": {
+          "chinese": "今天是我们的结婚纪念日。",
+          "pinyin": "Jīntiān shì wǒmen de jiéhūn jìniànrì.",
+          "english": "Today is our wedding anniversary."
+        }
+      }
+    ]
+  },
+  "抱抱": {
+    "pinyin": "bào bao",
+    "definition": [
+      {
+        "meaning": "to hug; a hug",
+        "example": {
+          "chinese": "过来，让我抱抱你。",
+          "pinyin": "Guòlái, ràng wǒ bào bao nǐ.",
+          "english": "Come here, let me give you a hug."
+        }
+      }
+    ]
+  },
+  "爬过来": {
+    "pinyin": "pá guò lái",
+    "definition": [
+      {
+        "meaning": "to crawl over",
+        "example": {
+          "chinese": "小猫慢慢地爬过来了。",
+          "pinyin": "Xiǎo māo màn màn de pá guò lái le.",
+          "english": "The kitten slowly crawled over."
+        }
+      }
+    ]
+  },
+  "毛衣": {
+    "pinyin": "máoyī",
+    "definition": [
+      {
+        "meaning": "sweater; pullover",
+        "example": {
+          "chinese": "这件毛衣很暖和。",
+          "pinyin": "Zhè jiàn máoyī hěn nuǎnhuo.",
+          "english": "This sweater is very warm."
+        }
+      }
+    ]
+  },
+  "口袋里": {
+    "pinyin": "kǒu dài lǐ",
+    "definition": [
+      {
+        "meaning": "in the pocket; inside the pocket",
+        "example": {
+          "chinese": "他的手机在口袋里。",
+          "pinyin": "Tā de shǒu jī zài kǒu dài lǐ.",
+          "english": "His phone is in his pocket."
+        }
+      }
+    ]
+  },
+  "衬衫上": {
+    "pinyin": "chèn shān shàng",
+    "definition": [
+      {
+        "meaning": "on the shirt",
+        "example": {
+          "chinese": "他的衬衫上有咖啡渍。",
+          "pinyin": "Tā de chèn shān shàng yǒu kā fēi zì.",
+          "english": "There is a coffee stain on his shirt."
+        }
+      }
+    ]
+  },
+  "污渍": {
+    "pinyin": "wū zì",
+    "definition": [
+      {
+        "meaning": "stain; smudge; mark of dirt",
+        "example": {
+          "chinese": "这件白衬衫上有个污渍。",
+          "pinyin": "Zhè jiàn bái chènshān shàng yǒu gè wūzì.",
+          "english": "There is a stain on this white shirt."
+        }
+      }
+    ]
+  },
+  "王小明": {
+    "pinyin": "Wáng Xiǎomíng",
+    "definition": [
+      {
+        "meaning": "a common Chinese male name",
+        "example": {
+          "chinese": "王小明是我们的同学。",
+          "pinyin": "Wáng Xiǎomíng shì wǒmen de tóngxué.",
+          "english": "Wang Xiaoming is our classmate."
+        }
+      }
+    ]
+  },
+  "公园": {
+    "pinyin": "gōng yuán",
+    "definition": [
+      {
+        "meaning": "park",
+        "example": {
+          "chinese": "我们在公园里散步。",
+          "pinyin": "Wǒ men zài gōng yuán lǐ sàn bù.",
+          "english": "We are taking a walk in the park."
+        }
+      }
+    ]
+  },
+  "赶过去": {
+    "pinyin": "gǎn guò qù",
+    "definition": [
+      {
+        "meaning": "to rush over; to hurry over",
+        "example": {
+          "chinese": "他必须马上赶过去。",
+          "pinyin": "Tā bìxū mǎshàng gǎn guòqù.",
+          "english": "He must rush over immediately."
+        }
+      }
+    ]
+  },
+  "救星": {
+    "pinyin": "jiù xīng",
+    "definition": [
+      {
+        "meaning": "savior; lifesaver",
+        "example": {
+          "chinese": "他在我最困难的时候成了我的救星。",
+          "pinyin": "Tā zài wǒ zuì kùnnán de shíhòu chéngle wǒ de jiùxīng.",
+          "english": "He became my savior when I was in my most difficult time."
+        }
+      },
+      {
+        "meaning": "a source of help or relief in a crisis",
+        "example": {
+          "chinese": "这场及时的雨对干旱的庄稼来说是救星。",
+          "pinyin": "Zhè chǎng jíshí de yǔ duì gānhàn de zhuāngjia lái shuō shì jiùxīng.",
+          "english": "This timely rain is a lifesaver for the drought-stricken crops."
+        }
+      }
+    ]
+  },
+  "处理完": {
+    "pinyin": "chǔ lǐ wán",
+    "definition": [
+      {
+        "meaning": "to finish dealing with; to finish handling",
+        "example": {
+          "chinese": "我处理完这些文件后就去吃饭。",
+          "pinyin": "Wǒ chǔ lǐ wán zhè xiē wén jiàn hòu jiù qù chī fàn.",
+          "english": "I will go eat after I finish processing these documents."
+        }
+      }
+    ]
+  },
+  "补偿": {
+    "pinyin": "bǔ cháng",
+    "definition": [
+      {
+        "meaning": "to compensate; to make up for",
+        "example": {
+          "chinese": "这次损失需要得到补偿。",
+          "pinyin": "Zhè cì sǔnshī xūyào dédào bǔcháng.",
+          "english": "This loss needs to be compensated."
+        }
+      },
+      {
+        "meaning": "compensation",
+        "example": {
+          "chinese": "他获得了合理的经济补偿。",
+          "pinyin": "Tā huòdé le hélǐ de jīngjì bǔcháng.",
+          "english": "He received reasonable financial compensation."
+        }
+      }
+    ]
+  },
+  "算了": {
+    "pinyin": "suàn le",
+    "definition": [
+      {
+        "meaning": "forget it; never mind",
+        "example": {
+          "chinese": "算了，别再提这件事了。",
+          "pinyin": "Suàn le, bié zài tí zhè jiàn shì le.",
+          "english": "Forget it, don't mention this matter again."
+        }
+      },
+      {
+        "meaning": "let it be; let it go",
+        "example": {
+          "chinese": "既然你不想去，那就算了吧。",
+          "pinyin": "Jì rán nǐ bù xiǎng qù, nà jiù suàn le ba.",
+          "english": "Since you don't want to go, let it be."
+        }
+      }
+    ]
+  },
+  "外公": {
+    "pinyin": "wài gōng",
+    "definition": [
+      {
+        "meaning": "maternal grandfather",
+        "example": {
+          "chinese": "我的外公今年七十岁了。",
+          "pinyin": "Wǒ de wàigōng jīnnián qīshí suì le.",
+          "english": "My maternal grandfather is seventy years old this year."
+        }
+      }
+    ]
+  },
+  "二零二三年": {
+    "pinyin": "èr líng èr sān nián",
+    "definition": [
+      {
+        "meaning": "the year 2023",
+        "example": {
+          "chinese": "二零二三年是一个特别的一年。",
+          "pinyin": "Èr líng èr sān nián shì yī gè tè bié de yī nián.",
+          "english": "2023 is a special year."
+        }
+      }
+    ]
+  },
+  "十二月": {
+    "pinyin": "shí èr yuè",
+    "definition": [
+      {
+        "meaning": "December",
+        "example": {
+          "chinese": "十二月的天气非常冷。",
+          "pinyin": "Shí èr yuè de tiān qì fēi cháng lěng.",
+          "english": "The weather in December is very cold."
+        }
+      }
+    ]
+  },
+  "十日": {
+    "pinyin": "shí rì",
+    "definition": [
+      {
+        "meaning": "the 10th day of the month",
+        "example": {
+          "chinese": "他会在十日左右回来。",
+          "pinyin": "Tā huì zài shí rì zuǒ yòu huí lái.",
+          "english": "He will return around the 10th."
+        }
+      }
+    ]
+  },
+  "几点": {
+    "pinyin": "jǐ diǎn",
+    "definition": [
+      {
+        "meaning": "what time",
+        "example": {
+          "chinese": "现在几点？",
+          "pinyin": "Xiàn zài jǐ diǎn?",
+          "english": "What time is it now?"
+        }
+      },
+      {
+        "meaning": "a few points; some aspects",
+        "example": {
+          "chinese": "我有几点建议。",
+          "pinyin": "Wǒ yǒu jǐ diǎn jiàn yì.",
+          "english": "I have a few suggestions."
+        }
+      }
+    ]
+  },
+  "十五分": {
+    "pinyin": "shí wǔ fēn",
+    "definition": [
+      {
+        "meaning": "fifteen points",
+        "example": {
+          "chinese": "这次测试他只得了十五分。",
+          "pinyin": "Zhè cì cèshì tā zhǐ dé le shí wǔ fēn.",
+          "english": "He only got fifteen points on this test."
+        }
+      },
+      {
+        "meaning": "fifteen minutes (used in telling time)",
+        "example": {
+          "chinese": "现在是两点十五分。",
+          "pinyin": "Xiànzài shì liǎng diǎn shí wǔ fēn.",
+          "english": "It is 2:15 now."
+        }
+      }
+    ]
+  },
+  "上线": {
+    "pinyin": "shàng xiàn",
+    "definition": [
+      {
+        "meaning": "to go online; to be launched (for a website, game, or software)",
+        "example": {
+          "chinese": "这款新游戏预计下个月上线。",
+          "pinyin": "Zhè kuǎn xīn yóuxì yùjì xià gè yuè shàngxiàn.",
+          "english": "This new game is expected to go online next month."
+        }
+      },
+      {
+        "meaning": "informant; agent; contact (in intelligence or police contexts)",
+        "example": {
+          "chinese": "警察正在调查他的上线。",
+          "pinyin": "Jǐngchá zhèngzài diàochá tā de shàngxiàn.",
+          "english": "The police are investigating his informant."
+        }
+      }
+    ]
+  },
+  "后备箱": {
+    "pinyin": "hòubèixiāng",
+    "definition": [
+      {
+        "meaning": "trunk (of a car)",
+        "example": {
+          "chinese": "请把行李放在后备箱里。",
+          "pinyin": "Qǐng bǎ xínglǐ fàng zài hòubèixiāng lǐ.",
+          "english": "Please put the luggage in the trunk."
+        }
+      }
+    ]
+  },
+  "水槽里": {
+    "pinyin": "shuǐ cáo lǐ",
+    "definition": [
+      {
+        "meaning": "in the sink; inside the trough",
+        "example": {
+          "chinese": "水槽里有很多脏碗筷。",
+          "pinyin": "Shuǐ cáo lǐ yǒu hěn duō zāng wǎn kuài.",
+          "english": "There are many dirty bowls and chopsticks in the sink."
+        }
+      }
+    ]
+  },
+  "筷子": {
+    "pinyin": "kuàizi",
+    "definition": [
+      {
+        "meaning": "chopsticks",
+        "example": {
+          "chinese": "我喜欢用筷子吃饭。",
+          "pinyin": "Wǒ xǐhuān yòng kuàizi chīfàn.",
+          "english": "I like using chopsticks to eat."
+        }
+      }
+    ]
+  },
+  "小美": {
+    "pinyin": "Xiǎo měi",
+    "definition": [
+      {
+        "meaning": "a common female nickname",
+        "example": {
+          "chinese": "小美是我的好朋友。",
+          "pinyin": "Xiǎo měi shì wǒ de hǎo péng yǒu.",
+          "english": "Xiaomei is my good friend."
+        }
+      }
+    ]
+  },
+  "啦": {
+    "pinyin": "la",
+    "definition": [
+      {
+        "meaning": "particle used at the end of a sentence to indicate a suggestion, command, or to add an emotional tone (often a contraction of 'le' and 'a')",
+        "example": {
+          "chinese": "快点来啦！",
+          "pinyin": "Kuài diǎn lái la!",
+          "english": "Come quickly!"
+        }
+      },
+      {
+        "meaning": "particle used to express excitement or exclamation",
+        "example": {
+          "chinese": "太好啦！",
+          "pinyin": "Tài hǎo la!",
+          "english": "That's great!"
+        }
+      }
+    ]
+  },
+  "小华": {
+    "pinyin": "xiǎo huá",
+    "definition": [
+      {
+        "meaning": "Xiao Hua (a common Chinese given name)",
+        "example": {
+          "chinese": "小华是我的好朋友。",
+          "pinyin": "Xiǎo huá shì wǒ de hǎo péngyǒu.",
+          "english": "Xiao Hua is my good friend."
+        }
+      }
+    ]
+  },
+  "二零二三": {
+    "pinyin": "èr líng èr sān",
+    "definition": [
+      {
+        "meaning": "2023",
+        "example": {
+          "chinese": "二零二三年的生活很精彩。",
+          "pinyin": "Èr líng èr sān nián de shēng huó hěn jīng cǎi.",
+          "english": "Life in 2023 was wonderful."
+        }
+      }
+    ]
+  },
+  "星期日": {
+    "pinyin": "xīng qī rì",
+    "definition": [
+      {
+        "meaning": "Sunday",
+        "example": {
+          "chinese": "我星期日要去图书馆。",
+          "pinyin": "Wǒ xīng qī rì yào qù tú shū guǎn.",
+          "english": "I am going to the library on Sunday."
+        }
+      }
+    ]
+  },
+  "视频": {
+    "pinyin": "shìpín",
+    "definition": [
+      {
+        "meaning": "video; video clip",
+        "example": {
+          "chinese": "这个视频很有意思。",
+          "pinyin": "Zhège shìpín hěn yǒu yìsi.",
+          "english": "This video is very interesting."
+        }
+      }
+    ]
+  },
+  "充电器": {
+    "pinyin": "chōng diàn qì",
+    "definition": [
+      {
+        "meaning": "charger",
+        "example": {
+          "chinese": "我的手机充电器丢了。",
+          "pinyin": "Wǒ de shǒujī chōng diàn qì diū le.",
+          "english": "My phone charger is lost."
+        }
+      }
+    ]
+  },
+  "朋友圈": {
+    "pinyin": "péng yǒu quān",
+    "definition": [
+      {
+        "meaning": "circle of friends",
+        "example": {
+          "chinese": "他的朋友圈非常广。",
+          "pinyin": "Tā de péng yǒu quān fēi cháng guǎng.",
+          "english": "His circle of friends is very wide."
+        }
+      },
+      {
+        "meaning": "Moments (the social feed feature on WeChat)",
+        "example": {
+          "chinese": "我刚才在朋友圈看到你的动态了。",
+          "pinyin": "Wǒ gāng cái zài péng yǒu quān kàn dào nǐ de dòng tài le.",
+          "english": "I just saw your update on Moments."
+        }
+      }
+    ]
+  },
+  "巧克力": {
+    "pinyin": "qiǎokèlì",
+    "definition": [
+      {
+        "meaning": "chocolate",
+        "example": {
+          "chinese": "我最喜欢的零食是巧克力。",
+          "pinyin": "Wǒ zuì xǐhuān de língshí shì qiǎokèlì.",
+          "english": "My favorite snack is chocolate."
+        }
+      }
+    ]
+  },
+  "冰箱里": {
+    "pinyin": "bīng xiāng lǐ",
+    "definition": [
+      {
+        "meaning": "in the refrigerator; inside the fridge",
+        "example": {
+          "chinese": "冰箱里有牛奶。",
+          "pinyin": "Bīngxiāng lǐ yǒu niúnǎi.",
+          "english": "There is milk in the refrigerator."
+        }
+      }
+    ]
+  },
+  "炒饭": {
+    "pinyin": "chǎo fàn",
+    "definition": [
+      {
+        "meaning": "fried rice",
+        "example": {
+          "chinese": "我最喜欢吃蛋炒饭。",
+          "pinyin": "Wǒ zuì xǐ huān chī dàn chǎo fàn.",
+          "english": "I like egg fried rice the most."
+        }
+      }
+    ]
+  },
+  "酱油": {
+    "pinyin": "jiàngyóu",
+    "definition": [
+      {
+        "meaning": "soy sauce",
+        "example": {
+          "chinese": "这道菜需要加一点酱油。",
+          "pinyin": "Zhè dào cài xūyào jiā yīdiǎn jiàngyóu.",
+          "english": "This dish needs a little soy sauce."
+        }
+      }
+    ]
+  },
+  "导航": {
+    "pinyin": "dǎo háng",
+    "definition": [
+      {
+        "meaning": "to navigate; to guide (a ship, aircraft, etc.)",
+        "example": {
+          "chinese": "卫星可以为飞机提供导航。",
+          "pinyin": "Wèixīng kěyǐ wèi fēijī tígōng dǎoháng.",
+          "english": "Satellites can provide navigation for aircraft."
+        }
+      },
+      {
+        "meaning": "navigation",
+        "example": {
+          "chinese": "请打开手机上的导航系统。",
+          "pinyin": "Qǐng dǎkāi shǒujī shàng de dǎoháng xìtǒng.",
+          "english": "Please turn on the navigation system on your phone."
+        }
+      }
+    ]
+  },
+  "拍照": {
+    "pinyin": "pāi zhào",
+    "definition": [
+      {
+        "meaning": "to take a photo; to take a picture",
+        "example": {
+          "chinese": "这里风景很美，很适合拍照。",
+          "pinyin": "Zhèlǐ fēngjǐng hěn měi, hěn shìhé pāizhào.",
+          "english": "The scenery here is beautiful, it is very suitable for taking photos."
+        }
+      }
+    ]
+  },
+  "师傅": {
+    "pinyin": "shī fu",
+    "definition": [
+      {
+        "meaning": "master; skilled worker; craftsman",
+        "example": {
+          "chinese": "这位师傅的手艺非常精湛。",
+          "pinyin": "Zhè wèi shī fu de shǒu yì fēi cháng jīng zhàn.",
+          "english": "This craftsman's skill is extremely exquisite."
+        }
+      },
+      {
+        "meaning": "a respectful term for a driver, technician, or service worker",
+        "example": {
+          "chinese": "师傅，请问去火车站怎么走？",
+          "pinyin": "Shī fu, qǐng wèn qù huǒ chē zhàn zěn me zǒu?",
+          "english": "Sir, may I ask how to get to the railway station?"
+        }
+      }
+    ]
+  },
+  "机场": {
+    "pinyin": "jī chǎng",
+    "definition": [
+      {
+        "meaning": "airport",
+        "example": {
+          "chinese": "我们在机场等他。",
+          "pinyin": "Wǒ men zài jī chǎng děng tā.",
+          "english": "We are waiting for him at the airport."
+        }
+      }
+    ]
+  },
+  "堵车": {
+    "pinyin": "dǔ chē",
+    "definition": [
+      {
+        "meaning": "traffic jam; to be stuck in traffic",
+        "example": {
+          "chinese": "因为堵车，我上班迟到了。",
+          "pinyin": "Yīn wèi dǔ chē, wǒ shàng bān chí dào le.",
+          "english": "I was late for work because of a traffic jam."
+        }
+      }
+    ]
+  },
+  "车祸": {
+    "pinyin": "chē huò",
+    "definition": [
+      {
+        "meaning": "car accident; traffic accident",
+        "example": {
+          "chinese": "那场车祸非常严重。",
+          "pinyin": "Nà chǎng chē huò fēi cháng yán zhòng.",
+          "english": "That car accident is very serious."
+        }
+      }
+    ]
+  },
+  "自行车": {
+    "pinyin": "zì xíng chē",
+    "definition": [
+      {
+        "meaning": "bicycle; bike",
+        "example": {
+          "chinese": "我每天骑自行车去上班。",
+          "pinyin": "Wǒ měi tiān qí zì xíng chē qù shàng bān.",
+          "english": "I ride a bicycle to work every day."
+        }
+      }
+    ]
+  },
+  "状况": {
+    "pinyin": "zhuàng kuàng",
+    "definition": [
+      {
+        "meaning": "condition; situation; state of affairs",
+        "example": {
+          "chinese": "目前的经济状况非常稳定。",
+          "pinyin": "Mùqián de jīngjì zhuàngkuàng fēicháng wěndìng.",
+          "english": "The current economic situation is very stable."
+        }
+      }
+    ]
+  },
+  "沙发上": {
+    "pinyin": "shāfā shàng",
+    "definition": [
+      {
+        "meaning": "on the sofa",
+        "example": {
+          "chinese": "书在沙发上。",
+          "pinyin": "Shū zài shāfā shàng.",
+          "english": "The book is on the sofa."
+        }
+      }
+    ]
+  },
+  "电视": {
+    "pinyin": "diànshì",
+    "definition": [
+      {
+        "meaning": "television; TV",
+        "example": {
+          "chinese": "我喜欢在晚上看电视。",
+          "pinyin": "Wǒ xǐhuān zài wǎnshàng kàn diànshì.",
+          "english": "I like to watch TV in the evening."
+        }
+      }
+    ]
+  },
+  "看够": {
+    "pinyin": "kàn gòu",
+    "definition": [
+      {
+        "meaning": "to have seen enough of; to be tired of looking at",
+        "example": {
+          "chinese": "我已经看够了这些无聊的广告。",
+          "pinyin": "Wǒ yǐ jīng kàn gòu le zhè xiē wú liáo de guǎng gào.",
+          "english": "I have seen enough of these boring advertisements."
+        }
+      }
+    ]
+  },
+  "休息够": {
+    "pinyin": "xiū xi gòu",
+    "definition": [
+      {
+        "meaning": "to have rested enough",
+        "example": {
+          "chinese": "你休息够了吗？",
+          "pinyin": "Nǐ xiū xi gòu le ma?",
+          "english": "Have you rested enough?"
+        }
+      }
+    ]
+  },
+  "偷懒": {
+    "pinyin": "tōulǎn",
+    "definition": [
+      {
+        "meaning": "to be lazy; to slack off",
+        "example": {
+          "chinese": "别偷懒，快点把这些工作做完。",
+          "pinyin": "Bié tōulǎn, kuài diǎn bǎ zhèxiē gōngzuò zuò wán.",
+          "english": "Don't slack off, finish this work quickly."
+        }
+      }
+    ]
+  },
+  "懒虫": {
+    "pinyin": "lǎn chóng",
+    "definition": [
+      {
+        "meaning": "lazybones; a lazy person",
+        "example": {
+          "chinese": "他是个懒虫，从来不爱运动。",
+          "pinyin": "Tā shì gè lǎn chóng, cóng lái bù ài yùn dòng.",
+          "english": "He is a lazybones; he never likes to exercise."
+        }
+      }
+    ]
+  },
+  "别说": {
+    "pinyin": "bié shuō",
+    "definition": [
+      {
+        "meaning": "let alone; not to mention",
+        "example": {
+          "chinese": "别说买车了，他现在连自行车都买不起。",
+          "pinyin": "Bié shuō mǎi chē le, tā xiànzài lián zìxíngchē dōu mǎi bù qǐ.",
+          "english": "Let alone buying a car, he can't even afford a bicycle now."
+        }
+      },
+      {
+        "meaning": "don't say; stop talking",
+        "example": {
+          "chinese": "别说了，这件事我已经知道了。",
+          "pinyin": "Bié shuō le, zhè jiàn shì wǒ yǐjīng zhīdào le.",
+          "english": "Stop talking, I already know about this matter."
+        }
+      }
+    ]
+  },
+  "耳机": {
+    "pinyin": "ěr jī",
+    "definition": [
+      {
+        "meaning": "headphones; earphones",
+        "example": {
+          "chinese": "我正在用耳机听音乐。",
+          "pinyin": "Wǒ zhèng zài yòng ěr jī tīng yīn yuè.",
+          "english": "I am listening to music with headphones."
+        }
+      }
+    ]
+  },
+  "磨蹭": {
+    "pinyin": "mó ceng",
+    "definition": [
+      {
+        "meaning": "to dawdle; to waste time",
+        "example": {
+          "chinese": "快点，别磨蹭了。",
+          "pinyin": "Kuài diǎn, bié móceng le.",
+          "english": "Hurry up, stop dawdling."
+        }
+      },
+      {
+        "meaning": "to touch; to fidget",
+        "example": {
+          "chinese": "别在那里乱磨蹭。",
+          "pinyin": "Bié zài nàlǐ luàn móceng.",
+          "english": "Don't go around fidgeting there."
+        }
+      }
+    ]
+  },
+  "画笔": {
+    "pinyin": "huà bǐ",
+    "definition": [
+      {
+        "meaning": "paintbrush; drawing tool",
+        "example": {
+          "chinese": "他用画笔画了一幅美丽的画。",
+          "pinyin": "Tā yòng huàbǐ huàle yī fú měilì de huà.",
+          "english": "He used a paintbrush to paint a beautiful picture."
+        }
+      }
+    ]
+  },
+  "乱画": {
+    "pinyin": "luàn huà",
+    "definition": [
+      {
+        "meaning": "to doodle; to scribble aimlessly",
+        "example": {
+          "chinese": "他在笔记本上乱画。",
+          "pinyin": "Tā zài bǐ jì běn shàng luàn huà.",
+          "english": "He is doodling in his notebook."
+        }
+      },
+      {
+        "meaning": "to draw indiscriminately; to scribble on something (often unauthorized)",
+        "example": {
+          "chinese": "别在墙上乱画！",
+          "pinyin": "Bié zài qiáng shàng luàn huà!",
+          "english": "Don't scribble on the wall!"
+        }
+      }
+    ]
+  },
+  "艺术家": {
+    "pinyin": "yì shù jiā",
+    "definition": [
+      {
+        "meaning": "artist",
+        "example": {
+          "chinese": "他是一位著名的艺术家。",
+          "pinyin": "Tā shì yī wèi zhù míng de yì shù jiā.",
+          "english": "He is a famous artist."
+        }
+      }
+    ]
+  },
+  "拉面": {
+    "pinyin": "lā miàn",
+    "definition": [
+      {
+        "meaning": "pulled noodles; hand-drawn noodles",
+        "example": {
+          "chinese": "这家店的拉面非常好吃。",
+          "pinyin": "Zhè jiā diàn de lāmiàn fēicháng hǎochī.",
+          "english": "The pulled noodles at this shop are delicious."
+        }
+      }
+    ]
+  },
+  "弄洒": {
+    "pinyin": "nòng sǎ",
+    "definition": [
+      {
+        "meaning": "to spill (liquid); to splash or scatter",
+        "example": {
+          "chinese": "他不小心把咖啡弄洒了。",
+          "pinyin": "Tā bù xiǎoxīn bǎ kāfēi nòng sǎ le.",
+          "english": "He accidentally spilled the coffee."
+        }
+      }
+    ]
+  },
+  "约会": {
+    "pinyin": "yuē huì",
+    "definition": [
+      {
+        "meaning": "to have a date; to go on a date",
+        "example": {
+          "chinese": "他们正在公园里约会。",
+          "pinyin": "Tā men zhèng zài gōng yuán lǐ yuē huì.",
+          "english": "They are having a date in the park."
+        }
+      },
+      {
+        "meaning": "date; appointment",
+        "example": {
+          "chinese": "我有一个浪漫的约会。",
+          "pinyin": "Wǒ yǒu yī gè làng màn de yuē huì.",
+          "english": "I have a romantic date."
+        }
+      }
+    ]
+  },
+  "割到": {
+    "pinyin": "gē dào",
+    "definition": [
+      {
+        "meaning": "to cut (something)",
+        "example": {
+          "chinese": "他用镰刀割到了麦子。",
+          "pinyin": "Tā yòng lián dāo gē dào le mài zi.",
+          "english": "He cut the wheat with a sickle."
+        }
+      },
+      {
+        "meaning": "to cut (oneself)",
+        "example": {
+          "chinese": "我不小心割到了手。",
+          "pinyin": "Wǒ bù xiǎo xīn gē dào le shǒu.",
+          "english": "I accidentally cut my hand."
+        }
+      }
+    ]
+  },
+  "言情": {
+    "pinyin": "yán qíng",
+    "definition": [
+      {
+        "meaning": "romance (genre of literature, film, or television)",
+        "example": {
+          "chinese": "她很喜欢看言情小说。",
+          "pinyin": "Tā hěn xǐ huān kàn yán qíng xiǎo shuō.",
+          "english": "She likes reading romance novels very much."
+        }
+      }
+    ]
+  },
+  "小说": {
+    "pinyin": "xiǎo shuō",
+    "definition": [
+      {
+        "meaning": "novel; fiction",
+        "example": {
+          "chinese": "我喜欢读长篇小说。",
+          "pinyin": "Wǒ xǐ huān dú cháng piān xiǎo shuō.",
+          "english": "I like reading long novels."
+        }
+      }
+    ]
+  },
+  "书店": {
+    "pinyin": "shūdiàn",
+    "definition": [
+      {
+        "meaning": "bookstore",
+        "example": {
+          "chinese": "这家书店有很多好书。",
+          "pinyin": "Zhè jiā shūdiàn yǒu hěn duō hǎo shū.",
+          "english": "This bookstore has many good books."
+        }
+      }
+    ]
+  },
+  "深情": {
+    "pinyin": "shēn qíng",
+    "definition": [
+      {
+        "meaning": "deeply affectionate; passionate",
+        "example": {
+          "chinese": "他用深情的目光注视着她。",
+          "pinyin": "Tā yòng shēn qíng de mù guāng zhù shì zhe tā.",
+          "english": "He gazed at her with an affectionate look."
+        }
+      },
+      {
+        "meaning": "deep affection; profound sentiment",
+        "example": {
+          "chinese": "这首诗表达了作者对家乡的深情。",
+          "pinyin": "Zhè shǒu shī biǎo dá le zuò zhě duì jiā xiāng de shēn qíng.",
+          "english": "This poem expresses the author's deep affection for his hometown."
+        }
+      }
+    ]
+  },
+  "湖边": {
+    "pinyin": "hú biān",
+    "definition": [
+      {
+        "meaning": "lakeside; by the lake",
+        "example": {
+          "chinese": "我们在湖边散步。",
+          "pinyin": "Wǒmen zài húbiān sànbù.",
+          "english": "We are walking by the lake."
+        }
+      }
+    ]
+  },
+  "咖啡馆": {
+    "pinyin": "kāfēi guǎn",
+    "definition": [
+      {
+        "meaning": "café; coffee shop",
+        "example": {
+          "chinese": "我们在那家咖啡馆见面吧。",
+          "pinyin": "Wǒmen zài nà jiā kāfēi guǎn jiànmiàn ba.",
+          "english": "Let's meet at that café."
+        }
+      }
+    ]
+  },
+  "喷泉": {
+    "pinyin": "pēn quán",
+    "definition": [
+      {
+        "meaning": "fountain",
+        "example": {
+          "chinese": "公园里的喷泉非常漂亮。",
+          "pinyin": "Gōngyuán lǐ de pēnquán fēicháng piàoliang.",
+          "english": "The fountain in the park is very beautiful."
+        }
+      }
+    ]
+  },
+  "沙发下面": {
+    "pinyin": "shāfā xiàmiàn",
+    "definition": [
+      {
+        "meaning": "under the sofa",
+        "example": {
+          "chinese": "我的猫在沙发下面。",
+          "pinyin": "Wǒ de māo zài shāfā xiàmiàn.",
+          "english": "My cat is under the sofa."
+        }
+      }
+    ]
+  },
+  "尿布": {
+    "pinyin": "niàobù",
+    "definition": [
+      {
+        "meaning": "diaper",
+        "example": {
+          "chinese": "妈妈正在给宝宝换尿布。",
+          "pinyin": "Māma zhèngzài gěi bǎobao huàn niàobù.",
+          "english": "Mom is changing the baby's diaper."
+        }
+      }
+    ]
   }
 }

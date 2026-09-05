@@ -10,6 +10,26 @@
 # =============================================================================
 [defaults]
 
+# -- Omnivoice (offline CLI voice cloning) --
+# Override these if your paths differ.
+#
+# There are TWO omnivoice implementations:
+#   C++ omnivoice-cli  — uses GGUF files (omnivoice.cpp/build/omnivoice-cli)
+#   Python omnivoice-* — uses HF repos / local dirs with audio_tokenizer/
+#
+# Single-inference uses `binary` + `model`.
+# Batch inference  uses `batch_binary` + `batch_model` (or single-inference
+# defaults when not set).
+omnivoice.binary = "/mnt/mac/git/omnivoice.cpp/build/omnivoice-cli"
+omnivoice.model = "/mnt/mac/models/gguf/omnivoice-q8_0.gguf"
+omnivoice.device = "cpu"
+omnivoice.num_step = 32
+omnivoice.threads = 8
+omnivoice.seed = 123
+omnivoice.timeout = 1200
+omnivoice.batch_binary = "/mnt/mac/git/omnivoice/.venv/bin/omnivoice-infer-batch"
+omnivoice.batch_model = "k2-fsa/OmniVoice"
+
 # -- Paths --
 paths.books_dir = "books"
 paths.audiobook_dir = "/home/zspdude/temp/audio"

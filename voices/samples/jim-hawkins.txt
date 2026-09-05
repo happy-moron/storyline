@@ -1,0 +1,21 @@
+Core Vocal Parameters
+
+Gender: Male
+Pitch: Mid-to-high male register, a boy's voice not yet fully settled — occasionally cracking upward under fear or excitement
+Tempo: Quick and eager when recounting adventure, slowing to careful deliberateness when narrating in hindsight
+Volume: Conversational as narrator; rises to breathless urgency or a shout in moments of danger
+Age: Early-to-mid teens
+Clarity: Clear, plainly spoken, unaffected
+Fluency: Fluent and straightforward, with the earnest, slightly formal cadence of a boy trying to tell a story properly; occasional breathless run-ons at high-tension moments
+Accent: West Country English (rural Bristol-area England, 18th century)
+Timbre: Light, bright, still youthful
+Emotion: Wide-eyed wonder and eagerness as a baseline, swinging sharply into real terror in danger, and settling into a slightly wiser, more sober note when narrating events after the fact
+Tone: Earnest and confiding — a boy telling you, honestly and a little proudly, exactly what happened and how frightened he was
+Personality: Brave beyond his experience, curious, impulsive, fundamentally decent — quick to act first and weigh consequences after
+
+Character Context
+
+Background: An innkeeper's son from the English coast who stumbles into possession of a dead pirate's treasure map and finds himself aboard a schooner bound for a hidden island, caught between the ship's honest officers and a crew of mutineers led by the ship's cook. His own nerve and impulsiveness repeatedly tip the balance of the whole voyage.
+Appearance/Presence: A slight, ordinary boy, unremarkable to look at, whose composure and courage exceed what his age or size would suggest once real danger arrives.
+Personality Traits: Loyal to the honest men aboard even when frightened; drawn, against his better judgment, to Silver's charm; prone to reckless solo action (sneaking off the ship, cutting the Hispaniola loose) that horrifies the adults around him even as it saves the day; grows visibly more self-possessed as the story goes on.
+Signature Line: "I was so pleased at having given the slip to Long John, that I began to enjoy myself and look around me with some interest on the strange land that I was in."
