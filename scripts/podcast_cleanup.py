@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import argparse
 import csv
+import json
 import os
 import shutil
 import sys
@@ -52,6 +53,29 @@ def _write_csv(path: Path, header: list[str], rows: list[dict]) -> None:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
+
+
+def _load_manifest(path: Path) -> dict:
+    with path.open("r", encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _sync_manifest(manifest: dict, books_dir: Path, author_key: str) -> tuple[dict, int]:
+    removed_count = 0
+    new_books_list: list[dict] = []
+
+    for author in manifest.get("books", []):
+        if author.get("author") != author_key:
+            continue
+        for book in author.get("books", []):
+            slug = book.get("slug", "")
+            if (books_dir / slug).is_dir():
+                new_books_list.append(book)
+            else:
+                removed_count += 1
+        author["books"] = new_books_list
+
+    return manifest, removed_count
 
 
 def _cleanup_artifacts(
@@ -170,17 +194,33 @@ def main() -> None:
     kept_rows = [r for r in all_rows if (r.get("Theme") or "").strip() not in partial_slugs]
     removed_row_count = len(all_rows) - len(kept_rows)
 
+    manifest_path = project_root / "books" / "manifest.json"
+    manifest = _load_manifest(manifest_path) if manifest_path.exists() else None
+    manifest_removed = 0
+
+    if manifest is not None:
+        manifest, manifest_removed = _sync_manifest(manifest, books_dir, "podcasts")
+        if not args.dry_run:
+            with manifest_path.open("w", encoding="utf-8") as f:
+                json.dump(manifest, f, indent=2)
+                f.write("\n")
+
     if not args.dry_run:
         _write_csv(episodes_path, header, kept_rows)
 
     print()
-    print(f"Artifacts removed: {total_removed}")
-    print(f"CSV rows removed:  {removed_row_count}")
-    print(f"Episodes cleaned:  {len(partial_slugs)}")
+    print(f"Artifacts removed:     {total_removed}")
+    print(f"CSV rows removed:      {removed_row_count}")
+    print(f"Manifest entries removed: {manifest_removed}")
+    print(f"Episodes cleaned:      {len(partial_slugs)}")
     if args.dry_run:
         print(f"CSV would be rewritten: {episodes_path} ({len(kept_rows)} rows remaining)")
+        if manifest is not None:
+            print(f"Manifest would be rewritten: {manifest_path} ({manifest_removed} entries removed)")
     else:
         print(f"CSV rewritten: {episodes_path} ({len(kept_rows)} rows remaining)")
+        if manifest is not None:
+            print(f"Manifest rewritten: {manifest_path} ({manifest_removed} entries removed)")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,202 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are discussing a topic that is deeply important but often difficult to talk about: mental health and how to support a friend through a dark time.
+
+en=student
+That sounds heavy, Ellen, but you are right. In real life, language isn't just about ordering coffee; it's about checking in on the people we care about when they seem to be struggling.
+
+en=teacher
+Exactly. To do this, we need to master two specific grammar points. First, the use of 在 to express actions in progress. When you put 在 before a verb, it functions like the "-ing" in English. For example, 我在睡觉 means I am sleeping. You can also add 正 or 正在 to emphasize that the action is happening right at this moment.
+
+en=student
+So, if I want to say "he is eating," I would say 他在吃饭.
+
+en=teacher
+Correct. Second, we are looking at how to negate "have" or completed actions using 没有. While 不 is used for present habits or future intentions, 没有 is used to say you didn't do something or you don't have something. For example, 我没有钱 means I don't have money, and 我没有去 means I didn't go.
+
+en=student
+That makes sense. So, if I want to ask someone if they have eaten yet, I'd use 没有.
+
+en=teacher
+Precisely. Before we hear the dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+First, we have 担心, which is two first tones, meaning to worry. 担心.
+
+en=teacher
+Next, 难过, which is a second tone followed by a fourth tone, meaning to feel sad or upset. 难过.
+
+en=teacher
+Third, 睡觉, which is two fourth tones, meaning to sleep. 睡觉.
+
+en=teacher
+Fourth, 休息, which is two first tones, meaning to rest. 休息.
+
+en=teacher
+Fifth, 事情, which is a fourth tone and a neutral tone, meaning matter, thing, or situation. 事情.
+
+en=teacher
+And finally, 状态, which is two fourth tones, meaning state or condition. 状态.
+
+en=student
+Got it. 担心, 难过, 睡觉, 休息, 事情, and 状态.
+
+en=teacher
+Perfect. In today's dialogue, you are going to hear a conversation between two friends, Xiao Li and Xiao Wang. Xiao Li is visiting Xiao Wang because he has been acting differently and hasn't been answering his phone. It is a sensitive moment where Xiao Li is trying to provide support.
+
+DIALOGUE
+
+zh=1
+你好，我来看看你。你这两天为什么没接我的电话？
+Hello, I came to see you. Why haven't you been answering my calls these past two days?
+
+zh=2
+我一直在睡觉，没有听见。
+I've been sleeping all the time; I didn't hear them.
+
+zh=1
+我真的很担心你。你最近有没有好好休息？
+I am really worried about you. Have you been resting well lately?
+
+zh=2
+我没有休息好，我一直在难过。
+I haven't rested well; I've just been feeling sad.
+
+zh=1
+是因为最近发生的那些事情吗？
+Is it because of those things that have been happening lately?
+
+zh=2
+我不知道，我只是觉得什么都不想做，状态非常糟糕。
+I don't know; I just feel like I don't want to do anything. My state is very terrible.
+
+BREAKDOWN
+
+en=teacher
+Let's go through that dialogue line by line. We'll start with Xiao Li's first question.
+
+zh=1
+你好，我来看看你。你为什么没接我的电话？
+Hello, I came to see you. Why haven't you been answering my calls these past two days?
+
+en=student
+"你为什么没接我的电话?" I noticed the "没" there. Is that the same as "没有"?
+
+en=teacher
+Great observation, Ryan. In casual speech, especially when negating a past action like "didn't answer," we often shorten 没有 to just 没. So, "没接" means "didn't answer."
+
+en=student
+And what about "这两天"? 
+
+en=teacher
+That means "these two days" or "the past couple of days." It's a very common way to refer to a recent period of time.
+
+zh=2
+我一直在睡觉，没有听见。
+I've been sleeping all the time; I didn't hear them.
+
+en=teacher
+Now we see our first grammar point in action. Xiao Wang says "我一直在睡觉." 
+
+en=student
+"一直在" sounds like it's stronger than just "在". 
+
+en=teacher
+It is! While 在 means "am [doing]," adding 一直 adds the meaning of "continuously" or "all along." So, "I have been sleeping all along" or "I've been sleeping the whole time." 
+
+en=student
+And then he says "没有听见." So that's the second grammar point: negating a past action. "I didn't hear."
+
+en=teacher
+Exactly. "听见" means to hear. Adding 没有 makes it "did not hear."
+
+zh=1
+我真的很担心你。你最近有没有好好休息？
+I am really worried about you. Have you been resting well lately?
+
+en=student
+"我真的很担心你." 担心 is our vocab word for "to worry." And then she asks "有没有好好休息?" 
+
+en=teacher
+Yes. Instead of a simple yes or no question, she uses the structure "有没有" which means "have or have not." It is a very common way to ask "Did you...?" or "Have you...?"
+
+zh=2
+我没有休息好，我一直在难过。
+I haven't rested well; I've just been feeling sad.
+
+en=student
+"我没有休息好." This is interesting. He's using "没有" with "休息好." 
+
+en=teacher
+Yes, because "休息好" can be thought of as a completed state of "resting well." By saying "没有休息好," he means he didn't achieve that state of good rest. And then, "我一直在难过."
+
+en=student
+Right, using "在" again to show a continuous emotional state. "I am [in the process of] being sad."
+
+en=teacher
+Exactly. It's not just that he is sad once, but that sadness is his current ongoing state.
+
+zh=1
+是因为最近发生的那些事情吗？
+Is it because of those things that have been happening lately?
+
+en=student
+"事情" is the word for "things" or "matters." So she's asking if it's because of those recent events.
+
+zh=2
+我不知道，我只是觉得什么都不想做，状态非常糟糕。
+I don't know; I just feel like I don't want to do anything. My state is very terrible.
+
+en=teacher
+Finally, Xiao Wang describes his condition using our last vocab word: 状态, meaning state or condition.
+
+en=student
+"状态非常糟糕." "糟糕" means terrible or bad. So his condition is very bad. 
+
+en=teacher
+Correct. And notice "什么都不想做" means "don't want to do anything." This is a common way to express that total lack of motivation that often accompanies depression.
+
+OUTRO
+
+en=student
+That was a heavy episode, but incredibly useful. We learned how to use 在 to describe ongoing actions and emotions, and how to use 没有 to negate past actions or states.
+
+en=teacher
+And we covered some very important vocabulary like 担心, 难过, 睡觉, 休息, 事情, and 状态. 
+
+en=student
+If you're listening to this, remember: learning a language is about more than just words; it's about the ability to connect with people during their most vulnerable moments.
+
+en=teacher
+Well said, Ryan. Thanks for joining us. See you in the next episode of Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，语气温柔且带有同情心"
+pace = "慢速，语调平缓"
+volume = "中等，听起来很亲切"
+clarity = "清晰，充满感情"
+fluency = "流利，语速适中"
+timbre = "圆润，温暖"
+emotion = "关切，温柔，充满同情心"
+usecase = "一个关心朋友的体贴女性朋友"
+dialogue = "你好，我来看看你。你为什么没接我的电话？我真的很担心你。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十多岁"
+pitch = "低音域，声音低沉且无力"
+pace = "慢速，节奏拖沓"
+volume = "较低，听起来没精打采"
+clarity = "略微含糊，显得很疲惫"
+fluency = "断断续续，带有明显的迟疑"
+timbre = "沙哑，听起来很疲惫"
+emotion = "消沉，无力，忧郁"
+usecase = "一个正在经历抑郁状态的年轻人"
+dialogue = "我一直在睡觉，没有听见。我不知道，我只是觉得很累。"

@@ -1,0 +1,240 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are looking at how to express persistence and emphasis. 
+
+en=student
+That sounds important. Are we talking about being stubborn? Or just talking about things that keep happening?
+
+en=teacher
+Both, actually. Today, we are mastering two very common structures. First, the adverb 还, which can mean "still" or "yet." You use it before a verb or an adjective to indicate that a situation is continuing. For example, 我还在吃, which means I am still eating. Or, if you add a negative, you can say 我还没吃, meaning I haven't eaten yet.
+
+en=student
+Okay, so it's like "still" when it's affirmative, and "not yet" when it's negative. But wait, isn't that the same as 也?
+
+en=teacher
+That is a common point of confusion! 也 means "also" or "too." If you say 我也是, you are saying "I am also/too." But if you say 我还在, you are saying "I am still." They serve very different purposes.
+
+en=student
+Got it. So, what is the second one?
+
+en=teacher
+The second one is 就是. While 这 means "this" and 是 means "is," when you put them together before a verb, it acts as an intensifier. It's used for emphasis, often to mean "simply," "just," or "exactly." For example, 我就是不想去, which means "I simply don't want to go." It adds a layer of certainty or even a bit of attitude.
+
+en=student
+So it's like adding "just" to a sentence to show you're being firm about your stance.
+
+en=teacher
+Precisely. In our dialogue today, we're going to see these used in a very relatable setting: being incredibly lazy. 
+
+en=student
+I think I might be too good at this lesson. What is the scenario?
+
+en=teacher
+Our scene takes place on a Sunday afternoon. Two roommates, Xiao Ming and Xiao Wang, are hanging out, or rather, Xiao Ming is trying to get things moving, while Xiao Wang is stuck on the couch. A neighbor, Lao Li, wanders in and adds his two cents.
+
+en=student
+I'm ready. Let's hear it.
+
+en=teacher
+Before we start, let's review our key vocabulary.
+en=teacher
+We have 沙发, (first tone and second tone), meaning sofa or couch... 沙发.
+en=teacher
+We have 看电视, (fourth tone, fourth tone, fourth tone), meaning to watch television... 看电视.
+en=teacher
+We have 休息, (first tone, second tone), meaning to rest... 休息.
+en=teacher
+We have 偷懒, (first tone, third tone), meaning to slack off or be lazy... 偷懒.
+en=teacher
+We have 准备, (third tone, fourth tone), meaning to prepare... 准备.
+
+DIALOGUE
+
+zh=2
+你怎么还在沙发上看电视？
+Why are you still watching television on the couch?
+zh=1
+我还没看够呢。
+I haven't seen enough yet.
+zh=2
+你就是不想起床！
+You simply don't want to get up!
+zh=1
+我觉得我还没休息够。
+I feel like I haven't rested enough yet.
+zh=3
+他就是想偷懒。
+He just wants to slack off.
+zh=2
+我们今天还要去超市呢。
+We still have to go to the supermarket today.
+zh=1
+我还想再睡一会儿。
+I want to sleep for a little while longer.
+zh=3
+他就是个懒虫。
+He is just a slacker.
+zh=2
+别说了，我们还要准备作业呢。
+Stop talking, we still have to prepare for homework.
+zh=1
+可是我就是不想动。
+But I simply don't want to move.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. It starts with Xiao Ming, who is clearly losing his patience.
+
+zh=2
+你怎么还在沙发上看电视？
+Why are you still watching television on the couch?
+
+en=student
+"你怎么..." is a classic way to start a question, like "How come...?" or "Why...?" But the key part here is "还在".
+
+en=teacher
+Exactly. "还在" means "still doing" something. You have the verb "看" (to watch) and "电视" (television). Together, "还在看电视" means "still watching television."
+
+zh=1
+我还没看够呢。
+I haven't seen enough yet.
+
+en=student
+"还没" again! That's the "not yet" version of "还". And "看够" sounds like "watch enough."
+
+en=teacher
+Yes. "看够" means "to watch until satisfied" or "to see enough." Adding "呢" at the end adds a bit of a soft, casual tone to her statement, almost like a whine.
+
+zh=2
+你就是不想起床！
+You simply don't want to get up!
+
+en=student
+There it is! Our second grammar point. "你就是不想..." That "就是" is doing a lot of heavy lifting there.
+
+en=teacher
+It is. Instead of just saying "You don't want to get up," Xiao Ming is saying "You *simply* don't want to get up." He's emphasizing her stubbornness. It makes the sentence much more pointed.
+
+zh=1
+我觉得我还没休息够。
+I feel like I haven't rested enough yet.
+
+en=student
+"我觉得" is "I feel" or "I think." And "休息够" is "to rest enough." So "还没休息够" is "haven't rested enough yet."
+
+en=teacher
+Correct. Notice how "还" is being used with "没" to create that "not yet" meaning.
+
+zh=3
+他就是想偷懒。
+He just wants to slack off.
+
+en=student
+Lao Li enters the chat! "他就是想..." He's using "就是" to agree with Xiao Ming's sentiment.
+
+en=teacher
+Right. And "偷懒" is a great verb here. It literally means "to steal laziness." It's the perfect word for slacking off or being lazy.
+
+zh=2
+我们今天还要去超市呢。
+We still have to go to the supermarket today.
+
+en=student
+"还要" here. Does this mean "still have to" or "also need to"?
+
+en=teacher
+In this context, it's "still have to." It implies that there is a list of things to do, and the supermarket is one of them that is being neglected.
+
+zh=1
+我还想再睡一会儿。
+I want to sleep for a little while longer.
+
+en=student
+"一会儿" is a very common phrase for "a little while." And "还想" means "still want to."
+
+zh=3
+他就是个懒虫。
+He is just a slacker.
+
+en=student
+"懒虫"? That sounds like "lazy bug."
+
+en=teacher
+It is! "懒虫" is a very common, colloquial way to call someone a "slacker" or a "lazybones." It's not necessarily a heavy insult, but it's definitely teasing.
+
+zh=2
+别说了，我们还要准备作业呢。
+Stop talking, we still have to prepare for homework.
+
+en=student
+"别说了" is "stop talking" or "forget it." And we have "准备" which we mentioned earlier—to prepare.
+
+zh=1
+可是我就是不想动。
+But I simply don't want to move.
+
+en=student
+And the grand finale. "我就是不想动." She's being very firm!
+
+en=teacher
+"不想动" means "don't want to move." By adding "就是", she's essentially saying, "I just don't feel like moving, and there's nothing you can do about it." It's the ultimate lazy person's response.
+
+OUTRO
+
+en=student
+Man, I feel for Xiao Wang. I've had many days where "我就是不想动" is my entire personality.
+
+en=teacher
+We all have! But hopefully, you won't use it too often in a Chinese classroom. To recap, today we learned how "还" can mean "still" when it's affirmative or "not yet" when used with "没". 
+
+en=student
+And we learned how "就是" can turn a simple statement into a strong emphasis, like "simply" or "just."
+
+en=teacher
+Exactly. Practice these by talking about your own daily habits—or lack thereof! Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "二十岁左右"
+pitch = "中音域，语气慵懒、拖沓"
+pace = "慢速，带有明显的松散感"
+volume = "中等，听起来有点无精打采"
+clarity = "略微含混，听起来像没睡醒"
+fluency = "语速不均，常有停顿"
+timbre = "柔和，略带甜美但很懒散"
+emotion = "极度放松，有点小任性"
+usecase = "一个只想瘫在沙发上什么都不干的年轻人"
+dialogue = "我还没看够呢。我还没休息够。我还想再睡一会儿。可是我就是不想动。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁左右"
+pitch = "中音域，情绪起伏大"
+pace = "中速，在激动时会变快"
+volume = "响亮，带有焦虑感"
+clarity = "清晰，咬字有力"
+fluency = "流利，但情绪激动时节奏紧凑"
+timbre = "清脆，富有活力"
+emotion = "焦虑，急躁，有点好胜心"
+usecase = "一个生活节奏很快、无法忍受拖延症的室友"
+dialogue = "你怎么还在沙发上看电视？你就是不想起床！我们今天还要去超市呢。别说了，我们还要准备作业呢。"
+
+speaker = 3
+lang = "zh"
+gender = "男性"
+age = "五十岁左右"
+pitch = "低音域，稳定且带点戏谑"
+pace = "慢速，沉稳"
+volume = "中等"
+clarity = "非常清晰，每个字都很重"
+fluency = "流畅，有种看透世俗的感觉"
+timbre = "浑厚，略带沙哑"
+emotion = "幽默，带着一点点毒舌的幽默感"
+usecase = "一个爱观察邻里八竿子事情的幽默老邻居"
+dialogue = "他就是想偷懒。他就是个懒虫。"

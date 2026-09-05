@@ -1,0 +1,200 @@
+INTRO
+
+en=student
+Welcome to Learning Chinese. I am Ryan, and I am currently sitting in the back of a very crowded taxi, looking out at a sea of red brake lights. I am feeling a bit stressed.
+
+en=teacher
+And I am Ellen. Don't panic, Ryan! You are just experiencing the reality of city life. Today, we are going to learn how to navigate a very common situation: riding in a taxi.
+
+en=student
+I definitely need this. I feel like I'm constantly asking "where" and "when" and "why" in my head when I'm traveling.
+
+en=teacher
+Exactly. Today we are focusing on two things. First, how to ask about the state or condition of something using 怎么样 (how is it/what is it like). You place it after the subject. For example, 今天天气怎么样? (How is the weather today?) or 你的中文怎么样? (How is your Chinese?).
+
+en=student
+Got it. So, "subject + 怎么样". And what about the other grammar point?
+
+en=teacher
+The placement of question words. In English, we often move words around to ask a question, like "What car is that?". In Chinese, the word order stays the same as a statement. You just replace the part of the sentence you are asking about with the question word. 
+
+en=student
+So, instead of "Where are you going?", I say "You go where?". 
+
+en=teacher
+Precisely. You replace the destination with 哪儿 (where) or the time with 什么时候 (when). 
+
+en=student
+That actually makes it much easier to remember once you get the hang of it.
+
+en=teacher
+It does! Before we hear the dialogue, let's look at some key vocabulary. 
+en=teacher
+We have 机场, (first tone and third tone), meaning airport... 机场。
+en=teacher
+We have 堵, (third tone), meaning to be blocked or a traffic jam... 堵。
+en=teacher
+We have 会议, (fourth tone and fourth tone), meaning a meeting... 会议。
+en=teacher
+We have 下班, (fourth tone and first tone), meaning to get off work... 下班。
+en=teacher
+We have 车祸, (first tone and fourth tone), meaning a car accident... 车祸。
+
+en=student
+I'm ready. I can almost hear the traffic honking already.
+
+en=teacher
+In this scene, you are going to hear a conversation between a passenger and a taxi driver. The passenger is in a big hurry to get to the airport for an important meeting, but the traffic is not being very helpful.
+
+DIALOGUE
+
+zh=1
+师傅，请带我去机场。今天路怎么样？
+Driver, please take me to the airport. How is the road today?
+zh=2
+今天的路不太好。
+The road today is not very good.
+zh=1
+为什么？现在不是不堵车吗？
+Why? Isn't there no traffic right now?
+zh=2
+现在是下班时间，路上面有很多车。
+It is rush hour right now, there are many cars on the road.
+zh=1
+我有一个很重要的会议。我们什么时候能到？
+I have a very important meeting. When can we arrive?
+zh=2
+十五分钟以后。哎，你看，前面那辆车怎么了？
+In fifteen minutes. Hey, look, what happened to that car in front?
+zh=1
+那是什么车？为什么停在路中间？
+What car is that? Why is it parked in the middle of the road?
+zh=2
+我不知道，可能是出车祸了。
+I don't know, maybe there was a car accident.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this stressful taxi ride line by line. We start with the passenger.
+
+zh=1
+师傅，请带我去机场。今天路怎么样？
+Driver, please take me to the airport. How is the road today?
+
+en=student
+"师傅" (shī fu) is a very common way to address a driver or a skilled worker, like a master. And then we see our first grammar point: "今天路怎么样？".
+
+en=teacher
+Right. "路" (lù) means road. "怎么样" (zěn me yàng) asks about the condition of the road. It's not asking "how do I walk the road," but rather "how is the state of the road?"
+
+zh=2
+今天的路不太好。
+The road today is not very good.
+
+en=student
+"不太好" (bú tài hǎo) means not very good. It's a classic way to soften a negative statement.
+
+zh=1
+为什么？现在不是不堵车吗？
+Why? Isn't there no traffic right now?
+
+en=teacher
+Here we see "为什么" (wèi shén me), which means "why." It's placed right where the reason would be. And "堵车" (dǔ chē) means a traffic jam or "cars being blocked."
+
+zh=2
+现在是下班时间，路上面有很多车。
+It is rush hour right now, there are many cars on the road.
+
+en=student
+"下班时间" (xià bān shí jiān). "下班" means to finish work, and "时间" means time. So, "the time after finishing work," or rush hour.
+
+zh=1
+我有一个很重要的会议。我们什么时候能到？
+I have a very important meeting. When can we arrive?
+
+en=student
+"很重要的会议" (hěn zhòng yào de huì yì). "重要" means important, and "会议" is meeting. Then, "我们什么时候能到？" This is the perfect example of question word placement. We want to ask "When," so we put "什么时候" (shén me shí hou) exactly where the time answer would go.
+
+en=teacher
+Exactly. You wouldn't say "When can we arrive?" in the same way in English. In Chinese, it's "We when can arrive?" 
+
+zh=2
+十五分钟以后。哎，哎，你看，前面那辆车怎么了？
+In fifteen minutes. Hey, hey, look, what happened to that car in front?
+
+en=student
+"十五分钟" (shí wǔ fēn zhōng) is fifteen minutes. And then the driver says "怎么了？" (zěn me le). This is a very common phrase.
+
+en=teacher
+Yes! "怎么了" is used to ask "what happened?" or "what's wrong?" when you notice something unusual.
+
+zh=1
+那是什么车？为什么停在路中间？
+What car is that? Why is it parked in the middle of the road?
+
+en=student
+"那是什么车？" (nà shì shén me chē). Again, the question word "什么" (shén me) is placed right before the noun "车" (chē). It's "That is what car?"
+
+en=teacher
+And "停在路中间" (tíng zài lù zhōng jiān). "停" is to stop or park, and "中间" means middle.
+
+zh=2
+我不知道，可能是出车祸了。
+I don't know, maybe there was a car accident.
+
+en=student
+"车祸" (chē huò). "车" is car, and "祸" is disaster or accident. So, a car accident.
+
+en=teacher
+It's a bit of a tense ending to the dialogue! But it really shows how to use "why," "when," and "what" in a natural setting.
+
+OUTRO
+
+en=student
+Whew. I definitely feel the urgency now. I'm definitely not looking forward to that meeting if the taxi ride is that bumpy.
+
+en=teacher
+As you can see, today we learned how to ask about the state of things using 怎么样, and we practiced the natural placement of question words like 为什么, 什么时候, and 什么.
+
+en=student
+And we learned some very practical words for traveling, like 机场, 堵车, and 下班时间.
+
+en=teacher
+Remember, don't be afraid to use these structures in your daily life. Even if you're just asking how the weather is or what time a meeting starts.
+
+en=student
+Thanks for the lesson, Ellen. I'll try to stay calm even when I'm stuck in a taxi!
+
+en=teacher
+Good luck! See you in the next episode of Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十五岁左右"
+pitch = "中音域，因焦虑而略显急促"
+pace = "较快，语气中带有压力"
+volume = "中等，略显局促"
+clarity = "清晰，但由于语速快，呼吸声较明显"
+fluency = "流利，但语气中透着不耐烦"
+timbre = "清脆，略带紧张感"
+emotion = "焦虑、匆忙、事业心强"
+usecase = "一个正赶往重要商务会议的职场精英"
+dialogue = "师傅，请带我去机场。今天路怎么样？为什么这么堵？我有一个很重要的会议！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "五十岁左右"
+pitch = "低音域，平稳"
+pace = "缓慢，节奏放松"
+volume = "浑厚，较稳定"
+clarity = "清晰，语调平缓"
+fluency = "流畅，说话很有节奏感"
+timbre = "浑厚，略带沙哑，很有生活气息"
+emotion = "冷静、随性、甚至带点漫不经心"
+usecase = "一个见惯了城市拥堵、心态平和的老司机"
+dialogue = "今天的路不太好。现在是下班时间，路上面有很多车。十五分钟以后。哎，你看，那辆车怎么了？"

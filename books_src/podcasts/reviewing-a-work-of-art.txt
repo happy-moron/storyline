@@ -1,0 +1,199 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are exploring the world of art. 
+
+en=student
+I love art, but sometimes I find it hard to describe what I see. I usually just say "it is good" or "it is bad."
+
+en=teacher
+That is why today's lesson is so important. We are going to learn how to be more specific using two grammar points. First, how to indicate a number in excess using 多. 
+
+en=student
+Is that like saying "more than" or "over"?
+
+en=teacher
+Exactly. We use it in two ways. If you are using a round number, like ten or fifty, you put 多 before the measure word. For example, 十多个人, which means more than ten people. 
+
+en=student
+And if the number is not a round number? Like, if I want to say "two and a bit hours"?
+
+en=teacher
+Great question! In that case, you put 多 after the measure word. For example, 两个多小时. So, the position changes depending on whether the number ends in zero or not.
+
+en=student
+That is a very helpful distinction. What is the second grammar point?
+
+en=teacher
+The second is using 几 to mean "several" or "a few." You use it with a measure word and a noun. For example, 几本书, which means several books.
+
+en=student
+Got it. So 几 is like "a few" when it is used this way. 
+
+en=teacher
+Precisely. Before we listen to our dialogue, let's look at our key vocabulary. 
+
+en=teacher
+We have 作品, which is a fourth tone and a fourth tone, meaning a work of art... 作品.
+
+en=teacher
+We have 杰作, which is a second tone and a fourth tone, meaning a masterpiece... 杰作.
+
+en=teacher
+We have 奇怪, which is a second tone and a fourth tone, meaning strange... 奇怪.
+
+en=teacher
+We have 无聊, which is a second tone and a second tone, meaning boring... 无聊.
+
+en=student
+Sounds good. What is the dialogue about?
+
+en=teacher
+In this scene, you will hear two friends, Li Wei and Xiao Mei, at a modern art gallery. Li Wei is a very enthusiastic art lover, while Xiao Mei is... well, she is a bit skeptical about this particular exhibition.
+
+DIALOGUE
+
+zh=1
+看看这个作品！简直是杰作！
+Look at this work of art! It is simply a masterpiece!
+
+zh=2
+我觉得这只是几块奇怪的石头。
+I think this is just several strange stones.
+
+zh=1
+你怎么这么没感觉？这位艺术家已经有五十多岁了，他的作品非常有名。
+How can you be so indifferent? This artist is already over fifty years old, and his works are very famous.
+
+zh=2
+我们已经看了两个多小时了，我还是觉得很无聊。
+We have already looked for over two hours, and I still find it very boring.
+
+zh=1
+你看，这幅画里有几种不同的感觉。
+Look, there are several different feelings in this painting.
+
+zh=2
+可是在我眼里，这只是几张没意思的纸。
+But in my eyes, these are just several uninteresting pieces of paper.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this dialogue line by line. We start with Li Wei, who is clearly impressed.
+
+zh=1
+看看这个作品！简直是杰作！
+Look at this work of art! It is simply a masterpiece!
+
+en=student
+"作品" means work of art, and "杰作" means masterpiece. Li Wei is being quite dramatic!
+
+en=teacher
+Yes, he is. Now, let's look at Xiao Mei's skeptical response.
+
+zh=2
+我觉得这只是几块奇怪的石头。
+I think this is just several strange stones.
+
+en=student
+Wait, here is our grammar point! She said "几块". "几" means several, and "块" is the measure word for stones or pieces. 
+
+en=teacher
+Correct. And "奇怪" means strange. She is really not feeling the art.
+
+en=teacher
+Now, let's look at Li Wei's reaction to her lack of emotion.
+
+zh=1
+你怎么这么没感觉？这位艺术家已经有五十多岁了，他的作品非常有名。
+How can you be so indifferent? This artist is already over fifty years old, and his works are very famous.
+
+en=student
+"你怎么这么..." is a common way to say "How can you be so..." or "Why are you so...". But I'm curious about "五十多岁". You mentioned that with round numbers, the "多" goes before the measure word?
+
+en=teacher
+Exactly. Since fifty is a round number, we say 五十多岁. It means over fifty years old. If she said she was twenty-one, she would say 二十一岁多.
+
+en=student
+That makes sense. It depends on whether you are rounding the number or describing a specific amount.
+
+en=teacher
+You've got it. Now, Xiao Mei is losing patience.
+
+zh=2
+我们已经看了两个多小时了，我还是觉得很无聊。
+We have already looked for over two hours, and I still find it very boring.
+
+en=student
+Ah, here is the second way to use "多"! Since two is not a round number like ten or fifty, the "多" comes after the measure word, "个". So, "两个多小时".
+
+en=teacher
+Perfect. And "无聊" means boring. She is definitely ready to leave.
+
+en=teacher
+Let's look at Li Wei's final attempt to convince her.
+
+zh=1
+你看，这幅画里有几种不同的感觉。
+Look, there are several different feelings in this painting.
+
+en=student
+"几种" means several kinds. Here, "几" is used with the measure word "种" to mean "several kinds."
+
+en=teacher
+And finally, Xiao Mei's final dismissal.
+
+zh=2
+可是在我眼里，这只是几张没意思的纸。
+But in my eyes, these are just several uninteresting pieces of paper.
+
+en=student
+"几张". "张" is the measure word for flat things, like paper. So "几张" is several sheets. And "没意思" is a great way to say "uninteresting" or "not interesting."
+
+en=teacher
+Exactly. She is definitely not an art critic!
+
+OUTRO
+
+en=student
+Wow, that was a very intense art gallery visit. 
+
+en=teacher
+It certainly was. Today we covered how to use "几" to mean "several" with measure words, and we looked at how the position of "多" changes depending on whether you are using a round number or not.
+
+en=student
+Remember: round number, like fifty, then "多", then the measure word. Non-round number, like two, then the measure word, then "多". 
+
+en=teacher
+Perfectly summarized. Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，因激动而有所起伏"
+pace = "略快，充满激情"
+volume = "大，非常有感染力"
+clarity = "吐字清晰，带有表演性"
+fluency = "流畅，语调高亢" 
+timbre = "清脆，有活力"
+emotion = "狂热，对艺术充满热爱" 
+usecase = "一个对艺术极度痴迷、甚至有点夸张的艺术评论家"
+dialogue = "看看这个作品！简直是杰作！你看不出来吗？这简直是天才之作！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十岁出头"
+pitch = "中低音域，平稳甚至有些低沉"
+pace = "缓慢，显得有些没精打采"
+volume = "中等，略显疲惫"
+clarity = "清晰，但语气平淡"
+fluency = "自然，但带有一些无奈的停顿" 
+timbre = "柔和，略带慵懒"
+emotion = "疲惫，困惑，对周围事物感到无所谓" 
+usecase = "一个被艺术展搞得精疲力竭、只想赶紧回家的大学生"
+dialogue = "我真的看不懂。我们能不能快点走？我真的觉得很无聊。"

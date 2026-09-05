@@ -1,0 +1,209 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a very common, and often very stressful, situation: losing something important.
+
+en=student
+Oh man, I have done that so many times. I usually end up tearing my whole house apart.
+
+en=teacher
+Exactly. And to help you navigate that chaos, today we are focusing on two essential ways to talk about where things are and what exists in a specific place. 
+
+en=student
+Are we talking about using the verb to be?
+
+en=teacher
+Sort of. First, we have the use of 在 to express location. You place the subject, then 在, and then the place. For example, 我在家里 (I am at home) or 书在桌子上 (the book is on the table). 
+
+en=student
+Right, so it's subject, then "at," then the location. And what about the second one?
+
+en=teacher
+The second one is expressing existence using 有. Instead of saying "the book is on the table," you can say the table has a book. The structure is Place plus 有 plus the object. For example, 桌子上有一本书 (on the table there is a book). 
+
+en=student
+So, if I want to say "there is a key in my bag," I would say 包里有一把钥匙?
+
+en=teacher
+Perfect! You've got it. Now, before we hear the story, let's look at our six key vocabulary words. 
+
+en=teacher
+First, we have 钥匙, (fourth tone and first tone), meaning keys... 钥匙.
+en=teacher
+Second, we have 找, (third tone), meaning to look for... 找.
+en=teacher
+Third, we have 哪里, (third tone and third tone), meaning where... 哪里.
+en=teacher
+Fourth, we have 包里, (first tone and third tone), meaning in the bag... 包里.
+en=teacher
+Fifth, we have 桌子上, (first tone, neutral, and fourth tone), meaning on the table... 桌子上.
+en=teacher
+Sixth, we have 到处, (fourth tone and fourth tone), meaning everywhere... 到处.
+
+en=student
+Got it. 钥匙, 找, 哪里, 包里, 桌子上, and 到处.
+
+en=teacher
+You're ready. In today's episode, you're going to hear a heated conversation between a couple, Ming and Lan. They are getting ready to leave the house for an important event, but they have hit a major snag: they cannot find the car keys.
+
+DIALOGUE
+
+zh=1
+我的钥匙在哪里？
+Where are my keys?
+zh=2
+我不知道。桌子上没有钥匙。
+I don't know. There are no keys on the table.
+zh=1
+我到处都找了。包里也没有。
+I've looked everywhere. They aren't in the bag either.
+zh=2
+你看，沙发下面有一个黑色的包。
+Look, there is a black bag under the sofa.
+zh=1
+包里有什么？
+What is in the bag?
+zh=2
+包里只有一本杂志。
+There is only a magazine in the bag.
+zh=1
+糟糕，钥匙不在客厅，也不在卧室。
+Oh no, the keys are not in the living room, nor in the bedroom.
+zh=2
+别找了，钥匙在你的口袋里！
+Stop looking, the keys are in your pocket!
+
+BREAKDOWN
+
+en=teacher
+Let's break down this stressful little scene, line by line. It starts with Ming, who is clearly panicking.
+
+zh=1
+我的钥匙在哪里？
+Where are my keys?
+
+en=student
+"我的钥匙" is "my keys." And "在哪里" is the standard way to ask "where is/are." So "My keys where?"
+
+en=teacher
+Exactly. Now Lan responds.
+
+zh=2
+我不知道。桌子上没有钥匙。
+I don't know. There are no keys on the table.
+
+en=student
+She says "桌子上没有钥匙." We learned "桌子上" is on the table. But she uses 没有 instead of 有.
+
+en=teacher
+That's a very important point, Ryan. To say "there is," we use 有. To say "there is not" or "to not have," we use 没有. So, "on the table there are no keys."
+
+zh=1
+我到处都找了。包里也没有。
+I've looked everywhere. They aren't in the bag either.
+
+en=student
+Ming is getting more frustrated. He says "到处都找了." That "都" (dōu) is interesting. Is that "all" or "both"?
+
+en=teacher
+In this context, when you use "到处" (everywhere), you almost always follow it with "都" to emphasize that you have checked every single spot. So, "I have searched everywhere." And then he says "包里也没有." He is reusing the negative existence pattern we just discussed. "In the bag, also no [keys]."
+
+zh=2
+你看，沙发下面有一个黑色的包。
+Look, there is a black bag under the sofa.
+
+en=student
+Lan is trying to help. She says "沙发下面" for under the sofa. And then she uses our existence grammar: "Place + 有 + Object." "Under the sofa has a black bag."
+
+en=teacher
+Right. It's much more natural in Chinese to say "Under the sofa has a bag" than to say "A bag is under the sofa." 
+
+zh=1
+包里有什么？
+What is in the bag?
+
+en=student
+He's checking the bag. "包里" is in the bag. "有什么" is "has what?"
+
+en=teacher
+And Lan answers.
+
+zh=2
+包里只有一本杂志。
+There is only a magazine in the bag.
+
+en=student
+"只有" (zhǐ yǒu). That sounds like "only has."
+
+en=teacher
+Spot on. "Only has" or "only."
+
+zh=1
+糟糕，钥匙不在客厅，也不在卧室。
+Oh no, the keys are not in the living room, nor in the bedroom.
+
+en=student
+Wait, Ellen, I'm confused. He is using "不在" here. Is that different from "没有"?
+
+en=teacher
+That is a fantastic question, Ryan. This is a nuance many learners struggle with. Remember, we use 有/没有 for existence—for saying what is *in* a place. But when we want to say a specific subject is *located* somewhere, we use 在. So, instead of saying "The keys don't have in the living room," we say "The keys are not at the living room" — 钥匙不在客厅.
+
+en=student
+Ah, I see! So if I'm talking about the presence of an object, I use 没有. But if I'm talking about the location of a specific thing, I use 不在.
+
+en=teacher
+Exactly. And he uses "也不在" (yě bù zài) to mean "also not in."
+
+zh=2
+别找了，钥匙在你的口袋里！
+Stop looking, the keys are in your pocket!
+
+en=student
+And the climax! "钥匙在你的口袋里!" The keys are in your pocket. "在" for the location, and then "口袋里" for inside the pocket.
+
+en=teacher
+And that is how the drama ends!
+
+OUTRO
+
+en=student
+Whew. I think I've learned my lesson. Always check your pockets before panicking.
+
+en=teacher
+Precisely. Today we mastered two ways to talk about where things are. We used 在 to describe the location of a subject, and we used 有 to describe what exists in a place.
+
+en=student
+And we learned that to say "there isn't something," we use 没有. We also covered our key words: 钥匙, 找, 哪里, 包里, 桌子上, and 到处.
+
+en=teacher
+Great job, Ryan. Practice these structures by looking around your room and describing what is there, and where things are located. Thanks for listening to Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，因焦虑而略微颤抖"
+pace = "略快，语气急促"
+volume = "中等，随情绪波动"
+clarity = "清晰，但因急促而略显紧绷"
+fluency = "因焦急而略有停顿" 
+timbre = "略显粗糙，富有生活气息"
+emotion = "焦虑、急躁、手忙脚乱" 
+usecase = "一个因为找不到东西而感到抓狂的上班族"
+dialogue = "我的钥匙在哪里？我到处都找了！糟糕，钥匙不在客厅，也不在卧室！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，平稳"
+pace = "正常，节奏分明"
+volume = "中等"
+clarity = "非常清晰，吐字圆润"
+fluency = "流利，非常稳重" 
+timbre = "温和，沉稳"
+emotion = "冷静，略带不耐烦" 
+usecase = "一位在混乱中保持冷静的伴侣"
+dialogue = "我不知道。桌子上没有钥匙。别找了，钥匙在你的口袋里！"

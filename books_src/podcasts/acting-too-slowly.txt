@@ -1,0 +1,230 @@
+INTRO
+
+en=student
+Welcome to Learning Chinese. I am Ryan, and I am currently running late for everything. Seriously, I feel like I'm always rushing.
+
+en=teacher
+Well, Ryan, today's episode is perfect for you. We are talking about the frustration of dealing with people who act too slowly. We'll explore how to express that something has "already" happened using the structure 都...了, and how to say we will do something "again" or "later" using 再.
+
+en=student
+Right, so if I'm waiting for someone and they're taking forever, I can use these to express my impatience?
+
+en=teacher
+Exactly. First, let's look at our grammar. When you want to emphasize that a time has already arrived or a limit has been reached, you use the structure 都...了. For example, 都十二点了 (It's already twelve o'clock). The 都 adds a sense of "it's already at this point," which often carries a tone of complaint or urgency.
+
+en=student
+Okay, so it's like emphasizing the extremity of the situation. And what about 再?
+
+en=teacher
+再 is used for actions that will happen again in the future. A common way to use it is in the phrase 以后再... (yǐ hòu zài...), meaning "do [something] later" or "do [something] again later." It's for future intentions. It is very different from 又, which we use for things that have already happened again.
+
+en=student
+So if I missed the bus and I'm saying "I'll take the next one," I'd use 再?
+
+en=teacher
+Precisely. Now, before we hear the dialogue, let's go over our key vocabulary.
+
+en=teacher
+We have 准备, (third tone and fourth tone), meaning to prepare... 准备.
+
+en=teacher
+We have 迟到, (second tone and fourth tone), meaning to be late... 迟到.
+
+en=teacher
+We have 以后, (third tone and fourth tone), meaning later or afterwards... 以后.
+
+en=teacher
+We have 磨蹭, (second tone and light tone), meaning to dawdle or loiter... 磨蹭.
+
+en=teacher
+We have 动作, (fourth tone and fourth tone), meaning movement or action... 动作.
+
+en=student
+Got it. So, what's the scene?
+
+en=teacher
+In this dialogue, you're going to hear a very impatient older sister, Mei, who is trying to get her younger sister, Ling, out the door. Ling is incredibly distracted and is currently having a crisis because she can't find her headphones.
+
+DIALOGUE
+
+zh=1
+你怎么还没好？都十点了！
+Why aren't you ready yet? It's already ten o'clock!
+
+zh=1
+我们快要迟到了！
+We're about to be late!
+
+zh=1
+我在客厅等你好久了！
+I've been waiting for you in the living room for a long time!
+
+zh=1
+你怎么还在找你的耳机？你都找了十分钟了！
+Why are you still looking for your headphones? You've been looking for ten minutes!
+
+zh=2
+我马上就好！我就差一点点！
+I'll be ready immediately! I'm almost there!
+
+zh=1
+别找了，我们现在走，以后再买新的。
+Stop looking, let's go now, we'll buy new ones later.
+
+zh=1
+快点，别磨蹭了！
+Hurry up, stop dawdling!
+
+zh=2
+哎呀，我真的找不到！
+Oh no, I really can't find them!
+
+zh=1
+你动作也太慢了吧！
+You're moving way too slowly!
+
+zh=1
+我真的不等了！
+I'm really not waiting anymore!
+
+zh=2
+等等我！
+Wait for me!
+
+BREAKDOWN
+
+en=teacher
+Let's break down that intense sisterly interaction. It starts with Mei being very impatient.
+
+zh=1
+你怎么还没好？都十点了！
+Why aren't you ready yet? It's already ten o'clock!
+
+en=student
+"你怎么还没好?" is a very common way to ask "Why aren't you ready yet?". And then we see our first grammar point: "都十点了".
+
+en=teacher
+Yes. "都" (dōu) here isn't just "all"; it's used to emphasize that it is *already* ten o'clock. It shows Mei's frustration.
+
+zh=1
+我们快要迟到了！
+We're about to be late!
+
+en=student
+"迟到" (chí dào) is to be late. "快要...了" is a structure we've seen before meaning "about to."
+
+zh=1
+我在客厅等你好久了！
+I've been waiting for you in the living room for a long time!
+
+en=teacher
+"好久" (hǎo jiǔ) is a common way to say "a long time."
+
+zh=1
+你怎么还在找你的耳机？你都找了十分钟了！
+Why are you still looking for your headphones? You've been looking for ten minutes!
+
+en=student
+"耳机" (ěr jī) means headphones. And here is the second instance of our "already" grammar: "你都找了十分钟了".
+
+en=teacher
+Correct. "都" is emphasizing that ten whole minutes have passed already. It's adding pressure to the situation.
+
+zh=2
+我马上就好！我就差一点点！
+I'll be ready immediately! I'm almost there!
+
+en=student
+"马上" (mǎ shàng) is "immediately" or "right away." And "一点点" (yī diǎn diǎn) is "a little bit."
+
+zh=1
+别找了，我们现在走，以后再买新的。
+Stop looking, let's go now, we'll buy new ones later.
+
+en=teacher
+This is a perfect use of "再" (zài). Mei is saying they will buy new ones "later" or "again" in the future. "以后再买" means "buy [them] later."
+
+en=student
+Is there a difference between "以后再买" and just saying "以后买"?
+
+en=teacher
+Good question, Ryan. Adding "再" makes it clearer that it's a future action that will occur *after* the current event is resolved. It's very natural in this context.
+
+zh=1
+快点，别磨蹭了！
+Hurry up, stop dawdling!
+
+en=student
+"磨蹭" (mó ceng) is such a great word. It perfectly captures that feeling of someone dragging their feet or being slow.
+
+zh=2
+哎呀，我真的找不到！
+Oh no, I really can't find them!
+
+en=teacher
+"哎呀" (āi ya) is a very common exclamation, like "oh no" or "gosh."
+
+zh=1
+你动作也太慢了吧！
+You're moving way too slowly!
+
+en=student
+"动作" (dòng zuò) means movement or action. So she's literally saying her "movements" are too slow.
+
+zh=1
+我真的不等了！
+I'm really not waiting anymore!
+
+zh=2
+等等我！
+Wait for me!
+
+en=teacher
+And the episode ends with Ling frantically trying to get her sister to wait!
+
+OUTRO
+
+en=student
+Whew, I definitely don't want to be the one getting yelled at by Mei!
+
+en=teacher
+It's a very useful set of tools to have. Today we learned how to use "都...了" to emphasize that something has already happened or a time has already passed, often to express impatience.
+
+en=student
+And we learned that "再" is the way to go when you want to say you'll do something again or later in the future.
+
+en=teacher
+Exactly. Practice these when you're feeling a bit impatient, and you'll sound like a natural. Thanks for listening to Learning Chinese.
+
+en=student
+See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中音域，由于焦虑而显得尖锐"
+pace = "略快，节奏紧凑"
+volume = "响亮，带有命令感"
+clarity = "清晰，语速较快"
+fluency = "流畅，带有明显的急促感"
+timbre = "清脆，略显凌厉"
+emotion = "不耐烦，急躁，强势"
+usecase = "一个正在赶时间的急性子姐姐"
+dialogue = "你怎么还没好？都十点了！快点，别磨蹭了！我真的不等了！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "十八岁左右"
+pitch = "中高音域，由于紧张而略微颤抖"
+pace = "中等，节奏不稳"
+volume = "中等，声音较软"
+clarity = "较柔和"
+fluency = "在慌乱时略有停顿"
+timbre = "甜美，略带软糯"
+emotion = "慌张，困惑，手忙脚乱"
+usecase = "一个丢三落四、反应迟钝的妹妹"
+dialogue = "我马上就好！哎呀，我真的找不到！等等我！"

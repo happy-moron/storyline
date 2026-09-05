@@ -1,0 +1,185 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are exploring how to talk about changes in our lives and our interests.
+
+en=student
+I've always found the word "le" a bit confusing. Is it just for completed actions, like "I ate"?
+
+en=teacher
+That's one way to use it, but today we are looking at two very specific uses that are essential for real conversation. First, we're learning how to express "not anymore" using the structure "not/not have" plus a verb phrase plus "le." For example, "我不喝咖啡了" means "I don't drink coffee anymore." It implies you used to drink it, but that has changed.
+
+en=student
+Oh! So the "le" acts like a signal that says, "Hey, things are different now."
+
+en=teacher
+Exactly. Second, we are looking at how to use "le" to signal a "new situation." When you add "le" to the end of a sentence, you're saying "it is now the case." For example, "下雨了" means "It is raining now," implying it was dry before.
+
+en=student
+That makes sense. So if I say "我很有钱了," I'm saying "I am rich now," implying I wasn't before.
+
+en=teacher
+Perfectly put. Before we listen to our dialogue, let's go over our key vocabulary. 
+
+en=teacher
+We have 小说, (third tone and first tone), meaning novel... 小说.
+en=teacher
+We have 历史, (fourth tone and third tone), meaning history... 历史.
+en=teacher
+We have 感兴趣, (third tone, fourth tone, fourth tone), meaning to be interested in... 感兴趣.
+en=teacher
+We have 下雨, (fourth tone and third tone), meaning to rain... 下雨.
+en=teacher
+We have 关门, (first tone and second tone), meaning to close a door or a shop... 关门.
+
+en=student
+Got it. And what is the story for today?
+
+en=teacher
+In this episode, you're going to hear two friends, Xiao Mei and Xiao Ming, meeting at a bookstore. They'll be discussing their changing reading habits and noticing a sudden change in the weather.
+
+DIALOGUE
+
+zh=1
+我以前很喜欢看言情小说，但我现在不看小说了。
+I used to love reading romance novels, but I don't read novels anymore.
+zh=2
+真的吗？你以前最喜欢看小说了。你变了！那你现在对什么感兴趣？
+Really? You used to love reading novels the most. You've changed! So what are you interested in now?
+zh=1
+我对历史感兴趣了。你看，这本历史书很有意思。
+I am interested in history now. Look, this history book is very interesting.
+zh=2
+我也觉得很有意思。哎呀，你看，外面下雨了。
+I also think it is very interesting. Oh, look, it's raining outside.
+zh=1
+那我们快走吧，书店快要关门了。
+Then let's go quickly, the bookstore is about to close.
+zh=2
+等一下，我要买这本书！
+Wait a second, I want to buy this book!
+zh=1
+别买了，我们要赶回家了！
+Stop buying [anymore], we have to rush home!
+zh=2
+好吧，走吧。
+Okay, let's go.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with Xiao Mei.
+
+zh=1
+我以前很喜欢看言情小说，但我现在不看小说了。
+I used to love reading romance novels, but now I don't read novels anymore.
+
+en=student
+"我以前" means "before" or "in the past." "言情小说" is a specific type of novel—romance novels. But the most important part is "我不看小说了." 
+
+en=teacher
+Right. If she just said "我不看小说," she would simply be saying "I don't read novels." But by adding "了" at the end, she creates that "not anymore" meaning. It highlights the change in her habit.
+
+zh=2
+真的吗？你以前最喜欢看小说了。你变了！那你现在对什么感兴趣？
+Really? You used to love reading novels the most. You've changed! So what are you interested in now?
+
+en=student
+"你变了" is a classic. "变" means to change. And "对...感兴趣" is a huge one for learners.
+
+en=teacher
+Yes, "对" (duì) is used here to mean "towards" or "regarding." So, "我对历史感兴趣" means "I am interested in history." In the dialogue, she says "我对历史感兴趣了." That extra "le" at the end is crucial—it means she *has become* interested in history. It's a new state.
+
+zh=1
+我对历史感兴趣了。你看，这本历史书很有意思。
+I am interested in history now. Look, this history book is very interesting.
+
+en=student
+"很有意思" is "very interesting." It's a very common way to describe books, movies, or even people.
+
+zh=2
+我也觉得很有意思。哎呀，你看，外面下雨了。
+I also think it is very interesting. Oh, look, it's raining outside.
+
+en=teacher
+Here is our second grammar point in action. "外面下雨了."
+
+en=student
+"外面" means "outside." "下雨" means "to rain." And "了" marks the change in the situation. It wasn't raining, but now it is.
+
+zh=1
+那我们快走吧，书店快要关门了。
+Then let's go quickly, the bookstore is about to close.
+
+en=student
+"快要...了" is a structure used to indicate that something is about to happen. "关门" is to close the door, but when talking about a business, it means to close up shop.
+
+zh=2
+等一下，我要买这本书！
+Wait a second, I want to buy this book!
+
+en=teacher
+"等一下" is "wait a moment." A very useful phrase for when you are in a hurry.
+
+zh=1
+别买了，我们要赶回家了！
+Stop buying [anymore], we have to rush home!
+
+en=student
+This is interesting. She said "别买了" (bié mǎi le). Does that follow our "not anymore" rule?
+
+en=teacher
+Close! "别" is a command, like "don't." When you add "了" to a command like "别...了," it often means "stop doing that" or "don't do it anymore." So "别买了" means "Stop buying [it/them]."
+
+en=student
+And "赶回家" (gǎn huí jiā). "赶" must mean to rush or hurry, right?
+
+en=teacher
+Exactly. "赶" means to rush, and "回家" is to go home. Combined with "了" at the end, it emphasizes the urgency of their situation.
+
+OUTRO
+
+en=teacher
+That was a great session. Today we learned how "le" can signal a change in state.
+
+en=student
+Right. "不/没...了" for "not anymore," and adding "了" to a sentence to show a "new situation," like the rain starting.
+
+en=teacher
+Precisely. Don't forget to practice these in your own daily life. Instead of just saying "I am hungry," try saying "I am hungry now" using "我饿了" to practice that change of state.
+
+en=student
+I'll try that. See you in the next episode of Learning Chinese!
+
+en=teacher
+再见!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中音域，温和而坚定"
+pace = "缓慢，语调优雅"
+volume = "中等"
+clarity = "清晰，发音圆润"
+fluency = "流利，表达从容"
+timbre = "清脆，有知性美"
+emotion = "好奇，带着对新事物的热忱"
+usecase = "一个热爱阅读、思想正在发生转变的年轻女性"
+dialogue = "我以前很喜欢看言情小说，但我现在不看小说了。我对历史感兴趣了。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，起伏明显"
+pace = "稍快，充满活力"
+volume = "中等偏高"
+clarity = "清晰，语速较快"
+fluency = "流利，情绪表达丰富"
+timbre = "明亮，阳光"
+emotion = "活泼，有些急性子"
+usecase = "一个性格开朗、反应迅速的年轻男性朋友"
+dialogue = "真的吗？你变了！外面下雨了。别买了，我们要赶回家了！"

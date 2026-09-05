@@ -1,0 +1,218 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a theme that is a bit... bloody, but extremely important for real-life survival: a shaving accident.
+
+en=student
+Oh man, that sounds painful. I've definitely had those mornings where a razor gets a bit too enthusiastic.
+
+en=teacher
+It can be scary! And because of that drama, we are going to focus on two very essential grammar points. First, the standard negation using 不, which is used with verbs and adjectives to say "not" or "do not." For example, 我不吃 (I do not eat) or 我不累 (I am not tired).
+
+en=student
+Right, so it is for present or habitual actions, and for adjectives. But I always get confused with 没. Is there a difference?
+
+en=teacher
+Yes! That is a great question, Ryan. You use 没 to negate past actions or to say you "do not have" something. But for describing a current state, like "I am not tired," or a preference, like "I do not want," you must use 不.
+
+en=student
+Got it. And the second grammar point is the adverb 都, which means "all" or "both."
+
+en=teacher
+Exactly. 都 is used to indicate that something applies to every member of a group. It always comes after the subject and before the verb or adjective. For example, 我们都是学生 (We are all students) or 他们都很开心 (They are all very happy).
+
+en=student
+So if I'm talking about a group of friends, I would say 他们都不喜欢 (They all do not like it).
+
+en=teacher
+Precisely! You are using both! Now, before we get into the drama, let's look at our key vocabulary.
+
+en=teacher
+We have 刮胡子, (first tone, second tone, and neutral tone), meaning to shave... 刮胡子。
+
+en=teacher
+We have 刀, (first tone), meaning knife or razor... 刀。
+
+en=teacher
+We have 疼, (second tone), meaning painful or to hurt... 疼。
+
+en=teacher
+We have 舒服, (first tone and neutral tone), meaning comfortable or well... 舒服。
+
+en=teacher
+We have 不小心, (fourth tone, third tone, and neutral tone), meaning accidentally or not careful... 不小心。
+
+en=student
+Okay, I am ready. What is the scene?
+
+en=teacher
+In this dialogue, you are going to hear a very stressful morning. Li Hua is in the bathroom, and he has just had a shaving mishap. His roommate, Zhang Wei, walks in to find him bleeding.
+
+DIALOGUE
+
+zh=1
+哎呀！好疼啊！
+Ouch! It hurts so much!
+
+zh=2
+你怎么了？你在流血！
+What happened to you? You are bleeding!
+
+zh=1
+我刮胡子，不小心割到了。
+I was shaving, and I accidentally cut myself.
+
+zh=2
+你怎么这么不小心？所有的剃须刀都这么锋利吗？
+Why are you so careless? Are all razors this sharp?
+
+zh=1
+我不知道。我不觉得这把刀正常。
+I do not know. I do not think this razor is normal.
+
+zh=2
+别动。我也要去拿点药。
+Do not move. I will also go get some medicine.
+
+zh=1
+快点！我真的不舒服！
+Hurry! I really do not feel well!
+
+zh=2
+没关系，我们以后都要小心一点。
+It is okay, we both must be careful in the future.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with Li Hua's reaction to the pain.
+
+zh=1
+哎呀！好疼啊！
+Ouch! It hurts so much!
+
+en=student
+"哎呀" is such a classic exclamation. It is like "Oh my" or "Ouch." And "好疼" is "so painful."
+
+en=teacher
+Right. Then Zhang Wei rushes in.
+
+zh=2
+你怎么了？你在流血！
+What happened to you? You are bleeding!
+
+en=student
+"你怎么了?" is the standard way to ask "What's wrong?" or "What happened to you?" And "流血" means to bleed.
+
+en=teacher
+Now we get into the core of our lesson. Listen to Li Hua explain the accident.
+
+zh=1
+我刮胡子，不小心割到了。
+I was shaving, and I accidentally cut myself.
+
+en=student
+There is our first "不"! "不小心" (not careful) means accidentally. And "刮胡子" is the verb we learned earlier.
+
+en=teacher
+Exactly. "割到" means to cut or to have been cut. Then Zhang Wei reacts with some frustration.
+
+zh=2
+你怎么这么不小心？所有的剃须刀都这么锋利吗？
+Why are you so careless? Are all razors this sharp?
+
+en=student
+"怎么这么..." is a great phrase for "Why so..." or "How come so..." It sounds very natural. And here is our second grammar point! "所有的...都..."
+
+en=teacher
+Yes! "所有的" means "all of" or "every," and it is followed by the noun "剃须刀" (razor). Then we use "都" before the adjective "锋利" (sharp) to emphasize that it applies to all of them.
+
+en=student
+So "所有的学生都..." would be "all of the students..." That makes perfect sense. Now, Li Hua sounds a bit paranoid.
+
+zh=1
+我不知道。我不觉得这把刀正常。
+I do not know. I do not think this razor is normal.
+
+en=student
+"我不觉得" uses "不" to negate the verb "觉得," which means to feel or to think.
+
+en=teacher
+Right. He doesn't think it's normal. Zhang Wei tries to help.
+
+zh=2
+别动。我也要去拿点药。
+Do not move. I will also go get some medicine.
+
+en=student
+"别动" is a command, "don't move." And "我也要" uses "也" for "also." He is saying he will also go to get medicine.
+
+en=teacher
+And finally, the climax of the pain and the resolution.
+
+zh=1
+快点！我真的不舒服！
+Hurry! I really do not feel well!
+
+zh=2
+没关系，我们以后都要小心一点。
+It is okay, we both must be careful in the future.
+
+en=student
+"不舒服" means "not comfortable," but in a health context, it means "to feel unwell." 
+
+en=teacher
+And "没关系" is the most important phrase for any learner—"it's okay" or "it doesn't matter." Finally, "我们以后都要小心一点" uses "都" to say that *both* of them (or all of them) need to be careful in the future.
+
+en=student
+So, "都" emphasizes the collective nature of the action. "We all/both must be careful."
+
+en=teacher
+You've got it!
+
+OUTRO
+
+en=teacher
+That was a close call for Li Hua! Today we learned how to use "不" to negate verbs and adjectives, such as "不小心" and "不舒服."
+
+en=student
+And we learned how to use "都" to say "all" or "both," especially in patterns like "所有的...都..."
+
+en=teacher
+Exactly. Practice these in your daily life, even if you aren't shaving!
+
+en=student
+Hopefully, you don't need to use them in a medical emergency, but it's better to know.
+
+en=teacher
+Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁出头"
+pitch = "中音域，因痛苦而带有颤抖"
+pace = "中速，但在激动时变得较快"
+volume = "响亮，带有惊恐感"
+clarity = "清晰，但由于疼痛略显急促"
+fluency = "不连贯，带有喘息声" 
+timbre = "略显尖锐"
+emotion = "惊恐、疼痛、焦虑" 
+usecase = "一个不小心割伤自己的倒霉男人"
+dialogue = "哎呀！好疼啊！我不知道！我不觉得这把刀正常！快点！我真的不舒服！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "三十岁出头"
+pitch = "中低音域，稳定"
+pace = "略慢，语速平稳"
+volume = "中等，听起来很可靠"
+clarity = "非常清晰，吐字分明"
+fluency = "流利，充满同情心但保持冷静" 
+timbre = "浑厚，温和"
+emotion = "关切、镇定、略带责备" 
+usecase = "一个冷静且乐于助人的室友"
+dialogue = "你怎么了？你在流血！所有的剃须刀都这么锋利吗？别动。没关系，我们以后都要小心一点。"
