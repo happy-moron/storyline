@@ -1,0 +1,234 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are stepping into the kitchen to talk about making a classic: fried rice.
+
+en=student
+I love fried rice. But before I can cook it, I need to know how to introduce myself to the other chefs in the class!
+
+en=teacher
+That is a perfect segue, Ryan. Today, we are focusing on two fundamental verbs. First, the verb 叫, which means "to be called" or "to call." It is the most common way to introduce yourself or someone else by name. For example, 我叫 Ryan (I am called Ryan) or 他叫小明 (He is called Xiao Ming).
+
+en=student
+So, if I want to say "My name is Ryan," I can just say "我叫 Ryan"?
+
+en=teacher
+Exactly. It is much more natural in spoken Chinese than using the verb "to be." Second, we have the verb 去, which means "to go." This is used when you are moving from your current location to a destination. The structure is very simple: 去 followed by the place. For example, 我去学校 (I go to school) or 我们去餐厅 (We are going to a restaurant).
+
+en=student
+So, if I want to say "I am going to the kitchen," I say "我去厨房"?
+
+en=teacher
+Spot on. Now, before we hear our dialogue, let's master our six key vocabulary words for today. Listen closely to the tones.
+en=teacher
+First, we have 炒饭, (third tone and fourth tone), meaning fried rice... 炒饭.
+en=teacher
+Next, 鸡蛋, (first tone and fourth tone), meaning egg... 鸡蛋.
+en=teacher
+Then, 蔬菜, (first tone and fourth tone), meaning vegetables... 蔬菜.
+en=teacher
+We also have 厨房, (second tone and second tone), meaning kitchen... 厨房.
+en=teacher
+The verb 准备, (third tone and fourth tone), meaning to prepare... 准备.
+en=teacher
+And finally, 好吃, (third tone and first tone), meaning delicious... 好吃.
+
+en=student
+Got it. 炒饭, 鸡蛋, 蔬菜, 厨房, 准备, and 好吃. I'm getting hungry already.
+
+en=teacher
+In today's episode, you are going to hear a cooking instructor, Teacher Zhang, introducing himself to a couple of enthusiastic students, Xiao Ming and Xiao Hua, before they head to the kitchen to whip up some delicious fried rice.
+
+DIALOGUE
+
+zh=1
+大家好，我叫张老师。
+Hello everyone, I am Teacher Zhang.
+
+zh=2
+张老师好！我叫小明。
+Hello Teacher Zhang! I am Xiao Ming.
+
+zh=3
+老师，我们现在去哪里？
+Teacher, where are we going now?
+
+zh=1
+我们现在去厨房做炒饭。
+We are going to the kitchen now to make fried rice.
+
+zh=2
+我准备好了！我要去拿鸡蛋。
+I am ready! I want to go get eggs.
+
+zh=3
+我要去买一些蔬菜。
+I want to go buy some vegetables.
+
+zh=1
+好的，大家快去准备。
+Okay, everyone, go prepare quickly.
+
+zh=2
+哇，这个炒饭太好吃了！
+Wow, this fried rice is so delicious!
+
+zh=3
+是的，我们下次还要去这家店吃。
+Yes, next time we want to go to this restaurant to eat.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. We start with Teacher Zhang.
+
+zh=1
+大家好，我叫张老师。
+Hello everyone, I am Teacher Zhang.
+
+en=student
+"大家好" is a classic "hello everyone." And there it is: "我叫张老师." So "I am called Teacher Zhang."
+
+en=teacher
+Exactly. Then we have Xiao Ming introducing himself.
+
+zh=2
+张老师好！我叫小明。
+Hello Teacher Zhang! I am Xiao Ming.
+
+en=student
+"张老师好" is just "Teacher Zhang, hello." And "我叫小明" follows the same pattern we discussed.
+
+en=teacher
+Now, Xiao Hua asks a very important question about their destination.
+
+zh=3
+老师，我们现在去哪里？
+Teacher, where are we going now?
+
+en=student
+"现在" means "now." And "哪里" means "where." But I noticed something. Is "去哪里" the only way to say "go where"?
+
+en=teacher
+Great question. You can also say "去哪儿" (qùr) in northern China, which is very common. But "去哪里" is understood everywhere. Now, listen to Teacher Zhang's answer.
+
+zh=1
+我们现在去厨房做炒饭。
+We are going to the kitchen now to make fried rice.
+
+en=student
+"去厨房" – there is our "go to" grammar point! "Go to the kitchen." And "做炒饭" is "to make fried rice."
+
+en=teacher
+Yes. Then the students get excited. Xiao Ming says:
+
+zh=2
+我准备好了！我要去拿鸡蛋。
+I am ready! I want to go get eggs.
+
+en=student
+"准备好了" uses the "le" at the end to show a completed state, like "I have finished preparing" or "I am ready." And "我要去拿鸡蛋" – "I want to go get eggs."
+
+en=teacher
+Correct. Xiao Hua adds:
+
+zh=3
+我要去买一些蔬菜。
+I want to go buy some vegetables.
+
+en=student
+"买" (mǎi) is to buy, and "一些" (yīxiē) means "some" or "a few." So, "I want to go buy some vegetables."
+
+en=teacher
+Teacher Zhang gives the command:
+
+zh=1
+好的，大家快去准备。
+Okay, everyone, go prepare quickly.
+
+en=student
+"快去" means "hurry and go" or "go quickly."
+
+en=teacher
+And after the hard work is done, we hear the verdict from Xiao Ming.
+
+zh=2
+哇，这个炒饭太好吃了！
+Wow, this fried rice is so delicious!
+
+en=student
+"太...了" (tài...le) is that classic structure for "too" or "extremely." "太好吃了" is "so delicious!"
+
+en=teacher
+And Xiao Hua is already planning the next trip!
+
+zh=3
+是的，我们下次还要去这家店吃。
+Yes, next time we want to go to this restaurant to eat.
+
+en=student
+"下次" (xià cì) means "next time." And "这家店" (zhè jiā diàn) means "this shop" or "this restaurant." Using "这家" is the correct way to count or specify shops because "家" is the measure word for businesses.
+
+en=teacher
+Precisely. They are so happy with the food that they want to "go to this shop to eat." It's a perfect use of "去" followed by a location.
+
+OUTRO
+
+en=student
+Man, I am starving now. Making fried rice sounds much better than just talking about it!
+
+en=teacher
+Haha! I think we've earned a meal ourselves. So, let's recap. Today, we learned how to use "叫" (jiào) to introduce names, and "去" (qù) to talk about going to a place.
+
+en=student
+We also learned some essential cooking words like "炒饭" (fried rice), "鸡蛋" (egg), "蔬菜" (vegetables), and "厨房" (kitchen), along with "准备" (prepare) and "好吃" (delicious).
+
+en=teacher
+Great job, Ryan. Practice these in your next conversation. Thank you for listening to Learning Chinese. Until next time!
+
+en=student
+再见!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "五十岁左右"
+pitch = "中音域，沉稳有力"
+pace = "慢速，充满权威感但温和"
+volume = "适中"
+clarity = "非常清晰，咬字极其标准"
+fluency = "流利，节奏稳健"
+timbre = "浑厚，有磁性"
+emotion = "自信，亲切，具有教师风范"
+usecase = "一位经验丰富的专业厨师老师"
+dialogue = "大家好，我叫张老师。我们现在去厨房做炒饭。好的，大家快去准备。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁出头"
+pitch = "高音域，情绪起伏大"
+pace = "中速，带点兴奋的急促"
+volume = "较大"
+clarity = "清晰，充满活力"
+fluency = "流畅，带有年轻人的轻快感"
+timbre = "清脆，明亮"
+emotion = "热情，好奇，充满活力"
+usecase = "一个对学习充满热情的年轻学生"
+dialogue = "张老师好！我叫小明。我准备好了！我要去拿鸡蛋。哇，这个炒饭太好吃了！"
+
+speaker = 3
+lang = "zh"
+gender = "女性"
+age = "二十岁左右"
+pitch = "中高音域，甜美"
+pace = "中速，放松"
+volume = "适中"
+clarity = "清晰，声音柔和"
+fluency = "流利"
+timbre = "甜美，圆润"
+emotion = "愉快，享受生活"
+usecase = "一个热爱美食的年轻女生"
+dialogue = "老师，我们现在去哪里？我要去买一些蔬菜。是的，我们下次还要去这家店吃。"

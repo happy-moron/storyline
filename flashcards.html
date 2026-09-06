@@ -111,6 +111,7 @@
                 const idx = i + 1;
                 entries[i]._hasWordAudio = false;
                 entries[i]._hasSentenceAudio = false;
+                entries[i]._hasImage = false;
             }
 
             // Fire-and-forget audio checks; UI updates on demand
@@ -118,6 +119,7 @@
                 const idx = i + 1;
                 const wordUrl = `books/${author}/${book}/flashcards/audio_${idx}_word.mp3`;
                 const sentUrl = `books/${author}/${book}/flashcards/audio_${idx}_sentence.mp3`;
+                const imgUrl = `books/${author}/${book}/flashcards/img_${idx}_inverted.png`;
 
                 try {
                     const r = await fetch(wordUrl, { method: 'HEAD' });
@@ -127,6 +129,11 @@
                 try {
                     const r = await fetch(sentUrl, { method: 'HEAD' });
                     entries[i]._hasSentenceAudio = r.ok;
+                } catch (_) {}
+
+                try {
+                    const r = await fetch(imgUrl, { method: 'HEAD' });
+                    entries[i]._hasImage = r.ok;
                 } catch (_) {}
             }
 
@@ -165,6 +172,8 @@
             // Audio available?
             const hasWordAudio = entry._hasWordAudio;
             const hasSentenceAudio = entry._hasSentenceAudio;
+            const hasImage = entry._hasImage;
+            const imgUrl = `books/${author}/${book}/flashcards/img_${idx}_inverted.png`;
 
             mainArea.innerHTML = `
                 <div class="card-container" id="cardContainer" onclick="toggleFlip()">
@@ -172,6 +181,7 @@
                         <div class="card-face card-front">
                             <div class="card-word">${escapeHtml(word)}</div>
                             <div class="card-pinyin">${escapeHtml(pinyin)}</div>
+                            ${hasImage ? `<img class="card-image" src="${imgUrl}" alt="${escapeHtml(word)}">` : ''}
                             <div class="card-hint">tap to reveal English</div>
                         </div>
                         <div class="card-face card-back">

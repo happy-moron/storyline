@@ -1,0 +1,223 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling something essential for daily life: telling the time and, because we love to have fun, how to talk about jokes!
+
+en=student
+I hope my jokes are better than my Chinese grammar, Ellen. Speaking of time, I always get confused when the minutes get complicated. Is it just saying the number and then adding a word for minutes?
+
+en=teacher
+Exactly! In Chinese, telling the time is quite straightforward. For the hour, we use 点, which is diǎn. For the minutes, we use 分, which is fēn. So, if it is eight o'clock, you say 八点. If it is eight ten, you say 八点十分.
+
+en=student
+Okay, so it's just "number plus point plus number plus minute." But what about two o'clock? Do I say 二点?
+
+en=teacher
+That is a very common mistake! When we are telling time, for the number two, we do not use 二. We use 两, which is liǎng. So, two o'clock is 两点. If you say 二点, people will understand you, but it sounds very unnatural. 
+
+en=student
+Got it. 两点. Two o'clock. And I suppose for more precise timing, like eight fifteen, I just follow the same pattern: 八点十五分.
+
+en=teacher
+Precisely. Now, before we get into our dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+We have 笑话, (fourth tone and fourth tone), meaning joke... 笑话。
+
+en=teacher
+We have 好笑, (third tone and fourth tone), meaning funny... 好笑。
+
+en=teacher
+We have 觉得, (third tone and fifth tone), meaning to feel or to think... 觉得。
+
+en=teacher
+We have 刚才, (first tone and second tone), meaning just now or a moment ago... 刚才。
+
+en=teacher
+We have 什么时候, (shen me shi hou - second tone, neutral, second tone, neutral), meaning what time or when... 什么时候。
+
+en=teacher
+We have 肚子, (third tone and third tone), meaning belly or stomach... 肚子。
+
+en=student
+A belly? Are we talking about laughing so hard your stomach hurts?
+
+en=teacher
+Exactly! In this scene, you are going to hear a conversation at a small comedy club. A comedian named Da Wei is trying to perform, but one of his friends, Mei, is a bit skeptical about his jokes. They'll be checking the time and discussing whether the jokes are actually funny.
+
+DIALOGUE
+
+zh=1
+大家好！现在是八点十分。
+Hello everyone! Now it is eight ten.
+
+zh=2
+八点十分？太晚了，我不想听笑话。
+Eight ten? It is too late, I do not want to hear jokes.
+
+zh=1
+别这样！我有一个非常好笑的笑话。
+Don't be like that! I have a very funny joke.
+
+zh=1
+为什么北极熊不吃鱼？因为它们喜欢吃冰淇淋！
+Why do polar bears not eat fish? Because they like eating ice cream!
+
+zh=2
+哈哈哈！这个好笑！
+Hahaha! This is funny!
+
+zh=3
+你刚才笑得真开心。
+You laughed very happily just now.
+
+zh=1
+现在是八点十五分，我们要看下一个！
+Now it is eight fifteen, we are going to look at the next one!
+
+zh=2
+我觉得你讲的笑话都很棒！
+I think the jokes you tell are all great!
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. It starts with our comedian, Da Wei.
+
+zh=1
+大家好！现在是八点十分。
+Hello everyone! Now it is eight ten.
+
+en=student
+"大家好" is a classic "hello everyone." And "现在是" means "now is." I noticed you used "八点十分." So that's the eight, the diǎn, the ten, and the fēn.
+
+en=teacher
+Correct. Now, let's look at Mei's skeptical response.
+
+zh=2
+八点十分？太晚了，我不想听笑话。
+Eight ten? It is too late, I do not want to hear jokes.
+
+en=student
+"太晚了" means "too late." I like the "太...了" structure. It's like saying "too [adjective] to [verb]."
+
+en=teacher
+Yes! And "不想听" means "do not want to listen to." Then Da Wei tries to convince her.
+
+zh=1
+别这样！我有一个非常好笑的笑话。
+Don't be like that! I have a very funny joke.
+
+en=student
+"别这样" is "don't be like this" or "don't be like that." And "非常好笑的笑话"... "好笑" is funny, and "笑话" is the joke itself. So it's a "very funny joke."
+
+en=teacher
+Exactly. Now, for the punchline.
+
+zh=1
+为什么北极熊不吃鱼？因为它们喜欢吃冰淇淋！
+Why do polar bears not eat fish? Because they like eating ice cream!
+
+en=student
+That's a pretty silly joke, but it works! And Mei actually laughs!
+
+zh=2
+哈哈哈！这个好笑！
+Hahaha! This is funny!
+
+en=student
+She says "这个好笑," meaning "this is funny." It's simple and direct.
+
+en=teacher
+Then Lao Wang, the third speaker, observes the scene.
+
+zh=3
+你刚才笑得真开心。
+You laughed very happily just now.
+
+en=student
+Wait, Ellen, "刚才" means "just now," right? And "笑得真开心"... what's that "得" doing there?
+
+en=teacher
+Ah, that is a complement of degree. We use "得" to describe how an action is performed. In this case, the "laughing" was done "very happily." And "刚才" is indeed "just now."
+
+en=student
+That makes sense. Now Da Wei checks the time again to move things along.
+
+zh=1
+现在是八点十五分，我们要看下一个！
+Now it is eight fifteen, we are going to look at the next one!
+
+en=teacher
+He uses the full time structure again: "八点十五分." And "下一个" means "the next one."
+
+en=student
+And finally, Mei is fully on board.
+
+zh=2
+我觉得你讲的笑话都很棒！
+I think the jokes you tell are all great.
+
+en=student
+"我觉得" is "I think" or "I feel." "讲的笑话" means "the jokes [that you] tell."
+
+en=teacher
+That's right. "讲" means to speak or to tell, and "很棒" means "great" or "wonderful." So, Mei went from being skeptical to being a big fan!
+
+OUTRO
+
+en=teacher
+We hope you enjoyed this episode of Learning Chinese. We've covered how to tell the time using "点" for hours and "分" for minutes, and we also learned how to talk about jokes and how funny they are.
+
+en=student
+And don't forget, when you're telling the time and you reach two o'clock, make sure to use "两点" and not "二点"! I'll definitely be remembering that one.
+
+en=teacher
+If you did, you're already one step closer to fluency. Thanks for listening, and we'll see you next time!
+
+en=student
+再见！ (Goodbye!)
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，情绪激动时会升高"
+pace = "中等偏快"
+volume = "响亮，富有感染力"
+clarity = "清晰，带有舞台表演感"
+fluency = "流畅，充满活力"
+timbre = "明亮，清脆"
+emotion = "热情，滑稽，充满表演欲望"
+usecase = "一个充满热情的年轻脱口秀演员"
+dialogue = "大家好！现在是八点十分。别这样！我有一个非常好笑的笑话！哈哈哈！我们要看下一个！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中高音域"
+pace = "中等"
+volume = "中等"
+clarity = "非常清晰"
+fluency = "自然，情绪波动大"
+timbre = "清脆，甜美"
+emotion = "起初是怀疑和不耐烦，后来变得开朗大笑"
+usecase = "一个性格直率、爱笑的年轻女性"
+dialogue = "八点十分？太晚了，我不想听笑话。哈哈哈！这个好笑！我觉得你讲的笑话都很棒！"
+
+speaker = 3
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "低音域，平稳"
+pace = "较慢"
+volume = "适中"
+clarity = "清晰，语速缓慢"
+fluency = "流利，节奏感强"
+timbre = "温和，圆润"
+emotion = "从容，友好，像个旁观者"
+usecase = "一个性格稳重、乐于观察的朋友"
+dialogue = "你刚才笑得真开心。"

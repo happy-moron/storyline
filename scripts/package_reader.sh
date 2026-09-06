@@ -31,7 +31,7 @@ trap 'rm -rf "$STAGE"' EXIT
 echo "==> Staging in $STAGE"
 
 # ── 1. Core reader files ──────────────────────────────────────────────
-cp index.html styles.css "$STAGE/"
+cp index.html styles.css flashcards.html flashcards.css "$STAGE/"
 
 # ── 2. Dictionary ─────────────────────────────────────────────────────
 mkdir -p "$STAGE/dict"
@@ -103,6 +103,22 @@ load_book_data() {
                     fi
                 fi
             done < "$jsonf"
+        done
+    fi
+
+    # flashcards/ – entries JSON, audio, and inverted images only
+    local fc="$PROJECT_ROOT/books/${author}/${slug}/flashcards"
+    if [ -d "$fc" ]; then
+        mkdir -p "$bookdir/flashcards"
+        # entries cache (required by flashcard viewer)
+        [ -f "$fc/flashcard_entries.json" ] && cp "$fc/flashcard_entries.json" "$bookdir/flashcards/"
+        # word + sentence audio
+        for af in "$fc"/audio_*.mp3; do
+            [ -f "$af" ] && cp "$af" "$bookdir/flashcards/"
+        done
+        # inverted (dark-mode) images only – not the originals
+        for inf in "$fc"/img_*_inverted.png; do
+            [ -f "$inf" ] && cp "$inf" "$bookdir/flashcards/"
         done
     fi
 }

@@ -1,0 +1,204 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into a world that many of our listeners know very well: the world of online gaming. 
+
+en=student
+I know a bit too much about that! I spent all night playing with my friends.
+
+en=teacher
+Then this lesson is perfect for you. Today, we are learning two essential grammar points. First, we are mastering the particle 的, which is used to express possession. The structure is Noun one plus 的 plus Noun two. For example, 我的电脑, which means my computer, or 队友的装备, which means the teammate's equipment.
+
+en=student
+Right, it's like adding an apostrophe 's' in English, but it sits between the owner and the thing they own.
+
+en=teacher
+Exactly. Second, we are looking at the question particle 呢. When placed at the end of a sentence, it can mean "what about...?" or "where is...?". For example, 你呢? means "and you?" or "how about you?". If you lose your phone and ask, 我的手机呢?, it means "Where is my phone?".
+
+en=student
+That's super useful for those moments when you're looking for something or want to return a question.
+
+en=teacher
+It really is. Before we listen to the dialogue, let's look at our six key vocabulary words. 
+
+en=teacher
+We have 游戏, (second tone and fourth tone), meaning game... 游戏。
+
+en=teacher
+We have 队友, (fourth tone and third tone), meaning teammate... 队友。
+
+en=teacher
+We have 电脑, (fourth tone and third tone), meaning computer... 电脑。
+
+en=teacher
+We have 装备, (first tone and fourth tone), meaning equipment... 装备。
+
+en=teacher
+We have 厉害, (fourth tone and fourth tone), meaning awesome or amazing... 厉害。
+
+en=teacher
+We have 准备, (third tone and fourth tone), meaning to prepare or get ready... 准备。
+
+en=student
+Got it. So, what is the dialogue about?
+
+en=teacher
+In this scene, you are going to hear a conversation between two friends, Alex and Sam, who are playing a video game together online. Alex is having some technical difficulties and is feeling a bit frustrated.
+
+DIALOGUE
+
+zh=1
+萨姆，你在哪儿？我的电脑太慢了！
+Sam, where are you? My computer is too slow!
+
+zh=2
+我在玩呢。你的队友呢？
+I am playing. Where is your teammate?
+
+zh=1
+我的队友今天没时间。你的装备怎么样？
+My teammate doesn't have time today. How is your equipment?
+
+zh=2
+我的装备非常厉害！你看我的新电脑。
+My equipment is very awesome! Look at my new computer.
+
+zh=1
+我的电脑太旧了。我们的游戏怎么回事？
+My computer is too old. What's going on with our game?
+
+zh=2
+没关系，慢慢来。准备好了吗？
+It's okay, take it slow. Are you ready?
+
+zh=1
+准备好了，我们走吧！
+Ready, let's go!
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with Alex.
+
+zh=1
+萨姆，你在哪儿？我的电脑太慢了！
+Sam, where are you? My computer is too slow!
+
+en=student
+"你在哪儿?" That's the classic way to ask "Where are you?". And "我的电脑" uses our first grammar point. "我" is "I", and "的" makes it "my". So "我的电脑" is "my computer". 
+
+en=teacher
+Correct. And "太慢了" (tài màn le) means "too slow". The "了" here emphasizes the state.
+
+zh=2
+我在玩呢。你的队友呢？
+I am playing. Where is your teammate?
+
+en=student
+"我在玩呢". Here, the "呢" is a bit different; it's acting as a particle to indicate an ongoing state or just adding a conversational tone. But then Sam asks: "你的队友呢?". 
+
+en=teacher
+This is a perfect use of our second grammar point. "你的" means "your", and "队友" is "teammate". By adding "呢" at the end, Sam is asking "What about your teammate?" or "Where is your teammate?".
+
+en=student
+It's much more natural than saying a whole long sentence like "Where is your teammate located?".
+
+en=teacher
+Exactly. Let's move to the next line.
+
+zh=1
+我的队友今天没时间。你的装备怎么样？
+My teammate doesn't have time today. How is your equipment?
+
+en=student
+"我的队友" is "my teammate". "没时间" (méi shí jiān) means "no time" or "doesn't have time". Then, "你的装备怎么样?". Here, "装备" is "equipment".
+
+en=teacher
+"怎么样" (zěn me yàng) is a very common way to ask "how is it?".
+
+zh=2
+我的装备非常厉害！你看我的新电脑。
+My equipment is very awesome! Look at my new computer.
+
+en=student
+"非常厉害" (fēi cháng lì hai) means "extremely awesome". I use "厉害" all the time when my friends play well in games. 
+
+en=teacher
+It's a great word. And "我的新电脑" uses "的" again to show possession: "my new computer".
+
+zh=1
+我的电脑太旧了。我们的游戏怎么回事？
+My computer is too old. What's going on with our game?
+
+en=student
+"太旧了" (tài jiù le) means "too old". And "我们的游戏" uses the plural "our". "我" is "I", so "我们" is "we", and "我们的" is "our". 
+
+en=teacher
+Then Alex asks: "我们的游戏怎么回事?". "怎么回事" (zěn me huí shì) is a fantastic phrase that means "what's going on?" or "what happened?".
+
+zh=2
+没关系，慢慢来。准备好了吗？
+It's okay, take it slow. Are you ready?
+
+en=student
+"没关系" (méi guān xi) is "it's okay" or "no problem". "慢慢来" (màn màn lái) means "take it slow" or "take your time".
+
+en=teacher
+And finally, the question: "准备好了吗?". 
+
+en=student
+"准备" is "to prepare". "好了" implies the action of preparing is completed, so it means "ready". And "吗" makes it a yes/no question.
+
+zh=1
+准备好了，我们走吧！
+Ready, let's go!
+
+en=teacher
+And they are off to battle!
+
+OUTRO
+
+en=student
+That was intense! I almost felt the lag from Alex's side.
+
+en=teacher
+Haha, yes! But we learned some great things. Today we practiced using 的 to show possession, like 我的电脑 and 我们的游戏. 
+
+en=student
+And we used 呢 to ask "what about...?" or "where is...?", like 你的队友呢? It makes your Chinese sound so much more natural and less like a textbook.
+
+en=teacher
+Exactly. Make sure you practice these in your own daily life. Next time you lose your keys, ask "我的钥匙呢?".
+
+en=student
+I'll definitely try that. See you in the next episode of Learning Chinese!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，带有一些由于挫败感而产生的波动"
+pace = "中速，略显匆忙"
+volume = "中等偏高"
+clarity = "清晰，但语调比较急促"
+fluency = "流畅，但情绪起伏较大"
+timbre = "清脆，略带少年感"
+emotion = "焦虑，有些挫败感，但很投入"
+usecase = "一个正在玩游戏且网络不太稳定的年轻人"
+dialogue = "萨姆，你在哪儿？我的电脑太慢了！我的队友今天没时间。我的电脑太旧了。我们的游戏怎么回事？准备好了，我们走吧！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中音域，非常平稳"
+pace = "缓慢，节奏从容"
+volume = "中等"
+clarity = "非常清晰，每个音节都分明"
+fluency = "极其流畅，非常有自信"
+timbre = "圆润，冷静且有力量感"
+emotion = "冷静，从容，带有一点点优越感"
+usecase = "一个技术高超、心态平和的高端玩家"
+dialogue = "我在玩呢。你的队友呢？我的装备非常厉害！你看我的新电脑。没关系，慢慢来。准备好了吗？"

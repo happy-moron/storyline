@@ -1,218 +1,246 @@
 INTRO
 
 en=teacher
-Welcome to Learning Chinese. I am Ellen, and today we are tackling a theme that is a bit... bloody, but extremely important for real-life survival: a shaving accident.
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a topic that is a bit painful, but something everyone has experienced: a shaving accident.
 
 en=student
-Oh man, that sounds painful. I've definitely had those mornings where a razor gets a bit too enthusiastic.
+Oh no, I have definitely cut myself while shaving before. It is a nightmare.
 
 en=teacher
-It can be scary! And because of that drama, we are going to focus on two very essential grammar points. First, the standard negation using 不, which is used with verbs and adjectives to say "not" or "do not." For example, 我不吃 (I do not eat) or 我不累 (I am not tired).
+It really is. Today, we are going to learn two very important grammar points. First, the standard negation using 不. You use this before verbs and adjectives to say you do not do something or you are not a certain way. For example, 我不喝咖啡, I do not drink coffee, or 我不累, I am not tired.
 
 en=student
-Right, so it is for present or habitual actions, and for adjectives. But I always get confused with 没. Is there a difference?
+And the second one is the adverb 都, which means "all" or "both." 
 
 en=teacher
-Yes! That is a great question, Ryan. You use 没 to negate past actions or to say you "do not have" something. But for describing a current state, like "I am not tired," or a preference, like "I do not want," you must use 不.
+Exactly. In Chinese, the word "all" or "both" must come after the subject and before the verb or adjective. So instead of saying "All we are students," you say 我们都是学生, We all are students.
 
 en=student
-Got it. And the second grammar point is the adverb 都, which means "all" or "both."
+Got it. Subject, then 都, then the action. 
 
 en=teacher
-Exactly. 都 is used to indicate that something applies to every member of a group. It always comes after the subject and before the verb or adjective. For example, 我们都是学生 (We are all students) or 他们都很开心 (They are all very happy).
+Precisely. Now, before we listen to our story, let's look at our six key vocabulary words. 
+
+en=teacher
+We have 刮胡子, (first tone, second tone, neutral tone), meaning to shave... 刮胡子.
+
+en=teacher
+We have 疼, (second tone), meaning to hurt or painful... 疼.
+
+en=teacher
+We have 出血, (first tone, fourth tone), meaning to bleed... 出血.
+
+en=teacher
+We have 伤口, (first tone, third tone), meaning wound... 伤口.
+
+en=teacher
+We have 医生, (first tone, first tone), meaning doctor... 医生.
+
+en=teacher
+And finally, we have 擦, (first tone), meaning to wipe or clean... 擦.
 
 en=student
-So if I'm talking about a group of friends, I would say 他们都不喜欢 (They all do not like it).
+So, what is the scenario for today?
 
 en=teacher
-Precisely! You are using both! Now, before we get into the drama, let's look at our key vocabulary.
-
-en=teacher
-We have 刮胡子, (first tone, second tone, and neutral tone), meaning to shave... 刮胡子。
-
-en=teacher
-We have 刀, (first tone), meaning knife or razor... 刀。
-
-en=teacher
-We have 疼, (second tone), meaning painful or to hurt... 疼。
-
-en=teacher
-We have 舒服, (first tone and neutral tone), meaning comfortable or well... 舒服。
-
-en=teacher
-We have 不小心, (fourth tone, third tone, and neutral tone), meaning accidentally or not careful... 不小心。
-
-en=student
-Okay, I am ready. What is the scene?
-
-en=teacher
-In this dialogue, you are going to hear a very stressful morning. Li Hua is in the bathroom, and he has just had a shaving mishap. His roommate, Zhang Wei, walks in to find him bleeding.
+In this dialogue, you will hear a conversation between two roommates. Xiao Ming is in the bathroom trying to shave, but he has made a mistake. His roommate, Xiao Hua, comes in to find him in a bit of a mess.
 
 DIALOGUE
 
 zh=1
-哎呀！好疼啊！
+哎哟！太疼了！
 Ouch! It hurts so much!
 
 zh=2
-你怎么了？你在流血！
-What happened to you? You are bleeding!
+你怎么了？你在做什么？
+What's wrong? What are you doing?
 
 zh=1
-我刮胡子，不小心割到了。
-I was shaving, and I accidentally cut myself.
+我在刮胡子，但是我不小心切到脸了。
+I am shaving, but I accidentally cut my face.
 
 zh=2
-你怎么这么不小心？所有的剃须刀都这么锋利吗？
-Why are you so careless? Are all razors this sharp?
+天哪！你看，一直在出血！你都受伤了，怎么还不小心？
+Oh my god! Look, it's bleeding! You are already injured, how are you still so careless?
 
 zh=1
-我不知道。我不觉得这把刀正常。
-I do not know. I do not think this razor is normal.
+我觉得没事，我不觉得这很严重。
+I think it is fine, I don't think this is serious.
 
 zh=2
-别动。我也要去拿点药。
-Do not move. I will also go get some medicine.
+你说没事，可是你看这里，血这么多！
+You say it is fine, but look here, there is so much blood!
 
 zh=1
-快点！我真的不舒服！
-Hurry! I really do not feel well!
+我不打算看医生，我不需要。
+I don't plan to see a doctor, I don't need to.
 
 zh=2
-没关系，我们以后都要小心一点。
-It is okay, we both must be careful in the future.
+你又不听话！我们都得先处理一下这个伤口！
+You are being disobedient again! We both need to handle this wound first!
+
+zh=1
+好吧，好吧。
+Alright, alright.
+
+zh=2
+快点，拿个纸巾来擦一下。
+Hurry, get a tissue and wipe it.
 
 BREAKDOWN
 
 en=teacher
-Let's look at that dialogue and break it down line by line. We start with Li Hua's reaction to the pain.
+Let's look at that dialogue, and break it down line by line. It starts with Xiao Ming in pain.
 
 zh=1
-哎呀！好疼啊！
+哎哟！太疼了！
 Ouch! It hurts so much!
 
 en=student
-"哎呀" is such a classic exclamation. It is like "Oh my" or "Ouch." And "好疼" is "so painful."
+"哎哟" is that classic sound for "ouch" or "oh no." And "疼" is the second tone we mentioned earlier. 
 
 en=teacher
-Right. Then Zhang Wei rushes in.
+Correct. Then Xiao Hua asks what is happening.
 
 zh=2
-你怎么了？你在流血！
-What happened to you? You are bleeding!
+你怎么了？你在做什么？
+What's wrong? What are you doing?
 
 en=student
-"你怎么了?" is the standard way to ask "What's wrong?" or "What happened to you?" And "流血" means to bleed.
+"你怎么了" is a very common way to ask "What's wrong with you?" or "What happened to you?"
 
 en=teacher
-Now we get into the core of our lesson. Listen to Li Hua explain the accident.
+Right. And then we get to the core of the problem.
 
 zh=1
-我刮胡子，不小心割到了。
-I was shaving, and I accidentally cut myself.
+我在刮胡子，但是我不小心切到脸了。
+I am shaving, but I accidentally cut my face.
 
 en=student
-There is our first "不"! "不小心" (not careful) means accidentally. And "刮胡子" is the verb we learned earlier.
+Here is our first big grammar point! "我不小心." "不" is the negation, and "小心" means careful. So "I am not careful" or "I accidentally..." did that mean it's a single word?
 
 en=teacher
-Exactly. "割到" means to cut or to have been cut. Then Zhang Wei reacts with some frustration.
+It can be used as a set phrase meaning "accidentally" or "carelessly." It's "不" plus "小心." And "刮胡子" is our vocab word for shaving.
+
+en=student
+Then Xiao Hua reacts. She seems pretty stressed.
 
 zh=2
-你怎么这么不小心？所有的剃须刀都这么锋利吗？
-Why are you so careless? Are all razors this sharp?
-
-en=student
-"怎么这么..." is a great phrase for "Why so..." or "How come so..." It sounds very natural. And here is our second grammar point! "所有的...都..."
+天哪！你看，一直在出血！你都受伤了，怎么还不小心？
+Oh my god! Look, it's bleeding! You are already injured, how are you still so careless?
 
 en=teacher
-Yes! "所有的" means "all of" or "every," and it is followed by the noun "剃须刀" (razor). Then we use "都" before the adjective "锋利" (sharp) to emphasize that it applies to all of them.
+"出血" is our verb for bleeding. But look at the sentence "你都受伤了". Here, "都" is being used to emphasize that the situation is already at a certain point—"You've already injured yourself."
 
 en=student
-So "所有的学生都..." would be "all of the students..." That makes perfect sense. Now, Li Hua sounds a bit paranoid.
+Wait, I thought "都" was just for "all" or "both"?
+
+en=teacher
+In this specific context, it adds emphasis to the state of being injured, similar to "already." But let's look at how we use "不" again in the next line.
 
 zh=1
-我不知道。我不觉得这把刀正常。
-I do not know. I do not think this razor is normal.
+我觉得没事，我不觉得这很严重。
+I think it is fine, I don't think this is serious.
 
 en=student
-"我不觉得" uses "不" to negate the verb "觉得," which means to feel or to think.
+"我不觉得" is "I don't think." So it's "不" plus "觉得," which means to feel or think.
 
 en=teacher
-Right. He doesn't think it's normal. Zhang Wei tries to help.
+Exactly. Xiao Hua is definitely not agreeing with him.
 
 zh=2
-别动。我也要去拿点药。
-Do not move. I will also go get some medicine.
+你说没事，可是你看这里，血这么多！
+You say it is fine, but look here, there is so much blood!
 
 en=student
-"别动" is a command, "don't move." And "我也要" uses "也" for "also." He is saying he will also go to get medicine.
+"这么多" means "so much."
 
 en=teacher
-And finally, the climax of the pain and the resolution.
+And then Xiao Ming tries to avoid the doctor.
 
 zh=1
-快点！我真的不舒服！
-Hurry! I really do not feel well!
+我不打算看医生，我不需要。
+I don't plan to see a doctor, I don't need to.
+
+en=student
+"我不打算" is "I don't plan to." More "不" negation.
+
+en=teacher
+And here is Xiao Hua losing her patience. This is a great example of "both" or "all."
 
 zh=2
-没关系，我们以后都要小心一点。
-It is okay, we both must be careful in the future.
+你又不听话！我们都得先处理一下这个伤口！
+You are being disobedient again! We both need to handle this wound first!
 
 en=student
-"不舒服" means "not comfortable," but in a health context, it means "to feel unwell." 
+There it is! "我们都得." "我们" is "we," then "都" is "both/all," and then "得" means "must" or "need to." 
 
 en=teacher
-And "没关系" is the most important phrase for any learner—"it's okay" or "it doesn't matter." Finally, "我们以后都要小心一点" uses "都" to say that *both* of them (or all of them) need to be careful in the future.
+Perfect. "我们都得" means "We both need to." And don't forget our vocab word "伤口," the wound.
 
 en=student
-So, "都" emphasizes the collective nature of the action. "We all/both must be careful."
+Xiao Ming seems to give in.
+
+zh=1
+好吧，好吧。
+Alright, alright.
+
+zh=2
+快点，拿个纸巾来擦一下。
+Hurry, get a tissue and wipe it.
+
+en=student
+And finally, "擦" (cā), the first tone, to wipe.
 
 en=teacher
-You've got it!
+Exactly. A messy situation, but a great way to practice our negation and our "all" adverb.
 
 OUTRO
 
+en=student
+Phew. I think I'll stick to using an electric razor from now on to avoid any drama.
+
 en=teacher
-That was a close call for Li Hua! Today we learned how to use "不" to negate verbs and adjectives, such as "不小心" and "不舒服."
+A wise choice! So, to recap: Today we learned how to use "不" to negate verbs and adjectives, like "我不觉得" (I don't think) or "我不小心" (I wasn't careful).
 
 en=student
-And we learned how to use "都" to say "all" or "both," especially in patterns like "所有的...都..."
+And we learned that "都" comes after the subject to mean "all" or "both," like "我们都得" (We both/all need to).
 
 en=teacher
-Exactly. Practice these in your daily life, even if you aren't shaving!
+Spot on. We also covered vocabulary related to minor injuries: 刮胡子, 疼, 出血, 伤口, 医生, and 擦.
 
 en=student
-Hopefully, you don't need to use them in a medical emergency, but it's better to know.
+Thanks for the lesson, Ellen! See you next time.
 
 en=teacher
-Thanks for listening to Learning Chinese. See you next time!
+Goodbye everyone!
 
 VOICE PROFILES
 
 speaker = 1
 lang = "zh"
 gender = "男性"
-age = "三十岁出头"
-pitch = "中音域，因痛苦而带有颤抖"
-pace = "中速，但在激动时变得较快"
-volume = "响亮，带有惊恐感"
-clarity = "清晰，但由于疼痛略显急促"
-fluency = "不连贯，带有喘息声" 
-timbre = "略显尖锐"
-emotion = "惊恐、疼痛、焦虑" 
-usecase = "一个不小心割伤自己的倒霉男人"
-dialogue = "哎呀！好疼啊！我不知道！我不觉得这把刀正常！快点！我真的不舒服！"
+age = "二十多岁"
+pitch = "中音域，由于疼痛而显得有些颤抖"
+pace = "中速，在疼痛时会有停顿"
+volume = "中等，带有一种尴尬和不适的感觉"
+clarity = "略微含糊，因为在表达疼痛"
+fluency = "在表达痛苦和辩解时节奏不均匀"
+timbre = "略显沙哑，带有年轻男性的质感"
+emotion = "尴尬，有些疼痛，有点倔强"
+usecase = "一个不小心弄伤自己的年轻男子"
+dialogue = "哎哟！太疼了！我不觉得这很严重。"
 
 speaker = 2
 lang = "zh"
-gender = "男性"
-age = "三十岁出头"
-pitch = "中低音域，稳定"
-pace = "略慢，语速平稳"
-volume = "中等，听起来很可靠"
-clarity = "非常清晰，吐字分明"
-fluency = "流利，充满同情心但保持冷静" 
-timbre = "浑厚，温和"
-emotion = "关切、镇定、略带责备" 
-usecase = "一个冷静且乐于助人的室友"
-dialogue = "你怎么了？你在流血！所有的剃须刀都这么锋利吗？别动。没关系，我们以后都要小心一点。"
+gender = "女性"
+age = "二十多岁"
+pitch = "高音域，因为担心而显得尖锐"
+pace = "稍快，语速较急"
+volume = "大，带有惊慌失措的感觉"
+clarity = "非常清晰，每个词都很有力"
+fluency = "流畅，但在表达担忧时节奏紧凑"
+timbre = "清脆，具有穿透力"
+emotion = "焦虑，焦急，充满关切"
+usecase = "一个看到朋友受伤而感到惊慌的室友"
+dialogue = "你怎么了？天哪！你都受伤了，怎么还不小心？我们都得先处理一下这个伤口！"

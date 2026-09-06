@@ -1,199 +1,215 @@
 INTRO
 
 en=teacher
-Welcome to Learning Chinese. I am Ellen, and today we are exploring the world of art. 
+Welcome to Learning Chinese. I am Ellen, and today we are diving into the high-stakes world of art auctions and the language of value.
 
 en=student
-I love art, but sometimes I find it hard to describe what I see. I usually just say "it is good" or "it is bad."
+Art auctions? That sounds fancy. I'm going to need more than just "hello" and "thank you" to navigate that!
 
 en=teacher
-That is why today's lesson is so important. We are going to learn how to be more specific using two grammar points. First, how to indicate a number in excess using 多. 
+Exactly. When you are dealing with art, you need to talk about prices and quantities precisely. Today, we are covering two major grammar points. First, counting money. In Chinese, for everyday conversation, we use 块 for "yuan." When you have decimals, like fifty cents, you use 毛 or 角. For example, if something is fifteen yuan and fifty cents, you can say 一块五毛 or simply 一块五. 
 
 en=student
-Is that like saying "more than" or "over"?
+So it is like saying "one buck fifty" in English. And the more formal way uses 元 instead of 块?
 
 en=teacher
-Exactly. We use it in two ways. If you are using a round number, like ten or fifty, you put 多 before the measure word. For example, 十多个人, which means more than ten people. 
+Precisely. Second, we are looking at how to ask about quantities using 几. To ask "how many" or "how much," the structure is 几 plus a measure word, then the noun. For example, if you want to ask "how many paintings," you would say 几幅画. You can't just say "how many paintings" without that middle measure word.
 
 en=student
-And if the number is not a round number? Like, if I want to say "two and a bit hours"?
+Got it. So it is 几, then the measure word, then the object. If I want to ask "how many people," I'd say 几个人?
 
 en=teacher
-Great question! In that case, you put 多 after the measure word. For example, 两个多小时. So, the position changes depending on whether the number ends in zero or not.
+You've got it! Before we listen to our dialogue, let's look at our six key vocabulary words. 
+
+en=teacher
+We have 艺术, (fourth tone, fourth tone), meaning art... 艺术.
+
+en=teacher
+We have 艺术品, (fourth tone, fourth tone, third tone), meaning artwork... 艺术品.
+
+en=teacher
+We have 画, (fourth tone), meaning painting... 画.
+
+en=teacher
+We have 多少, (first tone, neutral), meaning how many or how much... 多少.
+
+en=teacher
+We have 贵, (fourth tone), meaning expensive... 贵.
+
+en=teacher
+We have 价格, (fourth tone, first tone), meaning price... 价格.
 
 en=student
-That is a very helpful distinction. What is the second grammar point?
+So, what is the scene for today?
 
 en=teacher
-The second is using 几 to mean "several" or "a few." You use it with a measure word and a noun. For example, 几本书, which means several books.
-
-en=student
-Got it. So 几 is like "a few" when it is used this way. 
-
-en=teacher
-Precisely. Before we listen to our dialogue, let's look at our key vocabulary. 
-
-en=teacher
-We have 作品, which is a fourth tone and a fourth tone, meaning a work of art... 作品.
-
-en=teacher
-We have 杰作, which is a second tone and a fourth tone, meaning a masterpiece... 杰作.
-
-en=teacher
-We have 奇怪, which is a second tone and a fourth tone, meaning strange... 奇怪.
-
-en=teacher
-We have 无聊, which is a second tone and a second tone, meaning boring... 无聊.
-
-en=student
-Sounds good. What is the dialogue about?
-
-en=teacher
-In this scene, you will hear two friends, Li Wei and Xiao Mei, at a modern art gallery. Li Wei is a very enthusiastic art lover, while Xiao Mei is... well, she is a bit skeptical about this particular exhibition.
+You are at a high-end art gallery. Xiao Mei, a young and enthusiastic art lover, is browsing a collection with Lao Wang, a seasoned art dealer. Xiao Mei is looking for something special, but the prices are quite high!
 
 DIALOGUE
 
 zh=1
-看看这个作品！简直是杰作！
-Look at this work of art! It is simply a masterpiece!
+看这个艺术品！多美啊！
+Look at this artwork! It is so beautiful!
 
 zh=2
-我觉得这只是几块奇怪的石头。
-I think this is just several strange stones.
+是啊，这幅画非常有艺术感。
+Yes, this painting has a great sense of art.
 
 zh=1
-你怎么这么没感觉？这位艺术家已经有五十多岁了，他的作品非常有名。
-How can you be so indifferent? This artist is already over fifty years old, and his works are very famous.
+这幅画多少钱？
+How much is this painting?
 
 zh=2
-我们已经看了两个多小时了，我还是觉得很无聊。
-We have already looked for over two hours, and I still find it very boring.
+这幅画两千三百四十五块。
+This painting is two thousand three hundred forty-five yuan.
 
 zh=1
-你看，这幅画里有几种不同的感觉。
-Look, there are several different feelings in this painting.
+天哪，太贵了！那这组画有几幅？
+Oh my god, it is too expensive! So, how many paintings are in this set?
 
 zh=2
-可是在我眼里，这只是几张没意思的纸。
-But in my eyes, these are just several uninteresting pieces of paper.
+这组一共五幅画。
+There are five paintings in this set in total.
+
+zh=1
+这五幅画一共多少钱？
+How much for all five paintings in total?
+
+zh=2
+五幅一共一万一千七百块钱。
+Five of them are eleven thousand seven hundred yuan in total.
 
 BREAKDOWN
 
 en=teacher
-Let's break down this dialogue line by line. We start with Li Wei, who is clearly impressed.
+Let's break down this intense shopping experience line by line. We start with Xiao Mei's excitement.
 
 zh=1
-看看这个作品！简直是杰作！
-Look at this work of art! It is simply a masterpiece!
+看这个艺术品！多美啊！
+Look at this artwork! It is so beautiful!
 
 en=student
-"作品" means work of art, and "杰作" means masterpiece. Li Wei is being quite dramatic!
+"看" means to look. And "艺术品" is our vocabulary word for artwork. I noticed she said "多美啊". Is that how you say "so beautiful"?
 
 en=teacher
-Yes, he is. Now, let's look at Xiao Mei's skeptical response.
+Yes! "多" can be used before an adjective to mean "so" or "how" in an exclamation. "多美啊" means "how beautiful!"
 
 zh=2
-我觉得这只是几块奇怪的石头。
-I think this is just several strange stones.
+是啊，这幅画非常有艺术感。
+Yes, this painting has a great sense of art.
 
 en=student
-Wait, here is our grammar point! She said "几块". "几" means several, and "块" is the measure word for stones or pieces. 
+"艺术感" is "sense of art." Interesting. And she used "幅" (fú) there. Is that the measure word for paintings?
 
 en=teacher
-Correct. And "奇怪" means strange. She is really not feeling the art.
-
-en=teacher
-Now, let's look at Li Wei's reaction to her lack of emotion.
+Exactly. Every noun in Chinese needs a measure word. For paintings, we use "幅".
 
 zh=1
-你怎么这么没感觉？这位艺术家已经有五十多岁了，他的作品非常有名。
-How can you be so indifferent? This artist is already over fifty years old, and his works are very famous.
+这幅画多少钱？
+How much is this painting?
 
 en=student
-"你怎么这么..." is a common way to say "How can you be so..." or "Why are you so...". But I'm curious about "五十多岁". You mentioned that with round numbers, the "多" goes before the measure word?
+"多少钱" is the standard way to ask "how much money?" But I remember you said "几" can also be used for quantity. What is the difference?
 
 en=teacher
-Exactly. Since fifty is a round number, we say 五十多岁. It means over fifty years old. If she said she was twenty-one, she would say 二十一岁多.
-
-en=student
-That makes sense. It depends on whether you are rounding the number or describing a specific amount.
-
-en=teacher
-You've got it. Now, Xiao Mei is losing patience.
+Great question. We use "多少" (duōshao) when the number could be large or when we don't know the scale. We use "几" (jǐ) when we expect the number to be small, usually under ten or twelve. Since Xiao Mei doesn't know if this painting is a ten-yuan print or a ten-thousand-yuan masterpiece, "多少" is the safer bet.
 
 zh=2
-我们已经看了两个多小时了，我还是觉得很无聊。
-We have already looked for over two hours, and I still find it very boring.
+这幅画两千三百四十五块。
+This painting is two thousand three hundred forty-five yuan.
 
 en=student
-Ah, here is the second way to use "多"! Since two is not a round number like ten or fifty, the "多" comes after the measure word, "个". So, "两个多小时".
+Okay, let's look at that number. "两千三百四十五块". I have a question about the number two. Why didn't he say "二千"?
 
 en=teacher
-Perfect. And "无聊" means boring. She is definitely ready to leave.
+That is a very important distinction for learners! When you are counting, you use "二" (èr). But when you are stating a quantity, especially for large numbers like two thousand, two hundred, or two million, we use "两" (liǎng). So it is "两千", not "二千".
 
-en=teacher
-Let's look at Li Wei's final attempt to convince her.
+en=student
+That makes sense. Two thousand, three hundred, forty-five. "两千三百四十五". And "块" is the colloquial way to say "yuan".
 
 zh=1
-你看，这幅画里有几种不同的感觉。
-Look, there are several different feelings in this painting.
+天哪，太贵了！那这组画有几幅？
+Oh my god, it is too expensive! So, how many paintings are in this set?
 
 en=student
-"几种" means several kinds. Here, "几" is used with the measure word "种" to mean "several kinds."
+She says "太贵了". "太...了" is that classic "too [adjective]" structure. And then she asks "有几幅?". There's the "几 + measure word" grammar again!
 
 en=teacher
-And finally, Xiao Mei's final dismissal.
+Correct. "几幅" (jǐ fú) means "how many [paintings]."
 
 zh=2
-可是在我眼里，这只是几张没意思的纸。
-But in my eyes, these are just several uninteresting pieces of paper.
+这组一共五幅画。
+There are five paintings in this set in total.
 
 en=student
-"几张". "张" is the measure word for flat things, like paper. So "几张" is several sheets. And "没意思" is a great way to say "uninteresting" or "not interesting."
+"一共" means "altogether" or "in total." That's very useful for shopping.
+
+zh=1
+这五幅画一共多少钱？
+How much for all five paintings in total?
+
+en=student
+She's negotiating! She's asking for the total price of the whole set.
+
+zh=2
+五幅一共一万一千七百块钱。
+Five of them are eleven thousand seven hundred yuan in total.
+
+en=student
+Wow, eleven thousand seven hundred! That's "一万一千七百". 
 
 en=teacher
-Exactly. She is definitely not an art critic!
+Yes! "一万" is ten thousand. So "一万一千七百" is ten thousand, one thousand, seven hundred. It's a big number! And notice he ends with "块钱" (kuài qián). Adding "钱" after the amount is a very natural way to emphasize we are talking about money.
+
+en=student
+So, "两千块" or "两千块钱" both work?
+
+en=teacher
+They do! "块" is often used alone in speech, but adding "钱" is very common.
 
 OUTRO
 
-en=student
-Wow, that was a very intense art gallery visit. 
-
 en=teacher
-It certainly was. Today we covered how to use "几" to mean "several" with measure words, and we looked at how the position of "多" changes depending on whether you are using a round number or not.
+That was a high-priced lesson! To recap, we practiced how to ask about prices using "多少钱" and how to ask about quantities using "几" plus a measure word, like "几幅画".
 
 en=student
-Remember: round number, like fifty, then "多", then the measure word. Non-round number, like two, then the measure word, then "多". 
+And we learned that when counting large numbers, we use "两" instead of "二" for "two," like "两千". And for paintings, don't forget the measure word "幅".
 
 en=teacher
-Perfectly summarized. Thanks for listening to Learning Chinese. See you next time!
+Perfect. We also touched on "艺术品" for artwork and "太...了" for "too [adjective]."
+
+en=student
+Thanks, Ellen. I think I'm ready to visit an art gallery in Beijing now!
+
+en=teacher
+Just make sure you have enough "块钱" in your wallet first! Thanks for listening to Learning Chinese.
 
 VOICE PROFILES
 
 speaker = 1
 lang = "zh"
-gender = "男性"
-age = "三十岁左右"
-pitch = "中音域，因激动而有所起伏"
-pace = "略快，充满激情"
-volume = "大，非常有感染力"
-clarity = "吐字清晰，带有表演性"
-fluency = "流畅，语调高亢" 
-timbre = "清脆，有活力"
-emotion = "狂热，对艺术充满热爱" 
-usecase = "一个对艺术极度痴迷、甚至有点夸张的艺术评论家"
-dialogue = "看看这个作品！简直是杰作！你看不出来吗？这简直是天才之作！"
+gender = "女性"
+age = "二十岁左右"
+pitch = "中高音域，因兴奋而略有起伏"
+pace = "中等，语速较快"
+volume = "中等"
+clarity = "清晰，带有年轻人的活力"
+fluency = "流利，带有感叹词"
+timbre = "清脆，甜美"
+emotion = "好奇，兴奋，略带惊讶"
+usecase = "一个对艺术充满热情、有点小资情调的年轻女性"
+dialogue = "看这个艺术品！多美啊！太贵了！"
 
 speaker = 2
 lang = "zh"
-gender = "女性"
-age = "二十岁出头"
-pitch = "中低音域，平稳甚至有些低沉"
-pace = "缓慢，显得有些没精打采"
-volume = "中等，略显疲惫"
-clarity = "清晰，但语气平淡"
-fluency = "自然，但带有一些无奈的停顿" 
-timbre = "柔和，略带慵懒"
-emotion = "疲惫，困惑，对周围事物感到无所谓" 
-usecase = "一个被艺术展搞得精疲力竭、只想赶紧回家的大学生"
-dialogue = "我真的看不懂。我们能不能快点走？我真的觉得很无聊。"
+gender = "男性"
+age = "四十岁至五十岁"
+pitch = "中低音域，平稳"
+pace = "慢速，节奏稳重"
+volume = "洪亮，有教导感"
+clarity = "非常清晰，字斟句酌"
+fluency = "流利，沉稳"
+timbre = "浑厚，有磁性"
+emotion = "专业，自信，淡定"
+usecase = "一位资深、专业且从容不迫的艺术品交易商"
+dialogue = "是啊，这幅画非常有艺术感。两千三百四十五块。"

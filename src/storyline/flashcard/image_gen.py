@@ -3,6 +3,7 @@ import time
 from pathlib import Path
 
 import requests
+from PIL import Image, ImageOps
 
 from storyline.logging import get_logger
 from storyline.services.manager import ServiceManager
@@ -77,6 +78,13 @@ def _download_image(base_url: str, image_info: dict, output_path: Path) -> Path:
     return output_path
 
 
+def _invert_image(input_path: Path, output_path: Path) -> Path:
+    img = Image.open(str(input_path)).convert("L")
+    inverted = ImageOps.invert(img)
+    inverted.save(str(output_path))
+    return output_path
+
+
 def generate_images(
     prompts: list[str],
     output_dir: Path,
@@ -121,6 +129,13 @@ def generate_images(
             _log.info(
                 "event=image_gen_ok index=%d file=%s",
                 i + 1, image_info["filename"],
+            )
+
+            inverted_path = output_dir / f"img_{i + 1}_inverted.png"
+            _invert_image(output_path, inverted_path)
+            _log.info(
+                "event=image_invert_ok index=%d path=%s",
+                i + 1, inverted_path.name,
             )
         except Exception as e:
             _log.error("event=image_gen_fail index=%d error=%s", i + 1, str(e))

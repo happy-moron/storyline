@@ -1,0 +1,243 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are talking about something that every athlete dreads: dealing with an injury.
+
+en=student
+Oh man, that is a tough one. I remember when I twisted my ankle during a soccer game; it felt like my whole world stopped.
+
+en=teacher
+It really can. Recovery is a slow process, both physically and mentally. So, to talk about this, we are focusing on two very practical grammar points. First, how to structure the days of the week using 星期. It is very simple: you just take the word 星期 and add a number after it. For example, Monday is 星期一, which is literally "week one."
+
+en=student
+So, if Monday is 星期一, then Tuesday is 星期二, and Wednesday is 星期三? It's just a counting system?
+
+en=teacher
+Exactly. You just count up! 星期四, 星期五, and 星期六. Now, for Sunday, there are two ways to say it: 星期天 or 星期日. Both are correct and used frequently.
+
+en=student
+That's easy enough. And the second grammar point?
+
+en=teacher
+The second one is the structure for numbers and units, or how to express quantities. You use the number, then a measure word, and then the noun. In our case, if you want to say "three weeks," you say 三个星期. The number is 三, the measure word is 个, and the noun is 星期.
+
+en=student
+Got it. Number, measure word, then the thing.
+
+en=teacher
+Precisely. Before we jump into the drama of our dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+We have 受伤, (fourth tone and first tone), meaning to be injured... 受伤。
+
+en=teacher
+We have 康复, (first tone and fourth tone), meaning to recover or recovery... 康复。
+
+en=teacher
+We have 疼, (second tone), meaning to ache or pain... 疼。
+
+en=teacher
+We have 医生, (first tone and fifth tone), meaning a doctor... 医生。
+
+en=teacher
+We have 休息, (first tone and first tone), meaning to rest... 休息。
+
+en=teacher
+We have 练习, (fourth tone and second tone), meaning to practice... 练习。
+
+en=student
+Got it. I'm ready. What's the story?
+
+en=teacher
+In this episode, you are going to hear a conversation between a coach, a young athlete named Xiao Wang, and a physical therapist. Xiao Wang has been injured, and they are discussing his recovery plan. It's a bit stressful for him, but the team is helping him through it.
+
+DIALOGUE
+
+zh=1
+小王，你的腿怎么样了？
+Xiao Wang, how is your leg?
+
+zh=2
+还是有点疼。我觉得很不舒服。
+It still hurts a bit. I feel very uncomfortable.
+
+zh=1
+医生怎么说？
+What did the doctor say?
+
+zh=2
+医生说我需要休息三个星期。
+The doctor said I need to rest for three weeks.
+
+zh=3
+没关系。从星期一到星期五，你每天都要练习。
+It is okay. From Monday to Friday, you need to practice every day.
+
+zh=2
+星期六可以去跑步吗？
+Can I go running on Saturday?
+
+zh=3
+不可以。星期六你也得休息。
+No. You also have to rest on Saturday.
+
+zh=1
+加油！
+Keep going!
+
+zh=2
+好的。我也要努力康复。
+Okay. I also want to work hard on recovery.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. We start with the coach, speaker one.
+
+zh=1
+小王，你的腿怎么样了？
+Xiao Wang, how is your leg?
+
+en=student
+"怎么样" is such a useful phrase for "how is it?" or "how about?" And "腿" is leg.
+
+en=teacher
+Right. Then Xiao Wang, speaker two, responds:
+
+zh=2
+还是有点疼。我觉得很不舒服。
+It still hurts a bit. I feel very uncomfortable.
+
+en=student
+"还是" can mean "still," right? And "疼" is the word for pain we learned earlier.
+
+en=teacher
+Correct. He says "it still hurts a bit." Then the coach asks:
+
+zh=1
+医生怎么说？
+What did the doctor say?
+
+en=student
+"怎么说" literally means "how say," which is a very natural way to ask "what did they say?" or "what's the word on that?"
+
+en=teacher
+Yes. And Xiao Wang explains his situation:
+
+zh=2
+医生说我需要休息三个星期。
+The doctor said I need to rest for three weeks.
+
+en=student
+There's our grammar point! "三个星期." Three, measure word "ge," and then weeks.
+
+en=teacher
+Exactly. Now, the physical therapist, speaker three, enters the conversation to give some instructions.
+
+zh=3
+没关系。从星期一到星期五，你每天都要练习。
+It is okay. From Monday to Friday, you need to practice every day.
+
+en=student
+"没关系" is the classic "it's okay" or "no problem." And I see the days of the week! 星期一, 星期二, 星期三, 星期四, 星期五.
+
+en=teacher
+Yes. "从...到..." means "from... to..." It's very helpful for time spans. Xiao Wang is eager to get back out there, so he asks:
+
+zh=2
+星期六可以去跑步吗？
+Can I go running on Saturday?
+
+en=student
+"可以" is "can" or "may," as in "is it allowed?"
+
+en=teacher
+Right. But the therapist is very firm.
+
+zh=3
+不可以。星期六你也得休息。
+No. You also have to rest on Saturday.
+
+en=student
+Wait, she said "不可以." So that's the negative version of "可以"?
+
+en=teacher
+Exactly. "不可以" means "cannot" or "you're not allowed." And she uses "也," which means "also," to emphasize that Saturday is also a rest day.
+
+en=student
+And the coach gives a little pep talk at the end.
+
+zh=1
+加油！
+Keep going!
+
+en=teacher
+"加油" is one of those words you'll hear everywhere. It literally means "add oil," but it's how you say "come on," "keep it up," or "good luck." Finally, Xiao Wang shows his determination.
+
+zh=2
+好的。我也要努力康复。
+Okay. I also want to work hard on recovery.
+
+en=student
+"努力" means "to make an effort" or "to work hard." So he's saying he'll work hard to recover.
+
+en=teacher
+Yes. "努力康复" — working hard on that recovery. It's a great way to use the noun we learned.
+
+OUTRO
+
+en=student
+Man, that was intense. It's tough when you can't do the thing you love, but at least now I know how to talk about my schedule and my recovery.
+
+en=teacher
+Exactly. Just to recap, today we covered how to use 星期 followed by a number to name the days of the week, and how to use numbers with measure words like 个 to describe durations, like "三个星期."
+
+en=student
+And we learned some important words for health and injury, like 受伤, 疼, and 康复.
+
+en=teacher
+That's right. Don't forget to practice your days of the week! See you in the next episode of Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "五十岁左右"
+pitch = "中低音域，稳重且有权威感"
+pace = "中等偏慢，语速平稳"
+volume = "响亮，带有长者的关怀感"
+clarity = "清晰，吐字分明"
+fluency = "流利"
+timbre = "浑厚，富有磁性"
+emotion = "沉稳，给人以信心"
+usecase = "一位资深的体育教练，说话语气果断但充满鼓励"
+dialogue = "小王，你的腿怎么样了？加油！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁左右"
+pitch = "中音域，略显疲惫"
+pace = "中等，语速稍慢"
+volume = "中等，声音略带虚弱"
+clarity = "清晰，但带着些许沮丧"
+fluency = "流利，但语气中透着犹豫"
+timbre = "清脆，略带稚气"
+emotion = "沮丧，但内心充满斗志"
+usecase = "一位年轻的运动员，正处于受伤后的康复期"
+dialogue = "还是有点疼。我觉得很不舒服。医生说我需要休息三个星期。星期六可以去跑步吗？我也要努力康复。"
+
+speaker = 3
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，专业且冷静"
+pace = "中等，节奏分明"
+volume = "中等偏大，充满力量感"
+clarity = "非常清晰，每个指令都很有力"
+fluency = "极其流利"
+timbre = "圆润，专业且坚定"
+emotion = "专业，冷静，不容置疑"
+usecase = "一位严谨的物理治疗师，说话语气温柔但立场坚定"
+dialogue = "没关系。从星期一到星期五，你每天都要练习。不可以。星期六你也得休息。"

@@ -1,204 +1,193 @@
 INTRO
 
 en=teacher
-Welcome to Learning Chinese. I am Ellen, and today we are diving into the world of second-hand markets. If you are living in China or interacting with Chinese speakers, you will inevitably find yourself negotiating for something—maybe an old phone, a piece of furniture, or in today's case, a bicycle.
+Welcome to Learning Chinese. I am Ellen, and today we are looking at a very practical, everyday situation: buying and selling things online.
 
 en=student
-The used goods market can be a bit intense! You have to ask the right questions to make sure you aren't getting a lemon.
+I've been trying to sell my old coffee machine online, but I'm not sure how to handle the conversation.
 
 en=teacher
-Exactly. And to do that well, you need to master two very important grammar points. First, the 是⋯⋯ 的 construction. This isn't used to say "something is something." Instead, it is used to emphasize specific details of an event that has already happened, such as when, where, or how it occurred. For example, if someone asks when you bought a car, you wouldn't just say "I bought it last year." You would say 我是去年买的 to emphasize that *last year* was indeed the time.
-
-en=student
-Ah, so it adds that extra layer of "it was [this specific thing] that happened." It focuses the attention on the detail.
-
-en=teacher
-Spot on. Second, we are tackling the classic confusion: 不 vs 没. This is a hurdle for every learner. In general, 不 is used for adjectives, habits, or things in the present and future. For example, 不贵 (not expensive) or 我不吃肉 (I don't eat meat). 没, on the other hand, is used to negate past actions or to say something "has not" happened. For example, 我没买 (I didn't buy) or 我没有钱 (I don't have money).
+That's the perfect reason to listen today! We are focusing on two grammar points. First, using 怎么 before a verb to ask "how" an action is done. For example, 你怎么买? meaning "How do you buy it?" or 你怎么走? meaning "How do you get there?".
 
 en=student
-So, if I want to say "It is not broken," I use 不, but if I want to say "I didn't fix it," I use 没?
+And the second one was about location, right?
 
 en=teacher
-You've got it! One is about a state or habit, and the other is about an action that didn't take place. Before we get to our dialogue, let's look at our key vocabulary.
-
-en=teacher
-We have 状况, (fourth tone and fourth tone), meaning condition or state... 状况.
-en=teacher
-We have 旧, (fourth tone), meaning old or used... 旧.
-en=teacher
-We have 贵, (fourth tone), meaning expensive... 贵.
-en=teacher
-We have 修, (xiu, first tone), meaning to repair or fix... 修.
-en=teacher
-We have 干净, (first tone and clean tone), meaning clean... 干净.
+Exactly. We are using the structure Subject plus 在 plus Place plus Verb to indicate where an action happens. For example, 我在学校学习 meaning "I study at school" or 我们在家里吃饭 meaning "We eat at home." In English, we say "I eat at home," but in Chinese, the "at home" part comes before the verb.
 
 en=student
-Got it. So, what is the dialogue about?
+That's a crucial difference. If I say "I eat home" in English, I might be eating the house!
 
 en=teacher
-In this scene, a skeptical buyer is chatting with a seller on a second-hand app. The buyer wants to make sure the bike is in good condition and wasn't recently repaired or poorly maintained.
+(laughs) Exactly. Now, before we hear the dialogue, let's go over our six key vocabulary words.
+
+en=teacher
+First, we have 二手, (second tone, third tone), meaning second-hand... 二手.
+
+en=teacher
+Second, we have 自行车, (fourth tone, second tone, first tone), meaning bicycle... 自行车.
+
+en=teacher
+Third, we have 便宜, (second tone, neutral tone), meaning cheap... 便宜.
+
+en=teacher
+Fourth, we have 网上, (third tone, fourth tone), meaning online... 网上.
+
+en=teacher
+Fifth, we have 见面, (fourth tone, fourth tone), meaning to meet... 见面.
+
+en=teacher
+Sixth, we have 交易, (first tone, fourth tone), meaning transaction or to deal... 交易.
+
+en=student
+Got it. So, what is the scene?
+
+en=teacher
+You're going to hear a conversation between a skeptical buyer and a young man who is trying to sell his old bicycle online.
 
 DIALOGUE
 
 zh=1
-你好，请问这辆自行车还在吗？
-Hello, excuse me, is this bicycle still available?
+你好，请问你怎么卖这辆自行车？
+Hello, may I ask how you are selling this bicycle?
 zh=2
-在的，还在。你想买吗？
-Yes, it is. Are you looking to buy it?
+我在网上卖，两百块钱。
+I am selling it online, for two hundred yuan.
 zh=1
-我想买。它是哪年买的？
-I want to buy it. What year was it bought?
+两百？这辆车看起来很旧。
+Two hundred? This bike looks very old.
 zh=2
-我是去年买的，就在这家店。
-I bought it last year, right here at this shop.
+这是二手车。
+It's a second-hand bike.
 zh=1
-状况怎么样？坏了吗？
-How is the condition? Is it broken?
+那你怎么卖得这么便宜？
+Then how are you selling it so cheaply?
 zh=2
-不坏。这辆车一点儿都不旧，也很干净。
-It's not broken. This bike isn't old at all, and it is very clean.
+因为我快要搬家了。
+Because I am moving soon.
 zh=1
-你修过吗？
-Have you repaired it?
+好吧。我们在哪里见面交易？
+Okay. Where shall we meet for the transaction?
 zh=2
-我从来没修过，因为我没怎么骑。
-I have never repaired it, because I didn't ride it much.
+我们在学校门口见面吧。
+Let's meet at the school gate.
 zh=1
-价格呢？
-What about the price?
-zh=2
-不贵，五百块。
-Not expensive, five hundred yuan.
+没问题，一会儿见。
+No problem, see you in a bit.
 
 BREAKDOWN
 
 en=teacher
-Let's break down this conversation between the buyer and the seller. We start with the buyer checking availability.
+Let's break down that dialogue. We start with the buyer asking a very important question.
 
 zh=1
-你好，请问这辆自行车还在吗？
-Hello, excuse me, is this bicycle still available?
+你好，请问你怎么卖这辆自行车？
+Hello, may I ask how you are selling this bicycle?
 
 en=student
-"请问" is a very polite way to say "may I ask." And "还在吗" uses "还" to mean "still." It's a standard way to check if something is still in stock.
+"你怎么卖?" That's our first grammar point! Using 怎么 before the verb 卖. In this context, he's asking about the price or the method of sale. And "自行车" is our new word for bicycle.
 
 en=teacher
-Right. Then the buyer gets down to business by asking about the history of the bike.
-
-zh=1
-我想买。它是哪年买的？
-I want to buy it. What year was it bought?
-
-en=student
-Here is our first grammar point! "它是哪年买的？" The buyer is asking "When was it bought?" using the 是⋯⋯ 的 structure. If they just said "它哪年买?" it would sound a bit incomplete or strange in this context. They are asking for the specific detail of the time.
-
-en=teacher
-Exactly. And listen to the seller's response.
+Right. Then the seller replies.
 
 zh=2
-我是去年买的，就在这家店。
-I bought it last year, right here at this shop.
-
-en=student
-The seller uses the structure twice! "我是去年买的" emphasizes *when* (last year), and "就在这家店" emphasizes *where* (at this shop). It sounds very definitive.
+我在网上卖，两百块钱。
+I am selling it online, for two hundred yuan.
 
 en=teacher
-It does! Now, the buyer is getting suspicious about the condition.
+Here we see our second grammar point: 在 plus Place plus Verb. He is "at online" selling.
+
+en=student
+"网上" is online, right? So "我在网上卖" is "I sell online."
+
+en=teacher
+Precisely. Now, the buyer is a bit suspicious about the price.
 
 zh=1
-状况怎么样？坏了吗？
-How is the condition? Is it broken?
-
-en=student
-"怎么样" is "how." And "坏了吗" uses "了" to indicate a state of change or a completed action—in this case, whether it *has become* broken.
-
-en=teacher
-The seller is trying to reassure the buyer.
+两百？这辆车看起来很旧。
+Two hundred? This bike looks very old.
 
 zh=2
-不坏。这辆车一点儿都不旧，也很干净。
-It's not broken. This bike isn't old at all, and it is very clean.
+这是二手车。
+It's a second-hand bike.
 
 en=student
-"不坏" is a great example of "不" with an adjective. It's describing the current state. And "一点儿都不旧" is a very useful pattern. "一点儿都不..." means "not at all." It's like saying "not a little bit old."
+"二手" means second-hand. And he uses "看起来" to describe the condition.
 
 en=teacher
-Precisely. Now, the buyer asks about maintenance.
+Then the buyer asks:
 
 zh=1
-你修过吗？
-Have you repaired it?
+那你怎么卖得这么便宜？
+Then how are you selling it so cheaply?
 
 en=student
-The "过" at the end indicates an experience. "Have you ever had the experience of repairing it?"
+"便宜" means cheap. And he's using 怎么 again, but this time it's more like "how is it that..." to express surprise.
 
 en=teacher
-And the seller's response is a perfect example of "没" for past actions and experiences.
+Correct. And the seller explains his reason.
 
 zh=2
-我从来没修过，因为我没怎么骑。
-I have never repaired it, because I didn't ride it much.
-
-en=student
-"从来没...过" means "never have ever done something." It's a very common way to say you have no experience with something. And "我没怎么骑" uses "没" because they are negating the action of riding that happened in the past.
+因为我快要搬家了。
+Because I am moving soon.
 
 en=teacher
-Right. If they said "我不骑," they would be saying "I don't ride (as a general rule/habit)." But since they are talking about their history with this specific bike, they must use "没." Finally, the price.
+Then they move to the logistics of the deal.
 
 zh=1
-价格呢？
-What about the price?
-zh=2
-不贵，五百块。
-Not expensive, five hundred yuan.
+好吧。我们在哪里见面交易？
+Okay. Where shall we meet for the transaction?
 
 en=student
-"不贵" is "not expensive." Again, using "不" because it's describing the current state or quality of the price. If the seller wanted to say "The price didn't go up," they would use "没," but for "It is not expensive," "不" is the only way to go.
+"见面" is to meet, and "交易" is the transaction. And look at the grammar again in the next line: "我们在学校门口见面." Subject "我们", Location "在学校门口", Verb "见面."
 
 en=teacher
-You're getting the hang of it! The difference between describing a state with "不" and negating an action with "没" is the key to sounding natural.
+Perfect. It follows the pattern perfectly. Finally, the buyer agrees.
+
+zh=1
+没问题，一会儿见。
+No problem, see you in a bit.
 
 OUTRO
 
-en=student
-Wow, that was a lot of information! But I think I feel much more confident about negotiating for a bike now.
-
 en=teacher
-I'm glad to hear that! To recap: use 是⋯⋯ 的 when you want to emphasize the time, place, or manner of a past event. And remember the difference between 不 and 没: 不 is for adjectives, habits, and the present/future, while 没 is for negating past actions or the existence of things.
+Today we learned how to use 怎么 to ask about methods and reasons, and how to use 在 with a location before a verb to say where things happen.
 
 en=student
-Practice those, and you'll be a pro at the marketplace in no time. Thanks for listening to Learning Chinese.
+And we practiced vocabulary for selling things, like second-hand, bicycle, cheap, and transaction.
 
 en=teacher
-See you next time!
+Exactly. Next time you're browsing an app for something second-hand, try to think about how you'd ask these questions in Chinese!
+
+en=student
+Happy selling! See you next time!
 
 VOICE PROFILES
 
 speaker = 1
 lang = "zh"
-gender = "女性"
-age = "三十岁左右"
-pitch = "中音域，冷静且略带怀疑"
-pace = "中速，语气坚定"
-volume = "中等，清晰"
-clarity = "非常清晰，每个字都很有分量"
-fluency = "流利，但在询问关键问题时有短暂停顿以示审视"
-timbre = "清脆，略带冷淡"
-emotion = "谨慎，具有怀疑精神"
-usecase = "一个正在网上买二手货的谨慎买家"
-dialogue = "你好，请问这辆自行车还在吗？它是哪年买的？状况怎么样？坏了吗？你修过吗？价格呢？"
+gender = "男性"
+age = "四十岁左右"
+pitch = "中音域，略带怀疑和审视感"
+pace = "中速，语气果断"
+volume = "中等"
+clarity = "清晰，字句分明"
+fluency = "流利，语调略显严肃"
+timbre = "浑厚，略显粗糙"
+emotion = "怀疑，务实"
+usecase = "一个正在砍价的谨慎买家"
+dialogue = "你好，请问你怎么卖这辆自行车？两百？这辆车看起来很旧。那你怎么卖得这么便宜？好吧。我们在哪里见面交易？没问题，一会儿见。"
 
 speaker = 2
 lang = "zh"
 gender = "男性"
-age = "二十岁到三十岁之间"
-pitch = "中高音域，略显轻快"
-pace = "略快，显得有些急切"
-volume = "较大，充满活力"
-clarity = "清晰，试图表现得很有说服力"
-fluency = "流利，但在试图掩饰某些细节时语速略微加快"
-timbre = "圆润，听起来很友好但有些虚假"
-emotion = "热情，试图表现得诚实但略显过度"
-usecase = "一个急于卖掉旧物品的卖家"
-dialogue = "在的，还在。你想买吗？我是去年买的，就在这家店。不坏。这辆车一点儿都不旧，也很干净。我从来没修过，因为我没怎么骑。不贵，五百块。"
+age = "二十岁左右"
+pitch = "中高音域，平稳"
+pace = "中速，节奏较快"
+volume = "中等"
+clarity = "清晰"
+fluency = "流利，显得有些匆忙"
+timbre = "清脆，年轻感十足"
+emotion = "轻松，随和"
+usecase = "一个急于处理闲置物品的年轻人"
+dialogue = "我在网上卖，两百块钱。这是二手车。因为我快要搬家了。我们在学校门口见面吧。"

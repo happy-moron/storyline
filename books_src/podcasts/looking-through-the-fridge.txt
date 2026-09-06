@@ -1,0 +1,206 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are looking at something very practical: checking the fridge to see what we need to buy.
+
+en=student
+The dreaded realization that the fridge is empty! This happens to me every Sunday.
+
+en=teacher
+Exactly. And to handle this, we need two very important grammar points. First, expressing possession using 有. In Chinese, the structure is subject plus 有, plus the object. For example, 我有苹果, which means I have an apple.
+
+en=student
+Okay, so it's just like "to have" in English. What if I want to say I don't have something? Do I just add a "not"?
+
+en=teacher
+Yes, you use 没有. For example, 我没有牛奶, which means I don't have milk. It is a very common way to express what you lack.
+
+en=student
+Got it. And the second one was using 请, right?
+
+en=teacher
+That's right. 请 is used to make polite requests by placing it directly before a verb. So, 请坐 means please sit, and 请喝茶 means please drink tea. It makes your commands sound like polite suggestions.
+
+en=student
+That's very useful for being polite when asking a roommate or a partner to do something.
+
+en=teacher
+Precisely. Before we get to the dialogue, let's look at our key vocabulary for today. 
+
+en=teacher
+We have 牛奶, (two first tones), meaning milk... 牛奶.
+
+en=teacher
+We have 鸡蛋, (first tone and fourth tone), meaning eggs... 鸡蛋.
+
+en=teacher
+We have 蔬菜, (first tone and fourth tone), meaning vegetables... 蔬菜.
+
+en=teacher
+We have 苹果, (second tone and third tone), meaning apple... 苹果.
+
+en=teacher
+We have 果汁, (third tone and fourth tone), meaning juice... 果汁.
+
+en=teacher
+And finally, 购物清单, (fourth tone, third tone, first tone), meaning shopping list... 购物清单.
+
+en=student
+Those are all very useful. So, what's the scenario?
+
+en=teacher
+You are going to hear a conversation between a couple, Chen and Li, who are standing in their kitchen, looking through an almost empty refrigerator and realizing they need to go to the supermarket.
+
+DIALOGUE
+
+zh=1
+冰箱里没有什么。我们没有鸡蛋了。
+There isn't much in the fridge. We don't have eggs anymore.
+
+zh=2
+我们有牛奶吗？
+Do we have milk?
+
+zh=1
+没有牛奶。我们只有一个苹果。
+No milk. We only have one apple.
+
+zh=2
+我们需要蔬菜。请去超市买一些蔬菜。
+We need vegetables. Please go to the supermarket to buy some vegetables.
+
+zh=1
+好。我们有果汁吗？
+Okay. Do we have juice?
+
+zh=2
+没有果汁。请看这张购物清单。
+No juice. Please look at this shopping list.
+
+zh=1
+好的，没问题。
+Okay, no problem.
+
+zh=2
+那我们现在去买东西吧。
+Then let's go buy things now.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this dialogue line by line. We'll start with Chen.
+
+zh=1
+冰箱里没有什么。我们没有鸡蛋了。
+There isn't much in the fridge. We don't have eggs anymore.
+
+en=student
+"冰箱里没有什么" translates to "there isn't much in the fridge." "冰箱" is fridge. And then he says "我们没有鸡蛋了". He uses "没有" to say they don't have eggs.
+
+en=teacher
+Correct. And adding "了" at the end often indicates a change of state, meaning they don't have eggs *anymore*. Now, let's hear Li's response.
+
+zh=2
+我们有牛奶吗？
+Do we have milk?
+
+en=student
+"我们有牛奶吗？" Here, we see our first grammar point. "我们有" means "we have," and "吗" turns it into a question. Simple and effective.
+
+en=teacher
+Exactly. Then Chen replies.
+
+zh=1
+没有牛奶。我们只有一个苹果。
+No milk. We only have one apple.
+
+en=student
+"没有牛奶" is a very short way of saying "we don't have milk." And "我们只有一个苹果" uses "一个" for "one."
+
+en=teacher
+Right. "一个" is the most common measure word usage. Now, Li gets more specific about what they need.
+
+zh=2
+我们需要蔬菜。请去超市买一些蔬菜。
+We need vegetables. Please go to the supermarket to buy some vegetables.
+
+en=student
+"我们需要蔬菜" is "we need vegetables." But then she uses our second grammar point: "请去超市买一些蔬菜." "请" followed by "去买" (go buy). 
+
+en=teacher
+Exactly. "请" is the polite marker before the verb "去买." And "超市" is supermarket. Now, let's look at the next part.
+
+zh=1
+好。我们有果汁吗？
+Okay. Do we have juice?
+
+zh=2
+没有果汁。请看这张购物清单。
+No juice. Please look at this shopping list.
+
+en=student
+"没有果汁" is "no juice." And then, "请看这张购物清单." Again, "请" before "看" (to look). 
+
+en=teacher
+"购物清单" is a great compound word. "购物" is shopping, and "清单" is a list. 
+
+en=student
+"购物" comes from "购" (to purchase) and "物" (thing/object). That's a handy root to remember. Then we have the wrap-up.
+
+zh=1
+好的，没问题。
+Okay, no problem.
+
+zh=2
+那我们现在去买东西吧。
+Then let's go buy things now.
+
+en=student
+"没问题" is a super common phrase for "no problem." And "买东西" is just "buy things," which is how people usually say "go shopping" in casual conversation.
+
+en=teacher
+Yes, "买东西" is much more common than more formal terms when you're just heading out for groceries.
+
+OUTRO
+
+en=student
+That was a very practical lesson. I feel like I could survive a trip to the grocery store now!
+
+en=teacher
+I hope so! Just don't forget the shopping list! Today, we covered expressing possession with 有 and 没有, and how to make polite requests using 请. 
+
+en=student
+And we learned some essential food and shopping words like 牛奶, 鸡蛋, 蔬菜, 苹果, 果汁, and 购物清单. 
+
+en=teacher
+Perfect. Thanks for listening to Learning Chinese. Keep practicing, and we'll see you in the next episode.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，自然平稳"
+pace = "慢速，放松"
+volume = "中等"
+clarity = "清晰，语调自然"
+fluency = "流利"
+timbre = "温和，略带磁性"
+emotion = "随和，略显疲惫"
+usecase = "一个正在为晚餐材料感到困扰的丈夫"
+dialogue = "冰箱里没有什么。我们没有鸡蛋了。没有牛奶。我们只有一个苹果。好。我们有果汁吗？好的，没问题。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，清晰坚定"
+pace = "慢速，有节奏感"
+volume = "中等"
+clarity = "非常清晰，吐字分明"
+fluency = "流利，表达果断"
+timbre = "清脆，圆润"
+emotion = "从容，有条理"
+usecase = "一个生活有条理，习惯掌控家务的妻子"
+dialogue = "我们有牛奶吗？我们需要蔬菜。请去超市买一些蔬菜。没有果汁。请看这张购物清单。那我们现在去买东西吧。"

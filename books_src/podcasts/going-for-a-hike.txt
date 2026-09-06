@@ -1,199 +1,232 @@
 INTRO
 
 en=teacher
-Welcome to Learning Chinese. I am Ellen, and today we are tackling a classic point of confusion for almost every learner: the difference between the two ways to say "can" in Chinese.
+Welcome to Learning Chinese. I am Ellen, and today we are heading outdoors to tackle a topic that is both physically demanding and grammatically interesting: going for a hike.
 
 en=student
-Oh, man. This is the one that always trips me up. Is it 会 or is it 能? It feels like they mean the same thing.
+I love hiking, but I definitely struggle when I don't know how to read a map! It can be a bit overwhelming.
 
 en=teacher
-It is a very common struggle! But there is a very clear distinction. Today, we are learning the difference between 会, which expresses a learned skill, and 能, which expresses physical ability or situational possibility.
+Exactly! And that is perfect for our lesson, because we are learning the difference between two very important ways to express ability in Chinese.
 
 en=student
-Okay, so if I say "I can swim" because I took lessons and learned the technique, I should use 会?
+You mean the difference between 能 and 会? I always get those mixed up when I am trying to say what I can or cannot do.
 
 en=teacher
-Exactly. 我会游泳. But, if you have a broken arm and you physically cannot swim right now, even though you know how, you would use 能. 我不能游泳.
-
-en=student
-That makes total sense. So 会 is about "knowing how to," and 能 is about "being capable of" or "having the circumstances to."
-
-en=teacher
-Precisely. One is about skill, the other is about capacity or opportunity.
+It is a common hurdle. Here is the trick. We use 会 to express a learned skill. If you have studied something, like a language, or learned a craft, like cooking, you use 会. For example, 我会中文, meaning I can speak Chinese because I learned it.
 
 en=student
-Can I use them interchangeably at all?
+And 能 is for something else?
 
 en=teacher
-In a few very specific cases involving physical senses or very basic human functions, they can overlap, but for ninety percent of your life, the distinction is crucial. If you tell someone "我会走路" you are saying "I know the skill of walking," which sounds like you are a toddler who just learned to stand up!
-
-en=student
-Haha, okay, I will avoid that. So, what is the scenario for today?
-
-en=teacher
-Today’s theme is "Going for a hike." You are going to hear a conversation between two friends, Dawei and Li Na, who are currently on a mountain trail. Li Na is clearly struggling, and Dawei is trying to help her out.
+Yes. 能 is used for physical ability or situational possibility. For example, if you are asking if someone is physically able to walk, you would use 能. Or, if you are asking if a situation allows for something, like "Can I park here?" or "Can I come to the party?", you use 能.
 
 en=student
-I bet she's exhausted.
+So, if I say "I can swim" because I took lessons, I use 会. But if I am in the middle of the ocean and someone asks if I am able to swim to the shore right now, I use 能?
 
 en=teacher
-She is. Before the dialogue, let's look at our key vocabulary.
+That is a perfect way to put it! Now, before we head up the mountain, let's look at our six key vocabulary words for today.
 
 en=teacher
-We have 爬山, (páh shān), meaning to climb mountains or go hiking... 爬山.
+We have 爬山, (second tone and first tone), meaning to climb mountains or to hike... 爬山.
+
 en=teacher
-We have 累, (lèi), meaning tired... 累.
+We have 准备, (third tone and fourth tone), meaning to prepare... 准备.
+
 en=teacher
-We have 休息, (xiū xi), meaning to rest... 休息.
+We have 累, (fourth tone), meaning tired... 累.
+
 en=teacher
-We have 地图, (dì tú), meaning a map... 地图.
+We have 地图, (fourth tone and second tone), meaning map... 地图.
+
 en=teacher
-We have 拍照, (pāi zhào), meaning to take photos... 拍照.
+We have 方向, (first tone and fourth tone), meaning direction... 方向.
+
+en=teacher
+We have 路, (fourth tone), meaning road or path... 路.
+
+en=student
+Got it. Now, what is our dialogue about?
+
+en=teacher
+In this scene, you are going on a hike with an experienced guide. Your partner is a bit overwhelmed and feeling exhausted, and you will hear them discuss their abilities and the path ahead.
 
 DIALOGUE
 
 zh=1
-莉娜，你还好吗？你还能走吗？
-Li Na, are you okay? Can you still walk?
+快走吧！我们要去爬山了！
+Hurry up! We are going hiking!
+
 zh=2
-我非常累。我不能再走了。
-I am extremely tired. I cannot walk anymore.
+我觉得有点累。
+I feel a bit tired.
+
+zh=2
+而且我真的不会看地图，这太难了。
+And I really don't know how to read a map, it's too hard.
+
 zh=1
-别担心，我们可以在这里休息一会儿。
-Don't worry, we can rest here for a little while.
-zh=2
-你会看这张地图吗？
-Do you know how to read this map?
+没关系，我会看地图。
+It's okay, I know how to read maps.
+
 zh=1
-我不太会看地图，但我会用手机导航。
-I don't know how to read maps very well, but I can use mobile navigation.
+你看，路就在那边。
+Look, the path is right over there.
+
 zh=2
-太好了，至少我会拍照！
-Great, at least I can take photos!
+我们现在还能走多远？
+How much further can we walk now?
+
+zh=1
+别担心，只要你准备好了，我们一定能到山顶。
+Don't worry, as long as you are prepared, we can definitely reach the summit.
+
+zh=2
+太好了，那我能休息十分钟吗？
+That's great, then can I rest for ten minutes?
+
+zh=1
+当然可以！
+Of course!
 
 BREAKDOWN
 
 en=teacher
-Let's look at that dialogue, and break it down line by line. It starts with Dawei checking on his friend.
+Let's look at that dialogue and break it down line by line. We start with the guide.
 
 zh=1
-莉娜，你还好吗？你还能走吗？
-Li Na, are you okay? Can you still walk?
+快走吧！我们要去爬山了！
+Hurry up! We are going hiking!
 
 en=student
-"你还好吗？" is a standard "Are you okay?". But then he asks, "你还能走吗？". He used 能 there.
+"快走吧" is a very common way to say "hurry up." And we see our first vocabulary word: 爬山. 
 
 en=teacher
-Yes. He uses 能 because he is asking about her physical capacity in this moment. Can her legs keep moving, or has she reached her limit?
-
-en=student
-And Li Na's response is quite blunt!
+Correct. Then the novice hiker responds.
 
 zh=2
-我非常累。我不能再走了。
-I am extremely tired. I cannot walk anymore.
-
-en=teacher
-She says "我不能再走了." Again, she uses 能. It's not that she doesn't know how to walk—she's not a baby—it's that her current physical state, being extremely tired, makes walking impossible right now.
+我觉得有点累。
+I feel a bit tired.
 
 en=student
-So, if she said "我不会走路," she would be saying "I don't know how to walk."
+"我觉得" means "I feel" or "I think." And there is our third vocab word, 累.
 
 en=teacher
-Exactly! That would be a very weird thing to say on a hike. Now, Dawei tries to offer a solution.
+Exactly. And then they add something very important using our grammar point.
+
+zh=2
+而且我真的不会看地图，这太难了。
+And I really don't know how to read a map, it's too hard.
+
+en=student
+Wait, Ellen, why did they say 我不会看地图 instead of 我不能看地图?
+
+en=teacher
+That is the most important question of the day! Remember, they said "I don't know how to read a map." Reading a map is a skill that you have to learn. Therefore, you use 会. If they said 我不能看地图, it might mean they are physically unable to look at it, perhaps because they are wearing dark sunglasses!
+
+en=student
+That makes sense! It's the difference between "I don't know how" and "I am unable to."
+
+en=teacher
+Exactly. Now, let's look at the guide's reassurance.
 
 zh=1
-别担心，我们可以在这里休息一会儿。
-Don't worry, we can rest here for a little while.
+没关系，我会看地图。
+It's okay, I know how to read maps.
 
 en=student
-He uses 能 again here: "我们可以..." which means "we can" or "it is possible for us to."
-
-en=teacher
-Right. This is the third use of 能: situational possibility. It is possible for them to rest there. Now, Li Na asks about a skill.
-
-zh=2
-你会看这张地图吗？
-Do you know how to read this map?
-
-en=student
-There it is! She uses 会. She is asking if Dawei possesses the learned skill of map reading.
-
-en=teacher
-Correct. And Dawei's answer highlights the difference perfectly.
+Here is 会 again, because the guide has the learned skill.
 
 zh=1
-我不太会看地图，但我会用手机导航。
-I don't know how to read maps very well, but I can use mobile navigation.
-
-en=student
-"我不太会看地图." He uses 不太 which means "not very" or "not too," followed by 会. He's saying he hasn't mastered the skill of reading a physical map. But then he says "我会用手机导航."
+你看，路就在那边。
+Look, the path is right over there.
 
 en=teacher
-Yes, using a GPS or mobile navigation is a learned skill, so he uses 会. He knows how to operate the software.
+And we have our fifth vocab word, 路, meaning road or path.
 
 en=student
-And finally, Li Na tries to find a silver lining for herself.
+Now the novice asks a question about their capacity.
 
 zh=2
-太好了，至少我会拍照！
-Great, at least I can take photos!
+我们现在还能走多远？
+How much further can we walk now?
 
 en=teacher
-She uses 会 here because photography is a skill she has acquired. Even if she can't hike well, she's got the photo-taking skill covered!
+This is a great use of 能. They are asking about their physical capability and the possibility of the situation.
 
 en=student
-So, just to recap: 会 for skills like 拍照 or 看地图, and 能 for physical limits like 不能走路 or for possibilities like 可以在这里休息.
+And the guide is very encouraging here.
+
+zh=1
+别担心，只要你准备好了，我们一定能到山顶。
+Don't worry, as long as you are prepared, we can definitely reach the summit.
+
+en=student
+We have 准备 here, meaning to prepare. And then we have 能 again. "We can definitely reach the summit." This isn't a learned skill; it's a possibility based on their preparation and physical ability.
 
 en=teacher
-Spot on.
+Spot on. Finally, the novice asks for permission.
+
+zh=2
+太好了，那我能休息十分钟吗？
+That's great, then can I rest for ten minutes?
+
+en=student
+Is this the same "can" as in "I can swim"?
+
+en=teacher
+Yes! In this context, 能 is used to ask for permission. "Am I allowed to rest?"
+
+en=student
+So, 会 is for skills, and 能 is for capability, possibility, or permission.
+
+en=teacher
+You've got it. And the guide, being a professional, finishes the conversation.
+
+zh=1
+当然可以！
+Of course!
 
 OUTRO
 
 en=student
-That was a great lesson. I feel much more confident about when to use 会 versus 能.
+That was a great hike! I think I finally have a handle on 能 and 会.
 
 en=teacher
-I'm glad! Just remember: if you have to study or practice it, it's usually 会. If it's about what your body or the situation allows you to do right now, it's 能.
+I think you do! Just remember: if you studied it, use 会. If it's about whether you're able, allowed, or if it's possible, use 能.
 
 en=student
-Got it. Well, I think I've learned enough for today. 我可以去休息了!
+Today we learned how to talk about hiking, using words like 爬山, 准备, 累, 地图, 方向, and 路.
 
 en=teacher
-Wait, Ryan! You used 能 correctly there! You're saying "I am able to go rest now."
-
-en=student
-Haha, I'm learning! Thanks for listening, everyone. See you next time on Learning Chinese.
-
-en=teacher
-再见!
+And don't forget to practice those tones! Thanks for listening to Learning Chinese. See you next time!
 
 VOICE PROFILES
 
 speaker = 1
 lang = "zh"
 gender = "男性"
-age = "二十五岁左右"
+age = "三十五岁"
 pitch = "中音域，充满活力"
-pace = "略快，语气轻快"
-volume = "中等，清晰有力"
-clarity = "吐字清晰"
-fluency = "流利，表现出热心肠的样子"
-timbre = "清脆，阳光"
-emotion = "积极，关切"
-usecase = "一个精力充沛的年轻徒步爱好者"
-dialogue = "莉娜，你还好吗？你还能走吗？别担心，我们可以在这里休息一会儿。我不太会看地图，但我会用手机导航。"
+pace = "中速"
+volume = "洪亮"
+clarity = "清晰"
+fluency = "流利"
+timbre = "响亮，有磁性"
+emotion = "自信，热情"
+usecase = "一个经验丰富的登山向导"
+dialogue = "快走吧！我们要去爬山了！没关系，我会看地图。你看，路就在那边。别担心，只要你准备好了，我们一定能到山顶。当然可以！"
 
 speaker = 2
 lang = "zh"
 gender = "女性"
 age = "二十五岁左右"
-pitch = "中音域，略带喘息感"
-pace = "慢，因为疲惫而显得有些断断续续"
-volume = "稍低，显得有些虚弱"
-clarity = "略有含混，带有体力耗尽后的气息感"
-fluency = "由于疲惫，语速较慢，带有停顿"
-timbre = "柔和，略带沙哑"
-emotion = "疲惫，但偶尔有一点点俏皮"
-usecase = "一个正在登山但体力透支的年轻女性"
-dialogue = "我非常累。我不能再走了。你会看这张地图吗？太好了，至少我会拍照！"
+pitch = "中音域，略显疲惫"
+pace = "慢速"
+volume = "中等，略显虚弱"
+clarity = "清晰"
+fluency = "由于疲惫，节奏略显不稳"
+timbre = "柔和，略带喘息"
+emotion = "疲惫，有些沮丧"
+usecase = "一个初次尝试户外运动的游客"
+dialogue = "我觉得有点累。而且我真的不会看地图，这太难了。我们现在还能走多远？太好了，那我能休息十分钟吗？"

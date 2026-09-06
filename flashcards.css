@@ -126,7 +126,17 @@ body {
 .card-pinyin {
     font-size: 1.1rem;
     color: var(--muted-text);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-image {
+    width: 55%;
+    height: auto;
+    max-height: 45%;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
 }
 
 .card-hint {

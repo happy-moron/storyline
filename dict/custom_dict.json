@@ -152552,5 +152552,357 @@
         }
       }
     ]
+  },
+  "水池里": {
+    "pinyin": "shuǐ chí lǐ",
+    "definition": [
+      {
+        "meaning": "in the pond; in the pool",
+        "example": {
+          "chinese": "水池里有很多小鱼。",
+          "pinyin": "Shuǐ chí lǐ yǒu hěn duō xiǎo yú.",
+          "english": "There are many small fish in the pond."
+        }
+      }
+    ]
+  },
+  "出血": {
+    "pinyin": "chū xuè",
+    "definition": [
+      {
+        "meaning": "to bleed",
+        "example": {
+          "chinese": "他的伤口一直在出血。",
+          "pinyin": "Tā de shāng kǒu yī zhí zài chū xuè.",
+          "english": "His wound keeps bleeding."
+        }
+      },
+      {
+        "meaning": "to lose money; to incur significant expense",
+        "example": {
+          "chinese": "买这台新电脑让我大出血。",
+          "pinyin": "Mǎi zhè tái xīn diàn nǎo ràng wǒ dà chū xuè.",
+          "english": "Buying this new computer cost me a lot of money."
+        }
+      }
+    ]
+  },
+  "纸巾": {
+    "pinyin": "zhǐ jīn",
+    "definition": [
+      {
+        "meaning": "tissue; napkin; paper towel",
+        "example": {
+          "chinese": "请给我一张纸巾。",
+          "pinyin": "Qǐng gěi wǒ yī zhāng zhǐjīn.",
+          "english": "Please give me a tissue."
+        }
+      }
+    ]
+  },
+  "美美": {
+    "pinyin": "měi měi",
+    "definition": [
+      {
+        "meaning": "beautiful; lovely",
+        "example": {
+          "chinese": "她笑得美美的。",
+          "pinyin": "Tā xiào de měi měi de.",
+          "english": "She has a beautiful smile."
+        }
+      },
+      {
+        "meaning": "pleasantly; happily",
+        "example": {
+          "chinese": "我们美美地吃了一顿大餐。",
+          "pinyin": "Wǒ men měi měi de chī le yī dùn dà cān.",
+          "english": "We enjoyed a wonderful big meal."
+        }
+      }
+    ]
+  },
+  "调皮": {
+    "pinyin": "tiáo pí",
+    "definition": [
+      {
+        "meaning": "naughty; mischievous",
+        "example": {
+          "chinese": "这个小男孩非常调皮。",
+          "pinyin": "Zhège xiǎo nánhái fēicháng tiáopí.",
+          "english": "This little boy is very naughty."
+        }
+      }
+    ]
+  },
+  "冰淇淋": {
+    "pinyin": "bīng qí lín",
+    "definition": [
+      {
+        "meaning": "ice cream",
+        "example": {
+          "chinese": "我最喜欢的甜点是巧克力冰淇淋。",
+          "pinyin": "Wǒ zuì xǐ huān de tián diǎn shì qiào kè lì bīng qí lín.",
+          "english": "My favorite dessert is chocolate ice cream."
+        }
+      }
+    ]
+  },
+  "哈哈哈": {
+    "pinyin": "hā hā hā",
+    "definition": [
+      {
+        "meaning": "hahaha; laughter",
+        "example": {
+          "chinese": "听完这个笑话，他哈哈哈地笑了起来。",
+          "pinyin": "Tīng wán zhè ge xiào huà, tā hā hā hā de xiào le qǐ lái.",
+          "english": "After hearing this joke, he burst out laughing."
+        }
+      }
+    ]
+  },
+  "摄影师": {
+    "pinyin": "shè yǐng shī",
+    "definition": [
+      {
+        "meaning": "photographer",
+        "example": {
+          "chinese": "这位摄影师拍的照片非常漂亮。",
+          "pinyin": "Zhè wèi shè yǐng shī pāi de zhào piàn fēi cháng piào liang.",
+          "english": "The photos taken by this photographer are very beautiful."
+        }
+      }
+    ]
+  },
+  "妈": {
+    "pinyin": "mā",
+    "definition": [
+      {
+        "meaning": "mother; mom",
+        "example": {
+          "chinese": "妈妈正在厨房做饭。",
+          "pinyin": "Mā ma zhèng zài chú fáng zuò fàn.",
+          "english": "Mom is cooking in the kitchen."
+        }
+      }
+    ]
+  },
+  "萨姆": {
+    "pinyin": "sà mǔ",
+    "definition": [
+      {
+        "meaning": "Sam (transliteration of the name Sam)",
+        "example": {
+          "chinese": "萨姆是我的好朋友。",
+          "pinyin": "Sàmǔ shì wǒ de hǎo péngyǒu.",
+          "english": "Sam is my good friend."
+        }
+      }
+    ]
+  },
+  "队友": {
+    "pinyin": "duì yǒu",
+    "definition": [
+      {
+        "meaning": "teammate",
+        "example": {
+          "chinese": "我的队友非常出色。",
+          "pinyin": "Wǒ de duìyǒu fēicháng chūsè.",
+          "english": "My teammate is outstanding."
+        }
+      }
+    ]
+  },
+  "恐怖": {
+    "pinyin": "kǒng bù",
+    "definition": [
+      {
+        "meaning": "scary; terrifying; horrible",
+        "example": {
+          "chinese": "这部电影非常恐怖。",
+          "pinyin": "Zhè bù diànyǐng fēicháng kǒngbù.",
+          "english": "This movie is very scary."
+        }
+      },
+      {
+        "meaning": "terror; horror",
+        "example": {
+          "chinese": "战争带来了无尽的恐怖。",
+          "pinyin": "Zhànzhēng dài lái le wújìn de kǒngbù.",
+          "english": "War brings endless terror."
+        }
+      }
+    ]
+  },
+  "拿过来": {
+    "pinyin": "ná guò lái",
+    "definition": [
+      {
+        "meaning": "to bring something over (towards the speaker)",
+        "example": {
+          "chinese": "请把那本书拿过来。",
+          "pinyin": "Qǐng bǎ nà běn shū ná guò lái.",
+          "english": "Please bring that book over."
+        }
+      }
+    ]
+  },
+  "果汁": {
+    "pinyin": "guǒ zhī",
+    "definition": [
+      {
+        "meaning": "fruit juice",
+        "example": {
+          "chinese": "我每天早上都喝一杯橙汁。",
+          "pinyin": "Wǒ měi tiān zǎo shang dōu hē yī bēi chéng zhī.",
+          "english": "I drink a glass of orange juice every morning."
+        }
+      }
+    ]
+  },
+  "购物清单": {
+    "pinyin": "gòuwù qīngdān",
+    "definition": [
+      {
+        "meaning": "shopping list",
+        "example": {
+          "chinese": "别忘了把这些东西写进你的购物清单里。",
+          "pinyin": "Bié wàngle bǎ zhèxiē dōngxi xiě jìn nǐ de gòuwù qīngdān lǐ.",
+          "english": "Don't forget to write these things on your shopping list."
+        }
+      }
+    ]
+  },
+  "张老师": {
+    "pinyin": "zhāng lǎoshī",
+    "definition": [
+      {
+        "meaning": "Teacher Zhang",
+        "example": {
+          "chinese": "张老师是我们的数学老师。",
+          "pinyin": "Zhāng lǎoshī shì wǒmen de shùxué lǎoshī.",
+          "english": "Teacher Zhang is our math teacher."
+        }
+      }
+    ]
+  },
+  "百": {
+    "pinyin": "bǎi",
+    "definition": [
+      {
+        "meaning": "one hundred",
+        "example": {
+          "chinese": "这本书有两百页。",
+          "pinyin": "Zhè běn shū yǒu liǎng bǎi yè.",
+          "english": "This book has two hundred pages."
+        }
+      },
+      {
+        "meaning": "many",
+        "example": {
+          "chinese": "那里有成百上千的人。",
+          "pinyin": "Nà lǐ yǒu chéng bǎi shàng qiān de rén.",
+          "english": "There are hundreds of people there."
+        }
+      }
+    ]
+  },
+  "二手": {
+    "pinyin": "èr shǒu",
+    "definition": [
+      {
+        "meaning": "second-hand; used",
+        "example": {
+          "chinese": "他买了一辆二手车。",
+          "pinyin": "Tā mǎile yī liàng èrshǒu chē.",
+          "english": "He bought a second-hand car."
+        }
+      }
+    ]
+  },
+  "主厨": {
+    "pinyin": "zhǔ chú",
+    "definition": [
+      {
+        "meaning": "head chef; chief cook",
+        "example": {
+          "chinese": "这位主厨对食材的要求非常严格。",
+          "pinyin": "Zhè wèi zhǔchú duì shícái de yāoqiú fēicháng yángé.",
+          "english": "This head chef is very strict about ingredients."
+        }
+      }
+    ]
+  },
+  "厨房里": {
+    "pinyin": "chú fáng lǐ",
+    "definition": [
+      {
+        "meaning": "in the kitchen",
+        "example": {
+          "chinese": "厨房里有很多水果。",
+          "pinyin": "Chú fáng lǐ yǒu hěn duō shuǐ guǒ.",
+          "english": "There is a lot of fruit in the kitchen."
+        }
+      }
+    ]
+  },
+  "食材": {
+    "pinyin": "shícái",
+    "definition": [
+      {
+        "meaning": "ingredients; food ingredients",
+        "example": {
+          "chinese": "这些食材非常新鲜。",
+          "pinyin": "Zhèxiē shícái fēicháng xīnxiān.",
+          "english": "These ingredients are very fresh."
+        }
+      }
+    ]
+  },
+  "艺术感": {
+    "pinyin": "yì shù gǎn",
+    "definition": [
+      {
+        "meaning": "sense of art; sense of artistry; aesthetic sense",
+        "example": {
+          "chinese": "他的设计非常有艺术感。",
+          "pinyin": "Tā de shè jì fēi cháng yǒu yì shù gǎn.",
+          "english": "His design has a very strong sense of artistry."
+        }
+      }
+    ]
+  },
+  "一万": {
+    "pinyin": "yī wàn",
+    "definition": [
+      {
+        "meaning": "ten thousand",
+        "example": {
+          "chinese": "他有一万块钱。",
+          "pinyin": "Tā yǒu yī wàn kuài qián.",
+          "english": "He has ten thousand yuan."
+        }
+      }
+    ]
+  },
+  "还可以": {
+    "pinyin": "hái kěyǐ",
+    "definition": [
+      {
+        "meaning": "not bad; okay; passable",
+        "example": {
+          "chinese": "他的表现还可以。",
+          "pinyin": "Tā de biǎoxiàn hái kěyǐ.",
+          "english": "His performance was okay."
+        }
+      },
+      {
+        "meaning": "can also; may also",
+        "example": {
+          "chinese": "你还可以选择别的颜色。",
+          "pinyin": "Nǐ hái kěyǐ xuǎnzé bié de yánsè.",
+          "english": "You can also choose another color."
+        }
+      }
+    ]
   }
 }

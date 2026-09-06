@@ -1,240 +1,218 @@
 INTRO
 
 en=teacher
-Welcome to Learning Chinese. I am Ellen, and today we are looking at how to express persistence and emphasis. 
+Welcome to Learning Chinese. I am Ellen, and today we are discussing a scenario many of us know all too well: the tension of living with a roommate who is a little too relaxed about their responsibilities.
 
 en=student
-That sounds important. Are we talking about being stubborn? Or just talking about things that keep happening?
+Oh, I know this one well. The "lazy roommate" dynamic. It can get pretty tense.
 
 en=teacher
-Both, actually. Today, we are mastering two very common structures. First, the adverb 还, which can mean "still" or "yet." You use it before a verb or an adjective to indicate that a situation is continuing. For example, 我还在吃, which means I am still eating. Or, if you add a negative, you can say 我还没吃, meaning I haven't eaten yet.
-
-en=student
-Okay, so it's like "still" when it's affirmative, and "not yet" when it's negative. But wait, isn't that the same as 也?
-
-en=teacher
-That is a common point of confusion! 也 means "also" or "too." If you say 我也是, you are saying "I am also/too." But if you say 我还在, you are saying "I am still." They serve very different purposes.
+Exactly. Today, we are going to master how to talk about things that did not happen in the past. To do this, we will use the negation structure 没有 followed by a verb. For example, if you did not eat, you would say 我没有吃.
 
 en=student
-Got it. So, what is the second one?
+And I assume that is different from using 不 for things we don't do normally?
 
 en=teacher
-The second one is 就是. While 这 means "this" and 是 means "is," when you put them together before a verb, it acts as an intensifier. It's used for emphasis, often to mean "simply," "just," or "exactly." For example, 我就是不想去, which means "I simply don't want to go." It adds a layer of certainty or even a bit of attitude.
-
-en=student
-So it's like adding "just" to a sentence to show you're being firm about your stance.
-
-en=teacher
-Precisely. In our dialogue today, we're going to see these used in a very relatable setting: being incredibly lazy. 
+Precisely. You use 没有 for actions that did not occur in the past or completed actions that didn't happen. If you say 我不吃, you are saying "I do not eat" as a habit or a refusal. But for "I did not eat" (specifically yesterday), you must use 没有. We will also practice the basic sentence order of Subject, then Verb, then Object.
 
 en=student
-I think I might be too good at this lesson. What is the scenario?
+Got it. Subject, Verb, Object. Simple enough.
 
 en=teacher
-Our scene takes place on a Sunday afternoon. Two roommates, Xiao Ming and Xiao Wang, are hanging out, or rather, Xiao Ming is trying to get things moving, while Xiao Wang is stuck on the couch. A neighbor, Lao Li, wanders in and adds his two cents.
+Before we jump into the drama, let's look at our key vocabulary. 
+
+en=teacher
+We have 昨天, (third tone and first tone), meaning yesterday... 昨天.
+
+en=teacher
+We have 电影, (fourth tone and third tone), meaning movie... 电影.
+
+en=teacher
+We have 买, (third tone), meaning to buy... 买.
+
+en=teacher
+We have 东西, (first tone and neutral tone), meaning things or stuff... 东西.
+
+en=teacher
+We have 沙发, (first tone and first tone), meaning couch... 沙发.
+
+en=teacher
+We have 睡觉, (fourth tone and fourth tone), meaning to sleep... 睡觉.
 
 en=student
-I'm ready. Let's hear it.
+I am ready. What is the scene?
 
 en=teacher
-Before we start, let's review our key vocabulary.
-en=teacher
-We have 沙发, (first tone and second tone), meaning sofa or couch... 沙发.
-en=teacher
-We have 看电视, (fourth tone, fourth tone, fourth tone), meaning to watch television... 看电视.
-en=teacher
-We have 休息, (first tone, second tone), meaning to rest... 休息.
-en=teacher
-We have 偷懒, (first tone, third tone), meaning to slack off or be lazy... 偷懒.
-en=teacher
-We have 准备, (third tone, fourth tone), meaning to prepare... 准备.
+In this dialogue, you are going to hear a tense exchange between two roommates, Xiao Li and Xiao Wang. They are hanging out on the couch, but Xiao Li is quite annoyed because Xiao Wang has not completed his tasks from yesterday.
 
 DIALOGUE
 
-zh=2
-你怎么还在沙发上看电视？
-Why are you still watching television on the couch?
 zh=1
-我还没看够呢。
-I haven't seen enough yet.
+你昨天看那个电影了吗？
+Did you watch that movie yesterday?
+
 zh=2
-你就是不想起床！
-You simply don't want to get up!
+我没有看电影。我昨天太累了。
+I did not watch the movie. I was too tired yesterday.
+
 zh=1
-我觉得我还没休息够。
-I feel like I haven't rested enough yet.
-zh=3
-他就是想偷懒。
-He just wants to slack off.
+你也没有买东西。我饿了。
+You also did not buy anything. I am hungry.
+
 zh=2
-我们今天还要去超市呢。
-We still have to go to the supermarket today.
+我没有买东西。我只是想躺在沙发上。
+I did not buy anything. I just want to lie on the couch.
+
 zh=1
-我还想再睡一会儿。
-I want to sleep for a little while longer.
-zh=3
-他就是个懒虫。
-He is just a slacker.
+你昨天到底做了什么？
+What on earth did you do yesterday?
+
 zh=2
-别说了，我们还要准备作业呢。
-Stop talking, we still have to prepare for homework.
+我什么都没有做。
+I did nothing.
+
 zh=1
-可是我就是不想动。
-But I simply don't want to move.
+你还没收拾房间呢！
+You have not even tidied the room yet!
+
+zh=2
+我只是在睡觉。
+I was just sleeping.
 
 BREAKDOWN
 
 en=teacher
-Let's look at that dialogue, and break it down line by line. It starts with Xiao Ming, who is clearly losing his patience.
-
-zh=2
-你怎么还在沙发上看电视？
-Why are you still watching television on the couch?
-
-en=student
-"你怎么..." is a classic way to start a question, like "How come...?" or "Why...?" But the key part here is "还在".
-
-en=teacher
-Exactly. "还在" means "still doing" something. You have the verb "看" (to watch) and "电视" (television). Together, "还在看电视" means "still watching television."
+Let's look at that dialogue, and break it down line by line. It starts with Xiao Li asking a question.
 
 zh=1
-我还没看够呢。
-I haven't seen enough yet.
+你昨天看那个电影了吗？
+Did you watch that movie yesterday?
 
 en=student
-"还没" again! That's the "not yet" version of "还". And "看够" sounds like "watch enough."
+"你昨天看那个电影了吗?" There is a "了" at the end of that question. Is that related to the past?
 
 en=teacher
-Yes. "看够" means "to watch until satisfied" or "to see enough." Adding "呢" at the end adds a bit of a soft, casual tone to her statement, almost like a whine.
+Great observation. The "了" here, combined with the context of "昨天" (yesterday), helps indicate that we are talking about a completed action or a specific time in the past. Notice the basic order here: Subject (你), Time (昨天), Verb (看), and Object (那个电影).
 
 zh=2
-你就是不想起床！
-You simply don't want to get up!
-
-en=student
-There it is! Our second grammar point. "你就是不想..." That "就是" is doing a lot of heavy lifting there.
+我没有看电影。我昨天太累了。
+I did not watch the movie. I was too tired yesterday.
 
 en=teacher
-It is. Instead of just saying "You don't want to get up," Xiao Ming is saying "You *simply* don't want to get up." He's emphasizing her stubbornness. It makes the sentence much more pointed.
+Here is our key grammar point. Xiao Wang says, "我没有看电影."
+
+en=student
+"我没有看电影." So that is the "Subject + 没有 + Verb + Object" structure we talked about?
+
+en=teacher
+Exactly. "I" is the subject, "did not watch" is the verb phrase using 没有, and "the movie" is the object. As we mentioned, using 没有 instead of 不 is crucial here because the movie watching was an event that failed to happen in the past.
 
 zh=1
-我觉得我还没休息够。
-I feel like I haven't rested enough yet.
+你也没有买东西。我饿了。
+You also did not buy anything. I am hungry.
 
 en=student
-"我觉得" is "I feel" or "I think." And "休息够" is "to rest enough." So "还没休息够" is "haven't rested enough yet."
+"你也没有买东西." I noticed the "也" in there. Does it go before the verb?
 
 en=teacher
-Correct. Notice how "还" is being used with "没" to create that "not yet" meaning.
-
-zh=3
-他就是想偷懒。
-He just wants to slack off.
-
-en=student
-Lao Li enters the chat! "他就是想..." He's using "就是" to agree with Xiao Ming's sentiment.
-
-en=teacher
-Right. And "偷懒" is a great verb here. It literally means "to steal laziness." It's the perfect word for slacking off or being lazy.
+Yes, it does. "也" (yě), meaning "also" or "too," sits right before the verb. So, "You also did not buy things."
 
 zh=2
-我们今天还要去超市呢。
-We still have to go to the supermarket today.
+我没有买东西。我只是想躺在沙发上。
+I did not buy anything. I just want to lie on the couch.
 
 en=student
-"还要" here. Does this mean "still have to" or "also need to"?
+"我没有买东西." This one is a bit repetitive, but it reinforces the pattern. And then he says "I just want to lie on the couch." "沙发" is the couch, right?
 
 en=teacher
-In this context, it's "still have to." It implies that there is a list of things to do, and the supermarket is one of them that is being neglected.
+Correct. "沙发" is the couch. And "只是" (zhǐ shì) means "just" or "only."
 
 zh=1
-我还想再睡一会儿。
-I want to sleep for a little while longer.
+你昨天到底做了什么？
+What on earth did you do yesterday?
 
 en=student
-"一会儿" is a very common phrase for "a little while." And "还想" means "still want to."
-
-zh=3
-他就是个懒虫。
-He is just a slacker.
-
-en=student
-"懒虫"? That sounds like "lazy bug."
+"你昨天到底做了什么?" "到底" (dào dǐ) sounds very intense. It is like saying "What on earth" or "What exactly," right?
 
 en=teacher
-It is! "懒虫" is a very common, colloquial way to call someone a "slacker" or a "lazybones." It's not necessarily a heavy insult, but it's definitely teasing.
+Precisely. It adds a lot of emphasis to the question, especially when you are frustrated.
 
 zh=2
-别说了，我们还要准备作业呢。
-Stop talking, we still have to prepare for homework.
+我什么都没有做。
+I did nothing.
 
 en=student
-"别说了" is "stop talking" or "forget it." And we have "准备" which we mentioned earlier—to prepare.
-
-zh=1
-可是我就是不想动。
-But I simply don't want to move.
-
-en=student
-And the grand finale. "我就是不想动." She's being very firm!
+Whoa, this one is interesting. "我什么都没有做." It literally sounds like "I what also have not do."
 
 en=teacher
-"不想动" means "don't want to move." By adding "就是", she's essentially saying, "I just don't feel like moving, and there's nothing you can do about it." It's the ultimate lazy person's response.
+It is a very common and very useful pattern! When you want to say "nothing" or "not anything," you use the structure "什么 + 都 + Verb." In this case, it is "什么都没有做," which means "did not do anything at all."
+
+zh=1
+你还没收拾房间呢！
+You have not even tidied the room yet!
+
+en=student
+"你还没收拾房间呢!" "还没" (hái méi) sounds like "not yet."
+
+en=teacher
+You are on a roll! "还没" means "not yet." And "收拾" (shōushi) means to tidy up or to clean.
+
+zh=2
+我只是在睡觉。
+I was just sleeping.
+
+en=student
+And finally, "I was just sleeping." "睡觉" is to sleep.
+
+en=teacher
+Yes. The dialogue shows how these simple structures—negating the past with 没有, using 也 for "also," and using 什么都 for "nothing"—come together to form real, emotive conversation.
 
 OUTRO
 
 en=student
-Man, I feel for Xiao Wang. I've had many days where "我就是不想动" is my entire personality.
+That was intense! I really felt Xiao Li's frustration through the screen.
 
 en=teacher
-We all have! But hopefully, you won't use it too often in a Chinese classroom. To recap, today we learned how "还" can mean "still" when it's affirmative or "not yet" when used with "没". 
+Haha, yes! But it is a perfect way to see how grammar functions in real life.
 
 en=student
-And we learned how "就是" can turn a simple statement into a strong emphasis, like "simply" or "just."
+Today we learned how to negate past actions using 没有, the basic Subject-Verb-Object sentence order, and how to use "also" with 也 and "nothing" with 什么都.
 
 en=teacher
-Exactly. Practice these by talking about your own daily habits—or lack thereof! Thanks for listening to Learning Chinese. See you next time!
+And don't forget our new words: yesterday, movie, to buy, things, couch, and to sleep. Keep practicing these in your daily life, even if it is just complaining about your roommates!
+
+en=student
+I will! Thanks for listening to Learning Chinese. See you next time!
+
+en=teacher
+再见!
 
 VOICE PROFILES
 
 speaker = 1
 lang = "zh"
 gender = "女性"
-age = "二十岁左右"
-pitch = "中音域，语气慵懒、拖沓"
-pace = "慢速，带有明显的松散感"
-volume = "中等，听起来有点无精打采"
-clarity = "略微含混，听起来像没睡醒"
-fluency = "语速不均，常有停顿"
-timbre = "柔和，略带甜美但很懒散"
-emotion = "极度放松，有点小任性"
-usecase = "一个只想瘫在沙发上什么都不干的年轻人"
-dialogue = "我还没看够呢。我还没休息够。我还想再睡一会儿。可是我就是不想动。"
+age = "二十八岁左右"
+pitch = "中高音域，因愤怒而略微升高"
+pace = "较快，节奏紧凑"
+volume = "响亮，带有压迫感"
+clarity = "清晰，咬字果断"
+fluency = "流利，语气带有明显的急躁感"
+timbre = "清脆，略显尖锐"
+emotion = "焦虑，急躁，带有指责感"
+usecase = "一个生活有条理但正处于压力之下的职场女性"
+dialogue = "你到底在干什么？我说了这么多遍你都没听进去！"
 
 speaker = 2
 lang = "zh"
 gender = "男性"
-age = "二十岁左右"
-pitch = "中音域，情绪起伏大"
-pace = "中速，在激动时会变快"
-volume = "响亮，带有焦虑感"
-clarity = "清晰，咬字有力"
-fluency = "流利，但情绪激动时节奏紧凑"
-timbre = "清脆，富有活力"
-emotion = "焦虑，急躁，有点好胜心"
-usecase = "一个生活节奏很快、无法忍受拖延症的室友"
-dialogue = "你怎么还在沙发上看电视？你就是不想起床！我们今天还要去超市呢。别说了，我们还要准备作业呢。"
-
-speaker = 3
-lang = "zh"
-gender = "男性"
-age = "五十岁左右"
-pitch = "低音域，稳定且带点戏谑"
-pace = "慢速，沉稳"
-volume = "中等"
-clarity = "非常清晰，每个字都很重"
-fluency = "流畅，有种看透世俗的感觉"
-timbre = "浑厚，略带沙哑"
-emotion = "幽默，带着一点点毒舌的幽默感"
-usecase = "一个爱观察邻里八竿子事情的幽默老邻居"
-dialogue = "他就是想偷懒。他就是个懒虫。"
+age = "二十八岁左右"
+pitch = "低音域，非常平稳"
+pace = "慢，语速迟缓"
+volume = "较小，柔和"
+clarity = "柔和，略带含混"
+fluency = "流利，但听起来有些懒散，缺乏动力"
+timbre = "浑厚，慵懒，略带沙哑"
+emotion = "随性，懒散，无所谓"
+usecase = "一个极其悠闲、甚至有些不负责任的室友"
+dialogue = "哎呀，别吵了。我只是想休息一下，什么都不想做。"

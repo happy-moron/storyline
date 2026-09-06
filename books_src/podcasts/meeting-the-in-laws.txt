@@ -1,0 +1,257 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into a topic that can be incredibly stressful: meeting the in-laws.
+
+en=student
+Oh, boy. That is a high-stakes situation. One wrong word and the whole meal is ruined, right?
+
+en=teacher
+Exactly. And to navigate these social waters, you need to describe how things are changing. Today, we are covering two very important ways to use the particle 了. First, we use 不 or 没 plus a verb phrase followed by 了 to express that someone is "not anymore" doing something. For example, 我不抽烟了, which means I do not smoke anymore.
+
+en=student
+So, it's not just a simple "no," it's specifically about a change in habit or a situation that has ceased?
+
+en=teacher
+Precisely. Second, we are looking at using 了 to express a new situation, or "now." When a new state arises, we add 了. For example, 下雨了, which means it is raining now. Or, 我有钱了, which means I have money now.
+
+en=student
+I see. So "not anymore" is about something stopping, and the other one is about a new reality beginning.
+
+en=teacher
+That's a perfect way to put it. Before we hear the drama unfold, let's look at our six key vocabulary words.
+
+en=teacher
+We have 父母, (fourth tone, third tone), meaning parents... 父母.
+
+en=teacher
+We have 紧张, (third tone, first tone), meaning nervous... 紧张.
+
+en=teacher
+We have 准备, (third tone, fourth tone), meaning to prepare... 准备.
+
+en=teacher
+We have 改变, (third tone, fourth tone), meaning to change... 改变.
+
+en=teacher
+We have 失望, (first tone, fourth tone), meaning disappointed... 失望.
+
+en=teacher
+And finally, 介绍, (fourth tone, fourth tone), meaning to introduce... 介绍.
+
+en=student
+Got it. So, what is the story for today?
+
+en=teacher
+In this episode, things are getting a little tense. You're going to hear a dinner scene where a young man named Zhang Wei is meeting his girlfriend Xiao Mei's parents for the first time. But there is a significant change in his life that the parents are not happy about.
+
+DIALOGUE
+
+zh=1
+你看起来很紧张。
+You look very nervous.
+
+zh=3
+对不起，我有点紧张。
+Sorry, I am a bit nervous.
+
+zh=2
+我们以前觉得你很优秀。
+We used to think you were excellent.
+
+zh=2
+但现在你不再在银行工作了。
+But now you do not work at the bank anymore.
+
+zh=3
+是的，我不再在银行工作了。
+Yes, I do not work at the bank anymore.
+
+zh=3
+我现在是摄影师了。
+I am a photographer now.
+
+zh=4
+妈，他现在很开心了！
+Mom, he is very happy now!
+
+zh=2
+我们很失望。
+We are disappointed.
+
+zh=1
+时间不早了，我们走吧。
+It is late now, let's go.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this very tense dinner conversation. It starts with the father, speaker one.
+
+zh=1
+你看起来很紧张。
+You look very nervous.
+
+en=student
+"你看起来" means "you look like" or "it appears that you." And 紧张 is that word we learned, meaning nervous.
+
+en=teacher
+Right. And Zhang Wei responds.
+
+zh=3
+对不起，我有点紧张。
+Sorry, I am a bit nervous.
+
+en=student
+"有点" means "a little bit." It's a great way to soften a description.
+
+en=teacher
+Now, the mother, speaker two, brings the hammer down.
+
+zh=2
+我们以前觉得你很优秀。
+We used to think you were excellent.
+
+en=student
+"以前" means "before" or "in the past." It sets the stage for the change that is coming.
+
+zh=2
+但现在你不再在银行工作了。
+But now you do not work at the bank anymore.
+
+en=teacher
+This is our first grammar point. "不再...了" is a very common way to say "no longer" or "not anymore." 
+
+en=student
+Wait, Ellen, can I just say "他不工作了" to mean "he doesn't work anymore"? 
+
+en=teacher
+You can, but "不再...了" is more formal and emphasizes that the situation has fundamentally changed. It makes it sound more definitive. In this case, he used to be a banker, but that part of his life is finished.
+
+en=student
+Okay, that makes sense. And then Zhang Wei accepts it.
+
+zh=3
+是的，我不再在银行工作了。
+Yes, I do not work at the bank anymore.
+
+zh=3
+我现在是摄影师了。
+I am a photographer now.
+
+en=teacher
+Listen to that second line. "我现在是摄影师了." Here, the 了 marks a new state of being. He was not a photographer before, but now, he is.
+
+en=student
+So, the 了 at the end of "我现在是摄影师了" is about the new reality. It's like saying, "I've become a photographer."
+
+en=teacher
+Exactly. It signals that the situation has transitioned into a new phase. Xiao Mei tries to defend him.
+
+zh=4
+妈，他现在很开心了！
+Mom, he is very happy now!
+
+en=student
+"开心" is happy. And again, we have the 了 at the end. He might have been stressed at the bank, but now, he is happy. It's a change in his emotional state.
+
+en=teacher
+But the parents are not having it.
+
+zh=2
+我们很失望。
+We are disappointed.
+
+en=student
+"失望" is a heavy word. To be disappointed. You can feel the tension in that line.
+
+en=teacher
+And finally, the father ends the meeting.
+
+zh=1
+时间不早了，我们走吧。
+It is late now, let's go.
+
+en=student
+"时间不早了" is a very common phrase. It literally means "the time is not early," but we translate it as "it is getting late" or "it is late now." The 了 here is essential because it shows that time has progressed from being early to being late.
+
+en=teacher
+That's a perfect example of the change of state 了. If it were early, you wouldn't use it. But because the situation has changed, you must.
+
+en=student
+This was a tough lesson! Meeting the in-laws and losing a banking job in the same conversation? That is definitely a real-world situation.
+
+en=teacher
+Life is rarely a textbook, Ryan. It's often messy and full of unexpected changes.
+
+OUTRO
+
+en=student
+Well, I think I've learned a lot today. We practiced describing changes in habits with the "not anymore" structure, and how to describe new situations or states using 了.
+
+en=teacher
+That's right. Remember: use "不...了" for things that have stopped, and use "了" at the end of a sentence to show that a situation is different now than it was before.
+
+en=student
+And don't forget our vocab: 父母, 紧张, 准备, 改变, 失望, and 介绍.
+
+en=teacher
+Great job. Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "五十岁左右"
+pitch = "低沉男性音区，稳定"
+pace = "缓慢，语气严厉"
+volume = "大，具有威慑力"
+clarity = "吐字清晰，非常有力量"
+fluency = "流利，节奏缓慢且坚定" 
+timbre = "浑厚，略带沙哑"
+emotion = "威严，有些古板" 
+usecase = "一个非常严肃、传统的父亲"
+dialogue = "你看起来很紧张。时间不早了，我们走吧。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "四十五岁左右"
+pitch = "中音域，冷淡"
+pace = "中速，语气平稳"
+volume = "中等，略显冷漠"
+clarity = "清晰，发音优雅"
+fluency = "流利，情感起伏不大" 
+timbre = "圆润，但缺乏温度"
+emotion = "失望，高傲" 
+usecase = "一个对社会地位非常看重的母亲"
+dialogue = "我们以前觉得你很优秀。但现在你不再在银行工作了。我们很失望。"
+
+speaker = 3
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，因紧张而颤抖"
+pace = "中速，略微停顿"
+volume = "中等，略显虚弱"
+clarity = "清晰，但呼吸声明显"
+fluency = "紧张时有轻微的停顿" 
+timbre = "清脆，略带青涩"
+emotion = "焦虑，充满压力" 
+usecase = "一个正在努力证明自己的年轻男人"
+dialogue = "对不起，我有点紧张。是的，我不再在银行工作了。我现在是摄影师了。"
+
+speaker = 4
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "高音域，带有保护欲"
+pace = "中速，语速较快"
+volume = "中等"
+clarity = "清晰，声音响亮"
+fluency = "流利，充满感情" 
+timbre = "清脆，有活力"
+emotion = "坚定，防御性" 
+usecase = "一个在压力下试图维护伴侣的年轻女性"
+dialogue = "妈，他现在很开心了！"
