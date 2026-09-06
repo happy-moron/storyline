@@ -1,202 +1,185 @@
 INTRO
 
 en=teacher
-Welcome to Learning Chinese. I am Ellen, and today we are discussing a topic that is deeply important but often difficult to talk about: mental health and how to support a friend through a dark time.
+Welcome to Learning Chinese. I am Ellen, and today we are discussing a topic that is both grammatically simple and emotionally complex: how to talk about what is happening right now, and what is not happening.
 
 en=student
-That sounds heavy, Ellen, but you are right. In real life, language isn't just about ordering coffee; it's about checking in on the people we care about when they seem to be struggling.
+Right. Because in real life, sometimes people aren't doing much at all.
 
 en=teacher
-Exactly. To do this, we need to master two specific grammar points. First, the use of 在 to express actions in progress. When you put 在 before a verb, it functions like the "-ing" in English. For example, 我在睡觉 means I am sleeping. You can also add 正 or 正在 to emphasize that the action is happening right at this moment.
+Exactly. We are going to cover two key grammar points. First, expressing actions in progress using 在 or 正在. You place 在 before the verb to show that an action is happening. For example, 我在吃饭 (I am eating) or 我正在看书 (I am reading). 
 
 en=student
-So, if I want to say "he is eating," I would say 他在吃饭.
+And the second point is the negation of "have" or the negation of a past action using 没有. 
 
 en=teacher
-Correct. Second, we are looking at how to negate "have" or completed actions using 没有. While 不 is used for present habits or future intentions, 没有 is used to say you didn't do something or you don't have something. For example, 我没有钱 means I don't have money, and 我没有去 means I didn't go.
+Correct. In English, we say "I don't have" or "I didn't go." In Chinese, we use 没有. For example, 我没有钱 (I don't have money) or 我没有去 (I didn't go). It is important to remember that for the negation of completed actions, we use 没有, not 不.
 
 en=student
-That makes sense. So, if I want to ask someone if they have eaten yet, I'd use 没有.
+That's a crucial distinction. So, if I want to say I am not currently doing something, I combine them: 我没在睡觉 (I am not sleeping).
 
 en=teacher
-Precisely. Before we hear the dialogue, let's look at our six key vocabulary words.
-
-en=teacher
-First, we have 担心, which is two first tones, meaning to worry. 担心.
-
-en=teacher
-Next, 难过, which is a second tone followed by a fourth tone, meaning to feel sad or upset. 难过.
-
-en=teacher
-Third, 睡觉, which is two fourth tones, meaning to sleep. 睡觉.
-
-en=teacher
-Fourth, 休息, which is two first tones, meaning to rest. 休息.
-
-en=teacher
-Fifth, 事情, which is a fourth tone and a neutral tone, meaning matter, thing, or situation. 事情.
-
-en=teacher
-And finally, 状态, which is two fourth tones, meaning state or condition. 状态.
+Precisely! You put the negation before the "in progress" marker. 
 
 en=student
-Got it. 担心, 难过, 睡觉, 休息, 事情, and 状态.
+Got it. So, what is the dialogue about?
 
 en=teacher
-Perfect. In today's dialogue, you are going to hear a conversation between two friends, Xiao Li and Xiao Wang. Xiao Li is visiting Xiao Wang because he has been acting differently and hasn't been answering his phone. It is a sensitive moment where Xiao Li is trying to provide support.
+Today's dialogue is a bit more somber. We are going to hear a conversation between two friends, Xiao Mei and Xiao Ming. Xiao Mei has come to visit Xiao Ming because she is worried about him. You will hear her notice that he hasn't been eating, isn't working, and is staying in the dark.
+
+en=student
+That sounds heavy, but very important for real-life conversation.
+
+en=teacher
+It is. Before we listen, let's look at our six key vocabulary words.
+
+en=teacher
+First, 睡觉, (shuì jiào), fourth tone and fourth tone, meaning to sleep. 睡觉.
+
+en=teacher
+Second, 吃饭, (chī fàn), first tone and fourth tone, meaning to eat. 吃饭.
+
+en=teacher
+Third, 工作, (gōng zuò), first tone and fourth tone, meaning to work. 工作.
+
+en=teacher
+Fourth, 担心, (dān xīn), first tone and first tone, meaning to worry. 担心.
+
+en=teacher
+Fifth, 觉得, (jué de), second tone and fifth tone, meaning to feel or to think. 觉得.
+
+en=teacher
+Sixth, 力气, (lì qi), fourth tone and fourth tone, meaning energy or strength. 力气.
 
 DIALOGUE
 
 zh=1
-你好，我来看看你。你这两天为什么没接我的电话？
-Hello, I came to see you. Why haven't you been answering my calls these past two days?
+你在干什么？你为什么没开灯？
+What are you doing? Why haven't you turned on the lights?
 
 zh=2
-我一直在睡觉，没有听见。
-I've been sleeping all the time; I didn't hear them.
+我在睡觉。我没在干什么。
+I am sleeping. I am not doing anything.
 
 zh=1
-我真的很担心你。你最近有没有好好休息？
-I am really worried about you. Have you been resting well lately?
+你也没吃饭。你最近在做什么？你为什么不开心？
+You also haven't eaten. What have you been doing lately? Why are you unhappy?
 
 zh=2
-我没有休息好，我一直在难过。
-I haven't rested well; I've just been feeling sad.
+我没有工作，也没有朋友。我只是觉得很累，没有力气。
+I don't have work, and I don't have friends. I just feel very tired, and I have no energy.
 
 zh=1
-是因为最近发生的那些事情吗？
-Is it because of those things that have been happening lately?
-
-zh=2
-我不知道，我只是觉得什么都不想做，状态非常糟糕。
-I don't know; I just feel like I don't want to do anything. My state is very terrible.
+别担心，我在这儿。我一直在担心你。
+Don't worry, I am here. I have been worrying about you.
 
 BREAKDOWN
 
 en=teacher
-Let's go through that dialogue line by line. We'll start with Xiao Li's first question.
+Let's break down this emotional conversation line by line. It begins with Xiao Mei entering the room.
 
 zh=1
-你好，我来看看你。你为什么没接我的电话？
-Hello, I came to see you. Why haven't you been answering my calls these past two days?
+你在干什么？你为什么没开灯？
+What are you doing? Why haven't you turned on the lights?
 
 en=student
-"你为什么没接我的电话?" I noticed the "没" there. Is that the same as "没有"?
+"你在干什么?" is a very common way to ask "What are you doing?". We see our grammar point here: 在 plus the verb 干什么. 
 
 en=teacher
-Great observation, Ryan. In casual speech, especially when negating a past action like "didn't answer," we often shorten 没有 to just 没. So, "没接" means "didn't answer."
+And then she asks, "你为什么没开灯?" meaning "Why haven't you turned on the lights?". Here, she uses 没有, which is contracted to 没, to negate the action of turning on the lights.
 
 en=student
-And what about "这两天"? 
-
-en=teacher
-That means "these two days" or "the past couple of days." It's a very common way to refer to a recent period of time.
+Then Xiao Ming responds.
 
 zh=2
-我一直在睡觉，没有听见。
-I've been sleeping all the time; I didn't hear them.
+我在睡觉。我没在干什么。
+I am sleeping. I am not doing anything.
 
 en=teacher
-Now we see our first grammar point in action. Xiao Wang says "我一直在睡觉." 
+He says "我在睡觉" (I am sleeping), using 在 to show the action is in progress. Then he says "我没在干什么". 
 
 en=student
-"一直在" sounds like it's stronger than just "在". 
+Wait, "没在" (méi zài)? That's that combination we talked about! Negating an action in progress.
 
 en=teacher
-It is! While 在 means "am [doing]," adding 一直 adds the meaning of "continuously" or "all along." So, "I have been sleeping all along" or "I've been sleeping the whole time." 
-
-en=student
-And then he says "没有听见." So that's the second grammar point: negating a past action. "I didn't hear."
-
-en=teacher
-Exactly. "听见" means to hear. Adding 没有 makes it "did not hear."
+Exactly. "I am not doing anything." Now, Xiao Mei notices the situation is getting worse.
 
 zh=1
-我真的很担心你。你最近有没有好好休息？
-I am really worried about you. Have you been resting well lately?
+你也没吃饭。你最近在做什么？你为什么不开心？
+You also haven't eaten. What have you been doing lately? Why are you unhappy?
 
 en=student
-"我真的很担心你." 担心 is our vocab word for "to worry." And then she asks "有没有好好休息?" 
+"你也没吃饭" means "You also didn't eat." The 也 (yě) means "also," and 没 confirms the action of eating didn't happen. 
 
 en=teacher
-Yes. Instead of a simple yes or no question, she uses the structure "有没有" which means "have or have not." It is a very common way to ask "Did you...?" or "Have you...?"
+"你最近在做什么?" uses 在 again to ask what he has been doing lately. And "不开心" is a common way to say "unhappy."
+
+en=student
+Then Xiao Ming's response is quite heartbreaking.
 
 zh=2
-我没有休息好，我一直在难过。
-I haven't rested well; I've just been feeling sad.
-
-en=student
-"我没有休息好." This is interesting. He's using "没有" with "休息好." 
+我没有工作，也没有朋友。我只是觉得很累，没有力气。
+I don't have work, and I don't have friends. I just feel very tired, and I have no energy.
 
 en=teacher
-Yes, because "休息好" can be thought of as a completed state of "resting well." By saying "没有休息好," he means he didn't achieve that state of good rest. And then, "我一直在难过."
+Let's look at "我没有工作." He uses 没有 to mean "I don't have." He follows that with "也没有朋友," meaning "and also don't have friends." 
 
 en=student
-Right, using "在" again to show a continuous emotional state. "I am [in the process of] being sad."
+And "没有力气" (méi yǒu lì qi). He is saying he lacks the strength or energy to even function. 
 
 en=teacher
-Exactly. It's not just that he is sad once, but that sadness is his current ongoing state.
+Precisely. Finally, Xiao Mei offers support.
 
 zh=1
-是因为最近发生的那些事情吗？
-Is it because of those things that have been happening lately?
+别担心，我在这儿。我一直在担心你。
+Don't worry, I am here. I have been worrying about you.
 
 en=student
-"事情" is the word for "things" or "matters." So she's asking if it's because of those recent events.
-
-zh=2
-我不知道，我只是觉得什么都不想做，状态非常糟糕。
-I don't know; I just feel like I don't want to do anything. My state is very terrible.
+"别担心" (bié dān xīn) is "Don't worry." And she says "我一直在担心你." 
 
 en=teacher
-Finally, Xiao Wang describes his condition using our last vocab word: 状态, meaning state or condition.
-
-en=student
-"状态非常糟糕." "糟糕" means terrible or bad. So his condition is very bad. 
-
-en=teacher
-Correct. And notice "什么都不想做" means "don't want to do anything." This is a common way to express that total lack of motivation that often accompanies depression.
+"一直在" (yī zhí zài) means "always" or "continuously." It's a great way to emphasize that an action or state has been happening without stopping for a duration. In this case, she has been worrying about him for some time.
 
 OUTRO
 
-en=student
-That was a heavy episode, but incredibly useful. We learned how to use 在 to describe ongoing actions and emotions, and how to use 没有 to negate past actions or states.
-
 en=teacher
-And we covered some very important vocabulary like 担心, 难过, 睡觉, 休息, 事情, and 状态. 
+That was a powerful lesson. Today we learned how to use 在 and 正在 to describe actions currently in progress.
 
 en=student
-If you're listening to this, remember: learning a language is about more than just words; it's about the ability to connect with people during their most vulnerable moments.
+And we learned how to use 没有 to negate possessions, like "not having" work or friends, and to negate completed actions, like "not having" eaten.
 
 en=teacher
-Well said, Ryan. Thanks for joining us. See you in the next episode of Learning Chinese.
+Remember, if you want to say "I am not doing" something, use 没在. And if you want to say "I didn't do" something, use 没有.
+
+en=student
+Thanks for listening to Learning Chinese. We'll see you in the next episode.
 
 VOICE PROFILES
 
 speaker = 1
 lang = "zh"
 gender = "女性"
-age = "三十岁左右"
-pitch = "中音域，语气温柔且带有同情心"
-pace = "慢速，语调平缓"
-volume = "中等，听起来很亲切"
-clarity = "清晰，充满感情"
-fluency = "流利，语速适中"
-timbre = "圆润，温暖"
-emotion = "关切，温柔，充满同情心"
-usecase = "一个关心朋友的体贴女性朋友"
-dialogue = "你好，我来看看你。你为什么没接我的电话？我真的很担心你。"
+age = "二十五岁左右"
+pitch = "中音域，带有明显的关切和担忧"
+pace = "中速，语调起伏较大，体现情感波动"
+volume = "中等，语气温柔但坚定"
+clarity = "清晰，吐字自然"
+fluency = "流畅，在表达情感时有自然的停顿"
+timbre = "清脆，富有同理心"
+emotion = "充满关爱、焦虑且真诚"
+usecase = "一个非常关心朋友的年轻女性"
+dialogue = "你在干什么？你为什么没开灯？别担心，我在这儿。我一直在担心你。"
 
 speaker = 2
 lang = "zh"
 gender = "男性"
-age = "二十多岁"
-pitch = "低音域，声音低沉且无力"
-pace = "慢速，节奏拖沓"
-volume = "较低，听起来没精打采"
-clarity = "略微含糊，显得很疲惫"
-fluency = "断断续续，带有明显的迟疑"
-timbre = "沙哑，听起来很疲惫"
-emotion = "消沉，无力，忧郁"
-usecase = "一个正在经历抑郁状态的年轻人"
-dialogue = "我一直在睡觉，没有听见。我不知道，我只是觉得很累。"
+age = "二十五岁左右"
+pitch = "低音域，非常低沉"
+pace = "缓慢，显得疲惫不堪"
+volume = "低，声音听起来很虚弱"
+clarity = "略微含混，听起来缺乏力气"
+fluency = "断断续续，由于缺乏能量而显得迟缓"
+timbre = "沙哑，沉闷"
+emotion = "消沉、沮丧、无力"
+usecase = "一个正在经历抑郁情绪的年轻人"
+dialogue = "我在睡觉。我没在干什么。我只是觉得很累，没有力气。"

@@ -9,7 +9,7 @@ from storyline.services.manager import ServiceManager
 
 _log = get_logger("flashcard.image")
 
-_STYLE_SUFFIX = ", coloring book, line drawing, simple, black and white"
+_STYLE_SUFFIX = ", coloring book style, line drawing, simple, black and white"
 
 _WORKFLOW_PATH = Path(__file__).resolve().parent / "flux2_klein_distilled.json"
 

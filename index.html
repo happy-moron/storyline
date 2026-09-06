@@ -31,6 +31,7 @@
         <button id="nextChapterBtn">Chapter ⏭️</button>
         <button id="englishBtn">🇬🇧</button>
         <button id="speedBtn">1x</button>
+        <button id="flashcardBtn" style="display: none;" title="Flashcards" onclick="openFlashcards()">🎴</button>
     </div>
 
     <script>
@@ -77,17 +78,41 @@
             return null;
         }
 
-        // ── Init ─────────────────────────────────────────────────────
-        document.addEventListener('DOMContentLoaded', async () => {
+        async function loadManifest() {
             try {
                 manifest = await fetch('books/manifest.json').then(r => r.json());
                 currentState.authors = manifest.books.map(a => a.author);
                 populateAuthors(currentState.authors);
+
+                // If URL params specify author/book, auto-navigate
+                const params = new URLSearchParams(window.location.search);
+                const urlAuthor = params.get('author');
+                const urlBook = params.get('book');
+                if (urlAuthor && manifest.books.some(a => a.author === urlAuthor)) {
+                    document.getElementById('authorSelect').value = urlAuthor;
+                    const authorEntry = manifest.books.find(a => a.author === urlAuthor);
+                    currentState.books = authorEntry ? authorEntry.books : [];
+                    populateBooks(currentState.books, urlAuthor);
+                    document.getElementById('bookSelect').disabled = false;
+                    currentState.selectedAuthor = urlAuthor;
+                    if (urlBook && currentState.books.some(b => b.slug === urlBook)) {
+                        document.getElementById('bookSelect').value = urlBook;
+                        currentState.selectedBook = urlBook;
+                        document.getElementById('chapterInput').value = 1;
+                        loadChapter(1);
+                        checkFlashcards();
+                    }
+                }
             } catch (error) {
                 console.error('Failed to load manifest:', error);
             }
+        }
+
+        // ── Init ─────────────────────────────────────────────────────
+        document.addEventListener('DOMContentLoaded', async () => {
+            loadDictionary();
+            await loadManifest();
         });
-        loadDictionary();
 
         function populateAuthors(authors) {
             const select = document.getElementById('authorSelect');
@@ -137,6 +162,7 @@
                 currentState.selectedBook = book;
                 document.getElementById('chapterInput').value = 1;
                 loadChapter(1);
+                checkFlashcards();
             } catch (error) {
                 console.error('Failed to load chapters:', error);
             }
@@ -150,6 +176,38 @@
 
         // ── Chapter loading ──────────────────────────────────────────
         let loadingChapter = false;
+        let flashcardAvailable = false;
+
+        async function checkFlashcards() {
+            const author = currentState.selectedAuthor;
+            const book = currentState.selectedBook;
+            if (!author || !book) {
+                document.getElementById('flashcardBtn').style.display = 'none';
+                return;
+            }
+            try {
+                const resp = await fetch(
+                    `books/${author}/${book}/flashcards/flashcard_entries.json`,
+                    { method: 'HEAD' }
+                );
+                flashcardAvailable = resp.ok;
+                document.getElementById('flashcardBtn').style.display =
+                    flashcardAvailable ? 'inline-block' : 'none';
+            } catch {
+                flashcardAvailable = false;
+                document.getElementById('flashcardBtn').style.display = 'none';
+            }
+        }
+
+        function openFlashcards() {
+            const author = currentState.selectedAuthor;
+            const book = currentState.selectedBook;
+            window.open(
+                `flashcards.html?author=${encodeURIComponent(author)}&book=${encodeURIComponent(book)}`,
+                '_blank'
+            );
+        }
+
         async function loadChapter(chapterNumber) {
             if (loadingChapter) return;
             loadingChapter = true;

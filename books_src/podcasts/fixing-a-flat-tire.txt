@@ -1,0 +1,221 @@
+INTRO
+
+en=student
+Welcome back to Learning Chinese. I am Ryan, and I am currently looking at a very flat tire on my car.
+
+en=teacher
+Oh no, Ryan! That is not a fun situation to be in. But it is actually a perfect way to learn some essential grammar.
+
+en=student
+I hope so! Because right now, I am feeling very stressed and I have no idea what to do.
+
+en=teacher
+Don't worry, we will get you through this. Today, we are learning two very useful structures. First, we have the adverb 也, which means "also" or "too." It is placed right before a verb or an adjective. For example, 我也是, which means I am also. Or 我也累, which means I am also tired.
+
+en=student
+So, if I want to say "I also need a tool," I would say 我也需要工具?
+
+en=teacher
+Exactly! You've got it. Second, we are looking at asking about degree using 多. When you place 多 before an adjective, it transforms the question to ask "how [adjective]?" For example, if you want to ask how big something is, you say 多大? Or if you want to ask how heavy something is, you say 多重?
+
+en=student
+Wait, I use 多少 for "how much" when talking about money. Is there a difference between 多少 and using 多 before an adjective?
+
+en=teacher
+That is a fantastic question, Ryan. 多少 is used to ask about quantity, like "how much money" or "how many people." But when you put 多 directly in front of an adjective, you are asking about the degree of that quality. So, 多少钱 is "how much money," but 多大 is "how big."
+
+en=student
+That makes sense. So if the tire is huge, I'd ask "How big is the tire?" using 多大.
+
+en=teacher
+Perfect. Before we get to our story, let's go through our six key vocabulary words. Please listen for the tones.
+
+en=teacher
+First, we have 轮胎, (second tone and second tone), meaning tire... 轮胎.
+
+en=teacher
+Next, we have 修理, (first tone and third tone), meaning to repair... 修理.
+
+en=teacher
+Then, we have 麻烦, (second tone and fifth tone), meaning trouble or troublesome... 麻烦.
+
+en=teacher
+We also have 工具, (first tone and fourth tone), meaning tool... 工具.
+
+en=teacher
+And we have 换, (fourth tone), meaning to change or to replace... 换.
+
+en=teacher
+Finally, we have 坏了, (fourth tone and neutral tone), meaning broken or spoiled... 坏了.
+
+en=student
+Got it. So, what is today's scenario?
+
+en=teacher
+You are going to hear a conversation on the side of a road. A driver named Xiao Chen has a flat tire and is feeling quite frustrated, and a passerby named Xiao Li stops to offer some help.
+
+DIALOGUE
+
+zh=1
+哎呀，我的轮胎坏了！
+Oh no, my tire is broken!
+
+zh=2
+需要帮忙吗？
+Do you need help?
+
+zh=1
+太好了！我不知道怎么修理这个。
+That's great! I don't know how to repair this.
+
+zh=2
+这个洞有多大？
+How big is this hole?
+
+zh=1
+很大。我也觉得很麻烦。
+It's very big. I also think it's very troublesome.
+
+zh=2
+别担心，我也有一套工具。
+Don't worry, I also have a set of tools.
+
+zh=1
+真的吗？你人真好！
+Really? You are so kind!
+
+zh=2
+没事。这个轮胎有多重？我来帮你换吧。
+It's nothing. How heavy is this tire? Let me help you change it.
+
+BREAKDOWN
+
+en=teacher
+Let's dive into that dialogue and break it down line by line. We start with Xiao Chen's exclamation of frustration.
+
+zh=1
+哎呀，我的轮胎坏了！
+Oh no, my tire is broken!
+
+en=student
+"哎呀" is such a classic expression! It's like "Oh man!" or "Oh no!" And "我的轮胎坏了" is straightforward, but "坏了" is used for everything from a broken machine to a spoiled meal.
+
+en=teacher
+Exactly. Then Xiao Li arrives to help.
+
+zh=2
+需要帮忙吗？
+Do you need help?
+
+en=student
+"需要" is to need, and "帮忙" is to help. It's a very common way to offer assistance.
+
+en=teacher
+Right. Xiao Chen is relieved and explains his problem.
+
+zh=1
+太好了！我不知道怎么修理这个。
+That's great! I don't know how to repair this.
+
+en=student
+"修理" is to repair. Ryan, do you remember the difference between "修理" and "换"?
+
+en=teacher
+Good catch, Ryan. "修理" is to fix something that is broken, while "换" is to replace it with something new. If your tire has a small puncture, you repair it. If it's completely destroyed, you change it.
+
+zh=2
+这个洞有多大？
+How big is this hole?
+
+en=student
+There it is! The "多" grammar! "有多大" is asking about the degree of the size.
+
+en=teacher
+Precisely. She is asking "How big is this hole?"
+
+zh=1
+很大。我也觉得很麻烦。
+It's very big. I also think it's very troublesome.
+
+en=student
+"我也觉得很麻烦" uses our "也" grammar. "I also feel it's troublesome." It's a great way to express shared sentiment.
+
+en=teacher
+And "麻烦" is a very useful word in daily life, whether it's a complicated task or a person being a nuisance.
+
+zh=2
+别担心，我也有一套工具。
+Don't worry, I also have a set of tools.
+
+en=student
+"一套" is a measure word for sets, right? Like a set of tools or a set of clothes?
+
+en=teacher
+You're learning fast! Yes, "一套工具" is a set of tools. And notice she uses "也" again here to say "I also have..."
+
+zh=1
+真的吗？你人真好！
+Really? You are so kind!
+
+en=student
+"你人真好" is a wonderful, natural way to tell someone they are a good person or very kind.
+
+zh=2
+没事。这个轮胎有多重？我来帮你换吧。
+It's nothing. How heavy is this tire? Let me help you change it.
+
+en=student
+"没事" can mean "no problem" or "it's nothing." And then we get one more "多" construction. "有多重" means "how heavy."
+
+en=teacher
+And she ends with "换", to change it. "我来帮你换吧" means "Let me help you change it." The "来" here implies "let me take the initiative to do something."
+
+en=student
+So, "来" is not just "to come" in this context?
+
+en=teacher
+In this specific structure, "Subject + 来 + Verb" indicates that the subject is about to perform an action for someone else, like "Let me do this."
+
+OUTRO
+
+en=student
+Whew, I think I've got the hang of it. We covered "也" for adding information, and "多" for asking about the degree of an adjective.
+
+en=teacher
+That's right. Just remember, use "多少" for quantity and "多 + Adjective" for degree. And don't be afraid to use "哎呀" when things go wrong!
+
+en=student
+I'll definitely remember that. Thanks for the lesson, Ellen.
+
+en=teacher
+You're welcome! Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，因焦虑而略有波动"
+pace = "中速，在急促时稍快"
+volume = "中等，略带紧迫感"
+clarity = "清晰，但带有情绪化的起伏"
+fluency = "由于焦虑，语速不完全均匀"
+timbre = "清脆，略带年轻人的干练"
+emotion = "焦虑、挫败但充满感激"
+usecase = "一个倒霉的年轻司机"
+dialogue = "哎呀，我的轮胎坏了！太好了！我不知道怎么修理这个。很大。我也觉得很麻烦。真的吗？你人真好！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，非常平稳"
+pace = "较慢，语速从容"
+volume = "温和，令人安心"
+clarity = "非常清晰，咬字圆润"
+fluency = "流利，非常稳重"
+timbre = "圆润，温和，有亲和力"
+emotion = "冷静、友善、乐于助人"
+usecase = "一位热心的路人"
+dialogue = "需要帮忙吗？这个洞有多大？别担心，我也有一套工具。没事。这个轮胎有多重？我来帮你换吧。"

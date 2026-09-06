@@ -79,15 +79,18 @@ def create_mp3(
     t0 = time.time()
 
     flashcard_intro = None
+    flashcard_audio_cache = None
     if flashcard_dir:
         entries_path = flashcard_dir / "flashcard_entries.json"
         if entries_path.is_file():
             with open(entries_path, encoding="utf-8") as f:
                 entries = json.load(f)
-            flashcard_intro = build_flashcard_intro_sequence(entries)
+            flashcard_intro, flashcard_audio_cache = build_flashcard_intro_sequence(
+                entries, flashcard_audio_dir=flashcard_dir,
+            )
             log.info(
-                "event=flashcard_intro_built entries=%d steps=%d",
-                len(entries), len(flashcard_intro),
+                "event=flashcard_intro_built entries=%d steps=%d cached_audio=%d",
+                len(entries), len(flashcard_intro), len(flashcard_audio_cache),
             )
 
     try:
@@ -104,6 +107,7 @@ def create_mp3(
             title=title,
             use_builtin_hosts=use_builtin_hosts,
             flashcard_intro=flashcard_intro,
+            flashcard_audio_cache=flashcard_audio_cache,
             vocab_output_path=vocab_output_path,
         )
 

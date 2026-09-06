@@ -6,6 +6,7 @@ Usage:
 """
 
 import argparse
+import json
 import os
 import signal
 import subprocess
@@ -82,8 +83,27 @@ def run_full_pipeline(
         int((time.time() - t0) * 1000),
     )
 
-    if service_manager is not None:
-        service_manager.stop("tts")
+    # ── Generate flashcard audio ──
+    if not skip_flashcards:
+        flashcard_dir = result.get("flashcard_dir")
+        if flashcard_dir and (flashcard_dir / "flashcard_entries.json").is_file():
+            log.info("event=pipeline_stage stage=2a flashcard_audio")
+            t0 = time.time()
+            from storyline.flashcard.run_pipeline import generate_flashcard_audio
+
+            with open(flashcard_dir / "flashcard_entries.json", encoding="utf-8") as f:
+                entries = json.load(f)
+
+            if service_manager is not None:
+                service_manager.start_if_needed("tts")
+            generate_flashcard_audio(flashcard_dir, entries, service_manager)
+            if service_manager is not None:
+                service_manager.stop("tts")
+
+            log.info(
+                "event=pipeline_stage_complete stage=2a duration_ms=%d",
+                int((time.time() - t0) * 1000),
+            )
 
     # ── Stage 2.5 — Flashcards (image gen + PDF) ───────────────────────
     if not skip_flashcards:

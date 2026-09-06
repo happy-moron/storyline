@@ -216,18 +216,25 @@ def _build_line_by_line_with_transitions(
     return steps
 
 
-def build_flashcard_intro_sequence(flashcard_entries: list[list[str]]) -> list[Step]:
+def build_flashcard_intro_sequence(
+    flashcard_entries: list[list[str]],
+    flashcard_audio_dir: Path | None = None,
+) -> tuple[list[Step], dict[str, AudioSegment]]:
     steps: list[Step] = []
+    preloaded: dict[str, AudioSegment] = {}
     if not flashcard_entries:
-        return steps
+        return steps, preloaded
 
     steps.append(HostStep("teacher", "en", "The vocab in this lesson is："))
 
-    for entry in flashcard_entries:
+    audio_dir = Path(flashcard_audio_dir) if flashcard_audio_dir else None
+
+    for i, entry in enumerate(flashcard_entries):
         word = entry[0]
         meaning = entry[2]
         sentence = entry[3]
         translation = entry[5]
+        idx = i + 1
 
         steps.append(HostStep("teacher", "en", f"The chinese word... {word}"))
         steps.append(HostStep("teacher", "en", f"This means... {meaning}"))
@@ -238,7 +245,16 @@ def build_flashcard_intro_sequence(flashcard_entries: list[list[str]]) -> list[S
         steps.append(HostStep("teacher", "zh", sentence))
         steps.append(HostStep("teacher", "en", translation))
 
-    return steps
+        if audio_dir:
+            word_audio_path = audio_dir / f"audio_{idx}_word.mp3"
+            sentence_audio_path = audio_dir / f"audio_{idx}_sentence.mp3"
+
+            if sentence_audio_path.is_file():
+                audio = AudioSegment.from_file(str(sentence_audio_path))
+                cache_key = ("teacher", "zh", sentence)
+                preloaded[cache_key] = audio
+
+    return steps, preloaded
 
 
 def build_podcast_sequence(
@@ -485,6 +501,7 @@ def assemble_podcast_mp3(
     bitrate: str = "64k",
     use_builtin_hosts: bool = False,
     flashcard_intro: list[Step] | None = None,
+    flashcard_audio_cache: dict[tuple[str, str, str], AudioSegment] | None = None,
     vocab_output_path: Path | None = None,
 ) -> Path:
     if voices_dir is None:
@@ -502,6 +519,9 @@ def assemble_podcast_mp3(
     host_cache = _prefetch_host_audio(
         steps, host_service, clone_service, voices_dir, use_builtin_hosts,
     )
+
+    if flashcard_audio_cache:
+        host_cache.update(flashcard_audio_cache)
 
     # Stop TTS before any Omnivoice calls to free GPU memory.
     # When Omnivoice handles everything (use_builtin_hosts=False), TTS was

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="flashcards.css">
+</head>
+<body>
+    <div class="top-bar">
+        <a class="back-link" id="backLink" href="index.html">← Back to Reader</a>
+        <span class="card-counter" id="cardCounter"></span>
+        <button class="speed-btn" id="speedBtn" title="Playback speed">1x</button>
+    </div>
+
+    <div class="main-area" id="mainArea">
+        <div class="error-msg" id="loadingMsg">Loading flashcards…</div>
+    </div>
+
+    <div class="bottom-nav">
+        <button class="nav-btn" id="prevBtn" title="Previous (←)">← Prev</button>
+        <button class="nav-btn flip-btn" id="flipBtn" title="Flip (Space)">
+            Flip <span class="kbd-hint">␣</span>
+        </button>
+        <button class="nav-btn" id="nextBtn" title="Next (→)">Next →</button>
+    </div>
+
+    <script>
+        // ── Audio ─────────────────────────────────────────────────────
+        let playbackSpeeds = [0.5, 0.7, 0.85, 1.0];
+        let currentSpeedIndex = 3;
+        let currentAudio = null;
+
+        function stopAudio() {
+            if (currentAudio) {
+                currentAudio.pause();
+                currentAudio.currentTime = 0;
+                currentAudio = null;
+            }
+        }
+
+        function playAudio(src) {
+            stopAudio();
+            const audio = new Audio(src);
+            audio.playbackRate = playbackSpeeds[currentSpeedIndex];
+            currentAudio = audio;
+            audio.play().catch(e => console.error('Audio play failed:', e));
+        }
+
+        // ── State ─────────────────────────────────────────────────────
+        let entries = [];
+        let currentIndex = 0;
+        let isFlipped = false;
+        let author = '';
+        let book = '';
+
+        // ── DOM refs ──────────────────────────────────────────────────
+        const mainArea = document.getElementById('mainArea');
+        const cardCounter = document.getElementById('cardCounter');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const flipBtn = document.getElementById('flipBtn');
+        const speedBtn = document.getElementById('speedBtn');
+        const backLink = document.getElementById('backLink');
+
+        // ── Query params ──────────────────────────────────────────────
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                author: params.get('author') || '',
+                book: params.get('book') || '',
+            };
+        }
+
+        // ── Load entries ──────────────────────────────────────────────
+        async function loadEntries() {
+            const params = getQueryParams();
+            author = params.author;
+            book = params.book;
+
+            if (!author || !book) {
+                showError('Missing author or book parameter. <a href="index.html">Back to Reader</a>');
+                return;
+            }
+
+            backLink.href = `index.html?author=${encodeURIComponent(author)}&book=${encodeURIComponent(book)}`;
+
+            try {
+                const resp = await fetch(`books/${author}/${book}/flashcards/flashcard_entries.json`);
+                if (!resp.ok) {
+                    throw new Error(`HTTP ${resp.status}`);
+                }
+                entries = await resp.json();
+            } catch (e) {
+                console.error('Failed to load flashcards:', e);
+                showError(
+                    `No flashcards found for "${book}". <a href="index.html">Back to Reader</a>`
+                );
+                return;
+            }
+
+            if (!entries.length) {
+                showError(
+                    `No flashcard entries for "${book}". <a href="index.html">Back to Reader</a>`
+                );
+                return;
+            }
+
+            // Check which audio files exist
+            for (let i = 0; i < entries.length; i++) {
+                const idx = i + 1;
+                entries[i]._hasWordAudio = false;
+                entries[i]._hasSentenceAudio = false;
+            }
+
+            // Fire-and-forget audio checks; UI updates on demand
+            for (let i = 0; i < entries.length; i++) {
+                const idx = i + 1;
+                const wordUrl = `books/${author}/${book}/flashcards/audio_${idx}_word.mp3`;
+                const sentUrl = `books/${author}/${book}/flashcards/audio_${idx}_sentence.mp3`;
+
+                try {
+                    const r = await fetch(wordUrl, { method: 'HEAD' });
+                    entries[i]._hasWordAudio = r.ok;
+                } catch (_) {}
+
+                try {
+                    const r = await fetch(sentUrl, { method: 'HEAD' });
+                    entries[i]._hasSentenceAudio = r.ok;
+                } catch (_) {}
+            }
+
+            currentIndex = 0;
+            renderCard();
+        }
+
+        function showError(msg) {
+            mainArea.innerHTML = `<div class="error-msg">${msg}</div>`;
+            prevBtn.disabled = true;
+            nextBtn.disabled = true;
+            flipBtn.disabled = true;
+        }
+
+        // ── Render ─────────────────────────────────────────────────────
+        function audioUrl(idx, type) {
+            return `books/${author}/${book}/flashcards/audio_${idx}_${type}.mp3`;
+        }
+
+        function renderCard() {
+            if (!entries.length) return;
+
+            const entry = entries[currentIndex];
+            const idx = currentIndex + 1;
+
+            // Word, pinyin, definition
+            const word = entry[0] || '';
+            const pinyin = entry[1] || '';
+            const definition = entry[2] || '';
+
+            // Sample sentence
+            const sampleCn = entry[3] || '';
+            const samplePy = entry[4] || '';
+            const sampleEn = entry[5] || '';
+
+            // Audio available?
+            const hasWordAudio = entry._hasWordAudio;
+            const hasSentenceAudio = entry._hasSentenceAudio;
+
+            mainArea.innerHTML = `
+                <div class="card-container" id="cardContainer" onclick="toggleFlip()">
+                    <div class="card${isFlipped ? ' flipped' : ''}" id="theCard">
+                        <div class="card-face card-front">
+                            <div class="card-word">${escapeHtml(word)}</div>
+                            <div class="card-pinyin">${escapeHtml(pinyin)}</div>
+                            <div class="card-hint">tap to reveal English</div>
+                        </div>
+                        <div class="card-face card-back">
+                            <div class="card-definition">${escapeHtml(definition)}</div>
+                            <div class="card-hint">tap to view Chinese</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sample-area">
+                    <div class="sample-label">Sample Sentence</div>
+                    <div class="sample-chinese">${escapeHtml(sampleCn)}</div>
+                    <div class="sample-pinyin">${escapeHtml(samplePy)}</div>
+                    <div class="sample-english">${escapeHtml(sampleEn)}</div>
+                </div>
+
+                <div class="audio-row">
+                    <button class="audio-btn" id="wordAudioBtn"
+                            ${hasWordAudio ? '' : 'disabled'}
+                            onclick="playAudio('${audioUrl(idx, 'word')}')"
+                            title="Play word audio (W)">
+                        <span class="icon">🔊</span> Word
+                    </button>
+                    <button class="audio-btn" id="sentenceAudioBtn"
+                            ${hasSentenceAudio ? '' : 'disabled'}
+                            onclick="playAudio('${audioUrl(idx, 'sentence')}')"
+                            title="Play sentence audio (S)">
+                        <span class="icon">🔊</span> Sentence
+                    </button>
+                </div>
+
+                <div class="progress-dots">
+                    ${entries.map((_, i) =>
+                        `<div class="progress-dot${i === currentIndex ? ' active' : ''}"></div>`
+                    ).join('')}
+                </div>
+            `;
+
+            cardCounter.textContent = `${currentIndex + 1} / ${entries.length}`;
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === entries.length - 1;
+        }
+
+        function escapeHtml(str) {
+            const div = document.createElement('div');
+            div.textContent = str;
+            return div.innerHTML;
+        }
+
+        // ── Navigation ─────────────────────────────────────────────────
+
+        function toggleFlip() {
+            isFlipped = !isFlipped;
+            const card = document.getElementById('theCard');
+            if (card) {
+                card.classList.toggle('flipped', isFlipped);
+            }
+        }
+
+        function goTo(index) {
+            if (index < 0 || index >= entries.length) return;
+            stopAudio();
+            currentIndex = index;
+            isFlipped = false;
+            renderCard();
+        }
+
+        function goNext() {
+            if (currentIndex < entries.length - 1) {
+                goTo(currentIndex + 1);
+            }
+        }
+
+        function goPrev() {
+            if (currentIndex > 0) {
+                goTo(currentIndex - 1);
+            }
+        }
+
+        // ── Buttons ────────────────────────────────────────────────────
+
+        prevBtn.addEventListener('click', goPrev);
+        nextBtn.addEventListener('click', goNext);
+        flipBtn.addEventListener('click', toggleFlip);
+
+        speedBtn.addEventListener('click', () => {
+            currentSpeedIndex = (currentSpeedIndex + 1) % playbackSpeeds.length;
+            speedBtn.textContent = playbackSpeeds[currentSpeedIndex] + 'x';
+            if (currentAudio) {
+                currentAudio.playbackRate = playbackSpeeds[currentSpeedIndex];
+            }
+        });
+
+        // ── Keyboard shortcuts ─────────────────────────────────────────
+
+        document.addEventListener('keydown', (e) => {
+            // Don't intercept if user is typing in an input
+            if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+            switch (e.key) {
+                case 'ArrowLeft':
+                case 'h':
+                    e.preventDefault();
+                    goPrev();
+                    break;
+                case 'ArrowRight':
+                case 'l':
+                    e.preventDefault();
+                    goNext();
+                    break;
+                case ' ':
+                    e.preventDefault();
+                    toggleFlip();
+                    break;
+                case 'w':
+                case '1':
+                    e.preventDefault();
+                    if (entries.length) {
+                        const idx = currentIndex + 1;
+                        playAudio(audioUrl(idx, 'word'));
+                    }
+                    break;
+                case 's':
+                case '2':
+                    e.preventDefault();
+                    if (entries.length) {
+                        const idx = currentIndex + 1;
+                        playAudio(audioUrl(idx, 'sentence'));
+                    }
+                    break;
+            }
+        });
+
+        // ── Touch swipe ────────────────────────────────────────────────
+
+        let touchStartX = 0;
+        let touchStartY = 0;
+
+        document.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+            touchStartY = e.touches[0].clientY;
+        });
+
+        document.addEventListener('touchend', (e) => {
+            const dx = e.changedTouches[0].clientX - touchStartX;
+            const dy = e.changedTouches[0].clientY - touchStartY;
+
+            if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 40) {
+                if (dx < 0) goNext();
+                else goPrev();
+            }
+        });
+
+        // ── Init ───────────────────────────────────────────────────────
+        loadEntries();
+    </script>
+</body>
+</html>

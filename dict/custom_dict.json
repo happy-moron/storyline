@@ -152458,5 +152458,99 @@
         }
       }
     ]
+  },
+  "慌": {
+    "pinyin": "huāng",
+    "definition": [
+      {
+        "meaning": "panicked; nervous",
+        "example": {
+          "chinese": "别慌，深呼吸。",
+          "pinyin": "Bié huāng, shēn hū xī.",
+          "english": "Don't panic, take a deep breath."
+        }
+      },
+      {
+        "meaning": "flustered; in a flurry",
+        "example": {
+          "chinese": "他忙得有些慌。",
+          "pinyin": "Tā máng de yǒu xiē huāng.",
+          "english": "He is a bit flustered because he is busy."
+        }
+      }
+    ]
+  },
+  "修理厂": {
+    "pinyin": "xiū lǐ chǎng",
+    "definition": [
+      {
+        "meaning": "repair shop; repair plant; garage",
+        "example": {
+          "chinese": "他把车送到修理厂了。",
+          "pinyin": "Tā bǎ chē sòng dào xiū lǐ chǎng le.",
+          "english": "He sent the car to the repair shop."
+        }
+      }
+    ]
+  },
+  "等会儿": {
+    "pinyin": "děng huì r",
+    "definition": [
+      {
+        "meaning": "a little while; a moment",
+        "example": {
+          "chinese": "等会儿见。",
+          "pinyin": "Děng huì r jiàn.",
+          "english": "See you in a little while."
+        }
+      },
+      {
+        "meaning": "to wait a moment",
+        "example": {
+          "chinese": "请等会儿。",
+          "pinyin": "Qǐng děng huì r.",
+          "english": "Please wait a moment."
+        }
+      }
+    ]
+  },
+  "家务": {
+    "pinyin": "jiā wù",
+    "definition": [
+      {
+        "meaning": "housework; household chores",
+        "example": {
+          "chinese": "妈妈正在做家务。",
+          "pinyin": "Mā ma zhèng zài zuò jiā wù.",
+          "english": "Mom is doing housework."
+        }
+      }
+    ]
+  },
+  "〇": {
+    "pinyin": "líng",
+    "definition": [
+      {
+        "meaning": "zero; naught",
+        "example": {
+          "chinese": "他的分数是〇分。",
+          "pinyin": "Tā de fēnshù shì líng fēn.",
+          "english": "His score is zero."
+        }
+      }
+    ]
+  },
+  "洗衣粉": {
+    "pinyin": "xǐ yī fěn",
+    "definition": [
+      {
+        "meaning": "laundry detergent; washing powder",
+        "example": {
+          "chinese": "我需要买一包洗衣粉。",
+          "pinyin": "Wǒ xū yào mǎi yī bāo xǐ yī fěn.",
+          "english": "I need to buy a bag of laundry detergent."
+        }
+      }
+    ]
   }
 }

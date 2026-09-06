@@ -1,0 +1,209 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a very practical topic: sorting through the laundry. 
+
+en=student
+Laundry day! That sounds like a lot of work. I usually leave mine in a pile for a week.
+
+en=teacher
+Exactly! And to help you manage that chaos, today we are learning two essential grammar points. First, we have the measure word 个. In Chinese, you cannot just say "one bag" or "one cup." You must use a measure word between the number and the noun. The structure is number, followed by 个, followed by the noun. For example, 一个袋子, which means one bag.
+
+en=student
+Okay, so it is like saying "a" in English, but it's mandatory in Chinese?
+
+en=teacher
+Precisely. You can use it for a wide variety of things. Second, we are looking at how to state the date. In English, we say "May twelfth," but in Chinese, we always go from the largest unit to the smallest: year, then month, then day. So, it follows the structure number, year, number, month, number, day.
+
+en=student
+So, instead of saying "May twelfth, two thousand twenty-four," I would say "two thousand twenty-four year, five month, twelve day"?
+
+en=teacher
+You've got it! It feels reversed at first, but it makes a lot of sense once you get used to it. Before we get into our dialogue, let's look at our key vocabulary.
+
+en=teacher
+We have 衣服, (first tone and first tone), meaning clothes... 衣服.
+
+en=teacher
+We have 袋子, (fourth tone and first tone), meaning bag... 袋子.
+
+en=teacher
+We have 洗, (third tone), meaning to wash... 洗.
+
+en=teacher
+We have 干净, (first tone and fourth tone), meaning clean... 干净.
+
+en=teacher
+We have 准备, (third tone and fourth tone), meaning to prepare... 准备.
+
+en=teacher
+We have 杯子, (first tone and neutral tone), meaning cup... 杯子.
+
+en=student
+Got it. And what is our scenario today?
+
+en=teacher
+In this scene, you are going to hear two roommates, Xiao Ming and Xiao Li, arguing slightly about the laundry situation. Xiao Ming is very organized and wants to get things done, while Xiao Li is a bit more relaxed and... well, a bit messy.
+
+DIALOGUE
+
+zh=1
+今天是二〇二四年五月十二日。我们得洗这些衣服。
+Today is May twelfth, two thousand twenty-four. We must wash these clothes.
+
+zh=2
+是的。我有一个很大的袋子。
+Yes. I have one very big bag.
+
+zh=1
+里面有什么？
+What is inside?
+
+zh=2
+有很多衣服，还有一个杯子！
+There are many clothes, and also one cup!
+
+zh=1
+哎呀，杯子要洗干净。
+Oh, the cup needs to be washed clean.
+
+zh=2
+别担心。我们六月一日再洗。
+Don't worry. We will wash it again on June first.
+
+zh=1
+好吧。那我们需要准备什么？
+Okay. Then what do we need to prepare?
+
+zh=2
+只需要洗衣粉。
+We only need laundry detergent.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with Xiao Ming.
+
+zh=1
+今天是二〇二四年五月十二日。我们得洗这些衣服。
+Today is May twelfth, two thousand twenty-four. We must wash these clothes.
+
+en=student
+"今天是..." means "Today is...". And look at that date! "二〇二四年" is the year, "五月" is May, and "十二日" is the twelfth. It follows that large-to-small order we talked about.
+
+en=teacher
+Right. Then Xiao Li responds: "是的。我有一个很大的袋子。"
+
+zh=2
+是的。我有一个很大的袋子。
+Yes. I have one very big bag.
+
+en=student
+"有一个很大的袋子." There is our grammar point! "一" is one, "个" is the measure word, and "袋子" is the bag. "很大" means very big.
+
+en=teacher
+Exactly. Xiao Ming asks: "里面有什么？"
+
+zh=1
+里面有什么？
+What is inside?
+
+en=student
+"里面" means inside. "什么" means what. Very straightforward.
+
+en=teacher
+And Xiao Li's chaotic response: "有很多衣服，还有一个杯子！"
+
+zh=2
+有很多衣服，还有一个杯子！
+There are many clothes, and also one cup!
+
+en=student
+"有很多" means "has many." And then we see "还有一个杯子." "还" means also or still. And here we go again with the grammar point: "一个杯子," which is one cup.
+
+en=teacher
+Xiao Ming sounds a bit exasperated here: "哎呀，杯子要洗干净。"
+
+zh=1
+哎呀，杯子要洗干净。
+Oh, the cup needs to be washed clean.
+
+en=student
+"哎呀" is a great expression for "Oh my" or "Oh no." And "洗干净" is interesting. It is not just "wash," it is "wash clean."
+
+en=teacher
+Yes, "干净" is the result. You are washing until it is clean. Xiao Li is very calm though: "别担心。我们六月一日再洗。"
+
+zh=2
+别担心。我们六月一日再洗。
+Don't worry. We will wash it again on June first.
+
+en=student
+"别担心" is "don't worry." And "六月一日" is June first. Notice how we used "日" again for the date. And "再" means again.
+
+en=teacher
+Finally, the negotiation: "好吧。那我们需要准备什么？" and "只需要洗衣粉。"
+
+zh=1
+好吧。那我们需要准备什么？
+Okay. Then what do we need to prepare?
+
+zh=2
+只需要洗衣粉。
+We only need laundry detergent.
+
+en=student
+"准备" is to prepare, and "只需要" means "only need." This was a great way to see how these grammar points work in a real, albeit slightly stressful, situation.
+
+en=teacher
+It really was. Using "个" and the date structure in context makes them much easier to remember.
+
+OUTRO
+
+en=student
+Phew! Sorting laundry is much more complicated in Chinese than I thought.
+
+en=teacher
+It just takes practice! So, today we learned how to use the measure word 个 to count things like bags and cups, and we learned the specific order for dates: Year, Month, then Day.
+
+en=student
+And we learned some great words like 衣服, 袋子, 洗, 干净, 准备, and 杯子.
+
+en=teacher
+That's right. Keep practicing these structures, and maybe next time, try to organize your own laundry while you study!
+
+en=student
+I'll try, but no promises!
+
+en=teacher
+Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "二十多岁"
+pitch = "中音域，语速较快，带有焦虑感"
+pace = "中速"
+volume = "中等"
+clarity = "清晰"
+fluency = "流利，但在表达不满时语调略显急促"
+timbre = "清脆，略带紧迫感"
+emotion = "严谨，有点爱唠叨，有点焦虑"
+usecase = "一个追求整洁、做事有计划的室友"
+dialogue = "今天是二〇二四年五月十二日。我们得洗这些衣服。杯子要洗干净！我们需要准备什么？"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十多岁"
+pitch = "低音域，非常平稳"
+pace = "慢速"
+volume = "略小"
+clarity = "清晰，但语气慵懒"
+fluency = "流畅，节奏非常放松"
+timbre = "圆润，略带沙哑"
+emotion = "随性，极其悠闲"
+usecase = "一个生活随性、甚至有点邋遢的室友"
+dialogue = "我有一个很大的袋子。里面有很多衣服，还有一个杯子！别担心。我们六月一日再洗。只需要洗衣粉。"

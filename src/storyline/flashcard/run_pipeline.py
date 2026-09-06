@@ -1,14 +1,19 @@
 import argparse
 import json
+import time
 from pathlib import Path
 
 import storyline.logging
+from storyline.audio.audiobook_gen_qwen3 import Qwen3TTSService
 from storyline.config.pipeline_config import PipelineConfig
 from storyline.logging import get_logger
 from storyline.services.manager import ServiceManager
 
 CACHE_FILE = "flashcard_entries.json"
 IMPROMPTS_FILE = "image_prompts.json"
+
+_BUILTIN_FLASHCARD_SPEAKER = "Serena"
+_BUILTIN_FLASHCARD_INSTRUCT = ""
 
 
 def _load_cached_entries(output_dir: Path) -> list[list[str]] | None:
@@ -113,6 +118,54 @@ def _write_text_files_and_collect_prompts(
 
     _save_image_prompts(output_dir, image_prompts)
     return image_prompts
+
+
+def generate_flashcard_audio(
+    output_dir: Path,
+    entries: list[list[str]],
+    service_manager: ServiceManager,
+) -> None:
+    log = get_logger("flashcard.audio")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    tts = Qwen3TTSService()
+    log.info("event=flashcard_audio_start entries=%d", len(entries))
+
+    for i, entry in enumerate(entries):
+        word = entry[0]
+        sentence = entry[3]
+        idx = i + 1
+
+        word_path = output_dir / f"audio_{idx}_word.mp3"
+        sentence_path = output_dir / f"audio_{idx}_sentence.mp3"
+
+        if not word_path.is_file():
+            t0 = time.time()
+            audio = tts.generate_audio(
+                word, "Chinese",
+                speaker=_BUILTIN_FLASHCARD_SPEAKER,
+                instruct=_BUILTIN_FLASHCARD_INSTRUCT,
+            )
+            audio.export(str(word_path), format="mp3", bitrate="64k")
+            log.info(
+                "event=flashcard_audio_word index=%d word=%s duration_ms=%d",
+                idx, word, int((time.time() - t0) * 1000),
+            )
+
+        if not sentence_path.is_file():
+            t0 = time.time()
+            audio = tts.generate_audio(
+                sentence, "Chinese",
+                speaker=_BUILTIN_FLASHCARD_SPEAKER,
+                instruct=_BUILTIN_FLASHCARD_INSTRUCT,
+            )
+            audio.export(str(sentence_path), format="mp3", bitrate="64k")
+            log.info(
+                "event=flashcard_audio_sentence index=%d chars=%d duration_ms=%d",
+                idx, len(sentence), int((time.time() - t0) * 1000),
+            )
+
+    log.info("event=flashcard_audio_done entries=%d", len(entries))
 
 
 def run_flashcard_pipeline(
