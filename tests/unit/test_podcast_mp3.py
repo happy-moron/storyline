@@ -5,17 +5,20 @@ import pytest
 from pydub import AudioSegment
 
 from storyline.podcast.mp3_gen import (
-    CharacterStep,
-    HostStep,
     _prefetch_character_audio,
     _prefetch_host_audio,
     assemble_podcast_mp3,
-    build_podcast_sequence,
+    assemble_flashcard_vocab_mp3,
     build_podcast_tags,
-    dialogue_index_map,
     host_reference,
-    read_profile_dialogue,
-    render_step,
+    HostVoiceConfig,
+)
+from storyline.podcast.steps import (
+    build_flashcard_intro_sequence,
+    build_podcast_sequence,
+    CharacterStep,
+    dialogue_index_map,
+    HostStep,
 )
 from storyline.podcast.script_parser import (
     DialogueLine,
@@ -110,43 +113,19 @@ class FakeService:
 
 
 # ---------------------------------------------------------------------------
-# Voice profile file parsing
+# Host reference
 # ---------------------------------------------------------------------------
-
-class TestReadProfileDialogue:
-    def test_extracts_dialogue(self, tmp_path):
-        path = tmp_path / "teacher.txt"
-        path.write_text(
-            'lang = "zh"\ngender = "女"\ndialogue = "你学得很快。"\n',
-            encoding="utf-8",
-        )
-        assert read_profile_dialogue(path) == "你学得很快。"
-
-    def test_handles_curly_quotes(self, tmp_path):
-        path = tmp_path / "teacher.txt"
-        path.write_text(
-            'dialogue = "你学得很快。现在，我们来试一点。"\n',
-            encoding="utf-8",
-        )
-        assert read_profile_dialogue(path) == "你学得很快。现在，我们来试一点。"
-
-    def test_missing_dialogue_raises(self, tmp_path):
-        path = tmp_path / "bad.txt"
-        path.write_text('lang = "zh"\n', encoding="utf-8")
-        with pytest.raises(ValueError, match="dialogue"):
-            read_profile_dialogue(path)
-
 
 class TestHostReference:
     def test_teacher_paths(self, tmp_path):
-        (tmp_path / "teacher.txt").write_text('dialogue = "老师。"', encoding="utf-8")
+        (tmp_path / "teacher-ref.txt").write_text("老师。", encoding="utf-8")
         (tmp_path / "teacher.wav").write_bytes(b"wav")
         wav, ref_text = host_reference("teacher", tmp_path)
         assert wav == tmp_path / "teacher.wav"
         assert ref_text == "老师。"
 
     def test_student_paths(self, tmp_path):
-        (tmp_path / "student.txt").write_text('dialogue = "Hi there."', encoding="utf-8")
+        (tmp_path / "student-ref.txt").write_text("Hi there.", encoding="utf-8")
         (tmp_path / "student.wav").write_bytes(b"wav")
         wav, ref_text = host_reference("student", tmp_path)
         assert wav == tmp_path / "student.wav"
@@ -184,21 +163,19 @@ class TestBuildPodcastSequence:
         check(steps[idx], CharacterStep(1, "你好。", 0)); idx += 1
         check(steps[idx], CharacterStep(2, "你好吗？", 1)); idx += 1
 
-        # Line-by-line: label + 3 reps with transitions
+        # Line-by-line: label + 3 reps (no inner transitions in this mode)
         check(steps[idx], HostStep("teacher", "en", "Now we'll hear the dialogue with translation three times"))
         idx += 1
         check(steps[idx], HostStep("teacher", "zh", "你好。")); idx += 1
         check(steps[idx], HostStep("student", "en", "Hello.")); idx += 1
-        check(steps[idx], HostStep("teacher", "zh", "你好吗？")); idx += 1
-        check(steps[idx], HostStep("student", "en", "How are you?")); idx += 1
-        check(steps[idx], HostStep("teacher", "en", "Second time")); idx += 1
+        check(steps[idx], HostStep("teacher", "zh", "你好。")); idx += 1
+        check(steps[idx], HostStep("student", "en", "Hello.")); idx += 1
         check(steps[idx], HostStep("teacher", "zh", "你好。")); idx += 1
         check(steps[idx], HostStep("student", "en", "Hello.")); idx += 1
         check(steps[idx], HostStep("teacher", "zh", "你好吗？")); idx += 1
         check(steps[idx], HostStep("student", "en", "How are you?")); idx += 1
-        check(steps[idx], HostStep("teacher", "en", "Third time")); idx += 1
-        check(steps[idx], HostStep("teacher", "zh", "你好。")); idx += 1
-        check(steps[idx], HostStep("student", "en", "Hello.")); idx += 1
+        check(steps[idx], HostStep("teacher", "zh", "你好吗？")); idx += 1
+        check(steps[idx], HostStep("student", "en", "How are you?")); idx += 1
         check(steps[idx], HostStep("teacher", "zh", "你好吗？")); idx += 1
         check(steps[idx], HostStep("student", "en", "How are you?")); idx += 1
 
@@ -221,14 +198,14 @@ class TestBuildPodcastSequence:
         check(steps[idx], HostStep("teacher", "en", "That's all for today."))
         check(steps[idx + 1], HostStep("student", "en", "See you next time!"))
 
-        assert len(steps) == 39
+        assert len(steps) == 37
 
     def test_custom_repetition_counts(self):
         steps = build_podcast_sequence(_script(), dialogue_repetitions=2,
                                        line_by_line_repetitions=2)
-        # intro(2) + first_dialogue(1+2+1+2=6) + line-by-line(1+4+1+4=10)
+        # intro(2) + first_dialogue(1+2+1+2=6) + line-by-line(1+4+4=9)
         # + breakdown(2) + final_dialogue(1+2+1+2=6) + outro(2)
-        assert len(steps) == 2 + 6 + 10 + 2 + 6 + 2
+        assert len(steps) == 2 + 6 + 9 + 2 + 6 + 2
 
     def test_dialogue_index_map_first_occurrence(self):
         script = PodcastScript(
@@ -242,55 +219,43 @@ class TestBuildPodcastSequence:
 
 
 # ---------------------------------------------------------------------------
-# Rendering steps
+# Prefetch
 # ---------------------------------------------------------------------------
 
-class TestRenderStep:
-    def test_host_step_clones(self, tmp_path):
-        (tmp_path / "teacher.txt").write_text('dialogue = "老师。"', encoding="utf-8")
+class TestPrefetchHostAudio:
+    def test_builtin_hosts_grouped_by_speaker(self, tmp_path):
+        host_service = FakeService()
+        clone_service = FakeService()
+        host_voice = HostVoiceConfig(
+            teacher_builtin_speaker="Serena",
+            student_builtin_speaker="Ryan",
+        )
+        steps = [
+            HostStep("teacher", "en", "Hello"),
+            HostStep("teacher", "en", "Hello"),  # duplicate
+            HostStep("student", "en", "Hi"),
+        ]
+        cache = _prefetch_host_audio(
+            steps, host_service, clone_service, tmp_path,
+            host_voice, use_builtin_hosts=True,
+        )
+        assert len(cache) == 2  # unique (speaker, lang, text) pairs
+        # Only unique texts get generated
+        assert len(host_service.audio_calls) == 2
+
+    def test_clone_hosts_uses_reference(self, tmp_path):
+        (tmp_path / "teacher-ref.txt").write_text("老师。", encoding="utf-8")
         (tmp_path / "teacher.wav").write_bytes(b"wav")
-        service = FakeService()
-
-        render_step(
-            HostStep("teacher", "zh", "你好。"), _script(), "slug", tmp_path,
-            service, tmp_path,
+        host_service = FakeService()
+        clone_service = FakeService()
+        host_voice = HostVoiceConfig()
+        steps = [HostStep("teacher", "zh", "你好。")]
+        cache = _prefetch_host_audio(
+            steps, host_service, clone_service, tmp_path,
+            host_voice, use_builtin_hosts=False,
         )
-
-        assert len(service.clone_calls) == 1
-        text, language, ref_audio, ref_text = service.clone_calls[0]
-        assert text == "你好。"
-        assert language == "chinese"
-        assert ref_audio == str(tmp_path / "teacher.wav")
-        assert ref_text == "老师。"
-
-    def test_character_step_reuses_existing_audio(self, tmp_path):
-        audio_dir = tmp_path / "audio"
-        audio_dir.mkdir()
-        reuse = audio_dir / "000_slug_1_zh.mp3"
-        AudioSegment.silent(duration=150).export(reuse, "mp3")
-
-        service = FakeService()
-        seg = render_step(
-            CharacterStep(1, "你好。", 0), _script(), "slug", tmp_path,
-            service, tmp_path,
-        )
-
-        assert service.clone_calls == []
-        assert len(seg) == 150
-
-    def test_character_step_generates_when_missing(self, tmp_path):
-        service = FakeService(duration_ms=120)
-        render_step(
-            CharacterStep(1, "你好。", 0), _script(), "slug", tmp_path,
-            service, tmp_path,
-        )
-
-        assert len(service.clone_calls) == 1
-        text, language, ref_audio, ref_text = service.clone_calls[0]
-        assert text == "你好。"
-        assert language == "chinese"
-        assert ref_audio == str(tmp_path / "slug_1.wav")
-        assert ref_text == "你好。"
+        assert len(clone_service.clone_calls) == 1
+        assert clone_service.clone_calls[0][0] == "你好。"
 
 
 # ---------------------------------------------------------------------------
@@ -301,9 +266,9 @@ class TestAssemblePodcastMp3:
     def _setup(self, tmp_path):
         voices_dir = tmp_path / "voices"
         voices_dir.mkdir()
-        (voices_dir / "teacher.txt").write_text('dialogue = "老师。"' , encoding="utf-8")
+        (voices_dir / "teacher-ref.txt").write_text("老师。", encoding="utf-8")
         (voices_dir / "teacher.wav").write_bytes(b"wav")
-        (voices_dir / "student.txt").write_text('dialogue = "Hi there."', encoding="utf-8")
+        (voices_dir / "student-ref.txt").write_text("Hi there.", encoding="utf-8")
         (voices_dir / "student.wav").write_bytes(b"wav")
 
         base_dir = tmp_path / "books" / "podcasts" / "slug"
@@ -348,9 +313,9 @@ class TestAssemblePodcastMp3:
     def test_clones_when_no_reader_audio(self, tmp_path):
         voices_dir = tmp_path / "voices"
         voices_dir.mkdir()
-        (voices_dir / "teacher.txt").write_text('dialogue = "老师。"', encoding="utf-8")
+        (voices_dir / "teacher-ref.txt").write_text("老师。", encoding="utf-8")
         (voices_dir / "teacher.wav").write_bytes(b"wav")
-        (voices_dir / "student.txt").write_text('dialogue = "Hi."', encoding="utf-8")
+        (voices_dir / "student-ref.txt").write_text("Hi.", encoding="utf-8")
         (voices_dir / "student.wav").write_bytes(b"wav")
         base_dir = tmp_path / "books" / "podcasts" / "slug"
         output_path = tmp_path / "out" / "slug.mp3"

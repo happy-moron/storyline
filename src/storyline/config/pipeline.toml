@@ -32,7 +32,7 @@ omnivoice.batch_model = "k2-fsa/OmniVoice"
 
 # -- Paths --
 paths.books_dir = "books"
-paths.audiobook_dir = "/home/zspdude/temp/audio"
+paths.audiobook_dir = "dist/audio"
 paths.dict_file = "dict/custom_dict.json"
 
 paths.prompts.warmup = "prompts/warmup.txt"

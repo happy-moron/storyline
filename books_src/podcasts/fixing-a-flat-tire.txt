@@ -1,221 +1,348 @@
 INTRO
 
-en=student
-Welcome back to Learning Chinese. I am Ryan, and I am currently looking at a very flat tire on my car.
-
 en=teacher
-Oh no, Ryan! That is not a fun situation to be in. But it is actually a perfect way to learn some essential grammar.
+Welcome to Learning Chinese. I am Ellen, and today we are dealing with a situation that can turn any road trip into a nightmare: a flat tire.
 
 en=student
-I hope so! Because right now, I am feeling very stressed and I have no idea what to do.
+Oh man, that sounds stressful. I really don't want to deal with that while driving through the countryside.
 
 en=teacher
-Don't worry, we will get you through this. Today, we are learning two very useful structures. First, we have the adverb 也, which means "also" or "too." It is placed right before a verb or an adjective. For example, 我也是, which means I am also. Or 我也累, which means I am also tired.
+Precisely. And when things go wrong, you need the right grammar to express your frustration or to reassure your friends. Today, we are focusing on two very important structures. First, the standard negation using 不. You use 不 before a verb or an adjective to negate a present or habitual action, or to express a desire. For example, 我不吃 (I don't eat) or 我不累 (I am not tired).
 
 en=student
-So, if I want to say "I also need a tool," I would say 我也需要工具?
+Okay, so it's like saying "do not" or "am not." But wait, if I'm talking about something that already happened, like "I didn't eat," do I still use 不?
 
 en=teacher
-Exactly! You've got it. Second, we are looking at asking about degree using 多. When you place 多 before an adjective, it transforms the question to ask "how [adjective]?" For example, if you want to ask how big something is, you say 多大? Or if you want to ask how heavy something is, you say 多重?
+That is a great question, Ryan. For completed actions, we usually use 没有, but today we are sticking to the core usage of 不 for descriptions and current states. Second, we are learning about the "all" adverb, 都. You place 都 before a verb or an adjective to indicate that something applies to everyone or everything in a group. For example, 我们都喜欢 (We all like it) or 他们都很高 (They are all very tall).
 
 en=student
-Wait, I use 多少 for "how much" when talking about money. Is there a difference between 多少 and using 多 before an adjective?
+So if I say 我们都不, I am saying "none of us" or "we all do not"?
 
 en=teacher
-That is a fantastic question, Ryan. 多少 is used to ask about quantity, like "how much money" or "how many people." But when you put 多 directly in front of an adjective, you are asking about the degree of that quality. So, 多少钱 is "how much money," but 多大 is "how big."
+Exactly. You are combining negation and "all" to say that the negative applies to the entire group. Before we hear the dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+We have 轮胎, (second tone, first tone), meaning tire... 轮胎。
+
+en=teacher
+We have 坏, (fourth tone), meaning broken or spoiled... 坏。
+
+en=teacher
+We have 换, (fourth tone), meaning to change or to replace... 换。
+
+en=teacher
+We have 工具, (first tone, fourth tone), meaning tools... 工具。
+
+en=teacher
+We have 着急, (second tone, second tone), meaning to worry or to be anxious... 着急。
+
+en=teacher
+We have 备用, (fourth tone, fourth tone), meaning spare or reserve... 备用。
 
 en=student
-That makes sense. So if the tire is huge, I'd ask "How big is the tire?" using 多大.
+Got it. And what is the scenario?
 
 en=teacher
-Perfect. Before we get to our story, let's go through our six key vocabulary words. Please listen for the tones.
-
-en=teacher
-First, we have 轮胎, (second tone and second tone), meaning tire... 轮胎.
-
-en=teacher
-Next, we have 修理, (first tone and third tone), meaning to repair... 修理.
-
-en=teacher
-Then, we have 麻烦, (second tone and fifth tone), meaning trouble or troublesome... 麻烦.
-
-en=teacher
-We also have 工具, (first tone and fourth tone), meaning tool... 工具.
-
-en=teacher
-And we have 换, (fourth tone), meaning to change or to replace... 换.
-
-en=teacher
-Finally, we have 坏了, (fourth tone and neutral tone), meaning broken or spoiled... 坏了.
-
-en=student
-Got it. So, what is today's scenario?
-
-en=teacher
-You are going to hear a conversation on the side of a road. A driver named Xiao Chen has a flat tire and is feeling quite frustrated, and a passerby named Xiao Li stops to offer some help.
+In this episode, you are going to hear two friends, Li Hua and Xiao Mei, who are on a road trip. Suddenly, the car starts shaking, and they realize they have a problem on a very lonely road.
 
 DIALOGUE
 
 zh=1
-哎呀，我的轮胎坏了！
-Oh no, my tire is broken!
+糟糕！轮胎坏了！这里一个车也没有！
+Oh no! The tire is broken! There isn't a single car here!
 
 zh=2
-需要帮忙吗？
-Do you need help?
+别着急，我们都有备用轮胎。
+Don't worry, we both have a spare tire.
 
 zh=1
-太好了！我不知道怎么修理这个。
-That's great! I don't know how to repair this.
+我不记得带了工具！我们真的倒霉透了。
+I don't remember bringing the tools! We are truly out of luck.
 
 zh=2
-这个洞有多大？
-How big is this hole?
+后备箱里都有工具，别担心。
+There are tools in the trunk, don't worry.
 
 zh=1
-很大。我也觉得很麻烦。
-It's very big. I also think it's very troublesome.
+我真的不会换。我觉得这太难了。
+I really don't know how to change it. I think this is too difficult.
 
 zh=2
-别担心，我也有一套工具。
-Don't worry, I also have a set of tools.
-
-zh=1
-真的吗？你人真好！
-Really? You are so kind!
-
-zh=2
-没事。这个轮胎有多重？我来帮你换吧。
-It's nothing. How heavy is this tire? Let me help you change it.
+我们慢慢来，我们都可以学会。
+Let's take it slow, we can both learn.
 
 BREAKDOWN
 
 en=teacher
-Let's dive into that dialogue and break it down line by line. We start with Xiao Chen's exclamation of frustration.
+Let's dive into that dialogue and break it down line by line. We start with Li Hua, who sounds quite panicked.
 
 zh=1
-哎呀，我的轮胎坏了！
-Oh no, my tire is broken!
+糟糕！轮胎坏了！这里一个车也没有！
+Oh no! The tire is broken! There isn't a single car here!
 
 en=student
-"哎呀" is such a classic expression! It's like "Oh man!" or "Oh no!" And "我的轮胎坏了" is straightforward, but "坏了" is used for everything from a broken machine to a spoiled meal.
+"糟糕" (zāo gāo) is such a perfect, dramatic way to say "oh no" or "what a mess." And "轮胎坏了" is a classic structure. "轮胎" is the tire, and "坏了" is broken.
 
 en=teacher
-Exactly. Then Xiao Li arrives to help.
+Right. That "了" at the end of "坏了" is important; it indicates a change of state. The tire was fine, and now it is broken. Then he says "这里一个车也没有." This is a more advanced way to say "there are no cars," using "一...也/都 不..." to mean "not even one."
 
 zh=2
-需要帮忙吗？
-Do you need help?
+别着急，我们都有备用轮胎。
+Don't worry, we both have a spare tire.
 
 en=student
-"需要" is to need, and "帮忙" is to help. It's a very common way to offer assistance.
+Xiao Mei is much calmer. She says "别着急" (bié zháo jí). "别" means don't, and "着急" means to worry.
 
 en=teacher
-Right. Xiao Chen is relieved and explains his problem.
+Exactly. Then comes our grammar point: "我们都有." "我们" is we, and "都" means all or both. So, "we both have." She's reassuring him.
 
 zh=1
-太好了！我不知道怎么修理这个。
-That's great! I don't know how to repair this.
+我不记得带了工具！我们真的倒霉透了。
+I don't remember bringing the tools! We are truly out of luck.
 
 en=student
-"修理" is to repair. Ryan, do you remember the difference between "修理" and "换"?
+Here is our first use of "不" for negation. "我不记得" means "I don't remember."
 
 en=teacher
-Good catch, Ryan. "修理" is to fix something that is broken, while "换" is to replace it with something new. If your tire has a small puncture, you repair it. If it's completely destroyed, you change it.
+Correct. And "倒霉透了" (dǎo méi tòu le) is a very colorful way to say "to be extremely unlucky." "透" (tòu) here acts like "to the extreme."
 
 zh=2
-这个洞有多大？
-How big is this hole?
+后备箱里都有工具，别担心。
+There are tools in the trunk, don't worry.
 
 en=student
-There it is! The "多" grammar! "有多大" is asking about the degree of the size.
+Xiao Mei is staying positive. She says "都有" (dōu yǒu) again. "There are all the tools in the trunk."
 
 en=teacher
-Precisely. She is asking "How big is this hole?"
+Yes, she is emphasizing that the tools are indeed there.
 
 zh=1
-很大。我也觉得很麻烦。
-It's very big. I also think it's very troublesome.
+我真的不会换。我觉得这太难了。
+I really don't know how to change it. I think this is too difficult.
 
 en=student
-"我也觉得很麻烦" uses our "也" grammar. "I also feel it's troublesome." It's a great way to express shared sentiment.
+"我真的不会换" (wǒ zhēn de bù huì huàn). This is a great example of "不会." "会" means to know how to do something, so "不会" means "don't know how to" or "cannot."
 
 en=teacher
-And "麻烦" is a very useful word in daily life, whether it's a complicated task or a person being a nuisance.
+Precisely. And "我觉得这太难了" (wǒ jué de zhè tài nán le) uses "觉得" to express an opinion, "I feel/think," and "太...了" to mean "too..."
 
 zh=2
-别担心，我也有一套工具。
-Don't worry, I also have a set of tools.
+我们慢慢来，我们都可以学会。
+Let's take it slow, we can both learn.
 
 en=student
-"一套" is a measure word for sets, right? Like a set of tools or a set of clothes?
+"我们都可以学会" (wǒ men dōu kě yǐ xué huì). "都" again! "We can both learn."
 
 en=teacher
-You're learning fast! Yes, "一套工具" is a set of tools. And notice she uses "也" again here to say "I also have..."
-
-zh=1
-真的吗？你人真好！
-Really? You are so kind!
-
-en=student
-"你人真好" is a wonderful, natural way to tell someone they are a good person or very kind.
-
-zh=2
-没事。这个轮胎有多重？我来帮你换吧。
-It's nothing. How heavy is this tire? Let me help you change it.
-
-en=student
-"没事" can mean "no problem" or "it's nothing." And then we get one more "多" construction. "有多重" means "how heavy."
-
-en=teacher
-And she ends with "换", to change it. "我来帮你换吧" means "Let me help you change it." The "来" here implies "let me take the initiative to do something."
-
-en=student
-So, "来" is not just "to come" in this context?
-
-en=teacher
-In this specific structure, "Subject + 来 + Verb" indicates that the subject is about to perform an action for someone else, like "Let me do this."
+It's a very encouraging way to end the conversation. "学会" means to learn a skill.
 
 OUTRO
 
-en=student
-Whew, I think I've got the hang of it. We covered "也" for adding information, and "多" for asking about the degree of an adjective.
+INTRO
 
 en=teacher
-That's right. Just remember, use "多少" for quantity and "多 + Adjective" for degree. And don't be afraid to use "哎呀" when things go wrong!
+Welcome to Learning Chinese. I am Ellen, and today we are dealing with a situation that can turn any road trip into a nightmare: a flat tire.
 
 en=student
-I'll definitely remember that. Thanks for the lesson, Ellen.
+Oh man, that sounds stressful. I really don't want to deal with that while driving through the countryside.
 
 en=teacher
-You're welcome! Thanks for listening to Learning Chinese. See you next time!
+Precisely. And when things go wrong, you need the right grammar to express your frustration or to reassure your friends. Today, we are focusing on two very important structures. First, the standard negation using 不. You use 不 before a verb or an adjective to negate a present or habitual action, or to express a desire. For example, 我不吃 (I don't eat) or 我不累 (I am not tired).
+
+en=student
+Okay, so it's like saying "do not" or "am not." But wait, if I'm talking about something that already happened, like "I didn't eat," do I still use 不?
+
+en=teacher
+That is a great question, Ryan. For completed actions, we usually use 没有, but today we are sticking to the core usage of 不 for descriptions and current states. Second, we are learning about the "all" adverb, 都. You place 都 before a verb or an adjective to indicate that something applies to everyone or everything in a group. For example, 我们都喜欢 (We all like it) or 他们都很高 (They are all very tall).
+
+en=student
+So if I say 我们都不, I am saying "none of us" or "we all do not"?
+
+en=teacher
+Exactly. You are combining negation and "all" to say that the negative applies to the entire group. Before we hear the dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+We have 轮胎, (second tone, first tone), meaning tire... 轮胎。
+
+en=teacher
+We have 坏, (fourth tone), meaning broken or spoiled... 坏。
+
+en=teacher
+We have 换, (fourth tone), meaning to change or to replace... 换。
+
+en=teacher
+We have 工具, (first tone, fourth tone), meaning tools... 工具。
+
+en=teacher
+We have 着急, (second tone, second tone), meaning to worry or to be anxious... 着急。
+
+en=teacher
+We have 备用, (fourth tone, fourth tone), meaning spare or reserve... 备用。
+
+en=student
+Got it. And what is the scenario?
+
+en=teacher
+In this episode, you are going to hear two friends, Li Hua and Xiao Mei, who are on a road trip. Suddenly, the car starts shaking, and they realize they have a problem on a very lonely road.
+
+DIALOGUE
+
+zh=1
+糟糕！轮胎坏了！这里一个车也没有！
+Oh no! The tire is broken! There isn't a single car here!
+
+zh=2
+别着急，我们都有备用轮胎。
+Don't worry, we both have a spare tire.
+
+zh=1
+我不记得带了工具！我们真的倒霉透了。
+I don't remember bringing the tools! We are truly out of luck.
+
+zh=2
+后备箱里都有工具，别担心。
+There are tools in the trunk, don't worry.
+
+zh=1
+我真的不会换。我觉得这太难了。
+I really don't know how to change it. I think this is too difficult.
+
+zh=2
+我们慢慢来，我们都可以学会。
+Let's take it slow, we can both learn.
+
+BREAKDOWN
+
+en=teacher
+Let's dive into that dialogue and break it down line by line. We start with Li Hua, who sounds quite panicked.
+
+zh=1
+糟糕！轮胎坏了！这里一个车也没有！
+Oh no! The tire is broken! There isn't a single car here!
+
+en=student
+"糟糕" (zāo gāo) is such a perfect, dramatic way to say "oh no" or "what a mess." And "轮胎坏了" is a classic structure. "轮胎" is the tire, and "坏了" is broken.
+
+en=teacher
+Right. That "了" at the end of "坏了" is important; it indicates a change of state. The tire was fine, and now it is broken. Then he says "这里一个车也没有." This is a more advanced way to say "there are no cars," using "一...也/都 不..." to mean "not even one."
+
+zh=2
+别着急，我们都有备用轮胎。
+Don't worry, we both have a spare tire.
+
+en=student
+Xiao Mei is much calmer. She says "别着急" (bié zháo jí). "别" means don't, and "着急" means to worry.
+
+en=teacher
+Exactly. Then comes our grammar point: "我们都有." "我们" is we, and "都" means all or both. So, "we both have." She's reassuring him.
+
+zh=1
+我不记得带了工具！我们真的倒霉透了。
+I don't remember bringing the tools! We are truly out of luck.
+
+en=student
+Here is our first use of "不" for negation. "我不记得" means "I don't remember." 
+
+en=teacher
+Correct. And "倒霉透了" (dǎo méi tòu le) is a very colorful way to say "to be extremely unlucky." "透" (tòu) here acts like "to the extreme."
+
+zh=2
+后备箱里都有工具，别担心。
+There are tools in the trunk, don't worry.
+
+en=student
+Xiao Mei is staying positive. She says "都有" (dōu yǒu) again. "There are all the tools in the trunk."
+
+en=teacher
+Yes, she is emphasizing that the tools are indeed there.
+
+zh=1
+我真的不会换。我觉得这太难了。
+I really don't know how to change it. I think this is too difficult.
+
+en=student
+"我真的不会换" (wǒ zhēn de bù huì huàn). This is a great example of "不会." "会" means to know how to do something, so "不会" means "don't know how to" or "cannot."
+
+en=teacher
+Precisely. And "我觉得这太难了" (wǒ jué de zhè tài nán le) uses "觉得" to express an opinion, "I feel/think," and "太...了" to mean "too..."
+
+zh=2
+我们慢慢来，我们都可以学会。
+Let's take it slow, we can both learn.
+
+en=student
+"我们都可以学会" (wǒ men dōu kě yǐ xué huì). "都" again! "We can both learn." 
+
+en=teacher
+It's a very encouraging way to end the conversation. "学会" means to learn a skill.
 
 VOICE PROFILES
 
 speaker = 1
 lang = "zh"
 gender = "男性"
-age = "二十五岁左右"
-pitch = "中音域，因焦虑而略有波动"
-pace = "中速，在急促时稍快"
-volume = "中等，略带紧迫感"
-clarity = "清晰，但带有情绪化的起伏"
-fluency = "由于焦虑，语速不完全均匀"
-timbre = "清脆，略带年轻人的干练"
-emotion = "焦虑、挫败但充满感激"
-usecase = "一个倒霉的年轻司机"
-dialogue = "哎呀，我的轮胎坏了！太好了！我不知道怎么修理这个。很大。我也觉得很麻烦。真的吗？你人真好！"
+age = "三十岁左右"
+pitch = "中音域，因焦虑而忽高忽低"
+pace = "略快，节奏急促"
+volume = "中等，但语调急促"
+clarity = "清晰，但带有喘息感"
+fluency = "由于紧张，语速不均匀" 
+timbre = "略显沙哑，带有焦灼感"
+emotion = "焦虑、挫败、手忙脚乱" 
+usecase = "一个在路边遇到麻烦、有点大惊小怪的年轻男子"
+dialogue = "糟糕！轮胎坏了！这里一个车也没有！"
 
 speaker = 2
 lang = "zh"
 gender = "女性"
 age = "三十岁左右"
-pitch = "中音域，非常平稳"
-pace = "较慢，语速从容"
-volume = "温和，令人安心"
-clarity = "非常清晰，咬字圆润"
-fluency = "流利，非常稳重"
-timbre = "圆润，温和，有亲和力"
-emotion = "冷静、友善、乐于助人"
-usecase = "一位热心的路人"
-dialogue = "需要帮忙吗？这个洞有多大？别担心，我也有一套工具。没事。这个轮胎有多重？我来帮你换吧。"
+pitch = "中音域，平稳"
+pace = "缓慢，节奏沉稳"
+volume = "适中"
+clarity = "非常清晰"
+fluency = "流畅，非常有条理" 
+timbre = "圆润，温和"
+emotion = "冷静、从容、给人安慰" 
+usecase = "一个情绪极其稳定、在危机中能保持理智的朋友"
+dialogue = "别着急，我们都有备用轮胎。我们慢慢来，我们都可以学会。"
+
+OUTRO
+
+en=teacher
+That's all for today! We hope you found this lesson on the negation "不" and the adverb "都" useful.
+
+en=student
+I certainly did! Thanks for joining us, and we'll see you in the next episode!
+
+en=teacher
+Goodbye!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，因焦虑而忽高忽低"
+pace = "略快，节奏急促"
+volume = "中等，但语调急促"
+clarity = "清晰，但带有喘息感"
+fluency = "由于紧张，语速不均匀"
+timbre = "略显沙哑，带有焦灼感"
+emotion = "焦虑、挫败、手忙脚乱"
+usecase = "一个在路边遇到麻烦、有点大惊小怪的年轻男子"
+dialogue = "糟糕！轮胎坏了！这里一个车也没有！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，平稳"
+pace = "缓慢，节奏沉稳"
+volume = "适中"
+clarity = "非常清晰"
+fluency = "流畅，非常有条理"
+timbre = "圆润，温和"
+emotion = "冷静、从容、给人安慰"
+usecase = "一个情绪极其稳定、在危机中能保持理智的朋友"
+dialogue = "别着急，我们都有备用轮胎。我们慢慢来，我们都可以学会。"

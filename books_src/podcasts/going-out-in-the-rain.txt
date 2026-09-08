@@ -1,0 +1,210 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are talking about a situation almost everyone finds themselves in: dealing with unexpected weather and the stubbornness that comes with it. Specifically, we are going out in the rain.
+
+en=student
+Oh man, I hate getting caught in the rain. It is so much of a hassle.
+
+en=teacher
+It really is. And to talk about these situations, we need two very important grammar points. First, we have the adverb 还, pronounced hái. It is used to indicate continuation, meaning "still." For example, 他还在睡觉 (He is still sleeping) or 我还在学中文 (I am still learning Chinese).
+
+en=student
+So it's used when an action or a state is continuing from the past into the present.
+
+en=teacher
+Exactly. Second, we are looking at the emphasis with 就是, which is pronounced jiù shì. When placed before a verb, it can be used to add strong emphasis, often meaning "simply," "just," or "exactly." For instance, 我就是不想去 (I simply don't want to go). It adds a certain "finality" or "stubbornness" to the statement.
+
+en=student
+That sounds very useful for when I'm being argumentative!
+
+en=teacher
+It is! But be careful with your tone! Before we get to the drama in our dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+We have 下雨, (both fourth tones), meaning to rain... 下雨。
+
+en=teacher
+We have 雨伞, (both third tones), meaning umbrella... 雨伞。
+
+en=teacher
+We have 湿, (first tone), meaning wet... 湿。
+
+en=teacher
+We have 准备, (third tone and fourth tone), meaning to prepare... 准备。
+
+en=teacher
+We have 决定, (third tone and fourth tone), meaning to decide... 决定。
+
+en=teacher
+And we have 还是, (second tone and second tone), which can mean "still" or "or"... 还是。
+
+en=student
+Got it. So, what is the story today?
+
+en=teacher
+In this scene, you are going to hear a conversation between two friends, Xiao Mei and Xiao Ming. Xiao Mei is very concerned about the weather, but Xiao Ming has already made a decision and is being quite stubborn about going out.
+
+DIALOGUE
+
+zh=1
+外面雨很大，你不出门吗？
+It is raining heavily outside, aren't you going out?
+
+zh=2
+我还要去咖啡馆。
+I still want to go to the cafe.
+
+zh=1
+你会全身都湿透的！
+You will get soaked all over!
+
+zh=2
+我已经准备好雨伞了。
+I have already prepared an umbrella.
+
+zh=1
+你就是不听我的话。
+You simply won't listen to me.
+
+zh=2
+我就是要去，雨还在下，但我没时间。
+I am just going; it is still raining, but I don't have time.
+
+zh=1
+那你快点走吧，别感冒了。
+Then go quickly, don't catch a cold.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with Xiao Mei, who is worried.
+
+zh=1
+外面雨很大，你不出门吗？
+It is raining heavily outside, aren't you going out?
+
+en=student
+"外面" means outside. And "雨很大" is a very common way to say it's raining heavily. Instead of saying "the rain is big," you're essentially saying the rain is great in intensity.
+
+en=teacher
+Right. Then Xiao Ming replies.
+
+zh=2
+我还要去咖啡馆。
+I still want to go to the cafe.
+
+en=student
+There is our first grammar point! "我还要去". That "还" means he still wants to go, despite the rain.
+
+en=teacher
+Correct. Then Xiao Mei gets more dramatic.
+
+zh=1
+你会全身都湿透的！
+You will get soaked all over!
+
+en=student
+"湿透" is a great phrase. "湿" is wet, and "透" means through or thoroughly. So, "soaked through."
+
+en=teacher
+Exactly. Now, Xiao Ming tries to reassure her.
+
+zh=2
+我已经准备好雨伞了。
+I have already prepared an umbrella.
+
+en=student
+"准备" is to prepare. And "雨伞" is the umbrella we learned earlier.
+
+en=teacher
+Now we get to the meat of the grammar. Xiao Mei is getting frustrated.
+
+zh=1
+你就是不听我的话。
+You simply won't listen to me.
+
+en=student
+There it is! "你就是不听". That "就是" is adding so much emphasis to her frustration. It's like saying, "You are *just* being stubborn and not listening."
+
+en=teacher
+Precisely. It's not just "you don't listen," it's "you *just* won't listen." Now, watch how Xiao Ming uses both grammar points in one sentence.
+
+zh=2
+我就是要去，雨还在下，但我没时间。
+I am just going; it is still raining, but I don't have time.
+
+en=student
+Wow, he used both! "我就是要去" uses "就是" for emphasis—he's being very firm. And "雨还在下" uses "还" to say the rain is still falling.
+
+en=teacher
+You've got it. He's using "还" to describe the continuing state of the rain.
+
+en=student
+Is there a difference between using "还是" and "还" in this context?
+
+en=teacher
+Great question. "还" usually means "still" or "also," while "还是" is often used when you are choosing between options, like "Do you want tea or coffee?" or "I still think it's better to go." In the sense of "still," they can overlap, but "还" is the more direct adverb for continuation.
+
+en=student
+That makes sense. And finally, Xiao Mei gives up.
+
+zh=1
+那你快点走吧，别感冒了。
+Then go quickly, don't catch a cold.
+
+en=teacher
+"别" means "don't," as in a command or a suggestion not to do something. And "感冒" is to catch a cold.
+
+en=student
+So, if you want to be stubborn in the rain, you'd say "我就是要去!"
+
+en=teacher
+Exactly! Just don't blame us if you get wet!
+
+OUTRO
+
+en=teacher
+And that brings us to the end of today's episode.
+
+en=student
+We covered a lot! We learned how to use "还" to talk about things that are still happening, like the rain "还在下" or someone "还要去" somewhere.
+
+en=teacher
+And we saw how "就是" can turn a simple sentence into a much more emphatic, sometimes stubborn statement.
+
+en=student
+And of course, we learned some essential survival vocabulary for a rainy day, like "雨伞," "下雨," and "湿透."
+
+en=teacher
+Thanks for listening to Learning Chinese. Keep practicing, and we'll see you in the next episode.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，带有一点焦虑感"
+pace = "中速，语气有些急促"
+volume = "中等，但在表达担忧时会升高"
+clarity = "清晰，语调起伏明显"
+fluency = "流利，但在表达不满时会有短促的停顿"
+timbre = "温和但略显尖锐"
+emotion = "担忧，焦虑，最终感到无奈"
+usecase = "一个热心但有点爱唠叨的朋友"
+dialogue = "外面雨很大，你不出门吗？你会全身都湿透的！你就是不听我的话。那你快点走吧，别感冒了。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十岁出头"
+pitch = "中高音域，非常坚定"
+pace = "略快，充满活力"
+volume = "响亮"
+clarity = "非常清晰"
+fluency = "极其流利，非常有自信"
+timbre = "清脆，甜美但强硬"
+emotion = "坚定，有点任性，非常有主见"
+usecase = "一个性格开朗且非常固执的年轻人"
+dialogue = "我还要去咖啡馆。我已经准备好雨伞了。我就是要去，雨还在下，但我没时间。"

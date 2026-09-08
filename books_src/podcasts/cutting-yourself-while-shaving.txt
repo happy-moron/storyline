@@ -1,246 +1,216 @@
 INTRO
 
 en=teacher
-Welcome to Learning Chinese. I am Ellen, and today we are tackling a topic that is a bit painful, but something everyone has experienced: a shaving accident.
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a topic that is a little bit messy and perhaps a bit painful: a bathroom accident during shaving.
 
 en=student
-Oh no, I have definitely cut myself while shaving before. It is a nightmare.
+Oh boy, that sounds like a rough morning. I have definitely had those "oops" moments with a razor.
 
 en=teacher
-It really is. Today, we are going to learn two very important grammar points. First, the standard negation using 不. You use this before verbs and adjectives to say you do not do something or you are not a certain way. For example, 我不喝咖啡, I do not drink coffee, or 我不累, I am not tired.
+It is a real-life situation that you might encounter. Today, we are mastering two grammar points that will help you describe states and degrees of intensity. First, the adverb 也, which means "also" or "too." It is placed immediately before the verb or the adjective. For example, 我也是 (I am also) or 我也很累 (I am also very tired).
 
 en=student
-And the second one is the adverb 都, which means "all" or "both." 
+Right, so it doesn't go at the end of the sentence like "too" does in English. It stays right next to the action or the description.
 
 en=teacher
-Exactly. In Chinese, the word "all" or "both" must come after the subject and before the verb or adjective. So instead of saying "All we are students," you say 我们都是学生, We all are students.
+Exactly. Second, we are looking at how to ask about degree using 多. When you place 多 before an adjective, it turns the sentence into a question about "how [adjective]." For example, 你多高? (How tall are you?) or 你多大? (How old are you?). In our dialogue, we will use it to ask about physical sensation and size.
 
 en=student
-Got it. Subject, then 都, then the action. 
+So if I want to ask "How painful is it?", instead of just asking "Is it painful?", I would use 多 before the adjective for pain.
 
 en=teacher
-Precisely. Now, before we listen to our story, let's look at our six key vocabulary words. 
+You've got it. Before we listen to the drama unfold, let's look at our six key vocabulary words.
 
 en=teacher
-We have 刮胡子, (first tone, second tone, neutral tone), meaning to shave... 刮胡子.
+First, 刮胡子, (first tone, second tone, neutral tone), meaning to shave... 刮胡子.
 
 en=teacher
-We have 疼, (second tone), meaning to hurt or painful... 疼.
+Second, 受伤, (fourth tone, first tone), meaning to be injured or to get a cut... 受伤.
 
 en=teacher
-We have 出血, (first tone, fourth tone), meaning to bleed... 出血.
+Third, 疼, (second tone), meaning painful or to ache... 疼.
 
 en=teacher
-We have 伤口, (first tone, third tone), meaning wound... 伤口.
+Fourth, 血, (fourth tone), meaning blood... 血.
 
 en=teacher
-We have 医生, (first tone, first tone), meaning doctor... 医生.
+Fifth, 小心, (third tone, first tone), meaning to be careful or to be careful about... 小心.
 
 en=teacher
-And finally, we have 擦, (first tone), meaning to wipe or clean... 擦.
+Sixth, 觉得, (second tone, neutral tone), meaning to feel or to think... 觉得.
 
 en=student
-So, what is the scenario for today?
+Got it. And we have our grammar points: 也 for "also" and 多 for "how [adjective]."
 
 en=teacher
-In this dialogue, you will hear a conversation between two roommates. Xiao Ming is in the bathroom trying to shave, but he has made a mistake. His roommate, Xiao Hua, comes in to find him in a bit of a mess.
+Correct. In this episode, you are going to hear a wife, Mei Mei, walking into the bathroom and finding her husband, Xiao Wang, who has had a bit of a mishap while shaving. It gets a little stressful!
 
 DIALOGUE
 
-zh=1
-哎哟！太疼了！
-Ouch! It hurts so much!
-
 zh=2
-你怎么了？你在做什么？
-What's wrong? What are you doing?
+你在干什么？你怎么流血了？
+What are you doing? Why are you bleeding?
 
 zh=1
-我在刮胡子，但是我不小心切到脸了。
-I am shaving, but I accidentally cut my face.
+我在刮胡子，我不小心刮伤了。
+I am shaving, and I accidentally cut myself.
 
 zh=2
-天哪！你看，一直在出血！你都受伤了，怎么还不小心？
-Oh my god! Look, it's bleeding! You are already injured, how are you still so careless?
+天哪！你有多疼？
+Oh my god! How much does it hurt?
 
 zh=1
-我觉得没事，我不觉得这很严重。
-I think it is fine, I don't think this is serious.
+我觉得非常疼！我也觉得有点晕。
+I feel extremely painful! I also feel a little dizzy.
 
 zh=2
-你说没事，可是你看这里，血这么多！
-You say it is fine, but look here, there is so much blood!
+你有多大伤口？
+How big is the wound?
 
 zh=1
-我不打算看医生，我不需要。
-I don't plan to see a doctor, I don't need to.
+不大，但是这也太疼了！
+It is not big, but this is just too painful!
 
 zh=2
-你又不听话！我们都得先处理一下这个伤口！
-You are being disobedient again! We both need to handle this wound first!
+别动，我去找药。我也需要拿个棉签。
+Don't move, I will go get some medicine. I also need to get a cotton swab.
 
-zh=1
-好吧，好吧。
-Alright, alright.
+OUTRO
 
-zh=2
-快点，拿个纸巾来擦一下。
-Hurry, get a tissue and wipe it.
+en=teacher
+Whew, that was a bit intense! I think we can all agree that shaving requires a lot of focus.
+
+en=student
+Definitely. One wrong move and you're looking for the first aid kit. 
+
+en=teacher
+Exactly. Today we learned how to use 也 to say "also" or "too," and how to use 多 before an adjective to ask about the degree of something, like how tall, how old, or in this case, how painful.
+
+en=student
+And we practiced some essential survival vocabulary like 刮胡子 for shaving and 疼 for pain. 
+
+en=teacher
+Great job today. Keep practicing, and we will see you in the next episode of Learning Chinese.
 
 BREAKDOWN
 
 en=teacher
-Let's look at that dialogue, and break it down line by line. It starts with Xiao Ming in pain.
-
-zh=1
-哎哟！太疼了！
-Ouch! It hurts so much!
-
-en=student
-"哎哟" is that classic sound for "ouch" or "oh no." And "疼" is the second tone we mentioned earlier. 
-
-en=teacher
-Correct. Then Xiao Hua asks what is happening.
+Let's dive into that dialogue and break it down line by line. We start with Mei Mei's panicked reaction.
 
 zh=2
-你怎么了？你在做什么？
-What's wrong? What are you doing?
+你在干什么？你怎么流血了？
+What are you doing? Why are you bleeding?
 
 en=student
-"你怎么了" is a very common way to ask "What's wrong with you?" or "What happened to you?"
+"你在干什么?" is a very common way to ask "What are you doing?". But the second part, "你怎么流血了?", is interesting. We used "怎么" (zěn me) before. In the intro, we mentioned "怎么" can mean "how," but here it's acting more like "why" or "how come."
 
 en=teacher
-Right. And then we get to the core of the problem.
+That is a great observation. "怎么" is often used to express surprise or to ask for a reason when something unexpected happens. And "流血" means to bleed. "流" means to flow, and "血" is blood.
+
+en=student
+Then Xiao Wang explains what happened.
 
 zh=1
-我在刮胡子，但是我不小心切到脸了。
-I am shaving, but I accidentally cut my face.
-
-en=student
-Here is our first big grammar point! "我不小心." "不" is the negation, and "小心" means careful. So "I am not careful" or "I accidentally..." did that mean it's a single word?
+我在刮胡子，我不小心刮伤了。
+I am shaving, and I accidentally cut myself.
 
 en=teacher
-It can be used as a set phrase meaning "accidentally" or "carelessly." It's "不" plus "小心." And "刮胡子" is our vocab word for shaving.
+"刮胡子" is our vocab word for shaving. "刮" means to scrape or shave, and "胡子" is the beard or mustache.
 
 en=student
-Then Xiao Hua reacts. She seems pretty stressed.
+He also says "我不小心" (wǒ bù xiǎo xīn). That's "I wasn't careful," which is a very natural way to say "I accidentally..."
+
+en=teacher
+Yes, "小心" means careful, so "不小心" means not careful or accidentally. And notice "刮伤" (guā shāng). We already know "刮" is to shave, but "伤" means injury. So "刮伤" is specifically to cut oneself while shaving.
+
+en=student
+Then comes the big grammar moment. Mei Mei asks:
 
 zh=2
-天哪！你看，一直在出血！你都受伤了，怎么还不小心？
-Oh my god! Look, it's bleeding! You are already injured, how are you still so careless?
+天哪！你有多疼？
+Oh my god! How much does it hurt?
 
 en=teacher
-"出血" is our verb for bleeding. But look at the sentence "你都受伤了". Here, "都" is being used to emphasize that the situation is already at a certain point—"You've already injured yourself."
+Here is our degree question! "多" (duō) + "疼" (téng). Instead of asking "Are you in pain?" (你疼吗?), she is asking "How painful is it?" or "To what degree are you feeling pain?".
 
 en=student
-Wait, I thought "都" was just for "all" or "both"?
-
-en=teacher
-In this specific context, it adds emphasis to the state of being injured, similar to "already." But let's look at how we use "不" again in the next line.
+And Xiao Wang's response is quite dramatic!
 
 zh=1
-我觉得没事，我不觉得这很严重。
-I think it is fine, I don't think this is serious.
-
-en=student
-"我不觉得" is "I don't think." So it's "不" plus "觉得," which means to feel or think.
+我觉得非常疼！我也觉得有点晕。
+I feel extremely painful! I also feel a little dizzy.
 
 en=teacher
-Exactly. Xiao Hua is definitely not agreeing with him.
+He uses "觉得" (jué de) to express his sensation. And look at "我也觉得" (wǒ yě jué de). This is our "also" grammar! "也" comes right before the verb "觉得."
+
+en=student
+So it's not "我觉得也," it's "我也觉得."
+
+en=teacher
+Correct. If you say "我觉得也," it sounds like you are starting a new thought like "I also think that..." but to say "I also feel," it must be "我也觉得." He also uses "有点" (yǒu diǎn), which means "a little bit," often used for something slightly negative.
+
+en=student
+Then Mei Mei asks about the size of the cut.
 
 zh=2
-你说没事，可是你看这里，血这么多！
-You say it is fine, but look here, there is so much blood!
-
-en=student
-"这么多" means "so much."
+你有多大伤口？
+How big is the wound?
 
 en=teacher
-And then Xiao Ming tries to avoid the doctor.
+Another "多" question! "多大" (duō dà) means "how big" or "how large." We use "大" (big) to ask about size, so "多大" is "how big."
+
+en=student
+And Xiao Wang tries to reassure her, though he's still complaining.
 
 zh=1
-我不打算看医生，我不需要。
-I don't plan to see a doctor, I don't need to.
-
-en=student
-"我不打算" is "I don't plan to." More "不" negation.
+不大，但是这也太疼了！
+It is not big, but this is just too painful!
 
 en=teacher
-And here is Xiao Hua losing her patience. This is a great example of "both" or "all."
+"不大" means "not big." And "这也太疼了" (zhè yě tài téng le) is a very common structure. "太...了" is used for emphasis, like "too much." So, "This is just too painful!"
+
+en=student
+Finally, Mei Mei is taking charge.
 
 zh=2
-你又不听话！我们都得先处理一下这个伤口！
-You are being disobedient again! We both need to handle this wound first!
-
-en=student
-There it is! "我们都得." "我们" is "we," then "都" is "both/all," and then "得" means "must" or "need to." 
+别动，我去找药。我也需要拿个棉签。
+Don't move, I will go get some medicine. I also need to get a cotton swab.
 
 en=teacher
-Perfect. "我们都得" means "We both need to." And don't forget our vocab word "伤口," the wound.
+"别动" (bié dòng) means "don't move." And once more, we see "我也" (wǒ yě) for "I also." She is adding another task to her list of things to do.
 
 en=student
-Xiao Ming seems to give in.
-
-zh=1
-好吧，好吧。
-Alright, alright.
-
-zh=2
-快点，拿个纸巾来擦一下。
-Hurry, get a tissue and wipe it.
-
-en=student
-And finally, "擦" (cā), the first tone, to wipe.
+It's interesting how "也" and "多" appear in almost every line of the dialogue. They really are essential for describing these kinds of intense, real-life moments.
 
 en=teacher
-Exactly. A messy situation, but a great way to practice our negation and our "all" adverb.
-
-OUTRO
-
-en=student
-Phew. I think I'll stick to using an electric razor from now on to avoid any drama.
-
-en=teacher
-A wise choice! So, to recap: Today we learned how to use "不" to negate verbs and adjectives, like "我不觉得" (I don't think) or "我不小心" (I wasn't careful).
-
-en=student
-And we learned that "都" comes after the subject to mean "all" or "both," like "我们都得" (We both/all need to).
-
-en=teacher
-Spot on. We also covered vocabulary related to minor injuries: 刮胡子, 疼, 出血, 伤口, 医生, and 擦.
-
-en=student
-Thanks for the lesson, Ellen! See you next time.
-
-en=teacher
-Goodbye everyone!
+Exactly. You need "也" to add information and "多" to get the details of the situation.
 
 VOICE PROFILES
 
 speaker = 1
 lang = "zh"
 gender = "男性"
-age = "二十多岁"
-pitch = "中音域，由于疼痛而显得有些颤抖"
-pace = "中速，在疼痛时会有停顿"
-volume = "中等，带有一种尴尬和不适的感觉"
-clarity = "略微含糊，因为在表达疼痛"
-fluency = "在表达痛苦和辩解时节奏不均匀"
-timbre = "略显沙哑，带有年轻男性的质感"
-emotion = "尴尬，有些疼痛，有点倔强"
-usecase = "一个不小心弄伤自己的年轻男子"
-dialogue = "哎哟！太疼了！我不觉得这很严重。"
+age = "三十岁左右"
+pitch = "中音域，带有痛苦时的颤抖"
+pace = "缓慢，呼吸略显急促"
+volume = "中等，因疼痛而显得虚弱"
+clarity = "略显含混，因疼痛而断断续续"
+fluency = "由于疼痛，节奏不均匀"
+timbre = "略带沙哑，略显疲惫"
+emotion = "痛苦，惊慌，有些笨拙"
+usecase = "一个不小心刮伤了脸的倒霉丈夫"
+dialogue = "哎哟！好疼啊！我刚才不小心，真的太疼了。"
 
 speaker = 2
 lang = "zh"
 gender = "女性"
-age = "二十多岁"
-pitch = "高音域，因为担心而显得尖锐"
-pace = "稍快，语速较急"
-volume = "大，带有惊慌失措的感觉"
-clarity = "非常清晰，每个词都很有力"
-fluency = "流畅，但在表达担忧时节奏紧凑"
-timbre = "清脆，具有穿透力"
-emotion = "焦虑，焦急，充满关切"
-usecase = "一个看到朋友受伤而感到惊慌的室友"
-dialogue = "你怎么了？天哪！你都受伤了，怎么还不小心？我们都得先处理一下这个伤口！"
+age = "三十岁左右"
+pitch = "中高音域，因担忧而急剧升高"
+pace = "较快，语气紧迫"
+volume = "较大，带有惊吓感"
+clarity = "清晰，每个音节都分明"
+fluency = "流畅，但带有焦虑的急促感"
+timbre = "清脆，带有紧迫感"
+emotion = "焦急，担忧，充满行动力"
+usecase = "一个发现丈夫受伤后感到非常担忧的妻子"
+dialogue = "天哪！你没事吧？别动，我马上就回来！"

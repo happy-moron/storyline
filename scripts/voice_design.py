@@ -62,7 +62,7 @@ def _read_text(language: str) -> str:
     if not path.exists():
         raise FileNotFoundError(
             f"Reference text file not found: {path}\n"
-            f"Expected at ~/temp/audio/clones/reference-{'30s-en' if language == 'en' else 'zh'}.txt"
+            f"Expected at dist/audio/clones/reference-{'30s-en' if language == 'en' else 'zh'}.txt"
         )
     return path.read_text(encoding="utf-8").strip()
 

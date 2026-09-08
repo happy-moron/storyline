@@ -130,7 +130,7 @@ def main() -> None:
     )
     parser.add_argument(
         "--mp3-dir", type=str, default=None,
-        help="Directory of final MP3 files (default: ~/temp/audio/podcasts)",
+        help="Directory of final MP3 files (default: dist/audio/podcasts)",
     )
     parser.add_argument(
         "--script-dir", type=str, default=None,
@@ -153,7 +153,7 @@ def main() -> None:
     project_root = Path(args.project_root)
 
     mp3_dir = _resolve_path(
-        args.mp3_dir, os.path.expanduser("~/temp/audio/podcasts"), project_root,
+        args.mp3_dir, os.path.expanduser("dist/audio/podcasts"), project_root,
     )
     script_dir = _resolve_path(args.script_dir, "books_src/podcasts", project_root)
     vocab_dir = _resolve_path(args.vocab_dir, "books_src/podcasts/vocab", project_root)

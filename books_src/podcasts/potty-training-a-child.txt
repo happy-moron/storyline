@@ -1,0 +1,214 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a topic that every parent knows is both a major milestone and a major headache: potty training a child.
+
+en=student
+Oh man, that sounds stressful. I can already imagine the mess!
+
+en=teacher
+It definitely can be! And because it is such a hands-on process, it is the perfect way to practice asking about completed actions. Today, we are looking at two very important question structures.
+
+en=student
+Let me guess, the ones from the HSK one curriculum?
+
+en=teacher
+Exactly. First, we have the basic yes-no question using 吗. You simply add 吗 to the end of a sentence to turn a statement into a question. For example, 你是学生吗？ meaning "Are you a student?".
+
+en=student
+And the second one is the one that always trips me up: adding 了 and 吗 to a verb?
+
+en=teacher
+Precisely. When you use 吗 to ask a general question, you are often asking about a habit or a state. But when you use Verb plus 了 plus 吗, you are asking if an action has been completed or if it has happened. For example, 你吃饭吗？ means "Do you eat rice?" or "Do you eat meals?". But if you say 你吃饭了吗？ it means "Have you eaten?"—asking about a specific, completed meal.
+
+en=student
+Ah, so the 了 changes it from "do you" to "did you" or "have you". That makes a huge difference!
+
+en=teacher
+It makes all the difference! Before we hear the drama unfold in our dialogue, let us look at our six key vocabulary words.
+
+en=teacher
+We have 尿尿, (fourth tone, fourth tone), meaning to pee... 尿尿.
+
+en=teacher
+We have 拉屎, (first tone, third tone), meaning to poop... 拉屎.
+
+en=teacher
+We have 尿布, (fourth tone, fourth tone), meaning a diaper... 尿布.
+
+en=teacher
+We have 马桶, (third tone, third tone), meaning a toilet... 马桶.
+
+en=teacher
+We have 进步, (fourth tone, fourth tone), meaning progress... 进步.
+
+en=teacher
+We have 困难, (fourth tone, kun, second tone, nan), meaning difficult or difficulty... 困难.
+
+en=student
+So, what is the scene for today's episode?
+
+en=teacher
+In this scene, you are going to hear a very tired mother talking to her nanny. The child is currently in the middle of potty training, and the mother is checking in on the progress—and the messes.
+
+DIALOGUE
+
+zh=1
+宝宝睡好了吗？
+Did the baby sleep well?
+
+zh=2
+睡了。但是，他用马桶尿尿了吗？
+He slept. But, did he pee in the toilet?
+
+zh=1
+没有，他还在用尿布。他今天拉屎了吗？
+No, he is still using diapers. Did he poop today?
+
+zh=2
+拉了！他今天进步很大！
+He did! He made great progress today!
+
+zh=1
+太好了。如厕训练难吗？
+That's great. Is potty training difficult?
+
+zh=2
+非常困难，但是没关系。
+It is very difficult, but it is okay.
+
+BREAKDOWN
+
+en=teacher
+Let us look at that dialogue, and break it down line by line. We start with the mother.
+
+zh=1
+宝宝睡好了吗？
+Did the baby sleep well?
+
+en=student
+"宝宝" (bǎo bao) is baby. "睡好了吗" (shuì hǎo le ma). I noticed you used "好" there. Is that just "good"?
+
+en=teacher
+In this context, it is a resultative complement. "睡" means to sleep, and "好" implies the action was completed successfully or satisfactorily. So, "睡好了" means "slept well" or "finished sleeping well." And we have our target grammar: "了" for completion and "吗" for the question.
+
+zh=2
+睡了。但是，他用马桶尿尿了吗？
+He slept. But, did he pee in the toilet?
+
+en=student
+"睡了" (shuì le). She is confirming the action is done. And "但是" (dàn shì) means "but."
+
+en=teacher
+Right. Then we have "他用马桶尿尿了吗？". "用" (yòng) means to use. "马桶" (mǎ tǒng) is the toilet we mentioned earlier. And "尿尿" is the verb for peeing.
+
+en=student
+So the whole phrase "用马桶尿尿" is "to use the toilet to pee."
+
+en=teacher
+Exactly. Now, let us look at the mother's response.
+
+zh=1
+没有，他还在用尿布。他今天拉屎了吗？
+No, he is still using diapers. Did he poop today?
+
+en=student
+"没有" (méi yǒu) is the standard way to say "no" for completed actions. And then we have "还在" (hái zài). Does that mean "still"?
+
+en=teacher
+Yes, "还" (hái) means still, and "在" (zài) indicates an ongoing state or action. "他在用尿布" means "He is using diapers." And then we get to the blunt part: "他今天拉屎了吗？". "今天" (jīn tiān) is today. And "拉屎" (lā shǐ) is the verb for pooping.
+
+en=student
+That is definitely a real-life term! You probably wouldn't use that in a formal meeting, but at home? Definitely.
+
+en=teacher
+Absolutely! Real language is often blunt. Let's look at the nanny's exciting news.
+
+zh=2
+拉了！他今天进步很大！
+He did! He made great progress today!
+
+en=student
+"拉了" (lā le). Just the verb and the completion marker. Simple and effective. And "进步很大" (jìn bù hěn dà). "进步" is progress, and "很大" is very big. So, "progress is very big."
+
+en=teacher
+Yes. In Chinese, instead of saying "he progressed a lot," you often say "his progress is very big." Now, the mother's relief.
+
+zh=1
+太好了。如厕训练难吗？
+That's great. Is potty training difficult?
+
+en=student
+"太好了" (tài hǎo le) is a classic "that's great!" or "wonderful!" Then she asks "如厕训练难吗？". "如厕训练" (rú cè xùn liàn) must be the formal way to say "potty training."
+
+en=teacher
+Correct. "如厕" is a more formal verb for using the restroom, and "训练" (xùn liàn) means training. And notice the grammar here: "难吗？". She is asking a general question about whether potty training is difficult in general, not if a specific instance was difficult.
+
+en=student
+So if she said "难吗", she is asking "is it difficult?" But if she said "难了吗?", she would be asking "did it become difficult?".
+
+en=teacher
+You are catching on quickly! The distinction is key. Finally, the nanny responds.
+
+zh=2
+非常困难，但是没关系。
+It is very difficult, but it is okay.
+
+en=student
+"非常困难" (fēi cháng kùn nán). "非常" is very, and "困难" is difficult. And "没关系" (méi guān xi) is the classic "it doesn't matter" or "it's okay."
+
+en=teacher
+Exactly. Even when things are messy, we say "没关系."
+
+OUTRO
+
+en=student
+Wow, that was intense. Potty training is no joke!
+
+en=teacher
+It really isn't! But we covered some great ground today.
+
+en=student
+We learned how to use "了" to ask if an action is completed, and how to use "吗" for general yes-no questions. We also learned the difference between asking about a habit versus a completed event.
+
+en=teacher
+That's right. And we learned some very practical, very real-world vocabulary like 尿尿, 拉屎, 尿布, and 马桶.
+
+en=student
+And don't forget 进步 and 困难.
+
+en=teacher
+Correct. Practice these in your own life, and we will see you next time on Learning Chinese.
+
+en=student
+再见！ Goodbye!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，因压力而略显尖锐"
+pace = "略快，带有焦虑感"
+volume = "中等，但语气急促"
+clarity = "清晰，但在表达担忧时语速较快"
+fluency = "流利，但带有明显的语气起伏"
+timbre = "清脆，带有一点紧绷感"
+emotion = "焦虑，疲惫，但充满母爱"
+usecase = "一个正处于育儿焦虑期的年轻母亲"
+dialogue = "宝宝睡好了吗？没有，他还在用尿布。他今天拉屎了吗？太好了。如厕训练难吗？"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "五十岁左右"
+pitch = "中低音域，非常稳定"
+pace = "慢，节奏从容"
+volume = "洪亮且温和"
+clarity = "非常清晰，字正腔圆"
+fluency = "非常流畅，语调平和"
+timbre = "温润，沉稳，给人安全感"
+emotion = "耐心，冷静，充满经验"
+usecase = "一位经验丰富、性格和蔼的保姆或长辈"
+dialogue = "睡了。但是，他用马桶尿尿了吗？拉了！他今天进步很大！非常困难，但是没关系。"

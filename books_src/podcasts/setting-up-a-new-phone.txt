@@ -1,0 +1,365 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into the frustration of modern technology and the grammar needed to express it.
+
+en=student
+Oh boy, I can already feel the stress. Is this about losing a phone?
+
+en=teacher
+Not exactly, but it is about the chaos of setting up a new one. Today we are learning two very important adverbs: 更, which means "even more," and 真, which means "really" or "truly."
+
+en=student
+So, if something is already expensive, and I buy one that is even more expensive, I use 更?
+
+en=teacher
+Exactly. You place 更 directly before an adjective to show an increase in degree, usually in a comparison. For example, 更贵 means even more expensive.
+
+en=student
+And 真 is more for when you are just making an observation or an exclamation? Like, "This is really good!"?
+
+en=teacher
+Perfect. 真 is used to express a strong feeling about a quality. For example, 真漂亮 means really beautiful. You wouldn't use 真 to compare two things; you use it to react to something.
+
+en=student
+That makes sense. So, if I'm comparing two phones, I use 更. If I'm just looking at one phone and reacting to how pretty it is, I use 真.
+
+en=teacher
+You've got it. Before we listen to the dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+First, 手机, (third tone and first tone), meaning mobile phone... 手机.
+
+en=teacher
+Second, 贵, (fourth tone), meaning expensive... 贵.
+
+en=teacher
+Third, 漂亮, (fourth tone and light tone), meaning beautiful... 漂亮.
+
+en=teacher
+Fourth, 复杂, (second tone and second tone), meaning complicated... 复杂.
+
+en=teacher
+Fifth, 好用, (third tone and fourth tone), meaning easy to use or useful... 好用.
+
+en=teacher
+Sixth, 简单, (second tone and simple tone), meaning simple... 简单.
+
+en=student
+Got it. So, what is the scenario?
+
+en=teacher
+In this episode, we are going to hear a conversation between two friends, Xiao Li and Dawei. Dawei has just bought a very expensive new phone, but he is having a terrible time setting it up and is already regretting the cost.
+
+DIALOGUE
+
+zh=1
+这部手机比我之前的更贵！我真的快没钱了。
+This phone is even more expensive than my previous one! I'm really running out of money.
+
+zh=2
+别抱怨了。你看，这个屏幕真漂亮。
+Stop complaining. Look, this screen is really beautiful.
+
+zh=1
+漂亮有什么用？设置起来更复杂了！
+What is the use of being beautiful? Setting it up is even more complicated!
+
+zh=2
+这个新系统真好用，你慢慢学。
+This new system is really easy to use, just learn it slowly.
+
+zh=1
+我觉得以前的手机更简单。
+I think my old phone was even simpler.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this tense conversation. It starts with Dawei, speaker one, who is sounding quite stressed.
+
+zh=1
+这部手机比我之前的更贵！我真的快没钱了。
+This phone is even more expensive than my previous one! I'm really running out of money.
+
+en=student
+"这部手机比我之前的更贵" (Zhè bù shǒujī bǐ wǒ zhīqián de gèng guì). We see our first grammar point here. He is comparing the new phone to his previous one using 比 (bǐ), and he says it is even more expensive using 更.
+
+en=teacher
+That's right. And then he says "我真的快没钱了" (Wǒ zhēn de kuài méi qián le). Here, 真 is used to emphasize that he is "really" almost out of money.
+
+en=student
+Quick question, Ellen. Can I say "我更没钱了" instead of "我真的没钱了"?
+
+en=teacher
+It's possible, but it changes the meaning. "我真没钱了" sounds like an exclamation of your current state, like "I'm really broke!" If you say "我更没钱了," it implies you were already broke, and now you are even more broke than before.
+
+en=student
+Ah, so 更 is for the comparison, and 真 is for the intensity of the feeling.
+
+en=teacher
+Exactly. Next, we have Xiao Li, speaker two, trying to be positive.
+
+zh=2
+别抱怨了。你看，这个屏幕真漂亮。
+Stop complaining. Look, this screen is really beautiful.
+
+en=student
+"这个屏幕真漂亮" (Zhè ge píngmù zhēn piàoliang). "屏幕" is screen. And she uses 真 to emphasize how beautiful it is.
+
+en=teacher
+Indeed. But Dawei isn't having it.
+
+zh=1
+漂亮有什么用？设置起来更复杂了！
+What is the use of being beautiful? Setting it up is even more complicated!
+
+en=student
+"设置" (shèzhì) means to set up or to configure. He says it's "更复杂" (gèng fùzá), even more complicated.
+
+en=teacher
+He is clearly frustrated. He thinks the beauty of the phone doesn't make up for the difficulty of using it.
+
+en=student
+Right. And then Xiao Li tries again.
+
+zh=2
+这个新系统真好用，你慢慢学。
+This new system is really easy to use, just learn it slowly.
+
+en=teacher
+"好用" (hǎoyòng) is such a useful word. It literally means "good to use." And she uses 真 to say it is "really" good to use.
+
+en=student
+And finally, Dawei gives up.
+
+zh=1
+我觉得以前的手机更简单。
+I think my old phone was even simpler.
+
+en=teacher
+"简单" (jiǎndān) means simple. He's using 更 again because he is comparing the new phone's complexity to the old one's simplicity. He's basically saying the old one was even simpler.
+
+en=student
+So, to recap, if you are comparing two things and want to say "even more," you use 更. If you are just reacting to something with emotion, like "That's really cool!" or "That's really expensive!", you use 真.
+
+en=teacher
+Spot on, Ryan.
+
+OUTRO
+
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into the frustration of modern technology and the grammar needed to express it.
+
+en=student
+Oh boy, I can already feel the stress. Is this about losing a phone?
+
+en=teacher
+Not exactly, but it is about the chaos of setting up a new one. Today we are learning two very important adverbs: 更, which means "even more," and 真, which means "really" or "truly." 
+
+en=student
+So, if something is already expensive, and I buy one that is even more expensive, I use 更?
+
+en=teacher
+Exactly. You place 更 directly before an adjective to show an increase in degree, usually in a comparison. For example, 更贵 means even more expensive.
+
+en=student
+And 真 is more for when you are just making an observation or an exclamation? Like, "This is really good!"?
+
+en=teacher
+Perfect. 真 is used to express a strong feeling about a quality. For example, 真漂亮 means really beautiful. You wouldn't use 真 to compare two things; you use it to react to something.
+
+en=student
+That makes sense. So, if I'm comparing two phones, I use 更. If I'm just looking at one phone and reacting to how pretty it is, I use 真.
+
+en=teacher
+You've got it. Before we listen to the dialogue, let's look at our six key vocabulary words. 
+
+en=teacher
+First, 手机, (third tone and first tone), meaning mobile phone... 手机.
+
+en=teacher
+Second, 贵, (fourth tone), meaning expensive... 贵.
+
+en=teacher
+Third, 漂亮, (fourth tone and light tone), meaning beautiful... 漂亮.
+
+en=teacher
+Fourth, 复杂, (second tone and second tone), meaning complicated... 复杂.
+
+en=teacher
+Fifth, 好用, (third tone and fourth tone), meaning easy to use or useful... 好用.
+
+en=teacher
+Sixth, 简单, (second tone and simple tone), meaning simple... 简单.
+
+en=student
+Got it. So, what is the scenario?
+
+en=teacher
+In this episode, we are going to hear a conversation between two friends, Xiao Li and Dawei. Dawei has just bought a very expensive new phone, but he is having a terrible time setting it up and is already regretting the cost.
+
+DIALOGUE
+
+zh=1
+这部手机比我之前的更贵！我真的快没钱了。
+This phone is even more expensive than my previous one! I'm really running out of money.
+
+zh=2
+别抱怨了。你看，这个屏幕真漂亮。
+Stop complaining. Look, this screen is really beautiful.
+
+zh=1
+漂亮有什么用？设置起来更复杂了！
+What is the use of being beautiful? Setting it up is even more complicated!
+
+zh=2
+这个新系统真好用，你慢慢学。
+This new system is really easy to use, just learn it slowly.
+
+zh=1
+我觉得以前的手机更简单。
+I think my old phone was even simpler.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this tense conversation. It starts with Dawei, speaker one, who is sounding quite stressed.
+
+zh=1
+这部手机比我之前的更贵！我真的快没钱了。
+This phone is even more expensive than my previous one! I'm really running out of money.
+
+en=student
+"这部手机比我之前的更贵" (Zhè bù shǒujī bǐ wǒ zhīqián de gèng guì). We see our first grammar point here. He is comparing the new phone to his previous one using 比 (bǐ), and he says it is even more expensive using 更.
+
+en=teacher
+That's right. And then he says "我真的快没钱了" (Wǒ zhēn de kuài méi qián le). Here, 真 is used to emphasize that he is "really" almost out of money.
+
+en=student
+Quick question, Ellen. Can I say "我更没钱了" instead of "我真的没钱了"?
+
+en=teacher
+It's possible, but it changes the meaning. "我真没钱了" sounds like an exclamation of your current state, like "I'm really broke!" If you say "我更没钱了," it implies you were already broke, and now you are even more broke than before. 
+
+en=student
+Ah, so 更 is for the comparison, and 真 is for the intensity of the feeling.
+
+en=teacher
+Exactly. Next, we have Xiao Li, speaker two, trying to be positive.
+
+zh=2
+别抱怨了。你看，这个屏幕真漂亮。
+Stop complaining. Look, this screen is really beautiful.
+
+en=student
+"这个屏幕真漂亮" (Zhè ge píngmù zhēn piàoliang). "屏幕" is screen. And she uses 真 to emphasize how beautiful it is.
+
+en=teacher
+Indeed. But Dawei isn't having it.
+
+zh=1
+漂亮有什么用？设置起来更复杂了！
+What is the use of being beautiful? Setting it up is even more complicated!
+
+en=student
+"设置" (shèzhì) means to set up or to configure. He says it's "更复杂" (gèng fùzá), even more complicated. 
+
+en=teacher
+He is clearly frustrated. He thinks the beauty of the phone doesn't make up for the difficulty of using it.
+
+en=student
+Right. And then Xiao Li tries again.
+
+zh=2
+这个新系统真好用，你慢慢学。
+This new system is really easy to use, just learn it slowly.
+
+en=teacher
+"好用" (hǎoyòng) is such a useful word. It literally means "good to use." And she uses 真 to say it is "really" good to use.
+
+en=student
+And finally, Dawei gives up.
+
+zh=1
+我觉得以前的手机更简单。
+I think my old phone was even simpler.
+
+en=teacher
+"简单" (jiǎndān) means simple. He's using 更 again because he is comparing the new phone's complexity to the old one's simplicity. He's basically saying the old one was even simpler.
+
+en=student
+So, to recap, if you are comparing two things and want to say "even more," you use 更. If you are just reacting to something with emotion, like "That's really cool!" or "That's really expensive!", you use 真.
+
+en=teacher
+Spot on, Ryan.
+
+OUTRO
+
+en=teacher
+That's all for today's lesson. We hope you found the difference between 更 and 真 helpful!
+
+en=student
+Thanks for listening, and we'll see you in the next episode!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，因烦躁而略带升高"
+pace = "中速，带有不耐烦的停顿"
+volume = "中等，但在抱怨时声音较大"
+clarity = "清晰，但带有情绪化的吞音"
+fluency = "由于情绪激动，节奏略显不均"
+timbre = "略显沙哑，显得有些焦虑"
+emotion = "焦虑，挫败，有些小家子气"
+usecase = "一个对电子产品感到头大的年轻上班族"
+dialogue = "这部手机比我之前的更贵！我真的快没钱了。漂亮有什么用？设置起来更复杂了！我觉得以前的手机更简单。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中高音域，语气平和"
+pace = "中速，节奏稳定"
+volume = "中等，声音温和"
+clarity = "非常清晰，字正腔圆"
+fluency = "流利，非常 자연"
+timbre = "清脆，温婉"
+emotion = "冷静，耐心，带有一点点调侃"
+usecase = "一个对科技产品很熟悉的乐观女性"
+dialogue = "别抱怨了。你看，这个屏幕真漂亮。这个新系统真好用，你慢慢学。"
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，因烦躁而略带升高"
+pace = "中速，带有不耐烦的停顿"
+volume = "中等，但在抱怨时声音较大"
+clarity = "清晰，但带有情绪化的吞音"
+fluency = "由于情绪激动，节奏略显不均"
+timbre = "略显沙哑，显得有些焦虑"
+emotion = "焦虑，挫败，有些小家子气"
+usecase = "一个对电子产品感到头大的年轻上班族"
+dialogue = "这部手机比我之前的更贵！我真的快没钱了。漂亮有什么用？设置起来更复杂了！我觉得以前的手机更简单。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中高音域，语气平和"
+pace = "中速，节奏稳定"
+volume = "中等，声音温和"
+clarity = "非常清晰，字正腔圆"
+fluency = "流利，非常自然"
+timbre = "清脆，温婉"
+emotion = "冷静，耐心，带有一点点调侃"
+usecase = "一个对科技产品很熟悉的乐观女性"
+dialogue = "别抱怨了。你看，这个屏幕真漂亮。这个新系统真好用，你慢慢学。"

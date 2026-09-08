@@ -1,0 +1,185 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are exploring the world of art and creativity.
+
+en=student
+I have always wanted to be an artist, but I think my paintings are just... well, not quite there yet.
+
+en=teacher
+That is why we are here, Ryan. Today, we are learning two very important grammar points to help you describe your work. First, we are looking at the simple sentence structure of Noun plus 很 plus Adjective. In Chinese, when you want to say something "is" an adjective, you do not use the verb "to be." Instead, you use the adverb 很. For example, you would say 颜色很深, which means "the color is dark," rather than using the word for "is."
+
+en=student
+So, if I want to say "the painting is beautiful," I don't say the painting is beautiful using "is," I use "很"?
+
+en=teacher
+Exactly. If you just say "the painting is beautiful" without the "很," it sounds like you are comparing it to something else. The "很" acts as a necessary link in a descriptive sentence. Second, we are learning how to use 一些 to express "some." You simply place it before the noun you are talking about. For example, 一些水, meaning "some water."
+
+en=student
+That sounds simple enough. "Some colors," "some water," "some paint."
+
+en=teacher
+Precisely. Before we get to our dramatic studio scene, let's look at our six key vocabulary words.
+
+en=teacher
+We have 画, (fourth tone), meaning painting or to paint... 画。
+
+en=teacher
+We have 颜色, (second tone and fourth tone), meaning color... 颜色。
+
+en=teacher
+We have 漂亮, (fourth tone and neutral tone), meaning beautiful... 漂亮。
+
+en=teacher
+We have 深, (first tone), meaning dark or deep... 深。
+
+en=teacher
+We have 浅, (third tone), meaning light in color... 浅。
+
+en=teacher
+And we have 一些, (first tone and first tone), meaning some... 一些。
+
+en=student
+I am ready to start painting. Or at least, I am ready to learn how to talk about it!
+
+en=teacher
+In our dialogue, you are going to hear a very intense art instructor, Master Wang, critiquing a young student, Xiao Li, in a dimly lit art studio. It is a high-pressure environment!
+
+DIALOGUE
+
+zh=1
+小李，你的画很淡。你需要一些颜色。
+Xiao Li, your painting is very pale. You need some colors.
+
+zh=2
+但是我这里只有一些颜色。这个颜色很深。
+But I only have some colors here. This color is very dark.
+
+zh=1
+没关系。用一些水。颜色就会变浅。
+It doesn't matter. Use some water. The color will become light.
+
+zh=2
+老师，这幅画很漂亮吗？
+Teacher, is this painting very beautiful?
+
+zh=1
+你的画很好看。但是，这里还需要一些细节。
+Your painting looks very good. But, you still need some details here.
+
+BREAKDOWN
+
+en=teacher
+Let's break down that intense scene from the art studio. We start with Master Wang.
+
+zh=1
+小李，你的画很淡。你需要一些颜色。
+Xiao Li, your painting is very pale. You need some colors.
+
+en=student
+"你的画很淡" is a perfect example of our grammar point. "画" is the noun, "很" is the linker, and "淡" means pale or light. 
+
+en=teacher
+Exactly. And notice he says "你需要一些颜色." He uses "一些" before the noun "颜色" to say "some colors."
+
+en=student
+Okay, next is Xiao Li. She sounds a bit worried.
+
+zh=2
+但是我这里只有一些颜色。这个颜色很深。
+But I only have some colors here. This color is very dark.
+
+en=teacher
+She uses "一些颜色" again. And then she says "这个颜色很深." 
+
+en=student
+"很深" means "is very dark." So "这个颜色很深" is "this color is very dark." I have a question about the "很" though. Can I say "这个颜色是深"?
+
+en=teacher
+That is a very common mistake, Ryan! In English, we say "The color is dark," using the verb "is." But in Chinese, when you are using an adjective to describe a noun, you should avoid "是" and use "很" instead. If you say "颜色是深," it sounds very unnatural to a native speaker.
+
+en=student
+That makes sense. It's like the "很" is doing the heavy lifting of the sentence. Now, what about the next part where the teacher tells her to use water?
+
+zh=1
+没关系。用一些水。颜色就会变浅。
+It doesn't matter. Use some water. The color will become light.
+
+en=student
+"用一些水" is "use some water." And then "颜色就会变浅." "浅" is the word for "light" in color, right?
+
+en=teacher
+Yes, "浅" is "light." And "深" is "dark." They are opposites. 
+
+en=student
+Then Xiao Li asks, "老师，这幅画很漂亮吗？"
+
+zh=2
+老师，这幅画很漂亮吗？
+Teacher, is this painting very beautiful?
+
+en=teacher
+She is asking a question using "很漂亮." In a question, the "很" often loses its "very" intensity and just serves to complete the sentence structure.
+
+en=student
+And finally, the master gives his verdict.
+
+zh=1
+你的画很好看。但是，这里还需要一些细节。
+Your painting looks very good. But, you still need some details here.
+
+en=teacher
+"很好看" is another way to say "is good-looking" or "is beautiful." And "一些细节" means "some details."
+
+en=student
+So, the teacher is being quite tough on her! He says it's good, but it needs more work.
+
+en=teacher
+In art, as in language, the details are everything!
+
+OUTRO
+
+en=student
+Wow, that was intense. I definitely don't want my art teacher to be that dramatic, but the lesson was very clear.
+
+en=teacher
+I am glad you found it helpful. Today we learned how to describe things using the Noun plus 很 plus Adjective structure, and how to use 一些 to mean "some" before a noun.
+
+en=student
+And we learned the difference between "dark" and "light" colors, too. 
+
+en=teacher
+That is right. Practice these structures by describing things around you. Is your coffee very dark? Is your room very bright? Use your new Chinese skills!
+
+en=student
+Until next time, happy learning!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "六十岁左右"
+pitch = "中音域，因激动而略有起伏"
+pace = "中等，语速较快，富有节奏感"
+volume = "响亮，带有威严感"
+clarity = "吐字极其清晰，充满力量"
+fluency = "流利，充满艺术家特有的激情"
+timbre = "浑厚，略带沙哑"
+emotion = "严厉但充满热忱"
+usecase = "一位对艺术有着极高要求、脾气有些火爆的老艺术大师"
+dialogue = "你的画太淡了！你需要一些颜色！没关系。用一些水！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十岁左右"
+pitch = "高音域，因紧张而轻微颤抖"
+pace = "缓慢，节奏不稳"
+volume = "中等偏小，声音略显柔弱"
+clarity = "清晰，但在紧张时略显迟疑"
+fluency = "不完全流利，带有犹豫和吞吐"
+timbre = "清脆，柔和"
+emotion = "羞涩，不安，渴望获得认可"
+usecase = "一位正在努力学习绘画、性格有些胆怯的艺术系学生"
+dialogue = "但是我这里只有一些颜色...老师，这幅画很漂亮吗？"

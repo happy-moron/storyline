@@ -1,0 +1,218 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into the chaotic, beautiful, and sometimes stressful reality of the Lunar New Year, or 春节.
+
+en=student
+Ah, the Spring Festival. The most important holiday, but also the time when family members start asking when you are getting married, right?
+
+en=teacher
+Exactly. It is a time for reunions, but it can also be quite a rush. Because everyone is traveling and preparing, things get hectic. Today, we are going to learn two very important grammar points to navigate these situations.
+
+en=student
+I'm ready. Lay them on me.
+
+en=teacher
+First, we have the adverb 再, which is used to express "again" for an action that has not happened yet, or a future intention. For example, we can say 我明天再来, which means I will come again tomorrow. It is different from 又, which we use for things that have already happened.
+
+en=student
+So, if I finished a meal and I want to say "I ate it again" (already happened), I use 又. But if I am planning to "eat it again tomorrow," I use 再.
+
+en=teacher
+Precisely! You've got it. The second point is using 都 to emphasize "already." When you use the structure 都 plus a time or amount, plus 了, it adds an emotional weight—often a sense of "it is already [too] late" or "it is already [so much]." For example, 都十点了, which means "It's already ten o'clock!" (with a hint of "it's getting late!").
+
+en=student
+That's a great way to add some drama to a sentence.
+
+en=teacher
+Life is dramatic! Especially during the holidays. Before we hear the dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+We have 准备, (third tone, fourth tone), meaning to prepare... 准备。
+
+en=teacher
+We have 饺子, (third tone, neutral tone), meaning dumplings... 饺子。
+
+en=teacher
+We have 春节, (first tone, second tone), meaning Spring Festival... 春节。
+
+en=teacher
+We have 忙, (second tone), meaning busy... 忙。
+
+en=teacher
+We have 聚会, (fourth tone, fourth tone), meaning a gathering or party... 聚会。
+
+en=teacher
+We have 欢迎, (first tone, second tone), meaning to welcome... 欢迎。
+
+en=student
+Got it. So, what is the scene?
+
+en=teacher
+In this episode, you're going to hear a phone conversation between a mother and her daughter. The mother is home preparing for the Spring Festival, and she is getting a bit anxious because her daughter is running late and seems to be stuck in the rush of work.
+
+DIALOGUE
+
+zh=1
+妈，你怎么还没看到我回信息？
+Mom, why haven't you seen my message yet?
+
+zh=2
+都下午三点了！你到底在哪里？
+It's already three in the afternoon! Where on earth are you?
+
+zh=2
+我还在路上呢，公司里太忙了。
+I'm still on the way, it's too busy at the office.
+
+zh=1
+今年春节你真的太忙了，去年也是这样。
+You are really too busy this Spring Festival; it was the same last year.
+
+zh=2
+真的对不起，等我回家，我们再聊这些工作的事情。
+I'm really sorry, when I get home, we'll talk about these work things again.
+
+zh=1
+别说了，你快点回来，饺子都准备好了。
+Stop talking, come back quickly, the dumplings are already prepared.
+
+zh=2
+知道了，我马上就到，到时候再陪你聊天。
+I know, I'll be there soon, and I'll chat with you then.
+
+zh=1
+好吧，那我再等你二十分钟。
+Alright, then I'll wait for you for another twenty minutes.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. It starts with the daughter calling her mother.
+
+zh=2
+妈，你怎么还没看到我回信息？
+Mom, why haven't you seen my message yet?
+
+en=student
+"你怎么..." is a common way to ask "why" or "how come." And "还没" means "not yet." She's asking why the message hasn't been seen yet.
+
+zh=1
+都下午三点了！你到底在哪里？
+It's already three in the afternoon! Where on earth are you?
+
+en=teacher
+Here is our first grammar point! "都下午三点了" uses the "都...了" structure. As we mentioned, the "都" adds emphasis. She isn't just saying it's three o'clock; she's saying "It's already three!" implying that the time has passed and the daughter should have been here by now.
+
+en=student
+And "到底" (dào dǐ) means "on earth" or "exactly," right? Like, "Where on earth are you?" It adds that sense of frustration.
+
+en=teacher
+Exactly. Now, let's listen to the daughter's response.
+
+zh=2
+我还在路上呢，公司里太忙了。
+I'm still on the way, it's too busy at the office.
+
+en=student
+"在路上" is "on the way." And "忙" is "busy." Simple and effective.
+
+zh=1
+今年春节你真的太忙了，去年也是这样。
+You are really too busy this Spring Festival; it was the same last year.
+
+en=teacher
+The mother is bringing up the past here. "去年也是这样" means "last year was also like this." It's that classic family observation, isn't it?
+
+en=student
+Very real. Now, let's look at the next line where we hear the first use of our "again" grammar.
+
+zh=2
+真的对不起，等我回家，我们再聊这些工作的事情。
+I'm really sorry, when I get home, we'll talk about these work things again.
+
+en=teacher
+"再聊" (zài liáo). She is saying "we will talk again." This is the future "again" because the conversation hasn't happened yet. If they had already finished talking and she wanted to say "let's talk again" regarding a past event, she would use "又."
+
+en=student
+So, "再" is for the things that are yet to come. Like, "I will do it again tomorrow."
+
+en=teacher
+Right. And then the mother cuts her off!
+
+zh=1
+别说了，你快点回来，饺子都准备好了。
+Stop talking, come back quickly, the dumplings are already prepared.
+
+en=student
+"饺子都准备好了." This is another "都...了" structure! But here, it's used to emphasize that the dumplings are "already prepared." It's like saying, "The dumplings are already done, so hurry up!"
+
+en=teacher
+Exactly. The "都" emphasizes the state of completion. Now, the daughter tries to soothe her.
+
+zh=2
+知道了，我马上就到，到时候再陪你聊天。
+I know, I'll be there soon, and I'll chat with you then.
+
+en=student
+"马上就到" means "arriving immediately" or "arriving very soon." And she uses "再" again! "再陪你聊天" means "chat with you again" (in the future).
+
+en=teacher
+And finally, the mother gives in, but with a condition.
+
+zh=1
+好吧，那我再等你二十分钟。
+Alright, then I'll wait for you for another twenty minutes.
+
+en=student
+"再等" (zài děng). She's going to wait for an additional twenty minutes. Since the waiting is going to continue or happen in the future, we use "再."
+
+en=teacher
+You've mastered the difference. If she had already waited and was complaining, she might say "I already waited for twenty minutes" using "又." But here, it's a future intention.
+
+OUTRO
+
+en=teacher
+What a hectic family call! We covered a lot of ground today.
+
+en=student
+We definitely did. We learned how to use "都...了" to add emphasis, like saying "It's already three o'clock!" or "The dumplings are already done!"
+
+en=teacher
+And we learned the difference between the future "again" using "再" and the past "again." Remember, if you're planning to do something later, use "再."
+
+en=student
+I'll definitely use "再" when I tell my teacher "I'll practice my Chinese again tomorrow!"
+
+en=teacher
+(Laughs) I look forward to it! Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "五十岁左右"
+pitch = "中音域，带有焦虑和唠叨的起伏"
+pace = "中速，语速略快，显得有些匆忙"
+volume = "响亮，带有长辈的威严感"
+clarity = "清晰，吐字干脆"
+fluency = "流利，但在表达不满时会有情绪性的停顿"
+timbre = "圆润但略显紧绷"
+emotion = "焦虑、爱之深责之切"
+usecase = "一位正在为春节准备饭菜、心急如焚的母亲"
+dialogue = "都下午三点了！你到底在哪里？饺子都准备好了！我再等你二十分钟。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中高音域，听起来有些疲惫"
+pace = "中速，语气略显迟疑"
+volume = "中等，略微低沉"
+clarity = "清晰，但带有长途跋涉后的倦怠感"
+fluency = "流利，但在道歉时语气较为柔和"
+timbre = "清脆，但略带沙哑"
+emotion = "疲惫、抱歉、匆忙"
+usecase = "一位被工作压得喘不过气、正赶往家中的都市白领"
+dialogue = "我还在路上呢，公司里太忙了。真的对不起，我马上就到。"

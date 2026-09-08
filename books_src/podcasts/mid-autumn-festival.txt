@@ -1,0 +1,196 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into the festive and delicious world of the Mid-Autumn Festival.
+
+en=student
+I love that festival! The mooncakes are amazing, but the preparation can be pretty chaotic.
+
+en=teacher
+It really can be. And because it is a time of big celebrations, it is perfect for practicing two very useful grammar points. First, we are looking at how to emphasize quantity or collective actions using the word 都. You use this after a subject like "everyone" or "many people" to say that "all" or "both" of them are doing something. For example, 大家都很忙, which means everyone is very busy.
+
+en=student
+So, if I want to say "We are all students," I would say 我们都是学生?
+
+en=teacher
+Exactly. You place it right before the verb or adjective. Second, we are learning how to express that something is "about to" happen using the structure 还有...就要...了. This is used when you want to mention a specific time period remaining before an event occurs. For example, 我们还有三天就要考试了, which means we have three days left until the exam.
+
+en=student
+So it's like saying, "In [amount of time], [something] is about to happen."
+
+en=teacher
+Precisely. It adds a sense of anticipation or urgency. Before we hear the dialogue, let's look at our six key vocabulary words. 
+
+en=teacher
+First, we have 月饼, first tone, third tone, meaning mooncake... 月饼.
+
+en=teacher
+Second, 团圆, second tone, second tone, meaning to reunite or reunion... 团圆.
+
+en=teacher
+Third, 准备, third tone, fourth tone, meaning to prepare... 准备.
+
+en=teacher
+Fourth, 忙, second tone, meaning busy... 忙.
+
+en=teacher
+Fifth, 礼物, third tone, fourth tone, meaning gift... 礼物.
+
+en=teacher
+And sixth, 节日, second tone, second tone, meaning festival... 节日.
+
+en=student
+Got it. Mooncakes, reunions, preparing, being busy, gifts, and festivals.
+
+en=teacher
+Perfect. In today's dialogue, you are going to hear two friends, Li Hua and Zhang Wei, discussing the frantic preparations for the Mid-Autumn Festival. Li Hua is feeling the pressure of getting everything ready!
+
+DIALOGUE
+
+zh=1
+哎呀，我真忙！中秋节马上就要到了。
+Oh, I am so busy! The Mid-Autumn Festival is almost here.
+
+zh=2
+别担心，我们还有三天就要开始准备庆祝活动了。
+Don't worry, we still have three days before we start preparing for the celebrations.
+
+zh=1
+你说得倒容易。现在大家都很忙，超市里的人很多。
+Easy for you to say. Everyone is so busy right now, and there are so many people in the supermarket.
+
+zh=2
+确实，很多人都去买月饼了。
+It is true, many people have already gone to buy mooncakes.
+
+zh=1
+没错，我也得赶紧去买一些礼物。
+Exactly, I also need to hurry and buy some gifts.
+
+zh=2
+别急，我们还要准备很多好吃的呢。
+Don't worry, we also have a lot of delicious food to prepare.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with Li Hua, who sounds quite stressed.
+
+zh=1
+哎呀，我真忙！中秋节马上就要到了。
+Oh, I am so busy! The Mid-Autumn Festival is almost here.
+
+en=student
+"哎呀" is like "oh boy" or "oh dear," right? It really captures her frustration. And she says "中秋节马上就要到了." We just learned "就要...了"!
+
+en=teacher
+Yes! "就要...了" indicates something is about to happen. Adding "马上" before it just makes it feel even more imminent, like "is about to happen right now."
+
+zh=2
+别担心，我们还有三天就要开始准备庆祝活动了。
+Don't worry, we still have three days before we start preparing for the celebrations.
+
+en=student
+There it is! "还有三天就要...了." So, "three days left until we start preparing." 
+
+en=teacher
+Correct. The structure is "还有" plus the time duration, then "就要" plus the action. It's very common when looking at a calendar.
+
+zh=1
+你说得倒容易。现在大家都很忙，超市里的人很多。
+Easy for you to say. Everyone is so busy right now, and there are so many people in the supermarket.
+
+en=student
+"你说得倒容易" is such a natural way to say "Easy for you to say." And then she uses our first grammar point: "大家都很忙."
+
+en=teacher
+Exactly. "大家" means everyone, and "都" emphasizes that it's not just one person, but every single person in that group who is busy. 
+
+en=student
+Wait, what about "很多人都去买月饼了" later in the dialogue? Is that the same rule?
+
+en=teacher
+It's the same principle. "很多人" acts as the subject meaning "many people," and "都" tells us that all those many people are doing the action of buying mooncakes. Without "都," the sentence still works, but "都" adds that emphasis of "all of them."
+
+zh=2
+确实，很多人都去买月饼了。
+It is true, many people have already gone to buy mooncakes.
+
+en=student
+"确实" means "indeed" or "true." It's a great way to agree with someone.
+
+zh=1
+没错，我也得赶紧去买一些礼物。
+Exactly, I also need to hurry and buy some gifts.
+
+en=student
+"礼物" is gift. She's saying she needs to hurry and buy some.
+
+en=teacher
+And "赶紧" means "hurriedly" or "quickly." It adds to her sense of being rushed.
+
+zh=2
+别急，我们还要准备很多好吃的呢。
+Don't worry, we also have a lot of delicious food to prepare.
+
+en=student
+"别急" means "don't worry" or "don't be in such a rush." 
+
+en=teacher
+And we end with "准备," our vocabulary word for "to prepare." She is trying to calm Li Hua down by reminding her that there is still plenty of delicious food to get ready for the big reunion.
+
+en=student
+The Mid-Autumn Festival really does involve a lot of "准备" and "忙" for everyone!
+
+en=teacher
+It certainly does. It's all about the "团圆" at the end of all that work.
+
+OUTRO
+
+en=student
+Wow, that was intense! I feel like I need a mooncake just from listening to Li Hua's stress.
+
+en=teacher
+Haha! Well, the stress is part of the fun. Today, we learned how to use "都" to emphasize that "everyone" or "many people" are doing something, and how to use "还有...就要...了" to talk about things happening in a certain amount of time.
+
+en=student
+And we practiced some essential festival words like 月饼, 团圆, and 准备. 
+
+en=teacher
+That's right. Try using these today! If you have a big deadline coming up, you can say "还有几天就要..." to practice.
+
+en=student
+I'll try! Thanks for a great lesson, Ellen.
+
+en=teacher
+You're welcome! See you next time on Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中高音域，因焦虑而略显急促"
+pace = "略快，语速不稳"
+volume = "中等，但语气较重"
+clarity = "清晰，但由于情绪激动显得有些紧凑"
+fluency = "略显紧张，带有叹词"
+timbre = "清脆，但带有紧迫感"
+emotion = "焦虑，忙碌，急于完成任务"
+usecase = "一个被节日准备工作搞得焦头烂额的都市职场女性"
+dialogue = "哎呀，我真忙！中秋节马上就要到了。你说得倒容易。现在大家都很忙，超市里的人很多。没错，我也得赶紧去买一些礼物。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，稳定"
+pace = "中等，语速平缓"
+volume = "适中"
+clarity = "清晰，吐字圆润"
+fluency = "流利，节奏放松"
+timbre = "温暖，柔和"
+emotion = "冷静，从容，带有安慰感"
+usecase = "一个性格悠闲、乐天派的男性朋友"
+dialogue = "别担心，我们还有三天就要开始准备庆祝活动了。确实，很多人都去买月饼了。别急，我们还要准备很多好吃的呢。"

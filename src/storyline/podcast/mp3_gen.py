@@ -1,17 +1,21 @@
-import re
+"""Podcast audio rendering — generates audio segments and assembles final MP3."""
+
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Optional, Union
+from typing import Optional
 
 from pydub import AudioSegment
 
 from storyline.audio.audiobook_gen_qwen3 import Qwen3TTSService
 from storyline.logging import get_logger
 from storyline.podcast.audio_gen import LANGUAGE_MAP, voice_profile_stem
-from storyline.podcast.script_parser import (
-    DialogueLine,
-    HostLine,
-    PodcastScript,
+from storyline.podcast.script_parser import PodcastScript
+from storyline.podcast.steps import (
+    build_flashcard_intro_sequence,
+    build_podcast_sequence,
+    CharacterStep,
+    HostStep,
+    Step,
 )
 from storyline.services.manager import ServiceManager
 
@@ -21,11 +25,24 @@ _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 _DEFAULT_VOICES_DIR = _PROJECT_ROOT / "voices"
 
 _HOST_SPEAKERS = ("teacher", "student")
-
-_DIALOGUE_RE = re.compile(r'^dialogue\s*=\s*"(.+)"\s*$')
-
 _BATCH_SIZE = 4
 
+
+# ---------------------------------------------------------------------------
+# Host voice config
+# ---------------------------------------------------------------------------
+
+@dataclass(frozen=True)
+class HostVoiceConfig:
+    """Mapping from host role to builtin Qwen3 speaker name."""
+    teacher_builtin_speaker: str = "Serena"
+    student_builtin_speaker: str = "Ryan"
+    builtin_instruct: str = ""
+
+
+# ---------------------------------------------------------------------------
+# Low-level helpers
+# ---------------------------------------------------------------------------
 
 def _try_load_audio(path: Path) -> AudioSegment | None:
     try:
@@ -39,38 +56,18 @@ def _try_load_audio(path: Path) -> AudioSegment | None:
         return None
 
 
-def _load_or_clone(
-    reuse_path: Path,
-    speaker_id: int,
-    chinese: str,
-    service,
-    voices_dir: Path,
-    slug: str,
-    script: PodcastScript,
-) -> AudioSegment:
-    audio = _try_load_audio(reuse_path)
-    if audio is not None:
-        return audio
-
-    profile = script.voice_profiles[speaker_id]
-    ref_audio = str(Path(voices_dir) / f"{voice_profile_stem(slug, speaker_id)}.wav")
-    return service.generate_voice_clone(
-        chinese,
-        LANGUAGE_MAP[profile.lang],
-        str(ref_audio),
-        profile.dialogue,
-    )
+def host_reference(speaker: str, voices_dir: Path) -> tuple[Path, str]:
+    if speaker not in _HOST_SPEAKERS:
+        raise ValueError(f"Unknown host speaker: {speaker}")
+    voices_dir = Path(voices_dir)
+    wav = voices_dir / f"{speaker}.wav"
+    ref = voices_dir / f"{speaker}-ref.txt"
+    return wav, ref.read_text(encoding="utf-8").strip()
 
 
 def _chunked_voice_clone_batch(service, texts, languages, ref_audio_path, ref_text):
     if isinstance(languages, str):
         languages = [languages] * len(texts)
-    if hasattr(service, 'batch_size'):
-        return service.generate_voice_clone_batch(
-            texts, languages,
-            ref_audio_path=ref_audio_path,
-            ref_text=ref_text,
-        )
     audios = []
     for i in range(0, len(texts), _BATCH_SIZE):
         batch_texts = texts[i:i + _BATCH_SIZE]
@@ -106,225 +103,15 @@ def _chunked_audio_batch(service, texts, languages, speakers, instructs):
 
 
 # ---------------------------------------------------------------------------
-# Audio step model
+# Audio prefetch (batched, cached)
 # ---------------------------------------------------------------------------
-
-@dataclass(frozen=True)
-class HostStep:
-    speaker: str
-    lang: str
-    text: str
-
-
-@dataclass(frozen=True)
-class CharacterStep:
-    speaker_id: int
-    chinese: str
-    dialogue_index: int | None = None
-
-
-Step = Union[HostStep, CharacterStep]
-
-
-# ---------------------------------------------------------------------------
-# Voice profile helpers
-# ---------------------------------------------------------------------------
-
-def normalize_curly_quotes(text: str) -> str:
-    return (
-        text.replace("\u201c", '"')
-        .replace("\u201d", '"')
-        .replace("\u2018", "'")
-        .replace("\u2019", "'")
-    )
-
-
-def read_profile_dialogue(path: Path) -> str:
-    content = normalize_curly_quotes(Path(path).read_text(encoding="utf-8"))
-    for line in content.splitlines():
-        match = _DIALOGUE_RE.match(line.strip())
-        if match:
-            return match.group(1)
-    raise ValueError(f"No dialogue field found in voice profile: {path}")
-
-
-def host_reference(speaker: str, voices_dir: Path) -> tuple[Path, str]:
-    if speaker not in _HOST_SPEAKERS:
-        raise ValueError(f"Unknown host speaker: {speaker}")
-    voices_dir = Path(voices_dir)
-    wav = voices_dir / f"{speaker}.wav"
-    txt = voices_dir / f"{speaker}.txt"
-    return wav, read_profile_dialogue(txt)
-
-
-# ---------------------------------------------------------------------------
-# Sequence planning
-# ---------------------------------------------------------------------------
-
-def dialogue_index_map(script: PodcastScript) -> dict[str, int]:
-    result: dict[str, int] = {}
-    for index, line in enumerate(script.dialogue):
-        if line.chinese not in result:
-            result[line.chinese] = index
-    return result
-
-
-def _build_dialogue_with_transitions(
-    script: PodcastScript,
-    repetitions: int,
-    first_label: str,
-    repeat_label: str = "Second time",
-    final_label: str = "Third time",
-) -> list[Step]:
-    steps: list[Step] = []
-
-    if repetitions <= 0:
-        return steps
-
-    steps.append(HostStep("teacher", "en", first_label))
-    for index, line in enumerate(script.dialogue):
-        steps.append(CharacterStep(line.speaker_id, line.chinese, index))
-
-    transition_labels = [repeat_label, final_label]
-    for rep in range(1, repetitions):
-        if rep - 1 < len(transition_labels):
-            steps.append(HostStep("teacher", "en", transition_labels[rep - 1]))
-        for index, line in enumerate(script.dialogue):
-            steps.append(CharacterStep(line.speaker_id, line.chinese, index))
-
-    return steps
-
-
-def _build_line_by_line_with_transitions(
-    script: PodcastScript,
-    repetitions: int,
-    first_label: str,
-    repeat_label: str = "Second time",
-    final_label: str = "Third time",
-) -> list[Step]:
-    steps: list[Step] = []
-
-    if repetitions <= 0:
-        return steps
-
-    steps.append(HostStep("teacher", "en", first_label))
-    for line in script.dialogue:
-        for _ in range(repetitions):
-            steps.append(HostStep("teacher", "zh", line.chinese))
-            steps.append(HostStep("student", "en", line.english))
-
-    return steps
-
-
-def build_flashcard_intro_sequence(
-    flashcard_entries: list[list[str]],
-    flashcard_audio_dir: Path | None = None,
-) -> tuple[list[Step], dict[str, AudioSegment]]:
-    steps: list[Step] = []
-    preloaded: dict[str, AudioSegment] = {}
-    if not flashcard_entries:
-        return steps, preloaded
-
-    steps.append(HostStep("teacher", "en", "The vocab in this lesson is："))
-
-    audio_dir = Path(flashcard_audio_dir) if flashcard_audio_dir else None
-
-    for i, entry in enumerate(flashcard_entries):
-        word = entry[0]
-        meaning = entry[2]
-        sentence = entry[3]
-        translation = entry[5]
-        idx = i + 1
-
-        steps.append(HostStep("teacher", "en", f"The chinese word... {word}"))
-        steps.append(HostStep("teacher", "en", f"This means... {meaning}"))
-        steps.append(HostStep("teacher", "zh", f"A sample sentence is... {sentence}"))
-        steps.append(HostStep("teacher", "en", f"This means... {translation}"))
-        steps.append(HostStep("teacher", "zh", sentence))
-        steps.append(HostStep("teacher", "en", translation))
-        steps.append(HostStep("teacher", "zh", sentence))
-        steps.append(HostStep("teacher", "en", translation))
-
-        if audio_dir:
-            word_audio_path = audio_dir / f"audio_{idx}_word.mp3"
-            sentence_audio_path = audio_dir / f"audio_{idx}_sentence.mp3"
-
-            if sentence_audio_path.is_file():
-                audio = AudioSegment.from_file(str(sentence_audio_path))
-                cache_key = ("teacher", "zh", sentence)
-                preloaded[cache_key] = audio
-
-    return steps, preloaded
-
-
-def build_podcast_sequence(
-    script: PodcastScript,
-    dialogue_repetitions: int = 3,
-    line_by_line_repetitions: int = 3,
-    flashcard_intro: list[Step] | None = None,
-) -> list[Step]:
-    steps: list[Step] = []
-
-    if flashcard_intro:
-        steps.extend(flashcard_intro)
-
-    for line in script.intro:
-        steps.append(HostStep(line.speaker, line.lang, line.text))
-
-    steps.extend(
-        _build_dialogue_with_transitions(
-            script, dialogue_repetitions,
-            first_label="Now we'll hear the dialogue three times",
-        )
-    )
-
-    steps.extend(
-        _build_line_by_line_with_transitions(
-            script, line_by_line_repetitions,
-            first_label="Now we'll hear the dialogue with translation three times",
-        )
-    )
-
-    index_by_chinese = dialogue_index_map(script)
-    for item in script.breakdown:
-        if isinstance(item, HostLine):
-            steps.append(HostStep(item.speaker, item.lang, item.text))
-        else:
-            steps.append(
-                CharacterStep(
-                    item.speaker_id,
-                    item.chinese,
-                    index_by_chinese.get(item.chinese),
-                )
-            )
-
-    steps.extend(
-        _build_dialogue_with_transitions(
-            script, dialogue_repetitions,
-            first_label="Let's hear the dialogue three more times",
-        )
-    )
-
-    for line in script.outro:
-        steps.append(HostStep(line.speaker, line.lang, line.text))
-
-    return steps
-
-
-# ---------------------------------------------------------------------------
-# Audio rendering
-# ---------------------------------------------------------------------------
-
-_BUILTIN_HOST_SPEAKER = {"teacher": "Serena", "student": "Ryan"}
-#_BUILTIN_HOST_INSTRUCT = "Speak slightly slowly and clearly."
-_BUILTIN_HOST_INSTRUCT = ""
-
 
 def _prefetch_host_audio(
     steps: list[Step],
     host_service,
     clone_service,
     voices_dir: Path,
+    host_voice: HostVoiceConfig,
     use_builtin_hosts: bool,
 ) -> dict[tuple[str, str, str], AudioSegment]:
     cache: dict[tuple[str, str, str], AudioSegment] = {}
@@ -333,7 +120,11 @@ def _prefetch_host_audio(
         groups: dict[str, dict[str, HostStep]] = {}
         for step in steps:
             if isinstance(step, HostStep):
-                builtin = _BUILTIN_HOST_SPEAKER[step.speaker]
+                builtin = (
+                    host_voice.teacher_builtin_speaker
+                    if step.speaker == "teacher"
+                    else host_voice.student_builtin_speaker
+                )
                 groups.setdefault(builtin, {})[step.text] = step
 
         for builtin, unique in groups.items():
@@ -341,7 +132,7 @@ def _prefetch_host_audio(
             texts = [s.text for s in steps_unique]
             languages = [LANGUAGE_MAP[s.lang] for s in steps_unique]
             speakers = [builtin] * len(steps_unique)
-            instructs = [_BUILTIN_HOST_INSTRUCT] * len(steps_unique)
+            instructs = [host_voice.builtin_instruct] * len(steps_unique)
             audios = _chunked_audio_batch(host_service, texts, languages, speakers, instructs)
             for s, a in zip(steps_unique, audios):
                 cache[(s.speaker, s.lang, s.text)] = a
@@ -403,46 +194,18 @@ def _prefetch_character_audio(
     return cache
 
 
-def render_step(
-    step: Step,
+# ---------------------------------------------------------------------------
+# Step rendering (single-step, used as cache fallback)
+# ---------------------------------------------------------------------------
+
+def _render_character(
+    step: CharacterStep,
     script: PodcastScript,
     slug: str,
     base_dir: Path,
-    host_service,
     clone_service,
     voices_dir: Path,
-    host_cache: Optional[dict[tuple[str, str, str], AudioSegment]] = None,
-    character_cache: Optional[dict[tuple[int, str], AudioSegment]] = None,
-    use_builtin_hosts: bool = False,
 ) -> AudioSegment:
-    if isinstance(step, HostStep):
-        cache_key = (step.speaker, step.lang, step.text)
-        if host_cache is not None and cache_key in host_cache:
-            return host_cache[cache_key]
-        if use_builtin_hosts:
-            speaker = _BUILTIN_HOST_SPEAKER[step.speaker]
-            audio = host_service.generate_audio(
-                step.text,
-                LANGUAGE_MAP[step.lang],
-                speaker=speaker,
-                instruct=_BUILTIN_HOST_INSTRUCT,
-            )
-        else:
-            ref_audio, ref_text = host_reference(step.speaker, voices_dir)
-            audio = clone_service.generate_voice_clone(
-                step.text,
-                LANGUAGE_MAP[step.lang],
-                str(ref_audio),
-                ref_text,
-            )
-        if host_cache is not None:
-            host_cache[cache_key] = audio
-        return audio
-
-    ck = (step.speaker_id, step.chinese)
-    if character_cache is not None and ck in character_cache:
-        return character_cache[ck]
-
     profile = script.voice_profiles[step.speaker_id]
     ref_audio = Path(voices_dir) / f"{voice_profile_stem(slug, step.speaker_id)}.wav"
 
@@ -453,10 +216,9 @@ def render_step(
             / f"{step.dialogue_index:03d}_{slug}_1_zh.mp3"
         )
         if reuse_path.exists():
-            return _load_or_clone(
-                reuse_path, step.speaker_id, step.chinese,
-                clone_service, voices_dir, slug, script,
-            )
+            audio = _try_load_audio(reuse_path)
+            if audio is not None:
+                return audio
 
     return clone_service.generate_voice_clone(
         step.chinese,
@@ -493,6 +255,7 @@ def assemble_podcast_mp3(
     host_service=None,
     service_manager: ServiceManager | None = None,
     voices_dir: Path | None = None,
+    host_voice: HostVoiceConfig | None = None,
     author: str = "podcasts",
     title: str | None = None,
     dialogue_repetitions: int = 3,
@@ -508,6 +271,8 @@ def assemble_podcast_mp3(
         voices_dir = _DEFAULT_VOICES_DIR
     if host_service is None:
         host_service = Qwen3TTSService()
+    if host_voice is None:
+        host_voice = HostVoiceConfig()
 
     steps = build_podcast_sequence(
         script,
@@ -517,17 +282,12 @@ def assemble_podcast_mp3(
     )
 
     host_cache = _prefetch_host_audio(
-        steps, host_service, clone_service, voices_dir, use_builtin_hosts,
+        steps, host_service, clone_service, voices_dir, host_voice, use_builtin_hosts,
     )
 
     if flashcard_audio_cache:
         host_cache.update(flashcard_audio_cache)
 
-    # Stop TTS before any Omnivoice calls to free GPU memory.
-    # When Omnivoice handles everything (use_builtin_hosts=False), TTS was
-    # already stopped in create_mp3; this is a safety no-op.
-    # When hosts use Qwen3TTS (use_builtin_hosts=True), we need to stop TTS
-    # now so Omnivoice can load its model.
     if service_manager and clone_service is not host_service:
         service_manager.stop_if_running("tts")
         if hasattr(service_manager, '_wait_for_gpu_memory'):
@@ -542,12 +302,17 @@ def assemble_podcast_mp3(
     for step in steps:
         if len(combined) > 0:
             combined += AudioSegment.silent(duration=pause_ms)
-        combined += render_step(
-            step, script, slug, base_dir, host_service, clone_service, voices_dir,
-            host_cache=host_cache,
-            character_cache=character_cache,
-            use_builtin_hosts=use_builtin_hosts,
-        )
+
+        if isinstance(step, HostStep):
+            combined += host_cache[(step.speaker, step.lang, step.text)]
+        elif isinstance(step, CharacterStep):
+            ck = (step.speaker_id, step.chinese)
+            if ck in character_cache:
+                combined += character_cache[ck]
+            else:
+                combined += _render_character(
+                    step, script, slug, base_dir, clone_service, voices_dir,
+                )
 
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -584,14 +349,19 @@ def assemble_flashcard_vocab_mp3(
     clone_service,
     voices_dir: Path,
     *,
+    host_voice: HostVoiceConfig | None = None,
     use_builtin_hosts: bool = False,
     pause_ms: int = 400,
     bitrate: str = "64k",
     title: str | None = None,
     author: str = "podcasts",
 ) -> Path:
+    if host_voice is None:
+        host_voice = HostVoiceConfig()
+
     host_cache = _prefetch_host_audio(
-        flashcard_intro, host_service, clone_service, voices_dir, use_builtin_hosts,
+        flashcard_intro, host_service, clone_service, voices_dir,
+        host_voice, use_builtin_hosts,
     )
 
     combined = AudioSegment.empty()

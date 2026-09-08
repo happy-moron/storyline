@@ -1,23 +1,38 @@
 import json
 import time
+import tomllib
 from pathlib import Path
 
 import storyline.logging
 from storyline.logging import get_logger
 from storyline.audio.audiobook_gen_qwen3 import Qwen3TTSService
-from storyline.config.pipeline_config import PipelineConfig
+from storyline.config.pipeline_config import PipelineConfig, CONFIG_DIR
 from storyline.podcast.audio_gen import voice_profile_stem
 from storyline.podcast.create_ereader import _slug_from_filename, _title_from_slug
 from storyline.podcast.mp3_gen import (
     assemble_podcast_mp3,
-    build_flashcard_intro_sequence,
+    HostVoiceConfig,
 )
 from storyline.podcast.omnivoice_audio import OmnivoiceTTSService
 from storyline.podcast.script_parser import parse_script
+from storyline.podcast.steps import build_flashcard_intro_sequence
 from storyline.services.manager import ServiceManager
 
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 _DEFAULT_VOICES_DIR = _PROJECT_ROOT / "voices"
+
+
+def _load_host_voice_config() -> HostVoiceConfig:
+    audio_toml = CONFIG_DIR / "audio.toml"
+    if audio_toml.is_file():
+        with audio_toml.open("rb") as f:
+            raw = tomllib.load(f)
+        hosts = raw.get("podcast", {}).get("hosts", {})
+        return HostVoiceConfig(
+            teacher_builtin_speaker=hosts.get("teacher_builtin_speaker", "Serena"),
+            student_builtin_speaker=hosts.get("student_builtin_speaker", "Ryan"),
+        )
+    return HostVoiceConfig()
 
 
 def create_mp3(
@@ -95,6 +110,7 @@ def create_mp3(
 
     try:
         vocab_output_path = output_dir / f"{slug}-vocab.mp3" if flashcard_intro else None
+        host_voice = _load_host_voice_config()
         result = assemble_podcast_mp3(
             script,
             slug,
@@ -104,6 +120,7 @@ def create_mp3(
             host_service=host_service,
             service_manager=service_manager if use_omnivoice else None,
             voices_dir=_DEFAULT_VOICES_DIR,
+            host_voice=host_voice,
             title=title,
             use_builtin_hosts=use_builtin_hosts,
             flashcard_intro=flashcard_intro,

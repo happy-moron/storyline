@@ -1,0 +1,192 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are exploring a very sweet and heartwarming theme: playing with a baby.
+
+en=student
+I love this theme. It sounds much more relaxing than our last episode on legal disputes. 
+
+en=teacher
+Indeed! But even when we are playing, there are specific structures we need to master. Today, we are focusing on two essential HSK grammar points. First, the placement of time words. In Chinese, time words are very flexible. You can place them before the subject or after the subject, as long as they come before the verb. For example, 我明天去 (I'm going tomorrow) or 明天我去 (Tomorrow I am going). Both are correct.
+
+en=student
+So, "Time + Subject" or "Subject + Time"? It's like having two different ways to say the same thing.
+
+en=teacher
+Exactly. Second, we are learning how to express age using 岁. The structure is very straightforward: Subject plus a number, followed by 岁. For example, 我二十岁 (I am twenty years old). In our dialogue, we will use this to talk about how old the baby is.
+
+en=student
+That makes sense. So if I want to say "The baby is two years old," I would say "宝宝两岁"?
+
+en=teacher
+Very close! We use the specific number two for age, which is 两, instead of the standard 二. So, 宝宝两岁. Now, before we listen to the dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+First, we have 宝宝, (two third tones), meaning baby... 宝宝。
+
+en=teacher
+Next, we have 岁, (fourth tone), meaning years old... 岁。
+
+en=teacher
+Then, we have 现在, (fourth tone and fourth tone), meaning now... 现在。
+
+en=teacher
+We also have 玩具, (second tone and fourth tone), meaning toy... 玩具。
+
+en=teacher
+We have 玩, (second tone), meaning to play... 玩。
+
+en=teacher
+And finally, we have 生日, (first tone and fourth tone), meaning birthday... 生日。
+
+en=student
+宝宝, 岁, 现在, 玩具, 玩, and 生日. Got it. I'm ready.
+
+en=teacher
+In this episode, you are going to hear a conversation between a mother and a father. They are watching their baby play and discussing his age and his upcoming birthday.
+
+DIALOGUE
+
+zh=1
+你看，宝宝在玩玩具。
+Look, the baby is playing with toys.
+
+zh=2
+他真的太可爱了。
+He is really too cute.
+
+zh=1
+他现在几岁了？
+How old is he now?
+
+zh=2
+他现在两岁了。
+He is two years old now.
+
+zh=1
+明天是他的生日，对吗？
+Tomorrow is his birthday, right?
+
+zh=2
+对，明天我们带他去公园。
+Yes, tomorrow we take him to the park.
+
+zh=1
+好，我也想带他去玩。
+Okay, I also want to take him to play.
+
+BREAKDOWN
+
+en=teacher
+Let's listen to that dialogue again, and break it down line by line. We start with the father.
+
+zh=1
+你看，宝宝在玩玩具。
+Look, the baby is playing with toys.
+
+en=student
+"你看" is a common way to say "look" or "see." And then we have "宝宝在玩玩具." We see our vocab word 玩具, (toy). But Ellen, is the "在" here acting like the "-ing" in English?
+
+en=teacher
+Perfect observation, Ryan! The "在" here indicates an action is currently in progress, just like "is playing." So, "宝宝在玩" means "the baby is playing."
+
+zh=2
+他真的太可爱了。
+He is really too cute.
+
+en=student
+"太...了" is that classic structure for "too [adjective]," right? Like "too cute."
+
+en=teacher
+Exactly. "太可爱了" (too cute).
+
+zh=1
+他现在几岁了？
+How old is he now?
+
+en=student
+Here we see "现在" (now) and "几岁" (how many years old). The question "几岁" is specifically used for children. If I were asking an adult's age, I wouldn't use "几岁," would I?
+
+en=teacher
+Correct. For adults, we would use "多大." "几岁" is the standard way to ask about a child's age.
+
+zh=2
+他现在两岁了。
+He is two years old now.
+
+en=student
+And here is our age grammar! "两岁." I was wondering about that. You mentioned earlier we don't use 二 for age.
+
+en=teacher
+Right. When you are counting things or stating age, you use 两 (liǎng) instead of 二 (èr) for the number two. So, "两岁" is correct. And notice how "现在" is placed right after the subject "他."
+
+zh=1
+明天是他的生日，对吗？
+Tomorrow is his birthday, right?
+
+en=student
+"明天" is "tomorrow." And we have "生日" (birthday). "对吗" is the perfect way to say "right?" or "is that correct?"
+
+zh=2
+对，明天我们带他去公园。
+Yes, tomorrow we take him to the park.
+
+en=student
+Wait, Ellen, I noticed something here. In the previous line, "现在" was after the subject "他." But in this line, "明天" is at the very beginning: "明天我们..." Can I say "我们明天带他去公园" instead?
+
+en=teacher
+Yes, you absolutely can! That is the flexibility I mentioned earlier. You can say "明天我们..." or "我们明天..." Both are perfectly natural. It just shifts the emphasis slightly, but the meaning remains the same.
+
+zh=1
+好，我也想带他去玩。
+Okay, I also want to take him to play.
+
+en=student
+"也" (also) is placed right before the verb "想" (want). "我也想..."
+
+en=teacher
+Exactly. "也" always goes before the verb or the auxiliary verb. In this case, "想" is the auxiliary verb. And of course, we finish with "玩," our verb for play.
+
+OUTRO
+
+en=student
+That was such a lovely scene. I can almost see the little baby playing with his toys.
+
+en=teacher
+It was very sweet. So, to recap, today we learned that time words like "明天" or "现在" can go before or after the subject. We also learned how to state age using "Number + 岁," remembering to use "两" instead of "二" for the number two.
+
+en=student
+And we practiced some essential words like 宝宝, 玩具, and 生日. Thanks, Ellen!
+
+en=teacher
+You're welcome, Ryan. Thanks for listening, everyone. See you next time on Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，温和"
+pace = "缓慢，充满关怀"
+volume = "中等"
+clarity = "清晰，语调柔和"
+fluency = "流畅"
+timbre = "圆润，温暖"
+emotion = "慈爱，温柔"
+usecase = "一个温柔体贴的父亲"
+dialogue = "你看，宝宝在玩玩具。他现在几岁了？明天是他的生日，对吗？好，我也想带他去玩。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，甜美"
+pace = "缓慢，语气轻快"
+volume = "中等"
+clarity = "清晰，带有笑意"
+fluency = "流畅"
+timbre = "清脆，悦耳"
+emotion = "幸福，愉悦"
+usecase = "一个沉浸在幸福中的母亲"
+dialogue = "他真的太可爱了。他现在两岁了。对，明天我们带他去公园。"

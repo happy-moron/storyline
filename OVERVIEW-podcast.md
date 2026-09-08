@@ -5,7 +5,7 @@ Each episode produces three artifacts:
 
 1. A podcast script (`books_src/podcasts/<episode>.txt`)
 2. An e-reader entry (the dialogue section, with per-sentence audio) under `books/podcasts/<episode>/`
-3. A full MP3 of the expanded podcast under `~/temp/audio/podcasts/<episode>.mp3`
+3. A full MP3 of the expanded podcast under `dist/audio/podcasts/<episode>.mp3`
 
 The pipeline runs in three stages, which can be executed individually or
 all at once via a single end-to-end command.
@@ -38,7 +38,7 @@ Picks the next unused grammar points + theme, records the episode in the
 registry, then writes vocab and script files.
 
 ```bash
-python -m storyline.podcast.create_podcast
+python -m storyline.podcast.run_pipeline
 ```
 
 Outputs:
@@ -96,7 +96,7 @@ Useful flags:
 - `--profile <name>` — use a named profile from `pipeline.toml`
 
 Outputs:
-- `~/temp/audio/podcasts/<episode>.mp3` (ID3 artist/album = `podcasts`, title = episode name)
+- `dist/audio/podcasts/<episode>.mp3` (ID3 artist/album = `podcasts`, title = episode name)
 
 Requires Stage 2 to have run first (for dialogue voice samples and sentence audio).
 
@@ -104,7 +104,7 @@ Requires Stage 2 to have run first (for dialogue voice samples and sentence audi
 
 ```bash
 . .venv/bin/activate
-python -m storyline.podcast.create_podcast
+python -m storyline.podcast.run_pipeline
 python -m storyline.podcast.create_ereader -i books_src/podcasts/talking-about-last-nights-soccer-results.txt
 python -m storyline.podcast.create_mp3 -i books_src/podcasts/talking-about-last-nights-soccer-results.txt
 ```

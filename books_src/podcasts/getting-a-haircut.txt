@@ -1,0 +1,222 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are looking at how to describe things that have already happened and how to ask if someone wants something more.
+
+en=student
+So, we are talking about moving forward, not looking back?
+
+en=teacher
+In a way, yes! Today, we are learning two very useful grammar points. First, we have the structure 已经⋯⋯了, which means "already." You use it to indicate that an action has been completed or a state has changed. For example, 我已经吃饭了, meaning I have already eaten.
+
+en=student
+Okay, and the second one is 还, right? I know that can mean "also," but you mentioned it's used differently here.
+
+en=teacher
+Exactly. When you use 还 before a verb, it can mean "still" or "also/in addition." In a service setting, like a salon, a stylist might ask, 您还要做什么吗? which means "Do you want to do anything else?" or "Do you also want to do [something]?"
+
+en=student
+Ah, so "also" like "in addition to what we are already doing."
+
+en=teacher
+Precisely. Now, let's look at our six key vocabulary words for today.
+
+en=teacher
+First, we have 剪头发, (third tone and neutral tone), meaning to cut hair... 剪头发。
+
+en=teacher
+Next is 理发师, (third tone, third tone, first tone), meaning hair stylist... 理发师。
+
+en=teacher
+Then we have 样式, (fourth tone, fourth tone), meaning style... 样式。
+
+en=teacher
+We also have 决定, (second tone, fourth tone), meaning to decide... 决定。
+
+en=teacher
+Fifth, we have 预约, (fourth tone, first tone), meaning an appointment... 预约。
+
+en=teacher
+And finally, 换, (fourth tone), meaning to change... 换。
+
+en=student
+Got it. So, what's the scenario for our dialogue?
+
+en=teacher
+In this episode, we're heading to a very chic hair salon. You're going to hear a conversation between a professional hair stylist and a customer who is looking for a very dramatic new look. It's a moment of big change!
+
+DIALOGUE
+
+zh=1
+欢迎！您已经预约了吗？
+Welcome! Have you already made an appointment?
+
+zh=2
+是的，我已经在网上预约了。
+Yes, I have already booked online.
+
+zh=1
+您今天想换什么样的样式？
+What kind of style do you want to change to today?
+
+zh=2
+我想剪短一点。我想要一个很新的样式。
+I want to cut it a bit short. I want a very new style.
+
+zh=1
+好的。剪短了以后，您还要染发吗？
+Okay. After cutting it short, do you still want to dye your hair?
+
+zh=2
+不了，我不想要染发。我只想剪头发。
+No, I don't want to dye it. I just want to cut my hair.
+
+zh=1
+您已经决定好要剪多短了吗？
+Have you already decided how short to cut it?
+
+zh=2
+我已经决定了，剪到耳朵下面。
+I have already decided, cut it below the ears.
+
+zh=1
+好的，请坐。您还要买一些护发产品吗？
+Okay, please sit. Do you also want to buy some hair care products?
+
+zh=2
+暂时不要。我只想换个样子。
+Not for now. I just want to change my look.
+
+BREAKDOWN
+
+en=teacher
+Let's go through that dialogue and break it down line by line. We start with the stylist.
+
+zh=1
+欢迎！您已经预约了吗？
+Welcome! Have you already made an appointment?
+
+en=student
+"您已经预约了吗?" We see our first grammar point: 已经...了. "您" is the polite version of "you," and "预约" is the appointment we mentioned earlier.
+
+en=teacher
+Right. The "了" at the end of the sentence is very important here because it indicates that the "booking" is a completed action.
+
+zh=2
+是的，我已经在网上预约了。
+Yes, I have already booked online.
+
+en=student
+"在网上" means "on the internet." So, "I have already booked on the internet."
+
+zh=1
+您今天想换什么样的样式？
+What kind of style do you want to change to today?
+
+en=teacher
+"换" means to change. Here, the stylist is asking what kind of style you want to change to. "什么样的" means "what kind of."
+
+zh=2
+我想剪短一点。我想要一个很新的样式。
+I want to cut it a bit short. I want a very new style.
+
+en=student
+"剪短" is "to cut short." And "一点" means "a little bit."
+
+zh=1
+好的。剪短了以后，您还要染发吗？
+Okay. After cutting it short, do you still want to dye your hair?
+
+en=student
+Wait, here we have "还"! "您还要染发吗?" Does that mean "Do you also want to dye your hair?"
+
+en=teacher
+Yes! In this context, "还" means "in addition to cutting the hair." The stylist is asking if dyeing is another service you want to add on.
+
+zh=2
+不了，我不想要染发。我只想剪头发。
+No, I don't want to dye it. I just want to cut my hair.
+
+en=student
+"不想" is the negation. "I don't want to..."
+
+zh=1
+您已经决定好要剪多短了吗？
+Have you already decided how short to cut it?
+
+en=teacher
+Let's look at that carefully: "您已经决定好要剪多短了吗？" We have "已经...了" again, and then "决定好" which means "decided firmly" or "finished deciding." And "多短" uses that "how [adjective]" structure we talked about earlier.
+
+en=student
+"多短" is "how short." That's really helpful for getting specific details.
+
+zh=2
+我已经决定了，剪到耳朵下面。
+I have already decided, cut it below the ears.
+
+en=student
+"耳朵" is ears. So, "below the ears."
+
+zh=1
+好的，请坐。您还要买一些护发产品吗？
+Okay, please sit. Do you also want to buy some hair care products?
+
+en=teacher
+Here is "还" again! "您还要买...吗?" is a very common way for shopkeepers or servers to ask, "Would you like to buy [something else] as well?"
+
+zh=2
+暂时不要。我只想换个样子。
+Not for now. I just want to change my look.
+
+en=student
+"暂时" means "temporarily" or "for the time being." And "换个样子" is a great phrase for "change one's look."
+
+en=teacher
+It's a beautiful way to express a fresh start!
+
+OUTRO
+
+en=teacher
+That was a great session! Today we covered how to use 已经...了 to talk about completed actions, like making an appointment or making a decision.
+
+en=student
+And we also learned that 还 can be used in questions to ask if someone wants something "in addition" to what they are currently doing, like asking if they want more hair products or a hair dye service.
+
+en=teacher
+Exactly. Keep practicing these in your daily life, especially when you are out shopping or at a restaurant.
+
+en=student
+Thanks, Ellen! See you next time on Learning Chinese.
+
+en=teacher
+Goodbye!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，语调上扬，充满热情"
+pace = "中速，节奏感强"
+volume = "中等，声音甜美且专业"
+clarity = "吐字极其清晰"
+fluency = "流利，带有职业化的亲和力"
+timbre = "圆润，悦耳"
+emotion = "热情、专业、充满活力"
+usecase = "一位专业且富有感染力的高级理发师"
+dialogue = "欢迎！您已经预约了吗？您今天想换什么样的样式？您还要买一些护发产品吗？"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十岁出头"
+pitch = "中高音域，略带紧张感"
+pace = "略慢，有时会因犹豫而停顿"
+volume = "中等偏低"
+clarity = "清晰，但语气比较柔和"
+fluency = "表达虽然清晰，但能听出内心的忐忑"
+timbre = "清脆，略显羞涩"
+emotion = "紧张、果断、带着一丝重生的期待"
+usecase = "一位准备通过改变形象来开启新生活的年轻女性"
+dialogue = "是的，我已经在网上预约了。我想剪短一点。我已经决定了，剪到耳朵下面。我只想换个样子。"

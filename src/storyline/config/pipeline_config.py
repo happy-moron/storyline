@@ -59,7 +59,7 @@ class PipelineConfig:
 
     # -- Paths --
     books_dir: str = "books"
-    audiobook_dir: str = "/home/zspdude/temp/audio"
+    audiobook_dir: str = "dist/audio"
     dict_file: str = "dict/custom_dict.json"
     prompts: dict[str, str] = field(default_factory=lambda: {
         "warmup": "prompts/warmup.txt",

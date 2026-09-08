@@ -1,0 +1,206 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a topic that most roommates or couples have dealt with at some point: the dreaded chore dispute.
+
+en=student
+Oh, I know this one well. The tension in the kitchen can be very high when someone leaves a mess.
+
+en=teacher
+Exactly. Today, we are learning two very practical grammar points. First, expressing "not very" using 不太 before an adjective. For example, 不太干净 means not very clean, or 不太忙 means not very busy. 
+
+en=student
+So instead of just saying something is not clean, I can say it is "not very" clean. It's a bit more nuanced.
+
+en=teacher
+Precisely. Second, we are looking at the word 和, which means "and." It is used to connect two nouns. For example, 苹果和香蕉 means apples and bananas, or in our case, 碗和筷子, which means bowls and chopsticks.
+
+en=student
+Got it. So "和" is for things, like nouns, not for connecting actions or sentences.
+
+en=teacher
+Correct. You wouldn't use it to say "I eat and sleep" in that specific way. Now, before we get to the drama, let's look at our six key vocabulary words.
+
+en=teacher
+First, we have 碗, third tone, meaning bowl... 碗.
+en=teacher
+Next is 筷子, fourth tone and neutral tone, meaning chopsticks... 筷子.
+en=teacher
+We have 脏, first tone, meaning dirty... 脏.
+en=teacher
+Then we have 干净, first tone and fourth tone, meaning clean... 干净.
+en=teacher
+We have 总是, third tone and fourth tone, meaning always... 总是.
+en=teacher
+And finally, 生气, first tone and fourth tone, meaning angry... 生气.
+
+en=student
+Perfect. I'm ready. What is the scenario for today?
+
+en=teacher
+In this episode, you're going to hear a heated argument between two roommates, Mei and Li, regarding the cleanliness of their kitchen.
+
+DIALOGUE
+
+zh=1
+你看！水槽里有很多碗和筷子。这些东西都不干净。
+Look! There are many bowls and chopsticks in the sink. These things are not clean.
+zh=2
+没关系，我现在不太忙。我一会儿就去洗。
+It's okay, I'm not very busy right now. I'll go wash them in a bit.
+zh=1
+你每次都说“一会儿”！这些碗和杯子现在非常脏。
+You say "in a bit" every time! These bowls and cups are very dirty now.
+zh=2
+你能不能别总是这么生气？
+Can you stop being so angry all the time?
+zh=1
+为什么我不该生气？你的房间也一点都不干净！
+Why shouldn't I be angry? Your room is also not clean at all!
+zh=2
+我的房间没问题。我真的不太累，不想动。
+My room is fine. I'm really not very tired, I don't want to move.
+zh=1
+你的态度不太好，我也觉得很不开心！
+Your attitude is not very good, and I also feel very unhappy!
+zh=2
+别这样，我下午一定洗干净。
+Don't be like this, I will definitely wash them clean this afternoon.
+
+BREAKDOWN
+
+en=teacher
+Let's break down that intense conversation. It starts with Mei being quite direct.
+
+zh=1
+你看！水槽里有很多碗和筷子。这些东西都不干净。
+Look! There are many bowls and chopsticks in the sink. These things are not clean.
+
+en=student
+"你看!" is a great way to say "Look!" or "Look at this!" and "水槽" means sink. But I noticed "碗和筷子" right away.
+
+en=teacher
+Yes, that is our first grammar point. 碗 is bowl, 和 is "and," and 筷子 is chopsticks. They are both nouns, so using 和 to connect them is perfect.
+
+en=student
+And then she says "都不干净" (dōu bù gān jìng). Does "都" mean "all"?
+
+en=teacher
+Yes! "都" means all or both. So "都不干净" means "none of them are clean" or "all are not clean."
+
+zh=2
+没关系，我现在不太忙。我一会儿就去洗。
+It's okay, I'm not very busy right now. I'll go wash them in a bit.
+
+en=student
+"没关系" is a classic, "it's okay." But then Li says "不太忙." Is that the "not very" we talked about?
+
+en=teacher
+Exactly. 不太 (bú tài) plus the adjective 忙 (máng), meaning busy. It's much more common in daily conversation than just saying "I am not busy."
+
+en=student
+And he says "一会儿" (yī huì r). That sounds like "in a little while," right?
+
+en=teacher
+You've got it. Now, Mei is not happy, as she follows up with:
+
+zh=1
+你每次都说“一会儿”！这些碗和杯子现在非常脏。
+You say "in a bit" every time! These bowls and cups are very dirty now.
+
+en=student
+"每次都" means "every time." And here we see "和" again with "碗和杯子"—bowls and cups.
+
+en=teacher
+That's right. And notice Mei uses "非常脏" (fēicháng zāng). "非常" means "very" or "extremely." It's much stronger than the "不太" we just learned.
+
+zh=2
+你能不能别总是这么生气？
+Can you stop being so angry all the time?
+
+en=student
+"总是" (zǒng shì) means always. She is asking him why he's always so angry.
+
+en=teacher
+Wait, she is actually asking "Why shouldn't I be angry?" in the next line because Li is trying to deflect.
+
+zh=1
+为什么我不该生气？你的房间也一点都不干净！
+Why shouldn't I be angry? Your room is also not clean at all!
+
+en=student
+"为什么" (wèi shén me) is why. And "一点都不干净" (yī diǎn dōu bù gān jìng)... is that similar to "不太"?
+
+en=teacher
+It's stronger! "不太干净" means "not very clean," but "一点都不干净" means "not clean at all." It’s a much more emphatic way to complain!
+
+zh=2
+我的房间没问题。我真的不太累，不想动。
+My room is fine. I'm really not very tired, I don't want to move.
+
+en=student
+He's making excuses! "不太累" (bú tài lèi)—not very tired.
+
+en=teacher
+And Mei is losing her patience. She says:
+
+zh=1
+你的态度不太好，我也觉得很不开心！
+Your attitude is not very good, and I also feel very unhappy!
+
+en=student
+"态度" (tài dù) is attitude. "不太好" means not very good. And "不开心" (bù kāi xīn) is unhappy.
+
+en=teacher
+Exactly. She's using "不太" to describe both his attitude and her own feelings of unhappiness.
+
+zh=2
+别这样，我下午一定洗干净。
+Don't be like this, I will definitely wash them clean this afternoon.
+
+en=student
+"别这样" is "don't be like this." He's promising to wash them this afternoon.
+
+OUTRO
+
+en=teacher
+Phew! That was a tense one. I think I'd be pretty unhappy too if my roommate left those bowls in the sink!
+
+en=student
+Me too. But at least now we know how to argue in Chinese! We practiced using 和 to connect nouns, like 碗和筷子, and how to use 不太 to say something is "not very" something, like 不太忙 or 不太累.
+
+en=teacher
+That's right. Remember, 不太 is for adjectives, and 和 is for nouns. Practice these in your own household to master them.
+
+en=student
+Thanks for joining us on Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，因愤怒而略微提高"
+pace = "略快，语气急促"
+volume = "大"
+clarity = "清晰，带有攻击性"
+fluency = "流畅"
+timbre = "清脆"
+emotion = "烦躁且愤怒"
+usecase = "一个对家务极其讲究的室友"
+dialogue = "你看！水槽里有很多碗和筷子。这些东西都不干净。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中低音域，平稳"
+pace = "慢，略显懒散"
+volume = "中"
+clarity = "略微含混"
+fluency = "流畅，带有懒散的语气"
+timbre = "柔和，略带沙哑"
+emotion = "漫不经心"
+usecase = "一个有点懒散的年轻男生"
+dialogue = "没关系，我现在不太忙。我一会儿就去洗。"

@@ -171,7 +171,7 @@ Each segment is separated by a 300 ms pause.
 **Outputs:**
 - Per-chunk audio files: `chunks/{prefix}_{N}_zh_{NN}.mp3` and `chunks/{prefix}_{N}_en_{NN}.mp3`
 - Chunk metadata: `chunks/{prefix}_{N}.json` (updated with timestamps)
-- Aggregate audiobook: `/home/zspdude/temp/audio/{book}/{N}.mp3`
+- Aggregate audiobook: `dist/audio/{book}/{N}.mp3`
 
 **Fallback:** If no chunk JSON exists for a chapter, the pipeline falls back to per-sentence audio generation (one MP3 per sentence, Chinese only, normal speed).
 

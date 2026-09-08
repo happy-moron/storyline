@@ -70,8 +70,12 @@ def generate_voice_design(service, profile: VoiceProfile, slug: str,
     stem = voice_profile_stem(slug, profile.speaker)
     txt_path = voices_dir / f"{stem}.txt"
     wav_path = voices_dir / f"{stem}.wav"
+    ref_path = voices_dir / f"{stem}-ref.txt"
 
     txt_path.write_text(serialize_profile(profile), encoding="utf-8")
+
+    # Write just the reference transcript for standardized clone usage
+    ref_path.write_text(profile.dialogue.strip() + "\n", encoding="utf-8")
 
     if not wav_path.exists():
         audio = service.voice_design(

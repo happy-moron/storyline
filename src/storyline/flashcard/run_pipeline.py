@@ -12,8 +12,11 @@ from storyline.services.manager import ServiceManager
 CACHE_FILE = "flashcard_entries.json"
 IMPROMPTS_FILE = "image_prompts.json"
 
-_BUILTIN_FLASHCARD_SPEAKER = "Serena"
-_BUILTIN_FLASHCARD_INSTRUCT = ""
+_FLASHCARD_BUILTIN_SPEAKER = "Serena"
+_FLASHCARD_BUILTIN_INSTRUCT = ""
+
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
+_DEFAULT_VOICES_DIR = _PROJECT_ROOT / "voices"
 
 
 def _load_cached_entries(output_dir: Path) -> list[list[str]] | None:
@@ -123,13 +126,37 @@ def _write_text_files_and_collect_prompts(
 def generate_flashcard_audio(
     output_dir: Path,
     entries: list[list[str]],
-    service_manager: ServiceManager,
+    service_manager: ServiceManager | None = None,
+    *,
+    use_omnivoice: bool = False,
+    use_builtin_hosts: bool = False,
+    voices_dir: Path | None = None,
 ) -> None:
     log = get_logger("flashcard.audio")
     output_dir.mkdir(parents=True, exist_ok=True)
 
+    if voices_dir is None:
+        voices_dir = _DEFAULT_VOICES_DIR
+
     tts = Qwen3TTSService()
-    log.info("event=flashcard_audio_start entries=%d", len(entries))
+
+    if use_builtin_hosts:
+        clone_service = tts
+    else:
+        if use_omnivoice:
+            from storyline.podcast.omnivoice_audio import OmnivoiceTTSService
+
+            clone_service = OmnivoiceTTSService()
+        else:
+            clone_service = tts
+
+    ref_audio = str(voices_dir / "teacher.wav")
+    ref_text = (voices_dir / "teacher-ref.txt").read_text(encoding="utf-8").strip()
+
+    log.info(
+        "event=flashcard_audio_start entries=%d builtin=%s omnivoice=%s",
+        len(entries), use_builtin_hosts, use_omnivoice,
+    )
 
     for i, entry in enumerate(entries):
         word = entry[0]
@@ -141,11 +168,16 @@ def generate_flashcard_audio(
 
         if not word_path.is_file():
             t0 = time.time()
-            audio = tts.generate_audio(
-                word, "Chinese",
-                speaker=_BUILTIN_FLASHCARD_SPEAKER,
-                instruct=_BUILTIN_FLASHCARD_INSTRUCT,
-            )
+            if use_builtin_hosts:
+                audio = tts.generate_audio(
+                    word, "Chinese",
+                    speaker=_FLASHCARD_BUILTIN_SPEAKER,
+                    instruct=_FLASHCARD_BUILTIN_INSTRUCT,
+                )
+            else:
+                audio = clone_service.generate_voice_clone(
+                    word, "Chinese", ref_audio, ref_text,
+                )
             audio.export(str(word_path), format="mp3", bitrate="64k")
             log.info(
                 "event=flashcard_audio_word index=%d word=%s duration_ms=%d",
@@ -154,11 +186,16 @@ def generate_flashcard_audio(
 
         if not sentence_path.is_file():
             t0 = time.time()
-            audio = tts.generate_audio(
-                sentence, "Chinese",
-                speaker=_BUILTIN_FLASHCARD_SPEAKER,
-                instruct=_BUILTIN_FLASHCARD_INSTRUCT,
-            )
+            if use_builtin_hosts:
+                audio = tts.generate_audio(
+                    sentence, "Chinese",
+                    speaker=_FLASHCARD_BUILTIN_SPEAKER,
+                    instruct=_FLASHCARD_BUILTIN_INSTRUCT,
+                )
+            else:
+                audio = clone_service.generate_voice_clone(
+                    sentence, "Chinese", ref_audio, ref_text,
+                )
             audio.export(str(sentence_path), format="mp3", bitrate="64k")
             log.info(
                 "event=flashcard_audio_sentence index=%d chars=%d duration_ms=%d",

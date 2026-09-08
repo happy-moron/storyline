@@ -152904,5 +152904,456 @@
         }
       }
     ]
+  },
+  "弄丢": {
+    "pinyin": "nòng diū",
+    "definition": [
+      {
+        "meaning": "to lose; to misplace",
+        "example": {
+          "chinese": "我把钥匙弄丢了。",
+          "pinyin": "Wǒ bǎ yàoshi nòng diū le.",
+          "english": "I lost my keys."
+        }
+      }
+    ]
+  },
+  "买完": {
+    "pinyin": "mǎi wán",
+    "definition": [
+      {
+        "meaning": "to finish buying",
+        "example": {
+          "chinese": "你买完菜了吗？",
+          "pinyin": "Nǐ mǎi wán cài le ma?",
+          "english": "Have you finished buying the groceries?"
+        }
+      }
+    ]
+  },
+  "找回来": {
+    "pinyin": "zhǎo huí lái",
+    "definition": [
+      {
+        "meaning": "to find back; to recover (something lost)",
+        "example": {
+          "chinese": "他终于把丢失的钥匙找回来了。",
+          "pinyin": "Tā zhōng yú bǎ diū shī de yào shi zhǎo huí lái le.",
+          "english": "He finally found his lost keys."
+        }
+      },
+      {
+        "meaning": "to regain; to get back (confidence, interest, etc.)",
+        "example": {
+          "chinese": "我们必须把失去的信心找回来。",
+          "pinyin": "Wǒ men bì xū bǎ shī qù de xìn xīn zhǎo huí lái.",
+          "english": "We must regain our lost confidence."
+        }
+      }
+    ]
+  },
+  "关乎": {
+    "pinyin": "guānhū",
+    "definition": [
+      {
+        "meaning": "to relate to; to involve; to concern",
+        "example": {
+          "chinese": "这件事情关乎我们的切身利益。",
+          "pinyin": "Zhè jiàn shìqíng guānhū wǒmen de qièshēn lìyì.",
+          "english": "This matter concerns our own interests."
+        }
+      }
+    ]
+  },
+  "变浅": {
+    "pinyin": "biàn qiǎn",
+    "definition": [
+      {
+        "meaning": "to become shallow",
+        "example": {
+          "chinese": "随着潮水退去，河水变浅了。",
+          "pinyin": "Suí zhe cháo shuǐ tuì qù, hé shuǐ biàn qiǎn le.",
+          "english": "As the tide recedes, the river water becomes shallow."
+        }
+      },
+      {
+        "meaning": "to become lighter (in color)",
+        "example": {
+          "chinese": "洗过之后，这件衣服的颜色变浅了。",
+          "pinyin": "Xǐ guò zhī hòu, zhè jiàn yī fu de yán sè biàn qiǎn le.",
+          "english": "The color of this piece of clothing became lighter after washing."
+        }
+      }
+    ]
+  },
+  "尿尿": {
+    "pinyin": "niào niào",
+    "definition": [
+      {
+        "meaning": "to urinate; to pee",
+        "example": {
+          "chinese": "小孩在尿尿。",
+          "pinyin": "Xiǎo hái zài niào niào.",
+          "english": "The child is peeing."
+        }
+      }
+    ]
+  },
+  "拉屎": {
+    "pinyin": "lā shǐ",
+    "definition": [
+      {
+        "meaning": "to defecate; to poop",
+        "example": {
+          "chinese": "狗在草地上拉屎。",
+          "pinyin": "Gǒu zài cǎodì shàng lāshǐ.",
+          "english": "The dog pooped on the grass."
+        }
+      }
+    ]
+  },
+  "如厕": {
+    "pinyin": "rúcè",
+    "definition": [
+      {
+        "meaning": "to go to the toilet; to use the restroom",
+        "example": {
+          "chinese": "请问，如厕的地方在哪里？",
+          "pinyin": "Qǐngwèn, rúcè de dìfang zài nǎlǐ?",
+          "english": "Excuse me, where is the restroom?"
+        }
+      }
+    ]
+  },
+  "中秋节": {
+    "pinyin": "zhōng qiū jié",
+    "definition": [
+      {
+        "meaning": "Mid-Autumn Festival",
+        "example": {
+          "chinese": "中秋节的时候，全家人会聚在一起吃月饼。",
+          "pinyin": "Zhōngqiūjié de shíhou, quánjiārén huì jù zài yīqǐ chī yuèbǐng.",
+          "english": "During the Mid-Autumn Festival, the whole family gathers to eat mooncakes."
+        }
+      }
+    ]
+  },
+  "超市里": {
+    "pinyin": "chāo shì lǐ",
+    "definition": [
+      {
+        "meaning": "in the supermarket; inside the supermarket",
+        "example": {
+          "chinese": "超市里有很多新鲜的水果。",
+          "pinyin": "Chāoshì lǐ yǒu hěnduō xīnxiān de shuǐguǒ.",
+          "english": "There is a lot of fresh fruit in the supermarket."
+        }
+      }
+    ]
+  },
+  "月饼": {
+    "pinyin": "yuè bǐng",
+    "definition": [
+      {
+        "meaning": "mooncake",
+        "example": {
+          "chinese": "中秋节的时候，我们要吃月饼。",
+          "pinyin": "Zhōng qiū jié de shí hòu, wǒ men yào chī yuè bǐng.",
+          "english": "We eat mooncakes during the Mid-Autumn Festival."
+        }
+      }
+    ]
+  },
+  "公司里": {
+    "pinyin": "gōng sī lǐ",
+    "definition": [
+      {
+        "meaning": "in the company; inside the company",
+        "example": {
+          "chinese": "他在公司里工作。",
+          "pinyin": "Tā zài gōng sī lǐ gōng zuò.",
+          "english": "He works in the company."
+        }
+      }
+    ]
+  },
+  "春节": {
+    "pinyin": "chūn jié",
+    "definition": [
+      {
+        "meaning": "Spring Festival; Chinese New Year",
+        "example": {
+          "chinese": "春节是中国的传统节日。",
+          "pinyin": "Chūnjié shì Zhōngguó de chuántǒng jiérì.",
+          "english": "The Spring Festival is a traditional Chinese festival."
+        }
+      }
+    ]
+  },
+  "饺子": {
+    "pinyin": "jiǎo zi",
+    "definition": [
+      {
+        "meaning": "dumplings",
+        "example": {
+          "chinese": "我最喜欢吃饺子。",
+          "pinyin": "Wǒ zuì xǐ huān chī jiǎo zi.",
+          "english": "I like eating dumplings most."
+        }
+      }
+    ]
+  },
+  "样式": {
+    "pinyin": "yàng shì",
+    "definition": [
+      {
+        "meaning": "style; design",
+        "example": {
+          "chinese": "这件衣服的样式非常时尚。",
+          "pinyin": "Zhè jiàn yīfu de yàngshì fēicháng shíshàng.",
+          "english": "The style of this clothing is very fashionable."
+        }
+      },
+      {
+        "meaning": "model; pattern",
+        "example": {
+          "chinese": "这种样式的手机很受欢迎。",
+          "pinyin": "Zhè zhǒng yàngshì de shǒujī hěn shòu huānyíng.",
+          "english": "This style of mobile phone is very popular."
+        }
+      }
+    ]
+  },
+  "染发": {
+    "pinyin": "rǎn fà",
+    "definition": [
+      {
+        "meaning": "to dye hair",
+        "example": {
+          "chinese": "她想去染发，换个颜色。",
+          "pinyin": "Tā xiǎng qù rǎnfà, huàn gè yánsè.",
+          "english": "She wants to dye her hair to change the color."
+        }
+      }
+    ]
+  },
+  "决定好": {
+    "pinyin": "jué dìng hǎo",
+    "definition": [
+      {
+        "meaning": "to have decided; to have made up one's mind",
+        "example": {
+          "chinese": "你决定好去哪里了吗？",
+          "pinyin": "Nǐ jué dìng hǎo qù nǎ lǐ le ma?",
+          "english": "Have you decided where to go?"
+        }
+      }
+    ]
+  },
+  "护发": {
+    "pinyin": "hù fà",
+    "definition": [
+      {
+        "meaning": "hair care; to take care of hair",
+        "example": {
+          "chinese": "你应该多注意护发。",
+          "pinyin": "Nǐ yīng gāi duō zhù yì hù fà.",
+          "english": "You should pay more attention to hair care."
+        }
+      }
+    ]
+  },
+  "产品": {
+    "pinyin": "chǎnpǐn",
+    "definition": [
+      {
+        "meaning": "product; goods",
+        "example": {
+          "chinese": "这个新产品在市场上非常受欢迎。",
+          "pinyin": "Zhège xīn chǎnpǐn zài shìchǎng shàng fēicháng shòu huānyíng.",
+          "english": "This new product is very popular in the market."
+        }
+      }
+    ]
+  },
+  "屏幕": {
+    "pinyin": "píngmù",
+    "definition": [
+      {
+        "meaning": "screen",
+        "example": {
+          "chinese": "他的手机屏幕碎了。",
+          "pinyin": "Tā de shǒujī píngmù suì le.",
+          "english": "His phone screen is broken."
+        }
+      }
+    ]
+  },
+  "充电": {
+    "pinyin": "chōng diàn",
+    "definition": [
+      {
+        "meaning": "to charge (a battery, electronic device, etc.)",
+        "example": {
+          "chinese": "我的手机没电了，需要充电。",
+          "pinyin": "Wǒ de shǒujī méidiàn le, xūyào chōngdiàn.",
+          "english": "My phone is out of battery and needs to be charged."
+        }
+      },
+      {
+        "meaning": "to recharge (energy, spirit, etc.)",
+        "example": {
+          "chinese": "休息是为了更好地充电。",
+          "pinyin": "Xiūxi shì wèile gèng hǎo de chōngdiàn.",
+          "english": "Rest is for better recharging."
+        }
+      }
+    ]
+  },
+  "维修": {
+    "pinyin": "wéi xiū",
+    "definition": [
+      {
+        "meaning": "to repair; to fix",
+        "example": {
+          "chinese": "这台电脑需要维修。",
+          "pinyin": "Zhè tái diànnǎo xūyào wéixiū.",
+          "english": "This computer needs repair."
+        }
+      },
+      {
+        "meaning": "to maintain; to service",
+        "example": {
+          "chinese": "汽车需要定期维修。",
+          "pinyin": "Qìchē xūyào dìngqī wéixiū.",
+          "english": "Cars need regular maintenance."
+        }
+      }
+    ]
+  },
+  "维修中心": {
+    "pinyin": "wéi xiū zhōng xīn",
+    "definition": [
+      {
+        "meaning": "repair center; maintenance center",
+        "example": {
+          "chinese": "请把损坏的设备送到维修中心。",
+          "pinyin": "Qǐng bǎ sǔn huài de shè bèi sòng dào wéi xiū zhōng xīn.",
+          "english": "Please send the damaged equipment to the repair center."
+        }
+      }
+    ]
+  },
+  "打车": {
+    "pinyin": "dǎ chē",
+    "definition": [
+      {
+        "meaning": "to take a taxi; to hail a taxi",
+        "example": {
+          "chinese": "太晚了，我们打车回家吧。",
+          "pinyin": "Tài wǎn le, wǒmen dǎchē huí jiā ba.",
+          "english": "It's too late, let's take a taxi home."
+        }
+      }
+    ]
+  },
+  "设置起来": {
+    "pinyin": "shè zhì qǐ lái",
+    "definition": [
+      {
+        "meaning": "to set up; to configure (referring to the process or the manner of setting something up)",
+        "example": {
+          "chinese": "这个软件设置起来非常方便。",
+          "pinyin": "Zhè ge ruǎn jiàn shè zhì qǐ lái fēi cháng fāng biàn.",
+          "english": "This software is very convenient to set up."
+        }
+      }
+    ]
+  },
+  "后备箱里": {
+    "pinyin": "hòu bèi xiāng lǐ",
+    "definition": [
+      {
+        "meaning": "in the trunk",
+        "example": {
+          "chinese": "后备箱里放着一个行李箱。",
+          "pinyin": "Hòu bèi xiāng lǐ fàngzhe yīgè xínglǐ xiāng.",
+          "english": "There is a suitcase in the trunk."
+        }
+      }
+    ]
+  },
+  "刮伤": {
+    "pinyin": "guā shāng",
+    "definition": [
+      {
+        "meaning": "to scratch; to scrape",
+        "example": {
+          "chinese": "他在爬树时把手刮伤了。",
+          "pinyin": "Tā zài pá shù shí bǎ shǒu guā shāng le.",
+          "english": "He scratched his hand while climbing the tree."
+        }
+      }
+    ]
+  },
+  "棉签": {
+    "pinyin": "mián qiān",
+    "definition": [
+      {
+        "meaning": "cotton swab; cotton bud",
+        "example": {
+          "chinese": "请用棉签蘸点酒精清洗伤口。",
+          "pinyin": "Qǐng yòng mián qiān zhàn diǎn jiǔ jīng qīng xǐ shāng kǒu.",
+          "english": "Please use a cotton swab to dab some alcohol to clean the wound."
+        }
+      }
+    ]
+  },
+  "不该": {
+    "pinyin": "bù gāi",
+    "definition": [
+      {
+        "meaning": "shouldn't; ought not to",
+        "example": {
+          "chinese": "你不该这么做。",
+          "pinyin": "Nǐ bù gāi zhème zuò.",
+          "english": "You shouldn't do this."
+        }
+      }
+    ]
+  },
+  "袋子里": {
+    "pinyin": "dài zi lǐ",
+    "definition": [
+      {
+        "meaning": "in the bag; inside the bag",
+        "example": {
+          "chinese": "袋子里有两本书。",
+          "pinyin": "Dài zi lǐ yǒu liǎng běn shū.",
+          "english": "There are two books in the bag."
+        }
+      }
+    ]
+  },
+  "十八号": {
+    "pinyin": "shí bā hào",
+    "definition": [
+      {
+        "meaning": "the 18th (of a month)",
+        "example": {
+          "chinese": "我的生日是五月十八号。",
+          "pinyin": "Wǒ de shēng rì shì wǔ yuè shí bā hào.",
+          "english": "My birthday is May 18th."
+        }
+      },
+      {
+        "meaning": "number 18",
+        "example": {
+          "chinese": "请带我去十八号房间。",
+          "pinyin": "Qǐng dài wǒ qù shí bā hào fáng jiān.",
+          "english": "Please take me to room number 18."
+        }
+      }
+    ]
   }
 }

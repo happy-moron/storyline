@@ -1,0 +1,236 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into a heavy, emotionally charged topic: begging for forgiveness and dealing with the consequences of mistakes.
+
+en=student
+Oh man, that sounds intense. Is this going to be one of those "heavy drama" episodes?
+
+en=teacher
+Absolutely. Real life isn't always about ordering coffee; sometimes it's about repairing broken trust. To do that, you need to be able to talk about time and the sequence of events. 
+
+en=student
+So, we're looking at how to say "before" and "after" a certain time or action?
+
+en=teacher
+Exactly. Today we are mastering two key structures. First, the use of 以后, which means "after" or "later." In English, we say "after two o'clock," but in Chinese, you say "two o'clock after." The time or the action always comes first. For example, 吃饭以后, which means after eating.
+
+en=student
+Got it. So the time or action leads, and the word "after" follows. What about "before"?
+
+en=teacher
+For "before," we use 以前. Just like 以后, it comes after the time or the action. So "before two o'clock" becomes 两点以前. 
+
+en=student
+So, if I want to say "before I leave," I would say "I leave before"?
+
+en=teacher
+Precisely. 你离开以前. Now, before we hear our drama, let's look at our six key vocabulary words.
+
+en=teacher
+First, we have 道歉, (fourth tone, fourth tone), meaning to apologize... 道歉.
+
+en=teacher
+Next, we have 原谅, (second tone, fourth tone), meaning to forgive... 原谅.
+
+en=teacher
+Then, we have 机会, (first tone, fourth tone), meaning a chance or opportunity... 机会.
+
+en=teacher
+We have 错误, (fourth tone, fourth tone), meaning a mistake... 错误.
+
+en=teacher
+Then there is 解决, (third tone, second tone), meaning to solve or to resolve... 解决.
+
+en=teacher
+And finally, 马上, (third tone, fourth tone), meaning immediately... 马上.
+
+en=student
+I'm ready. What's the scenario?
+
+en=teacher
+In this dialogue, you will hear a heated confrontation between a man, Xiao Wang, and a woman, Xiao Li. Xiao Wang has made a major mistake—a betrayal of trust—and is desperately trying to apologize and fix things. Xiao Li is deeply hurt and is not making it easy for him.
+
+DIALOGUE
+
+zh=1
+我知道我犯了严重的错误。我真的很想道歉。
+I know I made a serious mistake. I really want to apologize.
+
+zh=2
+你觉得道歉就能解决问题吗？这件事发生以后，我再也不信任你了。
+Do you think apologizing can solve the problem? After this happened, I no longer trust you.
+
+zh=1
+请原谅我！给我一个机会好吗？
+Please forgive me! Can you give me a chance?
+
+zh=2
+别说了。两点以前你就应该告诉我真相。
+Stop talking. You should have told me the truth before two o'clock.
+
+zh=1
+我保证，在下次发生这种事以前，我一定会改变。
+I promise, before this kind of thing happens again, I will definitely change.
+
+zh=2
+我现在不想听。
+Right now I don't want to listen.
+
+zh=1
+我会马上证明我的诚意。
+I will immediately prove my sincerity.
+
+zh=2
+以后再说吧。我现在只想一个人待着。
+We'll talk about it later. Right now I just want to be alone.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that intense dialogue, and break it down line by line. We start with Xiao Wang.
+
+zh=1
+我知道我犯了严重的错误。我真的很想道歉。
+I know I made a serious mistake. I really want to apologize.
+
+en=student
+He starts strong. "我知道" is "I know." Then he says "犯了严重的错误." "严重" means serious, and "错误" is the mistake we learned earlier.
+
+en=teacher
+Right. And "我真的很想道歉" uses "道歉," which means to apologize. He is expressing his intention clearly.
+
+en=student
+Then Xiao Li responds quite coldly.
+
+zh=2
+你觉得道歉就能解决问题吗？这件事发生以后，我再也不信任你了。
+Do you think apologizing can solve the problem? After this happened, I no longer trust you.
+
+en=teacher
+Let's look at that grammar. "道歉就能解决问题吗?" She's asking if apologizing can "解决" (solve) the "问题" (problem).
+
+en=student
+And here is our first big grammar point: "这件事发生以后". "发生" means to happen. "发生以后" means "after this happened."
+
+en=teacher
+Exactly. In English, "after" comes first. In Chinese, the event "发生" comes first, followed by "以后."
+
+en=student
+It's a pattern! Event plus 以后.
+
+en=teacher
+Correct. Now, let's hear Xiao Wang's plea.
+
+zh=1
+请原谅我！给我一个机会好吗？
+Please forgive me! Can you give me a chance?
+
+en=student
+"原谅" is the key word for forgive. And "机会" is chance. He's begging.
+
+en=teacher
+And Xiao Li is very firm now.
+
+zh=2
+别说了。两点以前你就应该告诉我真相。
+Stop talking. You should have told me the truth before two o'clock.
+
+en=student
+"两点以前." That's our second grammar point. "两点" is two o'clock, and "以前" is before. So, "two o'clock before."
+
+en=teacher
+Yes. He failed to tell her the truth "两点以前." 
+
+en=student
+Xiao Wang tries to make a promise next.
+
+zh=1
+我保证，在下次发生这种事以前，我一定会改变。
+I promise, before this kind of thing happens again, I will definitely change.
+
+en=teacher
+"下次" means next time. "发生这种事以前" means "before this kind of thing happens." Notice the structure: [Action/Event] + 以前.
+
+en=student
+He's really trying to use the grammar to promise a better future. But she's not having it.
+
+zh=2
+我现在不想听。
+Right now I don't want to listen.
+
+en=student
+Short and blunt. 
+
+zh=1
+我会马上证明我的诚意。
+I will immediately prove my sincerity.
+
+en=teacher
+"马上" is that important word for "immediately." He wants to show he's serious right now.
+
+en=student
+But she ends the conversation.
+
+zh=2
+以后再说吧。我现在只想一个人待着。
+We'll talk about it later. Right now I just want to be alone.
+
+en=teacher
+"以后再说" is a very common phrase. Here, "以后" doesn't just mean "after a specific time," it means "later" or "in the future." It's a way of saying "we'll discuss this some other time."
+
+en=student
+So, "以后" can be a standalone word for "later," but it can also follow a time like "两点以后"?
+
+en=teacher
+Yes. It's versatile. If you say "以后," you mean "in the future." If you say "两点以后," you mean "after two o'clock."
+
+en=student
+That makes sense. And "以前" works the same way for "before."
+
+OUTRO
+
+en=teacher
+We have covered a lot of emotional ground today. We learned how to use 以后 and 以前 to set the stage for when things happen.
+
+en=student
+Remember, the time or the action always comes first. "After the meeting" is "meeting after," and "before two o'clock" is "two o'clock before."
+
+en=teacher
+Exactly. We also practiced some very important words for resolving conflict: 道歉, 原谅, 机会, 错误, 解决, and 马上.
+
+en=student
+Hopefully, you can use these to navigate your own conversations, though maybe with a little less drama than our dialogue!
+
+en=teacher
+Indeed. Thanks for listening to Learning Chinese. See you next time.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，带有恳求和焦急感"
+pace = "略快，因为显得很紧张"
+volume = "中等，语调起伏较大"
+clarity = "清晰，但在激动时略显急促"
+fluency = "有些不稳，带有犹豫和恳求的停顿"
+timbre = "略微沙哑，听起来很真诚但很疲惫"
+emotion = "充满悔意，焦虑，渴望被原谅"
+usecase = "一个意识到自己犯了大错并试图挽回关系的男人"
+dialogue = "我真的很想道歉。请原谅我！我会马上证明我的诚意。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，稳定且冰冷"
+pace = "缓慢且沉重"
+volume = "中等，语气坚定"
+clarity = "非常清晰，每个字都咬得很重"
+fluency = "流利，但语气冷漠"
+timbre = "清脆但缺乏温度，显得疏离"
+emotion = "受伤，失望，冷淡，防御性强"
+usecase = "一个被背叛后感到心寒且拒绝沟通的女人"
+dialogue = "你觉得道歉就能解决问题吗？现在我只想一个人待着。"

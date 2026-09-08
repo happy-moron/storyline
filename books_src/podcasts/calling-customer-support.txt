@@ -1,0 +1,226 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a topic that every adult has dealt with at least once: calling customer service to complain.
+
+en=student
+Oh, I have a lot of experience with that! It is not always a pleasant conversation.
+
+en=teacher
+Exactly. Today, we are going to learn how to express dissatisfaction and how to talk about distances when you are trying to solve a problem. We are focusing on two key grammar points. First, the adverb 有点儿, which means "a little too" or "a little bit." We use it before an adjective to express a feeling of dissatisfaction or that something is "too much" in an unpleasant way. For example, 有点儿贵, which means "a little too expensive," or 有点儿累, meaning "a little too tired."
+
+en=student
+So, it is not just "a little," it has that sense of "it's a bit much, and I don't like it."
+
+en=teacher
+Precisely. You cannot use it for everything, but for complaining, it is your best friend. Second, we are looking at expressing distance using the word 离. The structure is Place One plus 离 plus Place Two, followed by an adjective like 近, meaning near, or 远, meaning far. For example, 我家离学校很近, which means "My house is very close to the school."
+
+en=student
+So the 离 acts like "away from" or "distance from" in this context.
+
+en=teacher
+That is a perfect way to think about it. Before we hear the dialogue, let's look at our six key vocabulary words.
+
+en=teacher
+We have 客服, (fourth tone, second tone), meaning customer service... 客服。
+
+en=teacher
+We have 维修, (second tone, first tone), meaning to repair or maintenance... 维修。
+
+en=teacher
+We have 麻烦, (second tone, second tone), meaning troublesome or trouble... 麻烦。
+
+en=teacher
+We have 远, (third tone), meaning far... 远。
+
+en=teacher
+We have 近, (fourth tone), meaning near... 近。
+
+en=teacher
+And we have 有点儿, (third tone, third tone, neutral tone), meaning a little too... 有点儿。
+
+en=student
+Got it. So, what is the scenario?
+
+en=teacher
+In this episode, a frustrated customer is calling a customer service representative because her new smartphone is not working well. She is going to find out that getting it fixed is much more difficult than she thought.
+
+DIALOGUE
+
+zh=1
+喂，你好！我的手机有点儿慢，屏幕也有点儿小。
+Hello, hello! My phone is a little too slow, and the screen is also a little too small.
+
+zh=2
+您好，请问是哪里出了问题？
+Hello, may I ask what the problem is?
+
+zh=1
+充电也有点儿慢。我觉得这手机有点儿贵，我想拿去维修。
+Charging is also a little too slow. I feel this phone is a little too expensive, and I want to take it for repair.
+
+zh=2
+好的。请问您的位置在哪儿？
+Okay. May I ask where your location is?
+
+zh=1
+我在市中心工作。
+I work in the city center.
+
+zh=2
+我们的维修中心离市中心很远。
+Our repair center is very far from the city center.
+
+zh=1
+什么？这么远？那太麻烦了！
+What? That far? That is too much trouble!
+
+zh=2
+很抱歉，您可以打车过来。
+I am very sorry, you can take a taxi to come here.
+
+zh=1
+太远了，我没时间。
+It is too far, I do not have time.
+
+BREAKDOWN
+
+en=teacher
+Let's go through that dialogue line by line. We start with the customer, who sounds quite annoyed.
+
+zh=1
+喂，你好！我的手机有点儿慢，屏幕也有点儿小。
+Hello, hello! My phone is a little too slow, and the screen is also a little too small.
+
+en=student
+"我的手机有点儿慢" - she is clearly complaining. That use of 有点儿 is exactly what we talked about.
+
+en=teacher
+Yes. If she were just stating a fact, like "the phone is slightly slow," she might use a different structure, but because she is unhappy, 有点儿 is perfect. "屏幕也有点儿小" - she is also complaining that the screen is a little too small. Note the use of 也, meaning "also."
+
+zh=2
+您好，请问是哪里出了问题？
+Hello, may I ask what the problem is?
+
+en=student
+"哪里出了问题" is a very natural way to ask "what is the problem" or "what went wrong."
+
+zh=1
+充电也有点儿慢。我觉得这手机有点儿贵，我想拿去维修。
+Charging is also a little too slow. I feel this phone is a little too expensive, and I want to take it for repair.
+
+en=teacher
+She adds that charging is also a little too slow. Then she says "我觉得..." which means "I feel..." or "I think...". And here is our key word, 维修, which means repair.
+
+en=student
+"我想拿去维修" - she wants to take it to be repaired. "拿去" means "to take there."
+
+zh=2
+好的。请问您的位置在哪儿？
+Okay. May I ask where your location is?
+
+en=teacher
+The representative is very polite. "请问" is the polite way to say "may I ask."
+
+zh=1
+我在市中心工作。
+I work in the city center.
+
+en=student
+"市中心" is a great compound word for city center.
+
+zh=2
+我们的维修中心离市中心很远。
+Our repair center is very far from the city center.
+
+en=teacher
+And here is our second grammar point! "维修中心" is the repair center. "离市中心" means "from the city center." And "很远" means "is very far."
+
+en=student
+Wait, Ellen, I have a question about the distance structure. Is it different from saying "My center is far from the city center" in English?
+
+en=teacher
+It is different. In English, you say "is far from." In Chinese, you must use this specific pattern: Subject A + 离 + Subject B + Adjective. You cannot just say "维修中心远市中心." You must include 离 to indicate the distance between the two points.
+
+en=student
+That makes sense. It's like establishing the gap between them.
+
+zh=1
+什么？这么远？那太麻烦了！
+What? That far? That is too much trouble!
+
+en=teacher
+The customer is getting more frustrated. "太麻烦了!" - "That is too troublesome!" or "What a hassle!"
+
+zh=2
+很抱歉，您可以打车过来。
+I am very sorry, you can take a taxi to come here.
+
+en=student
+"打车" is a very common way to say "to take a taxi."
+
+zh=1
+太远了，我没时间。
+It is too far, I do not have time.
+
+en=teacher
+And she ends the call! "太远了" - it's too far. "没时间" - no time.
+
+en=student
+I felt that frustration! Before we go, can I ask about the difference between 有点儿 and 一点儿? I always get them mixed up.
+
+en=teacher
+That is a classic learner's struggle! Think of it this way: 有点儿 is usually placed *before* the adjective to express a negative or unpleasant feeling. "有点儿贵" (a little too expensive). But if you want to say "a little bit of something" or compare something, you often use 一点儿 *after* the adjective. For example, "便宜一点儿" means "a little bit cheaper."
+
+en=student
+So, if I'm complaining, I use 有点儿 before the word. If I'm asking for a little change or a bit more, I use 一点儿 after.
+
+en=teacher
+Exactly! You've got it. And remember the distance rule: A 离 B 远 or 近. Don't forget the 离!
+
+OUTRO
+
+en=student
+That was a very realistic, and honestly, a very stressful call!
+
+en=teacher
+Haha, yes, customer service calls can be intense. Today we learned how to express dissatisfaction using 有点儿, and how to describe the distance between two places using the 离 structure.
+
+en=student
+We also covered some essential vocabulary like 客服, 维修, 麻烦, 远, and 近.
+
+en=teacher
+Great job. Practice these by thinking about your own frustrations today. Is your coffee a little too hot? Is your commute a little too long? Use your new grammar!
+
+en=student
+Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "三十岁左右"
+pitch = "中音域，情绪激动时略微升高"
+pace = "中速，语气急促"
+volume = "中等，带有一种不耐烦感"
+clarity = "清晰，但语速较快"
+fluency = "流畅，但带有挫败感"
+timbre = "清脆，略带沙哑"
+emotion = "焦虑，急躁，充满不满"
+usecase = "一个工作繁忙、对产品质量要求高的职场女性"
+dialogue = "喂，你好！我的手机有点儿慢，屏幕也有点儿小。太远了，我没时间！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁出头"
+pitch = "中低音域，非常稳定"
+pace = "慢速，节奏均匀"
+volume = "中等，语调平和"
+clarity = "非常清晰，发音标准"
+fluency = "流利，职业化的停顿"
+timbre = "圆润，温和"
+emotion = "冷静，礼貌，有些机械化"
+usecase = "一个训练有素、始终保持专业礼貌的客服人员"
+dialogue = "您好，请问是哪里出了问题？我们的维修中心离市中心很远。很抱歉，您可以打车过来。"

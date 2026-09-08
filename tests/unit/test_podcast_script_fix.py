@@ -1,7 +1,7 @@
 import pytest
 
 from storyline.config.pipeline_config import PipelineConfig
-from storyline.podcast.create_podcast import (
+from storyline.podcast.run_pipeline import (
     _fix_script_by_sections,
     _run_section_fix,
     _strip_section_header,
@@ -107,7 +107,7 @@ class TestStripSectionHeader:
 
 class TestRunSectionFix:
     def test_builds_input_and_returns_body(self, monkeypatch, tmp_path):
-        from storyline.podcast import create_podcast
+        from storyline.podcast import run_pipeline
 
         class Fix:
             section = "DIALOGUE"
@@ -123,7 +123,7 @@ class TestRunSectionFix:
                 f.write(FIXED_DIALOGUE)
             return {"wall_ms": 1}
 
-        monkeypatch.setattr(create_podcast, "run_prompt_with_metrics", fake)
+        monkeypatch.setattr(run_pipeline, "run_prompt_with_metrics", fake)
 
         config = PipelineConfig()
         body = _run_section_fix(config, Fix(), "", tmp_path, _NullLog(), "test-theme")
@@ -132,7 +132,7 @@ class TestRunSectionFix:
         assert "zh=1" in captured["input"]
 
     def test_garbage_raises(self, monkeypatch, tmp_path):
-        from storyline.podcast import create_podcast
+        from storyline.podcast import run_pipeline
 
         class Fix:
             section = "DIALOGUE"
@@ -145,7 +145,7 @@ class TestRunSectionFix:
                 f.write("GARBAGE")
             return {"wall_ms": 1}
 
-        monkeypatch.setattr(create_podcast, "run_prompt_with_metrics", fake)
+        monkeypatch.setattr(run_pipeline, "run_prompt_with_metrics", fake)
 
         config = PipelineConfig()
         with pytest.raises(RuntimeError, match="GARBAGE"):
@@ -154,14 +154,14 @@ class TestRunSectionFix:
 
 class TestFixScriptBySections:
     def test_reuses_good_sections_and_fixes_bad(self, monkeypatch, tmp_path):
-        from storyline.podcast import create_podcast
+        from storyline.podcast import run_pipeline
 
         def fake(prompt_template_path, input_file_path, output_file_path, **kwargs):
             with open(output_file_path, "w", encoding="utf-8") as f:
                 f.write(FIXED_DIALOGUE)
             return {"wall_ms": 1}
 
-        monkeypatch.setattr(create_podcast, "run_prompt_with_metrics", fake)
+        monkeypatch.setattr(run_pipeline, "run_prompt_with_metrics", fake)
 
         config = PipelineConfig()
         result = _fix_script_by_sections(config, _script(), tmp_path, _NullLog(), "test-theme")
@@ -175,13 +175,13 @@ class TestFixScriptBySections:
         assert "How are you?" in result
 
     def test_no_llm_calls_for_valid_script(self, monkeypatch, tmp_path):
-        from storyline.podcast import create_podcast
+        from storyline.podcast import run_pipeline
 
         # No fixes needed — runner should never be invoked.
         def fake(*args, **kwargs):
             raise AssertionError("should not call LLM")
 
-        monkeypatch.setattr(create_podcast, "run_prompt_with_metrics", fake)
+        monkeypatch.setattr(run_pipeline, "run_prompt_with_metrics", fake)
 
         good_script = "\n".join([
             INTRO, "DIALOGUE\n\n" + FIXED_DIALOGUE,
