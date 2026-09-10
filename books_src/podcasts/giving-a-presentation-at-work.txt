@@ -1,0 +1,160 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are stepping into the high-stakes world of professional life. We are going to learn how to talk about a very common, and often stressful, situation: giving a presentation at work.
+
+en=student
+Oh man, presentations. Just thinking about them makes me nervous. I'll definitely need these grammar points to survive a meeting.
+
+en=teacher
+Don't worry, Ryan. We have you covered. Today, we are focusing on two essential structures. First, we have the use of "的 时候," which is the standard way to say "when" or "during the time that" something is happening. For example, 我吃饭的时候 (When I eat) or 我回家的时候 (When I go home).
+
+en=student
+And the second one is the reduplication of measure words, right? Like saying "ge ge" instead of just "ge"?
+
+en=teacher
+Exactly. When you repeat a measure word, you are emphasizing that you are talking about every single individual in a group. Instead of just saying "everyone," you are saying "every single one." For instance, 个个 (every single one) or 件件 (every single piece/item). It adds a layer of emphasis that is very common in spoken Chinese.
+
+en=student
+So, if I say "the people were tired," it's normal. But if I say "every single person was tired," I use the reduplication.
+
+en=teacher
+Precisely. It sounds more descriptive and emphatic. In our dialogue, you will hear these used in a workplace critique. You are going to hear Manager Wang, a very direct and professional manager, giving feedback to a junior employee, Li Hua, about a presentation he just delivered. It might get a little bit tense!
+
+en=student
+I'm ready. Let's hear how the meeting went.
+
+DIALOGUE
+
+zh=1
+当你今天做演示的时候，我真的非常惊讶。
+When you were giving your presentation today, I was truly surprised.
+
+zh=2
+啊？为什么，经理？您觉得哪里做得不好吗？
+Ah? Why, Manager? Do you think I did something poorly?
+
+zh=1
+虽然你表现得很自信，但会议室里的个个都在看那个错误的数据。
+Although you appeared very confident, every single person in the meeting room was looking at that incorrect data.
+
+zh=2
+非常抱歉！我准备的时候检查了三次，可能还是漏掉了。
+I am so sorry! When I was preparing, I checked three times, but I might have still missed something.
+
+zh=1
+下次准备的时候，一定要更加仔细一点。
+Next time when you are preparing, you must be more careful.
+
+zh=2
+我明白了，谢谢经理。我会重新检查的。
+I understand. Thank you, Manager. I will check it again.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. It starts with Manager Wang.
+
+zh=1
+当你今天做演示的时候，我真的非常惊讶。
+When you were giving your presentation today, I was truly surprised.
+
+en=student
+"当你做演示的时候" is our first grammar point. "当...的时候" means "when." Here, "做演示" (zuo yan shi) means to give a presentation or to perform a demonstration.
+
+en=teacher
+That is correct. And "惊讶" (jing ya) means surprised. Manager Wang is setting the stage for a critique.
+
+zh=2
+啊？为什么，经理？您觉得哪里做得不好吗？
+Ah? Why, Manager? Do you think I did something poorly?
+
+en=student
+"经理" (jing li) is manager. And "做得不好" (zuo de bu hao) is a common way to say "did something not well" or "did something poorly."
+
+zh=1
+虽然你表现得很自信，但会议室里的个个都在看那个错误的数据。
+Although you appeared very confident, every single person in the meeting room was looking at that incorrect data.
+
+en=teacher
+This is the heart of our grammar lesson. "虽然...但..." (sui ran... dan...) means "although... but...". It's a very important structure for showing contrast.
+
+en=student
+And here is the reduplication! "个个" (ge ge). Instead of saying "每个人" (every person), he says "个个," meaning "every single person." It really emphasizes that the mistake was obvious to everyone.
+
+en=teacher
+Yes. And "会议室" (hui yi shi) means meeting room. "数据" (shu ju) is data. This is a key professional term.
+
+zh=2
+非常抱歉！我准备的时候检查了三次，可能还是漏掉了。
+I am so sorry! When I was preparing, I checked three times, but I might have still missed something.
+
+en=student
+"准备的时候" (zhun bei de shihou) again, using the "when" structure. "检查" (jian cha) is to check.
+
+en=teacher
+And "漏掉了" (lou diao le). "漏" means to leak or to omit, and "掉" is a resultative complement indicating the completion of an action. So, "to miss something" or "to omit something."
+
+zh=1
+下次准备的时候，一定要更加仔细一点。
+Next time when you are preparing, you must be more careful.
+
+en=student
+"下次" (xia ci) is next time. And "仔细" (zi xi) means careful or detailed.
+
+en=teacher
+Exactly. "一定要" (yi ding yao) means "must" or "definitely need to."
+
+zh=2
+我明白了，谢谢经理。我会重新检查的。
+I understand. Thank you, Manager. I will check it again.
+
+en=student
+"明白了" (ming bai le) is a great way to say "I understand" or "I've got it." And "重新" (chong xin) means again or anew.
+
+OUTRO
+
+en=teacher
+That was a high-pressure meeting! But we covered some very useful ground today.
+
+en=student
+Definitely. We learned how to use "的 时候" to set the time for an action, like "准备的时候" (when preparing).
+
+en=teacher
+And we learned how to use reduplicated measure words like "个个" to emphasize that we are talking about every single individual in a group, leaving no doubt.
+
+en=student
+And some great office vocab like "演示" (presentation), "数据" (data), and "经理" (manager).
+
+en=teacher
+Perfect. Practice these in your own sentences. Until next time, happy studying!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "四十岁左右"
+pitch = "中音域，沉稳且有力"
+pace = "中速，语调平稳但带有威严感"
+volume = "中等偏大"
+clarity = "非常清晰，咬字严谨"
+fluency = "流利，富有领导者的节奏感"
+timbre = "磁性，成熟，略带冷峻"
+emotion = "专业，严厉但不过分，体现权威"
+usecase = "一位在职场中要求极高的女性经理"
+dialogue = "当你今天做演示的时候，我真的非常惊讶。虽然你表现得很自信，但会议室里的个个都在看那个错误的数据。下次准备的时候，一定要更加仔细一点。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十多岁"
+pitch = "中高音域，带有犹豫感"
+pace = "中速，在紧张时语速略快"
+volume = "中等"
+clarity = "清晰，但在表达歉意时略显局促"
+fluency = "流畅，但在表达压力时有轻微的停顿"
+timbre = "清脆，年轻，略显稚嫩"
+emotion = "礼貌，有些紧张，带着求上进的心态"
+usecase = "一名刚刚入职、正在接受上级指导的年轻员工"
+dialogue = "啊？为什么，经理？我准备的时候检查了三次，可能还是漏掉了。非常抱歉！我明白了，谢谢经理。"

@@ -1,0 +1,210 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are talking about something that brings people together—or sometimes drives them crazy—sports!
+
+en=student
+Oh, I love sports. Though, if I am watching with my friends, it usually involves a lot of shouting and probably some snacks.
+
+en=teacher
+Exactly. And that is our theme for today: watching a sports game with friends. Because when people get passionate about a game, they start making a lot of comparisons and asking for favors.
+
+en=student
+Comparisons? You mean like, "This player is better than that player"?
+
+en=teacher
+Precisely. Our first grammar point is the basic comparison structure using 比. The structure is Noun one plus 比 plus Noun two plus an adjective. For example, 我比你高, which means I am taller than you.
+
+en=student
+Got it. And can I add something to the end to show how much better it is? Like, "much better" or "a little bit better"?
+
+en=teacher
+Yes! You can add 多了 for "much more" or 一点儿 for "a little bit." So, 我比你高多了 is "I am much taller than you."
+
+en=student
+That makes sense. Now, what about the second grammar point?
+
+en=teacher
+The second one is using 给 to mean "for." The structure is Subject plus 给 plus Recipient plus a Verb Phrase. Instead of just saying "give me a beer," you can say "buy a beer for me." In Chinese, we say 我给你买啤酒.
+
+en=student
+Wait, so it's not just "giving" something? Like, if I say "给我" (give me), that's one thing, but "给我买" is "buy for me"?
+
+en=teacher
+You've got it. The verb comes after the person. Now, in today's dialogue, you are going to hear three friends hanging out, watching a very intense football match. One is a super fan, one is a bit more relaxed, and one is mostly interested in the snacks!
+
+DIALOGUE
+
+zh=1
+这一场比赛比上一场精彩多了！
+This match is much more exciting than the last one!
+
+zh=2
+我觉得这个球员比昨天那个厉害。
+I think this player is much more capable than the one yesterday.
+
+zh=3
+别说了，你能给我买瓶啤酒吗？
+Stop talking, can you buy me a beer?
+
+zh=1
+没问题，我正在给你们点外卖呢。
+No problem, I am currently ordering takeout for you guys.
+
+zh=2
+这家店的菜比那家好吃。
+The food at this place is tastier than that one.
+
+zh=3
+太棒了！快给我点点薯条！
+Awesome! Hurry and order some fries for me!
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with our super fan, Speaker One.
+
+zh=1
+这一场比赛比上一场精彩多了！
+This match is much more exciting than the last one!
+
+en=student
+"这一场比赛" means this match. "上一场" means the previous match. And then we have the comparison "比...精彩多了".
+
+en=teacher
+Right. "精彩" means wonderful or exciting. And remember that "多了" we talked about? It's placed after the adjective to show a big difference. 
+
+en=student
+So if it was only a little bit exciting, I would say "精彩一点儿"?
+
+en=teacher
+Perfect. Next, Speaker Two, our more skeptical friend, says:
+
+zh=2
+我觉得这个球员比昨天那个厉害。
+I think this player is much more capable than the one yesterday.
+
+en=student
+"我觉得" means I feel or I think. "球员" is player. And "厉害" is such a useful word. It can mean awesome, formidable, or capable, right?
+
+en=teacher
+Exactly. It is a very common way to describe someone who is impressive. Here, she is comparing the player today to the one from yesterday using the 比 structure.
+
+en=student
+Then Speaker Three interrupts. He sounds hungry.
+
+zh=3
+别说了，你能给我买瓶啤酒吗？
+Stop talking, can you buy me a beer?
+
+en=teacher
+"别说了" is a very natural way to say "stop talking" or "enough talk." And here we see our second grammar point: "给我买".
+
+en=student
+So, "给" is the recipient, "我" is me, and "买" is to buy. So "buy for me." 
+
+en=teacher
+Exactly. Now, a quick question for you, Ryan. Do you know the difference between "给我买" and "买给我"?
+
+en=student
+Is "买给我" more like "buy it to me"? Like the direction is toward me?
+
+en=teacher
+That is a good way to think about it. "给我买" focuses on the benefit of doing the action for someone, while "买给我" focuses more on the direction of the item. In a casual setting like this, "给我买" is extremely common.
+
+en=student
+Got it. And then our fan, Speaker One, replies:
+
+zh=1
+没问题，我正在给你们点外卖呢。
+No problem, I am currently ordering takeout for you guys.
+
+en=teacher
+"没问题" is "no problem." "正在" indicates the action is happening right now. And "点外卖" is a very important modern phrase—it means to order takeout or delivery.
+
+en=student
+And he uses "给你们" which means "for you guys."
+
+en=teacher
+Correct. Then Speaker Two compares the food:
+
+zh=2
+这家店的菜比那家好吃。
+The food at this place is tastier than that one.
+
+en=student
+"这家店" is this shop or this restaurant. "那家" is that one. And "好吃" means delicious or tasty.
+
+en=teacher
+And finally, Speaker Three gets even more demanding!
+
+zh=3
+太棒了！快给我点点薯条！
+Awesome! Hurry and order some fries for me!
+
+en=student
+"太棒了" is awesome. "快" is hurry. And "点点" is a way to say "order a little bit of" or just to make the verb "order" sound softer and more casual.
+
+en=teacher
+Yes, repeating a verb like "点点" or "看看" often makes the tone more relaxed in spoken Chinese.
+
+OUTRO
+
+en=teacher
+That was a high-energy episode! We covered how to make comparisons using 比 and how to use 给 to express doing something for someone.
+
+en=student
+I think I'm getting hungry now. I need someone to order some pizza for me!
+
+en=teacher
+Maybe you can use what you learned and ask a friend: "你能给我买比萨吗？" 
+
+en=student
+I will try! Thanks for listening to Learning Chinese.
+
+en=teacher
+See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中高音域，情绪激动时会突然升高"
+pace = "稍快，充满活力"
+volume = "大，很有感染力"
+clarity = "清晰，说话干脆利落"
+fluency = "流畅，语速较快"
+timbre = "清脆，响亮"
+emotion = "热情，甚至有点疯狂"
+usecase = "一个极度狂热的体育迷，总是大声叫喊"
+dialogue = "这一场比赛比上一场精彩多了！我们的球队比他们强多了！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十七岁左右"
+pitch = "中音域，平稳"
+pace = "中等，节奏适中"
+volume = "中等"
+clarity = "清晰，吐字均匀"
+fluency = "流畅，表现出冷静的特质"
+timbre = "圆润，成熟"
+emotion = "冷静，理性，略带观察者的感觉"
+usecase = "一个比较淡定、冷静的观察者"
+dialogue = "我觉得这个球员比昨天那个厉害。这家店的菜比那家好吃。"
+
+speaker = 3
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中低音域，略显慵懒"
+pace = "较慢，节奏随性"
+volume = "中等"
+clarity = "清晰，但带有放松感"
+fluency = "流畅，偶尔会有随意的停顿"
+timbre = "温和，略带沙哑"
+emotion = "悠闲，一心只想吃喝"
+usecase = "一个只想在看比赛时享受美食的朋友"
+dialogue = "别说了，你能给我买瓶啤酒吗？快给我点点薯条！"

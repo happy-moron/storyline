@@ -1,0 +1,210 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into the digital world of online gaming to learn two incredibly useful grammar points.
+
+en=student
+I love gaming! But honestly, I usually end up just saying "Where is my thing?" or "What about you?" in English. I need more variety.
+
+en=teacher
+Exactly. Today, we are mastering two ways to be much more specific. First, we have the possessive particle 的. This is the glue that connects a person to their things. You simply take the person, add 的, and then the object. For example, 我的电脑, which means my computer, or 你的耳机, which means your headset.
+
+en=student
+So it's like adding an apostrophe-s in English, but it always goes after the person. 
+
+en=teacher
+Spot on. Second, we are looking at the question particle 呢. This is a fantastic, short way to ask "What about...?" or "Where is...?" if something is missing. For instance, if you are looking for your keys, you can just say 我的钥匙呢？ which means "Where are my keys?" or "What about my keys?".
+
+en=student
+That is so helpful for when I'm distracted by a game and can't find my controller! Is there any difference between using 呢 and the standard question word 哪里 for "where"?
+
+en=teacher
+Great question. 哪里 is used for "where" in a general sense, like "Where are you going?". But 呢 is much more natural when you are looking for something that you expect to be there, or when you are asking "What about...?" to keep a conversation going.
+
+en=student
+Got it. Before we jump into the action, let's look at our key vocabulary for this episode. 
+
+en=teacher
+First, we have 游戏, first tone and fourth tone, meaning game... 游戏.
+en=teacher
+Next, we have 耳机, third tone and first tone, meaning headset... 耳机.
+en=teacher
+Then, 队友, fourth tone and third tone, meaning teammate... 队友.
+en=teacher
+We have 电脑, fourth tone and third tone, meaning computer... 电脑.
+en=teacher
+And 哪里, third tone and third tone, meaning where... 哪里.
+en=teacher
+Finally, 谁, second tone, meaning who... 谁.
+
+en=student
+So, what is our gaming scenario today?
+
+en=teacher
+In this episode, you're going to hear two friends, Xiao Ming and Xiao Hua, playing a game together online. Xiao Ming is getting a little frantic because he can't find his equipment or his teammates, while Xiao Hua is much more relaxed.
+
+DIALOGUE
+
+zh=1
+嘿！你在做什么？
+Hey! What are you doing?
+
+zh=2
+我在玩我的新游戏。你的游戏呢？
+I am playing my new game. What about your game?
+
+zh=1
+我的游戏没问题。但是，我的队友在哪里？
+My game is fine. But, where are my teammates?
+
+zh=2
+他们不在。你的耳机呢？
+They aren't here. Where is your headset?
+
+zh=1
+我的耳机不见了！它在哪里？
+My headset is gone! Where is it?
+
+zh=2
+你的耳机在我的电脑旁边。
+Your headset is next to my computer.
+
+zh=1
+谁的电脑这么快？是你的电脑吗？
+Whose computer is so fast? Is it your computer?
+
+zh=2
+是我的电脑！
+It is my computer!
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with Xiao Ming asking:
+
+zh=1
+嘿！你在做什么？
+Hey! What are you doing?
+
+en=student
+"你在做什么？" is a classic. "做" means to do, and "什么" means what. The "在" before the verb tells us the action is happening right now.
+
+en=teacher
+Exactly. Then Xiao Hua responds:
+
+zh=2
+我在玩我的新游戏。你的游戏呢？
+I am playing my new game. What about your game?
+
+en=student
+Wait, I noticed two things here. First, "我的新游戏" uses our first grammar point! "我" is I, "的" makes it "my," and "新游戏" is "new game." 
+
+en=teacher
+Correct. And then we have "你的游戏呢？". This is the perfect use of 呢. Instead of asking a long question like "What is the status of your game?", she just says "What about your game?". It's so efficient.
+
+en=student
+And then Xiao Ming sounds a bit more stressed:
+
+zh=1
+我的游戏没问题。但是，我的队友在哪里？
+My game is fine. But, where are my teammates?
+
+en=teacher
+"我的游戏" is "my game," and "我的队友" is "my teammates." Notice how we use 的 every time to show possession. Then he asks "我的队友在哪里？". Here, he uses 哪里 to ask for the specific location of the teammates.
+
+en=student
+And then Xiao Hua asks about the headset:
+
+zh=2
+他们不在。你的耳机呢？
+They aren't here. Where is your headset?
+
+en=teacher
+"耳机" is headset. And "你的耳机呢？" is that same 呢 we talked about. She's asking "Where is it?" or "What about it?".
+
+en=student
+Then Xiao Ming starts panicking a little!
+
+zh=1
+我的耳机不见了！它在哪里？
+My headset is gone! Where is it?
+
+en=teacher
+"不见了" is a great phrase. "不" is not, and "见" is to see, so "不见了" literally means "not seen," but we use it to mean "gone" or "disappeared."
+
+en=student
+And Xiao Hua gives him a clue:
+
+zh=2
+你的耳机在我的电脑旁边。
+Your headset is next to my computer.
+
+en=teacher
+This uses "在...旁边" which means "is next to." So, "your headset (你的耳机) is (在) my computer (我的电脑) beside (旁边)."
+
+en=student
+Then we get to the last bit, where he's impressed by the speed.
+
+zh=1
+谁的电脑这么快？是你的电脑吗？
+Whose computer is so fast? Is it your computer?
+
+en=student
+"谁的电脑" — that's a clever one! I know "谁" is who, so "谁的" must be "whose," right?
+
+en=teacher
+Yes! You're catching on quickly! "谁" plus "的" makes "whose." So "谁的电脑" is "whose computer."
+
+en=student
+And Xiao Hua finishes with:
+
+zh=2
+是我的电脑！
+It is my computer!
+
+en=teacher
+Simple and direct. "是" means "is," and "我的电脑" is "my computer."
+
+OUTRO
+
+en=student
+That was a fun one. I feel like I can actually use this next time I'm playing games with my friends online.
+
+en=teacher
+I hope so! Just remember, use 的 for possession, like "my teammate" or "your headset." And use 呢 for those quick "what about" or "where is" questions.
+
+en=student
+"我的耳机呢？" (Where's my headset?) is definitely going into my daily vocabulary list.
+
+en=teacher
+Haha, I'm sure it will. Thanks for listening to Learning Chinese. See you in the next episode!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十二岁"
+pitch = "中音域，激动时会提高"
+pace = "略快，显得有些焦虑"
+volume = "中等，但情绪起伏大"
+clarity = "清晰，说话节奏较快"
+fluency = "在表达情绪时略有停顿" 
+timbre = "清脆，年轻"
+emotion = "急躁，充满活力" 
+usecase = "一个沉浸在游戏中的年轻玩家"
+dialogue = "我的耳机呢？它在哪里？我的队友在哪里？我的游戏没问题！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十二岁"
+pitch = "中音域，非常稳定"
+pace = "中速，轻松从容"
+volume = "中等，语调平缓"
+clarity = "清晰，吐字圆润"
+fluency = "非常流利，没有任何犹豫" 
+timbre = "甜美，温和"
+emotion = "冷静，淡定" 
+usecase = "一个从容自在的资深游戏玩家"
+dialogue = "我在玩我的新游戏。你的游戏呢？你的耳机在我的电脑旁边。"

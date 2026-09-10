@@ -1,0 +1,184 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are exploring the ways we talk about time and experience in Chinese.
+
+en=student
+This is a big one, isn't it? I always get confused about when to use "le" and when to use "guo." They both seem to be about things that happened in the past.
+
+en=teacher
+That is a very common stumbling block! Today, we are going to master two essential grammar points. First, we have the use of "le" to express completed actions or changes of state. Specifically, we are looking at the structure where you have a subject, a verb phrase, and then "le" at the end. For example, "他来了" means "He has arrived," or "我买了书" which means "I bought the book."
+
+en=student
+And the second one is "guo," right?
+
+en=teacher
+Exactly. We use "guo" after a verb to express that someone has had the experience of doing something. It’s like saying "I have been to..." or "I have eaten...". For example, "我去过中国" means "I have been to China."
+
+en=student
+So, "le" is about the action being completed or a new situation existing, whereas "guo" is about the experience itself?
+
+en=teacher
+Precisely! You can even use them together. If you want to say "I have seen it before," you might say "我看过了."
+
+en=student
+Got it. Now, what's our setting for today?
+
+en=teacher
+Today, we are taking a trip to a museum. You are going to hear a conversation between two friends, Mei and Jian. Mei is a very enthusiastic art student, while Jian is a bit more relaxed and has traveled quite a bit. They are walking through a large exhibition, and Mei is absolutely blown away by the art.
+
+DIALOGUE
+
+zh=1
+快看！这幅画太美了！
+Look! This painting is so beautiful!
+
+zh=2
+我看过这幅画。
+I have seen this painting before.
+
+zh=1
+真的吗？我从来没见过这么美的画！
+Really? I have never seen such a beautiful painting!
+
+zh=2
+展览已经开始了，这里也来很多人了。
+The exhibition has already started, and many people have come here too.
+
+zh=1
+我们快走吧！我还没看完呢。
+Let's go quickly! I haven't finished looking at it yet.
+
+zh=2
+别着急，我以前也来过这个博物馆。
+Don't worry, I have been to this museum before too.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. We start with Mei, who is very excited.
+
+zh=1
+快看！这幅画太美了！
+Look! This painting is so beautiful!
+
+en=student
+"快看" (kuài kàn) is a common way to say "look quickly" or just "look!" And "画" (huà) is painting.
+
+en=teacher
+Right. Then Jian replies:
+
+zh=2
+我看过这幅画。
+I have seen this painting before.
+
+en=student
+Here is our first grammar point! "看过" (kàn guo). He uses "guo" after the verb "看" (kàn) to indicate he has had the experience of seeing this painting.
+
+en=teacher
+Correct. Now Mei responds with even more excitement.
+
+zh=1
+真的吗？我从来没见过这么美的画！
+Really? I have never seen such a beautiful painting!
+
+en=student
+"从来没" (cóng lái méi) means "never." And she uses "见过" (jiàn guo). "见" (jiàn) means to see or meet, and "过" indicates the experience. So she is saying she has never had the experience of seeing something this beautiful.
+
+en=teacher
+It is a very strong way to emphasize the novelty of the experience. Now, Jian points out the situation in the room.
+
+zh=2
+展览已经开始了，这里也来很多人了。
+The exhibition has already started, and many people have come here too.
+
+en=student
+This line is packed! "展览" (zhǎn lǎn) is exhibition. "已经" (yǐ jīng) means already. And "开始了" (kāi shǐ le).
+
+en=teacher
+Yes, "开始了" uses our first grammar point. "开始" is the verb "to start," and the "le" at the end indicates the change of state—it wasn't running before, but now it has started.
+
+en=student
+And then he says "来很多人了" (lái hěn duō rén le). Is that also "le" indicating a change of state?
+
+en=teacher
+Exactly. It implies that the number of people has increased; they have arrived.
+
+en=student
+That makes sense. Then Mei is in a rush.
+
+zh=1
+我们快走吧！我还没看完呢。
+Let's go quickly! I haven't finished looking at it yet.
+
+en=teacher
+She says "还没看完" (hái méi kàn wán ne). "看完" (kàn wán) is a verb phrase where "完" (wán) means "to finish." So she hasn't finished the action of looking yet.
+
+en=student
+And finally, Jian tries to calm her down.
+
+zh=2
+别着急，我以前也来过这个博物馆。
+Don't worry, I have been to this museum before too.
+
+en=teacher
+"别着急" (bié zháo jí) means "don't worry" or "don't be anxious." And here is our last example of "guo."
+
+en=student
+"来过" (lái guo). "来" means to come, and "过" indicates the experience of having visited the museum.
+
+en=teacher
+Yes. So, to recap the difference: if Jian said "我来了" (wǒ lái le), he would be saying "I have arrived" or "I am here now." But because he said "我来过" (wǒ lái guo), he is talking about the experience of having visited in the past.
+
+en=student
+So, "le" is about the "now" or the "completion," and "guo" is about the "experience."
+
+en=teacher
+You've got it!
+
+OUTRO
+
+en=teacher
+Today we learned how to distinguish between expressing a completed action or a change of state using "le," and expressing a past experience using "guo."
+
+en=student
+It really helps to think of "guo" as something you can add to your life's resume of experiences, and "le" as something that marks a point in time where a state has changed.
+
+en=teacher
+That is a perfect way to put it! We also practiced museum-related vocabulary like "博物馆" (museum), "展览" (exhibition), and "画" (painting).
+
+en=student
+Thanks, Ellen! I feel much more confident about using these now.
+
+en=teacher
+You're welcome! Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "二十出头"
+pitch = "中高音域，随情绪起伏"
+pace = "中速，激动时略快"
+volume = "适中，充满活力"
+clarity = "清晰，语调富有感染力"
+fluency = "流畅，带有年轻人的轻快感"
+timbre = "清脆，甜美"
+emotion = "兴奋，充满好奇心"
+usecase = "一个对艺术充满热情的艺术系大学生"
+dialogue = "快看！这幅画太美了！真的吗？我从来没见过这么美的画！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十八岁左右"
+pitch = "中音域，平稳"
+pace = "慢速，节奏从容"
+volume = "适中"
+clarity = "清晰，吐字均匀"
+fluency = "非常流利，语速沉稳"
+timbre = "温和，略带磁性"
+emotion = "冷静，从容不迫"
+usecase = "一个见过世面、性格随和的旅行者"
+dialogue = "我看过这幅画。展览已经开始了。我以前也来过这个博物馆。"

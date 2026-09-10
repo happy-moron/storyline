@@ -1,0 +1,221 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a situation that every single person has experienced at least once: losing something important. In this episode, we are looking at what happens when you lose your keys.
+
+en=student
+Oh man, that is a nightmare. I still get a little panicky just thinking about it.
+
+en=teacher
+Exactly. And to navigate this panic, you need to know how to ask about the status of a situation and how to ask specific questions using question words like where, when, what, and why.
+
+en=student
+So, today we are looking at two main grammar points. First, the phrase 怎么样, which means "how is it" or "how are things." It is used to ask about the condition or state of something. For example, 你怎么样? (How are you?) or 天气怎么样? (How is the weather?).
+
+en=teacher
+Right. And the second point is the placement of question words. In English, we often move the question word to the front of the sentence, like "Where is my key?". But in Chinese, the question word stays exactly where the answer would be. 
+
+en=student
+So, if the answer is "I lost it at home," the question would be "I lost it [where]?" Instead of "Where did I lose it?".
+
+en=teacher
+Precisely! You just swap the answer for the question word. If you want to ask "When did you lose it?", you take the sentence "I lost it yesterday" and swap "yesterday" for "什么时候". So, "你什么时候丢的?". 
+
+en=student
+That makes a lot of sense. It's actually more consistent than English.
+
+en=teacher
+It is. In today's dialogue, we will practice this with several question words: 哪儿 (where), 什么时候 (when), 什么 (what), and 怎么 (how/why). You are going to hear a conversation between two roommates. One is in a complete panic because their keys are missing, and the other is trying to help them retrace their steps.
+
+DIALOGUE
+
+zh=1
+我的钥匙不见了！我到处都找不到！
+My keys are missing! I can't find them anywhere!
+
+zh=2
+怎么了？别着急，慢慢想。
+What happened? Don't worry, try to think calmly.
+
+zh=1
+我不知道丢在哪儿了。我刚才明明还拿着它们。
+I don't know where I lost them. I was clearly still holding them just now.
+
+zh=2
+你什么时候发现不见的？
+When did you find they were gone?
+
+zh=1
+就今天早上，我刚进门的时候。
+Just this morning, when I just came in the door.
+
+zh=2
+你进门的时候在做什么？
+What were you doing when you came in?
+
+zh=1
+我当时在打电话，手里还拿着一大袋东西。
+I was talking on the phone at that time, and I was also holding a big bag of things in my hands.
+
+zh=2
+你平时把钥匙放在哪儿？
+Where do you usually put your keys?
+
+zh=1
+我平时都放在桌子上。但是现在桌子上什么都没有！
+I usually put them on the table. But now there is nothing at all on the table!
+
+zh=2
+现在情况怎么样？你找过你的包了吗？
+How is the situation now? Have you looked in your bag?
+
+zh=1
+找过了！包里也没有！我真的太着急了！
+I have! There is nothing in the bag either! I am really so anxious!
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with the panic.
+
+zh=1
+我的钥匙不见了！我到处都找不到！
+My keys are missing! I can't find them anywhere!
+
+en=student
+"钥匙" (yàoshi) means keys. And "不见了" (bújiàn le) is a great phrase. It means "is gone" or "has disappeared."
+
+en=teacher
+Correct. And "到处" (dàochù) means everywhere. So, "I can't find them everywhere" is a natural way to say "I can't find them anywhere."
+
+zh=2
+怎么了？别着急，慢慢想。
+What happened? Don't worry, try to think calmly.
+
+en=student
+"怎么了?" (zěnme le) is a very common way to ask "What happened?" or "What's the matter?". It's slightly different from "怎么样".
+
+en=teacher
+Exactly, Ryan. That is a key distinction. "怎么了?" is asking "what happened?", whereas "怎么样?" is asking about the condition or quality of something. And "别着急" (bié zháojí) means "don't be anxious" or "don't worry."
+
+zh=1
+我不知道丢在哪儿了。我刚才明明还拿着它们。
+I don't know where I lost them. I was clearly still holding them just now.
+
+en=student
+"在哪儿" (zài nǎ'r) is "at where." And "明明" (míngmíng) means "clearly" or "obviously." It adds that feeling of "I know I definitely had them!"
+
+en=teacher
+Right. Now let's look at the question word placement we discussed.
+
+zh=2
+你什么时候发现不见的？
+When did you find they were gone?
+
+en=student
+In English, we say "When did you find...". In Chinese, it's "You [when] find...". The question word "什么时候" takes the place where "this morning" would go.
+
+en=teacher
+Exactly. Let's look at the next one.
+
+zh=1
+就今天早上，我刚进门的时候。
+Just this morning, when I just came in the door.
+
+en=student
+"刚" (gāng) means "just" or "recently." And "的时候" (de shíhòu) means "when" or "at the time of."
+
+zh=2
+你进门的时候在做什么？
+What were you doing when you came in?
+
+en=student
+"在做什么" (zài zuò shénme). "在" indicates the action is ongoing, "做" is to do, and "什么" is what.
+
+en=teacher
+And notice the structure: "You [at the time of coming in] [doing what]".
+
+zh=1
+我当时在打电话，手里还拿着一大袋东西。
+I was talking on the phone at that time, and I was also holding a big bag of things in my hands.
+
+en=student
+"打电话" (dǎ diànhuà) is to make a phone call. And "拿着" (názhe) means "holding" or "carrying" in a continuous state.
+
+zh=2
+你平时把钥匙放在哪儿？
+Where do you usually put your keys?
+
+en=student
+"平时" (píngshí) means "normally" or "usually."
+
+zh=1
+我平时都放在桌子上。但是现在桌子上什么都没有！
+I usually put them on the table. But now there is nothing at all on the table!
+
+en=teacher
+"什么都没有" (shénme dōu méiyǒu) is a very important structure. "什么" means what, and "都没有" means "not even one" or "nothing at all." It's used for emphasis.
+
+zh=2
+现在情况怎么样？你找过你的包了吗？
+How is the situation now? Have you looked in your bag?
+
+en=student
+Aha! Here is our target grammar! "情况怎么样?" (qíngkuàng zěnmeyàng). "情况" means "situation." So, "How is the situation?"
+
+en=teacher
+Right. We are asking about the status or the state of the search.
+
+zh=1
+找过了！包里也没有！我真的太着急了！
+I have! There is nothing in the bag either! I am really so anxious!
+
+en=student
+"找过" (zhǎo guo). That "过" (guo) after the verb "找" (find/search) indicates that the action has been completed in the past. "I have searched."
+
+en=teacher
+And "着急" (zháojí) means to feel anxious or to be in a hurry.
+
+OUTRO
+
+en=student
+Whew, I'm exhausted just listening to that. Losing keys is stressful!
+
+en=teacher
+It really is. But at least now you have the tools to ask the right questions. Today we learned how to use 怎么样 to ask about the status of something, and we practiced placing question words like 哪儿, 什么时候, and 什么 in their proper places within a sentence.
+
+en=student
+And remember, the question word just sits right where the answer goes.
+
+en=teacher
+Exactly. Practice these questions when you are looking for your own things! Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "三十岁左右"
+pitch = "高音域，因焦虑而颤抖"
+pace = "略快，节奏不稳"
+volume = "中等，带有紧迫感"
+clarity = "略有含混，语气急促"
+fluency = "紧张时语速不均匀"
+timbre = "清脆但略显尖锐"
+emotion = "极度焦虑，慌乱"
+usecase = "一个丢了重要物品、处于恐慌状态的职场女性"
+dialogue = "我的钥匙不见了！我到处都找不到！我真的太着急了！"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "三十岁左右"
+pitch = "中音域，平稳"
+pace = "缓慢，节奏从容"
+volume = "中等，稳定"
+clarity = "清晰，语调平缓"
+fluency = "流畅，富有耐心"
+timbre = "圆润，温和"
+emotion = "冷静，试图安抚他人"
+usecase = "一个在混乱中保持冷静、试图帮助朋友的室友"
+dialogue = "怎么了？别着急，慢慢想。现在情况怎么样？你找过你的包了吗？"

@@ -1,0 +1,232 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into a little word that does a huge amount of heavy lifting in the Chinese language: 就, jiù.
+
+en=student
+Oh man, 就. I feel like I see that character everywhere, but I'm not always sure how to use it properly. It seems like it changes meaning depending on where it sits in the sentence.
+
+en=teacher
+You are absolutely right, Ryan. It is incredibly versatile. Today, we are focusing on two specific ways to use it. First, we are looking at how to express earliness or things happening sooner than expected. The structure is Subject, then the Time, then 就, then the Verb, followed by 了. For example, 我八点就来了 (I arrived as early as eight o'clock).
+
+en=student
+So it’s not just "I arrived at eight," it’s "I arrived *already* at eight," implying I was early?
+
+en=teacher
+Exactly! It adds that sense of "as early as" or "already." Second, we are looking at using 就 to mean "then" or to indicate a consequence. This is often used in an "if... then..." construction. For example, 如果下雨，我就不去了 (If it rains, then I won't go).
+
+en=student
+Okay, so one version is about being early, and the other is about what happens next as a result of something.
+
+en=teacher
+Spot on. Today’s theme is shopping for clothes, but it’s not a relaxing stroll through the mall. We are going to hear a bit of a stressful encounter. You'll hear a customer who is in a major rush, a shop assistant trying to make a sale, and a friend who is... well, a little bit late. Pay close attention to how the time pressure changes the way the customer uses 就.
+
+en=student
+I'm ready. Let's see if she gets that dress before her appointment!
+
+DIALOGUE
+
+zh=1
+您好，欢迎光临！有什么可以帮您的吗？
+Hello, welcome! Is there anything I can help you with?
+
+zh=2
+我想找一件漂亮的裙子。我下午两点就要去参加聚会了，时间有点紧。
+I want to find a beautiful dress. I have a party at two in the afternoon, so time is a bit tight.
+
+zh=1
+这条怎么样？这是我们的新款，非常适合您的气质。
+How about this one? This is our new arrival, it suits your temperament very well.
+
+zh=2
+颜色不错。如果这件可以打折，我就买了。
+The color is not bad. If this one can be discounted, then I will buy it.
+
+zh=1
+如果您今天买两件，我们就给您打九折。
+If you buy two today, we will give you a ten percent discount.
+
+zh=2
+那太好了！那我这就去试衣间试一下。
+That's great! Then I will go to the fitting room to try it on right now.
+
+zh=3
+对不起，我来晚了！
+Sorry, I am late!
+
+zh=2
+你怎么才来？我等了你快半个小时了！
+How come you just arrived? I have been waiting for you for almost half an hour!
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We start with the shop assistant.
+
+zh=1
+您好，欢迎光临！有什么可以帮您的吗？
+Hello, welcome! Is there anything I can help you with?
+
+en=student
+"欢迎光临" is a classic. You hear it every time you walk into a shop in China. And "有什么可以帮您的吗?" is the standard "Can I help you?"
+
+en=teacher
+Right. Then the customer responds.
+
+zh=2
+我想找一件漂亮的裙子。我下午两点就要去参加聚会了，时间有点紧。
+I want to find a beautiful dress. I have a party at two in the afternoon, so time is a bit tight.
+
+en=student
+Wait, let's look at that second sentence: "我下午两点就要去参加聚会了." You used the grammar point we talked about! "Two o'clock" is the time, then 就, then the verb "to go to a party," and finally 了.
+
+en=teacher
+Exactly. By saying "两点就要...了", she isn't just stating the time; she is emphasizing that the event is coming up soon and she is on a strict schedule. It conveys that urgency.
+
+en=student
+And she also said "时间有点紧," which means "time is a bit tight." That makes sense given the context.
+
+en=teacher
+Yes. Now, let's look at the assistant's suggestion.
+
+zh=1
+这条怎么样？这是我们的新款，非常适合您的气质。
+How about this one? This is our new arrival, it suits your temperament very well.
+
+en=student
+"这条" (this one) is used because clothes like skirts or trousers are measured by long, thin units, right?
+
+en=teacher
+Yes, very observant! For dresses and skirts, we use "条" (tiáo). And "气质" (qìzhì) is a great word—it means temperament, manner, or aura.
+
+en=student
+The customer responds to the suggestion.
+
+zh=2
+颜色不错。如果这件可以打折，我就买了。
+The color is not bad. If this one can be discounted, then I will buy it.
+
+en=teacher
+Here we see the second use of 就. "如果...我就..." which means "If... then...".
+
+en=student
+So the "就" here links the condition of the discount to the action of buying.
+
+en=teacher
+Correct. Now the assistant tries to close the deal.
+
+zh=1
+如果您今天买两件，我们就给您打九折。
+If you buy two today, we will give you a ten percent discount.
+
+en=student
+Hold on, I always get confused by discounts in Chinese. "打九折" means ten percent off?
+
+en=teacher
+Yes! In Chinese, you say the amount you *do* pay. So "打九折" means you pay ninety percent of the price, which is a ten percent discount. If it was "打八折," that would be a twenty percent discount.
+
+en=student
+Got it. That is going to trip me up in a real store! Let's look at the customer's reaction.
+
+zh=2
+那太好了！那我这就去试衣间试一下。
+That's great! Then I will go to the fitting room to try it on right now.
+
+en=student
+She says "那我就..." which is "Then I will..." and then she says "这就去". Does "这就" mean "immediately"?
+
+en=teacher
+Exactly. "这就" (zhè jiù) is a very common way to say "right now" or "immediately." It combines "this" and "then" to indicate the action is happening as a direct consequence of the news.
+
+en=student
+Then the friend arrives, but he's late.
+
+zh=3
+对不起，我来晚了！
+Sorry, I am late!
+
+zh=2
+你怎么才来？我等了你快半个小时了！
+How come you just arrived? I have been waiting for you for almost half an hour!
+
+en=teacher
+This last part is very important for your grammar studies. The customer asks, "你怎么才来?" (Nǐ zěnme cái lái?).
+
+en=student
+Wait, I thought we were learning about 就? Why did she use 才 (cái) here?
+
+en=teacher
+That is a brilliant question, Ryan. In Chinese, 就 (jiù) and 才 (cái) are often opposites when talking about time. While 就 implies something happened early or quickly, 才 implies something happened late or slowly.
+
+en=student
+So, if I say "他八点就来了," I'm saying he arrived early, at eight. But if I say "他八点才来," I'm saying he arrived late, even though it was eight?
+
+en=teacher
+Exactly! So when the customer says "你怎么才来?", she is expressing frustration because the friend arrived later than expected. She's saying, "How come you just *now* arrived?"
+
+en=student
+That makes so much sense. It really highlights the difference in tone. And "半个小时" is half an hour.
+
+en=teacher
+Yes. "半" (bàn) is half, and "个" (gè) is the measure word for hours.
+
+OUTRO
+
+en=teacher
+That wraps up our lesson for today! We've explored the many faces of 就.
+
+en=student
+Yeah, it's a powerful little word. We learned how it shows that something is happening early when paired with a time and 了, and how it functions as "then" when showing a consequence.
+
+en=teacher
+And we saw how it contrasts with 才 when we are complaining about something being late.
+
+en=student
+And hopefully, our listener won't be late for their Chinese lessons!
+
+en=teacher
+Exactly! Thanks for listening to Learning Chinese. Happy studying!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，平稳专业"
+pace = "中速，礼貌且克制"
+volume = "适中"
+clarity = "清晰，咬字标准"
+fluency = "流利，职业化"
+timbre = "圆润，亲切"
+emotion = "专业，热情而有礼貌"
+usecase = "一位经验丰富的服装店店员"
+dialogue = "您好，欢迎光临！有什么可以帮您的吗？这条怎么样？如果您今天买两件，我们就给您打九折。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中高音域，带有一点紧迫感"
+pace = "中速偏快"
+volume = "中等，语气较急促"
+clarity = "清晰"
+fluency = "流利，但带有情绪起伏"
+timbre = "清脆，略显干练"
+emotion = "焦虑，急躁，随后转为愉悦"
+usecase = "一位赶时间的职场女性顾客"
+dialogue = "我下午两点就要去参加聚会了，时间有点紧。如果这件可以打折，我就买了。那太好了！那我这就去试衣间试一下。你怎么才来？我等了你快半个小时了！"
+
+speaker = 3
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，略带歉意"
+pace = "中速"
+volume = "适中"
+clarity = "清晰"
+fluency = "略显犹豫"
+timbre = "温和，略显迟钝"
+emotion = "抱歉，有些不好意思"
+usecase = "一个反应慢半拍的迟到朋友"
+dialogue = "对不起，我来晚了！"

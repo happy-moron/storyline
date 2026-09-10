@@ -177,6 +177,11 @@ body {
     max-height: 200px;
 }
 
+#backchainModeBtn.active {
+    background-color: var(--highlight-color);
+    color: #121212;
+}
+
 .dictionary-table {
     width: 100%;
     border-collapse: collapse;

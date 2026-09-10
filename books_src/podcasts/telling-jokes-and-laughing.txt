@@ -1,219 +1,213 @@
 INTRO
 
-en=student
-Welcome to Learning Chinese. I am Ryan, and I am feeling a bit rushed today. I think I might be running a little late for my next meeting!
-
 en=teacher
-Well, Ryan, if you are late, you will definitely need to know how to talk about the time! Today, we are covering how to tell time in Chinese, specifically focusing on hours and minutes.
+Welcome to Learning Chinese. I am Ellen, and today we are going to talk about something that can be quite awkward if you don't know the right words: jokes, laughter, and telling time.
 
 en=student
-Right, because just saying "two" isn't enough when you're trying to coordinate a meetup.
+That sounds like a fun topic, Ellen. I love telling jokes, but I'm not sure if my Chinese jokes are actually funny or if people are just being polite.
 
 en=teacher
-Exactly. We are going to look at two structures. First, the basic one: using 点, meaning "o'clock," to state the hour. For example, 三点 (three o'clock). Second, the more detailed version: Number plus 点, plus another number, plus 分, meaning "minutes." For example, 三点十分 (three ten).
-
-en=student
-So, if it is seven ten, I say 七点十分. And if it is just seven o'clock, I say 七点. That seems straightforward. But what if it is seven oh five?
-
-en=teacher
-You would say 七点五分. You can also say 七点零五分 to be very precise. Today, we will also see how these time markers work in a natural conversation.
+Exactly! We need to learn how to express if something is actually funny or if it is not funny at all. Today, we are focusing on two key grammar points regarding time. First, the basic way to say the hour, which is using the word 点, pronounced diǎn, meaning "o'clock." For example, 三点, which is three o'clock. 
 
 en=student
-Got it. And what is the theme? Is it more scheduling?
+And the more advanced version?
 
 en=teacher
-Actually, we are adding a bit of flavor to it. The theme is telling jokes and laughing. We want to learn how to express that something is funny or that you are laughing.
-
-en=student
-That sounds much more fun than just reading a clock! What is our vocabulary list?
-
-en=teacher
-We have six key words.
-en=teacher
-First, we have 笑, (fourth tone), meaning to laugh... 笑。
-en=teacher
-Second, we have 笑话, (fourth tone, neutral tone), meaning a joke... 笑话。
-en=teacher
-Third, we have 有趣, (third tone, fourth tone), meaning interesting or funny... 有趣。
-en=teacher
-Fourth, we have 迟到, (second tone, fourth tone), meaning to arrive late... 迟到。
-en=teacher
-Fifth, we have 表演, (third tone, third tone), meaning to perform or a performance... 表演。
-en=teacher
-And sixth, we have 准备, (third tone, fourth tone), meaning to prepare or get ready... 准备。
+When you want to include the minutes, you use the structure: Number plus 点 plus Number plus 分. The word 分, pronounced fēn, means "minutes." For example, 三点十分, which is three ten, or 三点三十分, which is three thirty. You can also add the word 钟, pronounced zhōng, meaning "clock," after the hour, like 三点钟, to emphasize it is exactly that hour, but it is optional.
 
 en=student
-I am ready to learn! What's the scenario?
+Okay, so if it is ten thirty, I say 十点三十分. And if it is just ten o'clock, I just say 十点.
 
 en=teacher
-In this dialogue, you are going to hear two friends, Da Wei and Xiao Ming. Da Wei is already at a comedy club, and he is waiting for Xiao Ming, who is running a bit late. They are discussing the start time of the show and how funny the jokes are.
+Perfect. Now, let's look at our six key vocabulary words for today. 
+
+en=teacher
+First, we have 笑, (fourth tone), meaning to laugh or to smile. 笑.
+
+en=teacher
+Next, 笑话, (fourth tone and fourth tone), which means a joke. 笑话.
+
+en=teacher
+Then, we have 好笑, (third tone and fourth tone), meaning funny or laughable. 好笑.
+
+en=teacher
+Next is 有趣, (third tone and fourth tone), which means interesting or amusing. 有趣.
+
+en=teacher
+Fifth, we have 一点也不, (first tone, third tone, third tone, fourth tone), which means "not at all." 一点也不.
+
+en=teacher
+And finally, 时间, (second tone and first tone), which means time. 时间.
+
+en=student
+Got it. So we can talk about whether a joke is funny and exactly what time we should go out to eat.
+
+en=teacher
+Exactly. In today's dialogue, you are going to hear two friends, Dawei and Li Hua. Dawei is trying very hard to be the life of the party by telling a joke, but Li Hua is... well, she is not easily amused. They will also check the time to decide when to head out.
 
 DIALOGUE
 
 zh=1
-你怎么还没到？表演七点十分就开始了。
-Why haven't you arrived yet? The performance starts at seven ten.
+你听过这个笑话吗？很有趣！
+Have you heard this joke? It is very interesting!
 
 zh=2
-对不起，我迟到了。现在七点二十。
-Sorry, I am late. It is seven twenty.
+我没听过。快点说吧。
+I have not heard it. Tell it quickly.
 
 zh=1
-快点！这个喜剧演员的笑话非常有趣，我快笑死了。
-Hurry up! This comedian's jokes are very interesting, I am dying of laughter.
+一个学生为什么带梯子去学校？因为他想去高中！
+Why did a student bring a ladder to school? Because he wanted to go to high school!
 
 zh=2
-没关系，我现在到了。我也准备好要大笑一场了。
-It's okay, I am here now. I am also ready to have a good laugh.
+这一点也不好笑。
+This is not funny at all.
 
 zh=1
-哈哈，你真好笑。
-Haha, you are so funny.
+别这样嘛！现在都十点三十分了。
+Don't be like that! It is already ten thirty!
+
+zh=2
+我没心情笑。现在是十点三十分，我饿了。
+I am not in the mood to laugh. It is ten thirty, and I am hungry.
+
+zh=1
+好吧，那我们去吃饭吧。现在几点？
+Fine, let's go eat then. What time is it now?
+
+zh=2
+现在是十点三十五分。
+It is ten thirty-five.
+
+zh=1
+走吧！
+Let's go!
 
 BREAKDOWN
 
 en=teacher
-Let's look at that dialogue, and break it down line by line. We start with Da Wei.
+Let's look at that dialogue and break it down line by line. We start with Dawei.
 
 zh=1
-你怎么还没到？表演七点十分就开始了。
-Why haven't you arrived yet? The performance starts at seven ten.
+你听过这个笑话吗？很有趣！
+Have you heard this joke? It is very interesting!
 
 en=student
-"你怎么还没到?" That's a powerful way to ask why someone isn't here. "怎么" means "how" or "why," and "还没" means "not yet." And "到" means "to arrive."
+"你听过这个笑话吗？" He is asking if you have heard it. "听过" means "to have heard" because of that "guo" particle. And "笑话" is our word for joke.
 
 en=teacher
-Correct. Then he mentions the time: "表演七点十分就开始了." "表演" is the performance. Here, we see our grammar point: 七点 + 十分. Seven o'clock plus ten minutes. The "了" at the end of the sentence indicates that the event is about to happen or has reached a state.
+Right. And he describes it as "很有趣". Remember, 有趣 means interesting or amusing.
+
+en=student
+Then Li Hua responds, "我没听过。快点说吧。" She sounds a bit impatient!
+
+en=teacher
+She is! "快点" means "a bit faster" or "hurry up."
+
+zh=1
+一个学生为什么带梯子去学校？因为他想去高中！
+Why did a student bring a ladder to school? Because he wanted to go to high school!
+
+en=student
+That is a classic bad joke! "为什么" is why, "带" is to bring, and "梯子" is a ladder. And "高中" means high school.
+
+en=teacher
+And then comes the reaction. Li Hua says:
 
 zh=2
-对不起，我迟到了。现在七点二十。
-Sorry, I am late. It is seven twenty.
+这一点也不好笑。
+This is not funny at all.
 
 en=student
-Xiao Ming apologizes. "对不起" is the standard "I am sorry." But then he says "我迟到了." Is "迟到" always used with "了" like that?
+"这一点也不好笑." We saw "一点也不" in our vocab list. It means "not at all." And "好笑" is funny. So she's saying it's not funny at all.
 
 en=teacher
-In this context, yes, because "迟到" is a change of state—he has *become* late. Now, look at the time: "现在七点二十." Here, he uses the basic structure: Number + 点 + Number. He didn't say "分" at the end. Is that okay?
-
-en=student
-Can you just skip the "分" when you are speaking casually?
-
-en=teacher
-Yes! In spoken Chinese, when you are just stating the time, it is very common to omit the "分" if the minutes are a multiple of five or just for brevity. Saying "七点二十" is much more natural than "七点二十分" in a casual setting.
+Exactly. Now Dawei tries to lighten the mood, but he uses our time grammar.
 
 zh=1
-快点！这个喜剧演员的笑话非常有趣，我快笑死了。
-Hurry up! This comedian's jokes are very interesting, I am dying of laughter.
+别这样嘛！现在都十点三十分了。
+Don't be like that! It is already ten thirty!
 
 en=student
-"快点" is "hurry up." And then he says "笑话非常有趣." I know "笑话" is "joke" and "有趣" is "funny/interesting." But what is "笑死了"?
+"十点三十分" is ten thirty. We use "点" for the hour and "分" for the minutes. Is it necessary to say "钟" here?
 
 en=teacher
-That is a great observation! "死了" literally means "to die," but when you put it after an adjective or a verb like "笑," it functions like "extremely" or "to death." So, "笑死了" means "laughing to death" or "dying of laughter." It's very common in informal speech!
-
-en=student
-"I'm dying of laughter." That's a very dramatic way to put it! I love it.
+Not at all. In casual speech, we usually just say "点" and "分." If you say "十点三十分钟," it sounds a bit repetitive.
 
 zh=2
-没关系，我现在到了。我也准备好要大笑一场了。
-It's okay, I am here now. I am also ready to have a good laugh.
+我没心情笑。现在是十点三十分，我饿了。
+I am not in the mood to laugh. It is ten thirty, and I am hungry.
 
 en=student
-"没关系" is "it's okay" or "no problem." And he says "我也准备好了." He's using "准备" which we learned, meaning "to prepare" or "to be ready."
+"我没心情" is a great phrase. It means "I am not in the mood." And again, "十点三十分." It's very consistent.
 
 en=teacher
-Exactly. He's using "准备好" which means "to be ready." Then he says "大笑一场." "大笑" means to laugh loudly or a big laugh. It’s like saying "to have a good laugh."
+It is. Then they move to the next part of the conversation.
 
 zh=1
-哈哈，你真好笑。
-Haha, you are so funny.
+好吧，那我们去吃饭吧。现在几点？
+Fine, let's go eat then. What time is it now?
 
 en=student
-And finally, "你真好笑." We know "笑" is to laugh, but "好笑" is "funny," right?
+"几点" is the standard way to ask "what time."
+
+zh=2
+现在是十点三十五分。
+It is ten thirty-five.
 
 en=teacher
-Yes! Adding "好" before a verb often turns it into an adjective. "好笑" is "funny" or "amusing." So "你真好笑" means "You are so funny."
+And there is our advanced time structure: "十点三十五分." Number, dot, number, minute.
+
+zh=1
+走吧！
+Let's go!
 
 en=student
-So, to recap the grammar, for hours and minutes, I use "点" for the hour and "分" for the minutes. For example, "十点十分."
-
-en=teacher
-Precisely. And remember, in casual talk, you can often drop the "分."
+"走吧" is such a useful phrase for "let's go."
 
 OUTRO
 
-en=student
-That was great. I feel like I can finally handle a conversation at a comedy club now, even if I'm late!
-
 en=teacher
-Just make sure you use "对不起" and "我迟到了" when you arrive!
+That was a funny, or perhaps not so funny, look at time and jokes. 
 
 en=student
-Got it. Today we learned how to tell the time using "点" and "分," and we learned some fun ways to talk about laughter, like "笑死了" and "好笑."
+I'll stick to asking for the time rather than telling jokes for a while.
 
 en=teacher
-And don't forget our key vocabulary: 笑, 笑话, 有趣, 迟到, 表演, and 准备.
+Today we learned how to tell time using 点 and 分, and how to express that something is interesting or funny using 有趣 and 好笑. We also learned the emphatic "not at all" using 一点也不.
 
 en=student
-Thanks for listening to Learning Chinese. See you next time!
+And don't forget, if you want to be polite when someone tells a bad joke, you can always just say it's "有趣" instead of "好笑"!
 
 en=teacher
-再见!
+That is a very clever way to survive a social situation! Thanks for listening to Learning Chinese. See you next time.
 
 VOICE PROFILES
 
 speaker = 1
-lang = "en"
-gender = "Male"
-age = "Young adult"
-pitch = "Medium pitch, steady"
-pace = "Slightly fast, energetic"
-volume = "Normal"
-clarity = "Clear and distinct"
-fluency = "Fluent"
-timbre = "Natural and bright"
-emotion = "Curious and enthusiastic"
-usecase = "A student learning Chinese"
-dialogue = "Welcome to Learning Chinese. I am Ryan, and I am feeling a bit rushed today. I think I might be running a little late!"
+lang = "zh"
+gender = "男性"
+age = "二十岁左右"
+pitch = "中高音域，因兴奋而起伏较大"
+pace = "中速，说话节奏快而富有弹性"
+volume = "响亮"
+clarity = "清晰，语调夸张"
+fluency = "流利，带有轻快的语气词" 
+timbre = "清脆，充满活力"
+emotion = "外向，爱开玩笑，有点傻气" 
+usecase = "一个试图活跃气氛的年轻人"
+dialogue = "你听过这个笑话吗？很有趣！别这样嘛！现在都十点三十分了。走吧！"
 
 speaker = 2
-lang = "en"
-gender = "Female"
-age = "Adult"
-pitch = "Medium pitch, steady"
-pace = "Moderate, instructional"
-volume = "Clear and steady"
-clarity = "Very clear, well-articulated"
-fluency = "Fluent and smooth"
-timbre = "Warm and professional"
-emotion = "Encouraging and patient"
-usecase = "A professional Chinese language teacher"
-dialogue = "Today, we are covering how to tell time in Chinese, specifically focusing on hours and minutes. Let's look at two structures."
-
-speaker = 3
 lang = "zh"
-gender = "Male"
-age = "Young adult"
-pitch = "Medium pitch, expressive"
-pace = "Fast, natural"
-volume = "Normal"
-clarity = "Clear"
-fluency = "Fluent"
-timbre = "Energetic"
-emotion = "Impatient and excited"
-usecase = "A young man waiting for a friend at a comedy club"
-dialogue = "你怎么还没到？表演七点十分就开始了。快点！这个喜剧演员的笑话非常有趣，我快笑死了。"
-
-speaker = 4
-lang = "zh"
-gender = "Male"
-age = "Young adult"
-pitch = "Medium pitch, calm"
-pace = "Steady"
-volume = "Normal"
-clarity = "Clear"
-fluency = "Fluent"
-timbre = "Calm"
-emotion = "Apologetic and relaxed"
-usecase = "A young man running late to meet a friend"
-dialogue = "对不起，我迟도를。现在七点二十。没关系，我现在到了。我也准备好要大笑一场了。"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中音域，非常稳定"
+pace = "缓慢，节奏平稳"
+volume = "中等"
+clarity = "清晰，吐字干脆"
+fluency = "流利，但显得有些冷淡" 
+timbre = "圆润，略显冷淡"
+emotion = "淡定，略带不耐烦，冷静" 
+usecase = "一个冷静、理性、不太容易被逗乐的女性"
+dialogue = "我没听过。快点说吧。这一点也不好笑。我没心情笑。现在是十点三十五分。"

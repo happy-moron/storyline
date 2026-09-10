@@ -1,0 +1,201 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are stepping into a very busy, slightly stressful setting: a popular restaurant during the dinner rush.
+
+en=student
+I love food, but I definitely don't love waiting in a long line!
+
+en=teacher
+Exactly. And because it is busy, we are going to learn two grammar points that are incredibly useful for navigating any space or managing your time. First, the structure 从...到... which means "from... to...". You can use this for time, like "from five to six," or for space and range, like "from the first page to the last page."
+
+en=student
+Okay, so it covers both time and physical distance. That's very versatile. What about the second one?
+
+en=teacher
+The second one is using 往, which means "toward." You use it before a direction word to indicate the direction of movement. For example, 往左走, which means "walk to the left."
+
+en=student
+Wait, is 往 the same as saying "to" or "towards" in English? And can I use it for everything?
+
+en=teacher
+It's used specifically for the direction of movement. For example, you wouldn't say you are going "toward" a person in the same way you go "toward" a door, though you could. It is most common with verbs of motion like walking, running, or driving.
+
+en=student
+Got it. So, in our dialogue, we'll hear about how long the wait is and how to find a table.
+
+en=teacher
+Exactly. You're going to hear a conversation between a waiter, a very impatient customer, and her calmer partner. They are trying to find a place to eat in a crowded restaurant.
+
+DIALOGUE
+
+zh=1
+欢迎光临！请往窗户的方向走，那里有位置。
+Welcome! Please walk toward the direction of the window, there are seats there.
+
+zh=2
+怎么还要等这么久？我本来打算从五点到六点就吃完饭的！
+Why do we still have to wait so long? I originally planned to finish eating from five to six!
+
+zh=3
+别生气，我们往里面走走看吧。
+Don't be angry, let's walk towards the inside and see.
+
+zh=1
+好的，请往这边走。
+Okay, please walk this way.
+
+zh=2
+这里的菜单从第一页到最后一页，我都看不下去。
+From the first page to the last page of the menu, I can't even bear to look at it.
+
+zh=3
+这里的味道很特别，你一定会喜欢的。
+The taste here is very special, you will definitely like it.
+
+BREAKDOWN
+
+en=teacher
+Let's go through that dialogue and really look at how these grammar points work in action. We'll start with the waiter.
+
+zh=1
+欢迎光临！请往窗户的方向走，那里有位置。
+Welcome! Please walk toward the direction of the window, there are seats there.
+
+en=student
+"欢迎光临" is that classic "Welcome" you hear in shops and restaurants. Then we have "请往窗户的方向走". We have our grammar point "往" here.
+
+en=teacher
+Yes. 往 means "toward." It is followed by the direction, which in this case is "窗户的方向", meaning "the direction of the window." Then we have the verb 走, to walk.
+
+en=student
+And "位置" means a seat or a position. That makes sense. Now, the customer sounds really annoyed.
+
+zh=2
+怎么还要等这么久？我本来打算从五点到六点就吃完饭的！
+Why do we still have to wait so long? I originally planned to finish eating from five to six!
+
+en=student
+"怎么" is "how" or "why," used here to express surprise or frustration. But I want to focus on "从五点到六点". 
+
+en=teacher
+That is our first grammar point: 从...到... used for time. From five o'clock to six o'clock. It marks the start and the end of a time period.
+
+en=student
+And the customer says she "打算" (dǎ suàn) to "吃完" (chī wán).
+
+en=teacher
+Correct. "打算" is to plan, and "吃完" means to finish eating. Now, let's look at the partner trying to calm her down.
+
+zh=3
+别生气，我们往里面走走看吧。
+Don't be angry, let's walk towards the inside and see.
+
+en=student
+"别生气" is a great phrase, "don't be angry." And here we have "往里面走走".
+
+en=teacher
+Yes, "往里面" means "toward the inside." And you noticed "走走"? That is a common way in Chinese to double a verb. It makes the action sound casual or suggests "doing something for a little bit" or "trying something out." So "走走看" is like "walk a bit and see."
+
+en=student
+That's a helpful nuance. Then the waiter comes back to guide them.
+
+zh=1
+好的，请往这边走。
+Okay, please walk this way.
+
+en=teacher
+"这边" means "this side" or "this way." So "往这边走" is "walk toward this way." Very simple and very useful.
+
+en=student
+Then we get back to the impatient customer, and she uses the second version of our grammar point.
+
+zh=2
+这里的菜单从第一页到最后一页，我都看不下去。
+From the first page to the last page of the menu, I can't even bear to look at it.
+
+en=student
+"从第一页到最后一页" - "from the first page to the last page." That's using "从...到..." for a physical range, right?
+
+en=teacher
+Exactly! Instead of time, she is describing the extent of the menu. From page one to page last.
+
+en=student
+And "看不下去" is a very expressive way to say "can't bear to keep doing something" or "can't face it." She's so frustrated she can't even look at the menu!
+
+en=teacher
+Haha, yes. And finally, the partner tries to be positive.
+
+zh=3
+这里的味道很特别，你一定会喜欢的。
+The taste here is very special, you will definitely like it.
+
+en=student
+"味道" is taste or flavor. "特别" is special. 
+
+en=teacher
+Yes. And "一定" means "definitely." So, "you will definitely like it." It's a great way to encourage someone.
+
+en=student
+So, just to recap, "从...到..." is for time and range, and "往" is for direction.
+
+en=teacher
+You've got it.
+
+OUTRO
+
+en=teacher
+That was a very intense dinner date! Today we practiced using 从...到... to talk about time and physical ranges, and we used 往 to give directions in a restaurant.
+
+en=student
+It's interesting how much those little words change the meaning. Without "从" or "往," you wouldn't know where to go or how long you're waiting!
+
+en=teacher
+Exactly. Make sure you practice these by describing your own schedule or the directions to your favorite local spots. Thanks for listening to Learning Chinese.
+
+en=student
+See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，职业且专业"
+pace = "中速，节奏稳定"
+volume = "中等，听起来很礼貌"
+clarity = "清晰，标准服务用语"
+fluency = "流利，非常有礼貌"
+timbre = "圆润，温和"
+emotion = "专业，勤恳"
+usecase = "一个专业、高效的餐厅服务员"
+dialogue = "欢迎光临！请往窗户的方向走，那里有位置。好的，请往这边走。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十多岁"
+pitch = "中高音域，因激动而变得尖锐"
+pace = "中速，说话较急促"
+volume = "大声，带有抱怨感"
+clarity = "清晰，但语气急促"
+fluency = "较快，带有情绪波动"
+timbre = "略显尖锐，有紧迫感"
+emotion = "焦躁，不耐烦，非常急躁"
+usecase = "一个在繁忙餐厅里等得非常不耐烦的职场女性"
+dialogue = "怎么还要等这么久？我本来打算从五点到六点就吃完饭的！这里的菜单从第一页到最后一页，我都看不下去。"
+
+speaker = 3
+lang = "zh"
+gender = "男性"
+age = "三十多岁"
+pitch = "低音域，沉稳"
+pace = "慢速，节奏轻松"
+volume = "中等，平和"
+clarity = "非常清晰"
+fluency = "流利，语气柔和"
+timbre = "温润，有磁性"
+emotion = "冷静，安抚，温柔"
+usecase = "一位性格温和、擅长安抚情绪的伴侣"
+dialogue = "别生气，我们往里面走走看吧。这里的味道很特别，你一定会喜欢的。"

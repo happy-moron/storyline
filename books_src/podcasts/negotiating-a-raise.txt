@@ -1,0 +1,183 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a conversation that makes almost everyone's heart race: negotiating a raise with the boss.
+
+en=student
+Oh man, I'd rather do my taxes. That is so much more stressful than learning grammar!
+
+en=teacher
+It can be! But if you want to survive in a professional Chinese-speaking environment, you need the right words to express time and quantity precisely. Today, we are focusing on two specific grammar points. First, using 多 after a number to indicate an excess, meaning "more than" or "over." For example, 两年多 means more than two years, and 五块多 means more than five yuan.
+
+en=student
+So, if I've been at a company for three years and a bit, I'd say 三年多?
+
+en=teacher
+Exactly. You place it after the number or the unit to show it's an approximate amount that is slightly higher than the base number. Second, we are looking at using 几 to mean "several." You place 几 before a measure word and a noun. For example, 几个学生 means several students, or 几个项目 means several projects.
+
+en=student
+Got it. So 几 is for an indefinite, small number, like "a few" or "several," and 多 is for "more than" a specific number. 
+
+en=teacher
+That's a perfect way to distinguish them. Now, before we get into the grammar details, let's look at some key vocabulary for our theme. You'll hear words like 工资 (salary), 薪水 (wages), 预算 (budget), and 项目 (project). 
+
+en=student
+And I'm assuming there will be some tension in this conversation?
+
+en=teacher
+There will be. In today's episode, you're going to hear a dialogue between a manager, Ms. Li, and an employee, Wang Wei. Wang Wei is feeling like he has outgrown his current role and is stepping into the lion's den to ask for a salary increase.
+
+DIALOGUE
+
+zh=1
+王伟，请进。你找我有事吗？
+Wang Wei, please come in. Do you have something to discuss with me?
+zh=2
+李经理，不好意思打扰了。我想谈谈我的薪水。
+Manager Li, sorry to disturb you. I would like to talk about my salary.
+zh=1
+你在这儿工作两年多了，表现确实不错。
+You have worked here for more than two years, your performance is indeed quite good.
+zh=2
+谢谢经理。这期间我负责了几个新项目，也都完成了。
+Thank you, manager. During this time, I have been responsible for several new projects, and I have completed all of them.
+zh=1
+你的努力大家都有目共睹。但是，现在的经济情况不太好。
+Everyone has seen your hard work. However, the current economic situation is not very good.
+zh=2
+我理解。但我希望月薪能增加一千块多。
+I understand. But I hope my monthly salary can increase by more than one thousand yuan.
+zh=1
+一千块多？这有点超出我们的预算了。
+More than one thousand yuan? That is a bit beyond our budget.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this intense meeting between Manager Li and Wang Wei. We'll start with the manager's greeting.
+
+zh=1
+王伟，请进。你找我有事吗？
+Wang Wei, please come in. Do you have something to discuss with me?
+
+en=student
+"请进" is "please come in." And "找我有事吗?" is a very common way to say "Did you come to see me for something?" or "Do you need something?"
+
+en=teacher
+Exactly. Then Wang Wei responds quite politely.
+
+zh=2
+李经理，不好意思打扰了。我想谈谈我的薪水。
+Manager Li, sorry to disturb you. I would like to talk about my salary.
+
+en=student
+"不好意思" is a great phrase for "sorry" or "excuse me." And "谈谈" is the verb for "to talk" or "to discuss," with that doubled verb structure that makes it sound more casual and relaxed.
+
+en=teacher
+Yes, "谈谈" is perfect here. Now, the manager acknowledges his tenure. This is where we see our first grammar point.
+
+zh=1
+你在这儿工作两年多了，表现确实不错。
+You have worked here for more than two years, your performance is indeed quite good.
+
+en=student
+Wait, "两年多". That's the "Number + Unit + 多" structure we talked about! "两年" is two years, and "多" makes it "more than two years." 
+
+en=teacher
+Spot on. It implies it's between two and three years. She also says "表现确实不错." "表现" means performance, and "确实" means "indeed" or "really."
+
+en=student
+Okay, so Wang Wei builds his case next.
+
+zh=2
+谢谢经理。这期间我负责了几个新项目，也都完成了。
+Thank you, manager. During this time, I have been responsible for several new projects, and I have completed all of them.
+
+en=student
+Here we go with the second grammar point. "几个新项目." "几" is "several," "个" is the measure word, and "新项目" is "new projects."
+
+en=teacher
+Right. "项目" (xiàngmù) is a very important word in a professional setting. It means "project" or "program." And he says "也都完成了," meaning he has "also completed all of them." 
+
+en=student
+Then the manager gives him the reality check.
+
+zh=1
+你的努力大家都有目共睹。但是，现在的经济情况不太好。
+Everyone has seen your hard work. However, the current economic situation is not very good.
+
+en=student
+"有目共睹" is a bit of a high-level idiom, isn't it?
+
+en=teacher
+It is! It literally means "to be seen by everyone," or "to be obvious to all." She's being polite, but she's also setting the stage for a "no" by mentioning the "经济情况" or "economic situation."
+
+en=student
+And now the moment of truth. Wang Wei makes his demand.
+
+zh=2
+我理解。但我希望月薪能增加一千块多。
+I understand. But I hope my monthly salary can increase by more than one thousand yuan.
+
+en=student
+There it is again! "一千块多." "一千" is one thousand, "块" is the measure word for money, and "多" makes it "more than one thousand." 
+
+en=teacher
+And finally, the manager's reaction.
+
+zh=1
+一千块多？这有点超出我们的预算了。
+More than one thousand yuan? That is a bit beyond our budget.
+
+en=student
+"超出" means "to exceed" or "to go beyond." And "预算" is "budget." She's definitely not saying yes right away!
+
+en=teacher
+Indeed. "有点" means "a little bit," often used when expressing something negative or a slight dissatisfaction. So "a bit beyond our budget."
+
+OUTRO
+
+en=student
+Whew. I think I'll stick to being a student for a while longer. Negotiating is tough!
+
+en=teacher
+It certainly is. But at least now you have the tools. Today we learned how to use "几" to express "several" before a measure word, and how to use "多" after a number or unit to indicate an amount that is "more than" or "over" a certain value.
+
+en=student
+And we learned some essential office vocabulary like salary, project, and budget. 
+
+en=teacher
+Precisely. Practice these structures so you can confidently discuss quantities and amounts in your own life. Thanks for listening to Learning Chinese.
+
+en=student
+See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "四十岁左右"
+pitch = "中音域，语气稳重，带有一点威严感"
+pace = "中速，节奏平稳，不慌不忙"
+volume = "中等，语气沉稳"
+clarity = "清晰，发音极其标准"
+fluency = "流利，带有专业人士的干练"
+timbre = "圆润，有成熟女性的魅力"
+emotion = "专业，冷静，略带压迫感"
+usecase = "一个干练、权威，说话讲究分寸的职场女经理"
+dialogue = "王伟，请进。你找我有事吗？你在这儿工作两年多了，表现确实不错。你的努力大家都有目共睹。但是，现在的经济情况不太好。一千块多？这有点超出我们的预算了。"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "二十五岁左右"
+pitch = "中高音域，略显紧张"
+pace = "中速，在关键点有轻微的停顿"
+volume = "中等，略微有些拘谨"
+clarity = "清晰，但在表达请求时声音略显柔和"
+fluency = "流利，但由于紧张，语速略微不均"
+timbre = "清脆，阳光但显得有些拘谨"
+emotion = "礼貌，坚定但有些小心翼翼"
+usecase = "一个正在争取权利、既尊重上级又对自己有要求的年轻职场人"
+dialogue = "李经理，不好意思打扰了。我想谈谈我的薪水。谢谢经理。这期间我负责了几个新项目，也都完成了。我理解。但我希望月薪能增加一千块多。"

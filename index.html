@@ -31,6 +31,7 @@
         <button id="nextChapterBtn">Chapter ⏭️</button>
         <button id="englishBtn">🇬🇧</button>
         <button id="speedBtn">1x</button>
+        <button id="backchainModeBtn" title="Back-chain mode">🔁</button>
         <button id="flashcardBtn" style="display: none;" title="Flashcards" onclick="openFlashcards()">🎴</button>
     </div>
 
@@ -410,20 +411,27 @@
                 token.addEventListener('click', handleTokenClickWithDictionary);
                 token.addEventListener('dblclick', handleTokenDoubleClick);
             });
+
         }
 
         // ── Chunk-based audio playback ───────────────────────────────
         // lineMap[globalLineIndex] = { chunkIdx, localIdx, start_zh, end_zh }
         let lineMap = [];
+        let backchainMap = [];  // backchainMap[lineIndex] = { steps: [...], words: [...] }
         let chunkAudioElements = [];  // <audio> elements, one per chunk (zh)
         let currentLineIndex = -1;
         let currentAudio = null;
         let lineEndTimer = null;
         let isPlaying = false;
+        let backchainTimer = null;
+        let backchainStepIndex = -1;
+        let backchainLineIndex = -1;
+        let backchainMode = false;
 
         const playPauseBtn = document.getElementById('playPauseBtn');
         const stopBtn = document.getElementById('stopBtn');
         const speedBtn = document.getElementById('speedBtn');
+        const backchainModeBtn = document.getElementById('backchainModeBtn');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         const prevChapterBtn = document.getElementById('prevChapterBtn');
@@ -435,6 +443,7 @@
 
         function buildLineMap(chunkMeta) {
             lineMap = [];
+            backchainMap = [];
             if (!chunkMeta || !chunkMeta.chunks) return;
 
             for (let ci = 0; ci < chunkMeta.chunks.length; ci++) {
@@ -453,6 +462,12 @@
                         start_zh: line.start_zh,
                         end_zh: line.end_zh,
                     };
+                    if (line.backchain && line.backchain.length > 0) {
+                        backchainMap[globalIdx] = {
+                            steps: line.backchain,
+                            words: line.words || null,
+                        };
+                    }
                 }
             }
         }
@@ -504,6 +519,7 @@
                         isPlaying = false;
                         playPauseBtn.textContent = '▶️';
                         clearLineHighlight();
+                        resetBackchainButtons();
                     }
                 });
 
@@ -516,6 +532,7 @@
 
         function stopPlayback() {
             clearLineEndTimer();
+            clearBackchainTimer();
             if (currentAudio) {
                 currentAudio.pause();
                 currentAudio = null;
@@ -523,6 +540,9 @@
             isPlaying = false;
             playPauseBtn.textContent = '▶️';
             clearLineHighlight();
+            resetBackchainButtons();
+            backchainStepIndex = -1;
+            backchainLineIndex = -1;
         }
 
         function clearLineEndTimer() {
@@ -548,6 +568,11 @@
         }
 
         function playLine(lineIndex) {
+            if (backchainMode && backchainMap[lineIndex]) {
+                playBackchain(lineIndex);
+                return;
+            }
+
             const mapping = lineMap[lineIndex];
             if (!mapping) return;
 
@@ -561,7 +586,6 @@
             const startTime = mapping.start_zh;
             const endTime = mapping.end_zh;
 
-            // If we're already on the right audio, just seek
             if (currentAudio !== audio) {
                 if (currentAudio) {
                     currentAudio.pause();
@@ -574,13 +598,24 @@
             isPlaying = true;
             playPauseBtn.textContent = '⏸️';
 
-            // Poll for end of line
-            lineEndTimer = setInterval(() => {
-                if (audio.currentTime >= endTime) {
-                    clearLineEndTimer();
-                    advanceToNextLine();
-                }
-            }, 50);
+            // Poll for end of line (only auto-advance when backchain mode is off)
+            if (!backchainMode) {
+                lineEndTimer = setInterval(() => {
+                    if (audio.currentTime >= endTime) {
+                        clearLineEndTimer();
+                        advanceToNextLine();
+                    }
+                }, 50);
+            } else {
+                // Stop at end of line when backchain mode is on (no backchain data case)
+                lineEndTimer = setInterval(() => {
+                    if (audio.currentTime >= endTime) {
+                        clearLineEndTimer();
+                        stopPlayback();
+                        clearLineHighlight();
+                    }
+                }, 50);
+            }
         }
 
         function advanceToNextLine() {
@@ -599,10 +634,142 @@
             }
         }
 
+        // ── Back-chain playback ──────────────────────────────────────
+
+        function clearBackchainTimer() {
+            if (backchainTimer) {
+                clearInterval(backchainTimer);
+                backchainTimer = null;
+            }
+        }
+
+        function resetBackchainButtons() {
+            backchainStepIndex = -1;
+            backchainLineIndex = -1;
+        }
+
+        function playBackchain(lineIndex) {
+            const mapping = lineMap[lineIndex];
+            const bcData = backchainMap[lineIndex];
+            if (!mapping || !bcData) return;
+
+            const audio = chunkAudioElements[mapping.chunkIdx];
+            if (!audio) return;
+
+            // If already playing a backchain for this line, cancel it
+            if (backchainLineIndex === lineIndex && backchainStepIndex >= 0) {
+                stopPlayback();
+                return;
+            }
+
+            stopPlayback();
+            clearLineHighlight();
+            highlightLine(lineIndex);
+
+            backchainLineIndex = lineIndex;
+            backchainStepIndex = 0;
+
+            // Steps: backchain fragments + the full sentence as final step
+            const fullText = bcData.fullText || '';
+            const steps = [...bcData.steps, fullText];
+
+            if (currentAudio !== audio) {
+                currentAudio = audio;
+            }
+
+            _playBackchainStep(audio, steps, lineIndex, 0);
+        }
+
+        function _playBackchainStep(audio, steps, lineIndex, stepIdx) {
+            if (stepIdx >= steps.length) {
+                resetBackchainButtons();
+                return;
+            }
+
+            backchainStepIndex = stepIdx;
+            const bcData = backchainMap[lineIndex];
+            const words = bcData ? bcData.words : null;
+            const mapping = lineMap[lineIndex];
+
+            let startTime, endTime;
+
+            if (stepIdx === steps.length - 1) {
+                // Final step: play the full sentence from beginning to end
+                startTime = mapping.start_zh;
+                endTime = mapping.end_zh;
+            } else {
+                const stepText = steps[stepIdx];
+                if (words && words.length > 0) {
+                    const suffixStart = _findSuffixStartTime(words, stepText);
+                    startTime = suffixStart;
+                } else {
+                    // Fallback: proportional estimation based on character count
+                    const fullLen = steps[steps.length - 1].length;
+                    const ratio = (fullLen - stepText.length) / fullLen;
+                    const dur = mapping.end_zh - mapping.start_zh;
+                    startTime = mapping.start_zh + ratio * dur;
+                }
+                endTime = mapping.end_zh;
+            }
+
+            audio.currentTime = startTime;
+            audio.play().catch(e => console.error('Backchain audio play failed:', e));
+            isPlaying = true;
+            playPauseBtn.textContent = '⏸️';
+
+            // Allow seek to settle before polling currentTime
+            clearBackchainTimer();
+            setTimeout(() => {
+                backchainTimer = setInterval(() => {
+                    if (audio.currentTime >= endTime || audio.ended) {
+                        clearBackchainTimer();
+                        _playBackchainStep(audio, steps, lineIndex, stepIdx + 1);
+                    }
+                }, 50);
+            }, 80);
+        }
+
+        function _findSuffixStartTime(words, suffixText) {
+            // Match suffix text against words from the end backwards
+            // Returns the start_time of the first word in the matched suffix
+            if (!words || words.length === 0) return 0;
+
+            let accumulated = '';
+            for (let i = words.length - 1; i >= 0; i--) {
+                accumulated = words[i].text + accumulated;
+                if (accumulated === suffixText) {
+                    return words[i].start_time;
+                }
+                if (accumulated.length > suffixText.length) break;
+            }
+
+            // Fallback: find first word whose accumulated suffix contains the target
+            // Try matching from each position
+            for (let start = words.length - 1; start >= 0; start--) {
+                let seg = '';
+                for (let j = start; j < words.length; j++) {
+                    seg += words[j].text;
+                }
+                if (seg === suffixText) {
+                    return words[start].start_time;
+                }
+            }
+
+            // Final fallback: proportional
+            const fullText = words.map(w => w.text).join('');
+            const ratio = (fullText.length - suffixText.length) / Math.max(fullText.length, 1);
+            const dur = words[words.length - 1].end_time - words[0].start_time;
+            return words[0].start_time + ratio * dur;
+        }
+
         // ── Control button handlers ──────────────────────────────────
         playPauseBtn.addEventListener('click', () => {
             if (isPlaying) {
                 clearLineEndTimer();
+                if (backchainStepIndex >= 0) {
+                    stopPlayback();
+                    return;
+                }
                 if (currentAudio) {
                     currentAudio.pause();
                 }
@@ -706,6 +873,10 @@
 
                 const englishTranslation = sourceSentences[i] ? sourceSentences[i].english : '';
 
+                if (backchainMap[i]) {
+                    backchainMap[i].fullText = chineseSentence.replace(/<[^>]+>/g, '');
+                }
+
                 sentenceDiv.innerHTML = `
                     <div class="pinyin">${pinyinSentence}</div>
                     <div class="chinese">${chineseSentence}</div>
@@ -742,6 +913,14 @@
         }
 
         englishBtn.addEventListener('click', toggleEnglishTranslations);
+
+        backchainModeBtn.addEventListener('click', () => {
+            backchainMode = !backchainMode;
+            backchainModeBtn.classList.toggle('active', backchainMode);
+            if (backchainMode) {
+                stopPlayback();
+            }
+        });
     </script>
 </body>
 </html>

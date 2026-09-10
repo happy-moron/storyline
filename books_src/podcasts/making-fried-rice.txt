@@ -1,0 +1,198 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are stepping into the kitchen to learn some essential grammar while cooking a delicious meal.
+
+en=student
+I love cooking, but my Chinese kitchen skills need a lot of work. What are we learning today?
+
+en=teacher
+We are focusing on two very practical structures. First, we have the use of 有 to express possession or having something. The structure is subject, followed by 有, and then the object. For example, 我有书, which means I have a book.
+
+en=student
+Okay, so instead of saying "I am a book," which would be 我是书, I say "I have a book" using 有. 
+
+en=teacher
+Exactly! You've got it. Second, we are looking at polite requests using the word 请. You simply place 请 before a verb. For example, 请坐, which means please sit.
+
+en=student
+That seems straightforward. Just "please" plus the action. 
+
+en=teacher
+Precisely. Now, before we hear the dialogue, let's master our six key vocabulary words.
+
+en=teacher
+First, we have 米饭, third tone, fourth tone, meaning cooked rice... 米饭.
+
+en=teacher
+Second, 鸡蛋, first tone, fourth tone, meaning egg... 鸡蛋.
+
+en=teacher
+Third, 蔬菜, first tone, fourth tone, meaning vegetables... 蔬菜.
+
+en=teacher
+Fourth, 炒, third tone, meaning to stir-fry... 炒.
+
+en=teacher
+Fifth, 盐, second tone, meaning salt... 盐.
+
+en=teacher
+And sixth, 味道, fourth tone, fourth tone, meaning taste or flavor... 味道.
+
+en=student
+Got it. Rice, eggs, vegetables, stir-fry, salt, and taste. I'm ready to cook!
+
+en=teacher
+In today's episode, you are going to hear a conversation in a busy kitchen. A professional chef is working with an assistant to prepare a big batch of fried rice.
+
+DIALOGUE
+
+zh=1
+你有米饭吗？
+Do you have rice?
+
+zh=2
+有，我有米饭，也有鸡蛋。
+Yes, I have rice, and I also have eggs.
+
+zh=1
+请切蔬菜。
+Please chop the vegetables.
+
+zh=2
+好的。你有盐吗？
+Okay. Do you have salt?
+
+zh=1
+我有盐。请放点盐。
+I have salt. Please add some salt.
+
+zh=2
+这个炒饭味道很好！
+This fried rice tastes very good!
+
+zh=1
+请吃！
+Please eat!
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. It starts with the Chef, Speaker One.
+
+zh=1
+你有米饭吗？
+Do you have rice?
+
+en=student
+"你有米饭吗?" Here, we see our first grammar point. "你" is you, "有" is have, and "米饭" is rice. And that "吗" at the end turns the statement into a question.
+
+en=teacher
+Correct. Then the assistant, Speaker Two, responds.
+
+zh=2
+有，我有米饭，也有鸡蛋。
+Yes, I have rice, and I also have eggs.
+
+en=student
+"有" on its own here means "Yes, I do" or "I have it." Then, "我有米饭，也有鸡蛋" uses our possession pattern. But wait, Ellen, I noticed he said "也有". That's "also" in Chinese, right?
+
+en=teacher
+Yes, that is the word 也. It goes right before the verb. So, "也有鸡蛋" means "also have eggs." 
+
+en=student
+Got it. Now, the Chef gives a command, but it sounds polite.
+
+zh=1
+请切蔬菜。
+Please chop the vegetables.
+
+en=teacher
+Exactly. "请" is the polite marker, and "切" is the verb "to chop," while "蔬菜" is vegetables.
+
+zh=2
+好的。你有盐吗？
+Okay. Do you have salt?
+
+en=student
+"好的" is a very common way to say "okay" or "all right." And then we get another question: "你有盐吗?" 
+
+en=teacher
+Right. Now the Chef confirms and makes another request.
+
+zh=1
+我有盐。请放点盐。
+I have salt. Please add some salt.
+
+en=student
+"我有盐" is simple possession. But then "请放点盐". "请" is please, and "放" means to put or to add. What does "点" do there?
+
+en=teacher
+"点" is short for 一点, which means "a little bit." It makes the request sound more natural and less blunt.
+
+zh=2
+这个炒饭味道很好！
+This fried rice tastes very good!
+
+en=student
+"这个炒饭味道很好!" Here we see "炒饭", which is fried rice. And "味道很好" means the taste is very good. It's interesting that "很好" follows "味道" to describe the quality.
+
+en=teacher
+It is! Finally, the Chef finishes the lesson with a classic.
+
+zh=1
+请吃！
+Please eat!
+
+en=student
+"请吃" is a perfect, polite way to invite someone to start eating. It's short, sweet, and very useful.
+
+en=teacher
+It really is. We've used our grammar for possession and polite requests throughout this entire kitchen scene.
+
+OUTRO
+
+en=teacher
+That wraps up our delicious lesson for today.
+
+en=student
+I'm feeling much more confident about using 有 and 请 now. And I definitely won't forget our cooking vocabulary.
+
+en=teacher
+Today we learned how to express possession using "Subject plus 有 plus Object," and how to make polite requests using "请 plus Verb." We also covered rice, eggs, vegetables, stir-frying, salt, and taste.
+
+en=student
+Thanks for the lesson, Ellen. Now, who's hungry?
+
+en=teacher
+I am! Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "四十岁左右"
+pitch = "中音域，沉稳且有威严"
+pace = "中速，语速均匀"
+volume = "响亮，充满自信"
+clarity = "清晰，吐字有力"
+fluency = "流利，带有指挥者的节奏感"
+timbre = "圆润且略带磁性"
+emotion = "专业，干练，亲切"
+usecase = "一位经验丰富的餐厅主厨"
+dialogue = "你有米饭吗？请切蔬菜。请放点盐。请吃！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁左右"
+pitch = "高音域，富有活力"
+pace = "中速，语速轻快"
+volume = "中等，充满热情"
+clarity = "清晰，带有年轻人的朝气"
+fluency = "非常流利，语调起伏明显"
+timbre = "清脆，阳光"
+emotion = "热情，勤奋，带有一点点紧张感"
+usecase = "一个充满活力的新手厨师助手"
+dialogue = "有，我有米饭，也有鸡蛋。好的。你有盐吗？这个炒饭味道很好！"

@@ -1,0 +1,200 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a situation that no one enjoys: dealing with a faulty product and the frustration that comes with it.
+
+en=student
+Oh man, nothing ruins a shopping trip like realizing you bought something that doesn't work.
+
+en=teacher
+Exactly. And when you try to return it, emotions can run high. So today, we are learning two very useful structures to express these feelings and ask for clarity. 
+
+en=student
+First, we have the negative command using 别. 
+
+en=teacher
+Correct. To tell someone "Don't" do something, you simply put 别 before the verb. For example, 别走 (Don't leave) or 别说话 (Don't talk). In our dialogue, you will hear it used when the customer is feeling quite frustrated.
+
+en=student
+And the second one is using 多 to ask about degree. It's not for asking "how many," but "how [adjective]," right?
+
+en=teacher
+Precisely. If you want to ask "How big is it?" you say 多大. If you want to ask "How expensive is it?" you say 多贵. It's used to ask about the extent or degree of a quality.
+
+en=student
+So, instead of just saying "It is big," I can ask "How big is it?" using 多. 
+
+en=teacher
+Exactly. Now, let's look at our scenario. You are going to hear a conversation in an electronics store. A customer is returning a mobile phone because the screen is damaged, and the interaction gets a little bit heated.
+
+en=student
+I can already tell this isn't going to be a calm conversation!
+
+en=teacher
+Not at all. Let's listen.
+
+DIALOGUE
+
+zh=1
+我要退掉这台手机。
+I want to return this phone.
+
+zh=2
+让我看看。问题有多大？
+Let me see. How big is the problem?
+
+zh=1
+非常大！你看这个屏幕！
+It's very big! Look at this screen!
+
+zh=2
+哦，只是一个小划痕。
+Oh, it's just a small scratch.
+
+zh=1
+别骗我！这个裂缝非常大！
+Don't lie to me! This crack is very big!
+
+zh=2
+请别生气。我给您换一个。
+Please don't be angry. I will exchange it for you.
+
+zh=1
+别耽误时间了，我现在就要换。
+Don't waste time, I want to exchange it right now.
+
+zh=2
+好的，请等一下。
+Okay, please wait a moment.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. It starts with the customer.
+
+zh=1
+我要退掉这台手机。
+I want to return this phone.
+
+en=student
+"我要退掉这台手机。" "要" means "to want." "退掉" is interesting. "退" means to return, but what about "掉"?
+
+en=teacher
+Good observation. In Chinese, we often use "掉" after a verb to indicate that the action is completed or that something has been removed or dealt with. So, "退掉" means to complete the return process. And "手机" is the standard word for a mobile phone.
+
+zh=2
+让我看看。问题有多大？
+Let me see. How big is the problem?
+
+en=student
+"问题有多大？" We see our grammar point here! "问题" means problem, and "有多大" means "how big." 
+
+en=teacher
+Right. Remember, "多" plus an adjective asks for the degree. Here, the clerk is asking to what extent the problem is large.
+
+zh=1
+非常大！你看这个屏幕！
+It's very big! Look at this screen!
+
+en=student
+"非常大" means very big. And "屏幕" is the screen of a device, like a phone or a computer.
+
+zh=2
+哦，只是一个小划痕。
+Oh, it's just a small scratch.
+
+en=student
+"划痕" is a great word. It means scratch. It sounds like a very specific technical term for a surface being marked.
+
+en=teacher
+It is. It comes from the verb "划" which means to scratch or to draw a line.
+
+zh=1
+别骗我！这个裂缝非常大！
+Don't lie to me! This crack is very big!
+
+en=student
+And there it is! "别骗我!" "别" is the "don't," and "骗" means to lie or to cheat.
+
+en=teacher
+Yes. "别" is very common for commands. Now, look at the next sentence: "这个裂缝非常大。" "裂缝" is a different word than "划痕." 
+
+en=student
+Right, "划痕" is a scratch, but "裂缝" is a crack, right? Like a deep break?
+
+en=teacher
+Exactly. A scratch is a surface mark, but a crack is a structural break.
+
+zh=2
+请别生气。我给您换一个。
+Please don't be angry. I will exchange it for you.
+
+en=student
+"请别生气." "别" again for the negative command, and "生气" means to get angry. It's a very high-frequency word.
+
+en=teacher
+It is. Also, notice she says "我给您换一个." "换" means to change or to exchange. She is offering an exchange.
+
+zh=1
+别耽误时间了，我现在就要换。
+Don't waste time, I want to exchange it right now.
+
+en=student
+"别耽误时间了." "耽误" is a heavy word. It means to delay, to waste, or to hold up.
+
+en=teacher
+Yes, "耽误时间" is the standard way to say "to waste time" or "to cause a delay." The customer is being very impatient!
+
+zh=2
+好的，请等一下。
+Okay, please wait a moment.
+
+en=student
+"等一下" is "wait a moment." A classic phrase for service workers.
+
+OUTRO
+
+en=teacher
+That was a stressful situation! But we learned some very useful things. 
+
+en=student
+Definitely. We practiced using 别 for commands, like "别骗我" and "别生气," and we practiced asking about degree with 多, like "问题有多大."
+
+en=teacher
+And don't forget the vocabulary: "退掉" for returning something, "划痕" for a scratch, and "裂缝" for a crack. 
+
+en=student
+And "耽误时间" if you're in a rush!
+
+en=teacher
+Exactly. Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十五岁左右"
+pitch = "中音域，因愤怒而升高"
+pace = "较快，语速不稳"
+volume = "大，具有攻击性"
+clarity = "清晰，但带有怒气"
+fluency = "由于激动而略显急促" 
+timbre = "粗糙，有力"
+emotion = "愤怒，不耐烦" 
+usecase = "一个非常暴躁且对服务不满意的顾客"
+dialogue = "别骗我！这个裂缝非常大！别耽误时间了，我现在就要换！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中高音域，平稳"
+pace = "中速，试图保持礼貌"
+volume = "中等，平稳"
+clarity = "清晰，非常专业"
+fluency = "流畅，但在压力下略微犹豫" 
+timbre = "圆润，柔和"
+emotion = "专业，略带紧张" 
+usecase = "一个正在试图平息客户怒火的店员"
+dialogue = "请别生气。我给您换一个。好的，请等一下。"

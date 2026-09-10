@@ -12,7 +12,7 @@ from storyline.book.tokenization_repair import ValidationReport, validate_full
 from storyline.book.create_custom_dict import load_dictionary, process_json_file
 from storyline.book.update_manifest import update_manifest
 from storyline.config.pipeline_config import PipelineConfig
-from storyline.podcast.audio_gen import generate_dialogue_audio
+from storyline.podcast.audio_gen import add_word_timings, generate_dialogue_audio
 from storyline.podcast.omnivoice_audio import OmnivoiceTTSService
 from storyline.podcast.script_parser import parse_script
 from storyline.podcast.selection import normalize_name
@@ -331,6 +331,17 @@ def create_ereader(
                 clone_service=clone_service,
                 service_manager=service_manager if use_omnivoice else None,
             )
+
+            # ── 6a. Forced alignment (word timings) ──────────────────
+            if not config.skip_backchain:
+                t0_align = time.time()
+                n_aligned = add_word_timings(
+                    chunk_json_path, base_dir, script, host_service,
+                )
+                log.info(
+                    "event=ereader_step step=align chunks=%d duration_ms=%d",
+                    n_aligned, int((time.time() - t0_align) * 1000),
+                )
         finally:
             if service_manager:
                 service_manager.stop_if_running('tts')
@@ -338,6 +349,57 @@ def create_ereader(
             "event=ereader_step step=audio chunks=%d duration_ms=%d",
             n_audio, int((time.time() - t0) * 1000),
         )
+
+    # ── 6b. Backchain generation ────────────────────────────────────
+    if not config.skip_audio and not config.skip_backchain:
+        t0 = time.time()
+        if service_manager:
+            service_manager.start_if_needed('llm')
+        _ensure_llm(service_manager, config, 'backchain')
+
+        from storyline.podcast.backchain import generate_backchains
+
+        chinese_lines = [line.chinese for line in dialogue]
+        chinese_lines = [l for l in chinese_lines if l.strip()]
+
+        try:
+            results = generate_backchains(
+                chinese_lines, slug, base_dir,
+                resolve_prompt=config.resolve_prompt,
+                models=config.models,
+                llm_timeout_s=config.llm_timeout_s,
+                llm_retries=config.llm_retries,
+                extra_options=_resolve_extra_options(config, "backchain"),
+            )
+
+            # Fix backchain step boundaries to align with tokenized words.
+            # Build token_texts aligned with chinese_lines (same filtering).
+            from storyline.podcast.backchain import fix_token_boundaries
+            token_texts = [
+                [t[0] for t in tokenized[i]["t"]]
+                for i, line in enumerate(dialogue)
+                if line.chinese.strip()
+            ]
+            results = fix_token_boundaries(results, token_texts)
+
+            with open(chunk_json_path, encoding="utf-8") as f:
+                chunk_data = json.load(f)
+            for r in results:
+                if r.line_index < len(chunk_data["chunks"]):
+                    chunk = chunk_data["chunks"][r.line_index]
+                    steps = [s.text for s in r.steps[:-1]]  # exclude final (full sentence)
+                    chunk["lines"][0]["backchain"] = steps
+            with open(chunk_json_path, "w", encoding="utf-8") as f:
+                json.dump(chunk_data, f, ensure_ascii=False, indent=2)
+
+            log.info(
+                "event=ereader_step step=backchain lines=%d duration_ms=%d",
+                len(results), int((time.time() - t0) * 1000),
+            )
+        except Exception as e:
+            log.warning(
+                "event=backchain_failure error=%s", str(e),
+            )
 
     # ── 7. Update manifest ─────────────────────────────────────────────
     t0 = time.time()
@@ -373,6 +435,10 @@ if __name__ == "__main__":
     parser.add_argument(
         '--skip-audio', dest='skip_audio', default=None,
         action=argparse.BooleanOptionalAction, help='Skip audio generation',
+    )
+    parser.add_argument(
+        '--skip-backchain', dest='skip_backchain', default=None,
+        action=argparse.BooleanOptionalAction, help='Skip back-chain generation and forced alignment',
     )
     parser.add_argument(
         '--omnivoice', action='store_true',

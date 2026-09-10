@@ -1,4 +1,5 @@
 import json
+from dataclasses import replace
 from pathlib import Path
 
 from pydub import AudioSegment
@@ -138,6 +139,10 @@ def generate_dialogue_audio(
     audio_dir.mkdir(parents=True, exist_ok=True)
 
     profiles = script.voice_profiles
+    for speaker_id, profile in list(profiles.items()):
+        if profile.lang == "zh":
+            profiles[speaker_id] = replace(profile, pace="缓慢, 慢悠悠, 迟缓")
+
     for profile in profiles.values():
         generate_voice_design(service, profile, slug, voices_dir)
 
@@ -201,3 +206,60 @@ def generate_dialogue_audio(
         json.dump(chunk_data, f, ensure_ascii=False, indent=2)
 
     return len(chunks)
+
+
+def add_word_timings(
+    chunk_json_path: Path,
+    base_dir: Path,
+    script,
+    service,
+) -> int:
+    chunk_json_path = Path(chunk_json_path)
+    base_dir = Path(base_dir)
+    audio_dir = base_dir / "audio"
+
+    with open(chunk_json_path, encoding="utf-8") as f:
+        chunk_data = json.load(f)
+    chunks = chunk_data["chunks"]
+
+    aligned = 0
+    for ci, chunk in enumerate(chunks):
+        if chunk.get("lines") and chunk["lines"][0].get("words"):
+            continue
+
+        audio_file = chunk.get("audio_zh")
+        if not audio_file:
+            continue
+
+        audio_path = audio_dir / audio_file
+        if not audio_path.exists():
+            _log.warning("event=align_missing_audio chunk=%d file=%s", ci, audio_file)
+            continue
+
+        line_idx = chunk["line_range"][0]
+        if line_idx >= len(script.dialogue):
+            continue
+
+        chinese_text = script.dialogue[line_idx].chinese
+        if not chinese_text.strip():
+            continue
+
+        try:
+            audio = AudioSegment.from_file(audio_path)
+            words = service.forced_align(audio, chinese_text, "chinese")
+            chunk["lines"][0]["words"] = words
+            aligned += 1
+            _log.debug(
+                "event=align_chunk chunk=%d chars=%d words=%d",
+                ci, len(chinese_text), len(words),
+            )
+        except Exception as e:
+            _log.warning(
+                "event=align_failure chunk=%d text=%s error=%s",
+                ci, chinese_text[:40], str(e),
+            )
+
+    with open(chunk_json_path, "w", encoding="utf-8") as f:
+        json.dump(chunk_data, f, ensure_ascii=False, indent=2)
+
+    return aligned

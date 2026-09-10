@@ -51,11 +51,11 @@ The two hosts should clearly introduce:
 
 * what the grammar point is
 * how/when it's generally used (including a few examples)
-* Six main/key vocab words, including their tones.
+* key vocab terms in the dialogue
 * what the dialogue is about and who the speakers are.
 
 The hosts should give a short overview of the dialogue (e.g. "You're going to hear a trainer approaching a customer at the gym").
-The teacher should go through the new key vocab words one by one, stating the tones of their characters. Make sure this is correctly formatted for the script with the teacher's "speaker heading" (as described below) for each line of vocab!
+
 
 ## Dialogue
 
@@ -99,13 +99,6 @@ Correct. Second, we are looking at using 多 to ask about degree. When you put �
 
 en=student
 So instead of just asking "Are you sad?", I can ask "How sad are you?" using 多. That's a great way to get more detail.
-
-en=teacher
-Precisely. Before the dialogue, let's look at our key vocabulary. 
-en=teacher
-We have 担心, (two first tones), meaning to worry... 担心.
-en=teacher
-We have 觉得, (first tone and fifth tone), meaning to feel or to think... 觉得.
 
 en=student
 Got it. So, what is the dialogue about?

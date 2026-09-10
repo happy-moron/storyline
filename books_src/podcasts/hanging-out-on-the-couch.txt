@@ -1,0 +1,194 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are exploring the art of doing absolutely nothing. 
+
+en=student
+That sounds like a topic I am an expert in. Are we learning how to be lazy in Chinese?
+
+en=teacher
+In a way, yes! We are focusing on two very practical grammar points. First, we have the use of 怎么, which means "how" or "why." When you place it directly before a verb, it can mean "how to do something," but it can also mean "how come" or "why," often expressing surprise or confusion. For example, 你怎么不说话? (Why aren't you speaking?) or 你怎么去? (How do you go?).
+
+en=student
+So, it is a bit more emotive than just saying "why"?
+
+en=teacher
+Exactly. It carries a sense of "how is this possible?" or "why is it that...". Second, we are looking at the structure for indicating location during an action. This is Subj. + 在 + Place + Verb. In English, we say "I eat in the kitchen," but in Chinese, we use 在 before the verb to set the stage. For example, 我在学校学习 (I study at school) or 我在家里睡觉 (I sleep at home).
+
+en=student
+That makes sense. You establish the location before you describe the action.
+
+en=teacher
+Precisely. Before we get to our scene, let's look at our key vocabulary for today. 
+
+en=teacher
+We have 沙发, (first tone and first tone), meaning sofa or couch... 沙发.
+
+en=teacher
+We have 躺, (third tone), meaning to lie down... 躺.
+
+en=teacher
+We have 玩, (second tone), meaning to play or to have fun... 玩.
+
+en=teacher
+We have 休息, (first tone and than fifth tone), meaning to rest... 休息.
+
+en=teacher
+We have 累, (fourth tone), meaning tired... 累.
+
+en=teacher
+We have 坐, (fourth tone), meaning to sit... 坐.
+
+en=student
+Got it. Sofa, lie down, play, rest, tired, and sit. Now, what is the scenario?
+
+en=teacher
+Today's episode is titled "Couch Potatoes." You are going to hear a conversation between two roommates. One is being quite productive—or trying to be—while the other is completely lost in a state of pure relaxation on the couch.
+
+DIALOGUE
+
+zh=1
+你怎么在那儿坐着？
+Why are you sitting there?
+zh=2
+我在这儿看电视。
+I am watching television here.
+zh=1
+你怎么不学习？你已经在这儿躺了两个小时了！
+Why aren't you studying? You have already been lying here for two hours!
+zh=2
+我在这儿玩手机。我觉得很累。
+I am playing on my phone here. I feel very tired.
+zh=1
+你怎么不起来？我们出去吃点东西。
+Why don't you get up? Let's go out to eat something.
+zh=2
+我不想动。我在这儿休息一会儿。
+I don't want to move. I am resting here for a little while.
+
+BREAKDOWN
+
+en=teacher
+Let's dive into that dialogue and break it down line by line. It starts with the first speaker, who sounds a bit confused.
+
+zh=1
+你怎么在那儿坐着？
+Why are you sitting there?
+
+en=student
+"你怎么..." There it is! "How come you..." or "Why are you..." Ryan here, asking for clarification. And "在那儿" means "at that place" or "there," right?
+
+en=teacher
+Yes. "在" is the preposition for location, and "那儿" is there. The verb is "坐着", where "坐" is to sit, and "着" indicates a continuous state. So, "Why are you in the state of sitting there?"
+
+zh=2
+我在这儿看电视。
+I am watching television here.
+
+en=student
+"我在这儿看电视" follows the grammar we just talked about. Subject, "在", location, then verb. "I am at here watching TV."
+
+en=teacher
+Exactly. Note how "在" comes before the location "这儿" (here).
+
+zh=1
+你怎么不学习？你已经在这儿躺了两个小时了！
+Why aren't you studying? You have already been lying here for two hours!
+
+en=student
+This is a great example of "怎么不" (zěn me bù). It sounds like "Why don't you...?" 
+
+en=teacher
+Spot on. "怎么" plus a negative like "不" is a very common way to ask "Why aren't you doing X?" It often implies that the speaker thinks you *should* be doing something else. And then we have "你已经在这儿躺了两个小时了". 
+
+en=student
+Wait, "躺了两个小时". I see "躺" (to lie down) and then "两个小时" (two hours). Is "了" used for duration here?
+
+en=teacher
+Very observant! Yes, "了" indicates the completion or the duration of an action. "He has been lying there for two hours."
+
+zh=2
+我在这儿玩手机。我觉得很累。
+I am playing on my phone here. I feel very tired.
+
+en=student
+"玩手机" (wán shǒu jī) is a phrase we use all the time now. "Playing phone." And "觉得" (jué de) means "to feel."
+
+en=teacher
+Yes, "我觉得很累" is "I feel very tired." A very useful phrase for when you've spent too much time on the couch!
+
+zh=1
+你怎么不起来？我们出去吃点东西。
+Why don't you get up? Let's go out to eat something.
+
+en=student
+"你怎么不起来？" "起来" means to get up. "Why don't you get up?" And "出去吃点东西" is a very natural way to say "go out to eat a little something."
+
+zh=2
+我不想动。我在这儿休息一会儿。
+I don't want to move. I am resting here for a little while.
+
+en=student
+"我不想动" (wǒ bù xiǎng dòng) is "I don't want to move." That is the ultimate lazy person's sentence. And then the last line: "我在这儿休息一会儿". 
+
+en=teacher
+"一会儿" (yī huì er) is a great phrase to know. It means "a little while" or "for a bit." So, "I am resting here for a little while."
+
+en=student
+So, to recap the location rule, it's always "Subject + 在 + Place + Action." It's like you have to set the stage before the actors start moving.
+
+en=teacher
+That is a perfect metaphor, Ryan. You establish the location first, then you describe what is happening in that location.
+
+en=student
+And "怎么" is my go-to for when I'm surprised. If my friend is sleeping at noon, I won't ask "Why are you sleeping?" using the formal "为什么", I'll say "你怎么在睡觉?" (How come you are sleeping?).
+
+en=teacher
+Exactly. It adds that layer of "Wait, what?" to your question.
+
+OUTRO
+
+en=teacher
+We hope you enjoyed this look into the lazy life of two roommates. 
+
+en=student
+I think I need a nap now after all that learning.
+
+en=teacher
+In today's episode, we learned how to use 怎么 before a verb to ask "how" or "why" in a way that expresses surprise, and we mastered the structure of using 在 before a place to indicate where an action is taking place.
+
+en=student
+Don't forget our key words: 沙发, 躺, 玩, 休息, 累, and 坐.
+
+en=teacher
+Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "二十五岁"
+pitch = "中音域，语气较急促"
+pace = "中速，带点不耐烦"
+volume = "中等，清晰有力"
+clarity = "清晰，吐字分明"
+fluency = "流利，语速较快"
+timbre = "清脆，略带活力"
+emotion = "有些急躁，但充满活力"
+usecase = "一个有点爱唠叨、比较积极的室友"
+dialogue = "你怎么不学习？你已经在这儿躺了两个小时了！你怎么不起来？"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "二十五岁"
+pitch = "低音域，非常平稳"
+pace = "慢速，懒洋洋的"
+volume = "轻柔，音量偏小"
+clarity = "略微含混，听起来很放松"
+fluency = "流利，但节奏缓慢"
+timbre = "柔和，带有磁性"
+emotion = "极度放松，甚至有些懒惰"
+usecase = "一个无可救药的沙发土豆"
+dialogue = "我在这儿玩手机。我觉得很累。我不想动。我在这儿休息一会儿。"

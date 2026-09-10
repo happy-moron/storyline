@@ -75,6 +75,8 @@ class PipelineConfig:
         "podcast_fix_dialogue": "prompts/podcast-fix-dialogue.md",
         "podcast_fix_voice_profiles": "prompts/podcast-fix-voice-profiles-script.md",
         "podcast_pinyin_replace": "prompts/podcast-replace-pinyin.md",
+        "backchain": "prompts/back-chaining.md",
+        "backchain_fix": "prompts/back-chaining-fix.md",
     })
 
     # -- Pipeline behaviour --
@@ -85,6 +87,7 @@ class PipelineConfig:
     warmup_on_start: bool = True
     skip_simplify: bool = False
     skip_audio: bool = False
+    skip_backchain: bool = False
     audio_profile: str = "default"
     audio_use_instruct: bool | None = None
 
@@ -202,6 +205,7 @@ class PipelineConfig:
                 "podcast_fix_script", "podcast_fix_dialogue",
                 "podcast_fix_voice_profiles",
                 "podcast_pinyin_replace",
+                "backchain", "backchain_fix",
             )
             self.task_profiles = {
                 task: llm_cfg.get(task, {}).get("profile", default_profile)
@@ -219,7 +223,7 @@ class PipelineConfig:
 
     def _apply_cli_overrides(self, args: Any) -> None:
         for attr in (
-            "max_chunks", "skip_simplify", "skip_audio",
+            "max_chunks", "skip_simplify", "skip_audio", "skip_backchain",
             "audio_profile", "audio_use_instruct",
         ):
             if hasattr(args, attr):

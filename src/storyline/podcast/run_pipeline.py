@@ -307,6 +307,7 @@ def run_full_pipeline(
     service_manager: ServiceManager | None = None,
     *,
     skip_audio: bool = False,
+    skip_backchain: bool = False,
     use_builtin_hosts: bool = False,
     use_omnivoice: bool = False,
     skip_flashcards: bool = False,
@@ -333,6 +334,7 @@ def run_full_pipeline(
 
     # ── Stage 2 — E-reader ─────────────────────────────────────────────
     config.skip_audio = skip_audio
+    config.skip_backchain = skip_backchain
     log.info("event=pipeline_stage stage=2 ereader")
     t0 = time.time()
     create_ereader(
@@ -435,6 +437,10 @@ if __name__ == "__main__":
         help="Skip dialogue sentence audio generation (stage 2 TTS)",
     )
     parser.add_argument(
+        "--skip-backchain", action="store_true",
+        help="Skip back-chain breakdown generation and forced alignment",
+    )
+    parser.add_argument(
         "--builtin-hosts", action="store_true",
         help="Use built-in Qwen3 voices (Serena for teacher, Eric for student) instead of voice clone",
     )
@@ -461,6 +467,7 @@ if __name__ == "__main__":
                 run_full_pipeline(
                     config, service_manager=service_manager,
                     skip_audio=args.skip_audio,
+                    skip_backchain=args.skip_backchain,
                     use_builtin_hosts=args.builtin_hosts,
                     use_omnivoice=args.omnivoice,
                     skip_flashcards=args.skip_flashcards,

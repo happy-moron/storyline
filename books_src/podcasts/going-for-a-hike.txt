@@ -1,0 +1,262 @@
+INTRO
+
+en=student
+Welcome to Learning Chinese. I am Ryan, and I am currently looking at my hiking boots, feeling a little bit nervous about our next big adventure.
+
+en=teacher
+That is because you are not prepared, Ryan! But today, we are talking about something that will help you plan your next trip: the grammar of identity and movement. 
+
+en=student
+Identity and movement. Sounds intense. Are we talking about how to introduce ourselves and where we are going?
+
+en=teacher
+Exactly. Today we are covering two essential structures. First, the verb 叫, which means "to be called" or "to be named." You use it with a person's name. For example, 我叫小王 or 你叫什么名字? It is the simplest way to introduce yourself.
+
+en=student
+Okay, that makes sense. And the second one is the verb 去, which means "to go."
+
+en=teacher
+Yes. You use 去 followed by a destination. For example, 我去学校 or 我们去北京. It is very direct. If you want to say you are going somewhere to do something, you just add the action at the end, like 我去吃饭, which means "I go to eat."
+
+en=student
+So, "Subject + 去 + Place + Action." Got it. Does "去" work if I'm already there? Like, "I am at the store"?
+
+en=teacher
+No, that is a very common mistake! For being at a location, you must use 在. 去 is only for movement toward a place. 
+
+en=student
+Good to know. I don't want to tell my guide I am "going to the hotel" when I am already sitting in the lobby.
+
+en=teacher
+Precisely. Now, before we hear our story, let's look at our six key vocabulary words for today. 
+
+en=teacher
+First, we have 爬山, (second tone and first tone), meaning to climb a mountain or to hike... 爬山。
+
+en=teacher
+Second, we have 准备, (third tone and fourth tone), meaning to prepare... 准备。
+
+en=teacher
+Third, we have 装备, (first tone and fourth tone), meaning equipment or gear... 装备。
+
+en=teacher
+Fourth, we have 森林, (first tone and second tone), meaning forest... 森林。
+
+en=teacher
+Fifth, we have 非常, (first tone and second tone), meaning extremely... 非常。
+
+en=teacher
+And sixth, we have 累, (fourth tone), meaning tired... 累。
+
+en=student
+Hiking, preparing, gear, forest, extremely, tired. I'm already feeling 累 just thinking about it.
+
+en=teacher
+That is the spirit! In today's episode, we are going to hear a group of three friends meeting up for a hike in the mountains. There is one professional guide who is very organized, one very enthusiastic beginner, and one friend who is... well, not quite feeling the adventure.
+
+DIALOGUE
+
+zh=1
+你好！我叫李华。我们要去黄山爬山。
+Hello! I am called Li Hua. We are going to Huangshan to hike.
+
+zh=2
+你好，李华。我叫小明。我们要去哪里？
+Hello, Li Hua. My name is Xiao Ming. Where are we going?
+
+zh=1
+我们去后山。你准备好了吗？
+We are going to the back mountain. Are you prepared?
+
+zh=2
+我准备好了！我带了非常多的装备。
+I am ready! I brought a lot of equipment.
+
+zh=3
+我不想去。我太累了。
+I don't want to go. I am too tired.
+
+zh=1
+别这样，小张。我们要去森林里看风景。
+Don't be like this, Xiao Zhang. We are going to the forest to see the scenery.
+
+zh=3
+我不准备。我不想去。我只想在家睡觉。
+I am not prepared. I don't want to go. I only want to sleep at home.
+
+zh=1
+别废话！快走！
+Stop talking nonsense! Let's go!
+
+BREAKDOWN
+
+en=teacher
+That was a very energetic—and slightly stressful—conversation! Let's break it down line by line. We start with Li Hua, the guide.
+
+zh=1
+你好！我叫李华。我们要去黄山爬山。
+Hello! I am called Li Hua. We are going to Huangshan to hike.
+
+en=student
+"我叫李华" is a classic. So "called Li Hua." It's very straightforward. But then he says "我们要去黄山爬山." 
+
+en=teacher
+Yes. "我们" is we, "要" means want or will, "去" is go, and "黄山" is the place, Huangshan. Then he adds the action "爬山" at the end. 
+
+en=student
+So, "Subject + 去 + Place + Action." Like "I go to the park to run"?
+
+en=teacher
+Exactly! 你去公园跑步. 
+
+en=student
+Then Xiao Ming responds.
+
+zh=2
+你好，李华。我叫小明。我们要去哪里？
+Hello, Li Hua. My name is Xiao Ming. Where are we going?
+
+en=teacher
+"我叫小明" follows our first grammar point perfectly. Then we hear the question: "我们要去哪里?"
+
+en=student
+"哪里" is where. "Where are we going?"
+
+en=teacher
+Right. Now, Li Hua responds with the location.
+
+zh=1
+我们去后山。你准备好了吗？
+We are going to the back mountain. Are you prepared?
+
+en=student
+"后山" means back mountain. But I'm curious about "准备好了吗." Is there a difference between "准备" and "准备好了"?
+
+en=teacher
+That is a great question, Ryan. "准备" is the verb "to prepare." But when we add "好了" after the verb, it indicates that the action is completed and has reached a satisfactory state. So "准备好了" means "prepared and ready." It’s the state of being ready.
+
+en=student
+Ah, so "准备" is the act of getting things ready, and "准备好了" means you've actually finished it and you're ready to go.
+
+en=teacher
+Precisely. Now, let's look at the enthusiastic Xiao Ming.
+
+zh=2
+我准备好了！我带了非常多的装备。
+I am ready! I brought a lot of equipment.
+
+en=student
+"非常多的装备." "非常" is extremely, "多" is many, and "装备" is equipment. He's very prepared!
+
+en=teacher
+He certainly is. But then, we meet our third character, the reluctant Zhang Wei.
+
+zh=3
+我不想去。我太累了。
+I don't want to go. I am too tired.
+
+en=student
+"不想" is "don't want to." It's the negative of "想." And "太累了" uses that "太...了" structure to mean "too tired."
+
+en=teacher
+Exactly. "太" paired with "了" is the standard way to say "too [adjective]." Now, Li Hua tries to motivate him.
+
+zh=1
+别这样，小张。我们要去森林里看风景。
+Don't be like this, Xiao Zhang. We are going to the forest to see the scenery.
+
+en=student
+"别这样" is a great phrase. "Don't be like this." And "森林里" means "inside the forest."
+
+en=teacher
+Yes, "里" indicates the inside of a place. 
+
+en=student
+Then Zhang Wei just gives up.
+
+zh=3
+我不准备。我不想去。我只想在家睡觉。
+I am not prepared. I don't want to go. I only want to sleep at home.
+
+en=teacher
+He is quite stubborn! "在家" means "at home." 
+
+en=student
+And finally, the guide has had enough.
+
+zh=1
+别废话！快走！
+Stop talking nonsense! Let's go!
+
+en=teacher
+"别废话" is a bit blunt, but in a real hiking trip, you might hear it! "Don't talk nonsense" or "Cut the crap." And "快走" means "walk fast" or "let's go quickly."
+
+en=student
+"快" means fast, and "走" means to walk or to leave. This was a very intense hike!
+
+OUTRO
+
+en=teacher
+Well, I think I'll skip this hike and stay home instead.
+
+en=student
+Don't be like Xiao Zhang! Today we learned how to use 叫 to introduce ourselves and how to use 去 to express going to a destination. 
+
+en=teacher
+That's right. We also looked at "准备好了" for being ready, and how to use "太...了" for emphasis. 
+
+en=student
+And we learned some essential hiking words like 爬山, 装备, and 森林. 
+
+en=teacher
+Make sure to practice your "去" sentences today. Where are you going? 我去...
+
+en=student
+我去睡觉! I'm going to sleep!
+
+en=teacher
+Not yet! See you in the next episode of Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，坚定且有权威感"
+pace = "中速，节奏稳健"
+volume = "中等偏大"
+clarity = "吐字清晰，非常有力量感"
+fluency = "流利，非常有领导力"
+timbre = "浑厚，略带磁性"
+emotion = "果断，有干劲，偶尔带点不耐烦"
+usecase = "一个经验丰富的登山向导"
+dialogue = "你好！我叫李华。我们要去黄山爬山。我们去后山。你准备好了吗？别这样，小张。我们要去森林里看风景。别废话！快走！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁出头"
+pitch = "高音域，充满活力"
+pace = "略快，语调起伏大"
+volume = "大"
+clarity = "清晰，语速较快"
+fluency = "流利，充满了兴奋感"
+timbre = "清脆，充满朝气"
+emotion = "兴奋，好奇，充满热情"
+usecase = "一个第一次尝试爬山的新手"
+dialogue = "你好，李华。我叫小明。我们要去哪里？我准备好了！我带了非常多的装备。"
+
+speaker = 3
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "低音域，沉闷"
+pace = "慢速，听起来没精打采"
+volume = "小"
+clarity = "略显含糊，听起来很疲惫"
+fluency = "略显迟疑，节奏缓慢"
+timbre = "沙哑，低沉"
+emotion = "疲惫，懒散，不想动弹"
+usecase = "一个只想在家睡觉的懒惰朋友"
+dialogue = "我不想去。我太累了。我不准备。我不想去。我只想在家睡觉。"

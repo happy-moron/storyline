@@ -1,0 +1,199 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are going to learn how to handle a very stressful, very messy situation: spilling food in a restaurant.
+
+en=student
+Oh no, that is my worst nightmare. I usually just want to run away and never come back!
+
+en=teacher
+Well, if you are in China, you will need to know how to apologize and, more importantly, how to settle the bill for the damages. Today, we are focusing on two important grammar points. First, we are looking at counting money. In spoken Chinese, we often use 块 for yuan and 毛 for one-tenth of a yuan. For example, you might say 二十块 for twenty yuan or 三毛 for thirty cents. 
+
+en=student
+Right, and I know that in formal settings, they use 元 and 角, but in a busy noodle shop, you are definitely going to hear 块 and 毛.
+
+en=teacher
+Exactly. Second, we are practicing the use of 几 in quantity questions. When you want to ask "how many" of something, especially when you expect the number to be small, you use 几 followed by a measure word and then the noun. For example, 几个人? How many people? Or, as we will see today, 几块钱? How many yuan?
+
+en=student
+So, 多少 is for general "how much," but 几 is more for "how many" when the amount is relatively small.
+
+en=teacher
+Spot on. Today's dialogue takes place in a small, crowded ramen shop. You are going to hear a customer who has accidentally knocked over a bowl of ramen, causing a mess on the table, and the shop owner who is understandably a bit frustrated. They will have to figure out the total cost of the meal and the cleaning fee.
+
+DIALOGUE
+
+zh=1
+哎呀！对不起！
+Oh no! I'm sorry!
+
+zh=2
+哎呀！你干什么？这碗面弄脏了！
+Oh my! What are you doing? This bowl of noodles is dirty!
+
+zh=1
+非常对不起！请问，这碗拉面多少钱？
+I am very sorry! Excuse me, how much is this bowl of ramen?
+
+zh=2
+这碗拉面二十五块钱。
+This bowl of ramen is twenty-five yuan.
+
+zh=1
+那我还要再付几块钱？
+How many more yuan do I need to pay?
+
+zh=2
+你弄脏了桌子，还要加三块五毛。
+You made the table dirty, so it is an additional three yuan and fifty cents.
+
+zh=1
+好的，给你三十块钱。
+Okay, here is thirty yuan.
+
+zh=2
+你还剩一块五毛，给你。
+You have one yuan and fifty cents left, here you go.
+
+zh=1
+谢谢，下次我会小心的！
+Thank you, I will be more careful next time!
+
+BREAKDOWN
+
+en=teacher
+Let's dive into the dialogue and break it down line by line. It starts with the customer, who is clearly in a bit of a panic.
+
+zh=1
+哎呀！对不起！
+Oh no! I'm sorry!
+
+en=student
+"哎呀" is such a versatile word. It's like "oh my" or "oops." And "对不起" is the standard "I'm sorry."
+
+en=teacher
+Correct. Then the shop owner responds, sounding quite annoyed.
+
+zh=2
+哎呀！你干什么？这碗面弄脏了！
+Oh my! What are you doing? This bowl of noodles is dirty!
+
+en=student
+"你干什么?" is a very direct way to say "What are you doing?" or even "What do you think you're doing?" And "弄脏" means to make something dirty.
+
+en=teacher
+Yes, the "弄" part means to do or to handle, and "脏" means dirty. Now the customer tries to resolve the situation.
+
+zh=1
+非常对不起！请问，这碗拉面多少钱？
+I am very sorry! Excuse me, how much is this bowl of ramen?
+
+en=student
+"请问" is a polite way to say "excuse me" when asking a question. And then we have "多少钱?". This is the standard way to ask "how much money?".
+
+en=teacher
+Exactly. Now, listen to how the owner states the price.
+
+zh=2
+这碗拉面二十五块钱。
+This bowl of ramen is twenty-five yuan.
+
+en=student
+"二十五块钱". She used 块 instead of the formal 元. So, twenty-five yuan.
+
+en=teacher
+Right. And then the customer asks about the extra cost using our second grammar point.
+
+zh=1
+那我还要再付几块钱？
+How many more yuan do I need to pay?
+
+en=student
+This is interesting. He asked "几块钱" instead of "多少钱". Is that right?
+
+en=teacher
+That's a great observation, Ryan. As we mentioned, we use 几 when we expect the answer to be a relatively small number. Since he's asking about a small extra amount, 几 is very natural here. He uses the structure 几 plus the measure word 块, followed by the noun 钱.
+
+en=student
+So, "How many yuan?" or "A few yuan?". Got it. And the owner adds the extra charge.
+
+zh=2
+你弄脏了桌子，还要加三块五毛。
+You made the table dirty, so it is an additional three yuan and fifty cents.
+
+en=student
+"三块五毛". That's three yuan and five mào. It's like saying "three-fifty" in English.
+
+en=teacher
+Precisely. In spoken Chinese, when you combine yuan and cents, you just say the number for 块 followed by the number for 毛. If there were no cents, you might just say 三块.
+
+en=student
+Okay, so the customer pays, and the owner gives some change back.
+
+zh=1
+好的，给你三十块钱。
+Okay, here is thirty yuan.
+
+zh=2
+你还剩一块五毛，给你。
+You have one yuan and fifty cents left, here you go.
+
+en=student
+"一块五毛" is one yuan and fifty cents. The math works out! Twenty-five plus three point five is twenty-eight point five, and thirty minus twenty-eight point five is one point five.
+
+en=teacher
+The math is correct! And finally, the customer wraps it up.
+
+zh=1
+谢谢，下次我会小心的！
+Thank you, I will be more careful next time!
+
+en=student
+"下次" means next time, and "小心" means to be careful. "我会小心的" means "I will be careful."
+
+en=teacher
+Exactly. It's a polite way to end a slightly awkward interaction.
+
+OUTRO
+
+en=student
+Wow, that was a bit more intense than a typical grocery store lesson!
+
+en=teacher
+Life can be messy, Ryan! But now you are prepared. Today we covered how to count money using 块 and 毛, and how to ask about quantities using 几.
+
+en=student
+So, remember: use 多少钱 for general "how much," and use 几 plus a measure word for smaller amounts like 几块钱. And if you spill anything, just apologize and have your 块 and 毛 ready!
+
+en=teacher
+Exactly. Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十岁出头"
+pitch = "中音域，因紧张而略微颤抖"
+pace = "略快，显得有些慌乱"
+volume = "中等，带有歉意"
+clarity = "清晰，但语速不稳"
+fluency = "由于紧张而略有停顿"
+timbre = "清脆，听起来很年轻"
+emotion = "惊慌失措，诚恳道歉"
+usecase = "一个不小心弄坏东西的年轻学生"
+dialogue = "哎呀！对不起！非常对不起！谢谢，下次我会小心的！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "五十五岁左右"
+pitch = "中音域，语气果断"
+pace = "中等偏快"
+volume = "响亮，有些大声"
+clarity = "非常清晰，吐字干脆"
+fluency = "流利，说话很有力量"
+timbre = "浑厚，略带生活气息"
+emotion = "直接，有些不耐烦但并不坏"
+usecase = "一个经营小店、说话直爽的店主"
+dialogue = "哎呀！你干什么？这碗面弄脏了！这碗拉面二十五块钱。你还剩一块五毛，给你。"

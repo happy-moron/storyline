@@ -1,0 +1,247 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are exploring a very versatile little word: 了.
+
+en=student
+Oh boy, 了. That one always gets me. Is it the "completed action" one or the "change of state" one?
+
+en=teacher
+It can be both, but today we are focusing on its role in signaling a change. We are looking at two specific ways to use it. First, using 不 or 没 plus a verb phrase followed by 了 to express "not anymore." For example, 我不喝咖啡了 means I don't drink coffee anymore. I used to, but now I have stopped.
+
+en=student
+So it's not just saying "I am not drinking coffee," but rather, "I'm done with coffee" or "I've stopped drinking coffee."
+
+en=teacher
+Exactly. Second, we are looking at how 了 signals a new situation. This is when something changes from one state to another. For example, 下雨了 means it has started to rain. It wasn't raining, but now it is. Or, 我有男朋友了 means I have a boyfriend now. It's a change in my relationship status.
+
+en=student
+Got it. So the first one is about stopping an action, and the second is about a new state of being. 
+
+en=teacher
+Perfect. Now, let's look at our key vocabulary for today. 
+
+en=teacher
+We have 紧张, (third tone, third tone), meaning to be nervous... 紧张.
+
+en=teacher
+We have 准备, (third tone, fourth tone), meaning to prepare... 准备.
+
+en=teacher
+We have 欢迎, (first tone, second tone), meaning to welcome... 欢迎.
+
+en=teacher
+We have 奇怪, (second tone, fourth tone), meaning strange or weird... 奇怪.
+
+en=teacher
+We have 明白, (second tone, second tone), meaning to understand or to realize... 明白.
+
+en=teacher
+And we have 介绍, (fourth tone, fourth tone), meaning to introduce... 介绍.
+
+en=student
+Those are all very useful. So, what's the scenario today?
+
+en=teacher
+Today's dialogue is a bit high-stakes! We are going to hear a young man named Chen introducing his girlfriend, Lin, to his parents for the first time. There is a bit of tension and a shift in the mood during dinner.
+
+DIALOGUE
+
+zh=1
+别紧张。我们要见我父母了。
+Don't be nervous. We are about to meet my parents.
+
+zh=2
+我真的很紧张。我准备了很多。
+I am really nervous. I prepared a lot.
+
+zh=3
+你们来了？欢迎，欢迎！
+You're here? Welcome, welcome!
+
+zh=4
+请坐。
+Please sit.
+
+zh=3
+小林，你怎么不说话了？
+Xiao Lin, why aren't you talking anymore?
+
+zh=2
+对不起，我有点紧张。
+I am sorry, I am a little nervous.
+
+zh=3
+嗯，这个味道很好吃！我明白你的心意了。
+Mmm, this tastes delicious! I understand your intentions now.
+
+zh=1
+妈，你现在不觉得她奇怪了吧？
+Mom, you don't think she is strange anymore, do you?
+
+zh=3
+是啊，她是个好姑娘。
+Yes, she is a good girl.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this tense dinner conversation, line by line. We start with Chen, trying to calm his girlfriend down.
+
+zh=1
+别紧张。我们要见我父母了。
+Don't be nervous. We are about to meet my parents.
+
+en=student
+"别紧张" is "don't be nervous." We just learned that. But what about "我们要见我父母了"? Is that the "completed action" 了?
+
+en=teacher
+Good question. In this context, it's the "new situation" 了. It implies that the state of "not meeting the parents" is about to change. The meeting is imminent. It's a shift in the current situation.
+
+en=student
+Okay, that makes sense. Then Lin responds.
+
+zh=2
+我真的很紧张。我准备了很多。
+I am really nervous. I prepared a lot.
+
+en=teacher
+She is definitely feeling the pressure. She uses "准备" (zhǔn bèi), which we noted means to prepare. 
+
+en=student
+Then the parents arrive. The mother sounds quite welcoming.
+
+zh=3
+你们来了？欢迎，欢迎！
+You're here? Welcome, welcome!
+
+en=teacher
+Yes, "欢迎" (huān yíng) is a very common way to welcome someone. And notice "你们来了" (nǐ men lái le). The "了" here indicates a change of state: they weren't here, and now they are.
+
+en=student
+Then things get a bit awkward. The mother notices the silence.
+
+zh=3
+小林，你怎么不说话了？
+Xiao Lin, why aren't you talking anymore?
+
+en=student
+Wait, here is one of our grammar points! "你怎么不说话了" uses the "not anymore" structure.
+
+en=teacher
+Exactly. "不说话" means "not to talk." But by adding "了" at the end, it becomes "not talking anymore." It implies that she was talking earlier, but has now stopped.
+
+en=student
+Right. And Lin apologizes.
+
+zh=2
+对不起，我有点紧张。
+I am sorry, I am a little nervous.
+
+en=teacher
+Then, the mood changes because of the food!
+
+zh=3
+嗯，这个味道很好吃！我明白你的心意了。
+Mmm, this tastes delicious! I understand your intentions now.
+
+en=student
+"我明白你的心意了." This is another "new situation" 了, isn't it?
+
+en=teacher
+Yes! Before, the mother might have been skeptical or unsure about Lin. But after tasting the food, her understanding has changed. She "has realized" or "now understands" the girl's good intentions. It's a realization that changes her perspective.
+
+en=student
+And then Chen tries to lighten the mood with a bit of humor.
+
+zh=1
+妈，你现在不觉得她奇怪了吧？
+Mom, you don't think she is strange anymore, do you?
+
+en=teacher
+"不...了" again! "不觉得...了" means "don't think... anymore." He's asking if her "strangeness" has disappeared in her mother's eyes.
+
+en=student
+And it worked! The mother gives her approval.
+
+zh=3
+是啊，她是个好姑娘。
+Yes, she is a good girl.
+
+en=teacher
+"姑娘" (gū niang) is a lovely way to say girl or young woman. A successful meeting!
+
+OUTRO
+
+en=student
+Phew! That was a stressful dinner, but I think they made a great impression.
+
+en=teacher
+I think so too. Today we learned how 了 can signal a change in situation, like "you're here now" or "I understand now." 
+
+en=student
+And we also learned how to use 不 or 没 with a verb and 了 to say you aren't doing something anymore, like "not talking anymore."
+
+en=teacher
+Precisely. Don't forget to practice these in your own daily life. Instead of just saying "I'm not eating," try saying "我不吃了" to mean "I'm done eating/I won't eat anymore."
+
+en=student
+Thanks, Ellen! See you next time on Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十岁出头"
+pitch = "中音域，带有轻微的焦虑感"
+pace = "中速，但在紧张时略微加快"
+volume = "中等"
+clarity = "清晰，语气诚恳"
+fluency = "流畅，但在试图安慰女友时略有停顿" 
+timbre = "温和，清脆"
+emotion = "关切，略带忐忑" 
+usecase = "一个想在长辈面前表现好、但内心也很紧张的年轻男生"
+dialogue = "别紧张。我们要见我父母了。妈，你现在不觉得她奇怪了吧？"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十岁出头"
+pitch = "高音域，略显柔弱"
+pace = "较慢，因为紧张而显得犹豫"
+volume = "较小"
+clarity = "清晰，但声音轻柔"
+fluency = "不甚流畅，带有轻微的呼吸感" 
+timbre = "甜美，略带羞涩"
+emotion = "紧张，拘谨，礼貌" 
+usecase = "一位非常重视初次见家长机会、表现得小心翼翼的年轻女孩"
+dialogue = "我真的很紧张。我准备了很多。对不起，我有点紧张。"
+
+speaker = 3
+lang = "zh"
+gender = "女性"
+age = "五十岁左右"
+pitch = "中音域，成熟稳重"
+pace = "中速，语速有力"
+volume = "大"
+clarity = "非常清晰，字正腔圆"
+fluency = "流利，语气果断" 
+timbre = "浑厚，有威严感"
+emotion = "起初严肃，随后变得热情开朗" 
+usecase = "一位性格直爽、有点威严但内心温暖的传统母亲"
+dialogue = "你们来了？欢迎，欢迎！你怎么不说话了？这个味道很好吃！我明白你的心意了。是啊，她是个好姑娘。"
+
+speaker = 4
+lang = "zh"
+gender = "男性"
+age = "五十岁左右"
+pitch = "低音域，非常稳定"
+pace = "缓慢，沉稳"
+volume = "中等"
+clarity = "极其清晰，发音浑厚"
+fluency = "非常流畅" 
+timbre = "低沉，有磁性"
+emotion = "淡定，从容" 
+usecase = "一位观察力敏锐、性格稳重不怒自威的父亲"
+dialogue = "请坐。"

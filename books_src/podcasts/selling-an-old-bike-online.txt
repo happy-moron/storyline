@@ -1,0 +1,213 @@
+INTRO
+
+en=student
+Welcome to Learning Chinese. Today, we are getting into the practicalities of online marketplaces. You know, the stuff people actually do on their phones every day.
+
+en=teacher
+Exactly, Ryan. Today we are talking about selling or buying something second-hand online. We are looking at how to express what you want to do and what you are able to do.
+
+en=student
+Right, so we are tackling two very important verbs: 想 and 会. 
+
+en=teacher
+Precisely. First, we have 想, which means "would like to" or "to want." It is used to express your desire or intention. For example, 我想买 (I want to buy) or 我想去 (I want to go).
+
+en=student
+And then there is 会, which is a bit more specific than just "can" in English.
+
+en=teacher
+Yes! 会 is used when talking about an acquired skill—something you have learned how to do. If you say 我会骑自行车, you are saying "I know how to ride a bicycle." It's a skill you learned.
+
+en=student
+That makes sense. So if I say "I can swim," I use 会 because I had to learn that. But if I'm talking about a desire, I use 想.
+
+en=teacher
+You've got it. Now, before we listen to the dialogue, let's go through our six key vocabulary words.
+
+en=teacher
+We have 二手, (second tone, third tone), meaning second-hand... 二手.
+en=teacher
+We have 自行车, (fourth tone, second tone, first tone), meaning bicycle... 自行车.
+en=teacher
+We have 便宜, (second tone, neutral tone), meaning cheap... 便宜.
+en=teacher
+We have 买, (third tone), meaning to buy... 买.
+en=teacher
+We have 卖, (fourth tone), meaning to sell... 卖.
+en=teacher
+We have 状态, (fourth tone, fourth tone), meaning condition or state... 状态.
+
+en=student
+Got it. So, what's the story for today's episode?
+
+en=teacher
+In this episode, you are going to hear a conversation on a second-hand trading app. A potential buyer is messaging a seller to ask about an old bicycle they saw listed online. They are discussing the condition, the price, and meeting up.
+
+DIALOGUE
+
+zh=1
+您好，我想买这辆二手自行车。
+Hello, I want to buy this second-hand bicycle.
+
+zh=2
+您好！这辆车状态非常好。
+Hello! This bike's condition is very good.
+
+zh=1
+我想问一下，这辆车还会骑吗？
+I want to ask, can this bike still be ridden?
+
+zh=2
+当然可以，我以前每天都会骑。
+Of course, I used to ride it every day.
+
+zh=1
+那价格可以便宜一点吗？
+Then can the price be a little cheaper?
+
+zh=2
+我觉得已经很便宜了。
+I think it is already very cheap.
+
+zh=1
+我想今天下午去看一下，可以吗？
+I'd like to go see it this afternoon, is that okay?
+
+zh=2
+可以，下午三点见。
+Okay, see you at three o'clock.
+
+BREAKDOWN
+
+en=teacher
+Let's break down that conversation. It starts with the buyer, speaker one.
+
+zh=1
+您好，我想买这辆二手自行车。
+Hello, I want to buy this second-hand bicycle.
+
+en=student
+"我想买" is the perfect example of our first grammar point. "想" is the desire, and "买" is the action. It's very direct. And then "二手自行车". "二手" is second-hand, and "自行车" is the bicycle.
+
+en=teacher
+Correct. Now, the seller responds.
+
+zh=2
+您好！这辆车状态非常好。
+Hello! This bike's condition is very good.
+
+en=student
+"状态非常好" means "the condition is very good." "状态" is that key word for condition or state.
+
+en=teacher
+Exactly. Now, the buyer asks a very important question about the ability of the bike.
+
+zh=1
+我想问一下，这辆车还会骑吗？
+I want to ask, can this bike still be ridden?
+
+en=student
+Wait, Ellen, there's the "会" we talked about. "还会骑吗?" The buyer is asking if the bike "can" still be ridden. Is it about the bike's ability or the person?
+
+en=teacher
+That's a great question, Ryan. In Chinese, when we talk about whether a machine or an object is still functional, we use 会 to imply it still has the capacity to perform that function. It's asking "is it still capable of being ridden?"
+
+en=student
+I see. And then the seller answers.
+
+zh=2
+当然可以，我以前每天都会骑。
+Of course, I used to ride it every day.
+
+en=teacher
+Notice the "会" in the seller's response. "我以前每天都会骑." Here, it's used to describe a past habit—something he "would" or "used to" do because he knew how to do it.
+
+en=student
+So "会" can mean "can" as a skill, or "would" as a habitual action. That's a useful distinction. Now, let's look at the haggling.
+
+zh=1
+那价格可以便宜一点吗？
+Then can the price be a little cheaper?
+
+en=student
+"便宜一点" is "a little cheaper." "一点" means a little bit.
+
+en=teacher
+And the seller's reaction.
+
+zh=2
+我觉得已经很便宜了。
+I think it is already very cheap.
+
+en=student
+"觉得" is to feel or to think. He's expressing his opinion.
+
+en=teacher
+Finally, the buyer wants to meet up.
+
+zh=1
+我想今天下午去看一下，可以吗？
+I'd like to go see it this afternoon, is that okay?
+
+en=student
+"我想...看一下." "I'd like to... take a look." Using "想" to express a plan.
+
+en=teacher
+And the seller agrees.
+
+zh=2
+可以，下午三点见。
+Okay, see you at three o'clock.
+
+en=student
+Simple and direct. One quick question, Ellen. What is the difference between saying "我想买" and "我要买"?
+
+en=teacher
+Good catch. "想" is "would like to," which is a bit more polite and expresses a desire. "要" is stronger, closer to "want" or "am going to." If you are standing at the counter with your wallet out, you might say "我要买这个!" But when you are messaging someone online, "我想买" is much more natural and polite.
+
+en=student
+That makes total sense. You don't want to sound too demanding when you're just starting a negotiation!
+
+OUTRO
+
+en=teacher
+That's a very good point, Ryan. Today we covered how to express desire using 想 and how to express ability or habit using 会.
+
+en=student
+We also learned some essential words for the second-hand market, like 二手, 自行车, 状态, and 便宜.
+
+en=teacher
+Remember, use 会 for skills you've learned, and 想 for things you'd like to do. Practice these when you're browsing online!
+
+en=student
+Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十岁出头"
+pitch = "中音域，语气礼貌且略带犹豫"
+pace = "中速，表达清晰"
+volume = "中等"
+clarity = "清晰"
+fluency = "流畅，但在询问价格时略有停顿"
+timbre = "温和，听起来很有礼貌"
+emotion = "好奇，谨慎"
+usecase = "一个正在网上买二手货的年轻学生"
+dialogue = "您好，我想买这辆二手自行车。我想问一下，这辆车还会骑吗？那价格可以便宜一点吗？我想今天下午去看一下，可以吗？"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "四十岁左右"
+pitch = "低音域，非常稳定"
+pace = "略慢，节奏从容"
+volume = "洪亮"
+clarity = "吐字有力，非常清晰"
+fluency = "流畅，语气自信"
+timbre = "浑厚，略带沧桑感"
+emotion = "自信，直率"
+usecase = "一个卖东西比较干脆的中年卖家"
+dialogue = "您好！这辆车状态非常好。当然可以，我以前每天都会骑。我觉得已经很便宜了。可以，下午三点见。"

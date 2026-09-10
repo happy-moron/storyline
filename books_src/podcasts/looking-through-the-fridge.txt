@@ -1,0 +1,217 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into the kitchen to talk about something we all do every single day: looking through the fridge to see what we can eat.
+
+en=student
+The most important part of the day! But, I always struggle when I want to ask where my leftovers are or when my roommate tells me there is no more milk.
+
+en=teacher
+That is exactly what we are covering today. We are learning how to express existence in two very important ways. First, using 在 plus a place to describe where a specific object is located. For example, 苹果在桌子上, the apple is on the table.
+
+en=student
+Okay, so "zai" tells us the location of something we already know about.
+
+en=teacher
+Exactly. Second, we use the pattern: Place plus 有 to say that something exists in a place. For example, 冰箱里有牛奶, there is milk in the fridge. 
+
+en=student
+So, if I want to know where my specific ham is, I ask "Where is the ham?" using 在. But if I want to know what is available to eat in general, I ask "Is there ham?" using 有.
+
+en=teacher
+Precisely! You've got it. Now, let's look at our six key vocabulary words for this episode. 
+
+en=teacher
+First, 冰箱, (first tone, first tone), meaning fridge... 冰箱.
+
+en=teacher
+Second, 牛奶, (second tone, third tone), meaning milk... 牛奶.
+
+en=teacher
+Third, 鸡蛋, (first tone, fourth tone), meaning egg... 鸡蛋.
+
+en=teacher
+Fourth, 火腿, (third tone, third tone), meaning ham... 火腿.
+
+en=teacher
+Fifth, 蔬菜, (first tone, fourth tone), meaning vegetables... 蔬菜.
+
+en=teacher
+And sixth, 啤酒, (third tone, third tone), meaning beer... 啤酒.
+
+en=student
+Got it. 冰箱, 牛奶, 鸡蛋, 火腿, 蔬菜, and 啤酒. I'm already hungry.
+
+en=teacher
+Me too! In today's dialogue, you are going to hear two roommates, Wei and Li Na. Wei is absolutely starving and is searching the fridge for something to eat, while Li Na is trying to be calm and organized. It gets a little bit tense when Wei can't find his favorite snack.
+
+DIALOGUE
+
+zh=1
+饿死了！冰箱里有什么好吃的吗？
+I'm starving! Is there anything delicious in the fridge?
+zh=2
+别叫了。冰箱里有一些牛奶和一些鸡蛋。
+Stop yelling. There is some milk and some eggs in the fridge.
+zh=1
+火腿呢？火腿在哪里？
+Where is the ham? Where is the ham?
+zh=2
+火腿不在桌子上，在第二层。
+The ham isn't on the table; it's on the second shelf.
+zh=1
+我看了一下，冰箱里没有火腿。
+I looked, and there is no ham in the fridge.
+zh=2
+可能是你没看清楚。冰箱里还有一些蔬菜。
+Maybe you didn't look clearly. There are also some vegetables in the fridge.
+zh=1
+那啤酒呢？冰箱里有啤酒吗？
+What about the beer? Is there beer in the fridge?
+zh=2
+有，啤酒在冰箱门旁边。
+Yes, the beer is next to the fridge door.
+
+BREAKDOWN
+
+en=teacher
+Let's break down that conversation between Wei and Li Na. We'll start with Wei's very dramatic opening.
+
+zh=1
+饿死了！冰箱里有什么好吃的吗？
+I'm starving! Is there anything delicious in the fridge?
+
+en=student
+"饿死了" is such a great expression. It literally means "starved to death," but we use it just to say "I'm starving." And then he asks, "冰箱里有什么好吃的吗？" Here, he is using the "Place plus 有" pattern. 
+
+en=teacher
+Right. "冰箱里" is the place—inside the fridge. "有" means there is or there are. He is asking what exists in that space.
+
+zh=2
+别叫了。冰箱里有一些牛奶和一些鸡蛋。
+Stop yelling. There is some milk and some eggs in the fridge.
+
+en=teacher
+Li Na is very calm. She says, "冰箱里有一些牛奶和一些鸡蛋。" Again, we see the "Place plus 有" structure. 
+
+en=student
+Wait, she said "一些" (yī xiē). Is that "some"?
+
+en=teacher
+Yes, "一些" means some or a few. It's used when you're not specifying the exact number.
+
+zh=1
+火腿呢？火腿在哪里？
+Where is the ham? Where is the ham?
+
+en=student
+Now Wei is looking for a specific item: "火腿" (ham). He asks "在哪里？" Which is the "Where is..." question we talked about.
+
+en=teacher
+Exactly. He's not asking what is in the fridge generally; he's looking for a specific object's location.
+
+zh=2
+火腿不在桌子上，在第二层。
+The ham isn't on the table; it's on the second shelf.
+
+en=teacher
+Li Na explains, "火腿不在桌子上，在第二层。" Notice the two different uses of negation and location here. 
+
+en=student
+She uses "不在" (bú zài) to say "is not at." So, if you want to say something is *not* in a location, you use "不" plus "在." 
+
+en=teacher
+Exactly. "不在桌子上" means "is not on the table." Then she says it "在第二层" (is on the second shelf). "第二" means second.
+
+zh=1
+我看了一下，冰箱里没有火腿。
+I looked, and there is no ham in the fridge.
+
+en=student
+Whoa, he sounds disappointed. He says "冰箱里没有火腿." He used "没有" (méi yǒu) here instead of "不在." Why is that?
+
+en=teacher
+That's a brilliant question, Ryan. This is the most important distinction. He is saying that the ham does not *exist* in the fridge. When we negate the "existence" grammar (Place + 有), we use "没有" (méi yǒu). We don't say "冰箱里不有." We always use "没有" to say "there is not."
+
+en=student
+Ah, I see! So, if I want to say "the cat is not in the house," I'd say "猫不在家里" because I'm talking about location. But if I want to say "there are no cats in the house," I'd say "家里没有猫."
+
+en=teacher
+Spot on! You're a natural. Let's continue.
+
+zh=2
+可能是你没看清楚。冰箱里还有一些蔬菜。
+Maybe you didn't look clearly. There are also some vegetables in the fridge.
+
+en=student
+Li Na is still being very helpful. She says "冰箱里还有一些蔬菜." The "还有" (hái yǒu) means "also have" or "there are also."
+
+en=teacher
+Yes. "还" means still or also.
+
+zh=1
+那啤酒呢？冰箱里有啤酒吗？
+What about the beer? Is there beer in the fridge?
+
+en=student
+He's really focused on that beer! "冰箱里有啤酒吗？" He's back to the existence pattern.
+
+zh=2
+有，啤酒在冰箱门旁边。
+Yes, the beer is next to the fridge door.
+
+en=teacher
+And finally, "啤酒在冰箱门旁边。" Here, "旁边" (páng biān) means "beside" or "next to." So the beer's location is "next to the fridge door."
+
+en=student
+This was so helpful. So, to recap: use "在" for "where is it?" and use "有" for "what is in there?"
+
+en=teacher
+You nailed it.
+
+OUTRO
+
+en=teacher
+That brings us to the end of today's episode. We've looked at how to navigate the fridge using two essential grammar structures.
+
+en=student
+Remember, "Place + 有" is for saying what exists in a place, like "冰箱里有牛奶," and "Subject + 在 + Place" is for saying where a specific thing is, like "牛奶在冰箱里."
+
+en=teacher
+Don't forget that for negation, "not at a location" is "不在," but "there is not something" is "没有."
+
+en=student
+Thanks for joining us on Learning Chinese. Go check your own fridge and practice!
+
+en=teacher
+See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，情绪起伏大"
+pace = "中等，因为饥饿而显得有些急促"
+volume = "中等，有时会提高音量表示激动"
+clarity = "清晰"
+fluency = "流利，但在表达不满时节奏略显急躁"
+timbre = "清脆，富有活力"
+emotion = "饥肠辘辘，有些急躁，略带幽默感"
+usecase = "一个饥肠辘辘、性格有点急躁的年轻人"
+dialogue = "饿死了！火腿呢？我到底在哪里可以找到好吃的？"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中音域，稳定"
+pace = "缓慢，节奏平稳"
+volume = "中等，语气温和"
+clarity = "非常清晰，吐字圆润"
+fluency = "非常流利，说话很有条理"
+timbre = "柔和，悦耳"
+emotion = "冷静，耐心，带着一点点无奈"
+usecase = "一个冷静、有条理的室友"
+dialogue = "别担心，一切都在这里。冰箱里有牛奶，也有一些蔬菜。"

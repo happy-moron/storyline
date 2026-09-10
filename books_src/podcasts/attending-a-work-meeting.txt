@@ -1,0 +1,243 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are stepping out of the classroom and into the high-pressure world of the modern office.
+
+en=student
+I am ready. I have my coffee, my notebook, and a little bit of anxiety because office meetings can be quite intense.
+
+en=teacher
+That is a perfect mindset for today's theme. We are going to learn how to navigate a stressful business meeting. Specifically, we are looking at two very important things. First, the superlative structure using 最. You use 最 before an adjective to say "the most" or "-est." For example, 最好 is the best, or 最快 is the fastest.
+
+en=student
+So, if I want to say "the most important meeting," I just say 最重要的会议?
+
+en=teacher
+Exactly. It sits right before the adjective to turn it into the extreme. Second, we are learning about the filler word 那个. 
+
+en=student
+Now, I know 那个 means "that one," but I have heard native speakers say it over and over again when they are thinking.
+
+en=teacher
+You are absolutely right. In casual or even professional speech, when someone is searching for a word or hesitating, they will say 那个... 那个... It is very similar to how we use "um" or "uh" in English. It fills the silence.
+
+en=student
+So, it is not always pointing at an object; sometimes it is just a sign that the speaker's brain is loading?
+
+en=teacher
+That is a perfect way to put it! Now, in today's episode, you are going to hear a conversation during a very tense marketing meeting. A manager is trying to keep things under control, but the team is facing some major setbacks with their latest campaign. It is going to be quite dramatic.
+
+DIALOGUE
+
+zh=1
+这是我们今年最重要的会议，大家必须认真对待。
+This is our most important meeting this year; everyone must take it seriously.
+
+zh=2
+那个...那个广告的预算...好像不太够。
+That... that advertisement budget... seems not quite enough.
+
+zh=3
+不够？这简直是我们做的最失败的一次推广！
+Insufficient? This is simply our most failed promotion!
+
+zh=2
+但是...那个客户的要求...太高了。
+But... that client's requirements... are too high.
+
+zh=1
+大家冷静点。现在的困难确实是最大的。
+Everyone, calm down. The current difficulties are indeed the greatest.
+
+zh=3
+我最担心的还是执行力的问题。
+What I am most worried about is the problem of execution.
+
+zh=2
+那个...那个方案...我们明天能定下来吗？
+That... that plan... can we finalize it tomorrow?
+
+zh=3
+明天太晚了，我们要立刻行动！
+Tomorrow is too late, we need to act immediately!
+
+zh=1
+没关系，我们今天一定要找到最好的解决办法。
+It is okay, we must find the best solution today.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that intense dialogue and break it down line by line. We start with the manager, Speaker One.
+
+zh=1
+这是我们今年最重要的会议，大家必须认真对待。
+This is our most important meeting this year; everyone must take it seriously.
+
+en=student
+"最重要的" (zuì zhòng yào de). "重要" means important. So "最" makes it "the most important." I noticed there is a "的" at the end there. Is that always necessary?
+
+en=teacher
+When "最" plus an adjective is describing a noun, like "会议" (meeting), we almost always use "的" to connect them. It functions like "the most important meeting."
+
+en=student
+Got it. And "认真对待" means "to take seriously."
+
+en=teacher
+Correct. Now, let's look at Speaker Two, who sounds a little nervous.
+
+zh=2
+那个...那个广告的预算...好像不太够。
+That... that advertisement budget... seems not quite enough.
+
+en=student
+There it is! "那个...那个..." (nèige... nèige...). He is clearly hesitating. He sounds like he is afraid to deliver bad news.
+
+en=teacher
+Exactly. He is using "那个" as a filler word while he searches for the right way to say "the budget is not enough." Also, note "预算" (yù suàn), which means budget. And "不太够" means "not quite enough."
+
+en=student
+"不太" is a great way to soften a sentence, right? Instead of saying "not enough," saying "not quite enough" sounds a bit more polite.
+
+en=teacher
+Very observant. Now, Speaker Three enters, and she is definitely not a fan of the current situation.
+
+zh=3
+不够？这简直是我们做的最失败的一次推广！
+Insufficient? This is simply our most failed promotion!
+
+en=student
+"最失败" (zuì shī bài). "失败" is to fail or failure, so "most failed" or "the biggest failure." And she used "简直" (jiǎn zhí), which means "simply" or "at all." She is very passionate!
+
+en=teacher
+She is definitely the most direct person in the room. Let's look at the next line from Speaker Two.
+
+zh=2
+但是...那个客户的要求...太高了。
+But... that client's requirements... are too high.
+
+en=student
+"要求" (yāo qiú) means requirements or demands. And "太高了" (tài gāo le) means too high. It seems this client is very difficult.
+
+en=teacher
+Indeed. Let's go back to the manager, who is trying to act as the peacemaker.
+
+zh=1
+大家冷静点。现在的困难确实是最大的。
+Everyone, calm down. The current difficulties are indeed the greatest.
+
+en=student
+"冷静点" (lěng jìng diǎn) means "calm down a bit." And she says "最大的困难" (zuì dà de kùn nán) — the greatest difficulty. 
+
+en=teacher
+Yes. "困难" (kùn nán) is difficulty. She also uses "确实" (què shí), which means "indeed" or "really." It adds emphasis to her acknowledgement of the problem.
+
+en=student
+Then Speaker Three comes back with a very specific concern.
+
+zh=3
+我最担心的还是执行力的问题。
+What I am most worried about is the problem of execution.
+
+en=teacher
+"最担心的" (zuì dān xīn de). "担心" is to worry. So "the thing I worry about most."
+
+en=student
+"执行力" (zhí xíng lì) is an interesting word. It looks like "execution" and "power/ability."
+
+en=teacher
+Precisely. In a business context, "执行力" is a very common term referring to how well a team can actually carry out a plan.
+
+en=student
+Then Speaker Two asks about a deadline.
+
+zh=2
+那个...那个方案...我们明天能定下来吗？
+That... that plan... can we finalize it tomorrow?
+
+en=teacher
+"方案" (fāng àn) is a plan or a proposal. And "定下来" (dìng xià lái) is a very useful phrasal verb meaning to finalize, to settle, or to decide something once and for all.
+
+en=student
+Speaker Three doesn't want to wait!
+
+zh=3
+明天太晚了，我们要立刻行动！
+Tomorrow is too late, we need to act immediately!
+
+en=teacher
+"立刻" (lì kè) means immediately. No hesitation there!
+
+en=student
+And finally, the manager tries to end on a positive note.
+
+zh=1
+没关系，我们今天一定要找到最好的解决办法。
+It is okay, we must find the best solution today.
+
+en=student
+"解决办法" (jiě jué bàn fǎ). "解决" is to solve, and "办法" is a way or method. So "solution." And "最好的" is our superlative again — the best.
+
+en=teacher
+You've got it. This conversation shows how "最" can express the extremes of a situation, and how "那个" can help you navigate those awkward silences when the pressure is on.
+
+OUTRO
+
+en=student
+Whew. That was intense. I think I need a meeting to discuss how stressed I am after listening to that!
+
+en=teacher
+Haha! But you did a great job. Today, we covered the superlative "最" to describe the extremes of things, like "the most important" or "the best."
+
+en=student
+And we learned that "那个" isn't always just "that one"; it's a super useful filler word when you're thinking of what to say next.
+
+en=teacher
+Exactly. Try to incorporate "那个" into your own speech when you are practicing, but don't overdo it! Thanks for listening to Learning Chinese.
+
+en=student
+See you in the next episode!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "四十岁左右"
+pitch = "中音域，沉稳且有威严"
+pace = "慢速，语气坚定"
+volume = "适中，具有领导力"
+clarity = "清晰，咬字有力"
+fluency = "流利，语调起伏自然"
+timbre = "圆润，略带磁性"
+emotion = "冷静，专业，试图掌控局面"
+usecase = "一位在压力之下试图维持秩序的公司经理"
+dialogue = "这是我们今年最重要的会议，大家必须认真对待。大家冷静点。现在的困难确实是最大的。没关系，我们今天一定要找到最好的解决办法。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十多岁"
+pitch = "中音域，略显犹豫"
+pace = "较慢，伴有停顿"
+volume = "偏低"
+clarity = "略有含糊"
+fluency = "不流利，有明显的犹豫和重复"
+timbre = "柔和，略显紧张"
+emotion = "焦虑，不自信，小心翼翼"
+usecase = "一个在老板面前感到压力很大的年轻职员"
+dialogue = "那个...那个广告的预算...好像不太够。但是...那个客户的要求...太高了。那个...那个方案...我们明天能定下来吗？"
+
+speaker = 3
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "高音域，富有穿透力"
+pace = "较快，节奏紧凑"
+volume = "洪亮"
+clarity = "非常清晰，字字铿锵"
+fluency = "流利，语气急促"
+timbre = "清脆，带有攻击性"
+emotion = "急躁，直率，充满压力"
+usecase = "一位对工作进度感到不满且性格直接的高级员工"
+dialogue = "不够？这简直是我们做的最失败的一次推广！我最担心的还是执行力的问题。明天太晚了，我们要立刻行动！"

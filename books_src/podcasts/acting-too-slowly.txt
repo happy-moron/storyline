@@ -1,0 +1,172 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are diving into a high-pressure situation that might find you in a professional kitchen or a frantic office. We are talking about being too slow and how to describe things that simply did not happen.
+
+en=student
+Oh man, I hate being late. It always makes me nervous.
+
+en=teacher
+Exactly. And to express that things did not happen in the past, we use a very important structure. In Chinese, when you want to say you "did not" do something, you use 没有 before the verb. For example, 我没有吃饭, which means I did not eat. 
+
+en=student
+Wait, I also know 不. How do I know when to use 没有 instead of 不?
+
+en=teacher
+That is a fantastic question. Generally, 不 is used for habits, the present, or the future. For example, 我不吃肉 means I do not eat meat; it is a habit. But if you want to say you didn't eat a specific meal just now, you must use 没有. So, 我没有吃午饭 means I did not eat lunch.
+
+en=student
+Okay, so 没有 is for the past action that didn't occur. What about the basic sentence structure we are learning today?
+
+en=teacher
+We are looking at the standard Subject, Verb, Object order. It is very similar to English. Subject, then the action, then the thing being acted upon. Like 我喝咖啡, I drink coffee. 
+
+en=student
+Got it. Subject, Verb, Object. So in a kitchen, it might be "The chef cooks the fish."
+
+en=teacher
+Exactly! In today's dialogue, we are going to hear a very tense moment in a busy restaurant. A stressed-out Head Chef is confronting a very slow apprentice, Xiao Ming, about some missing preparations. Listen for the use of 没有 to express things that were not completed.
+
+DIALOGUE
+
+zh=1
+小明！你准备好鱼了吗？
+Xiao Ming! Have you prepared the fish?
+
+zh=2
+厨师，对不起。我还没有准备好。
+Chef, I am sorry. I have not prepared it yet.
+
+zh=1
+你的动作太慢了！酱汁呢？你煮酱汁了吗？
+You are too slow! Where is the sauce? Did you cook the sauce?
+
+zh=2
+我没有煮酱汁。我刚才在切菜。
+I did not cook the sauce. I was cutting vegetables just now.
+
+zh=1
+我们没有时间了！客人已经在等了！
+We have no time left! The customers are already waiting!
+
+zh=2
+我真的没有时间吃午饭，我太慢了。
+I really did not have time to eat lunch; I am too slow.
+
+BREAKDOWN
+
+en=teacher
+Let's go through that intense kitchen drama line by line. First, the Chef is shouting.
+
+zh=1
+小明！你准备好鱼了吗？
+Xiao Ming! Have you prepared the fish?
+
+en=student
+"准备好" is an interesting one. "准备" means to prepare, but adding "好" after the verb indicates the action is completed successfully or done well. And the "了吗" at the end turns it into a question about a completed action.
+
+en=teacher
+Spot on. Next, Xiao Ming responds, sounding very apologetic.
+
+zh=2
+厨师，对不起。我还没有准备好。
+Chef, I am sorry. I have not prepared it yet.
+
+en=student
+He says "还没有". "还" means "still" and "没有" means "not". So "还没有" means "not yet." He's not saying he *never* will, just that it hasn't happened yet.
+
+en=teacher
+Right. Then the Chef gets even more frustrated.
+
+zh=1
+你的动作太慢了！酱汁呢？你煮酱汁了吗？
+You are too slow! Where is the sauce? Did you cook the sauce?
+
+en=student
+"动作" means movement or action. "太慢了" means too slow. Then he asks, "你煮酱汁了吗？" "煮" means to cook or boil, and "酱汁" is sauce. This follows our Subject, Verb, Object pattern perfectly: You (Subject) + cook (Verb) + sauce (Object).
+
+en=teacher
+Let's look at Xiao Ming's excuse.
+
+zh=2
+我没有煮酱汁。我刚才在切菜。
+I did not cook the sauce. I was cutting vegetables just now.
+
+en=student
+Here is our main grammar point! "我没有煮酱汁" means "I did not cook the sauce." He uses 没有 before the verb "煮" to negate the past action. But then he says "我刚才在切菜". 
+
+en=teacher
+Yes! "刚才" means "just now." And "在" is a very useful word here. When you put "在" before a verb, it indicates that the action was in progress, like the English "-ing" form. So, "我在切菜" means "I am cutting vegetables," and "我刚才在切菜" means "I was cutting vegetables just now."
+
+en=student
+That makes sense. It explains what he was doing instead of the sauce. Now the Chef sounds like he is about to lose it.
+
+zh=1
+我们没有时间了！客人已经在等了！
+We have no time left! The customers are already waiting!
+
+en=student
+"没有时间" means "no time" or "don't have time." This is a different use of 没有. Instead of negating a verb, he is negating a noun, essentially saying "time does not exist for us right now." And "客人" means customer.
+
+en=teacher
+And finally, Xiao Ming's tragic realization.
+
+zh=2
+我真的没有时间吃午饭，我太慢了。
+I really did not have time to eat lunch; I am too slow.
+
+en=student
+He uses "没有时间" again, but this time it is followed by a verb, "吃午饭", which means to eat lunch. So "没有时间吃午饭" means "did not have time to eat lunch." It's a classic case of Subject, Verb, Object: I (Subject) + have no time (Verb phrase) + to eat lunch (Object/Complement).
+
+en=teacher
+It's also quite a sad ending for our intern! He's working so hard but he's just too slow.
+
+OUTRO
+
+en=student
+Wow, that was intense. I feel like I need to start moving faster just listening to that!
+
+en=teacher
+Haha! Well, hopefully, our grammar helped. To recap, today we learned how to use 没有 before a verb to negate an action in the past, like "I didn't cook."
+
+en=student
+And we saw the basic Subject-Verb-Object order, and how "还没有" means "not yet," and how "在" can indicate an action was in progress.
+
+en=teacher
+Exactly. And don't forget, "没有" can also mean "to not have" something, like "没有时间," meaning "no time."
+
+en=student
+Thanks, Ellen! I think I'm ready to tackle some Chinese... hopefully without the angry chef.
+
+en=teacher
+Good luck! Thanks for listening to Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "四十岁左右"
+pitch = "中高音域，因愤怒而升高"
+pace = "略快，节奏紧凑且急促"
+volume = "大，具有很强的威慑力"
+clarity = "非常清晰，咬字极重"
+fluency = "流畅，但带有情绪化的停顿" 
+timbre = "粗犷，浑厚"
+emotion = "愤怒，焦虑，严厉" 
+usecase = "一个压力巨大、脾气火爆的餐厅主厨"
+dialogue = "小明！你准备好鱼了吗？你的动作太慢了！我们没有时间了！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁左右"
+pitch = "中音域，因紧张而颤抖"
+pace = "中等偏慢，伴有犹豫"
+volume = "中等偏小，显得底气不足"
+clarity = "清晰，但由于紧张略显局促"
+fluency = "不连贯，带有明显的犹豫和道歉感" 
+timbre = "清脆，略显稚嫩"
+emotion = "紧张，愧疚，疲惫" 
+usecase = "一个手忙脚乱、过度劳累的餐厅学徒"
+dialogue = "对不起，厨师。我还没有准备好。我刚才在切菜。我真的没有时间吃午饭。"

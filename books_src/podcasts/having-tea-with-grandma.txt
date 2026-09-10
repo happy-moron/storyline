@@ -1,0 +1,174 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are going to explore a very common and essential structure that helps you add detail to your stories. We are looking at the "shi... de" construction, or 是...的.
+
+en=student
+Right, I have heard this before. But isn't it just a way to say "to be"?
+
+en=teacher
+That is a common misconception, Ryan! While "shi" does mean "to be," when we use the "shi... de" pattern, we are not just defining something. We are using it to emphasize a specific detail of an event that we already know happened. We use it to highlight the time, the place, the manner, or the person involved in a past action. For example, if I want to say "I came yesterday," I wouldn't just say "我昨天来." I would say "我是昨天来的" to emphasize that it was *yesterday* that I arrived.
+
+en=student
+Oh, so the action of "coming" is already a fact, and I'm just pointing the finger at "yesterday"?
+
+en=teacher
+Exactly! You can also do it with manner. Instead of just saying "I came by bus," you say "我是坐公交车来的" to emphasize that the bus was my mode of transport.
+
+en=student
+That makes sense. Now, what about the second topic? The difference between "bu" and "mei"? That one always trips me up.
+
+en=teacher
+It is tricky! The rule of thumb is that "bu" is used for habits, current states, or future intentions. For example, "我不吃肉" means "I don't eat meat" as a general rule or habit. However, "mei" is used to negate actions that happened in the past, or to say you "don't have" something. So, "我没吃肉" means "I didn't eat meat" during a specific past event.
+
+en=student
+So "bu" is for "is not/does not" in a general sense, and "mei" is for "did not" or "have not"?
+
+en=teacher
+Precisely. Today's lesson is centered around a warm, domestic scene: having tea with Grandma. You will hear a grandson visiting his grandmother. We will see these grammar points in action as they talk about his journey, his eating habits, and this delicious tea.
+
+en=student
+I'm hungry already! Let's hear the dialogue.
+
+DIALOGUE
+
+zh=1
+你终于来了！你是怎么来的？
+You finally arrived! How did you come?
+zh=2
+我是坐地铁来的，很快的。
+I came by subway, it was very fast.
+zh=1
+你路上没吃东西吗？
+Did you not eat anything on the way?
+zh=2
+我没吃。我想留点肚子吃奶奶做的饭。
+I didn't eat. I wanted to save some room for the food Grandma makes.
+zh=1
+你这孩子，还是不听我的，总是说要减肥，结果却不吃早饭。
+You child, you still don't listen to me, always saying you want to lose weight, but in the end, you don't eat breakfast.
+zh=2
+哈哈，这次真的不减肥了。奶奶，这茶真好喝，是你自己泡的吗？
+Haha, this time I'm really not dieting. Grandma, this tea is delicious, did you brew it yourself?
+zh=1
+是我今天早上专门泡的。
+Yes, I brewed it this morning specifically.
+
+BREAKDOWN
+
+en=teacher
+Let's break this down line by line. We start with Grandma greeting her grandson.
+
+zh=1
+你终于来了！你是怎么来的？
+You finally arrived! How did you come?
+
+en=student
+"你终于来了" is a great phrase. "终于" means finally. But then she asks, "你是怎么来的？". I noticed the "shi... de" structure here.
+
+en=teacher
+Yes. She is not asking *if* he arrived, she knows he is standing right there! She is emphasizing the manner of his arrival. "怎么" means "how."
+
+zh=2
+我是坐地铁来的，很快的。
+I came by subway, it was very fast.
+
+en=student
+And he answers using the same pattern: "我是坐地铁来的." He is emphasizing that the subway was his method of travel. "地铁" is subway or metro.
+
+en=teacher
+That's right. Now, Grandma asks a question about the past.
+
+zh=1
+你路上没吃东西吗？
+Did you not eat anything on the way?
+
+en=student
+Here we see "mei" instead of "bu." Since she is asking if he ate during his trip (a past event), she uses "没" to negate the action of eating. "东西" is thing or stuff. "路上" means on the road or on the way.
+
+zh=2
+我没吃。我想留点肚子吃奶奶做的饭。
+I didn't eat. I wanted to save some room for the food Grandma makes.
+
+en=student
+He uses "我没吃" to negate the past action. He also uses "肚子" which is stomach. "留点肚子" is a very natural way to say "save some room/space in one's stomach."
+
+en=teacher
+Exactly. Then Grandma gets a little bit lecture-y, which is very typical of grandmas!
+
+zh=1
+你这孩子，还是不听我的，总是说要减肥，结果却不吃早饭。
+You child, you still don't listen to me, always saying you want to lose weight, but in the end, you don't eat breakfast.
+
+en=student
+This line is a goldmine for our "bu" vs "mei" lesson. She says "不听我的." This is a habit or a character trait—he is being disobedient. So she uses "不."
+
+en=teacher
+Correct. And then she says "不吃早饭." He has a habit of skipping breakfast, so it's "bu." "减肥" means to lose weight.
+
+zh=2
+哈哈，这次真的不减肥了。奶奶，这茶真好喝，是你自己泡的吗？
+Haha, this time I'm really not dieting. Grandma, this tea is delicious, did you brew it yourself?
+
+en=student
+He says "不减肥了" to show his current intention—he's not going to do it this time. Then he asks, "是你自己泡的吗？". Another "shi... de" structure!
+
+en=teacher
+Yes! He is asking about the agent of the action. He knows the tea is there, he just wants to know if *she* was the one who brewed it. "泡" is the verb for brewing tea or steeping.
+
+zh=1
+是我今天早上专门泡的。
+Yes, I brewed it this morning specifically.
+
+en=student
+And there is the final example. "是我今天早上专门泡的." The emphasis here is on the time, "今天早上" (this morning).
+
+en=teacher
+And she adds "专门" (zhuān mén), which means "specially" or "specifically," which fits the emphasis of the "shi... de" pattern perfectly.
+
+OUTRO
+
+en=teacher
+What a lovely conversation. We've covered a lot today!
+
+en=student
+We did. We learned the "shi... de" structure to emphasize time, manner, or person in a completed action.
+
+en=teacher
+And we clarified the difference between "bu" for habits and "not" for current states, and "mei" for past actions and "not having" something.
+
+en=student
+It's all about the context of the action. Thanks for the lesson, Ellen.
+
+en=teacher
+You're welcome, Ryan! Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "七十岁左右"
+pitch = "中音域，略微沙哑"
+pace = "慢速，带有长辈的从容"
+volume = "中等"
+clarity = "清晰"
+fluency = "流畅" 
+timbre = "温暖，略带沧桑感"
+emotion = "慈爱，偶尔有一点点唠叨" 
+usecase = "一个慈祥但有点爱唠叨的奶奶"
+dialogue = "你终于来了！快坐下喝茶。你最近有没有好好吃饭？别总是不听我的话。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁出头"
+pitch = "中音域，充满活力"
+pace = "中速，语调轻快"
+volume = "中等"
+clarity = "非常清晰"
+fluency = "流畅" 
+timbre = "清脆，阳光"
+emotion = "热情，亲切" 
+usecase = "一个孝顺且开朗的年轻人"
+dialogue = "奶奶，我来了！这茶真的太好喝了！我刚才在地铁上看到很多人，真热闹。"

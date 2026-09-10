@@ -1,0 +1,209 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am Ellen, and today we are tackling a heavy, but very important topic: how to comfort a grieving friend.
+
+en=student
+Yeah, that's a tough one. When someone is going through a hard time, I often find myself stumbling over how to express myself correctly in Chinese.
+
+en=teacher
+It can be difficult to find the right words when emotions are high. Today, we are going to learn two grammar points that will help you sound more natural and empathetic. First, we will look at how to express close possession without using the particle "de". In Chinese, when you are talking about very close relationships—like family or even a very close pet—you can often drop the "de" and just use a Pronoun followed by a Noun. For example, instead of saying "我的妈妈" (my mother), you can simply say "我妈妈".
+
+en=student
+Oh, so it's like saying "my mom" instead of "my mother" in English, but it implies a much closer level of intimacy?
+
+en=teacher
+Exactly. It sounds more natural and warmer. Second, we are looking at using "le" to express the completion of an action or a change of state. When you add "了" after a verb, it often indicates that the action has been completed. For example, "我吃了" means "I ate." But it can also indicate a change of state, like "他来了" meaning "he has arrived" or "他来了" meaning "he has come."
+
+en=student
+I see. So "le" can be about the action being finished, or it can be about things changing. Like, if I say "我变了", it means "I have changed."
+
+en=teacher
+Precisely. Now, before we get into our dialogue, let's go over our six key vocabulary words. 
+
+en=teacher
+We have 难过, (second tone and fourth tone), meaning to feel sad... 难过.
+
+en=teacher
+We have 离开, (second tone and fourth tone), meaning to leave or to depart... 离开.
+
+en=teacher
+We have 陪, (second tone), meaning to accompany or to stay with... 陪.
+
+en=teacher
+We have 东西, (first tone and neutral tone), meaning thing or stuff... 东西.
+
+en=teacher
+We have 哭, (first tone), meaning to cry... 哭.
+
+en=teacher
+We have 知道, (first tone and fourth tone), meaning to know... 知道.
+
+en=student
+Got it. So, what is the dialogue about?
+
+en=teacher
+In this scene, you are going to hear a conversation between two friends, Lili and Xiaoming. Xiaoming is going through a very difficult time because his pet has passed away, and Lili comes over to offer her support and comfort him.
+
+DIALOGUE
+
+zh=1
+小明，我来了。
+Lili, I'm here.
+
+zh=2
+莉莉，我很难过。
+Lili, I am very sad.
+
+zh=1
+我知道你猫走了。
+I know your cat passed away.
+
+zh=2
+是的，它昨天走了。
+Yes, it passed away yesterday.
+
+zh=1
+别哭了。我陪你。
+Don't cry. I will stay with you.
+
+zh=2
+我还没吃饭。
+I haven't eaten yet.
+
+zh=1
+我带了点东西。你吃了没？
+I brought some things. Have you eaten?
+
+zh=2
+我吃了点东西。谢谢你。
+I ate a little bit. Thank you.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. It starts with Lili arriving at Xiaoming's place.
+
+zh=1
+小明，我来了。
+Lili, I'm here.
+
+en=student
+"我来了" is a perfect example of the "le" we just talked about. It means she has arrived.
+
+en=teacher
+Correct. The "le" here indicates the completion of her arrival. Then Xiaoming responds.
+
+zh=2
+莉莉，我很难过。
+Lili, I am very sad.
+
+en=student
+"难过" is one of our key words. He sounds really down.
+
+en=teacher
+He is. Then Lili shows her empathy.
+
+zh=1
+我知道你猫走了。
+I know your cat passed away.
+
+en=student
+Wait, I noticed something there. She said "你猫" (nǐ māo) instead of "你的猫" (nǐ de māo). Is that the "close possession" rule we learned?
+
+en=teacher
+Spot on! Because a pet is a very close companion, she can drop the "de" to make it sound more intimate and natural. And "走了" (zǒu le) is a gentle way to say someone or something has passed away or left. The "le" here indicates the state of the cat has changed from being alive to being gone.
+
+zh=2
+是的，它昨天走了。
+Yes, it passed away yesterday.
+
+en=student
+And he uses "走了" too. So, "昨天" (zuó tiān) is yesterday, and "走了" is passed away.
+
+en=teacher
+Exactly. Now, Lili tries to comfort him.
+
+zh=1
+别哭了。我陪你。
+Don't cry. I will stay with you.
+
+en=student
+"别哭了" (bié kū le)... the "le" is at the end there. Is that a completion of crying?
+
+en=teacher
+That's a great question, Ryan. This is the "change of state" usage of "le". It's like saying, "Stop crying" or "Don't cry anymore." It implies the state of the person crying should change to a state of not crying. And "陪" (péi) is our key word for accompany.
+
+zh=2
+我还没吃饭。
+I haven't eaten yet.
+
+en=student
+"还没" (hái méi) means "not yet." He's showing that he hasn't eaten because he's too sad.
+
+en=teacher
+It's very common in these situations. Lili then tries to take care of him.
+
+zh=1
+我带了点东西。你吃了没？
+I brought some things. Have you eaten?
+
+en=student
+"东西" is things. And "你吃了没？" is a very common way to ask "Have you eaten yet?"
+
+en=teacher
+Yes, using "le" in "吃了" to indicate the action of eating. Finally, Xiaoming's response.
+
+zh=2
+我吃了点东西。谢谢你。
+I ate a little bit. Thank you.
+
+en=student
+He uses "吃了" (chī le) to show he actually did eat a little bit. And "谢谢你" is the standard "thank you."
+
+en=teacher
+You've got it. The conversation is short, but it uses these grammar points to convey a very heavy emotional moment.
+
+OUTRO
+
+en=student
+That was a bit emotional, but it was really helpful to see how those grammar points work in a real, sensitive situation.
+
+en=teacher
+I'm glad you found it useful. Remember, language isn't just about grammar; it's about how we connect with others, especially during the hard times.
+
+en=student
+Today we learned how to use "le" to show an action is complete or that a state has changed, and how to drop "de" when talking about very close things or people.
+
+en=teacher
+Exactly. Practice these, and you'll sound much more natural. Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，温和且带有同情心"
+pace = "缓慢，节奏平稳"
+volume = "中等，语气温柔"
+clarity = "清晰，富有情感"
+fluency = "流利"
+timbre = "柔和，甜美"
+emotion = "温柔，充满关怀"
+usecase = "一个温柔体贴的朋友"
+dialogue = "小明，我来了。我知道你猫走了。别哭了，我陪你。我带了点东西，你吃了没？"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁左右"
+pitch = "中低音域，因悲伤而略显沉重"
+pace = "缓慢，略显迟缓"
+volume = "较小，有些虚弱"
+clarity = "清晰，但语速不均"
+fluency = "有些犹豫，带有叹息"
+timbre = "沙哑，低沉"
+emotion = "悲伤，消沉"
+usecase = "一个刚刚失去宠物的伤心年轻人"
+dialogue = "莉莉，我很难过。是的，它昨天走了。我还没吃饭。我吃了点东西。谢谢你。"
