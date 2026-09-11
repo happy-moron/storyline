@@ -1,0 +1,194 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are looking at one of the most versatile and essential words in the Chinese language: 要, yào.
+
+en=student
+Oh, I know this one! It means "to want," right? Like, "I want a coffee."
+
+en=teacher
+That is correct, but it is much more than that. "要" is a powerhouse. It has three primary uses that you will encounter constantly. First, as a verb meaning "to want" followed by a noun. For example, 我要咖啡 (I want coffee). 
+
+en=student
+Okay, so "要 + Noun." Simple enough.
+
+en=teacher
+Second, it can be an auxiliary verb meaning "to want to" or "to need to" followed by a verb. For example, 我要睡觉 (I want to sleep) or 我要学习 (I need to study). 
+
+en=student
+Got it. So, "要 + Verb." Now, what about that third one? Is it the one that sounds like something is about to happen?
+
+en=teacher
+Exactly! That is the "imminent future" construction. When you use the structure "要...了" (yào... le), it means "to be about to" or "to be going to." For example, 要下雨了 (It is about to rain). This "了" at the end is the key indicator that the action is imminent.
+
+en=student
+That makes sense. So, "要" can be a simple desire, a necessity, or a countdown to an upcoming event.
+
+en=teacher
+Precisely. Today, we are going to apply all three in a very relatable scenario: settling into a new job at the office. 
+
+en=student
+That sounds stressful! Who are we listening to?
+
+en=teacher
+You will hear a conversation in a busy office. There is Xiao Wang, a new employee who is feeling the pressure of his first week. He talks to Xiao Li, a more experienced and relaxed co-worker. Finally, the manager, Ms. Zhang, enters the scene to remind them of their responsibilities. 
+
+en=student
+I can already feel the office tension. Let's hear it.
+
+DIALOGUE
+
+zh=1
+我觉得头有点疼。我要喝点咖啡。
+I have a bit of a headache. I want to drink some coffee.
+
+zh=2
+你还没休息吗？我们要去吃午饭了。
+You haven't taken a break yet? We are about to go eat lunch.
+
+zh=1
+我还想准备下午的报告。
+I also want to prepare this afternoon's report.
+
+zh=3
+小王！你要准备这份新文件。
+Xiao Wang! You need to prepare this new document.
+
+zh=3
+我们下午两点要开会。
+We are going to have a meeting at two o'clock this afternoon.
+
+zh=1
+好的，张经理。我也要准备一下。
+Okay, Manager Zhang. I also need to prepare a bit.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. We start with Xiao Wang, who sounds a bit overwhelmed.
+
+zh=1
+我觉得头有点疼。我要喝点咖啡。
+I have a bit of a headache. I want to drink some coffee.
+
+en=student
+"我觉得头有点疼" (Wǒ jué de tóu yǒu diǎn téng). "觉得" (jué de) means to feel. "头疼" (tóu téng) is headache. It's a very common way to express physical discomfort.
+
+en=teacher
+And then, "我要喝点咖啡" (Wǒ yào hē diǎn kā fēi). Here we see our first grammar point: "要 + Verb + Noun." "要" is "want," "喝" is "to drink," and "咖啡" is "coffee." Note that "点" (diǎn) means "a little bit" or "some."
+
+en=student
+So he "wants to drink some coffee." Simple. Then Xiao Li responds.
+
+zh=2
+你还没休息吗？我们要去吃午饭了。
+You haven't taken a break yet? We are about to go eat lunch.
+
+en=teacher
+"你还没休息吗？" (Nǐ hái méi xiū xi de ma?). "还没" (hái méi) means "not yet." "休息" (xiū xi) means to rest.
+
+en=student
+And then the big one: "我们要去吃午饭了" (Wǒ men yào qù chī wǔ fàn le). "我们要...了" is that "about to" structure we talked about, right?
+
+en=teacher
+Exactly. "我们要去吃午饭了" means "We are about to go eat lunch." The "了" at the end signals that the action of going to lunch is happening very soon.
+
+en=student
+Xiao Wang replies, "我还想准备下午的报告" (Wǒ hái xiǎng zhǔn bèi xià wǔ de bào gào). He used "想" (xiǎng) there instead of "要." Is that a mistake?
+
+en=teacher
+Great observation! "想" (xiǎng) expresses a desire or a wish—"I would like to." "要" (yào) is stronger, expressing an intention or a necessity. In this context, he is expressing his desire or his plan to work. "准备" (zhǔn bèi) is "to prepare," and "报告" (bào gào) is "report."
+
+en=student
+Then the boss, Ms. Zhang, walks in and the energy shifts immediately.
+
+zh=3
+小王！你要准备这份新文件。
+Xiao Wang! You need to prepare this new document.
+
+en=teacher
+"你要准备这份新文件" (Nǐ yào zhǔn bèi zhè fèn xīn wén jiàn). Here, "要" is used to express a requirement or a command. "准备" (zhǔn bèi) is "to prepare," "文件" (wén jiàn) is "document," and "份" (fèn) is the classifier for documents.
+
+en=student
+She isn't giving him much time to breathe!
+
+zh=3
+我们下午两点要开会。
+We are going to have a meeting at two o'clock this afternoon.
+
+en=teacher
+"我们下午两点要开会" (Wǒ men xià wǔ liǎng diǎn yào kāi huì). "开会" (kāi huì) means "to hold a meeting" or "to have a meeting." Here, "要" indicates the scheduled intent or the upcoming event.
+
+en=student
+And finally, Xiao Wang gives up on his coffee break.
+
+zh=1
+好的，张经理。我也要准备一下。
+Okay, Manager Zhang. I also need to prepare a bit.
+
+en=teacher
+"我也要准备一下" (Wǒ yě yào zhǔn bèi yī xià). "也" (yě) means "also." "一下" (yī xià) is a common structure used after a verb to indicate that the action is brief or to soften the tone. "I also need to prepare a bit/for a moment."
+
+en=student
+So "要" is definitely a word you need to master if you want to survive an office environment!
+
+OUTRO
+
+en=teacher
+That was a busy day at the office. To recap, we looked at three ways to use "要".
+
+en=student
+One: "要 + Noun" for "to want" something, like "我要咖啡."
+
+en=teacher
+Two: "要 + Verb" for "to want to" or "to need to" do something, like "我要准备报告."
+
+en=student
+And three: "要...了" for something that is about to happen, like "我们要开会了."
+
+en=teacher
+Perfect. Practice these in your own daily life, and you'll be speaking like a pro in no time. Thanks for listening to Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，因压力而略显低沉"
+pace = "中速，语气中带着疲惫"
+volume = "中等，略显虚弱"
+clarity = "清晰"
+fluency = "中等，由于疲惫，语速偶尔停顿"
+timbre = "柔和，略带沙哑"
+emotion = "焦虑，疲惫"
+usecase = "一个刚入职不久，工作量巨大的职场新人"
+dialogue = "我觉得头有点疼。我要喝点咖啡。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，语调平缓"
+pace = "中速，语气轻松"
+volume = "中等"
+clarity = "清晰"
+fluency = "流畅"
+timbre = "清脆，圆润"
+emotion = "友好，从容"
+usecase = "一个在公司工作多年，生活心态平和的资深同事"
+dialogue = "你还没休息吗？我们要去吃午饭了。"
+
+speaker = 3
+lang = "zh"
+gender = "女性"
+age = "四十岁左右"
+pitch = "中高音域，语调果断"
+pace = "稍快，节奏干脆"
+volume = "较大，富有权威感"
+clarity = "非常清晰，字字有力"
+fluency = "非常流畅"
+timbre = "浑厚，有力"
+emotion = "干练，严厉"
+usecase = "一个追求效率，作风强硬的职场女经理"
+dialogue = "小王！你要准备这份新文件。我们下午两点要开会。"

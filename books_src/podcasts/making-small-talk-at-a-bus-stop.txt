@@ -1,0 +1,178 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are tackling two very useful grammar points that will make your Chinese sound much more natural and polite.
+
+en=student
+I'm ready, James. I feel like I use verbs too bluntly sometimes. It sounds a bit like a command.
+
+en=teacher
+That is exactly what we are going to fix! Our first grammar point is the use of 一下 after a verb. We use it to indicate that an action is brief, or that you are trying something out. It softens the tone of the sentence, making it sound less like an order and more like a casual suggestion or a quick action. For example, 看一下, which means to take a quick look, or 试一下, which means to give something a try.
+
+en=student
+Oh, so instead of saying "Look!" which sounds like a command, I can say 看一下 to mean "Take a look" or "Have a quick look"?
+
+en=teacher
+Exactly. It takes the edge off. Now, our second grammar point is using 给 to indicate the recipient of an action. The structure is Subject, then the verb, then 给, then the recipient, and finally the object. For example, 我给你送一本书, which means I give a book to you. Or, 给我发个信息, which means send me a message.
+
+en=student
+So the "give" part is built into the verb structure to show who is receiving the action or the object. Got it.
+
+en=teacher
+Precisely. Today's theme is making small talk at a bus stop. You're going to hear a conversation between two strangers. One is a woman who is frantically searching for her bus card, and the other is a helpful stranger who steps in to assist her. It's a perfect way to see these grammar points in a high-pressure, real-life social interaction.
+
+en=student
+A bus stop drama! I'm listening.
+
+DIALOGUE
+
+zh=1
+糟糕，我的公交卡在哪儿？我得在包里找一下。
+Oh no, where is my bus card? I need to look in my bag for a moment.
+zh=2
+你在找东西吗？需要我帮你一下吗？
+Are you looking for something? Do you need me to help you a bit?
+zh=1
+太好了，谢谢！请给我看一下你的手机，我想看下下一班车是什么时候。
+That's great, thank you! Please let me see your phone; I want to see when the next bus is.
+zh=2
+没问题。等一下，我帮你查一下时间。
+No problem. Wait a second, I'll check the time for you.
+zh=1
+哎呀，我好像把卡落在家里了。
+Oh no, I think I left my card at home.
+zh=2
+没关系，我帮你打个电话给你的家人吧。
+It's okay, let me make a phone call to your family for you.
+zh=1
+那太感谢了！请把我的号码发给我。
+That is so kind of you! Please send my number to me.
+zh=2
+没问题，我会把号码发给你的。
+No problem, I will send the number to you.
+
+BREAKDOWN
+
+en=teacher
+Let's break down that conversation. It starts with the woman, speaker one, who sounds quite stressed.
+
+zh=1
+糟糕，我的公交卡在哪儿？我得在包里找一下。
+Oh no, where is my bus card? I need to look in my bag for a moment.
+
+en=student
+"糟糕" (zāogāo) is a great word for "oh no" or "what a mess." And then she says "找一下" (zhǎo yīxià). That's our first grammar point!
+
+en=teacher
+Correct. "找" means to look for, and adding "一下" makes it "look for a moment" or "have a quick look." It sounds much more natural than just saying "I must look for it." Then speaker two, a very kind man, responds.
+
+zh=2
+你在找东西吗？需要我帮你一下吗？
+Are you looking for something? Do you need me to help you a bit?
+
+en=student
+"帮你一下" (bāng nǐ yīxià). Again, there is our "一下"! He's not saying "I will help you" in a heavy, serious way; he's offering a quick hand.
+
+en=teacher
+Exactly. It's a very polite way to offer assistance. Now, the woman's response uses the second grammar point.
+
+zh=1
+太好了，谢谢！请给我看一下你的手机，我想看下下一班车是什么时候。
+That's great, thank you! Please let me see your phone; I want to see when the next bus is.
+
+en=student
+"给我看一下" (gěi wǒ kàn yīxià). This is a combination of both rules! He's using "给" to say "to me," and "一下" to say "a quick look." 
+
+en=teacher
+You nailed it, Ryan. "给我看一下你的手机" literally means "Give to me look at your phone." It's a very common way to ask to see something. Then, the man helps her check.
+
+zh=2
+没问题。等一下，我帮你查一下时间。
+No problem. Wait a second, I'll check the time for you.
+
+en=student
+"等一下" (děng yīxià) is "wait a second." He's also using "帮一下" again. And "查" (chá) means to check or look up.
+
+en=teacher
+Then the situation takes a bit of a turn. She realizes her mistake.
+
+zh=1
+哎呀，我好像把卡落在家里了。
+Oh no, I think I left my card at home.
+
+en=student
+"好像" (hǎoxiàng) means "it seems" or "it looks like." And "落在家里" means left at home. This is why people get so stressed at bus stops!
+
+en=teacher
+And the man is being extremely helpful here. Listen to how he uses "给" with a verb.
+
+zh=2
+没关系，我帮你打个电话给你的家人吧。
+It's okay, let me make a phone call to your family for you.
+
+en=student
+"打个电话给..." (dǎ gè diànhuà gěi...). So, "make a call to [someone]." The structure is verb, then 给, then the recipient.
+
+en=teacher
+Yes! And the final part of the dialogue. She asks him to send her number, and he agrees.
+
+zh=1
+那太感谢了！请把我的号码发给我。
+That is so kind of you! Please send my number to me.
+
+zh=2
+没问题，我会把号码发给你的。
+No problem, I will send the number to you.
+
+en=student
+"发给我" (fā gěi wǒ) — send to me. And "发给你的" (fā gěi nǐ de) — send to you. It's so consistent.
+
+en=teacher
+It is. Note that in the last sentence, he adds "的" (de) at the end. This is often used in spoken Chinese to add emphasis or to indicate a state of certainty. "I will definitely send it to you."
+
+OUTRO
+
+en=teacher
+That was a stressful but very helpful little scene. We covered a lot of ground today.
+
+en=student
+We did! We learned how to use 一下 to make actions sound brief or more casual, like 看一下 or 帮一下. And we learned how to use 给 to indicate who is receiving an action, like 给我看 or 发给我.
+
+en=teacher
+And don't forget how to use them together! "给我看一下" is a perfect sentence to have in your back pocket.
+
+en=student
+Thanks, James. I feel much more confident about making small talk—or at least, how to ask for help when things go wrong at the bus stop.
+
+en=teacher
+Exactly. Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "二十多岁"
+pitch = "中音域，因焦虑而略带颤抖"
+pace = "中速，略快"
+volume = "中等"
+clarity = "清晰"
+fluency = "略有犹豫，因为很着急"
+timbre = "清脆，略带急促"
+emotion = "焦虑，有些不知所措"
+usecase = "一个在公交站急匆匆找东西的上班族"
+dialogue = "糟糕，我的公交卡在哪儿？我得在包里找一下。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，温和稳定"
+pace = "慢速"
+volume = "适中，声音柔和"
+clarity = "清晰，语调亲切"
+fluency = "流利，节奏缓慢"
+timbre = "圆润，给人以信任感"
+emotion = "友善，乐于助人"
+usecase = "一个热心的路人"
+dialogue = "你在找东西吗？需要我帮你一下吗？"

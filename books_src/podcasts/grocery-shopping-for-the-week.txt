@@ -1,0 +1,196 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are diving into the mundane but essential world of grocery shopping. 
+
+en=student
+Grocery shopping? That sounds like a very practical topic. I definitely need to practice my shopping skills if I'm going to live in a Chinese-speaking city.
+
+en=teacher
+It really is. Today, we are focusing on two very useful grammar points. First, we have the structure "dao" plus a location. While "qu" means "to go," using "dao" emphasizes the destination or the arrival. For example, "wo dao chao shi" means "I am going to/arriving at the supermarket."
+
+en=student
+Okay, so "qu" is the action of going, and "dao" is more about the destination itself. Does that mean I can use them interchangeably sometimes?
+
+en=teacher
+In many casual situations, yes, but "dao" is much more specific about where you are heading. Second, we are looking at "hao" used as a prefix to a verb to mean "easy to [verb]." For example, "hao chi" means "delicious"—literally "easy to eat"—and "hao zhao" means "easy to find."
+
+en=student
+That's interesting! So instead of saying "it is easy to find the milk," I just say "hao zhao niu nai"?
+
+en=teacher
+Exactly. It's a very efficient way to speak. We'll see this in our dialogue today. The scene is a supermarket. We have a wife, Mei, who is feeling quite exhausted and wants a quick meal, and her husband, Li Ming, who is trying to help but is a bit overwhelmed by her shopping list. We'll also hear from a helpful store clerk, Xiao Wang.
+
+en=student
+I think I know the feeling of being overwhelmed by a grocery list. Let's hear what they say.
+
+DIALOGUE
+
+zh=1
+我们待会儿要到超市买东西。
+We are going to the supermarket to buy some things in a little bit.
+
+zh=2
+又是超市。你买的东西好找吗？
+The supermarket again. Are the things you buy easy to find?
+
+zh=1
+很好找，就在三号走道。
+They are very easy to find, they are right in aisle number three.
+
+zh=2
+我们要买些好做的菜。我今天太累了。
+We need to buy some easy-to-cook dishes. I am too tired today.
+
+zh=2
+这个西红柿好做吗？
+Is this tomato easy to cook?
+
+zh=3
+非常好做，配点肉就可以了。
+It's very easy to cook, just pair it with some meat and it's fine.
+
+zh=1
+那就买这个。你快点到收银台排队吧。
+Then let's buy this. You quickly go to the checkout counter to queue.
+
+zh=2
+知道了，马上就来。
+Got it, I'll be there in a moment.
+
+BREAKDOWN
+
+en=teacher
+Alright, let's break down that dialogue line by line. Let's start with the wife, Mei.
+
+zh=1
+我们待会儿要到超市买东西。
+We are going to the supermarket to buy some things in a little bit.
+
+en=student
+"Wait a moment" or "in a little bit" is "dai hui er." And "dao chao shi" is our grammar point—going to the supermarket.
+
+en=teacher
+Right. "Chao shi" is supermarket. Then we have "mai dong xi," which is to buy things.
+
+zh=2
+又是超市。你买的东西好找吗？
+The supermarket again. Are the things you buy easy to find?
+
+en=student
+"You're kidding me, the supermarket again!" That's a very natural way to react. And "ni mai de dong xi" means "the things you buy." But then we see the second grammar point: "hao zhao ma?"
+
+en=teacher
+Yes. "Hao" means easy, and "zhao" means to find. So "hao zhao" is "easy to find." He's asking if the items on her list are easy to locate in the store.
+
+zh=1
+很好找，就在三号走道。
+They are very easy to find, they are right in aisle number three.
+
+en=student
+"Hen hao zhao" is "very easy to find." And "san hao zou dao"... "san hao" is number three, and "zou dao" is aisle or walkway.
+
+en=teacher
+Correct. Now, Mei mentions she is tired and wants something easy.
+
+zh=2
+我们要买些好做的菜。我今天太累了。
+We need to buy some easy-to-cook dishes. I am too tired today.
+
+en=student
+"Hao zuo" is another great example. "Hao" is easy, and "zuo" is to do or to make. So "hao zuo de cai" are "easy-to-make dishes" or "easy-to-cook vegetables." 
+
+en=teacher
+Exactly. She's looking for convenience because she's exhausted.
+
+zh=2
+这个西红柿好做吗？
+Is this tomato easy to cook?
+
+en=student
+"Xi hong shi" is tomato. He's asking "hao zuo ma?"—is it easy to prepare/cook?
+
+zh=3
+非常好做，配点肉就可以了。
+It's very easy to cook, just pair it with some meat and it's fine.
+
+en=student
+The clerk is very helpful. "Fei chang" is "extremely." "Pei" means to pair or match. And "jiu ke yi le" is a very common phrase meaning "that will do" or "that's fine."
+
+en=teacher
+It is. It suggests that the task is simple and requires little effort. Finally, the wife tells her husband to go to the checkout.
+
+zh=1
+那就买这个。你快点到收银台排队吧。
+Then let's buy this. You quickly go to the checkout counter to queue.
+
+en=student
+"Na jiu" means "in that case" or "then." And "dao shou yin tai" is our first grammar point again—going to the checkout counter. 
+
+en=teacher
+"Shou yin tai" is the checkout counter. And "pai dui" means to stand in line or queue.
+
+zh=2
+知道了，马上就来。
+Got it, I'll be there in a moment.
+
+en=student
+"Zhi dao le" is "I know" or "got it," and "ma shang" means "immediately" or "right away."
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "三十五岁左右"
+pitch = "中音域，语气果断"
+pace = "中速，节奏略显急促"
+volume = "中等，语气较重"
+clarity = "清晰，咬字有力"
+fluency = "流利，表达直接"
+timbre = "清脆，带有一点疲惫感"
+emotion = "干练，由于疲惫而显得有些强势"
+usecase = "一位追求生活品质、说话直率的都市女性"
+dialogue = "我们待会儿要到超市买东西。我们要买些好做的菜。那就买这个。"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "三十岁出头"
+pitch = "中低音域，语气平和"
+pace = "中速，略显迟疑"
+volume = "中等"
+clarity = "清晰"
+fluency = "流利，但在面对要求时有轻微的犹豫"
+timbre = "圆润，温和"
+emotion = "随和，略带无奈"
+usecase = "一个在家庭中比较包容、想尽快完成家务的丈夫"
+dialogue = "又是超市。你买的东西好找吗？这个西红柿好做吗？知道了，马上就来。"
+
+speaker = 3
+lang = "zh"
+gender = "Male"
+age = "二十岁左右"
+pitch = "中高音域，语气热情"
+pace = "中速，节奏轻快"
+volume = "洪亮"
+clarity = "非常清晰"
+fluency = "非常流利"
+timbre = "清脆，充满朝气"
+emotion = "友好，专业"
+usecase = "一个热情周到的超市店员"
+dialogue = "很好找，就在三号走道。非常好做，配点肉就可以了。"
+
+OUTRO
+
+en=teacher
+And that's our episode for today! We've learned how to use "dao" to indicate a destination, like "dao chao shi" (to go to the supermarket), and how to use "hao" before a verb to describe how easy something is to do, like "hao zhao" (easy to find) or "hao zuo" (easy to cook).
+
+en=student
+I feel much more confident about navigating a grocery store now. It's those little structures that really make your Chinese sound natural.
+
+en=teacher
+Absolutely. Remember, don't be afraid to use these in your own practice. Next time you are cooking, try saying "zhe ge hao zuo" (this is easy to cook).
+
+en=student
+I'll do that! Thanks for listening to Learning Chinese. See you next time!

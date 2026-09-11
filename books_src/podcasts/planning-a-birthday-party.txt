@@ -1,0 +1,157 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are diving into the busy, slightly chaotic world of event planning.
+
+en=student
+I feel that in my soul, James. Planning a party is stressful enough without having to worry if you've finished the tasks or if you've bought enough gifts for every single person!
+
+en=teacher
+That is actually perfect, because those are exactly the grammar points we are covering today. First, we are looking at the result complement "wan". In Chinese, if you want to say you have "finished" doing an action, you often take the verb and add "wan" immediately after it. For example, if you finish eating, you say "chi wan". If you finish reading a book, you say "kan wan".
+
+en=student
+So, "wan" acts like a little label that tells us the action reached its conclusion? It's not a separate sentence, it's just stuck onto the verb.
+
+en=teacher
+Exactly. It's a result complement. You aren't just "eating," you have "eaten to completion." Now, our second point is using "mei" to mean "every." In English, we say "every friend" or "every cake." In Chinese, you can't just put "mei" and a noun together. You must sandwich a measure word in the middle. So, instead of just "mei peng you," you must say "mei ge peng you."
+
+en=student
+So, it's "every" + "measure word" + "noun." Like "mei ge ren" for "every person" or "mei ge ji" for "every chicken." 
+
+en=teacher
+Spot on. And to make it even more emphatic, like "every single one," we can use "mei yi ge." In our dialogue today, you're going to hear two friends, Mei and Li, trying to get everything ready for a surprise birthday party. Mei is feeling the pressure, and Li is trying to help her stay calm. They'll be talking about what they have finished and what they still need to do for every guest.
+
+DIALOGUE
+
+zh=1
+我们还没准备完生日派对呢！
+We haven't finished preparing for the birthday party yet!
+
+zh=2
+别担心。你买完蛋糕了吗？
+Don't worry. Have you finished buying the cake?
+
+zh=1
+蛋糕还没买完。我们还需要买很多礼物。
+The cake isn't finished being bought yet. We also need to buy many gifts.
+
+zh=2
+没关系。每一个朋友都需要一份小礼物，对吧？
+It's okay. Every friend needs a small gift, right?
+
+zh=1
+对。而且我们要把房间装饰完。
+Yes. And we need to finish decorating the room.
+
+zh=2
+没问题。每一件装饰品都会让派对很漂亮。
+No problem. Every single decoration will make the party very beautiful.
+
+BREAKDOWN
+
+en=teacher
+Let's go back to the dialogue and take it apart, line by line. Let's start with Mei's first sentence.
+
+zh=1
+我们还没准备完生日派对呢！
+We haven't finished preparing for the birthday party yet!
+
+en=student
+"准备完" (zhǔnbèi wán). Here we see our result complement in action. "准备" means to prepare, and "完" means to finish. So "准备完" means "finished preparing." And I noticed she added "ne" at the end. Is that for emphasis?
+
+en=teacher
+Yes, "ne" here adds a bit of tone, showing that the situation is ongoing or emphasizing the current state of affairs. Now, look at Li's response.
+
+zh=2
+别担心。你买完蛋糕了吗？
+Don't worry. Have you finished buying the cake?
+
+en=student
+"别担心" (bié dānxīn) is a very useful phrase, "don't worry." Then we have "买完" (mǎi wán). "买" means to buy, and "完" is there to ask if the action is completed. And the "le" at the end of "买完了吗" turns it into a question about a completed action.
+
+en=teacher
+Correct. Now, let's look at Mei's next line, where she's getting a bit more detailed.
+
+zh=1
+蛋糕还没买完。我们还需要买很多礼物。
+The cake isn't finished being bought yet. We also need to buy many gifts.
+
+en=student
+She uses "还没买完" (hái méi mǎi wán). "还没" means "not yet." So "not yet finished buying." And "礼物" (lǐwù) is gift. This is a great word to know.
+
+en=teacher
+It's essential. Now, let's look at how Li uses our "every" grammar point.
+
+zh=2
+没关系。每一个朋友都需要一份小礼物，对吧？
+It's okay. Every friend needs a small gift, right?
+
+en=student
+"每一个朋友" (měi yī gè péngyǒu). Here, "mei" is "every," "yi" is "one," and "ge" is the measure word for people or general objects. Together, "mei yi ge" makes it sound like "every single one." And "一份" (yī fèn) is the measure word for gifts or sets of things. 
+
+en=teacher
+Right. Now, let's look at Mei's next task.
+
+zh=1
+对。而且我们要把房间装饰完。
+Yes. And we need to finish decorating the room.
+
+en=student
+"装饰" (zhuāngshì) is to decorate. And again, "装饰完" (zhuāngshì wán)—finish decorating. She also uses "把" (bǎ) here. Is that because the object is being acted upon?
+
+en=teacher
+Exactly! The "bǎ" construction is used when you are doing something to an object that changes its state. In this case, the room is being changed by the act of decorating. Now, let's hear Li's final encouraging words.
+
+zh=2
+没问题。每一件装饰品都会让派对很漂亮。
+No problem. Every single decoration will make the party very beautiful.
+
+en=student
+"每一件装饰品" (měi yī jiàn zhuāngshìpǐn). This is interesting. "件" (jiàn) is the measure word for items or pieces, and "装饰品" (zhuāngshìpǐn) means decorations. So "every single piece of decoration." He's really being optimistic!
+
+en=teacher
+He is. "漂亮" (piàoliang) is to be beautiful or pretty. So, through this dialogue, we've seen how "wan" completes our verbs and how "mei" requires that middle measure word to talk about "every" item or person.
+
+OUTRO
+
+en=student
+Wow, that was a lot of party planning! I feel more prepared, even though I haven't actually finished my own housework yet.
+
+en=teacher
+Haha, I'm sure you'll finish it soon! Today we learned how to use the result complement "wan" to indicate an action is completed, like "买完" or "准备完." We also practiced using "mei" with measure words to say "every," such as "每一个朋友" or "每一件装饰品."
+
+en=student
+Thanks for the lesson, James. Next time, I'll try to finish my Chinese homework using these rules!
+
+en=teacher
+I look forward to it. Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "二十五岁左右"
+pitch = "中音域，因压力而略有提高"
+pace = "中速，语气急促"
+volume = "中等，带有些许焦虑感"
+clarity = "清晰，但语速较快"
+fluency = "流畅，但由于情绪波动而略有起伏"
+timbre = "清脆，略带紧迫感"
+emotion = "焦虑，热心但有些手忙脚乱"
+usecase = "一个正在为派对忙得不可开交的年轻女性"
+dialogue = "我们还没准备完生日派对呢！蛋糕还没买完。我们要把房间装饰完。"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "二十五岁左右"
+pitch = "中低音域，稳定"
+pace = "慢速，节奏从容"
+volume = "中等，温和"
+clarity = "非常清晰，吐字圆润"
+fluency = "非常流畅，语气从容"
+timbre = "温和，有磁性"
+emotion = "冷静，从容，带有鼓励性质"
+usecase = "一个冷静、可靠且乐于助人的年轻男性朋友"
+dialogue = "别担心。你买完蛋糕了吗？没关系。我会帮你。每一件装饰品都会让派对很漂亮。"

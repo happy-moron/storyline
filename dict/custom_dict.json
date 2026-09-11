@@ -153947,5 +153947,336 @@
         }
       }
     ]
+  },
+  "陈明": {
+    "pinyin": "Chén Míng",
+    "definition": [
+      {
+        "meaning": "a common Chinese given name",
+        "example": {
+          "chinese": "陈明是我的同学。",
+          "pinyin": "Chén Míng shì wǒ de tóng xué.",
+          "english": "Chen Ming is my classmate."
+        }
+      }
+    ]
+  },
+  "陈": {
+    "pinyin": "chén",
+    "definition": [
+      {
+        "meaning": "a common Chinese surname",
+        "example": {
+          "chinese": "陈先生是我的老师。",
+          "pinyin": "Chén xiānsheng shì wǒ de lǎoshī.",
+          "english": "Mr. Chen is my teacher."
+        }
+      },
+      {
+        "meaning": "to state; to explain; to narrate",
+        "example": {
+          "chinese": "他向我们陈述了事情的经过。",
+          "pinyin": "Tā xiàng wǒmen chénshù le shìqíng de jīngguò.",
+          "english": "He stated the course of events to us."
+        }
+      },
+      {
+        "meaning": "old; stale; aged",
+        "example": {
+          "chinese": "这 bottle 是陈年好酒。",
+          "pinyin": "Zhè shì chénnián hǎojiǔ.",
+          "english": "This is aged fine wine."
+        }
+      }
+    ]
+  },
+  "姓": {
+    "pinyin": "xìng",
+    "definition": [
+      {
+        "meaning": "to be surnamed",
+        "example": {
+          "chinese": "他姓张。",
+          "pinyin": "Tā xìng Zhāng.",
+          "english": "His surname is Zhang."
+        }
+      },
+      {
+        "meaning": "surname; family name",
+        "example": {
+          "chinese": "你的姓是什么？",
+          "pinyin": "Nǐ de xìng shì shén me?",
+          "english": "What is your surname?"
+        }
+      }
+    ]
+  },
+  "张经理": {
+    "pinyin": "Zhāng jīnglǐ",
+    "definition": [
+      {
+        "meaning": "Manager Zhang",
+        "example": {
+          "chinese": "张经理正在办公室里工作。",
+          "pinyin": "Zhāng jīnglǐ zhèngzài bàngōngshì lǐ gōngzuò.",
+          "english": "Manager Zhang is working in the office."
+        }
+      }
+    ]
+  },
+  "椰子": {
+    "pinyin": "yē zi",
+    "definition": [
+      {
+        "meaning": "coconut",
+        "example": {
+          "chinese": "我想喝椰子水。",
+          "pinyin": "Wǒ xiǎng hē yē zi shuǐ.",
+          "english": "I want to drink coconut water."
+        }
+      }
+    ]
+  },
+  "零食": {
+    "pinyin": "líng shí",
+    "definition": [
+      {
+        "meaning": "snack; snack food",
+        "example": {
+          "chinese": "我喜欢在看电视时吃零食。",
+          "pinyin": "Wǒ xǐ huān zài kàn diàn shì shí chī líng shí.",
+          "english": "I like eating snacks while watching TV."
+        }
+      }
+    ]
+  },
+  "大酒店": {
+    "pinyin": "dà jiǔ diàn",
+    "definition": [
+      {
+        "meaning": "large hotel; grand hotel",
+        "example": {
+          "chinese": "这家大酒店的服务非常好。",
+          "pinyin": "Zhè jiā dà jiǔdiàn de fúwù fēicháng hǎo.",
+          "english": "The service in this grand hotel is excellent."
+        }
+      }
+    ]
+  },
+  "路中间": {
+    "pinyin": "lù zhōng jiān",
+    "definition": [
+      {
+        "meaning": "in the middle of the road",
+        "example": {
+          "chinese": "请不要站在路中间。",
+          "pinyin": "Qǐng bù yào zhàn zài lù zhōng jiān.",
+          "english": "Please don't stand in the middle of the road."
+        }
+      }
+    ]
+  },
+  "长椅上": {
+    "pinyin": "cháng yǐ shàng",
+    "definition": [
+      {
+        "meaning": "on the bench",
+        "example": {
+          "chinese": "我们可以坐在长椅上聊天。",
+          "pinyin": "Wǒ men kě yǐ zuò zài cháng yǐ shàng liáo tiān.",
+          "english": "We can sit on the bench and chat."
+        }
+      }
+    ]
+  },
+  "待会儿": {
+    "pinyin": "dāi huìr",
+    "definition": [
+      {
+        "meaning": "in a little while; in a moment",
+        "example": {
+          "chinese": "我待会儿就回来。",
+          "pinyin": "Wǒ dāi huìr jiù huí lái.",
+          "english": "I'll be back in a little while."
+        }
+      }
+    ]
+  },
+  "好找": {
+    "pinyin": "hǎo zhǎo",
+    "definition": [
+      {
+        "meaning": "easy to find",
+        "example": {
+          "chinese": "这个超市很好找。",
+          "pinyin": "Zhè ge chāo shì hěn hǎo zhǎo.",
+          "english": "This supermarket is easy to find."
+        }
+      }
+    ]
+  },
+  "好做": {
+    "pinyin": "hǎo zuò",
+    "definition": [
+      {
+        "meaning": "easy to do; easy to make",
+        "example": {
+          "chinese": "这份工作很好做。",
+          "pinyin": "Zhè fèn gōng zuò hěn hǎo zuò.",
+          "english": "This job is easy to do."
+        }
+      }
+    ]
+  },
+  "公交卡": {
+    "pinyin": "gōng jiāo kǎ",
+    "definition": [
+      {
+        "meaning": "public transport card; transit card",
+        "example": {
+          "chinese": "你可以用公交卡坐公交车。",
+          "pinyin": "Nǐ kě yǐ yòng gōng jiāo kǎ zuò gōng jiāo chē.",
+          "english": "You can use a transit card to take the bus."
+        }
+      }
+    ]
+  },
+  "班车": {
+    "pinyin": "bān chē",
+    "definition": [
+      {
+        "meaning": "shuttle bus; commuter bus",
+        "example": {
+          "chinese": "请在班车站等我。",
+          "pinyin": "Qǐng zài bān chē zhàn děng wǒ.",
+          "english": "Please wait for me at the shuttle bus stop."
+        }
+      }
+    ]
+  },
+  "身份证": {
+    "pinyin": "shēn fèn zhèng",
+    "definition": [
+      {
+        "meaning": "ID card; identity card",
+        "example": {
+          "chinese": "请出示您的身份证。",
+          "pinyin": "Qǐng chū shì nín de shēn fèn zhèng.",
+          "english": "Please show your ID card."
+        }
+      }
+    ]
+  },
+  "饭后": {
+    "pinyin": "fàn hòu",
+    "definition": [
+      {
+        "meaning": "after a meal; after eating",
+        "example": {
+          "chinese": "饭后请喝杯茶。",
+          "pinyin": "Fàn hòu qǐng hē bēi chá.",
+          "english": "Please have a cup of tea after the meal."
+        }
+      }
+    ]
+  },
+  "早日": {
+    "pinyin": "zǎo rì",
+    "definition": [
+      {
+        "meaning": "at an early date; as soon as possible",
+        "example": {
+          "chinese": "祝你早日康复。",
+          "pinyin": "Zhù nǐ zǎorì kāngfù.",
+          "english": "I wish you a speedy recovery."
+        }
+      },
+      {
+        "meaning": "at an early date; as soon as possible",
+        "example": {
+          "chinese": "我们必须早日完成这项任务。",
+          "pinyin": "Wǒmen bìxū zǎorì wánchéng zhè xiàng rènwu.",
+          "english": "We must complete this task as soon as possible."
+        }
+      }
+    ]
+  },
+  "咖啡店": {
+    "pinyin": "kā fēi diàn",
+    "definition": [
+      {
+        "meaning": "coffee shop; café",
+        "example": {
+          "chinese": "这家咖啡店的咖啡很好喝。",
+          "pinyin": "Zhè jiā kā fēi diàn de kā fēi hěn hǎo hē.",
+          "english": "The coffee in this coffee shop is delicious."
+        }
+      }
+    ]
+  },
+  "坐错": {
+    "pinyin": "zuò cuò",
+    "definition": [
+      {
+        "meaning": "to take the wrong (bus, train, etc.)",
+        "example": {
+          "chinese": "我不小心坐错车了。",
+          "pinyin": "Wǒ bù xiǎo xīn zuò cuò chē le.",
+          "english": "I accidentally took the wrong bus/train."
+        }
+      }
+    ]
+  },
+  "细聊": {
+    "pinyin": "xì liáo",
+    "definition": [
+      {
+        "meaning": "to chat in detail; to discuss thoroughly",
+        "example": {
+          "chinese": "等有空的时候，我们再细聊。",
+          "pinyin": "Děng yǒu kòng de shíhou, wǒmen zài xìliáo.",
+          "english": "Let's talk about this in detail when you have time."
+        }
+      }
+    ]
+  },
+  "准备完": {
+    "pinyin": "zhǔn bèi wán",
+    "definition": [
+      {
+        "meaning": "finished preparing; completed preparation",
+        "example": {
+          "chinese": "我已经准备完了。",
+          "pinyin": "Wǒ yǐ jīng zhǔn bèi wán le.",
+          "english": "I have already finished preparing."
+        }
+      }
+    ]
+  },
+  "装饰完": {
+    "pinyin": "zhuāng shì wán",
+    "definition": [
+      {
+        "meaning": "to finish decorating",
+        "example": {
+          "chinese": "房间装饰完以后非常漂亮。",
+          "pinyin": "Fángjiān zhuāngshì wán yǐhòu fēicháng piàoliang.",
+          "english": "The room is very beautiful after being decorated."
+        }
+      }
+    ]
+  },
+  "装饰品": {
+    "pinyin": "zhuāng shì pǐn",
+    "definition": [
+      {
+        "meaning": "ornament; decoration; adornment",
+        "example": {
+          "chinese": "房间里摆放着许多精美的装饰品。",
+          "pinyin": "Fángjiān lǐ bǎifàngzhe xǔduō jīngměi de zhuāngshìpǐn.",
+          "english": "There are many exquisite ornaments in the room."
+        }
+      }
+    ]
   }
 }

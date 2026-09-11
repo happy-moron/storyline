@@ -1,0 +1,191 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are exploring some essential structures that will help you navigate social introductions and expressing your attitudes toward people and things.
+
+en=student
+I am ready, James. I know some of these, but I always get a bit confused when the grammar gets more specific.
+
+en=teacher
+That is perfectly normal, Ryan. Today we are focusing on two specific points. First, we are looking at the use of 对, which is pronounced "duì." When used with a person, it functions like the English "to" or "towards" to indicate the object of an emotion, an attitude, or a relationship. For example, 我对你很好 (I am very good to you) or 我对他很有兴趣 (I am very interested in him).
+
+en=student
+Okay, so it’s not just "yes" or "correct" in this context; it's a way to point the action or the feeling toward someone. So, if I want to say "He is very good to me," I use 对 me?
+
+en=teacher
+Exactly. You say 他对我很好. Second, we are learning how to use the verb 姓, which means "to be surnamed." In Chinese culture, your surname is very important. You use it by saying 姓 plus your surname. For example, 我姓李 (My surname is Li).
+
+en=student
+And I should remember that 姓 is just for the surname, not the full name?
+
+en=teacher
+Precisely. If you use your full name, you would use 叫. Today's lesson is set in a very common situation: a car ride. You are going to hear Li Hua picking up her friend Wang Wei, who is introducing a new colleague to her. You will hear how they handle introductions and how they express their impressions of this new person.
+
+DIALOGUE
+
+zh=1
+王伟，你好！谢谢你来接我。
+Wang Wei, hello! Thank you for picking me up.
+
+zh=2
+不客气，李华。对了，这位是你的新同事吗？
+You're welcome, Li Hua. By the way, is this your new colleague?
+
+zh=3
+你好，我叫陈明。
+Hello, my name is Chen Ming.
+
+zh=1
+你好，陈先生。请问你姓什么？
+Hello, Mr. Chen. May I ask what your surname is?
+
+zh=3
+我姓陈。
+My surname is Chen.
+
+zh=2
+他对我很好，工作也非常认真。
+He is very good to me, and he also works very seriously.
+
+zh=1
+那太好了。我对你的新工作很感兴趣。
+That's great. I am very interested in your new job.
+
+BREAKDOWN
+
+en=teacher
+Let's break down that dialogue and look at the language used. We start with Li Hua greeting her friend.
+
+zh=1
+王伟，你好！谢谢你来接我。
+Wang Wei, hello! Thank you for picking me up.
+
+en=student
+"接" (jiē) is a very useful verb here, meaning "to pick up" or "to receive." So "来接我" means "come to pick me up."
+
+en=teacher
+Correct. Then Wang Wei responds and asks a question.
+
+zh=2
+不客气，李华。对了，这位是你的新同事吗？
+You're welcome, Li Hua. By the way, is this your new colleague?
+
+en=student
+"不客气" (bú kè qi) is the standard "you're welcome." And "对了" (duì le) is a great phrase for "by the way." 
+
+en=teacher
+Yes, it's used to transition to a new topic. Then, the new colleague, Chen Ming, introduces himself.
+
+zh=3
+你好，我叫陈明。
+Hello, my name is Chen Ming.
+
+en=student
+"叫" (jiào) is the standard way to say "to be called." 
+
+en=teacher
+Now, Li Hua asks a polite question using our second grammar point.
+
+zh=1
+你好，陈先生。请问你姓什么？
+Hello, Mr. Chen. May I ask what your surname is?
+
+en=student
+"请问" (qǐng wèn) is a very polite way to start a question, like "may I ask." And here is our grammar point! "你姓什么？" (nǐ xìng shén me). You aren't asking for his full name, just his surname.
+
+en=teacher
+Exactly. You don't say "Your surname is what?" like in English; you use 姓 as the verb. And Chen Ming answers simply.
+
+zh=3
+我姓陈。
+My surname is Chen.
+
+en=student
+Simple and direct. "I am surnamed Chen."
+
+en=teacher
+Next, Wang Wei describes his relationship with the new colleague using our first grammar point.
+
+zh=2
+他对我很好，工作也非常认真。
+He is very good to me, and he also works very seriously.
+
+en=student
+There it is! "他对我也很好" (tā duì wǒ hěn hǎo). "对 me very good." It's like saying he treats me well. Also, "认真" (rèn zhēn) is a very common word for "serious" or "dedicated."
+
+en=teacher
+Right. And finally, Li Hua expresses her interest.
+
+zh=1
+那太好了。我对你的新工作很感兴趣。
+That's great. I am very interested in your new job.
+
+en=student
+This one is a bit longer. "我对...很感兴趣" (wǒ duì... hěn gǎn xìng qù). 
+
+en=teacher
+Yes. "感兴趣" is the phrase for "to be interested." When you want to say what you are interested in, you use the structure: Subject + 对 + Object + 感兴趣. In this case, the subject is Li Hua, the object is the new job, and the feeling is interest.
+
+en=student
+So, "I am interested in you" would be "我对你感兴趣."
+
+en=teacher
+Exactly. You've got it!
+
+OUTRO
+
+en=teacher
+That was an excellent session. To recap, we learned how to use 对 to direct a feeling or an attitude toward someone or something. Remember the structure: Subject plus 对 plus the person, followed by the description or verb.
+
+en=student
+And we also learned how to use 姓 to state a surname. Just remember to use 姓 for the surname alone, and 叫 for the full name. 
+
+en=teacher
+Perfect. Practice these in your daily life. If someone helps you, try to think, "他对我很好" in your head. It's the best way to make it stick. Thanks for listening to Learning Chinese.
+
+en=student
+See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "三十多岁"
+pitch = "中音域，语气亲切"
+pace = "中速"
+volume = "中等"
+clarity = "清晰，语调自然"
+fluency = "流利"
+timbre = "温和，有活力"
+emotion = "友善，热心"
+usecase = "一个热心的朋友，正在开车接人"
+dialogue = "王伟，你好！谢谢你来接我。你好，陈先生。请问你姓什么？你好，陈先生。请问你姓什么？那太好了。我对你的新工作很感兴趣。"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "二十多岁"
+pitch = "中音域"
+pace = "中速"
+volume = "中等"
+clarity = "清晰"
+fluency = "流利，略带兴奋"
+timbre = "清脆，阳光"
+emotion = "礼貌，愉快"
+usecase = "一个很有礼貌的年轻人"
+dialogue = "不客气，李华。对了，这位是你的新同事吗？他对我很好，工作也非常认真。"
+
+speaker = 3
+lang = "zh"
+gender = "Male"
+age = "三十五岁左右"
+pitch = "中低音域，沉稳"
+pace = "慢速"
+volume = "中等"
+clarity = "非常清晰，吐字有力"
+fluency = "流利，显得专业"
+timbre = "浑厚，稳重"
+emotion = "冷静，职业"
+usecase = "一个专业、稳重的职场人士"
+dialogue = "你好，我叫陈明。我姓陈。"

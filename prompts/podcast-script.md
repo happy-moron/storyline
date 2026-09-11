@@ -37,7 +37,7 @@ Outro - 100-200 words
 
 ## Hosts
 
-The hosts are always 'Ryan' a male speaker and 'Ellen,' a female native Chinese speaker. They are both fluent in English and Chinese, but Ellen carries the main role of the teacher, giving exposition and explaination. They are quite familiar and informal. Ryan plays the role of a student; Ellen and Ryan have fun and playful back and forth banter and the Ryan asks natural questions about the grammar point (e.g. "Is this the same as foo?", "Where doesn't this work?", "Can you also say X?", "What is the difference between Y and Z?", "How does <grammar point> work with <related>"? )
+The hosts are always 'Ryan' a male speaker and 'James,' another male native Chinese speaker. They are both fluent in English and Chinese, but James carries the main role of the teacher, giving exposition and explaination. They are quite familiar and informal. Ryan plays the role of a student; James and Ryan have fun and playful back and forth banter and the Ryan asks natural questions about the grammar point (e.g. "Is this the same as foo?", "Where doesn't this work?", "Can you also say X?", "What is the difference between Y and Z?", "How does <grammar point> work with <related>"? )
 
 ## Podcast Style
 
@@ -63,7 +63,7 @@ The dialogue should be natural and use common phrases, the way that real people 
 
 ## Breakdown
 
-Ellen likes to repeat the lines of dialogue, speaking slowly and clearly. Ryan will do some 'colour' commentary and ask questions about related words/shared roots, similar grammar constructs ("Is this the same as?" ). Together they'll go over the grammar point usage in the dialogue as well as the key vocab.
+James likes to repeat the lines of dialogue, speaking slowly and clearly. Ryan will do some 'colour' commentary and ask questions about related words/shared roots, similar grammar constructs ("Is this the same as?" ). Together they'll go over the grammar point usage in the dialogue as well as the key vocab.
 
 Within the breakdown sometimes lines of original dialogue are "quoted" with their original speakers.
 
@@ -74,7 +74,7 @@ The hosts perform a brief recap of the topic and grammar points, "Today we learn
 ## Format
 
 The script is a series of sentences, each preceeded by a "speaker heading" with the language of the sentence and the speaker id. 
-For the introduction, the speaker ids are set - 'student' for the male host Ryan and 'teacher' for the female host Ellen.
+For the introduction, the speaker ids are set - 'student' for the male host Ryan and 'teacher' for the male host James.
 
 For the dialogue, the speaker ids are just numbers which are used to identify the voice profiles. In the dialogue, each spoken line should have its English translation provided on a new line directly beneath it. The examples below are artificially shortened (e.g. they don't have all six vocab words) in order to show format.
 
@@ -83,7 +83,7 @@ It's important to output just what will be said on the podcast in the clean form
 ### Example of Introduction markup
 
 en=teacher
-Welcome to Learning Chinese. I am Ellen, and today we are tackling a very heavy, but very important topic: helping a friend through depression.
+Welcome to Learning Chinese. I am James, and today we are tackling a very heavy, but very important topic: helping a friend through depression.
 
 en=student
 We need to know how to ask how someone is *really* doing, not just the standard "How are you?"

@@ -1,0 +1,180 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are talking about something most of us dread: cleaning the house.
+
+en=student
+Oh man, just thinking about it makes me tired. But it is a very useful topic because it involves a lot of daily verbs and expressing what you need or are allowed to do.
+
+en=teacher
+Exactly. Today we are focusing on two very important grammar points. First, the verb 可以, which we use to express permission or possibility. For example, 你可以坐 (You may sit) or 我可以去吗？ (May I go?).
+
+en=student
+Right, so it is about whether you have permission to do something. And the second one is 要, which means "to want" or "to be going to." For example, 我要吃饭 (I want to eat) or 我要学习 (I am going to study).
+
+en=student
+Is there a difference between 要 and 想? I always get them mixed up.
+
+en=teacher
+That is a great question. 想 is more like "would like to"—it is a feeling or a desire. 要 is much stronger. It implies intention, necessity, or that something is definitely going to happen. If you say 我要睡觉, you are saying "I am going to sleep" or "I really need to sleep," not just "I would like to sleep."
+
+en=student
+So 要 is much more direct. Got it. What about the vocabulary for today?
+
+en=teacher
+We will use words like 打扫 (to clean), 房间 (room), 垃圾 (trash), and 客人 (guest).
+
+en=student
+And the theme?
+
+en=teacher
+In this episode, you are going to hear a conversation between a couple, Mei and Li. They are living together and they are feeling the stress of a messy apartment because they have guests coming over for dinner very soon. It is a bit of a tense situation!
+
+DIALOGUE
+
+zh=1
+这个房间太乱了！我们要打扫一下。
+This room is too messy! We need to clean it up a bit.
+
+zh=2
+我现在要休息。
+I want to rest right now.
+
+zh=1
+你不想打扫吗？今天晚上我们要客人来吃饭。
+Don't you want to clean? We have guests coming for dinner tonight.
+
+zh=2
+那我可以休息一会儿吗？
+Then can I rest for a little while?
+
+zh=1
+不可以。你看这些垃圾，我可以扔了吗？
+No. Look at this trash, can I throw it away?
+
+zh=2
+可以。但我想要买一些新的桌布。
+Yes. But I want to buy some new tablecloths.
+
+zh=1
+我们现在没钱。我们要先把地板擦干净。
+We don't have money now. We need to wipe the floor clean first.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. It starts with Mei, speaker number one.
+
+zh=1
+这个房间太乱了！我们要打扫一下。
+This room is too messy! We need to clean it up a bit.
+
+en=student
+"这个房间太乱了" is a great way to express frustration. 太...了 is the structure for "too [adjective]." And "打扫" means to clean. But James, look at "我们要打扫一下". Why did she say "要"?
+
+en=teacher
+In this context, "要" expresses necessity or a strong intention. She isn't just thinking about it; she is saying "We must clean" or "We are going to clean." Also, notice the "一下" after "打扫". Adding "一下" after a verb makes the action sound casual, like "doing something for a bit."
+
+zh=2
+我现在要休息。
+I want to rest right now.
+
+en=student
+Li is being very blunt! "我现在要休息" means "I want to rest right now." Using "要" here shows his firm intention to do nothing.
+
+zh=1
+你不想打扫吗？今天晚上我们要客人来吃饭。
+Don't you want to clean? We have guests coming for dinner tonight.
+
+en=teacher
+Mei uses the negative "不想" here to ask, "Don't you want to...". Then she explains why: "我们要客人来吃饭." Here, "要" acts as "to have" or "is going to happen." We have guests coming for dinner.
+
+zh=2
+那我可以休息一会儿吗？
+Then can I rest for a little while?
+
+en=student
+Aha! Here is our first use of "可以"! "我可以休息一会儿吗？" She is asking for permission to rest.
+
+en=teacher
+Exactly. "可以...吗?" is the standard way to ask "May I...?" or "Can I...?" in a way that asks for permission.
+
+zh=1
+不可以。你看这些垃圾，我可以扔了吗？
+No. 不可以 means "No" or "You may not." And then she asks, "我可以扔了吗？" Can I throw it away?
+
+en=student
+So "可以" is "can/may," and "不可以" is "cannot/may not." That is very straightforward. And "垃圾" is trash, right?
+
+en=teacher
+Yes, "垃圾" is trash or rubbish.
+
+zh=2
+可以。但我想要买一些新的桌布。
+Yes. But I want to buy some new tablecloths.
+
+en=student
+Li gives permission: "可以." But then he uses "想要" (xiang yao). Is that different from just "要"?
+
+en=teacher
+Yes! As we mentioned in the intro, "想要" is a combination that softens the "want." It is very similar to "would like to." It sounds a bit more polite or expresses a desire rather than a command or a hard necessity.
+
+zh=1
+我们现在没钱。我们要先把地板擦干净。
+We don't have money now. We need to wipe the floor clean first.
+
+en=student
+Mei shuts him down. "我们现在没钱" (We have no money right now). And then she uses "要" again: "我们要先把地板擦干净."
+
+en=teacher
+Exactly. She is saying "We need to wipe the floor clean first." "擦" means to wipe, and "干净" means clean. She is setting the priority. She is using "要" to express what they must do before they can worry about anything else.
+
+OUTRO
+
+en=student
+That was a pretty intense cleaning session! I think I would have given up by now.
+
+en=teacher
+It definitely felt urgent! But we covered some vital ground today. We learned how to use "可以" to ask for and give permission, and how to use "要" to express strong intention, necessity, or something that is going to happen.
+
+en=student
+And we learned how to express that a room is "too messy" using "太...了."
+
+en=teacher
+That is right. Practice these in your own house. Next time you are cleaning, tell your roommate, "我们要打扫房间!"
+
+en=student
+And if you are tired, tell them, "我现在要休息!"
+
+en=teacher
+Until next time, happy studying!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "二十五岁左右"
+pitch = "中高音域，情绪起伏大"
+pace = "中速，说话时带有急促感"
+volume = "响亮，充满能量"
+clarity = "非常清晰，吐字干脆"
+fluency = "流利，但在表达不满时语速略快" 
+timbre = "清脆，略带尖锐"
+emotion = "焦虑，果断，有点强势" 
+usecase = "一个正在为即将到来的客人而感到压力山大的年轻女性"
+dialogue = "这个房间太乱了！我们要打扫一下。你不想要打扫吗？"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中低音域，平稳"
+pace = "较慢，节奏松弛"
+volume = "中等"
+clarity = "清晰，但带有一种懒洋洋的感觉"
+fluency = "流畅，但带有慵懒的拖音" 
+timbre = "柔和，圆润"
+emotion = "懒散，随性，有点不耐烦" 
+usecase = "一个只想躺平休息的懒惰室友"
+dialogue = "我现在要休息。那我可以休息一会儿吗？可以。"

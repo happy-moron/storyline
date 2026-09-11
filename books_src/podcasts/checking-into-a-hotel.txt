@@ -1,0 +1,166 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are looking at some very practical structures you will need when traveling, specifically when checking into a hotel.
+
+en=student
+I definitely need these. There is nothing more stressful than arriving at a hotel after a long flight and having a problem with your reservation.
+
+en=teacher
+Exactly. To help you navigate that, we are covering two key grammar points. First, the structure of Verb plus Number plus Measure Word. In English, we just say "book a room" or "see three reviews." But in Chinese, when you specify a quantity, you almost always need a measure word between the number and the noun. For example, 订了一个房间, which means "booked one room," or 看了三个好评, which means "saw three good reviews."
+
+en=student
+So the measure word is like the glue that holds the number and the noun together. If I want to say "two rooms," I can't just say "两个房间" without a verb, right? I need the action first.
+
+en=teacher
+Right, though the "Verb + Number + MW" pattern specifically focuses on how you describe the action performed on a certain number of things. Second, we are learning how to use 不要 to give negative commands or advice. You simply put 不要 before a verb. For example, 不要担心, which means "don't worry," or 不要生气, which means "don't get angry."
+
+en=student
+That sounds straightforward. So if a receptionist tells me I shouldn't be worried, they would say "不要担心"?
+
+en=teacher
+Perfect. Today's dialogue features a bit of tension. You are going to hear a guest who is quite frustrated because his hotel reservation seems to be missing. He is talking to a hotel receptionist.
+
+DIALOGUE
+
+zh=2
+你好，我预订了一个房间。
+Hello, I booked one room.
+
+zh=1
+对不起，先生。我没看到您的预订。
+I'm sorry, sir. I don't see your reservation.
+
+zh=2
+不要跟我开玩笑！我订了两个晚上！
+Don't joke with me! I booked two nights!
+
+zh=1
+请不要着急，我再检查一下。
+Please don't worry, I will check again.
+
+zh=2
+我刚才看了三个好评，说这里非常好。
+I just saw three good reviews saying this place is very good.
+
+zh=1
+找到了！您预订了一个大房间。
+Found it! You booked one large room.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this dialogue line by line. We start with the guest.
+
+zh=2
+你好，我预订了一个房间。
+Hello, I booked one room.
+
+en=student
+"预订了一个房间" (yù dìng le yī gè fáng jiān). This is a perfect example of our first grammar point. 预订 is the verb "to book," 一个 is "one" plus the measure word "gè," and 房间 is "room."
+
+en=teacher
+Exactly. Without that "个," the sentence would sound very broken. Then the receptionist responds.
+
+zh=1
+对不起，先生。我没看到您的预订。
+I'm sorry, sir. I don't see your reservation.
+
+en=student
+"对不起" is "I'm sorry." "没看到" means "didn't see." And "预订" here is being used as a noun, meaning "reservation."
+
+en=teacher
+Right. Now the guest is getting a bit impatient.
+
+zh=2
+不要跟我开玩笑！我订了两个晚上！
+Don't joke with me! I booked two nights!
+
+en=student
+"不要跟我开玩笑!" That's a very useful phrase. "不要" is "don't," "跟我" means "with me," and "开玩笑" means "to joke." It's a very natural way to say "Don't kid me!" 
+
+en=teacher
+And then he uses our first grammar point again: "订了两个晚上." 订 is the verb "to book," 二个 is "two" plus the measure word "gè," and 晚上 is "evening" or "night." 
+
+en=student
+So even though "nights" feels different in English, the Chinese structure remains Verb plus Number plus Measure Word plus the time period.
+
+en=teacher
+You've got it. Now, the receptionist tries to calm him down.
+
+zh=1
+请不要着急，我再检查一下。
+Please don't worry, I will check again.
+
+en=student
+"不要着急" (bù yào zháo jí). "着急" means "to worry" or "to be anxious." So "不要着急" is "don't worry" or "don't be anxious." It's a very common phrase in service industries.
+
+en=teacher
+And "再检查一下" (zài jiǎn chá yī xià) means "check again." "再" means "again," and "一下" makes the action "a little bit" or "briefly," making the tone more polite. Now, the guest tries to persuade her.
+
+zh=2
+我刚才看了三个好评，说这里非常好。
+I just saw three good reviews saying this place is very good.
+
+en=student
+"刚才" means "just now." "看了三个好评" is our grammar point again. 看了 is "saw/read," 三个 is "three" plus the measure word "gè," and 好评 is "good reviews." 
+
+en=teacher
+Exactly. "好" is "good" and "评" comes from "评价," which means "to evaluate" or "to comment." Finally, the receptionist finds the mistake.
+
+zh=1
+找到了！您预订了一个大房间。
+Found it! You booked one large room.
+
+en=student
+"找到了" (zhǎo dào le) is "found it." And "一个大房间" is "one large room." 
+
+en=teacher
+Notice the order: "一个" is the number and measure word, then the adjective "大" (big), and then the noun "房间" (room). The measure word still sits right next to the number.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "三十岁左右"
+pitch = "中音域，语气专业但略显疲惫"
+pace = "中速，平稳"
+volume = "中等"
+clarity = "清晰，语调礼貌"
+fluency = "流利，带有职业化的机械感"
+timbre = "圆润，专业"
+emotion = "冷静，由于工作繁忙而略带压力"
+usecase = "一位正在处理投诉的酒店前台接待员"
+dialogue = "对不起，先生。我没看到您的预订。请不要着急，我再检查一下。找到了！您预订了一个大房间。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "四十岁左右"
+pitch = "中低音域，因焦虑而时而升高"
+pace = "中速，语气急促"
+volume = "较高"
+clarity = "清晰，但情绪激动时语速略快"
+fluency = "流利，但带有明显的语气强调"
+timbre = "浑厚，略带沙哑"
+emotion = "焦虑，急躁，有些不耐烦"
+usecase = "一位长途飞行后非常疲惫且焦虑的商务旅客"
+dialogue = "你好，我预订了一个房间。不要跟我开玩笑！我订了两个晚上！我刚才看了三个好评，说这里非常好。"
+
+OUTRO
+
+en=teacher
+And that's our lesson for today! We covered how to use measure words with verbs, like "订了一个房间," and how to use "不要" to tell someone not to do something, like "不要着急."
+
+en=student
+It's amazing how much those small words like "个" or "不要" change the whole meaning and structure of a sentence.
+
+en=teacher
+They really do. Practice these by imagining yourself in a hotel or a restaurant. The more you use them in these scenarios, the more natural they will feel.
+
+en=student
+Thanks for listening to Learning Chinese. See you next time!
+
+en=teacher
+再见!

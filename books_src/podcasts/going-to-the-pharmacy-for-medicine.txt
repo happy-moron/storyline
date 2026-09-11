@@ -1,0 +1,203 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are looking at some very practical grammar that you will absolutely need when you are traveling or living in a Chinese-speaking environment.
+
+en=student
+I am definitely looking forward to this. I remember once being in a pharmacy and having no idea what the pharmacist was telling me about how to take my medicine. It was pretty stressful.
+
+en=teacher
+That is exactly why we are covering this today. We are going to learn two very important structures. First, the degree complement, which is the "Verb plus de" structure. We use this to describe the manner or the degree of an action. For example, if you want to say "He speaks very fast," you would say 他说得很快. The "de" acts as a bridge between the verb and the description of how that verb was performed.
+
+en=student
+So, it is not just saying "He is fast," it is "He speaks *in a fast manner*."
+
+en=teacher
+Exactly. It describes the state or the result of the action. Second, we are looking at the potential complement, specifically the "verb plus bu dong" structure. This is used to express that you are unable to understand something through listening or reading. For example, 听不懂 means "cannot understand by listening," and 看不懂 means "cannot understand by reading."
+
+en=student
+That is super useful. So, if I'm at a pharmacy, I can tell them "I can't understand" if they talk too fast?
+
+en=teacher
+Precisely. Now, let's look at our scenario. Today's theme is going to the pharmacy. You are going to hear a conversation between a young man named Xiao Ming, who is feeling quite unwell, and a pharmacist named Lao Li. Xiao Ming is struggling with a headache and is having a bit of trouble following the pharmacist's instructions because she is speaking a bit too quickly.
+
+en=student
+I hope he manages to get the right medicine! Let's listen.
+
+DIALOGUE
+
+zh=1
+你好，我身体很不舒服。
+Hello, I don't feel very well.
+
+zh=2
+请问你哪里不舒服？
+May I ask where you are feeling unwell?
+
+zh=1
+我的头疼得厉害，也有点发烧。
+My head hurts terribly, and I also have a bit of a fever.
+
+zh=2
+你是感冒了吗？你要吃这种药片。每天三次，饭后吃，一次两片。
+Do you have a cold? You need to take these pills. Three times a day, after meals, two pills each time.
+
+zh=1
+对不起，你说得太快了，我听不懂。请说慢一点。
+I am sorry, you are speaking too fast, I can't understand. Please speak a little slower.
+
+zh=2
+没问题。每天三次，饭后吃，一次两片。
+No problem. Three times a day, after meals, two pills each time.
+
+zh=1
+好的，我听懂了。谢谢你。
+Okay, I understand now. Thank you.
+
+zh=2
+不客气，祝你早日康复。
+You are welcome, I wish you a speedy recovery.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this dialogue. We start with Xiao Ming, who is feeling under the weather.
+
+zh=1
+你好，我身体很不舒服。
+Hello, I don't feel very well.
+
+en=student
+"身体" means body, and "不舒服" means not comfortable or unwell. It's a very common way to say you're feeling sick.
+
+en=teacher
+Right. Then the pharmacist, Lao Li, asks:
+
+zh=2
+请问你哪里不舒服？
+May I ask where you are feeling unwell?
+
+en=student
+"请问" is a polite way to say "may I ask." And "哪里" means "where."
+
+en=teacher
+Now, listen to how Xiao Ming describes his pain. This is our first grammar point.
+
+zh=1
+我的头疼得厉害，也有点发烧。
+My head hurts terribly, and I also have a bit of a fever.
+
+en=student
+"头疼" is a headache. But then he says "疼得厉害". That "de" is the degree complement!
+
+en=teacher
+Yes! "疼" is the verb "to ache/pain," and "厉害" means "severe" or "terrible." By putting "de" in the middle, he is saying the degree to which it hurts is "severe." It is a very common way to intensify a sensation.
+
+en=student
+So, if I want to say "I am very happy," I can't use "de" there, right?
+
+en=teacher
+Correct. "de" follows a verb or an adjective to describe the *action's* manner. For "happy," you would just say 我很高兴. But for an action like "to cry" or "to laugh," you could say "He cried terribly" using the complement.
+
+en=student
+Got it. Now, the pharmacist gives some instructions.
+
+zh=2
+你是感冒了吗？你要吃这种药片。每天三次，饭后吃，一次两片。
+Do you have a cold? You need to take these pills. Three times a day, after meals, two pills each time.
+
+en=student
+"感冒" is to have a cold. "药片" is pill. And "饭后" means "after a meal."
+
+en=teacher
+Now, this is the most important part of the lesson. Xiao Ming struggles here.
+
+zh=1
+对不起，你说得太快了，我听不懂。请说慢一点。
+I am sorry, you are speaking too fast, I can't understand. Please speak a little slower.
+
+en=student
+Wait, I heard "de" again! "你说得太快了".
+
+en=teacher
+Exactly. "说" is to speak, "太快了" means "too fast." The "de" connects the act of speaking to the manner of being "too fast." And then he uses our second grammar point: "听不懂".
+
+en=student
+"听" means to listen, and "不懂" means cannot understand. So "听不懂" is "cannot understand by listening."
+
+en=teacher
+Spot on. There is a difference between "我不懂" (I don't understand) and "我听不懂" (I cannot understand what I am hearing). "听不懂" implies the reason for the lack of understanding is the auditory input—perhaps because they are speaking too fast, or the accent is too thick, or it's just too much information.
+
+en=student
+That's a huge distinction. So if I'm reading a difficult book, I'd say "我看不懂" (I can't understand by reading)?
+
+en=teacher
+You've got it! And finally, the pharmacist slows down, and Xiao Ming responds.
+
+zh=2
+没问题。每天三次，饭后吃，一次两片。
+No problem. Three times a day, after meals, two pills each time.
+
+zh=1
+好的，我听懂了。谢谢你。
+Okay, I understand now. Thank you.
+
+en=student
+He says "听懂了". The "了" at the end implies a change in state. He couldn't understand before, but now, he does.
+
+en=teacher
+Perfect observation. And the pharmacist finishes with a very common polite phrase.
+
+zh=2
+不客气，祝你早日康复。
+You are welcome, I wish you a speedy recovery.
+
+en=student
+"祝你早日康复" is a great one to memorize for when someone is sick. It sounds very natural and caring.
+
+en=teacher
+It really does. And "不客气" is the classic "you're welcome."
+
+OUTRO
+
+en=student
+Phew, that was intense! I'm feeling a bit better just hearing about it, but I'll definitely stick to the "speak slower" strategy if I ever end up in a Chinese pharmacy.
+
+en=teacher
+Good idea. To recap, today we covered the degree complement using "verb plus de" to describe how an action is done, like "speaking too fast" or "hurting severely." We also looked at the potential complement "bu dong," specifically "听不懂" and "看不懂," to explain why you aren't grasping what you are hearing or reading.
+
+en=student
+And we learned some essential pharmacy vocabulary: headache, fever, pills, and how to say "after meals."
+
+en=teacher
+You nailed it. Thanks for listening to Learning Chinese. Practice these structures today, and we'll see you in the next episode!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Male"
+age = "二十岁出头"
+pitch = "中音域，因病痛而略显低沉和虚弱"
+pace = "中速，带有因不适而产生的停顿"
+volume = "中等，略显疲惫"
+clarity = "略有含混，听起来有点没精神"
+fluency = "由于身体不适，语速不均匀"
+timbre = "柔和，略带沙哑"
+emotion = "虚弱，困惑"
+usecase = "一个正在生病、有些迷茫的年轻顾客"
+dialogue = "我身体很不舒服。我的头疼得厉害，也有点发烧。"
+
+speaker = 2
+lang = "zh"
+gender = "Female"
+age = "四十岁左右"
+pitch = "中高音域，稳定且专业"
+pace = "中速，由于角色身份，初期说话较快"
+volume = "中等，清晰有力"
+clarity = "非常清晰，发音标准"
+fluency = "流利，职业化"
+timbre = "圆润，听起来很可靠"
+emotion = "专业，和蔼"
+usecase = "一位专业、效率极高的药店营业员"
+dialogue = "请问你哪里不舒服？你要吃这种药片。每天三次，饭后吃，一次两片。"

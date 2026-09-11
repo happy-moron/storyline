@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -euo pipefail
+shopt -s nullglob
 
 # ─── package_reader.sh ────────────────────────────────────────────────
 # Packages the Chinese Reader app into a tar.gz archive suitable for

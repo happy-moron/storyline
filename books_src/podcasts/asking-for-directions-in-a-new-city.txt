@@ -1,0 +1,166 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are tackling a very practical, albeit slightly stressful, situation: being lost in a brand new city.
+
+en=student
+Oh man, that is my worst nightmare. I always end up staring at my phone, looking completely confused.
+
+en=teacher
+Exactly. And when you are lost, you need to be able to ask for help without sounding too demanding, and you need to understand the directions you get. So, today we are looking at two important grammar points. First, the reduplication of verbs. In Chinese, you can repeat a verb, like 看看 or 问问, to indicate that the action is brief, casual, or to suggest "trying" something out. 
+
+en=student
+So, instead of just saying "look," saying 看看 makes it sound more like "have a quick look" or "take a peek"?
+
+en=teacher
+Precisely. It softens the tone. Second, we are looking at how certain verbs use 在 to describe location. Instead of just saying "I am at the park," you use verbs like 站在 (to stand at), 坐在 (to sit at), or 停在 (to stop at). These verbs combine an action with a location.
+
+en=student
+So, if I want to say "I am sitting at the table," I wouldn't just say "I am at the table," I would say 我坐在桌子旁边?
+
+en=teacher
+Spot on. Now, before we get into the grammar, let's talk about the scene. You are going to hear a dialogue between a frantic tourist and a very blunt, busy street vendor. The tourist is trying to find a hotel but is currently making things a bit difficult for everyone else.
+
+en=student
+I can already feel the stress. Let's hear it.
+
+DIALOGUE
+
+zh=1
+请问，请问，大酒店在哪儿？
+Excuse me, excuse me, where is the Grand Hotel?
+
+zh=2
+你站在路中间，太危险了！快走开！
+You are standing in the middle of the road, it's too dangerous! Move!
+
+zh=1
+对不起！我刚才在看地图。我会走走看的。
+Sorry! I was just looking at a map. I will walk a bit to see.
+
+zh=2
+你去那个公园，坐在长椅上，等一下出租车。
+Go to that park, sit on the bench, and wait for a taxi.
+
+zh=1
+好的，谢谢你！
+Okay, thank you!
+
+zh=2
+没关系。出租车会停在路边。
+No problem. The taxi will stop at the roadside.
+
+BREAKDOWN
+
+en=teacher
+Let's dive into that dialogue and break it down line by line. It starts with the tourist.
+
+zh=1
+请问，请问，大酒店在哪儿？
+Excuse me, excuse me, where is the Grand Hotel?
+
+en=student
+The tourist starts with 请问, which is a great one. It is a reduplication of the verb 问, meaning to ask. It's a very polite and common way to say "Excuse me, may I ask..."
+
+en=teacher
+Right. And we have 大酒店, which means Grand Hotel. 大 means big, and 酒店 means hotel. Then we have 在哪儿, which is the standard way to ask "where is...".
+
+zh=2
+你站在路中间，太危险了！快走开！
+You are standing in the middle of the road, it's too dangerous! Move!
+
+en=teacher
+The vendor is not being very gentle! He says 你站在路中间. Here we see our second grammar point: 站在.
+
+en=student
+Right, 站 means to stand, and 在 means at. So 站在 means "standing at." If he had just said 你在路中间, that would mean "You are in the middle of the road," but adding the verb 站 makes it specifically about the action of standing there.
+
+en=teacher
+Exactly. And 路中间 means the middle of the road. Then he says 太危险了, which means "too dangerous."
+
+zh=1
+对不起！我刚才在看地图。我会走走看的。
+Sorry! I was just looking at a map. I will walk a bit to see.
+
+en=student
+The tourist says 对不起, sorry. Then, 我刚才在看地图. 刚才 means "just now" or "a moment ago." And 看 is to look.
+
+en=teacher
+Now, listen to this part: 我会走走看的. This uses the reduplication we talked about. 走 means to walk. By saying 走走, he is saying "walk a little" or "walk a bit." And adding 看 at the end, like 走走看, is a very common structure that means "try walking to see" or "walk a bit and see."
+
+en=student
+So it is like "I will walk around and see if I can find it." That's so useful for when you aren't sure of a direction.
+
+zh=2
+你去那个公园，坐在长椅上，等一下出租车。
+Go to that park, sit on the bench, and wait for a taxi.
+
+en=teacher
+The vendor gives some directions. 你去那个公园, "Go to that park." Then he says 坐在长椅上.
+
+en=student
+Here is another one! 坐 means to sit, and 在 means at. So 坐在 means "sitting at" or "sitting on." And 长椅 means bench.
+
+en=teacher
+Correct. And then he says 等一下出租车. 等 is to wait, and 一下 is a common way to indicate a short duration of time, like "a little bit."
+
+zh=1
+好的，谢谢你！
+Okay, thank you!
+
+zh=2
+没关系。出租车会停在路边。
+No problem. The taxi will stop at the roadside.
+
+en=teacher
+The vendor finishes with 没关系, which means "it doesn't matter" or "no problem." And finally, he says 出租车会停在路边.
+
+en=student
+Here we go again with the verb plus 在. 停 means to stop, and 在 means at. So 停在 means "to stop at." And 路边 means the roadside.
+
+en=teacher
+Perfect. You can use 停在 for cars, buses, or even people stopping at a specific spot.
+
+OUTRO
+
+en=student
+That was intense! I felt the vendor's frustration through the screen.
+
+en=teacher
+It was a bit dramatic, but that is how people actually talk when they are in a hurry! To recap, we learned how to use verb reduplication like 看看 or 走走看 to make actions sound casual or to mean "try doing something."
+
+en=student
+And we also learned how to use verbs like 站, 坐, and 停 followed by 在 to describe where an action is taking place, like 站在 or 坐在.
+
+en=teacher
+Exactly. Practice these when you are navigating a new city, and you'll sound much more natural. Thanks for listening to Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，带有焦虑和紧张感"
+pace = "略快，呼吸声较多"
+volume = "中等，音量有些不稳"
+clarity = "略微含糊，因紧张而有些局促"
+fluency = "不流畅，有明显的犹豫和重复" 
+timbre = "清脆但显得有些单薄"
+emotion = "惊慌失措，急于得到帮助" 
+usecase = "一个在陌生城市迷路、手忙脚乱的外国游客"
+dialogue = "请问，请问，大酒店在哪儿？对不起！我刚才在看地图。我会走走看的。好的，谢谢你！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "五十岁左右"
+pitch = "低音域，非常有穿透力"
+pace = "快，节奏急促且有力"
+volume = "大，非常有存在感"
+clarity = "非常清晰，咬字有力"
+fluency = "流利，说话很有节奏感" 
+timbre = "浑厚，略带沙哑，非常有生活气息"
+emotion = "急躁，直率，但并不邪恶" 
+usecase = "一个正在忙碌工作的、说话很直接的街头小贩"
+dialogue = "你站在路中间，太危险了！快走开！你去那个公园，坐在长椅上，等一下出租车。没关系。出租车会停在路边。"

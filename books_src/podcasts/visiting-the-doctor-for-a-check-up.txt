@@ -1,0 +1,214 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are exploring a very common, yet sometimes confusing, part of the Chinese language: the word 给, which means "to give."
+
+en=student
+I've seen this word everywhere, James. But I get confused because sometimes it acts like a verb, and sometimes it seems to act like a preposition.
+
+en=teacher
+That is exactly what we are tackling today! We are going to look at two specific structures. The first is when 给 acts as a preposition meaning "for" or "to" someone. The structure is Subject, plus 给, plus the Target, plus a Verb. For example, 我给你打电话, which means I call you. Here, "call" is the action being done for you.
+
+en=student
+Okay, so it’s "Subject + for someone + do something."
+
+en=teacher
+Precisely. The second structure is when 给 acts as a verb that takes two objects. This is when you actually give someone something. The structure is Subject, plus Verb, plus the Indirect Object, which is the person, plus the Direct Object, which is the thing being given. For example, 我给你一本书, meaning I give you a book.
+
+en=student
+So in the first one, the action is the main event, and "give" just tells us who it's for. But in the second one, "give" is the actual action itself.
+
+en=teacher
+Spot on! You are a natural. Today's theme is visiting the doctor for a check-up. You will hear a patient visiting a clinic, interacting with a nurse and a doctor. We will use vocabulary related to health, such as 舒服 (comfortable or well), 检查 (to examine or check), and 建议 (advice or to suggest).
+
+en=student
+I'm ready. Let's see if I can spot the difference between the two "give" structures in the dialogue.
+
+DIALOGUE
+
+zh=1
+您好，请给我您的身份证。
+Hello, please give me your identification card.
+
+zh=2
+好的，给。
+Okay, here you go.
+
+zh=1
+请在这里坐一下，医生马上过来给你检查。
+Please sit here for a moment; the doctor will come over to examine you shortly.
+
+zh=3
+您好，您哪里不舒服？
+Hello, where do you feel unwell?
+
+zh=2
+我觉得胃有点疼，也觉得有点累。
+I feel that my stomach hurts a bit, and I also feel a bit tired.
+
+zh=3
+别担心，我先给你检查一下。
+Don't worry, I will examine you first.
+
+zh=3
+您的胃确实有点不舒服。我给你开一点药，记得按时吃。
+Your stomach is indeed a bit uncomfortable. I will prescribe you some medicine; remember to take it on time.
+
+zh=2
+好的，谢谢医生。
+Okay, thank you, doctor.
+
+BREAKDOWN
+
+en=teacher
+Let's dive into that dialogue and break it down line by line. We start with the nurse, speaker one.
+
+zh=1
+您好，请给我您的身份证。
+Hello, please give me your identification card.
+
+en=student
+"给我您的身份证." Here, "给" is the main verb, right? "Give me your ID."
+
+en=teacher
+Exactly. That is our second grammar point: the verb with two objects. "给我" is "give me," and "您的身份证" is the object being given. 
+
+en=student
+Then speaker two just says "给" in response.
+
+zh=2
+好的，给。
+Okay, here you go.
+
+en=teacher
+Right. In this very short context, "给" acts as "here it is" or "I am giving it to you."
+
+zh=1
+请在这里坐一下，医生马上过来给你检查。
+Please sit here for a moment; the doctor will come over to examine you shortly.
+
+en=student
+Wait, "给你检查" sounds different. It's not "give you an examination," is it?
+
+en=teacher
+Good catch! In "给你检查," the verb is "检查," which means to examine. The "给" here is acting as a preposition, meaning the examination is being performed *for* the patient. This is our first grammar point: Subject, plus 给, plus Target, plus Verb.
+
+en=student
+So, "The doctor (Subject) + for you (Target) + examines (Verb)."
+
+en=teacher
+Perfect. Now, let's listen to the doctor, speaker three.
+
+zh=3
+您好，您哪里不舒服？
+Hello, where do you feel unwell?
+
+en=student
+"不舒服" is a big word. It means "not comfortable," but in a medical context, it's how you say you don't feel well.
+
+en=teacher
+Correct. Now look at how the patient responds.
+
+zh=2
+我觉得胃有点疼，也觉得有点累。
+I feel that my stomach hurts a bit, and I also feel a bit tired.
+
+en=student
+"胃" means stomach. "疼" means pain or to ache. And "有点" means "a bit." Is "有点" different from "一点"?
+
+en=teacher
+That is a classic question! "有点" is usually used before an adjective to express a slight negative feeling, like "a bit tired" or "a bit uncomfortable." "一点" is usually used after a verb or with a noun to indicate a small amount.
+
+en=student
+Got it. So "有点疼" is "a bit painful." Now, the doctor says something interesting.
+
+zh=3
+别担心，我先给你检查一下。
+Don't worry, I will examine you first.
+
+en=teacher
+Here we see "给你检查" again. The doctor is performing the action of examining *for* the patient.
+
+zh=3
+您的胃确实有点不舒服。我给你开一点药，记得按时吃。
+Your stomach is indeed a bit uncomfortable. I will prescribe you some medicine; remember to take it on time.
+
+en=student
+"开一点药" sounds like the second grammar point. "Prescribe you some medicine."
+
+en=teacher
+Yes! "开" means to write or to prescribe in a medical context. The verb is "开," the indirect object is "你," and the direct object is "药," which means medicine.
+
+en=student
+And "按时" means "on time" or "on schedule," right?
+
+en=teacher
+Correct. "按" means according to, and "时" means time. So, "according to the time."
+
+zh=2
+好的，谢谢医生。
+Okay, thank you, doctor.
+
+en=teacher
+And finally, the patient thanks the doctor. A very polite way to end a medical visit.
+
+OUTRO
+
+en=teacher
+That wraps up today's lesson! We've covered how "给" can be used both as a verb to give someone something, and as a preposition to indicate who an action is being done for.
+
+en=student
+It was really helpful to see them side by side in a real-world setting like a doctor's office. "给我你的身份证" versus "给你检查." 
+
+en=teacher
+Exactly. Remember, if you are doing an action *for* someone, use "给 + Person + Verb." If you are actually transferring an object to someone, use "Verb + Person + Object."
+
+en=student
+Thanks, James. I feel much more confident about using "给" now.
+
+en=teacher
+Glad to hear it! Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "三十岁左右"
+pitch = "中音域，平稳且礼貌"
+pace = "中速，节奏均匀"
+volume = "中等，声音清晰"
+clarity = "非常清晰，字正腔圆"
+fluency = "流畅，带有职业化的亲和力" 
+timbre = "温和，圆润"
+emotion = "专业，耐心" 
+usecase = "一位专业且有礼貌的诊所护士"
+dialogue = "您好，请给我您的身份证。请在这里坐一下，医生马上过来给你检查。"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "二十岁左右"
+pitch = "中低音域，略显虚弱"
+pace = "慢速，声音有些迟钝"
+volume = "较小，显得有些疲惫"
+clarity = "清晰，但语速较慢"
+fluency = "略有停顿，表现出不适感" 
+timbre = "柔和，略带沙哑"
+emotion = "虚弱，疲惫" 
+usecase = "一位生病了的年轻患者"
+dialogue = "好的，给。我觉得胃有点疼，也觉得有点累。好的，谢谢医生。"
+
+speaker = 3
+lang = "zh"
+gender = "Male"
+age = "五十岁左右"
+pitch = "低音域，沉稳有力"
+pace = "中速，语调从容"
+volume = "中等偏大，充满信任感"
+clarity = "非常清晰，发音权威"
+fluency = "非常流畅" 
+timbre = "浑厚，有磁性"
+emotion = "冷静，从容，令人安心" 
+usecase = "一位经验丰富的资深医生"
+dialogue = "您好，您哪里不舒服？别担心，我先给你检查一下。您的胃确实有点不舒服。我给你开一点药，记得按时吃。"
