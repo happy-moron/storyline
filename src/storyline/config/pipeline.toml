@@ -42,11 +42,12 @@ paths.prompts.tokenize = "prompts/tokenize.txt"
 paths.prompts.chunk = "prompts/tts_chunking_prompt_single_narrator.md"
 paths.prompts.fix_tokenization = "prompts/fix_tokenization.txt"
 paths.prompts.dict_entry = "prompts/create_single_dictionary_entry.txt"
-paths.prompts.podcast_vocab = "prompts/podcast-vocab.md"
+paths.prompts.podcast_vocab = "prompts/podcast-candidate-vocab.md"
 paths.prompts.podcast_script = "prompts/podcast-script.md"
 paths.prompts.podcast_fix_script = "prompts/podcast-fix-script.md"
 paths.prompts.podcast_fix_dialogue = "prompts/podcast-fix-dialogue.md"
 paths.prompts.podcast_fix_voice_profiles = "prompts/podcast-fix-voice-profiles-script.md"
+paths.prompts.flashcard_vocab_from_list = "prompts/flashcard-vocab-from-list.md"
 
 # -- Pipeline behaviour --
 pipeline.max_chunks = 500

@@ -1,0 +1,190 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are diving into the chaotic reality of babysitting.
+
+en=student
+Oh, I have been there, James. It is not always playing with dolls and eating cookies; sometimes it is a total disaster.
+
+en=teacher
+Exactly. Today, we are looking at two very useful grammar points to help you express frustration or describe significant differences. First, we have the "every time" structure using 每次 and 都. The pattern is 每次 plus Event One, then you must include 都 before Event Two. For example, 每次我喝咖啡，都会觉得很开心 (Every time I drink coffee, I feel very happy).
+
+en=student
+So, 每次 sets the recurring time, and 都 emphasizes that the action happens every single time. It is like saying "every time... always...".
+
+en=teacher
+Precisely. Second, we are learning how to say "much more" when making comparisons. Instead of just saying something is more than something else, you can use the structure Noun One plus 比 plus Noun 2 plus Adjective plus 了 plus 多. For example, 今天比昨天热多了 (Today is much hotter than yesterday).
+
+en=student
+That sounds perfect for when you want to add some emphasis. If I say 他比我高, it means "He is taller than me," but if I say 他比我高多了, it means "He is much taller than me."
+
+en=teacher
+Spot on. In our dialogue today, you are going to hear Lili, a babysitter who is currently having a very, very stressful evening. She is on the phone with her friend, Xiao Ming, venting about how difficult these two children are.
+
+en=student
+I think I can relate to Lili already. Let's hear it.
+
+DIALOGUE
+
+zh=1
+救命！我真的受不了了！
+Help! I really can't stand it anymore!
+
+zh=2
+怎么了？发生什么事了？
+What's wrong? What happened?
+
+zh=1
+每次我准备睡觉，这两个孩子就开始吵架！
+Every time I prepare to sleep, these two children start arguing!
+
+zh=2
+别担心，他们只是在玩。
+Don't worry, they are just playing.
+
+zh=1
+这根本不是在玩！每次我给他们做饭，他们都会弄脏地板。
+This isn't playing at all! Every time I cook for them, they always dirty the floor.
+
+zh=2
+你觉得这次的任务难吗？
+Do you think the task is difficult this time?
+
+zh=1
+难多了！这两个孩子比上个星期那个孩子难对付多了！
+Much harder! These two kids are much more difficult to deal with than that kid from last week!
+
+zh=2
+别太累了，加油！
+Don't get too tired, hang in there!
+
+BREAKDOWN
+
+en=teacher
+Let's break down that stressful conversation. We start with Lili's cry for help.
+
+zh=1
+救命！我真的受不了了！
+Help! I really can't stand it anymore!
+
+en=student
+"受不了" (shòu bù liǎo) is such a useful phrase. It means "cannot endure" or "can't stand it." 
+
+en=teacher
+It is very common. Then Xiao Ming asks:
+
+zh=2
+怎么了？发生什么事了？
+What's wrong? What happened?
+
+en=student
+"怎么了" is the classic "what happened" or "what's wrong." 
+
+en=teacher
+Now, here is our first grammar point in action. Listen to Lili.
+
+zh=1
+每次我准备睡觉，这两个孩子就开始吵架！
+Every time I prepare to sleep, these two children start arguing!
+
+en=student
+"每次" (měi cì) is every time. And we see "都" used here, though she said "就" (jiù) to add emphasis to the immediacy. Actually, James, can I use 每次 without 都?
+
+en=teacher
+You can, but it sounds incomplete in most spoken contexts. Adding 都 makes it clear that this is a repetitive, predictable pattern. In this sentence, "吵架" (chǎo jià) means to argue or quarrel.
+
+en=student
+Got it. And then she says:
+
+zh=1
+这根本不是在玩！每次我给他们做饭，他们都会弄脏地板。
+This isn't playing at all! Every time I cook for them, they always dirty the floor.
+
+en=teacher
+Notice "根本" (gēn běn) here. It means "at all" or "simply" when used with a negative. It adds that dramatic flair Lili is feeling. And here is "每次" again. "每次我给他们做饭" (Every time I cook for them), "他们都会" (they always will), "弄脏" (nòng zāng - to make dirty) "地板" (dì bǎn - floor).
+
+en=student
+She is definitely having a rough night. Now, Xiao Ming asks a question using "难" (nán), which means difficult.
+
+zh=2
+你觉得这次的任务难吗？
+Do you think the task is difficult this time?
+
+en=student
+"任务" (rèn wu) means task or mission. Quite formal for a babysitter, but it works! Then Lili hits us with the second grammar point.
+
+zh=1
+难多了！这两个孩子比上个星期那个孩子难对付多了！
+Much harder! These two kids are much more difficult to deal with than that kid from last week!
+
+en=teacher
+This is a perfect example of our comparison grammar. "难多了" (nán duō le) means "much more difficult." 
+
+en=student
+And the long sentence: "这两个孩子比上个星期那个孩子难对付多了". Let's dissect that. "这两个孩子" is the subject. "比" introduces the comparison. "上个星期那个孩子" is the object being compared—the kid from last week. Then "难对付" is the adjective meaning "difficult to deal with," and we finish with "多了" to say "much more."
+
+en=teacher
+Exactly. If she just said "这两个孩子比那个孩子难对付," she would just be saying "These two kids are more difficult to deal with than that kid." Adding "多了" at the end provides that massive emphasis on the scale of the difference.
+
+en=student
+So, "比...多了" is the way to go when you really want to emphasize that the difference is huge.
+
+en=teacher
+Correct. Finally, Xiao Ming tries to comfort her.
+
+zh=2
+别太累了，加油！
+Don't get too tired, hang in there!
+
+en=student
+"加油" (jiā yóu) is the classic "come on" or "keep going." And "别太累了" is a kind way to say "don't overwork yourself."
+
+OUTRO
+
+en=teacher
+Phew! I think I need a break after listening to Lili. She really had a night from hell.
+
+en=student
+I'm glad I'm not her! But we learned some great things today. 
+
+en=teacher
+We did. We learned how to use 每次...都... to talk about recurring events, and how to use 比...多了 to emphasize a huge difference in comparisons.
+
+en=student
+And we learned some great vocabulary like 吵架 (to argue), 弄脏 (to dirty), and 难对付 (difficult to deal with).
+
+en=teacher
+Thanks for listening to Learning Chinese. Practice these patterns in your own life, and we'll see you in the next episode.
+
+en=student
+再见！
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "二十岁出头"
+pitch = "中高音域，因焦虑而忽高忽低"
+pace = "中等，但在激动时变快"
+volume = "中等偏大"
+clarity = "清晰，但带有急促感"
+fluency = "由于情绪激动，语速较快，呼吸感明显" 
+timbre = "清脆，略带尖锐"
+emotion = "焦虑，崩溃，挫败" 
+usecase = "一个正处于压力巅峰、正在应对淘气小孩的年轻保姆"
+dialogue = "救命！我真的受不了了！这根本不是在玩！每次我给他们做饭，他们都会弄脏地板！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁左右"
+pitch = "中音域，平稳"
+pace = "慢速，节奏舒缓"
+volume = "中等"
+clarity = "非常清晰"
+fluency = "流利，语气平稳" 
+timbre = "柔和，温和"
+emotion = "冷静，从容，试图安抚他人" 
+usecase = "一个性格温和、情绪稳定的年轻朋友"
+dialogue = "别担心，他们只是在玩。别太累了，加油！"

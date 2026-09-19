@@ -28,6 +28,11 @@ from storyline.book.tokenization_repair import (
     apply_fixes,
 )
 from storyline.book.update_manifest import update_manifest
+from storyline.book.breakdown import (
+    parse_breakdown_output,
+    validate_breakdown_output,
+    generate_breakdown_for_chapter,
+)
 from storyline.config.pipeline_config import PipelineConfig
 from zsp_llm_client.prompt_runner import PromptRunner
 
@@ -401,6 +406,90 @@ def dictionary_stage(token_txt_path: Path, dictionary: dict, dict_file: str,
     return len(dictionary) - before
 
 
+def breakdown_stage(pipe_output_path: Path, chunk_json_path: Path,
+                    config: PipelineConfig,
+                    service_manager: ServiceManager | None,
+                    base_dir: Path,
+                    log, stem: str) -> int:
+    """Generate per-line English grammar breakdowns for Chinese reading lines.
+
+    Reads Chinese sentences from pipe/source, sends them to the LLM,
+    and stores the breakdown text in the chunks JSON under a per-line
+    ``breakdown`` field.
+
+    Returns number of lines with breakdown data.
+    """
+    source_sentences = parse_source_file(pipe_output_path)
+    chinese_lines = [
+        item["chinese"].strip() for item in source_sentences
+        if item["chinese"].strip()
+    ]
+
+    if not chinese_lines:
+        log.info("event=breakdown_skip chapter=%s reason=no_chinese_lines", stem)
+        return 0
+
+    chinese_lines_clean = [
+        "".join(line.split()) for line in chinese_lines
+    ]
+
+    _ensure_llm(service_manager, config, 'translate')
+
+    try:
+        breakdowns = generate_breakdown_for_chapter(
+            chinese_lines_clean,
+            stem,
+            Path(base_dir),
+            resolve_prompt=config.resolve_prompt,
+            models=config.models,
+            llm_timeout_s=config.llm_timeout_s,
+            llm_retries=config.llm_retries,
+            extra_options=_resolve_extra_options(config, "translate"),
+        )
+    except ValueError as e:
+        log.warning("event=breakdown_failure chapter=%s error=%s", stem, str(e))
+        return 0
+
+    # Store in chunk JSON
+    if chunk_json_path.exists():
+        import json
+        with open(chunk_json_path, encoding="utf-8") as f:
+            chunk_data = json.load(f)
+
+        # Build per-line breakdown into chunks
+        line_to_breakdown: dict[int, list[str]] = {}
+        for i, points in enumerate(breakdowns):
+            if points:
+                line_to_breakdown[i] = points
+
+        for chunk in chunk_data["chunks"]:
+            line_range = chunk.get("line_range", [])
+            if len(line_range) != 2:
+                continue
+            start, end = line_range
+            # Ensure lines array exists
+            if "lines" not in chunk:
+                chunk["lines"] = []
+            # Pad lines array if needed
+            while len(chunk["lines"]) <= (end - start):
+                chunk["lines"].append({})
+            for local_idx in range(end - start + 1):
+                global_idx = start + local_idx
+                if global_idx in line_to_breakdown:
+                    if local_idx < len(chunk["lines"]):
+                        chunk["lines"][local_idx]["breakdown"] = line_to_breakdown[global_idx]
+
+        with open(chunk_json_path, "w", encoding="utf-8") as f:
+            json.dump(chunk_data, f, ensure_ascii=False, indent=2)
+
+    n_covered = sum(1 for b in breakdowns if b)
+    log.info(
+        "event=pipeline_step step=breakdown chapter=%s lines=%d covered=%d",
+        stem, len(chinese_lines), n_covered,
+    )
+    return n_covered
+
+
 # ============================================================================
 # Pipeline orchestrator
 # ============================================================================
@@ -539,6 +628,21 @@ def create_book(input_text: str, author: str, config: PipelineConfig,
             stem, words_added, int((time.time() - t0) * 1000),
         )
 
+        # -- 8. Breakdown --
+        t0 = time.time()
+        if not config.skip_breakdown:
+            n_covered = breakdown_stage(
+                pipe_output_path, chunk_json_path,
+                config, service_manager, base_dir,
+                log, stem,
+            )
+            log.info(
+                "event=pipeline_step step=breakdown chapter=%s covered=%d duration_ms=%d",
+                stem, n_covered, int((time.time() - t0) * 1000),
+            )
+        else:
+            log.info("event=pipeline_step step=breakdown chapter=%s skipped", stem)
+
     # -- Finalize --
     update_manifest(config.books_dir)
 
@@ -589,6 +693,10 @@ if __name__ == '__main__':
         action=argparse.BooleanOptionalAction,
         dest='audio_use_instruct',
         help='Pass chunk @instruct directions to TTS engine (overrides audio.toml)',
+    )
+    parser.add_argument(
+        '--skip-breakdown', dest='skip_breakdown', default=None,
+        action=argparse.BooleanOptionalAction, help='Skip breakdown generation',
     )
     args = parser.parse_args()
 

@@ -6,15 +6,19 @@ shopt -s nullglob
 # Packages the Chinese Reader app into a tar.gz archive suitable for
 # copying to a web root.  Only runtime-essential files are included:
 #
-#   Core reader files   index.html, styles.css
+#   Core reader files   index.html, styles.css, flashcards.html, flashcards.css
 #   Dictionary          dict/custom_dict.json
 #   Book manifest       books/manifest.json
+#   Flashcard manifest  books/flashcard-manifest.json
+#   Vocab store         books/vocab/{audio,images,texts}/
 #
 # For each book listed in the manifest:
 #   books/{author}/{slug}/pipe/source/{prefix}_{N}.txt
 #   books/{author}/{slug}/pipe/tokenized/{prefix}_{N}.txt
 #   books/{author}/{slug}/chunks/{prefix}_{N}.json          (if present)
 #   books/{author}/{slug}/audio/{audioFile}                 (referenced by chunk JSONs)
+#
+#   books/{author}/{slug}/flashcards/cards.pdf              (per-episode; audio/images from shared store)
 #
 # Intermediate pipeline files (*_raw.txt, *_numbered.txt,
 # *_input.txt, split/, etc.) are EXCLUDED.
@@ -38,11 +42,20 @@ cp index.html styles.css flashcards.html flashcards.css "$STAGE/"
 mkdir -p "$STAGE/dict"
 cp dict/custom_dict.json "$STAGE/dict/"
 
-# ── 3. Manifest ───────────────────────────────────────────────────────
+# ── 3. Manifests ──────────────────────────────────────────────────────
 mkdir -p "$STAGE/books"
 cp books/manifest.json "$STAGE/books/manifest.json"
+if [ -f books/flashcard-manifest.json ]; then
+    cp books/flashcard-manifest.json "$STAGE/books/"
+fi
 
-# ── 4. Per-book runtime files ─────────────────────────────────────────
+# ── 4. Vocab store (shared deduplicated assets) ───────────────────────
+if [ -d books/vocab ]; then
+    echo "==> Copying vocab store..."
+    cp -r books/vocab "$STAGE/books/vocab"
+fi
+
+# ── 5. Per-book runtime files ─────────────────────────────────────────
 load_book_data() {
     local author="$1" slug="$2" prefix="$3"
     local bookdir="$STAGE/books/${author}/${slug}"
@@ -107,19 +120,15 @@ load_book_data() {
         done
     fi
 
-    # flashcards/ – entries JSON, audio, and inverted images only
+    # flashcards/ – per-episode PDF only; audio/images now served from shared vocab store
     local fc="$PROJECT_ROOT/books/${author}/${slug}/flashcards"
     if [ -d "$fc" ]; then
         mkdir -p "$bookdir/flashcards"
-        # entries cache (required by flashcard viewer)
-        [ -f "$fc/flashcard_entries.json" ] && cp "$fc/flashcard_entries.json" "$bookdir/flashcards/"
-        # word + sentence audio
-        for af in "$fc"/audio_*.mp3; do
-            [ -f "$af" ] && cp "$af" "$bookdir/flashcards/"
-        done
-        # inverted (dark-mode) images only – not the originals
-        for inf in "$fc"/img_*_inverted.png; do
-            [ -f "$inf" ] && cp "$inf" "$bookdir/flashcards/"
+        # PDF is per-episode, everything else comes from shared vocab store
+        for pdf in "$fc"/cards.pdf; do
+            if [ -f "$pdf" ]; then
+                cp "$pdf" "$bookdir/flashcards/"
+            fi
         done
     fi
 }
@@ -150,7 +159,7 @@ for entry in manifest.get('books', []):
     load_book_data "$author" "$slug" "$prefix"
 done
 
-# ── 5. Create tarball ─────────────────────────────────────────────────
+# ── 6. Create tarball ─────────────────────────────────────────────────
 echo "==> Creating $OUTFILE ..."
 mkdir -p "$OUTDIR"
 tar -C "$STAGE" -czf "$OUTFILE" .

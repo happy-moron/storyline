@@ -32,10 +32,15 @@ from storyline.prompt_utils.run_prompt import run_prompt_with_metrics
 from storyline.services.manager import ServiceManager
 
 
+# Flashcard manifest path — shared across podcast and flashcard pipelines.
+_MANIFEST_PATH = Path("books/flashcard-manifest.json")
+
+
 HSK_INDEX_DIR = "dict"
 TOPICS_PATH = "src/storyline/podcast/topics.md"
 EPISODES_PATH = "src/storyline/podcast/existing-episodes.csv"
 SCRIPT_DIR = "books_src/podcasts"
+FLASHCARD_ENTRIES_CACHE = "flashcard_entries.json"
 
 
 def _resolve_profile(config: PipelineConfig, task: str) -> str | None:
@@ -73,6 +78,181 @@ def _cleanup_orphan_omnivoice():
         pass
 
 
+def _load_manifest_words() -> set[str]:
+    """Load all Chinese words already registered in the flashcard manifest."""
+    if _MANIFEST_PATH.is_file():
+        with open(_MANIFEST_PATH, encoding="utf-8") as f:
+            manifest = json.load(f)
+        return set(manifest.get("words", {}).keys())
+    return set()
+
+
+def _generate_candidate_vocab(
+    config: PipelineConfig,
+    service_manager: ServiceManager,
+    theme: str,
+) -> list[tuple[str, str, str]]:
+    """Generate candidate vocab from the theme via podcast-candidate-vocab.md.
+
+    Returns a list of (word, pinyin, translation) tuples.
+    """
+    log = get_logger("podcast.candidate_vocab")
+
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        input_file = tmp_path / "candidate_input.txt"
+        input_file.write_text(theme, encoding="utf-8")
+        output_file = tmp_path / "candidate_output.txt"
+
+        log.info("event=candidate_vocab_start theme=%s", theme)
+        metrics = run_prompt_with_metrics(
+            config.resolve_prompt("podcast_vocab"),
+            input_file,
+            output_file,
+            models=config.models,
+            timeout=config.llm_timeout_s,
+            prompt_label="podcast_vocab",
+        )
+        log.info(
+            "event=candidate_vocab_done theme=%s wall_ms=%d",
+            theme, metrics.get("wall_ms", 0),
+        )
+
+        raw = output_file.read_text(encoding="utf-8").strip()
+
+    candidates: list[tuple[str, str, str]] = []
+    for line in raw.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = [p.strip() for p in line.split(",", 2)]
+        if len(parts) == 3:
+            candidates.append((parts[0], parts[1], parts[2]))
+        else:
+            log.warning("event=candidate_skip_line line=%s", line)
+
+    log.info("event=candidates_parsed theme=%s count=%d", theme, len(candidates))
+    return candidates
+
+
+def _dedup_candidates(
+    candidates: list[tuple[str, str, str]],
+    existing_words: set[str],
+) -> list[tuple[str, str, str]]:
+    """Remove candidates whose word already exists in the manifest."""
+    return [c for c in candidates if c[0] not in existing_words]
+
+
+def _format_candidate_vocab_text(candidates: list[tuple[str, str, str]]) -> str:
+    """Format candidates as 3-field CSV text for the script prompt input."""
+    lines = [""]
+    for word, pinyin, translation in candidates:
+        lines.append(f"{word},{pinyin},{translation}")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def _filter_candidates_in_script(
+    candidates: list[tuple[str, str, str]],
+    script_text: str,
+) -> list[tuple[str, str, str]]:
+    """Keep only candidates whose Chinese word appears in the script."""
+    return [c for c in candidates if c[0] in script_text]
+
+
+def _parse_expanded_entries(response_text: str) -> list[list[str]]:
+    """Parse the 7-field flashcard entry format from LLM output.
+
+    Entries are separated by blank lines.  Each entry must have exactly
+    7 non-empty lines (word, pinyin, definition, sentence_cn,
+    sentence_py, sentence_en, image_prompt).
+    """
+    import re
+    blocks = re.split(r'\n\s*\n', response_text.strip())
+    entries: list[list[str]] = []
+    for block in blocks:
+        lines = [ln.strip() for ln in block.split('\n') if ln.strip()]
+        if not lines:
+            continue
+        if len(lines) != 7:
+            continue  # skip malformed blocks
+        entries.append(lines)
+    return entries
+
+
+def _expand_candidate_entries(
+    candidates: list[tuple[str, str, str]],
+    prompt_template_path: str,
+    service_manager: ServiceManager,
+    models: list[str],
+    output_dir: Path,
+    timeout: int = 1500,
+    *,
+    llm_already_running: bool = False,
+) -> list[list[str]]:
+    """Expand 3-field candidates to 7-field flashcard entries via LLM.
+
+    The LLM receives the candidate list via flashcard-vocab-from-list.md
+    and returns entries in the standard 7-field format.
+    """
+    log = get_logger("podcast.expand_entries")
+    cache_path = output_dir / FLASHCARD_ENTRIES_CACHE
+    if cache_path.is_file():
+        with open(cache_path, encoding="utf-8") as f:
+            cached = json.load(f)
+        log.info("event=expand_entries_cache_hit path=%s entries=%d", cache_path, len(cached))
+        return cached
+
+    if not llm_already_running:
+        service_manager.start_if_needed("llm")
+
+    try:
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp_path = Path(tmp)
+            input_file = tmp_path / "word_list.txt"
+            lines = [f"{w},{p},{t}" for w, p, t in candidates]
+            input_file.write_text("\n".join(lines), encoding="utf-8")
+
+            response_file = tmp_path / "response.txt"
+            log.info(
+                "event=expand_entries_start candidates=%d", len(candidates),
+            )
+            run_prompt_with_metrics(
+                prompt_template_path,
+                input_file,
+                response_file,
+                models=models,
+                timeout=timeout,
+                prompt_label="flashcard_vocab_from_list",
+            )
+            response = response_file.read_text(encoding="utf-8")
+            log.info(
+                "event=expand_entries_response chars=%d", len(response),
+            )
+    finally:
+        if not llm_already_running:
+            service_manager.stop_if_running("llm")
+
+    entries = _parse_expanded_entries(response)
+    log.info("event=expand_entries_done entries=%d", len(entries))
+
+    # Cache
+    output_dir.mkdir(parents=True, exist_ok=True)
+    with open(cache_path, "w", encoding="utf-8") as f:
+        json.dump(entries, f, ensure_ascii=False, indent=2)
+
+    return entries
+
+
+def _load_candidate_entries(output_dir: Path) -> list[list[str]] | None:
+    """Load previously expanded candidate entries from cache."""
+    cache_path = output_dir / FLASHCARD_ENTRIES_CACHE
+    if cache_path.is_file():
+        with open(cache_path, encoding="utf-8") as f:
+            return json.load(f)
+    return None
+
+
 def build_script_input(selection: Selection, vocab_text: str) -> str:
     lines = ["## HSK Point(s)", ""]
     for point in selection.grammar_points:
@@ -86,6 +266,11 @@ def build_script_input(selection: Selection, vocab_text: str) -> str:
         selection.theme,
         "",
     ]
+    if vocab_text:
+        lines += [
+            "## Vocab",
+            vocab_text,
+        ]
     return "\n".join(lines)
 
 
@@ -113,6 +298,34 @@ def generate_podcast(
         ",".join(p.id for p in selection.grammar_points),
     )
 
+    # ── Candidate vocab generation ────────────────────────────────────
+    all_candidates: list[tuple[str, str, str]] = []
+    script_candidates: list[tuple[str, str, str]] = []
+
+    if flashcards and service_manager is not None:
+        existing_words = _load_manifest_words()
+        log.info(
+            "event=manifest_loaded theme=%s existing_words=%d",
+            selection.theme_slug, len(existing_words),
+        )
+
+        _ensure_llm(service_manager, config, "podcast_vocab")
+
+        raw_candidates = _generate_candidate_vocab(
+            config, service_manager, selection.theme,
+        )
+        candidates = _dedup_candidates(raw_candidates, existing_words)
+        all_candidates = candidates
+
+        log.info(
+            "event=candidates_after_dedup theme=%s raw=%d deduped=%d",
+            selection.theme_slug, len(raw_candidates), len(candidates),
+        )
+    else:
+        log.info("event=candidate_skipped theme=%s flashcards=%s",
+                 selection.theme_slug, flashcards)
+
+    # ── Script generation ─────────────────────────────────────────────
     _ensure_llm(service_manager, config, "podcast_script")
 
     script_output = Path(script_dir) / f"{selection.theme_slug}.txt"
@@ -123,7 +336,11 @@ def generate_podcast(
 
         script_input = tmp_path / "script_input.txt"
         script_input.write_text(
-            build_script_input(selection, ""), encoding="utf-8"
+            build_script_input(
+                selection,
+                _format_candidate_vocab_text(all_candidates),
+            ),
+            encoding="utf-8",
         )
         metrics = run_prompt_with_metrics(
             config.resolve_prompt("podcast_script"),
@@ -142,35 +359,66 @@ def generate_podcast(
 
         _validate_and_fix(config, script_output, tmp_path, log)
 
-    flashcard_output_dir: Path | None = None
+    # ── Filter candidates by script content ───────────────────────────
+    if all_candidates:
+        script_text = script_output.read_text(encoding="utf-8")
+        script_candidates = _filter_candidates_in_script(all_candidates, script_text)
+        log.info(
+            "event=candidates_in_script theme=%s before=%d after=%d",
+            selection.theme_slug, len(all_candidates), len(script_candidates),
+        )
 
-    if flashcards and service_manager is not None:
+    # ── Flashcard entries from candidates ─────────────────────────────
+    flashcard_output_dir: Path | None = None
+    entries: list[list[str]] = []
+
+    if flashcards and service_manager is not None and script_candidates:
         log.info("event=flashcard_vocab_stage")
         t0 = time.time()
         flashcard_output_dir = (
             Path(script_dir).parent.parent / "books" / "podcasts"
             / selection.theme_slug / "flashcards"
         )
-        from storyline.flashcard.run_pipeline import (
-            _extract_entries,
-            _write_text_files_and_collect_prompts,
-        )
 
-        entries = _extract_entries(
-            script_path=script_output,
-            prompt_template_path="prompts/flashcard-vocab-from-script.md",
+        entries = _expand_candidate_entries(
+            script_candidates,
+            prompt_template_path="prompts/flashcard-vocab-from-list.md",
             service_manager=service_manager,
             models=config.models,
             output_dir=flashcard_output_dir,
-            force=False,
+            timeout=config.llm_timeout_s,
             llm_already_running=True,
         )
-        _write_text_files_and_collect_prompts(flashcard_output_dir, entries)
-        log.info(
-            "event=flashcard_vocab_done theme=%s entries=%d duration_ms=%d",
+
+        if entries:
+            from storyline.flashcard.run_pipeline import (
+                _save_flashcard_manifest,
+                _update_manifest_with_entries,
+                _write_text_files_and_collect_prompts,
+            )
+
+            _write_text_files_and_collect_prompts(flashcard_output_dir, entries)
+
+            from storyline.flashcard.run_pipeline import _load_flashcard_manifest
+            manifest = _load_flashcard_manifest()
+            _update_manifest_with_entries(manifest, selection.theme_slug, entries)
+            _save_flashcard_manifest(manifest)
+
+            log.info(
+                "event=flashcard_vocab_done theme=%s entries=%d duration_ms=%d",
+                selection.theme_slug,
+                len(entries),
+                int((time.time() - t0) * 1000),
+            )
+        else:
+            log.warning(
+                "event=flashcard_vocab_empty theme=%s",
+                selection.theme_slug,
+            )
+    elif flashcards and service_manager is not None:
+        log.warning(
+            "event=flashcard_vocab_skip theme=%s no_candidates_in_script",
             selection.theme_slug,
-            len(entries),
-            int((time.time() - t0) * 1000),
         )
 
     append_episode(Path(episodes_path), selection)
@@ -179,6 +427,7 @@ def generate_podcast(
         "selection": selection,
         "script_output": script_output,
         "flashcard_dir": flashcard_output_dir if flashcards else None,
+        "entries": entries,
     }
 
 
@@ -393,6 +642,14 @@ def run_full_pipeline(
                 "event=pipeline_stage_complete stage=2.5 pdf=%s duration_ms=%d",
                 pdf_path, int((time.time() - t0) * 1000),
             )
+
+            # Copy canonical audio/image/text assets to shared vocab store
+            from storyline.flashcard.run_pipeline import (
+                _copy_canonical_assets,
+                _load_flashcard_manifest,
+            )
+            manifest = _load_flashcard_manifest()
+            _copy_canonical_assets(flashcard_dir, manifest, selection.theme_slug)
         else:
             log.warning("event=flashcard_skip_no_entries dir=%s", flashcard_dir)
 

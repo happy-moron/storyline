@@ -25,7 +25,8 @@ class TestBuildScriptInput:
         assert '["hsk1-1", "Expressing \\"zai\\"", "(正) 在 + Verb"]' in text
         assert '["hsk1-2", "Negation with \\"mei\\"", "没 + 有"]' in text
 
-    def test_includes_theme(self):
-        text = build_script_input(_selection(), " 词- cí - word\n ")
+    def test_includes_theme_and_vocab(self):
+        text = build_script_input(_selection(), "\n词,cí,word\n")
         assert "Ordering food at a restaurant" in text
-        assert "词- cí - word" not in text
+        assert "## Vocab" in text
+        assert "词,cí,word" in text

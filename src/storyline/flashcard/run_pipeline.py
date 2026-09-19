@@ -1,22 +1,28 @@
 import argparse
 import json
+import shutil
 import time
 from pathlib import Path
 
 import storyline.logging
 from storyline.audio.audiobook_gen_qwen3 import Qwen3TTSService
 from storyline.config.pipeline_config import PipelineConfig
+from storyline.flashcard.vocab_extract import extract_vocab, extract_vocab_from_list
 from storyline.logging import get_logger
 from storyline.services.manager import ServiceManager
 
 CACHE_FILE = "flashcard_entries.json"
 IMPROMPTS_FILE = "image_prompts.json"
+MANIFEST_FILE = "flashcard-manifest.json"
 
 _FLASHCARD_BUILTIN_SPEAKER = "Serena"
 _FLASHCARD_BUILTIN_INSTRUCT = ""
 
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
 _DEFAULT_VOICES_DIR = _PROJECT_ROOT / "voices"
+
+_VOCAB_DIR = _PROJECT_ROOT / "books" / "vocab"
+_MANIFEST_PATH = _PROJECT_ROOT / "books" / MANIFEST_FILE
 
 
 def _load_cached_entries(output_dir: Path) -> list[list[str]] | None:
@@ -205,6 +211,94 @@ def generate_flashcard_audio(
     log.info("event=flashcard_audio_done entries=%d", len(entries))
 
 
+def _load_flashcard_manifest() -> dict:
+    if _MANIFEST_PATH.is_file():
+        with open(_MANIFEST_PATH, encoding="utf-8") as f:
+            return json.load(f)
+    return {"version": 1, "words": {}, "books": {}}
+
+
+def _save_flashcard_manifest(manifest: dict) -> None:
+    _MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(_MANIFEST_PATH, "w", encoding="utf-8") as f:
+        json.dump(manifest, f, ensure_ascii=False, indent=2)
+
+
+def _update_manifest_with_entries(
+    manifest: dict, episode: str, entries: list[list[str]]
+) -> None:
+    log = get_logger("flashcard.pipeline")
+    manifest["books"][episode] = []
+    for entry in entries:
+        word = entry[0]
+        manifest["books"][episode].append(word)
+        if word not in manifest["words"]:
+            manifest["words"][word] = {
+                "pinyin": entry[1],
+                "definition": entry[2],
+                "sentence_cn": entry[3],
+                "sentence_py": entry[4],
+                "sentence_en": entry[5],
+                "image_prompt": entry[6],
+                "canonical_source": episode,
+                "sources": [episode],
+            }
+            log.info("event=manifest_new_word word=%s episode=%s", word, episode)
+        else:
+            if episode not in manifest["words"][word]["sources"]:
+                manifest["words"][word]["sources"].append(episode)
+                log.info(
+                    "event=manifest_existing_word word=%s episode=%s sources=%d",
+                    word, episode, len(manifest["words"][word]["sources"]),
+                )
+
+
+_VOCAB_ASSET_MAP = [
+    ("audio",   "audio_{}_word.mp3",       "{}_word.mp3"),
+    ("audio",   "audio_{}_sentence.mp3",    "{}_sentence.mp3"),
+    ("images",  "img_{}.png",              "{}.png"),
+    ("images",  "img_{}_inverted.png",      "{}_inverted.png"),
+    ("texts",   "text_{}.txt",             "{}.txt"),
+]
+
+
+def _copy_canonical_assets(
+    output_dir: Path, manifest: dict, episode: str
+) -> None:
+    log = get_logger("flashcard.pipeline")
+
+    for idx, word in enumerate(manifest["books"].get(episode, []), start=1):
+        wd = manifest["words"].get(word)
+        if wd and wd["canonical_source"] != episode:
+            continue
+
+        for subdir, src_tpl, dst_tpl in _VOCAB_ASSET_MAP:
+            dest_sub = _VOCAB_DIR / subdir
+            src = output_dir / src_tpl.format(idx)
+            dst = dest_sub / dst_tpl.format(word)
+            if src.is_file() and not dst.is_file():
+                dest_sub.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(str(src), str(dst))
+
+    log.info(
+        "event=vocab_assets_copied episode=%s canonical_count=%d",
+        episode, sum(
+            1 for w in manifest["books"].get(episode, [])
+            if manifest["words"].get(w, {}).get("canonical_source") == episode
+        ),
+    )
+
+
+def _write_slim_entries(output_dir: Path, entries: list[list[str]]) -> None:
+    word_list = [e[0] for e in entries]
+    cache_path = output_dir / CACHE_FILE
+    with open(cache_path, "w", encoding="utf-8") as f:
+        json.dump(word_list, f, ensure_ascii=False, indent=2)
+    get_logger("flashcard.pipeline").info(
+        "event=slim_entries_written path=%s words=%d", cache_path, len(word_list)
+    )
+
+
 def run_flashcard_pipeline(
     episode_name: str,
     script_dir: str = "books_src/podcasts",
@@ -237,7 +331,12 @@ def run_flashcard_pipeline(
         script_path, prompt_template_path, service_manager, models,
         output_dir, force,
     )
-    image_prompts = _write_text_files_and_collect_prompts(output_dir, entries)
+    _write_text_files_and_collect_prompts(output_dir, entries)
+
+    # Update shared flashcard manifest
+    manifest = _load_flashcard_manifest()
+    _update_manifest_with_entries(manifest, episode_name, entries)
+    _save_flashcard_manifest(manifest)
 
     # Stage 3-4: Generate images + PDF
     try:
@@ -245,8 +344,161 @@ def run_flashcard_pipeline(
     finally:
         service_manager.stop_if_running("image_gen")
 
+    # Copy canonical assets to shared vocab store
+    _copy_canonical_assets(output_dir, manifest, episode_name)
+
     log.info("event=flashcard_pipeline_done pdf=%s", pdf_path)
     return pdf_path
+
+
+def run_flashcard_pipeline_from_list(
+    word_list_path: str,
+    vocab_base_dir: str = "books/vocab",
+    prompt_template_path: str = "prompts/flashcard-vocab-from-list.md",
+    service_manager: ServiceManager | None = None,
+    models: list[str] | None = None,
+    force: bool = False,
+    start_batch: int | None = None,
+) -> list[Path]:
+    """Generate flashcards from a word list file (one word per line).
+
+    Words are grouped into batches of 6. Each batch is saved under
+    books/vocab/manual_N/ and registered in the flashcard manifest.
+
+    Returns list of paths to generated PDFs.
+    """
+    log = get_logger("flashcard.pipeline")
+    word_list_path = Path(word_list_path)
+
+    if not word_list_path.is_file():
+        raise FileNotFoundError(f"Word list not found: {word_list_path}")
+
+    words = [
+        line.strip() for line in word_list_path.read_text(encoding="utf-8").split("\n")
+        if line.strip()
+    ]
+    if not words:
+        raise ValueError(f"Word list is empty: {word_list_path}")
+
+    log.info(
+        "event=flashcard_list_start path=%s total_words=%d",
+        word_list_path, len(words),
+    )
+
+    if service_manager is None:
+        service_manager = ServiceManager()
+
+    if models is None:
+        models = ["local-llamacpp"]
+
+    # Determine starting batch number
+    manifest = _load_flashcard_manifest()
+    if start_batch is not None:
+        batch_num = start_batch
+    else:
+        batch_num = 1
+        existing = [k for k in manifest.get("books", {}) if k.startswith("manual_")]
+        if existing:
+            nums = []
+            for k in existing:
+                try:
+                    nums.append(int(k.split("_")[-1]))
+                except (ValueError, IndexError):
+                    pass
+            if nums:
+                batch_num = max(nums) + 1
+
+    # Group words into batches of 6
+    batch_size = 6
+    batches = [words[i : i + batch_size] for i in range(0, len(words), batch_size)]
+
+    log.info(
+        "event=flashcard_batches batches=%d start_batch=%d",
+        len(batches), batch_num,
+    )
+
+    vocab_base = Path(vocab_base_dir)
+    pdf_paths: list[Path] = []
+
+    for batch_words in batches:
+        batch_key = f"manual_{batch_num}"
+        output_dir = vocab_base / batch_key
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        log.info(
+            "event=flashcard_batch_start batch=%s words=%d output=%s",
+            batch_key, len(batch_words), output_dir,
+        )
+
+        # Stage 1: Extract entries via LLM
+        if force or not _load_cached_entries(output_dir):
+            log.info(
+                "event=flashcard_list_stage1 batch=%s", batch_key,
+            )
+            try:
+                service_manager.start_if_needed("llm")
+                entries = extract_vocab_from_list(
+                    batch_words,
+                    prompt_template_path,
+                    service_manager,
+                    models,
+                )
+            finally:
+                service_manager.stop_if_running("llm")
+            _save_cache(output_dir, entries)
+        else:
+            entries = _load_cached_entries(output_dir)
+            log.info(
+                "event=flashcard_list_cache_hit batch=%s entries=%d",
+                batch_key, len(entries),
+            )
+
+        # Pad partial batch to 6 with empty stubs so image/PDF generation
+        # always sees a full set of cards.  The manifest and slim cache
+        # use the original (unpadded) entries to avoid pollution.
+        padded_entries = list(entries)
+        while len(padded_entries) < batch_size:
+            padded_entries.append(["", "", "", "", "", "", "white square"])
+
+        if len(padded_entries) != batch_size:
+            raise RuntimeError(
+                f"Batch padding failed: {len(padded_entries)} != {batch_size}"
+            )
+
+        # Stage 2: Write text files + collect image prompts (from padded list)
+        _write_text_files_and_collect_prompts(output_dir, padded_entries)
+
+        # Stage 3: Update shared flashcard manifest (from original list)
+        manifest = _load_flashcard_manifest()
+        _update_manifest_with_entries(manifest, batch_key, entries)
+        _save_flashcard_manifest(manifest)
+
+        # Stage 4: Generate images + PDF (padded to 6, so always ready)
+        try:
+            pdf_path = generate_flashcard_images_and_pdf(
+                output_dir, service_manager
+            )
+            pdf_paths.append(pdf_path)
+            log.info(
+                "event=flashcard_batch_pdf batch=%s pdf=%s cards=%d",
+                batch_key, pdf_path, len(entries),
+            )
+        finally:
+            service_manager.stop_if_running("image_gen")
+
+        # Stage 5: Copy canonical assets to shared vocab store
+        _copy_canonical_assets(output_dir, manifest, batch_key)
+
+        # Write slim cache for reference (original entries only)
+        _write_slim_entries(output_dir, entries)
+
+        batch_num += 1
+
+    log.info(
+        "event=flashcard_list_done batches=%d pdfs=%d",
+        len(batches), len(pdf_paths),
+    )
+    return pdf_paths
 
 
 def main():

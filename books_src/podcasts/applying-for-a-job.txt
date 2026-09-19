@@ -1,0 +1,205 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are diving into a scenario that makes almost everyone nervous: the job interview.
+
+en=student
+Oh man, job interviews are the worst. The pressure is real.
+
+en=teacher
+They certainly are. And to navigate a professional setting like this, you need to be able to ask for confirmation and check if you have understood things correctly. Today, we are mastering two types of tag questions.
+
+en=student
+Tag questions? You mean things like saying "right?" or "isn't it?" at the end of a sentence?
+
+en=teacher
+Exactly. Specifically, we are looking at two structures. First, the "A-not-A" structure. Instead of just asking a question, you use the affirmative and the negative together. We have 对不对, which means "correct or not," and 是不是, which means "is it or is it not." We also have 好不好, which means "good or not," used when you are making a suggestion or asking for agreement.
+
+en=student
+So instead of saying "Is it good?", I say "Is it good or not good?" That sounds much more natural in a real conversation.
+
+en=teacher
+Precisely. Second, we are using the "ma" particles for tag questions. These are slightly different. We have 是吗, which often expresses surprise or "is that so?", 对吗, which is a way to check if a specific piece of information is right, and 好吗, which is used to make a soft request or check if someone is okay with a suggestion.
+
+en=student
+Got it. So, if I want to confirm a fact, I might use 对不对, but if I'm surprised by what someone said, I'd use 是吗?
+
+en=teacher
+You've got it. In our dialogue, you're going to hear a job interview between a sharp, no-nonsense Human Resources manager named Ms. Zhang and a candidate named Li Ming. He is trying to land a sales position, but the requirements are a bit more intense than he expected.
+
+DIALOGUE
+
+zh=1
+你的简历说你很有销售经验，对不对？
+Your resume says you have plenty of sales experience, right?
+zh=2
+是的，我在上一家公司做了三年的销售。
+Yes, I worked in sales at my previous company for three years.
+zh=1
+那你对高压力的工作环境没问题，是不是？
+And you're fine with a high-pressure work environment, right?
+zh=2
+我可以应付。
+I can handle it.
+zh=1
+我们公司经常需要加班，有时候甚至在周末。
+Our company often requires overtime, sometimes even on weekends.
+zh=2
+经常要加班？是吗？
+Often work overtime? Really?
+zh=1
+是的。如果你很合适，工资方面我们可以商量，好吗？
+Yes. If you are a good fit, we can negotiate the salary, okay?
+zh=2
+我明白了。那工资是一万块，对吗？
+I understand. So the salary is ten thousand yuan, correct?
+zh=1
+目前是这样。你觉得行吗？
+That is how it is for now. Does that work for you?
+zh=2
+我想再考虑一下，好不好？
+I would like to think about it more, is that okay?
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. We start with Ms. Zhang, the interviewer.
+
+zh=1
+你的简历说你很有销售经验，对不对？
+Your resume says you have plenty of sales experience, right?
+
+en=student
+"你的简历" (nǐ de jié lì) means "your resume." And then she uses "对不对" (duì bù duì). That's our first grammar point. She's asking for confirmation that the information on the paper is accurate.
+
+en=teacher
+Right. Then Li Ming responds.
+
+zh=2
+是的，我在上一家公司做了三年的销售。
+Yes, I worked in sales at my previous company for three years.
+
+en=student
+"上一家公司" (shàng yī jiā gōng sī) means "the previous company." And he uses "三年" (sān nián) for "three years." It's very straightforward.
+
+en=teacher
+But then Ms. Zhang gets a bit more direct.
+
+zh=1
+那你对高压力的工作环境没问题，是不是？
+And you're fine with a high-pressure work environment, right?
+
+en=student
+Here she uses "是不是" (shì bù shì). Is there a difference between "对不对" and "是不是" here?
+
+en=teacher
+That's a great question, Ryan. "对不对" is often used to check the accuracy of a fact—like "Is this statement correct?". "是不是" is more about confirming a state of being or a situation. She's asking, "Is it the case that you are fine with pressure?" It's a very common way to confirm an assumption you have about someone.
+
+en=student
+I see. So "对不对" is "is it correct?", and "是不是" is "is it the case?". 
+
+en=teacher
+Exactly. Now, look at Li Ming's reaction to the overtime part.
+
+zh=1
+我们公司经常需要加班，有时候甚至在周末。
+Our company often requires overtime, sometimes even on weekends.
+zh=2
+经常要加班？是吗？
+Often work overtime? Really?
+
+en=student
+"经常" (jīng cháng) means "often," and "加班" (jiā bān) means "to work overtime." When Li Ming says "是吗？" (shì ma?), he sounds a bit surprised.
+
+en=teacher
+That's the perfect use for "是吗". It's not just asking for confirmation; it's reacting to new information. It's like saying, "Is that so?" or "Really?"
+
+en=student
+And then Ms. Zhang tries to smooth things over by talking about the salary.
+
+zh=1
+是的。如果你很合适，工资方面我们可以商量，好吗？
+Yes. If you are a good fit, we can negotiate the salary, okay?
+
+en=student
+"商量" (shāng liang) means "to discuss" or "to negotiate." And she ends with "好吗？" (hǎo ma?). This is a suggestion, right?
+
+en=teacher
+Yes, "好吗？" is a very common way to make a suggestion or to ask for someone's permission or agreement. It's much softer than a command.
+
+zh=2
+我明白了。那工资是一万块，对吗？
+I understand. So the salary is ten thousand yuan, correct?
+
+en=student
+Li Ming uses "对吗？" (duì ma?) here. He's checking a specific number he heard or understood.
+
+en=teacher
+Right. "对吗" is a direct way to verify a specific piece of information. And Ms. Zhang responds.
+
+zh=1
+目前是这样。你觉得行吗？
+That is how it is for now. Does that work for you?
+
+en=student
+"目前" (mù qián) means "currently" or "for now." And "行吗？" (xíng ma?) is similar to "好吗？", asking if something is acceptable.
+
+zh=2
+我想再考虑一下，好不好？
+I would like to think about it more, is that okay?
+
+en=student
+Finally, Li Ming uses "好不好？" (hǎo bù hǎo). He's suggesting that he needs time to think, and he's asking for her agreement.
+
+en=teacher
+Correct. "好不好" is used when you are proposing an idea and you want the other person to agree to it. It's the "A-not-A" version of "好吗". It's very common in both formal and informal settings.
+
+en=student
+So, to recap: "对不对" and "对吗" for correctness, "是不是" and "是吗" for situations and surprises, and "好吗" and "好不好" for suggestions and agreement.
+
+en=teacher
+You've mastered it!
+
+OUTRO
+
+en=teacher
+That's all for today's episode of Learning Chinese. We've covered how to use tag questions to navigate a high-stakes job interview.
+
+en=student
+It's a great lesson. Using "A-not-A" structures like "是不是" or "好不好" can make you sound much more natural and engaged in a conversation, rather than just asking simple questions with "ma".
+
+en=teacher
+Exactly. Remember, the context matters. Use "是吗" when you're surprised, and "好吗" when you're making a suggestion. Practice these in your own conversations, and you'll start sounding like a pro in no time.
+
+en=student
+Thanks for listening! See you in the next episode.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "四十岁左右"
+pitch = "中音域，显得干练、冷静"
+pace = "中速，语调略微下降，带有权威感"
+volume = "中等偏大，声音稳重"
+clarity = "吐字非常清晰，节奏分明"
+fluency = "非常流利，充满职业感" 
+timbre = "清脆，略带冷峻感"
+emotion = "专业，严肃，略显强势" 
+usecase = "一位经验丰富的、目光犀利的人力资源经理"
+dialogue = "你的简历写着你很有销售经验，是不是？我们需要能适应高压环境的人，对吗？"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中低音域，略有波动"
+pace = "慢速，在关键点有短暂停顿，表现出紧张感"
+volume = "中等，略显局促"
+clarity = "清晰，但在紧张时略微有些犹豫"
+fluency = "流利但带有思考的停顿" 
+timbre = "温和，清爽"
+emotion = "礼貌，略带紧张，但努力保持专业" 
+usecase = "一个正在面试、试图表现出自信但内心忐忑的求职者"
+dialogue = "是的，我做过三年的销售。经常要加班吗？是吗？我想再考虑一下，好不好？"

@@ -51,6 +51,30 @@
     display: none !important;
 }
 
+#breakdownBtn.active {
+    background-color: var(--highlight-color);
+    color: #121212;
+}
+
+.breakdown {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+    padding-left: 12px;
+    border-left: 2px solid var(--highlight-color);
+}
+
+.breakdown ul {
+    list-style-type: disc;
+    margin: 4px 0;
+    padding-left: 18px;
+}
+
+.breakdown li {
+    margin-bottom: 3px;
+    line-height: 1.4;
+}
+
 #toggleMenuBtn {
     position: absolute;
     top: 10px;
@@ -199,6 +223,44 @@ body {
     color: var(--text-color);
 }
 
+.dictionary-table th {
+    background-color: #333;
+    color: var(--text-color);
+}
+
+.dict-token {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.dict-audio-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 2px 4px;
+    vertical-align: middle;
+    transition: color 0.15s;
+}
+
+.dict-audio-btn:hover {
+    color: var(--highlight-color);
+}
+
+.flashcard-link {
+    color: var(--highlight-color);
+    text-decoration: none;
+    font-size: 1rem;
+    vertical-align: middle;
+    margin-left: 4px;
+    transition: opacity 0.15s;
+}
+
+.flashcard-link:hover {
+    opacity: 0.7;
+}
+
 @media (max-width: 600px) {
     .audio-controls {
         padding: 0.5rem;
@@ -217,4 +279,159 @@ body {
         padding: 8px;
         min-width: calc(var(--large-button-size) * 0.8);
     }
+}
+
+/* ── Saved Vocabulary ─────────────────────────────────── */
+
+.dict-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 8px;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 6px;
+}
+
+.dict-header-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.dict-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.dict-save-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.15rem;
+    padding: 2px 6px;
+    vertical-align: middle;
+    transition: color 0.15s;
+}
+
+.dict-save-btn:hover {
+    color: var(--highlight-color);
+}
+
+.dict-save-btn.saved {
+    color: #ffcc00;
+}
+
+.dict-save-btn.saved:hover {
+    color: #ffaa00;
+}
+
+.saved-vocab-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 0.85rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    transition: background-color 0.15s, border-color 0.15s;
+}
+
+.saved-vocab-btn:hover {
+    background-color: var(--highlight-color);
+    border-color: var(--highlight-color);
+    color: #121212;
+}
+
+#savedCountBadge {
+    background-color: var(--highlight-color);
+    color: #121212;
+    border-radius: 8px;
+    padding: 0 5px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-left: 2px;
+}
+
+#saved-vocab-panel {
+    position: fixed;
+    bottom: 80px;
+    left: 0;
+    width: 100%;
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+    border-top: 1px solid var(--border-color);
+    z-index: 1000;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.saved-vocab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.saved-vocab-title {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.saved-vocab-actions {
+    display: flex;
+    gap: 6px;
+}
+
+.saved-vocab-copy-btn,
+.saved-vocab-clear-btn,
+.saved-vocab-close-btn {
+    background: none;
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: background-color 0.15s;
+}
+
+.saved-vocab-copy-btn:hover,
+.saved-vocab-clear-btn:hover,
+.saved-vocab-close-btn:hover {
+    background-color: var(--highlight-color);
+    color: #121212;
+    border-color: var(--highlight-color);
+}
+
+.saved-vocab-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 4px 12px;
+}
+
+.saved-vocab-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.saved-vocab-entry {
+    padding: 4px 0;
+    font-size: 1rem;
+    font-family: monospace;
+    white-space: nowrap;
+}
+
+.saved-vocab-chinese {
+    font-size: 1.1rem;
+}
+
+.saved-vocab-empty {
+    padding: 16px;
+    text-align: center;
+    color: #888;
+    font-style: italic;
 }

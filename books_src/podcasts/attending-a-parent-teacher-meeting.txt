@@ -1,0 +1,169 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are diving into a topic that might feel a little tense, but it is incredibly useful for real-life situations. We are talking about parent-teacher meetings.
+
+en=student
+Oh boy, that sounds stressful. I have had some of those.
+
+en=teacher
+It can be! And because of that, we are going to learn how to express totalities and how to tell someone to stop doing something. We are looking at the structure "什么 + 都 / 也" and the phrase "别 + Verb + 了".
+
+en=student
+Okay, "什么 + 都" or "也". That is "everything" or "anything," right? Like, "I eat everything"?
+
+en=teacher
+Exactly. For example, 我什么都吃 (I eat everything). Or, if you want to say you don't eat anything, you can say 我什么都不吃 (I don't eat anything). You can also use 也. 我什么也不吃 and 我什么都不吃 mean the same thing. The "也" is often used in negative sentences to add emphasis.
+
+en=student
+And the second one? "别...了"?
+
+en=teacher
+"别 + Verb + 了" is used to tell someone to stop an ongoing action or to not do something anymore. Like, 别说话了 (Stop talking) or 别哭了 (Stop crying). It often implies that the action is already happening and needs to cease.
+
+en=student
+Got it. So, "什么都" is about "everything" or "nothing," and "别...了" is a way to say "stop it."
+
+en=teacher
+Perfect. In today's dialogue, you are going to hear a very tense meeting. Ms. Zhang, a school teacher, is meeting with Mrs. Li, a parent, to discuss her son, Xiao Ming. It is not going to be a very friendly conversation.
+
+DIALOGUE
+
+zh=1
+李太太，我们得谈谈。小明的最近表现让人很担心。他现在什么建议都不听。
+Mrs. Li, we need to talk. Xiao Ming's recent performance is very concerning. He doesn't listen to any advice at all.
+
+zh=2
+我知道，张老师。我什么都跟他说过了！但他就是不听。
+I know, Ms. Zhang. I've told him everything! But he just doesn't listen.
+
+zh=1
+不仅仅是听不听的问题。他现在什么作业都不做。
+It is not just a matter of whether he listens. He doesn't do any homework at all now.
+
+zh=2
+别这么说！他只是压力有点大。
+Don't say that! He is just under a little bit of pressure.
+
+zh=1
+别找借口了。他需要 अनुशासन... 别找借口了，他需要纪律。
+Stop making excuses. He needs discipline.
+
+zh=2
+别教我怎么做家长！我压力已经很大了！
+Don't tell me how to be a parent! I am already under a lot of pressure!
+
+BREAKDOWN
+
+en=teacher
+That was a very intense meeting! Let's break it down line by line to see how those grammar points worked. We'll start with Ms. Zhang.
+
+zh=1
+李太太，我们得谈谈。小明的最近表现让人很担心。他现在什么建议都不听。
+Mrs. Li, we need to talk. Xiao Ming's recent performance is very concerning. He doesn't listen to any advice at all.
+
+en=student
+"什么建议都不听." I noticed the "什么" there. "建议" means advice. So she's saying "he what advice all not listen"?
+
+en=teacher
+Precisely. "什么" combined with "都" and a negative verb like "不听" creates the meaning of "not... anything" or "not... any." It's a very strong way to say he ignores every single piece of advice.
+
+en=student
+So if she wanted to say "he listens to everything," she would just remove the "不"?
+
+en=teacher
+Exactly. 他什么建议都听 (He listens to all advice).
+
+zh=2
+我知道，张老师。我什么都跟他说过了！但他就是不听。
+I know, Ms. Zhang. I've told him everything! But he just doesn't listen.
+
+en=student
+Here, Mrs. Li uses "什么都" in a positive sentence. "我什么都跟他说过了."
+
+en=teacher
+Yes. In a positive sentence, "什么 + 都" means "everything." "跟...说" means "to tell/speak with someone." So, "I have told him everything."
+
+zh=1
+不仅仅是听不听的问题。他现在什么作业都不做。
+It is not just a matter of whether he listens. He doesn't do any homework at all now.
+
+en=student
+"作业" means homework. So, "什么作业都不做" is "doesn't do any homework."
+
+en=teacher
+Right. Notice how "什么" is paired with the noun "作业" here. You can put the noun between "什么" and "都" to say "not any [noun]." For example, "我什么菜都不吃" (I don't eat any vegetables).
+
+zh=2
+别这么说！他只是压力有点大。
+Don't say that! He is just under a little bit of pressure.
+
+en=student
+"别这么说" is a great phrase. "Don't say it like this" or "Don't say that."
+
+en=teacher
+It's very common. The "别" tells them to stop saying what they just said. And "压力" means pressure or stress. "压力大" means to be under a lot of stress.
+
+zh=1
+别找借口了。他需要纪律。
+Stop making excuses. He needs discipline.
+
+en=student
+"别找借口了" is the second grammar point! "别" plus "找借口" (to look for excuses) plus "了".
+
+en=teacher
+Exactly. The "了" at the end is important here. It signals a change in state or a command to end an ongoing behavior. It's like saying, "Stop doing that thing you are currently doing." And "纪律" means discipline.
+
+zh=2
+别教我怎么做家长！我压力已经很大了！
+Don't tell me how to be a parent! I am already under a lot of pressure!
+
+en=student
+"家长" is "parent" or "guardian," often used in school contexts. And she says "压力已经很大了."
+
+en=teacher
+Yes, "已经" means "already." She is emphasizing that the stress is already high. She's telling the teacher "别教我..." which is "Don't teach me..." It's quite a heated moment!
+
+OUTRO
+
+en=student
+Wow, that was a rollercoaster. I feel like I learned a lot of emotional vocabulary too, but the grammar was the star.
+
+en=teacher
+It really was. To recap: we learned that "什么 + 都/也" is used to mean "everything" in positive sentences, and "anything at all" or "nothing" in negative sentences. For example, "我什么都知道" (I know everything) versus "我什么都不知道" (I don't know anything).
+
+en=student
+And we learned that "别 + Verb + 了" is the way to tell someone to stop an action, like "别说了" (stop talking) or "别找借口了" (stop making excuses).
+
+en=teacher
+Perfectly summarized. Practice these in your daily life, even if you aren't in a heated parent-teacher meeting! Thanks for listening to Learning Chinese.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "女性"
+age = "四十岁左右"
+pitch = "中音域，语气严厉且专业"
+pace = "中速，发音非常清晰"
+volume = "适中，带有威严感"
+clarity = "清晰，每个字都很有分量"
+fluency = "流利，语调平稳"
+timbre = "干练，略显冰冷"
+emotion = "严肃，职业化，略带不满"
+usecase = "一位要求严格、直言不讳的资深教师"
+dialogue = "我们得谈谈。他什么作业都不做。别找借口了。"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十岁多"
+pitch = "中高音域，情绪起伏大"
+pace = "略快，显得焦躁不安"
+volume = "较大，因情绪激动而略有颤抖"
+clarity = "清晰，但语速较快时略显急促"
+fluency = "略有停顿，表现出紧张感"
+timbre = "圆润但略显沙哑"
+emotion = "焦虑，防卫心强，情绪化"
+usecase = "一位为孩子的成绩感到非常焦虑和沮丧的母亲"
+dialogue = "我什么都跟他说过了！别这么说！我压力已经很大了！"

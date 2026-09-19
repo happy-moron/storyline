@@ -1,0 +1,185 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are looking at how to express frustration or surprise when things don't go according to plan.
+
+en=student
+That sounds very useful. I feel like that happens to me quite often when I'm traveling or dealing with bureaucracy!
+
+en=teacher
+Exactly. To do that effectively, we need two specific structures. First is 怎么, which can mean "how," but when used to ask "why," it often carries a tone of "how come?" or "why is it that...?" It implies a sense of confusion or disbelief. For example, 你怎么没来? (How come you didn't come?) or 这怎么可能? (How is this even possible?).
+
+en=student
+So, if I use 为什么 to ask "why," it's a bit more neutral or direct, but if I use 怎么, it sounds more like I am surprised or even a little annoyed?
+
+en=teacher
+Spot on. You've got the nuance. The second structure is a rhetorical question using 不是...吗. This translates to "Isn't it...?" or "Didn't you...?" We use it when we believe something should be true, or when we are reminding someone of something they previously said or did. For example, 你不是学生吗? (Aren't you a student?) or 他不是已经走了吗? (Hasn't he already left?).
+
+en=student
+Ah, so it's like saying, "I thought X was the case, so why is it Y now?"
+
+en=teacher
+Precisely. Now, for our theme today, we are going to a bank. We are going to hear a very tense encounter between a customer and a bank teller. The customer is trying to open a bank account, but there is a problem with their identification. It’s a bit of a stressful situation, but it is perfect for seeing these grammar points in action.
+
+en=student
+I'm ready. Let's see if our customer manages to open that account or just walks out frustrated.
+
+DIALOGUE
+
+zh=1
+你好，我想在这里开户。
+Hello, I would like to open an account here.
+
+zh=2
+您好，请问您的身份证呢？
+Hello, may I ask, where is your ID card?
+
+zh=1
+我没带身份证，我只有护照。
+I didn't bring my ID card; I only have my passport.
+
+zh=2
+您怎么没带身份证？这里不接受护照。
+How come you didn't bring your ID card? We do not accept passports here.
+
+zh=1
+这怎么行？我昨天打电话问过，不是说带护照也可以吗？
+How can this be? I called yesterday to ask, didn't you say that bringing a passport would also be okay?
+
+zh=2
+规定变了。您怎么不提前确认一下呢？
+The regulations have changed. How come you didn't confirm in advance?
+
+zh=1
+我不是昨天才打的电话吗？怎么这么麻烦！
+Didn't I just call yesterday? Why is this so much trouble!
+
+zh=2
+很抱歉，规矩就是规矩。
+I am very sorry, but rules are rules.
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue and break it down line by line. We'll start with our customer, Xiao Wang.
+
+zh=1
+你好，我想在这里开户。
+Hello, I would like to open an account here.
+
+en=student
+"开户" is the key term here. "开" means to open, and "户" refers to an account. So "开户" is to open an account.
+
+en=teacher
+Correct. Then the teller, Ms. Li, asks:
+
+zh=2
+您好，请问您的身份证呢？
+Hello, may I ask, where is your ID card?
+
+en=student
+"身份证" is a very important word—shēnfènzhèng. It literally means "identity card."
+
+en=teacher
+Right. Xiao Wang responds with a problem:
+
+zh=1
+我没带身份证，我只有护照。
+I didn't bring my ID card; I only have my passport.
+
+en=student
+"护照" is hùzhào, meaning passport. He's trying to use that instead.
+
+en=teacher
+But Ms. Li is firm. She uses our first grammar point:
+
+zh=2
+您怎么没带身份证？这里不接受护照。
+How come you didn't bring your ID card? We do not accept passports here.
+
+en=student
+Here, "怎么" is used to express surprise or questioning the reason behind a situation. She's not asking for the method of how he didn't bring it; she's asking "How come you didn't bring it?" Also, "接受" jiēshòu means to accept.
+
+en=teacher
+Exactly. Now the tension rises. Xiao Wang uses both grammar points in one sentence!
+
+zh=1
+这怎么行？我昨天打电话问过，不是说带护照也可以吗？
+How can this be? I called yesterday to ask, didn't you say that bringing a passport would also be okay?
+
+en=student
+Wow, that was fast! "这怎么行?" is a great phrase. It's like saying "This won't work!" or "How is this okay?" He's using "怎么" to challenge the situation. And then "不是说...吗?" He's using the rhetorical "Isn't it said that...?" to remind her of what he was told yesterday.
+
+en=teacher
+Yes. He is saying, "Didn't you [the bank] say that...?" It's a way to point out a contradiction. Ms. Li replies:
+
+zh=2
+规定变了。您怎么不提前确认一下呢？
+The regulations have changed. How come you didn't confirm in advance?
+
+en=student
+"规定" guīdìng is a great word for "regulation" or "rule." And again, she uses "怎么" to ask why he didn't confirm. It sounds a little bit like a reproach, doesn't it?
+
+en=teacher
+It does. It's a very common way to express "Why didn't you...?" when you think the person should have done something. Xiao Wang is getting really frustrated now:
+
+zh=1
+我不是昨天才打的电话吗？怎么这么麻烦！
+Didn't I just call yesterday? Why is this so much trouble!
+
+en=student
+"我不是昨天才打的电话吗？" This is another perfect rhetorical question. He's saying "Didn't I just call yesterday?" implying that it's too soon for the rules to have changed. And then "怎么这么麻烦?" He's using "怎么" with an adjective here. "麻烦" máfan means troublesome or a hassle. So, "How is this so troublesome?"
+
+en=teacher
+And finally, the teller closes the conversation:
+
+zh=2
+很抱歉，规矩就是规矩。
+I am very sorry, but rules are rules.
+
+en=student
+"规矩" guīju is another word for rules or customs. "规矩就是规矩" is a very common idiom to say "rules are rules," basically meaning "there is no exception."
+
+en=teacher
+It's a tough lesson for Xiao Wang, but a very useful one for you!
+
+OUTRO
+
+en=teacher
+That was a high-tension banking experience! Today we learned how to use 怎么 to ask "why" or "how come" when expressing surprise or confusion, and how to use 不是...吗 to form rhetorical questions when we want to challenge a statement or remind someone of a fact.
+
+en=student
+And we learned some essential vocabulary for navigating official business: 银行 for bank, 身份证 for ID card, 护照 for passport, and 规定 or 规矩 for rules and regulations.
+
+en=teacher
+And don't forget "怎么这么麻烦?" when things get complicated. Thanks for listening to Learning Chinese. See you next time!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十五岁左右"
+pitch = "中音域，因焦虑而略微提高"
+pace = "中速"
+volume = "中等"
+clarity = "清晰"
+fluency = "有些紧张，语速稍快"
+timbre = "清脆"
+emotion = "焦虑且困惑"
+usecase = "一个刚到中国工作，急着办业务的年轻外国人"
+dialogue = "这怎么行？我昨天明明问过可以用的！怎么这么麻烦！"
+
+speaker = 2
+lang = "zh"
+gender = "女性"
+age = "三十五岁左右"
+pitch = "中音域，平稳且职业"
+pace = "慢速"
+volume = "适中"
+clarity = "非常清晰，吐字严谨"
+fluency = "流畅，语气冷静"
+timbre = "圆润，专业"
+emotion = "冷静，公事公办"
+usecase = "一位严谨、专业的银行柜台工作人员"
+dialogue = "您怎么没带身份证？规矩就是规矩，请您理解。"

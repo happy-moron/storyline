@@ -1,0 +1,189 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are diving into one of the most essential parts of Chinese grammar: how to actually count things. 
+
+en=student
+Right, because in English, we just say "one book" or "two houses," but I've realized that in Chinese, you can't just put a number directly in front of a noun. There is always this "glue" in the middle.
+
+en=teacher
+Exactly! That "glue" is what we call a Measure Word. Today we are mastering two specific structures. First, the standard pattern: Number plus Measure Word plus Noun. For example, 三本书 (three books) or 五个学生 (five students). 
+
+en=student
+And the second part is using "this" and "that" with those same measure words, right? Like saying "this book" or "that person."
+
+en=teacher
+Precisely. In Chinese, you don't just say "this book" by saying "这个书." You must say 这本书. You need the "this" or "that," followed by the measure word, and then the noun. So, 这本书 (this book) or 那个人 (that person). 
+
+en=student
+That makes sense. So, if I want to say "these two bedrooms," I'd use "那两个卧室" where "那" is "those," "个" is the measure word, and "卧室" is the bedroom.
+
+en=teacher
+You've got it. We also need to know how to ask "how many" using the word 几, which also follows the pattern: 几 plus a Measure Word plus a Noun. 
+
+en=student
+Got it. Now, what is our scenario for today?
+
+en=teacher
+Today's theme is renting an apartment. You're going to hear a conversation between a potential tenant named David and a landlord named Ms. Li. They are walking through a new apartment, looking at the rooms and discussing the details.
+
+DIALOGUE
+
+zh=1
+欢迎来看这个房子。
+Welcome to come see this apartment.
+
+zh=2
+这个房子挺大的。请问，这里有几间房间？
+This apartment is quite large. May I ask, how many rooms are there here?
+
+zh=1
+这里有三间房间。这是客厅，那有两个卧室。
+There are three rooms here. This is the living room, and those are two bedrooms.
+
+zh=2
+我很喜欢这个窗户。那张床也是租客用的吗？
+I really like this window. Is that bed also for the tenant?
+
+zh=1
+是的，那张床是包括在房租里的。
+Yes, that bed is included in the rent.
+
+zh=2
+太好了。那这套房子一个月多少钱？
+Great. Then how much is this apartment per month?
+
+zh=1
+这个房子一个月两千块。
+This apartment is two thousand yuan per month.
+
+BREAKDOWN
+
+en=teacher
+Let's break down this dialogue line by line. We'll start with Ms. Li.
+
+zh=1
+欢迎来看这个房子。
+Welcome to come see this apartment.
+
+en=student
+"欢迎" (huānyíng) means welcome. "看" (kàn) is to look or see. But the key part here is "这个房子." "这" (zhè) means "this," "个" (gè) is the general measure word, and "房子" (fángzi) is the house or apartment.
+
+en=teacher
+Right. Then David asks a question.
+
+zh=2
+这个房子挺大的。请问，这里有几间房间？
+This apartment is quite large. May I ask, how many rooms are there here?
+
+en=student
+"挺大的" (tǐng dà de) is a very common way to say "quite big." But look at "几间房间." We used "几" (jǐ) for "how many," followed by the measure word "间" (jiān). 
+
+en=teacher
+Correct. "间" (jiān) is the specific measure word for rooms. And "房间" (fángjiān) is the noun for room. Notice the pattern: Number/Question word, then Measure Word, then Noun.
+
+zh=1
+这里有三间房间。这是客厅，那有两个卧室。
+There are three rooms here. This is the living room, and those are two bedrooms.
+
+en=student
+She uses the pattern perfectly: "三间房间" (three rooms). And then she uses "这" (this) for the living room "客厅" (kètīng) and "那" (that) for the bedrooms "卧室" (wùshì). 
+
+en=teacher
+Wait, Ryan, did you notice something about the word "two" in "两个卧室"? 
+
+en=student
+Oh! I should use "两" (liǎng) instead of "二" (èr) when I'm counting things with a measure word, right?
+
+en=teacher
+Spot on. When you are counting objects, you use "两" for two. Now let's look at David's next line.
+
+zh=2
+我很喜欢这个窗户。那张床也是租客用的吗？
+I really like this window. Is that bed also for the tenant?
+
+en=student
+"我很喜欢" (wǒ hěn xǐhuān) is "I really like." Then we have "这个窗户" (zhè ge chuānghu) — "this window." "窗户" (chuānghu) is window. 
+
+en=teacher
+And then he asks about "那张床." "那" is "that," and "张" (zhāng) is the measure word.
+
+en=student
+"张" (zhāng)? That's a new one.
+
+en=teacher
+"张" is the measure word used for flat objects, like tables, beds, or pieces of paper. So "那张床" is "that bed." "床" (chuáng) is bed. And "租客" (zūkè) means tenant.
+
+zh=1
+是的，那张床是包括在房租里的。
+Yes, that bed is included in the rent.
+
+en=student
+"房租" (fángzū) means rent. This is a great compound word: "房" (house) and "租" (to rent).
+
+en=teacher
+Exactly. And David moves on to the cost.
+
+zh=2
+太好了。那这套房子一个月多少钱？
+Great. Then how much is this apartment per month?
+
+en=student
+"这套房子" (zhè tào fángzi). "套" (tào) is a measure word for a "set" or a "suite." So when you talk about an entire apartment unit, you use "套." 
+
+en=teacher
+And finally, Ms. Li gives the price.
+
+zh=1
+这个房子一个月两千块。
+This apartment is two thousand yuan per month.
+
+en=student
+"两千块" (liǎng qiān kuài). "两千" is two thousand. And "块" (kuài) is the colloquial measure word for money, like saying "bucks" in English.
+
+en=teacher
+So, to recap the grammar: remember that you cannot just say "this house" or "three rooms" without that middle measure word. It is the essential link between your number or demonstrative and the noun.
+
+OUTRO
+
+en=student
+Today was a big lesson. We learned how to count things using the Number plus Measure Word plus Noun pattern, and how to use "this" and "that" with those same measure words.
+
+en=teacher
+And we practiced some very useful vocabulary for real life, like "房间" for room, "卧室" for bedroom, "房租" for rent, and "块" for money.
+
+en=student
+Don't forget that when you are counting things, use "两" instead of "二" for the number two.
+
+en=teacher
+Exactly. Thanks for listening to Learning Chinese. See you in the next episode!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "Female"
+age = "四十五岁左右"
+pitch = "中音域，稳重"
+pace = "慢速，语速平缓"
+volume = "中等，清晰"
+clarity = "清晰"
+fluency = "流畅"
+timbre = "圆润，专业"
+emotion = "礼貌，专业"
+usecase = "一位专业的房屋中介或房东"
+dialogue = "欢迎来看这个房子。这里有三间房间。是的，那张床是包括在房租里的。这个房子一个月两千块。"
+
+speaker = 2
+lang = "zh"
+gender = "Male"
+age = "二十多岁"
+pitch = "中高音域，充满好奇心"
+pace = "中速，略有起伏"
+volume = "清晰，自然"
+clarity = "清晰"
+fluency = "流畅"
+timbre = "清脆，年轻"
+emotion = "礼貌，略显兴奋"
+usecase = "一个正在寻找新公寓的年轻上班族"
+dialogue = "这个房子挺大的。我很喜欢这个窗户。太好了。那这套房子一个月多少钱？"

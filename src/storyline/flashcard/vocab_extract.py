@@ -17,7 +17,10 @@ class VocabExtractionError(Exception):
     pass
 
 
-def _parse_entries(response_text: str) -> list[list[str]]:
+def _parse_entries(response_text: str, expected_count: int | None = None) -> list[list[str]]:
+    if expected_count is None:
+        expected_count = FLASHCARD_ENTRY_COUNT
+
     blocks = re.split(r'\n\s*\n', response_text.strip())
 
     entries: list[list[str]] = []
@@ -27,9 +30,9 @@ def _parse_entries(response_text: str) -> list[list[str]]:
             continue
         entries.append(lines)
 
-    if len(entries) != FLASHCARD_ENTRY_COUNT:
+    if len(entries) != expected_count:
         raise VocabExtractionError(
-            f"Expected {FLASHCARD_ENTRY_COUNT} vocab entries, got {len(entries)}"
+            f"Expected {expected_count} vocab entries, got {len(entries)}"
         )
 
     for i, lines in enumerate(entries):
@@ -39,6 +42,73 @@ def _parse_entries(response_text: str) -> list[list[str]]:
             )
 
     return entries
+
+
+def extract_vocab_from_list(
+    words: list[str],
+    prompt_template_path: str,
+    service_manager: ServiceManager,
+    models: list[str],
+    timeout: int = 1500,
+) -> list[list[str]]:
+    """Extract flashcard entries for a list of words (1-{FLASHCARD_ENTRY_COUNT})."""
+    word_count = len(words)
+    if word_count < 1 or word_count > FLASHCARD_ENTRY_COUNT:
+        raise VocabExtractionError(
+            f"Word list must have 1-{FLASHCARD_ENTRY_COUNT} words, got {word_count}"
+        )
+
+    input_text = "\n".join(words)
+
+    _log.info(
+        "event=vocab_extract_list_start words=%d prompt=%s",
+        word_count, prompt_template_path,
+    )
+
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        script_input = tmp_path / "word_list_input.txt"
+        script_input.write_text(input_text, encoding="utf-8")
+
+        last_error = None
+        for attempt in range(1, MAX_RETRIES + 1):
+            _log.info(
+                "event=vocab_extract_list_attempt attempt=%d/%d words=%d",
+                attempt, MAX_RETRIES, word_count,
+            )
+
+            try:
+                response_path = tmp_path / f"vocab_response_{attempt}.txt"
+                run_prompt_with_metrics(
+                    prompt_template_path,
+                    script_input,
+                    response_path,
+                    models=models,
+                    timeout=timeout,
+                    prompt_label="flashcard_vocab_list",
+                )
+                response_text = response_path.read_text(encoding="utf-8")
+
+                entries = _parse_entries(response_text, expected_count=word_count)
+                _log.info(
+                    "event=vocab_extract_list_ok attempt=%d entries=%d",
+                    attempt, len(entries),
+                )
+                return entries
+
+            except VocabExtractionError as e:
+                last_error = e
+                _log.warning(
+                    "event=vocab_extract_list_parse_error attempt=%d error=%s",
+                    attempt, str(e),
+                )
+                if attempt < MAX_RETRIES:
+                    continue
+
+    raise VocabExtractionError(
+        f"Vocab extraction from list failed after {MAX_RETRIES} attempts. "
+        f"Last error: {last_error}"
+    )
 
 
 def extract_vocab(

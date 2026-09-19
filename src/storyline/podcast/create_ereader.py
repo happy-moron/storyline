@@ -401,6 +401,50 @@ def create_ereader(
                 "event=backchain_failure error=%s", str(e),
             )
 
+    # ── 6c. Breakdown generation ─────────────────────────────────────
+    if not config.skip_audio and not config.skip_backchain:
+        t0 = time.time()
+        if service_manager:
+            service_manager.start_if_needed('llm')
+        _ensure_llm(service_manager, config, 'translate')
+
+        chinese_lines = [line.chinese for line in dialogue]
+        chinese_lines = [l for l in chinese_lines if l.strip()]
+
+        try:
+            breakdowns = generate_breakdown_for_chapter(
+                chinese_lines, stem, base_dir,
+                resolve_prompt=config.resolve_prompt,
+                models=config.models,
+                llm_timeout_s=config.llm_timeout_s,
+                llm_retries=config.llm_retries,
+                extra_options=_resolve_extra_options(config, "translate"),
+            )
+
+            # Store breakdown in chunk JSON
+            with open(chunk_json_path, encoding="utf-8") as f:
+                chunk_data = json.load(f)
+            for ci, chunk in enumerate(chunk_data["chunks"]):
+                line_range = chunk.get("line_range", [])
+                if len(line_range) != 2:
+                    continue
+                line_idx = line_range[0]
+                if line_idx < len(breakdowns) and breakdowns[line_idx]:
+                    if chunk.get("lines"):
+                        chunk["lines"][0]["breakdown"] = breakdowns[line_idx]
+            with open(chunk_json_path, "w", encoding="utf-8") as f:
+                json.dump(chunk_data, f, ensure_ascii=False, indent=2)
+
+            n_covered = sum(1 for b in breakdowns if b)
+            log.info(
+                "event=ereader_step step=breakdown lines=%d covered=%d duration_ms=%d",
+                len(chinese_lines), n_covered, int((time.time() - t0) * 1000),
+            )
+        except Exception as e:
+            log.warning(
+                "event=breakdown_failure error=%s", str(e),
+            )
+
     # ── 7. Update manifest ─────────────────────────────────────────────
     t0 = time.time()
     update_manifest(config.books_dir)

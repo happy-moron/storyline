@@ -1,0 +1,160 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are diving into a high-intensity environment: the gym.
+
+en=student
+I love the gym, James, but I definitely don't love the feeling of being exhausted after a workout.
+
+en=teacher
+Well, today’s lesson will help you express exactly that! We are focusing on two very important grammar points. First, how to turn an adjective into an adverb using the particle 地. You place 地 between an adjective and a verb to describe how an action is performed. For example, 慢慢地走, which means to walk slowly, or 认真地学习, which means to study seriously.
+
+en=student
+So, the adjective describes the manner of the action. It is like adding "ly" to a word in English.
+
+en=teacher
+Exactly. Now, the second point is how to express that something has happened again using 又 and 了. While the word 又 means "again," we use the structure 又 + Verb + 了 to indicate that a repeated action has already occurred. For example, 他又来了, which means he came again.
+
+en=student
+Wait, I know "again" can also be said with 再. What is the difference?
+
+en=teacher
+That is a great question. Use 再 for things that *will* happen again in the future, like 再见, which means "see you again." But use 又 for things that *have already* happened. If you did something again yesterday, you use 又.
+
+en=student
+That makes sense. It’s about whether the repetition is in the past or the future.
+
+en=teacher
+Precisely. In today's dialogue, you are going to hear a very intense session between a personal trainer and a client who is reaching his absolute limit. The trainer is being quite demanding, and the client is definitely feeling the struggle. Pay attention to how they describe the intensity of the movements and the repetition of the exercises.
+
+DIALOGUE
+
+zh=1
+别停！快快地挥动手臂！
+Don't stop! Swing your arms quickly!
+
+zh=2
+我不行了！我又做了十次了！
+I can't do it! I've done this ten times again!
+
+zh=1
+别抱怨！稳稳地呼吸！
+Don't complain! Breathe steadily!
+
+zh=2
+你太狠了！你又让我练这个了！
+You are too harsh! You are making me do this again!
+
+zh=1
+坚持住！努力地练！
+Hold on! Train hard!
+
+zh=2
+我慢吞吞地走着……
+I am walking sluggishly...
+
+BREAKDOWN
+
+en=teacher
+Alright, let's break down that intense workout. We start with the trainer.
+
+zh=1
+别停！快快地挥动手臂！
+Don't stop! Swing your arms quickly!
+
+en=student
+"别停" means "don't stop." Then we have "快快地挥动手臂." We see our first grammar point here: 快快地. The adjective 快, which means fast, is doubled to 快快 to add emphasis, and then we add 地 to turn it into an adverb. "挥动" means to swing or wave, and "手臂" means arms.
+
+en=teacher
+That's right. Now, let's hear the client, who sounds like he's about to collapse.
+
+zh=2
+我不行了！我又做了十次了！
+I can't do it! I've done this ten times again!
+
+en=student
+"我不行了" is a very common way to say "I can't do it anymore" or "I'm done." Then we have "我又做了十次了." Here is our second grammar point: 又...了. The client is saying he has *already* done the action ten times again.
+
+en=teacher
+Right. The "了" at the end emphasizes that the action is completed.
+
+zh=1
+别抱怨！稳稳地呼吸！
+Don't complain! Breathe steadily!
+
+en=student
+"抱怨" means to complain. Then "稳稳地呼吸." We have the adjective 稳, meaning steady, doubled to 稳稳, followed by 地 to describe how he should breathe. And "呼吸" is the verb, to breathe.
+
+en=teacher
+Let's listen to the client's frustration.
+
+zh=2
+你太狠了！你又让我练这个了！
+You are too harsh! You are making me do this again!
+
+en=student
+"你太狠了" is a great phrase. 狠 means harsh or ruthless. But look at the grammar here: "你又让我练这个了." We have "又" and "了" again. This time, the verb being repeated is "让," which means "to make" or "to let" someone do something. So, "you are making me do this again."
+
+en=teacher
+Very good. The trainer gives one last push.
+
+zh=1
+坚持住！努力地练！
+Hold on! Train hard!
+
+en=student
+"坚持住" means to hold on or persevere. And "努力地练." "努力" means hard-working or diligent, followed by 地, describing the manner of the training. "练" is a short version of 练习, to practice or train.
+
+en=teacher
+And finally, the exhausted client.
+
+zh=2
+我慢吞吞地走着……
+I am walking sluggishly...
+
+en=student
+"慢吞吞地" is a wonderful way to say "sluggishly" or "slowly." The word 慢 means slow, and adding 吞吞 makes it much more descriptive of that sluggish, heavy feeling.
+
+en=teacher
+It really captures the exhaustion.
+
+OUTRO
+
+en=teacher
+That wraps up today's episode of Learning Chinese. We covered how to use 地 to turn adjectives into adverbs to describe the manner of an action, and how to use 又 and 了 to describe something that has happened again in the past.
+
+en=student
+And remember, if you plan to do something again in the future, use 再! Don't get them mixed up, or your trainer might think you've already finished your workout when you haven't!
+
+en=teacher
+Exactly. Practice these structures, and we'll see you in the next episode.
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中高音域，充满力量感"
+pace = "略快，非常有节奏感"
+volume = "洪亮，富有穿透力"
+clarity = "吐字极其清晰，带有命令感"
+fluency = "流利，充满爆发力"
+timbre = "浑厚，富有活力"
+emotion = "充满斗志，严厉但富有鼓励性"
+usecase = "一个充满激情、要求严格的健身教练"
+dialogue = "别停！快快地挥动手臂！别抱怨！稳稳地呼吸！坚持住！努力地练！"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十岁左右"
+pitch = "中低音域，因疲惫而显得微弱"
+pace = "慢速，伴随沉重的呼吸声"
+volume = "音量较低，显得虚弱"
+clarity = "略带气声，吐字有些费力"
+fluency = "不流利，带有断断续续的喘息"
+timbre = "略显沙哑，疲惫不堪"
+emotion = "精疲力竭，带着一丝抱怨"
+usecase = "一个正在极限挑战、精疲力竭的健身学员"
+dialogue = "我不行了！我又做了十次了！你太狠了！你又让我练这个了！我慢吞吞地走着……"

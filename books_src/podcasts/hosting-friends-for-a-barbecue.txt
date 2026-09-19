@@ -1,0 +1,212 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are going to clear up some confusion that almost every learner faces at some point. We are talking about the three different ways to say "can" in Chinese: 会, 能, and 可以.
+
+en=student
+Oh man, the "can" dilemma. I always struggle with that. In English, I just say "I can cook" or "Can I go to the bathroom?" but in Chinese, it feels like there are three different rules.
+
+en=teacher
+It does feel that way! But there is a logic to it. First, we have 会 (huì). This is used for learned skills. If you had to study or practice to know how to do it, use 会. For example, 我会说中文 (I can speak Chinese) or 我会游泳 (I can swim).
+
+en=student
+Okay, so that's for skills you've acquired. What about 能 (néng)?
+
+en=teacher
+能 is more about capability, physical ability, or circumstances. For example, 我能走 (I can walk, perhaps after an injury) or 我今天能去 (I can go today, meaning I am able to or it's possible for me to go). And then we have 可以 (kěyǐ). This is primarily used for permission or to suggest that something is possible or okay. Like, 我可以进来吗？ (Can/May I come in?)
+
+en=student
+Got it. 会 is for "know how to," 能 is for "be able to," and 可以 is for "may I" or "it is okay."
+
+en=teacher
+Exactly. And to make things even more interesting, we are also going to tackle the difference between 二 (èr) and 两 (liǎng). Both mean "two," but you can't just swap them.
+
+en=student
+Right, I know you use 两 when you're counting things with a measure word, like "two people," but 二 is used for numbers and math.
+
+en=teacher
+Precisely. Today's episode is all about hosting a barbecue for friends. You'll hear a host, Xiao Ming, preparing for the party, and his friends, Xiao Li and Xiao Zhang, checking in. Listen for how they use these "can" words and how they count their drinks and food.
+
+DIALOGUE
+
+zh=1
+你今天能来参加烧烤吗？
+Can you come to the barbecue today?
+
+zh=2
+当然可以！我会烤牛排，你别担心。
+Of course! I know how to grill steak, don't worry.
+
+zh=3
+我也能来！我可以带两瓶可乐吗？
+I can come too! Can I bring two bottles of cola?
+
+zh=1
+没问题。烧烤在二月二号，我已经准备好了两块牛排。
+No problem. The barbecue is on February second, and I have already prepared two pieces of steak.
+
+zh=2
+太好了！我真的很会吃！
+Great! I really know how to eat!
+
+zh=3
+我可以带点蔬菜吗？
+Can I bring some vegetables?
+
+zh=1
+可以。但我今天只能吃两个汉堡。
+Of course. But I can only eat two hamburgers today.
+
+BREAKDOWN
+
+en=teacher
+Let's break down that conversation. We start with Xiao Ming asking Xiao Li a question.
+
+zh=1
+你今天能来参加烧烤吗？
+Can you come to the barbecue today?
+
+en=student
+"你今天能来" (nǐ jīntiān néng lái). Here, we use 能 (néng) because he is asking about Xiao Li's ability or possibility to attend. It's about whether his schedule allows it.
+
+en=teacher
+Right. And "参加烧烤" (cānjiā shāokǎo) means to attend/participate in a barbecue. Now, look at Xiao Li's response.
+
+zh=2
+当然可以！我会烤牛排，你别担心。
+Of course! I know how to grill steak, don't worry.
+
+en=student
+"当然可以" (dāngrán kěyǐ) is a very common way to say "Of course!" or "Certainly!" as a way of giving permission or agreement. But then he says "我会烤牛排" (wǒ huì kǎo niúpái).
+
+en=teacher
+That's the key! He uses 会 (huì) because grilling steak is a skill he has learned. He knows the technique. "牛排" (niúpái) is steak.
+
+en=student
+And then Xiao Zhang jumps in.
+
+zh=3
+我也能来！我可以带两瓶可乐吗？
+I can come too! Can I bring two bottles of cola?
+
+en=teacher
+Xiao Zhang uses 能 (néng) to say he is able to come. Then he asks "我可以带...吗？" (wǒ kěyǐ dài... ma?). He's asking for permission to bring something.
+
+en=student
+And notice the "two bottles." He says "两瓶可乐" (liǎng píng kělè).
+
+en=teacher
+Yes! Since he is counting the bottles, he uses 两 (liǎng) instead of 二 (èr). He's using the measure word "瓶" (píng) for bottles. "可乐" (kělè) is cola.
+
+en=student
+Then Xiao Ming responds about the date and the food.
+
+zh=1
+没问题。烧烤在二月二号，我已经准备好了两块牛排。
+No problem. The barbecue is on February second, and I have already prepared two pieces of steak.
+
+en=teacher
+This is a perfect example of the two types of "two." He says "二月二号" (èr yuè èr hào), which is February second. When you say dates or numbers, you use 二 (èr).
+
+en=student
+But when he talks about the steak, he says "两块牛排" (liǎng kuài niúpái).
+
+en=teacher
+Exactly. "块" (kuài) is the measure word for pieces of meat, and because we are counting the pieces, we must use 两 (liǎng).
+
+en=student
+Xiao Li makes a funny joke next.
+
+zh=2
+太好了！我真的很会吃！
+Great! I really know how to eat!
+
+en=teacher
+"我会吃" (wǒ huì chī) is a humorous way to say someone is a big eater or knows how to enjoy food. It's like saying "I am skilled at eating!"
+
+en=student
+And finally, Xiao Zhang asks about the vegetables.
+
+zh=3
+我可以带点蔬菜吗？
+Can I bring some vegetables?
+
+zh=1
+可以。但我今天只能吃两个汉堡。
+Of course. But I can only eat two hamburgers today.
+
+en=teacher
+He asks for permission with 可以 (kěyǐ), and Xiao Ming gives permission with "可以" (kěyǐ). But then, look at the very last part. "我只能吃两个汉堡" (wǒ zhǐ néng chī liǎng gè hànbǎo).
+
+en=student
+"只能" (zhǐ néng) means "only can." He's talking about his physical limit or capacity. He can't eat more than two.
+
+en=teacher
+And again, "两个" (liǎng gè) uses 两 (liǎng) because "个" (gè) is the measure word for the hamburgers.
+
+en=student
+So, just to recap the vocab: 烧烤 (shāokǎo) is barbecue, 牛排 (niúpái) is steak, 可乐 (kělè) is cola, 蔬菜 (shūcài) is vegetables, and 汉堡 (hànbǎo) is a hamburger.
+
+en=teacher
+And the grammar: 会 for skills, 能 for ability or limits, and 可以 for permission. And for "two," 二 is for numbers and dates, while 两 is for counting things with measure words.
+
+OUTRO
+
+en=teacher
+That was a deep dive! We covered a lot of ground today with the different ways to express ability and the nuances of the number two.
+
+en=student
+Yeah, I definitely feel more confident about when to use 会 versus 能. It’s really about whether you’re talking about a skill you learned or just whether it's possible to do something.
+
+en=teacher
+Exactly. And don't forget the "two" rule. If you're counting objects, reach for 两 (liǎng). If you're counting numbers or saying the date, stick with 二 (èr).
+
+en=student
+Thanks for listening to Learning Chinese. We'll see you in the next episode!
+
+en=teacher
+再见！ (Zàijiàn!)
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "三十岁左右"
+pitch = "中音域，温暖且有礼貌"
+pace = "中速，语气轻松"
+volume = "适中"
+clarity = "清晰"
+fluency = "流利"
+timbre = "温和，听起来很可靠"
+emotion = "热情，像一个周到的主人"
+usecase = "一个正在准备聚会的热情主人"
+dialogue = "你今天能来参加烧烤吗？没问题。烧烤在二月二号，我已经准备好了两块牛排。"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "二十多岁"
+pitch = "中高音域，富有活力"
+pace = "略快"
+volume = "大"
+clarity = "清晰"
+fluency = "流利，带有笑意"
+timbre = "清脆，充满能量"
+emotion = "兴奋，很饿"
+usecase = "一个爱开玩笑、精力充沛的朋友"
+dialogue = "当然可以！我会烤牛排，你别担心。太好了！我真的很会吃！"
+
+speaker = 3
+lang = "zh"
+gender = "男性"
+age = "二十多岁"
+pitch = "中音域"
+pace = "中速"
+volume = "中等"
+clarity = "清晰"
+fluency = "流利，略带询问语气"
+timbre = "柔和"
+emotion = "礼貌，乐于助人"
+usecase = "一个很有礼貌、想帮忙的朋友"
+dialogue = "我也能来！我可以带两瓶可乐吗？我可以带点蔬菜吗？"

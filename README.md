@@ -283,12 +283,168 @@ src/storyline/flashcard/
 └── pdf_gen.py           # PDF assembly via reportlab (adapted from scripts/make_flashcards.py)
 ```
 
+### Manual Flashcard Generation
+
+                                                                                              
+ 1. src/storyline/flashcard/vocab_extract.py                                                                                              
+     - _parse_entries() now accepts an optional expected_count parameter (defaulting to 6 for backward compatibility)                     
+     - Added extract_vocab_from_list(words, ...) — runs the LLM with flashcard-vocab-from-list.md prompt against a list of words, with    
+ flexible batch size (1-6)                                                                                                                
+ 2. src/storyline/flashcard/run_pipeline.py                                                                                               
+     - Added import of extract_vocab_from_list                                                                                            
+     - Added run_flashcard_pipeline_from_list() — the main pipeline function that:                                                        
+           - Reads the word list file                                                                                                     
+           - Groups words into batches of 6                                                                                               
+           - Auto-detects the next manual_N batch number from the manifest                                                                
+           - For each batch: extracts entries via LLM, writes text files, updates manifest, generates images+PDF (full batches only),     
+ copies canonical assets to books/vocab/{audio,images,texts}/                                                                             
+     - Partial batches (< 6 words) still get manifest entries and text files but skip image/PDF generation                                
+ 3. src/storyline/flashcard/__init__.py                                                                                                   
+     - Exports run_flashcard_pipeline_from_list                                                                                           
+ 4. scripts/generate_flashcards_from_vocab_list.py (new)                                                                                  
+     - CLI entry point: python scripts/generate_flashcards_from_vocab_list.py <word_list.txt>                                             
+     - Supports --force, --models, --start-batch, --vocab-base-dir, --prompt-template                                                     
+                                                                                                                                          
+ ### End-to-end flow  
+ 1. User copies words from the saved vocab panel (📋 Copy All)                                                                            
+ 2. Saves to a text file (e.g., my_words.txt), one word per line                                                                          
+ 3. Runs: python scripts/generate_flashcards_from_vocab_list.py my_words.txt                                                              
+ 4. For each group of 6 words:                                                                                                            
+     - LLM generates flashcard entries (pinyin, definition, sentence, image prompt)                                                       
+     - Images are generated via ComfyUI                                                                                                   
+     - A PDF (cards.pdf) is created in books/vocab/manual_N/                                                                              
+     - The flashcard manifest (books/flashcard-manifest.json) is updated                                                                  
+     - Canonical audio/image/text assets are copied to books/vocab/{audio,images,texts}/                                   
+
+## Standalone Sentence Renderer
+
+Generates TTS audio from a sentence-format script — useful for small ad-hoc
+rendering jobs (e.g. test sentences, podcast clips, sample dialogues) without
+running the full pipeline.
+
+### Module
+
+```
+src/storyline/audio/sentence_render.py      # Orchestrator & CLI entry point
+src/storyline/audio/sentence_audio.py        # Parser, batching, TTS engine dispatch
+src/storyline/config/render.toml             # Default config
+```
+
+### Script Format
+
+The input script uses the same sentence format as `sentence_audio.py`:
+
+```
+zh=1
+instruct=Speak warmly and slowly
+你好，今天天气真好。
+
+en=2
+Hello, the weather is really nice today.
+
+zh=1
+是啊！我特别喜欢这种天气。
+```
+
+| Element | Rule |
+|---|---|
+| **`zh=<id>` / `en=<id>`** | Header line. `zh` or `en` selects the language; the number is a `speaker_id` matching a voice in the config. |
+| **`instruct=...`** | Optional. A voice-direction hint (only used by Qwen3 builtin speakers). Must appear immediately after the header, before the text line. |
+| **Text line** | The sentence to speak. One line, non-empty. |
+| **Separator** | Blocks are separated by one or more blank lines. |
+
+### Config (`config/render.toml`)
+
+```toml
+[engine]
+type = "qwen3"       # "qwen3" or "omnivoice"
+mode = "builtin"     # "builtin" (pretrained) or "clone" (voice cloning)
+
+[output]
+dir = "render_output"
+per_line_format = "{speaker_id:02d}_{lang}_{line_number:04d}.wav"
+joined = "joined.mp3"
+bitrate = "64k"
+inter_line_pause_ms = 300
+
+[voices]
+[voices.1]
+mode = "builtin"
+speaker = "Serena"
+
+[voices.2]
+mode = "builtin"
+speaker = "Ryan"
+```
+
+For voice cloning, set each voice to clone mode with reference audio:
+
+```toml
+[voices.1]
+mode = "clone"
+ref_audio = "voices/teacher.wav"
+ref_text = "Your reference transcript here."
+```
+
+### Running
+
+```bash
+# Basic — uses default config/render.toml
+python -m storyline.audio.sentence_render script.txt
+
+# Custom config and output directory
+python -m storyline.audio.sentence_render script.txt --config my.toml -o my_audio
+
+# Override engine, mode, or bitrate
+python -m storyline.audio.sentence_render script.txt --engine omnivoice --mode clone
+python -m storyline.audio.sentence_render script.txt --bitrate 128k
+
+# Preview speakers without rendering
+python -m storyline.audio.sentence_render script.txt --list-speakers
+```
+
+| Flag | Description |
+|---|---|
+| `script` | **Required.** Path to a sentence-format script file. |
+| `--config`, `-c` | Path to render TOML config (default: `config/render.toml`). |
+| `--output-dir`, `-o` | Override output directory from config. |
+| `--engine` | Override TTS backend: `qwen3` or `omnivoice`. |
+| `--mode` | Override voice mode: `builtin` or `clone`. |
+| `--pause` | Override inter-line silence (ms) in joined MP3. |
+| `--bitrate` | Override MP3 bitrate (e.g. `128k`). |
+| `--list-speakers` | Parse the script and print speaker ids without rendering. |
+
+### Service Management
+
+- If a `ServiceManager` is available, the renderer stops the LLM first (frees
+  GPU memory), then starts the TTS engine.  For `qwen3` the service is left
+  running; for `omnivoice` it is stopped after rendering completes.
+- If no `ServiceManager` is involved (e.g. you start TTS manually), the
+  renderer assumes the service is already up.
+
+### Output
+
+- **Per-line WAV files**: one per sentence block, named by the
+  `per_line_format` template (default: `{speaker_id:02d}_{lang}_{line_number:04d}.wav`).
+- **Joined MP3**: all lines concatenated with `inter_line_pause_ms` silence
+  between them, exported at the configured bitrate.
+
+### Batch Behaviour
+
+The underlying `generate_sentence_audio()` groups consecutive lines that share
+the same speaker+instruct (builtin) or same ref_audio+ref_text (clone) and
+sends them to the TTS endpoint in a single batch call.  Batch sizes default to
+**8 for Qwen3** and **6 for Omnivoice**.  This is transparent to the caller.
+
+---
+
 ## Configuration
 
 All TOML config files live in `src/storyline/config/`:
 
 - `pipeline.toml` — paths, pipeline behaviour, named profiles
 - `audio.toml` — voice definitions, audio profiles, repetition cadences
+- `render.toml` — standalone sentence renderer config
 - `llms_for_tasks.toml` — LLM provider and per-task model profiles
 - `services.toml` — service ports, timeouts, health check endpoints
 

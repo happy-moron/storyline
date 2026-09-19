@@ -154278,5 +154278,572 @@
         }
       }
     ]
+  },
+  "漏水": {
+    "pinyin": "lòu shuǐ",
+    "definition": [
+      {
+        "meaning": "to leak (water); leakage",
+        "example": {
+          "chinese": "屋顶正在漏水。",
+          "pinyin": "Wū dǐ zhèng zài lòu shuǐ.",
+          "english": "The roof is leaking."
+        }
+      }
+    ]
+  },
+  "来不来": {
+    "pinyin": "lái bù lái",
+    "definition": [
+      {
+        "meaning": "to come or not to come",
+        "example": {
+          "chinese": "你到底来不来？",
+          "pinyin": "Nǐ dàodǐ lái bù lái?",
+          "english": "Are you coming or not?"
+        }
+      },
+      {
+        "meaning": "to join in; to participate",
+        "example": {
+          "chinese": "大家都准备好了，你来不来？",
+          "pinyin": "Dàjiā dōu zhǔnbèi hǎo le, nǐ lái bù lái?",
+          "english": "Everyone is ready, are you joining us?"
+        }
+      }
+    ]
+  },
+  "好不好": {
+    "pinyin": "hǎo bù hǎo",
+    "definition": [
+      {
+        "meaning": "is it okay?; how about it?; is it good or not?",
+        "example": {
+          "chinese": "我们下午去公园，好不好？",
+          "pinyin": "Wǒmen xiàwǔ qù gōngyuán, hǎo bù hǎo?",
+          "english": "Let's go to the park this afternoon, okay?"
+        }
+      }
+    ]
+  },
+  "想不想": {
+    "pinyin": "xiǎng bù xiǎng",
+    "definition": [
+      {
+        "meaning": "do you want (to do something)?",
+        "example": {
+          "chinese": "你想不想去看电影？",
+          "pinyin": "Nǐ xiǎng bù xiǎng qù kàn diànyǐng?",
+          "english": "Do you want to go see a movie?"
+        }
+      },
+      {
+        "meaning": "do you miss (someone or something)?",
+        "example": {
+          "chinese": "你最近想不想家？",
+          "pinyin": "Nǐ zuìjìn xiǎng bù xiǎng jiā?",
+          "english": "Do you miss home lately?"
+        }
+      }
+    ]
+  },
+  "开户": {
+    "pinyin": "kāi hù",
+    "definition": [
+      {
+        "meaning": "to open an account",
+        "example": {
+          "chinese": "我想去银行开户。",
+          "pinyin": "Wǒ xiǎng qù yínháng kāihù.",
+          "english": "I want to go to the bank to open an account."
+        }
+      }
+    ]
+  },
+  "问过": {
+    "pinyin": "wèn guò",
+    "definition": [
+      {
+        "meaning": "to have asked; to have inquired",
+        "example": {
+          "chinese": "我已经问过老师了。",
+          "pinyin": "Wǒ yǐ jīng wèn guo lǎo shī le.",
+          "english": "I have already asked the teacher."
+        }
+      }
+    ]
+  },
+  "销售": {
+    "pinyin": "xiāo shòu",
+    "definition": [
+      {
+        "meaning": "to sell",
+        "example": {
+          "chinese": "这家公司主要销售电子产品。",
+          "pinyin": "Zhè jiā gōngsī zhǔyào xiāoshòu diànzǐ chǎnpǐn.",
+          "english": "This company mainly sells electronic products."
+        }
+      },
+      {
+        "meaning": "sales; marketing",
+        "example": {
+          "chinese": "销售部门正在开发新市场。",
+          "pinyin": "Xiāoshòu bùmén zhèngzài kāifā xīn shìchǎng.",
+          "english": "The sales department is developing new markets."
+        }
+      }
+    ]
+  },
+  "环境": {
+    "pinyin": "huánjìng",
+    "definition": [
+      {
+        "meaning": "environment; surroundings",
+        "example": {
+          "chinese": "这里的自然环境非常优美。",
+          "pinyin": "Zhèlǐ de zìrán huánjìng fēicháng yōuměi.",
+          "english": "The natural environment here is very beautiful."
+        }
+      },
+      {
+        "meaning": "circumstances; conditions",
+        "example": {
+          "chinese": "我们要努力适应新的学习环境。",
+          "pinyin": "Wǒmen yào nǔlì shìyìng xīn de xuéxí huánjìng.",
+          "english": "We should work hard to adapt to the new learning environment."
+        }
+      }
+    ]
+  },
+  "应付": {
+    "pinyin": "yìng fù",
+    "definition": [
+      {
+        "meaning": "to cope with; to deal with",
+        "example": {
+          "chinese": "他能应付各种困难。",
+          "pinyin": "Tā néng yìng fù gè zhǒng kùn nán.",
+          "english": "He can cope with various difficulties."
+        }
+      },
+      {
+        "meaning": "to do something perfunctorily; to make do",
+        "example": {
+          "chinese": "他只是在应付差事。",
+          "pinyin": "Tā zhǐ shì zài yìng fù chāi shì.",
+          "english": "He is just doing his job perfunctorily."
+        }
+      }
+    ]
+  },
+  "加班": {
+    "pinyin": "jiā bān",
+    "definition": [
+      {
+        "meaning": "to work overtime",
+        "example": {
+          "chinese": "由于项目很紧急，他最近经常加班。",
+          "pinyin": "Yóuyú xiàngmù hěn jǐnjí, tā zuìjìn jīngcháng jiābān.",
+          "english": "Because the project is urgent, he has been working overtime frequently lately."
+        }
+      }
+    ]
+  },
+  "周末": {
+    "pinyin": "zhōumò",
+    "definition": [
+      {
+        "meaning": "weekend",
+        "example": {
+          "chinese": "你这个周末要做什么？",
+          "pinyin": "Nǐ zhège zhōumò yào zuò shénme?",
+          "english": "What are you doing this weekend?"
+        }
+      }
+    ]
+  },
+  "餐饮业": {
+    "pinyin": "cān yǐn yè",
+    "definition": [
+      {
+        "meaning": "catering industry; food and beverage industry",
+        "example": {
+          "chinese": "餐饮业在当地经济中占有重要地位。",
+          "pinyin": "Cānyǐnyè zài dāngdì jīngjì zhōng zhànyǒu zhòngyào dìwèi.",
+          "english": "The catering industry holds an important position in the local economy."
+        }
+      }
+    ]
+  },
+  "校门口": {
+    "pinyin": "xiào mén kǒu",
+    "definition": [
+      {
+        "meaning": "school entrance; school gate",
+        "example": {
+          "chinese": "我们在校门口集合。",
+          "pinyin": "Wǒmen zài xiào ménkǒu jíhé.",
+          "english": "We will meet at the school gate."
+        }
+      }
+    ]
+  },
+  "难对付": {
+    "pinyin": "nán duì fu",
+    "definition": [
+      {
+        "meaning": "difficult to deal with; hard to handle",
+        "example": {
+          "chinese": "他是一个很难对付的对手。",
+          "pinyin": "Tā shì yī gè hěn nán duì fu de duì shǒu.",
+          "english": "He is a very difficult opponent to deal with."
+        }
+      }
+    ]
+  },
+  "披萨": {
+    "pinyin": "pī sà",
+    "definition": [
+      {
+        "meaning": "pizza",
+        "example": {
+          "chinese": "我最喜欢吃披萨。",
+          "pinyin": "Wǒ zuì xǐ huān chī pī sà.",
+          "english": "I like eating pizza the most."
+        }
+      }
+    ]
+  },
+  "清淡": {
+    "pinyin": "qīngdàn",
+    "definition": [
+      {
+        "meaning": "light (food); bland; not greasy or spicy",
+        "example": {
+          "chinese": "生病时应该吃得清淡一些。",
+          "pinyin": "Shēngbìng shí yīnggāi chī dé qīngdàn yīxiē.",
+          "english": "You should eat lighter food when you are sick."
+        }
+      },
+      {
+        "meaning": "sparse; thin; light (referring to business, traffic, etc.)",
+        "example": {
+          "chinese": "由于是淡季，商场的客流量比较清淡。",
+          "pinyin": "Yóuyú shì dànjì, shāngchǎng de kèliúliàng bǐjiào qīngdàn.",
+          "english": "As it is the off-season, the foot traffic in the shopping mall is quite sparse."
+        }
+      }
+    ]
+  },
+  "牛排": {
+    "pinyin": "niú pái",
+    "definition": [
+      {
+        "meaning": "steak",
+        "example": {
+          "chinese": "我想点一份牛排。",
+          "pinyin": "Wǒ xiǎng diǎn yī fèn niú pái.",
+          "english": "I want to order a steak."
+        }
+      }
+    ]
+  },
+  "二月二号": {
+    "pinyin": "èr yuè èr hào",
+    "definition": [
+      {
+        "meaning": "February 2nd",
+        "example": {
+          "chinese": "我的生日是二月二号。",
+          "pinyin": "Wǒ de shēng rì shì èr yuè èr hào.",
+          "english": "My birthday is February 2nd."
+        }
+      }
+    ]
+  },
+  "汉堡": {
+    "pinyin": "hànbǎo",
+    "definition": [
+      {
+        "meaning": "hamburger",
+        "example": {
+          "chinese": "我喜欢吃汉堡。",
+          "pinyin": "Wǒ xǐ huān chī hànbǎo.",
+          "english": "I like to eat hamburgers."
+        }
+      }
+    ]
+  },
+  "稳稳": {
+    "pinyin": "wěn wěn",
+    "definition": [
+      {
+        "meaning": "steadily; firmly",
+        "example": {
+          "chinese": "他稳稳地抓住了绳子。",
+          "pinyin": "Tā wěn wěn de zhuā zhù le shéng zi.",
+          "english": "He firmly grabbed the rope."
+        }
+      },
+      {
+        "meaning": "securely; safely",
+        "example": {
+          "chinese": "飞机稳稳地降落了。",
+          "pinyin": "Fēi jī wěn wěn de jiàng luò le.",
+          "english": "The plane landed steadily."
+        }
+      }
+    ]
+  },
+  "狠": {
+    "pinyin": "hěn",
+    "definition": [
+      {
+        "meaning": "cruel; ruthless",
+        "example": {
+          "chinese": "他的手段非常狠。",
+          "pinyin": "Tā de shǒu duàn fēi cháng hěn.",
+          "english": "His methods are very ruthless."
+        }
+      },
+      {
+        "meaning": "fierce; intense",
+        "example": {
+          "chinese": "他下了一番狠功夫。",
+          "pinyin": "Tā xià le yì fān hěn gōng fu.",
+          "english": "He put in a tremendous amount of effort."
+        }
+      }
+    ]
+  },
+  "坚持住": {
+    "pinyin": "jiān chí zhù",
+    "definition": [
+      {
+        "meaning": "to hold on; to persevere; to hang in there",
+        "example": {
+          "chinese": "只要坚持住，最后一定能成功。",
+          "pinyin": "Zhǐyào jiānchí zhù, zuìhòu yīdìng néng chénggōng.",
+          "english": "As long as you hold on, you will surely succeed in the end."
+        }
+      }
+    ]
+  },
+  "便便": {
+    "pinyin": "biàn bian",
+    "definition": [
+      {
+        "meaning": "poop; feces (colloquial)",
+        "example": {
+          "chinese": "狗狗在草地上拉便便。",
+          "pinyin": "Gǒu gǒu zài cǎo dì shàng lā biàn bian.",
+          "english": "The dog pooped on the grass."
+        }
+      }
+    ]
+  },
+  "说不定": {
+    "pinyin": "shuō bu dìng",
+    "definition": [
+      {
+        "meaning": "maybe; perhaps",
+        "example": {
+          "chinese": "说不定明天会晴天。",
+          "pinyin": "Shuō bu dìng míng tiān huì qíng tiān.",
+          "english": "Maybe it will be sunny tomorrow."
+        }
+      },
+      {
+        "meaning": "uncertain; unpredictable",
+        "example": {
+          "chinese": "事情的结果还说不定呢。",
+          "pinyin": "Shì qíng de jié guǒ hái shuō bu dìng ne.",
+          "english": "The outcome of the matter is still uncertain."
+        }
+      }
+    ]
+  },
+  "尿出来": {
+    "pinyin": "niào chū lái",
+    "definition": [
+      {
+        "meaning": "to urinate; to pee out",
+        "example": {
+          "chinese": "他终于尿出来了。",
+          "pinyin": "Tā zhōng yú niào chū lái le.",
+          "english": "He finally urinated."
+        }
+      }
+    ]
+  },
+  "倒入": {
+    "pinyin": "dào rù",
+    "definition": [
+      {
+        "meaning": "to pour into",
+        "example": {
+          "chinese": "请把水倒入杯中。",
+          "pinyin": "Qǐng bǎ shuǐ dào rù bēi zhōng.",
+          "english": "Please pour the water into the cup."
+        }
+      }
+    ]
+  },
+  "按下": {
+    "pinyin": "àn xià",
+    "definition": [
+      {
+        "meaning": "to press (a button); to push down",
+        "example": {
+          "chinese": "请按下这个红色的按钮。",
+          "pinyin": "Qǐng àn xià zhè ge hóng sè de àn niǔ.",
+          "english": "Please press this red button."
+        }
+      },
+      {
+        "meaning": "to suppress; to subdue",
+        "example": {
+          "chinese": "警察成功地按下了骚乱。",
+          "pinyin": "Jǐng chá chéng gōng de àn xià le sāo luàn.",
+          "english": "The police successfully suppressed the riot."
+        }
+      }
+    ]
+  },
+  "冲水": {
+    "pinyin": "chōng shuǐ",
+    "definition": [
+      {
+        "meaning": "to flush (a toilet)",
+        "example": {
+          "chinese": "用完后请记得冲水。",
+          "pinyin": "Yòng wán hòu qǐng jì de chōng shuǐ.",
+          "english": "Please remember to flush after use."
+        }
+      },
+      {
+        "meaning": "to rinse with water",
+        "example": {
+          "chinese": "用清水冲水洗掉灰尘。",
+          "pinyin": "Yòng qīng shuǐ chōng shuǐ xǐ diào huī chén.",
+          "english": "Rinse off the dust with clean water."
+        }
+      }
+    ]
+  },
+  "按钮": {
+    "pinyin": "ànniǔ",
+    "definition": [
+      {
+        "meaning": "button",
+        "example": {
+          "chinese": "请按下这个红色按钮。",
+          "pinyin": "Qǐng àn xià zhège hóngsè ànniǔ.",
+          "english": "Please press this red button."
+        }
+      }
+    ]
+  },
+  "管道": {
+    "pinyin": "guǎn dào",
+    "definition": [
+      {
+        "meaning": "pipe; conduit; pipeline",
+        "example": {
+          "chinese": "这里的地下水管道坏了。",
+          "pinyin": "Zhèlǐ de dìxià shuǐ guǎndào huài le.",
+          "english": "The underground water pipe here is broken."
+        }
+      },
+      {
+        "meaning": "channel; way; means",
+        "example": {
+          "chinese": "我们需要建立有效的沟通管道。",
+          "pinyin": "Wǒmen xūyào jiànlì yǒuxiào de gōutōng guǎndào.",
+          "english": "We need to establish effective communication channels."
+        }
+      }
+    ]
+  },
+  "流走了": {
+    "pinyin": "liú zǒu le",
+    "definition": [
+      {
+        "meaning": "flowed away",
+        "example": {
+          "chinese": "积水顺着排水沟流走了。",
+          "pinyin": "Jīshuǐ shùnzhe páishuǐgōu liú zǒu le.",
+          "english": "The stagnant water flowed away through the drain."
+        }
+      },
+      {
+        "meaning": "washed away",
+        "example": {
+          "chinese": "所有的污垢都被雨水流走了。",
+          "pinyin": "Suǒyǒu de wūgòu dōu bèi yǔshuǐ liú zǒu le.",
+          "english": "All the dirt was washed away by the rainwater."
+        }
+      }
+    ]
+  },
+  "洗了洗": {
+    "pinyin": "xǐ le xǐ",
+    "definition": [
+      {
+        "meaning": "to wash (briefly/a little bit)",
+        "example": {
+          "chinese": "他洗了洗脸，感觉舒服多了。",
+          "pinyin": "Tā xǐ le xǐ liǎn, gǎnjué shūfu duō le.",
+          "english": "He washed his face and felt much more comfortable."
+        }
+      }
+    ]
+  },
+  "内裤": {
+    "pinyin": "nèikù",
+    "definition": [
+      {
+        "meaning": "underwear; panties; briefs",
+        "example": {
+          "chinese": "他买了几条新的内裤。",
+          "pinyin": "Tā mǎi le jǐ tiáo xīn de nèikù.",
+          "english": "He bought a few pairs of new underwear."
+        }
+      }
+    ]
+  },
+  "褪下来": {
+    "pinyin": "tuì xià lái",
+    "definition": [
+      {
+        "meaning": "to fade (color or luster)",
+        "example": {
+          "chinese": "这件旧衣服的颜色已经褪下来了。",
+          "pinyin": "Zhè jiàn jiù yīfu de yánsè yǐjīng tuì xiàlái le.",
+          "english": "The color of this old piece of clothing has faded."
+        }
+      },
+      {
+        "meaning": "to shed or strip off",
+        "example": {
+          "chinese": "随着时间的流逝，那份光彩逐渐褪下来了。",
+          "pinyin": "Suízhe shíjiān de liúshì, nà fèn guāngcǎi zhújiàn tuì xiàlái le.",
+          "english": "With the passage of time, that brilliance has gradually faded away."
+        }
+      }
+    ]
+  },
+  "下一次": {
+    "pinyin": "xià yī cì",
+    "definition": [
+      {
+        "meaning": "next time",
+        "example": {
+          "chinese": "我们下一次再聊吧。",
+          "pinyin": "Wǒ men xià yī cì zài liáo ba.",
+          "english": "Let's chat again next time."
+        }
+      }
+    ]
   }
 }

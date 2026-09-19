@@ -1,0 +1,69 @@
+# =============================================================================
+# Render config — standalone TTS rendering for sentence-format scripts
+# =============================================================================
+#
+# Usage:
+#   python -m storyline.audio.sentence_render script.txt
+#   python -m storyline.audio.sentence_render script.txt --config render.toml
+#
+# See README.md § Standalone Sentence Renderer for full documentation.
+# =============================================================================
+
+[engine]
+# TTS backend: "qwen3" (systemd-backed Flask service) or "omnivoice" (subprocess)
+type = "qwen3"
+
+# Voice mode: "builtin" (Qwen3 pretrained speakers) or "clone" (voice cloning)
+mode = "builtin"
+
+
+[output]
+# Directory where per-line audio files and the joined MP3 are written
+dir = "render_output"
+
+# Per-line filename template.
+# Available placeholders:
+#   {line_number}  — 1-based sequence number in the script
+#   {lang}         — "zh" or "en"
+#   {speaker_id}   — the numeric speaker id from the script header
+#   {instruct}     — shorthand for the instruction (first 20 chars, sanitised)
+per_line_format = "{speaker_id:02d}_{lang}_{line_number:04d}.wav"
+
+# Joined output MP3 filename
+joined = "joined.mp3"
+
+# MP3 bitrate for the joined file
+bitrate = "64k"
+
+# Silence inserted between each line in the joined output (milliseconds)
+inter_line_pause_ms = 300
+
+
+# =============================================================================
+# Speaker voice definitions
+# =============================================================================
+#
+# Each section key is the numeric speaker_id used in script headers (zh=1, en=2).
+# The mode field inside each voice definition may override the global [engine] mode.
+
+# --- Builtin (Qwen3 pretrained speakers) ---
+
+[voices.1]
+mode = "builtin"
+speaker = "Serena"
+
+[voices.2]
+mode = "builtin"
+speaker = "Ryan"
+
+# --- Clone (voice cloning from reference audio) ---
+#
+# [voices.1]
+# mode = "clone"
+# ref_audio = "voices/teacher.wav"
+# ref_text = "Your reference transcript here."
+#
+# [voices.2]
+# mode = "clone"
+# ref_audio = "voices/student.wav"
+# ref_text = "Your reference transcript here."

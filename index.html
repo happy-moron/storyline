@@ -32,6 +32,7 @@
         <button id="englishBtn">🇬🇧</button>
         <button id="speedBtn">1x</button>
         <button id="backchainModeBtn" title="Back-chain mode">🔁</button>
+        <button id="breakdownBtn" title="Grammar breakdown">📖</button>
         <button id="flashcardBtn" style="display: none;" title="Flashcards" onclick="openFlashcards()">🎴</button>
     </div>
 
@@ -178,20 +179,26 @@
         // ── Chapter loading ──────────────────────────────────────────
         let loadingChapter = false;
         let flashcardAvailable = false;
+        let flashcardManifest = null;
 
         async function checkFlashcards() {
-            const author = currentState.selectedAuthor;
             const book = currentState.selectedBook;
-            if (!author || !book) {
+            if (!book) {
                 document.getElementById('flashcardBtn').style.display = 'none';
                 return;
             }
             try {
-                const resp = await fetch(
-                    `books/${author}/${book}/flashcards/flashcard_entries.json`,
-                    { method: 'HEAD' }
+                if (!flashcardManifest) {
+                    const resp = await fetch('books/flashcard-manifest.json');
+                    if (resp.ok) {
+                        flashcardManifest = await resp.json();
+                    }
+                }
+                flashcardAvailable = !!(
+                    flashcardManifest &&
+                    flashcardManifest.books &&
+                    flashcardManifest.books[book]
                 );
-                flashcardAvailable = resp.ok;
                 document.getElementById('flashcardBtn').style.display =
                     flashcardAvailable ? 'inline-block' : 'none';
             } catch {
@@ -334,6 +341,24 @@
         dictionaryPane.id = 'dictionary-pane';
         document.body.appendChild(dictionaryPane);
 
+        // Saved vocabulary panel
+        const savedVocabPanel = document.createElement('div');
+        savedVocabPanel.id = 'saved-vocab-panel';
+        savedVocabPanel.style.display = 'none';
+        savedVocabPanel.innerHTML = `
+            <div class="saved-vocab-header">
+                <span class="saved-vocab-title">Saved Vocabulary</span>
+                <span class="saved-vocab-actions">
+                    <button class="saved-vocab-copy-btn" onclick="copySavedVocab()" title="Copy all">📋 Copy All</button>
+                    <button class="saved-vocab-close-btn" onclick="closeSavedVocabPanel()" title="Close">✕</button>
+                </span>
+            </div>
+            <div class="saved-vocab-body">
+                <table class="saved-vocab-table"><tbody id="savedVocabList"></tbody></table>
+            </div>
+        `;
+        document.body.appendChild(savedVocabPanel);
+
         function handleTokenDoubleClick(event) {
             const sentenceDiv = event.target.closest('.sentence');
             if (sentenceDiv) {
@@ -377,25 +402,82 @@
             }
         });
 
+        function hasFlashcard(word) {
+            return !!(
+                flashcardManifest &&
+                flashcardManifest.words &&
+                flashcardManifest.words[word]
+            );
+        }
+
+        function findAuthorForBook(bookSlug) {
+            if (!manifest) return '';
+            for (const ae of manifest.books) {
+                if (ae.books.some(b => b.slug === bookSlug)) {
+                    return ae.author;
+                }
+            }
+            return '';
+        }
+
+        function playFlashcardAudio(word) {
+            const src = `books/vocab/audio/${encodeURIComponent(word)}_word.mp3`;
+            const audio = new Audio(src);
+            audio.play().catch(e => console.error('Flashcard audio play failed:', e));
+        }
+
         function displayDictionaryEntry(chineseToken, entry) {
             dictionaryPane.dataset.currentToken = chineseToken;
-            let tableHTML = '<table class="dictionary-table">';
-            tableHTML += `<tr><td>${chineseToken}</td></tr>`;
+            const isSaved = isWordSaved(chineseToken);
+
+            let html = `<div class="dict-header">
+                <span class="dict-header-title">Dictionary</span>
+                <span class="dict-header-actions">
+                    <button class="saved-vocab-btn" onclick="event.stopPropagation(); viewSavedVocab()" title="View saved vocabulary">📋 <span id="savedCountBadge">${getSavedVocab().length}</span></button>
+                </span>
+            </div>`;
+
+            html += '<table class="dictionary-table">';
+
+            // First row: token with audio button, flashcard link, and save button inline
+            let headerHtml = `<span class="dict-token">${chineseToken}</span>`;
+            if (hasFlashcard(chineseToken)) {
+                headerHtml += ` <button class="dict-audio-btn" onclick="event.stopPropagation(); playFlashcardAudio('${chineseToken.replace(/'/g, "\\'")}')" title="Play word audio">🔊</button>`;
+
+                // Link to the correct book for this word
+                let book = currentState.selectedBook;
+                let author = currentState.selectedAuthor || '';
+                if (!book || !(flashcardManifest.books[book] || []).includes(chineseToken)) {
+                    // Word not in current book — find any book that has it
+                    for (const [slug, words] of Object.entries(flashcardManifest.books)) {
+                        if (words.includes(chineseToken)) {
+                            book = slug;
+                            author = findAuthorForBook(slug);
+                            break;
+                        }
+                    }
+                }
+                const flashcardUrl = `flashcards.html?author=${encodeURIComponent(author)}&book=${encodeURIComponent(book)}&word=${encodeURIComponent(chineseToken)}`;
+                headerHtml += ` <a href="${flashcardUrl}" target="_blank" class="flashcard-link" title="View Flashcard">🎴</a>`;
+            }
+            headerHtml += ` <button class="dict-save-btn ${isSaved ? 'saved' : ''}" onclick="event.stopPropagation(); toggleSavedVocab('${chineseToken.replace(/'/g, "\\'")}')" title="${isSaved ? 'Remove from saved' : 'Save word'}">${isSaved ? '★' : '☆'}</button>`;
+            html += `<tr><td>${headerHtml}</td></tr>`;
 
             if (entry.pinyin) {
-                tableHTML += `<tr><td>${entry.pinyin}</td></tr>`;
+                html += `<tr><td>${entry.pinyin}</td></tr>`;
             }
 
             if (entry.definition && Array.isArray(entry.definition)) {
                 entry.definition.forEach(def => {
-                    tableHTML += `<tr><td>${def.meaning}</td></tr>`;
+                    html += `<tr><td>${def.meaning}</td></tr>`;
                     if (def.example) {
-                        tableHTML += `<tr><td>Chinese: ${def.example.chinese}<br>Pinyin: ${def.example.pinyin}<br>English: ${def.example.english}</td></tr>`;
+                        html += `<tr><td>Chinese: ${def.example.chinese}<br>Pinyin: ${def.example.pinyin}<br>English: ${def.example.english}</td></tr>`;
                     }
                 });
             }
-            tableHTML += '</table>';
-            dictionaryPane.innerHTML = tableHTML;
+
+            html += '</table>';
+            dictionaryPane.innerHTML = html;
             dictionaryPane.style.display = 'block';
         }
 
@@ -404,7 +486,93 @@
             dictionaryPane.style.display = 'none';
             delete dictionaryPane.dataset.currentToken;
         }
-        
+
+        // ── Saved Vocabulary ──────────────────────────────────────────
+        function getSavedVocab() {
+            try {
+                return JSON.parse(localStorage.getItem('savedVocab') || '[]');
+            } catch {
+                return [];
+            }
+        }
+
+        function isWordSaved(chineseToken) {
+            return getSavedVocab().some(item => item.chinese === chineseToken);
+        }
+
+        function saveVocabWord(chineseToken, pinyin) {
+            const vocab = getSavedVocab();
+            if (!vocab.some(item => item.chinese === chineseToken)) {
+                vocab.push({ chinese: chineseToken, pinyin: pinyin || '' });
+                localStorage.setItem('savedVocab', JSON.stringify(vocab));
+            }
+            updateSavedCountBadge();
+        }
+
+        function removeVocabWord(chineseToken) {
+            const vocab = getSavedVocab().filter(item => item.chinese !== chineseToken);
+            localStorage.setItem('savedVocab', JSON.stringify(vocab));
+            updateSavedCountBadge();
+        }
+
+        function toggleSavedVocab(chineseToken) {
+            const entry = dictionary[chineseToken];
+            const pinyin = entry ? entry.pinyin || '' : '';
+            if (isWordSaved(chineseToken)) {
+                removeVocabWord(chineseToken);
+            } else {
+                saveVocabWord(chineseToken, pinyin);
+            }
+            // Refresh the dictionary entry display to update save button
+            if (dictionaryPane.dataset.currentToken === chineseToken) {
+                displayDictionaryEntry(chineseToken, dictionary[chineseToken]);
+            }
+        }
+
+        function updateSavedCountBadge() {
+            const badge = document.getElementById('savedCountBadge');
+            if (badge) {
+                badge.textContent = getSavedVocab().length;
+            }
+        }
+
+        function viewSavedVocab() {
+            const vocab = getSavedVocab();
+            const panel = document.getElementById('saved-vocab-panel');
+            const list = document.getElementById('savedVocabList');
+
+            if (vocab.length === 0) {
+                list.innerHTML = '<tr><td class="saved-vocab-empty">No saved words yet.</td></tr>';
+            } else {
+                list.innerHTML = vocab.map(item =>
+                    `<tr><td class="saved-vocab-entry"><span class="saved-vocab-chinese">${item.chinese}</span>, ${item.pinyin}</td></tr>`
+                ).join('');
+            }
+
+            panel.style.display = 'block';
+            dictionaryPane.style.display = 'none';
+        }
+
+        function closeSavedVocabPanel() {
+            document.getElementById('saved-vocab-panel').style.display = 'none';
+        }
+
+        function copySavedVocab() {
+            const vocab = getSavedVocab();
+            const text = vocab.map(item => `${item.chinese}, ${item.pinyin}`).join('\n');
+            navigator.clipboard.writeText(text).catch(() => {
+                // Fallback for older browsers
+                const ta = document.createElement('textarea');
+                ta.value = text;
+                ta.style.position = 'fixed';
+                ta.style.left = '-9999px';
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+            });
+        }
+
         function addTokenClickHandlers() {
             const tokens = document.querySelectorAll('.token');
             tokens.forEach(token => {
@@ -427,11 +595,14 @@
         let backchainStepIndex = -1;
         let backchainLineIndex = -1;
         let backchainMode = false;
+        let breakdownMode = false;
+        let breakdownMap = [];  // breakdownMap[lineIndex] = ["point1", "point2", ...]
 
         const playPauseBtn = document.getElementById('playPauseBtn');
         const stopBtn = document.getElementById('stopBtn');
         const speedBtn = document.getElementById('speedBtn');
         const backchainModeBtn = document.getElementById('backchainModeBtn');
+        const breakdownBtn = document.getElementById('breakdownBtn');
         const prevBtn = document.getElementById('prevBtn');
         const nextBtn = document.getElementById('nextBtn');
         const prevChapterBtn = document.getElementById('prevChapterBtn');
@@ -444,6 +615,7 @@
         function buildLineMap(chunkMeta) {
             lineMap = [];
             backchainMap = [];
+            breakdownMap = [];
             if (!chunkMeta || !chunkMeta.chunks) return;
 
             for (let ci = 0; ci < chunkMeta.chunks.length; ci++) {
@@ -467,6 +639,9 @@
                             steps: line.backchain,
                             words: line.words || null,
                         };
+                    }
+                    if (line.breakdown && line.breakdown.length > 0) {
+                        breakdownMap[globalIdx] = line.breakdown;
                     }
                 }
             }
@@ -564,6 +739,9 @@
             if (sentenceDiv) {
                 sentenceDiv.classList.add('active-line');
                 sentenceDiv.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+            if (breakdownMode) {
+                showBreakdownForLine(lineIndex);
             }
         }
 
@@ -729,35 +907,51 @@
             }, 80);
         }
 
+        const CJK_PUNCT_RE = /[\u2000-\u206F\u3000-\u303F\uFF00-\uFFEF！＂＃＄％＆＇（）＊＋，－．／：；＜＝＞？＠［＼］＾＿｀｛｜｝～、。“”‘’《》【】。，、！？：；（）「」『』]/g;
+
+        function _normalizeSuffix(text) {
+            // Strip CJK punctuation so backchain steps (which include "？", "！", etc.)
+            // can be matched against the words array (which has no punctuation tokens).
+            return text.replace(CJK_PUNCT_RE, '');
+        }
+
         function _findSuffixStartTime(words, suffixText) {
             // Match suffix text against words from the end backwards
             // Returns the start_time of the first word in the matched suffix
             if (!words || words.length === 0) return 0;
 
+            // Strip punctuation from suffix: words array does not include punctuation tokens
+            // from forced alignment, but backchain steps may include "？", "！", "。", "，" etc.
+            const cleanSuffix = _normalizeSuffix(suffixText);
+            if (cleanSuffix.length === 0) {
+                return words[0].start_time;
+            }
+
             let accumulated = '';
             for (let i = words.length - 1; i >= 0; i--) {
                 accumulated = words[i].text + accumulated;
-                if (accumulated === suffixText) {
+                if (accumulated === cleanSuffix) {
                     return words[i].start_time;
                 }
-                if (accumulated.length > suffixText.length) break;
+                if (accumulated.length > cleanSuffix.length) break;
             }
 
             // Fallback: find first word whose accumulated suffix contains the target
-            // Try matching from each position
             for (let start = words.length - 1; start >= 0; start--) {
                 let seg = '';
                 for (let j = start; j < words.length; j++) {
                     seg += words[j].text;
                 }
-                if (seg === suffixText) {
+                if (seg === cleanSuffix) {
                     return words[start].start_time;
                 }
             }
 
-            // Final fallback: proportional
+            // Final fallback: proportional estimation using clean suffix text
             const fullText = words.map(w => w.text).join('');
-            const ratio = (fullText.length - suffixText.length) / Math.max(fullText.length, 1);
+            const chFullLen = fullText.length;
+            const chSuffixLen = cleanSuffix.length;
+            const ratio = (chFullLen - chSuffixLen) / Math.max(chFullLen, 1);
             const dur = words[words.length - 1].end_time - words[0].start_time;
             return words[0].start_time + ratio * dur;
         }
@@ -877,15 +1071,67 @@
                     backchainMap[i].fullText = chineseSentence.replace(/<[^>]+>/g, '');
                 }
 
+                let breakdownHtml = '';
+                if (breakdownMap[i]) {
+                    const points = breakdownMap[i].map(p => `<li>${p}</li>`).join('');
+                    breakdownHtml = `<div class="breakdown hidden" data-line-index="${i}"><ul>${points}</ul></div>`;
+                }
+
                 sentenceDiv.innerHTML = `
                     <div class="pinyin">${pinyinSentence}</div>
                     <div class="chinese">${chineseSentence}</div>
                     <div class="translation">${englishTranslation}</div>
+                    ${breakdownHtml}
                 `;
 
                 contentDiv.appendChild(sentenceDiv);
             }
             addTokenClickHandlers();
+            applyInitialBreakdownVisibility();
+        }
+
+        // ── Breakdown toggle ────────────────────────────────────────────
+
+        function toggleBreakdownMode() {
+            breakdownMode = !breakdownMode;
+            if (breakdownBtn) {
+                breakdownBtn.classList.toggle('active', breakdownMode);
+            }
+            // Hide all breakdowns first
+            document.querySelectorAll('.breakdown').forEach(el => {
+                el.classList.add('hidden');
+            });
+            if (breakdownMode && currentLineIndex >= 0) {
+                // Show only the active line's breakdown
+                const breakdownDiv = document.querySelector(`.breakdown[data-line-index="${currentLineIndex}"]`);
+                if (breakdownDiv) {
+                    breakdownDiv.classList.remove('hidden');
+                }
+            }
+        }
+
+        function showBreakdownForLine(lineIndex) {
+            // Hide all breakdowns first
+            document.querySelectorAll('.breakdown').forEach(el => {
+                el.classList.add('hidden');
+            });
+            // Show only the one for the active line
+            const breakdownDiv = document.querySelector(`.breakdown[data-line-index="${lineIndex}"]`);
+            if (breakdownDiv) {
+                breakdownDiv.classList.remove('hidden');
+            }
+        }
+
+        if (breakdownBtn) {
+            breakdownBtn.addEventListener('click', toggleBreakdownMode);
+        }
+
+        function applyInitialBreakdownVisibility() {
+            if (!breakdownMode) {
+                document.querySelectorAll('.breakdown').forEach(el => {
+                    el.classList.add('hidden');
+                });
+            }
         }
 
         // ── English translations toggle ──────────────────────────────

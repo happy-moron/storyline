@@ -53,6 +53,7 @@
         let isFlipped = false;
         let author = '';
         let book = '';
+        let flashcardManifest = null;
 
         // ── DOM refs ──────────────────────────────────────────────────
         const mainArea = document.getElementById('mainArea');
@@ -69,6 +70,7 @@
             return {
                 author: params.get('author') || '',
                 book: params.get('book') || '',
+                word: params.get('word') || '',
             };
         }
 
@@ -85,19 +87,43 @@
 
             backLink.href = `index.html?author=${encodeURIComponent(author)}&book=${encodeURIComponent(book)}`;
 
+            // Load shared flashcard manifest
             try {
-                const resp = await fetch(`books/${author}/${book}/flashcards/flashcard_entries.json`);
-                if (!resp.ok) {
-                    throw new Error(`HTTP ${resp.status}`);
+                if (!flashcardManifest) {
+                    const resp = await fetch('books/flashcard-manifest.json');
+                    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+                    flashcardManifest = await resp.json();
                 }
-                entries = await resp.json();
             } catch (e) {
-                console.error('Failed to load flashcards:', e);
+                console.error('Failed to load flashcard manifest:', e);
                 showError(
                     `No flashcards found for "${book}". <a href="index.html">Back to Reader</a>`
                 );
                 return;
             }
+
+            const wordKeys = flashcardManifest.books && flashcardManifest.books[book];
+            if (!wordKeys || !wordKeys.length) {
+                showError(
+                    `No flashcard entries for "${book}". <a href="index.html">Back to Reader</a>`
+                );
+                return;
+            }
+
+            // Build entries from manifest data
+            entries = wordKeys.map((wordKey) => {
+                const wd = flashcardManifest.words[wordKey];
+                if (!wd) return null;
+                return {
+                    word: wordKey,
+                    pinyin: wd.pinyin || '',
+                    definition: wd.definition || '',
+                    sentence_cn: wd.sentence_cn || '',
+                    sentence_py: wd.sentence_py || '',
+                    sentence_en: wd.sentence_en || '',
+                    image_prompt: wd.image_prompt || '',
+                };
+            }).filter(Boolean);
 
             if (!entries.length) {
                 showError(
@@ -106,38 +132,38 @@
                 return;
             }
 
-            // Check which audio files exist
+            // Check which audio/image files exist in shared vocab store
             for (let i = 0; i < entries.length; i++) {
-                const idx = i + 1;
-                entries[i]._hasWordAudio = false;
-                entries[i]._hasSentenceAudio = false;
-                entries[i]._hasImage = false;
-            }
+                const wordKey = entries[i].word;
 
-            // Fire-and-forget audio checks; UI updates on demand
-            for (let i = 0; i < entries.length; i++) {
-                const idx = i + 1;
-                const wordUrl = `books/${author}/${book}/flashcards/audio_${idx}_word.mp3`;
-                const sentUrl = `books/${author}/${book}/flashcards/audio_${idx}_sentence.mp3`;
-                const imgUrl = `books/${author}/${book}/flashcards/img_${idx}_inverted.png`;
+                const wordUrl = `books/vocab/audio/${encodeURIComponent(wordKey)}_word.mp3`;
+                const sentUrl = `books/vocab/audio/${encodeURIComponent(wordKey)}_sentence.mp3`;
+                const imgUrl  = `books/vocab/images/${encodeURIComponent(wordKey)}_inverted.png`;
 
                 try {
                     const r = await fetch(wordUrl, { method: 'HEAD' });
                     entries[i]._hasWordAudio = r.ok;
-                } catch (_) {}
+                } catch (_) { entries[i]._hasWordAudio = false; }
 
                 try {
                     const r = await fetch(sentUrl, { method: 'HEAD' });
                     entries[i]._hasSentenceAudio = r.ok;
-                } catch (_) {}
+                } catch (_) { entries[i]._hasSentenceAudio = false; }
 
                 try {
                     const r = await fetch(imgUrl, { method: 'HEAD' });
                     entries[i]._hasImage = r.ok;
-                } catch (_) {}
+                } catch (_) { entries[i]._hasImage = false; }
             }
 
-            currentIndex = 0;
+            // If a specific word was requested, jump to it
+            if (params.word) {
+                const idx = entries.findIndex(e => e.word === params.word);
+                if (idx >= 0) {
+                    currentIndex = idx;
+                }
+            }
+
             renderCard();
         }
 
@@ -149,31 +175,26 @@
         }
 
         // ── Render ─────────────────────────────────────────────────────
-        function audioUrl(idx, type) {
-            return `books/${author}/${book}/flashcards/audio_${idx}_${type}.mp3`;
+        function audioUrl(word, type) {
+            return `books/vocab/audio/${encodeURIComponent(word)}_${type}.mp3`;
         }
 
         function renderCard() {
             if (!entries.length) return;
 
             const entry = entries[currentIndex];
-            const idx = currentIndex + 1;
 
-            // Word, pinyin, definition
-            const word = entry[0] || '';
-            const pinyin = entry[1] || '';
-            const definition = entry[2] || '';
+            const word = entry.word || '';
+            const pinyin = entry.pinyin || '';
+            const definition = entry.definition || '';
+            const sampleCn = entry.sentence_cn || '';
+            const samplePy = entry.sentence_py || '';
+            const sampleEn = entry.sentence_en || '';
 
-            // Sample sentence
-            const sampleCn = entry[3] || '';
-            const samplePy = entry[4] || '';
-            const sampleEn = entry[5] || '';
-
-            // Audio available?
             const hasWordAudio = entry._hasWordAudio;
             const hasSentenceAudio = entry._hasSentenceAudio;
             const hasImage = entry._hasImage;
-            const imgUrl = `books/${author}/${book}/flashcards/img_${idx}_inverted.png`;
+            const imgUrl = `books/vocab/images/${encodeURIComponent(word)}_inverted.png`;
 
             mainArea.innerHTML = `
                 <div class="card-container" id="cardContainer" onclick="toggleFlip()">
@@ -201,13 +222,13 @@
                 <div class="audio-row">
                     <button class="audio-btn" id="wordAudioBtn"
                             ${hasWordAudio ? '' : 'disabled'}
-                            onclick="playAudio('${audioUrl(idx, 'word')}')"
+                            onclick="playAudio('${audioUrl(word, 'word')}')"
                             title="Play word audio (W)">
                         <span class="icon">🔊</span> Word
                     </button>
                     <button class="audio-btn" id="sentenceAudioBtn"
                             ${hasSentenceAudio ? '' : 'disabled'}
-                            onclick="playAudio('${audioUrl(idx, 'sentence')}')"
+                            onclick="playAudio('${audioUrl(word, 'sentence')}')"
                             title="Play sentence audio (S)">
                         <span class="icon">🔊</span> Sentence
                     </button>
@@ -300,16 +321,16 @@
                 case '1':
                     e.preventDefault();
                     if (entries.length) {
-                        const idx = currentIndex + 1;
-                        playAudio(audioUrl(idx, 'word'));
+                        const word = entries[currentIndex].word;
+                        playAudio(audioUrl(word, 'word'));
                     }
                     break;
                 case 's':
                 case '2':
                     e.preventDefault();
                     if (entries.length) {
-                        const idx = currentIndex + 1;
-                        playAudio(audioUrl(idx, 'sentence'));
+                        const word = entries[currentIndex].word;
+                        playAudio(audioUrl(word, 'sentence'));
                     }
                     break;
             }

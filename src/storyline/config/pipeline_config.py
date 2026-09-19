@@ -69,7 +69,7 @@ class PipelineConfig:
         "tokenize": "prompts/tokenize.txt",
         "fix_tokenization": "prompts/fix_tokenization.txt",
         "dict_entry": "prompts/create_single_dictionary_entry.txt",
-        "podcast_vocab": "prompts/podcast-vocab.md",
+        "podcast_vocab": "prompts/podcast-candidate-vocab.md",
         "podcast_script": "prompts/podcast-script.md",
         "podcast_fix_script": "prompts/podcast-fix-script.md",
         "podcast_fix_dialogue": "prompts/podcast-fix-dialogue.md",
@@ -77,6 +77,9 @@ class PipelineConfig:
         "podcast_pinyin_replace": "prompts/podcast-replace-pinyin.md",
         "backchain": "prompts/back-chaining.md",
         "backchain_fix": "prompts/back-chaining-fix.md",
+        "flashcard_vocab_from_list": "prompts/flashcard-vocab-from-list.md",
+        "breakdown": "prompts/breakdown.md",
+        "breakdown_fix": "prompts/breakdown_fix.md",
     })
 
     # -- Pipeline behaviour --
@@ -88,6 +91,7 @@ class PipelineConfig:
     skip_simplify: bool = False
     skip_audio: bool = False
     skip_backchain: bool = False
+    skip_breakdown: bool = False
     audio_profile: str = "default"
     audio_use_instruct: bool | None = None
 
@@ -224,6 +228,7 @@ class PipelineConfig:
     def _apply_cli_overrides(self, args: Any) -> None:
         for attr in (
             "max_chunks", "skip_simplify", "skip_audio", "skip_backchain",
+            "skip_breakdown",
             "audio_profile", "audio_use_instruct",
         ):
             if hasattr(args, attr):

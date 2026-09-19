@@ -1,0 +1,170 @@
+INTRO
+
+en=teacher
+Welcome to Learning Chinese. I am James, and today we are tackling a very practical, and let's be honest, very stressful situation: dealing with a landlord who is avoiding repairs.
+
+en=student
+Oh, I have been there. It is the absolute worst when you are paying rent and something breaks, and you just cannot get a hold of the landlord.
+
+en=teacher
+Exactly. To navigate this, you need to be able to state how many times something has happened and ask direct questions to get a straight answer. Today, we are learning two vital grammar structures. First, the use of 第 to form ordinal numbers. You take 第 plus a number, followed by a measure word, to say things like "the first time" or "the third time." For example, 第一次 is the first time, or 第二个 is the second one.
+
+en=student
+Right, so instead of just saying "three times," I use 第 to say "the third time." It's like adding "the" before a number in English, but it goes at the beginning.
+
+en=teacher
+Precisely. Second, we are looking at the affirmative-negative question structure, also known as the A-not-A question. Instead of using the question particle 吗, you can repeat the verb or adjective with 不 in the middle. For a verb like 来, which means to come, you say 来不来 to mean "are you coming or not?" For an adjective like 好, which means good or okay, you say 好不好 to mean "is it okay?"
+
+en=student
+That is so useful! It sounds much more direct. In a confrontation, like with a landlord, being direct is probably exactly what you need.
+
+en=teacher
+Exactly. It's a bit more forceful than just adding 吗 at the end. In our dialogue, we will use these to express frustration. You are going to hear a tenant, Xiao Wang, calling his landlord, Mr. Li. Xiao Wang is fed up because a kitchen pipe has leaked multiple times, and Mr. Li is being very evasive.
+
+en=student
+I think I've been in this exact conversation before. Let's hear it.
+
+DIALOGUE
+
+zh=1
+李房东，你好。这是第三次水管漏水了！
+Hello, Landlord Li. This is the third time the water pipe has leaked!
+zh=2
+又是水管？你到底怎么回事？
+The water pipe again? What is the matter with you?
+zh=1
+我没怎么！我问你，你明天到底来不来修？
+It is not me! I am asking you, are you coming tomorrow to fix it or not?
+zh=2
+我明天一定会去的，好不好？
+I will definitely go tomorrow. Is that okay?
+zh=1
+你已经说了两次“明天”了！你到底想不想修啊？
+You have already said "tomorrow" twice! Do you actually want to fix it or not?
+zh=2
+哎呀，别跟我吵，我真的非常忙！
+Oh, stop arguing with me, I am really very busy!
+
+BREAKDOWN
+
+en=teacher
+Let's look at that dialogue, and break it down line by line. We start with Xiao Wang, who is clearly losing his patience.
+
+zh=1
+李房东，你好。这是第三次水管漏水了！
+Hello, Landlord Li. This is the third time the water pipe has leaked!
+
+en=student
+"这是第三次" is our first grammar point. 第 third, 三 three, and 次 is the measure word for occurrences or times. So, "the third time."
+
+en=teacher
+Correct. And we have 水管, which is water pipe, and 漏水, which means to leak water. It is a very common verb-object compound.
+
+zh=2
+又是水管？你到底怎么回事？
+The water pipe again? What is the matter with you?
+
+en=student
+"又是" means "is again." And "怎么回事" is a great phrase to know. It means "what happened?" or "what is the matter?"
+
+en=teacher
+It is a very natural way to ask for an explanation. Now, let's listen to Xiao Wang's response.
+
+zh=1
+我没怎么！我问你，你明天到底来不来修？
+It is not me! I am asking you, are you coming tomorrow to fix it or not?
+
+en=student
+"我没怎么" is a way to say "It's not like that" or "Nothing's wrong with me." But the real star here is "来不来." That is our A-not-A question, right?
+
+en=teacher
+Exactly. Instead of saying "你明天来吗？" which is a bit softer, he says "你明天来不来修？" He is putting the verb 来 and the negative 不 together. He is also using 到底, which means "on earth" or "after all." It adds a lot of emphasis to the question.
+
+en=student
+So, "你到底来不来" is like saying, "Are you coming or not, really?" It's very forceful.
+
+zh=2
+我明天一定会去的，好不好？
+I will definitely go tomorrow. Is that okay?
+
+en=teacher
+Mr. Li is trying to brush him off. He uses "一定会," which means "definitely will." Then he uses the second grammar point with an adjective: "好不好?"
+
+en=student
+"好不好" is the adjective version of the A-not-A structure. "Good or not good." It's like saying, "Is that okay with you?" It's a way to force a confirmation.
+
+zh=1
+你已经说了两次“明天”了！你到底想不想修啊？
+You have already said "tomorrow" twice! Do you actually want to fix it or not?
+
+en=teacher
+Xiao Wang is not having it! He uses "两次" here. Note that he didn't use 第 this time.
+
+en=student
+Wait, why no 第? He just said "twice," not "the second time."
+
+en=teacher
+Good catch, Ryan. If you are just saying "two times," you just say "两次." You only use 第 when you are talking about a specific order, like "the second time" or "the second time in a series." If he had said "这是第二次" (this is the second time), then he would use 第.
+
+en=student
+I see. And then he asks "想不想修." That's another A-not-A question. 想 is to want, 不 is not, and 修 is to repair. "Want or not want to repair."
+
+en=teacher
+Exactly. It's a direct challenge to the landlord's intention.
+
+zh=2
+哎呀，别跟我吵，我真的非常忙！
+Oh, stop arguing with me, I am really very busy!
+
+en=student
+"哎呀" is such a classic expression of frustration or annoyance. And "跟我吵" means "arguing with me."
+
+en=teacher
+Indeed. Mr. Li is clearly done with the conversation.
+
+OUTRO
+
+en=teacher
+That was a tense one! But it really showed how powerful these structures are for getting things done.
+
+en=student
+Yeah, I don't think I'd want to be the landlord in that situation. So, to recap, we learned how to use 第 with a number and a measure word to talk about order, like 第三次 (the third time).
+
+en=teacher
+And we learned the A-not-A question pattern. Use the verb plus 不 plus the verb for actions, like 来不来, and the adjective plus 不 plus the adjective for descriptions, like 好不好.
+
+en=student
+It's much more direct than using 吗, which is perfect for when you need a straight answer.
+
+en=teacher
+Exactly. Thanks for listening to Learning Chinese. See you in the next episode!
+
+VOICE PROFILES
+
+speaker = 1
+lang = "zh"
+gender = "男性"
+age = "二十多岁"
+pitch = "中音域，因愤怒而不断波动"
+pace = "中速，语速较快，显得很焦急"
+volume = "响亮，带有明显的抗议感"
+clarity = "清晰，但带有情绪化的发音"
+fluency = "流畅，但在表达愤怒时有断句" 
+timbre = "清脆，略显尖锐"
+emotion = "焦躁，愤怒，迫切" 
+usecase = "一个遇到麻烦、不得不据理力争的年轻租客"
+dialogue = "这是第三次了！你到底想不想修啊？我问你，你明天到底来不来？"
+
+speaker = 2
+lang = "zh"
+gender = "男性"
+age = "五十岁左右"
+pitch = "中低音域，相对平稳"
+pace = "慢速，显得有些懒散"
+volume = "中等，听起来有些不耐烦"
+clarity = "清晰，但语气有些敷衍"
+fluency = "流利，但带有明显的拖沓感" 
+timbre = "浑厚，略带沙哑"
+emotion = "回避，不耐烦，敷衍" 
+usecase = "一个想逃避责任、不耐烦的年长房东"
+dialogue = "又是水管？你到底怎么回事？我明天一定会去的，好不好？哎呀，别跟我吵。"
